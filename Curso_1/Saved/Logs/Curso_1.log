@@ -1108,3 +1108,1229 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.01.03-20.01.45:157][951]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level1_Auto1F9EE0DC24BC3E238E3FDD3BF3668B936.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Autosaves/Game/Maps/Level1_Auto1.umap'
 [2022.01.03-20.01.45:160][951]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Level1' took 0.024
 [2022.01.03-20.01.45:162][951]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.024
+[2022.01.03-20.32.41:330][286]LogContentBrowser: Deferred new asset file creation: NewMaterial
+[2022.01.03-20.32.41:357][286]LogContentBrowser: Creating deferred item: NewMaterial
+[2022.01.03-20.32.46:121][572]LogContentBrowser: Attempting asset rename: NewMaterial -> Banana_Material
+[2022.01.03-20.32.46:125][572]LogContentBrowser: End creating deferred item NewMaterial
+[2022.01.03-20.33.46:134][945]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/Art/Models/Banana/Banana_Material.Banana_Material
+[2022.01.03-20.33.46:143][945]LogMaterial: Display: Missing cached shader map for material Banana_Material, compiling. 
+[2022.01.03-20.33.46:323][945]LogMaterial: Display: Missing cached shader map for material Banana_Material, compiling. 
+[2022.01.03-20.33.46:333][945]LogMaterial: Display: Missing cached shader map for material Banana_Material, compiling. 
+[2022.01.03-20.33.46:357][945]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.03-20.33.46:357][945]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.03-20.33.46:357][945]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.03-20.33.48:908][ 38]LogSlate: Window 'Banana_Material' being destroyed
+[2022.01.03-20.33.51:327][146]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 6
+[2022.01.03-20.33.52:416][159]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 5
+[2022.01.03-20.33.52:496][163]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 4
+[2022.01.03-20.33.53:194][185]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 3
+[2022.01.03-20.33.53:264][188]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 2
+[2022.01.03-20.33.53:947][203]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
+[2022.01.03-20.33.55:357][234]MaterialEditorStats: Base pass shader: 117 instructions
+[2022.01.03-20.33.55:358][234]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 191 instructions
+[2022.01.03-20.33.55:358][234]MaterialEditorStats: Base pass vertex shader: 42 instructions
+[2022.01.03-20.33.55:358][234]MaterialEditorStats: Texture samplers: 2/16
+[2022.01.03-21.03.33:197][755]LogMaterialEditor: Saving and Compiling material Banana_Material
+[2022.01.03-21.03.33:243][755]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Models/Banana/Banana_Material" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Material.uasset" SILENT=true
+[2022.01.03-21.03.33:250][755]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Banana_Material78345C174EEC35064AC714959ED8C1BE.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Material.uasset'
+[2022.01.03-21.03.33:267][755]AssetCheck: New page: Asset Save: Banana_Material
+[2022.01.03-21.03.33:267][755]LogContentValidation: Display: Validating Material /Game/Art/Models/Banana/Banana_Material.Banana_Material
+[2022.01.03-21.03.37:932][ 19]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-21.03.37:952][ 19]LogUObjectHash: Compacting FUObjectHashTables data took   4.17ms
+[2022.01.03-21.03.37:968][ 19]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level1095130BB485C04FADC9E20A73F7EA305.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1.umap'
+[2022.01.03-21.03.37:978][ 19]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1_BuiltData.uasset" SILENT=true
+[2022.01.03-21.03.38:012][ 19]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level1_BuiltDataD48546434C4DDC456692CFB765F04647.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1_BuiltData.uasset'
+[2022.01.03-21.03.38:025][ 19]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-21.03.38:025][ 19]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Level1_BuiltData.Level1_BuiltData
+[2022.01.03-21.03.38:025][ 19]LogContentValidation: Display: Validating World /Game/Maps/Level1.Level1
+[2022.01.03-21.05.19:886][189]LogMaterial: Display: Missing cached shader map for material Banana_Material, compiling. 
+[2022.01.03-21.05.19:894][189]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.03-21.05.19:898][189]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.03-21.05.19:898][189]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.03-21.05.19:898][189]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.03-21.05.23:057][361]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 6
+[2022.01.03-21.05.23:398][365]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 5
+[2022.01.03-21.05.25:260][390]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 4
+[2022.01.03-21.05.25:495][395]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 3
+[2022.01.03-21.05.25:799][400]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 2
+[2022.01.03-21.05.26:248][409]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 1
+[2022.01.03-21.05.27:994][441]MaterialEditorStats: Base pass shader: 117 instructions
+[2022.01.03-21.05.27:994][441]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 191 instructions
+[2022.01.03-21.05.27:994][441]MaterialEditorStats: Base pass vertex shader: 42 instructions
+[2022.01.03-21.05.27:994][441]MaterialEditorStats: Texture samplers: 2/16
+[2022.01.03-21.05.50:193][880]LogMaterial: Display: Missing cached shader map for material Banana_Material, compiling. 
+[2022.01.03-21.05.50:200][880]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2022.01.03-21.05.50:212][880]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.03-21.05.50:212][880]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.03-21.05.50:212][880]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.03-21.05.50:220][880]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.03-21.05.50:222][880]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2022.01.03-21.05.55:282][ 98]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.03-21.05.57:660][195]LogMaterial: Display: Missing cached shader map for material Banana_Material, compiling. 
+[2022.01.03-21.05.59:108][252]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.03-21.06.01:615][341]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 12
+[2022.01.03-21.06.01:615][341]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 11
+[2022.01.03-21.06.02:662][381]LogSlate: Window 'Banana_Material' being destroyed
+[2022.01.03-21.06.02:680][382]LogRenderer: Reallocating scene render targets to support 1204x684 Format 9 NumSamples 1 (Frame:9765).
+[2022.01.03-21.06.05:855][555]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.03-21.06.06:399][586]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.03-21.06.07:297][636]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.03-21.06.09:427][755]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.03-21.06.11:445][864]LogMaterialEditor: Saving and Compiling material Banana_Material
+[2022.01.03-21.06.12:963][864]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 6
+[2022.01.03-21.06.12:963][864]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 5
+[2022.01.03-21.06.12:963][864]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 4
+[2022.01.03-21.06.12:963][864]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 3
+[2022.01.03-21.06.12:982][864]LogMaterial: Display: Missing cached shader map for material Banana_Material, compiling. 
+[2022.01.03-21.06.13:060][864]LogMaterial: Display: Missing cached shader map for material Banana_Material, compiling. 
+[2022.01.03-21.06.13:111][864]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
+[2022.01.03-21.06.13:130][864]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.03-21.06.13:690][864]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 23
+[2022.01.03-21.06.13:690][864]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 22
+[2022.01.03-21.06.14:246][864]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 21
+[2022.01.03-21.06.14:798][864]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 20
+[2022.01.03-21.06.14:798][864]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 19
+[2022.01.03-21.06.15:357][864]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 18
+[2022.01.03-21.06.15:905][864]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 17
+[2022.01.03-21.06.15:905][864]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 16
+[2022.01.03-21.06.16:458][864]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 15
+[2022.01.03-21.06.17:012][864]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 14
+[2022.01.03-21.06.17:012][864]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.03-21.06.17:492][864]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 12
+[2022.01.03-21.06.17:492][864]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2022.01.03-21.06.17:492][864]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 4
+[2022.01.03-21.06.17:505][864]TextureStreamingBuild: Display: Compiling optional shaders took 4.389 seconds.
+[2022.01.03-21.06.17:518][864]LogUObjectHash: Compacting FUObjectHashTables data took   0.48ms
+[2022.01.03-21.06.19:795][864]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 2
+[2022.01.03-21.06.20:350][864]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 1
+[2022.01.03-21.06.21:063][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Models/Banana/Banana_Material" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Material.uasset" SILENT=true
+[2022.01.03-21.06.21:070][864]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Banana_Material9848804C4B61A909B66406B87991C82B.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Material.uasset'
+[2022.01.03-21.06.21:101][864]AssetCheck: New page: Asset Save: Banana_Material
+[2022.01.03-21.06.21:101][864]LogContentValidation: Display: Validating Material /Game/Art/Models/Banana/Banana_Material.Banana_Material
+[2022.01.03-21.06.21:103][864]MaterialEditorStats: Base pass shader: 117 instructions
+[2022.01.03-21.06.21:103][864]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 191 instructions
+[2022.01.03-21.06.21:103][864]MaterialEditorStats: Base pass vertex shader: 42 instructions
+[2022.01.03-21.06.21:103][864]MaterialEditorStats: Texture samplers: 3/16
+[2022.01.03-21.08.31:422][584]LogMaterial: Display: Missing cached shader map for material Banana_Material, compiling. 
+[2022.01.03-21.08.31:437][584]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.03-21.08.31:437][584]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.03-21.08.31:437][584]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.03-21.08.31:440][584]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2022.01.03-21.08.34:373][746]LogMaterialEditor: Saving and Compiling material Banana_Material
+[2022.01.03-21.08.35:273][746]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.03-21.08.35:274][746]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.03-21.08.35:290][746]LogMaterial: Display: Missing cached shader map for material Banana_Material, compiling. 
+[2022.01.03-21.08.35:351][746]LogMaterial: Display: Missing cached shader map for material Banana_Material, compiling. 
+[2022.01.03-21.08.35:386][746]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2022.01.03-21.08.35:394][746]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.03-21.08.35:954][746]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 27
+[2022.01.03-21.08.35:954][746]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 26
+[2022.01.03-21.08.36:509][746]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 25
+[2022.01.03-21.08.36:509][746]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 24
+[2022.01.03-21.08.37:066][746]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 23
+[2022.01.03-21.08.37:066][746]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 22
+[2022.01.03-21.08.37:066][746]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 21
+[2022.01.03-21.08.38:174][746]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 20
+[2022.01.03-21.08.38:174][746]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 19
+[2022.01.03-21.08.38:174][746]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 18
+[2022.01.03-21.08.38:725][746]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 17
+[2022.01.03-21.08.38:725][746]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 16
+[2022.01.03-21.08.39:277][746]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 15
+[2022.01.03-21.08.39:829][746]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 14
+[2022.01.03-21.08.39:829][746]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 13
+[2022.01.03-21.08.39:829][746]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 12
+[2022.01.03-21.08.40:178][746]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.03-21.08.40:178][746]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 4
+[2022.01.03-21.08.40:180][746]TextureStreamingBuild: Display: Compiling optional shaders took 4.793 seconds.
+[2022.01.03-21.08.40:216][746]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2022.01.03-21.08.42:492][746]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 2
+[2022.01.03-21.08.42:492][746]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 1
+[2022.01.03-21.08.43:683][746]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Models/Banana/Banana_Material" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Material.uasset" SILENT=true
+[2022.01.03-21.08.43:692][746]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Banana_Material540467E94162EFF00ADA6CAA6CCF2A08.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Material.uasset'
+[2022.01.03-21.08.43:734][746]AssetCheck: New page: Asset Save: Banana_Material
+[2022.01.03-21.08.43:734][746]LogContentValidation: Display: Validating Material /Game/Art/Models/Banana/Banana_Material.Banana_Material
+[2022.01.03-21.08.43:736][746]MaterialEditorStats: Base pass shader: 120 instructions
+[2022.01.03-21.08.43:736][746]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2022.01.03-21.08.43:736][746]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.03-21.08.43:736][746]MaterialEditorStats: Texture samplers: 4/16
+[2022.01.03-21.08.43:736][746]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.03-21.08.43:736][746]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.03-21.10.24:669][917]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-21.10.24:669][917]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-21.10.26:699][ 30]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-21.10.26:709][ 30]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2022.01.03-21.10.26:721][ 30]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level12B5691B84014423AA00A6684B023DB32.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1.umap'
+[2022.01.03-21.10.26:732][ 30]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1_BuiltData.uasset" SILENT=true
+[2022.01.03-21.10.26:761][ 30]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level1_BuiltData51C1DB404CA4C95DF4449087769530CF.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1_BuiltData.uasset'
+[2022.01.03-21.10.26:774][ 30]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-21.10.26:774][ 30]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Level1_BuiltData.Level1_BuiltData
+[2022.01.03-21.10.26:774][ 30]LogContentValidation: Display: Validating World /Game/Maps/Level1.Level1
+[2022.01.03-21.11.12:856][785]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.01.03-21.11.12:872][785]LogContentBrowser: Creating deferred item: NewFolder
+[2022.01.03-21.11.19:951][205]LogContentBrowser: Attempting asset rename: NewFolder -> NewFolder
+[2022.01.03-21.11.19:951][205]LogContentBrowser: End creating deferred item NewFolder
+[2022.01.03-21.11.29:380][699]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.01.03-21.11.29:398][699]LogContentBrowser: Creating deferred item: NewFolder
+[2022.01.03-21.11.36:349][115]LogContentBrowser: Attempting asset rename: NewFolder -> Materials
+[2022.01.03-21.11.36:350][115]LogContentBrowser: End creating deferred item NewFolder
+[2022.01.03-21.13.47:059][711]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Downloads\fondo-oro-textura_53876-90076.jpg)
+[2022.01.03-21.13.47:090][711]LogTexture: Display: Building textures: fondo-oro-textura_53876-90076 (BGRA8, 626X417)
+[2022.01.03-21.13.47:123][711]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Downloads\textura-de-cesped-gratis.jpg)
+[2022.01.03-21.13.47:146][711]LogTexture: Display: Building textures: textura-de-cesped-gratis (AutoDXT, 960X640)
+[2022.01.03-21.13.55:743][124]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.01.03-21.13.55:758][124]LogContentBrowser: Creating deferred item: NewFolder
+[2022.01.03-21.13.57:163][205]LogContentBrowser: Attempting asset rename: NewFolder -> Gold
+[2022.01.03-21.13.57:164][205]LogContentBrowser: End creating deferred item NewFolder
+[2022.01.03-21.14.00:473][387]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.01.03-21.14.00:488][387]LogContentBrowser: Creating deferred item: NewFolder
+[2022.01.03-21.14.08:694][875]LogContentBrowser: Attempting asset rename: NewFolder -> Grass
+[2022.01.03-21.14.08:695][875]LogContentBrowser: End creating deferred item NewFolder
+[2022.01.03-21.14.18:459][422]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/fondo-oro-textura_53876-90076861CDB0646EBAC42229CA59231C941FE.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/fondo-oro-textura_53876-90076.uasset'
+[2022.01.03-21.14.18:558][422]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2022.01.03-21.14.18:578][422]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2022.01.03-21.14.18:583][422]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2022.01.03-21.14.18:623][422]AssetCheck: New page: Asset Save: fondo-oro-textura_53876-90076
+[2022.01.03-21.14.18:623][422]LogContentValidation: Display: Validating Texture2D /Game/Art/Materials/fondo-oro-textura_53876-90076.fondo-oro-textura_53876-90076
+[2022.01.03-21.14.21:551][562]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/textura-de-cesped-gratisA61BCAA94A65A83EF3FEF1B5970C76D0.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/textura-de-cesped-gratis.uasset'
+[2022.01.03-21.14.21:628][562]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2022.01.03-21.14.21:643][562]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2022.01.03-21.14.21:649][562]LogUObjectHash: Compacting FUObjectHashTables data took   0.28ms
+[2022.01.03-21.14.21:678][562]AssetCheck: New page: Asset Save: textura-de-cesped-gratis
+[2022.01.03-21.14.21:678][562]LogContentValidation: Display: Validating Texture2D /Game/Art/Materials/textura-de-cesped-gratis.textura-de-cesped-gratis
+[2022.01.03-21.14.28:725][950]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/fondo-oro-textura_53876-9007635F5FFF54F0ED93AD1B81B81AE5F3E53.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/fondo-oro-textura_53876-90076.uasset'
+[2022.01.03-21.14.28:823][950]LogUObjectHash: Compacting FUObjectHashTables data took   1.30ms
+[2022.01.03-21.14.28:840][950]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2022.01.03-21.14.28:846][950]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2022.01.03-21.14.28:878][950]AssetCheck: New page: Asset Save: fondo-oro-textura_53876-90076
+[2022.01.03-21.14.28:878][950]LogContentValidation: Display: Validating Texture2D /Game/Art/Materials/Gold/fondo-oro-textura_53876-90076.fondo-oro-textura_53876-90076
+[2022.01.03-21.14.30:952][ 52]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/textura-de-cesped-gratis778C7CFA4F579F9F995B128F3F6E6687.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Grass/textura-de-cesped-gratis.uasset'
+[2022.01.03-21.14.31:011][ 52]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2022.01.03-21.14.31:025][ 52]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2022.01.03-21.14.31:032][ 52]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2022.01.03-21.14.31:065][ 52]AssetCheck: New page: Asset Save: textura-de-cesped-gratis
+[2022.01.03-21.14.31:065][ 52]LogContentValidation: Display: Validating Texture2D /Game/Art/Materials/Grass/textura-de-cesped-gratis.textura-de-cesped-gratis
+[2022.01.03-21.14.33:508][180]LogContentBrowser: Deferred new asset file creation: NewMaterial
+[2022.01.03-21.14.33:535][180]LogContentBrowser: Creating deferred item: NewMaterial
+[2022.01.03-21.14.34:927][264]LogContentBrowser: Attempting asset rename: NewMaterial -> Gold
+[2022.01.03-21.14.34:928][264]LogContentBrowser: End creating deferred item NewMaterial
+[2022.01.03-21.14.38:493][463]LogContentBrowser: Deferred new asset file creation: NewMaterial
+[2022.01.03-21.14.38:510][463]LogContentBrowser: Creating deferred item: NewMaterial
+[2022.01.03-21.14.41:223][625]LogContentBrowser: Attempting asset rename: NewMaterial -> Grass
+[2022.01.03-21.14.41:224][625]LogContentBrowser: End creating deferred item NewMaterial
+[2022.01.03-21.14.43:720][763]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/Art/Materials/Gold/Gold.Gold
+[2022.01.03-21.14.43:722][763]LogMaterial: Display: Missing cached shader map for material Gold, compiling. 
+[2022.01.03-21.14.43:854][763]LogMaterial: Display: Missing cached shader map for material Gold, compiling. 
+[2022.01.03-21.14.43:867][763]LogMaterial: Display: Missing cached shader map for material Gold, compiling. 
+[2022.01.03-21.14.43:885][763]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.03-21.14.43:885][763]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.03-21.14.43:885][763]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.03-21.14.50:817][ 23]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 6
+[2022.01.03-21.14.53:385][120]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 5
+[2022.01.03-21.14.54:779][171]LogMaterial: Display: Missing cached shader map for material Gold, compiling. 
+[2022.01.03-21.14.54:793][171]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.03-21.14.58:022][278]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.03-21.14.59:314][306]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.03-21.14.59:502][313]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.03-21.15.00:616][351]LogMaterial: Display: Missing cached shader map for material Gold, compiling. 
+[2022.01.03-21.15.00:646][351]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.03-21.15.00:664][351]LogMaterial: Display: Missing cached shader map for material Gold, compiling. 
+[2022.01.03-21.15.05:185][505]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.03-21.15.05:185][505]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 12
+[2022.01.03-21.15.05:216][506]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.03-21.15.06:894][569]LogMaterial: Display: Missing cached shader map for material Gold, compiling. 
+[2022.01.03-21.15.06:919][569]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.03-21.15.10:607][703]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.03-21.15.13:236][802]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 12
+[2022.01.03-21.15.13:792][823]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.03-21.15.18:662][  8]LogMaterialEditor: Saving and Compiling material Gold
+[2022.01.03-21.15.19:799][  8]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.03-21.15.19:799][  8]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.03-21.15.19:799][  8]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.03-21.15.19:821][  8]LogMaterial: Display: Missing cached shader map for material Gold, compiling. 
+[2022.01.03-21.15.19:909][  8]LogMaterial: Display: Missing cached shader map for material Gold, compiling. 
+[2022.01.03-21.15.19:952][  8]LogUObjectHash: Compacting FUObjectHashTables data took   1.29ms
+[2022.01.03-21.15.19:966][  8]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.03-21.15.21:080][  8]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 27
+[2022.01.03-21.15.21:080][  8]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 26
+[2022.01.03-21.15.21:080][  8]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 25
+[2022.01.03-21.15.21:633][  8]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 24
+[2022.01.03-21.15.22:188][  8]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 23
+[2022.01.03-21.15.22:188][  8]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 22
+[2022.01.03-21.15.22:188][  8]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 21
+[2022.01.03-21.15.23:294][  8]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 20
+[2022.01.03-21.15.23:294][  8]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 19
+[2022.01.03-21.15.23:294][  8]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 18
+[2022.01.03-21.15.23:847][  8]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 17
+[2022.01.03-21.15.24:402][  8]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 16
+[2022.01.03-21.15.24:402][  8]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 15
+[2022.01.03-21.15.24:951][  8]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 14
+[2022.01.03-21.15.24:951][  8]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 13
+[2022.01.03-21.15.25:507][  8]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 12
+[2022.01.03-21.15.25:507][  8]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2022.01.03-21.15.25:540][  8]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 4
+[2022.01.03-21.15.25:545][  8]TextureStreamingBuild: Display: Compiling optional shaders took 5.588 seconds.
+[2022.01.03-21.15.25:562][  8]LogUObjectHash: Compacting FUObjectHashTables data took   0.48ms
+[2022.01.03-21.15.27:841][  8]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 2
+[2022.01.03-21.15.28:397][  8]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 1
+[2022.01.03-21.15.29:333][  8]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/Gold/Gold" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Gold.uasset" SILENT=true
+[2022.01.03-21.15.29:351][  8]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/GoldD2FF6EC24E6C260043C786ABC5ABF8AD.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Gold.uasset'
+[2022.01.03-21.15.29:406][  8]AssetCheck: New page: Asset Save: Gold
+[2022.01.03-21.15.29:406][  8]LogContentValidation: Display: Validating Material /Game/Art/Materials/Gold/Gold.Gold
+[2022.01.03-21.15.29:407][  8]MaterialEditorStats: Base pass shader: 120 instructions
+[2022.01.03-21.15.29:407][  8]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2022.01.03-21.15.29:408][  8]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.03-21.15.29:408][  8]MaterialEditorStats: Texture samplers: 4/16
+[2022.01.03-21.15.29:408][  8]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.03-21.15.29:408][  8]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.03-21.15.33:116][168]LogSlate: Window 'Gold' being destroyed
+[2022.01.03-21.15.34:184][230]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-21.15.34:184][230]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-21.15.47:259][826]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/Art/Materials/Grass/Grass.Grass
+[2022.01.03-21.15.47:261][826]LogMaterial: Display: Missing cached shader map for material Grass, compiling. 
+[2022.01.03-21.15.47:368][826]LogMaterial: Display: Missing cached shader map for material Grass, compiling. 
+[2022.01.03-21.15.47:377][826]LogMaterial: Display: Missing cached shader map for material Grass, compiling. 
+[2022.01.03-21.15.47:389][826]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.03-21.15.47:389][826]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.03-21.15.47:389][826]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.03-21.15.52:751][ 51]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 6
+[2022.01.03-21.15.54:301][115]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 5
+[2022.01.03-21.15.55:029][152]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 4
+[2022.01.03-21.15.57:639][281]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 3
+[2022.01.03-21.15.58:164][310]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 2
+[2022.01.03-21.16.00:662][443]LogContentBrowser: Attempting asset rename: fondo-oro-textura_53876-90076 -> Texture_Gold
+[2022.01.03-21.16.00:678][443]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
+[2022.01.03-21.16.00:761][443]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/Gold/Texture_Gold" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Texture_Gold.uasset" SILENT=true
+[2022.01.03-21.16.00:805][443]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Texture_Gold21F59F7041B4DCBFCA45FEBC5A9E3BA4.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Texture_Gold.uasset'
+[2022.01.03-21.16.00:880][443]LogUObjectHash: Compacting FUObjectHashTables data took   1.40ms
+[2022.01.03-21.16.00:913][443]LogUObjectHash: Compacting FUObjectHashTables data took   1.41ms
+[2022.01.03-21.16.00:927][443]LogUObjectHash: Compacting FUObjectHashTables data took   0.44ms
+[2022.01.03-21.16.00:950][443]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/Gold/Gold" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Gold.uasset" SILENT=true
+[2022.01.03-21.16.00:953][443]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/GoldAE66EE0B4B70D4B099B2A59790EF2B08.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Gold.uasset'
+[2022.01.03-21.16.01:013][443]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-21.16.01:013][443]LogContentValidation: Display: Validating Texture2D /Game/Art/Materials/Gold/Texture_Gold.Texture_Gold
+[2022.01.03-21.16.01:013][443]LogContentValidation: Display: Validating Material /Game/Art/Materials/Gold/Gold.Gold
+[2022.01.03-21.16.11:343][908]MaterialEditorStats: Base pass shader: 117 instructions
+[2022.01.03-21.16.11:343][908]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 191 instructions
+[2022.01.03-21.16.11:343][908]MaterialEditorStats: Base pass vertex shader: 42 instructions
+[2022.01.03-21.16.11:343][908]MaterialEditorStats: Texture samplers: 2/16
+[2022.01.03-21.16.15:611][161]LogContentBrowser: Attempting asset rename: Texture_Gold -> Gold_Texture
+[2022.01.03-21.16.15:680][161]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/Gold/Gold_Texture" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Gold_Texture.uasset" SILENT=true
+[2022.01.03-21.16.15:710][161]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Gold_TextureBE59BA934E8EDC1A8A3EA0ABB6F05A65.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Gold_Texture.uasset'
+[2022.01.03-21.16.15:779][161]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2022.01.03-21.16.15:798][161]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2022.01.03-21.16.15:808][161]LogUObjectHash: Compacting FUObjectHashTables data took   0.26ms
+[2022.01.03-21.16.15:856][161]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/Gold/Gold" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Gold.uasset" SILENT=true
+[2022.01.03-21.16.15:860][161]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Gold88F8A48D42432377FE4B519137F20C7A.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Gold.uasset'
+[2022.01.03-21.16.15:902][161]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-21.16.15:903][161]LogContentValidation: Display: Validating Texture2D /Game/Art/Materials/Gold/Gold_Texture.Gold_Texture
+[2022.01.03-21.16.15:903][161]LogContentValidation: Display: Validating Material /Game/Art/Materials/Gold/Gold.Gold
+[2022.01.03-21.16.21:708][482]LogContentBrowser: Attempting asset rename: Gold -> Gold_Material
+[2022.01.03-21.16.21:782][482]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/Gold/Gold_Material" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Gold_Material.uasset" SILENT=true
+[2022.01.03-21.16.21:791][482]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Gold_Material15ACE246404757B631C426A41BC5377B.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Gold/Gold_Material.uasset'
+[2022.01.03-21.16.21:869][482]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2022.01.03-21.16.21:885][482]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2022.01.03-21.16.21:891][482]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2022.01.03-21.16.21:917][482]AssetCheck: New page: Asset Save: Gold_Material
+[2022.01.03-21.16.21:917][482]LogContentValidation: Display: Validating Material /Game/Art/Materials/Gold/Gold_Material.Gold_Material
+[2022.01.03-21.16.30:104][938]LogContentBrowser: Attempting asset rename: Grass -> Grass_Material
+[2022.01.03-21.16.30:188][938]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/Grass/Grass_Material" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Grass/Grass_Material.uasset" SILENT=true
+[2022.01.03-21.16.30:197][938]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Grass_MaterialE33474244028D6BBB0441788B7F3BAB2.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Grass/Grass_Material.uasset'
+[2022.01.03-21.16.30:273][938]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2022.01.03-21.16.30:289][938]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2022.01.03-21.16.30:297][938]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2022.01.03-21.16.30:328][938]AssetCheck: New page: Asset Save: Grass_Material
+[2022.01.03-21.16.30:328][938]LogContentValidation: Display: Validating Material /Game/Art/Materials/Grass/Grass_Material.Grass_Material
+[2022.01.03-21.16.38:692][386]LogContentBrowser: Attempting asset rename: textura-de-cesped-gratis -> Grass_Texture
+[2022.01.03-21.16.38:761][386]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/Grass/Grass_Texture" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Grass/Grass_Texture.uasset" SILENT=true
+[2022.01.03-21.16.38:829][386]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Grass_Texture20EF567C4AB591D6A4E435970FDFF7CD.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Grass/Grass_Texture.uasset'
+[2022.01.03-21.16.38:927][386]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2022.01.03-21.16.38:944][386]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2022.01.03-21.16.38:950][386]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2022.01.03-21.16.38:973][386]AssetCheck: New page: Asset Save: Grass_Texture
+[2022.01.03-21.16.38:973][386]LogContentValidation: Display: Validating Texture2D /Game/Art/Materials/Grass/Grass_Texture.Grass_Texture
+[2022.01.03-21.16.48:961][840]LogMaterial: Display: Missing cached shader map for material Grass, compiling. 
+[2022.01.03-21.16.48:975][840]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.03-21.16.48:975][840]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.03-21.16.48:975][840]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.03-21.16.48:975][840]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.03-21.16.52:667][967]LogMaterial: Display: Missing cached shader map for material Grass, compiling. 
+[2022.01.03-21.16.52:689][967]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.03-21.16.52:708][967]LogMaterial: Display: Missing cached shader map for material Grass, compiling. 
+[2022.01.03-21.16.57:540][140]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 13
+[2022.01.03-21.16.57:670][146]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 12
+[2022.01.03-21.16.59:723][228]LogMaterial: Display: Missing cached shader map for material Grass, compiling. 
+[2022.01.03-21.16.59:749][228]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.03-21.16.59:997][235]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 13
+[2022.01.03-21.17.02:198][316]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 12
+[2022.01.03-21.17.02:614][332]LogMaterialEditor: Saving and Compiling material Grass_Material
+[2022.01.03-21.17.03:784][332]LogMaterial: Display: Missing cached shader map for material Grass, compiling. 
+[2022.01.03-21.17.03:875][332]LogMaterial: Display: Missing cached shader map for material Grass_Material, compiling. 
+[2022.01.03-21.17.03:923][332]LogUObjectHash: Compacting FUObjectHashTables data took   0.44ms
+[2022.01.03-21.17.03:934][332]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.03-21.17.04:495][332]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 27
+[2022.01.03-21.17.04:495][332]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 26
+[2022.01.03-21.17.04:495][332]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 25
+[2022.01.03-21.17.05:049][332]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 24
+[2022.01.03-21.17.05:603][332]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 23
+[2022.01.03-21.17.05:603][332]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 22
+[2022.01.03-21.17.06:159][332]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 21
+[2022.01.03-21.17.06:713][332]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 20
+[2022.01.03-21.17.06:713][332]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 19
+[2022.01.03-21.17.06:713][332]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 18
+[2022.01.03-21.17.07:815][332]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 17
+[2022.01.03-21.17.07:815][332]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 16
+[2022.01.03-21.17.07:815][332]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 15
+[2022.01.03-21.17.08:919][332]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 14
+[2022.01.03-21.17.08:919][332]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.03-21.17.08:919][332]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 12
+[2022.01.03-21.17.09:181][332]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.03-21.17.09:181][332]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 4
+[2022.01.03-21.17.09:185][332]TextureStreamingBuild: Display: Compiling optional shaders took 5.260 seconds.
+[2022.01.03-21.17.09:201][332]LogUObjectHash: Compacting FUObjectHashTables data took   0.38ms
+[2022.01.03-21.17.11:478][332]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 2
+[2022.01.03-21.17.12:031][332]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 1
+[2022.01.03-21.17.13:044][332]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/Grass/Grass_Material" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Grass/Grass_Material.uasset" SILENT=true
+[2022.01.03-21.17.13:056][332]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Grass_Material3AC85F9D4F06D8CB8E481CA68F1FBCC6.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Materials/Grass/Grass_Material.uasset'
+[2022.01.03-21.17.13:111][332]AssetCheck: New page: Asset Save: Grass_Material
+[2022.01.03-21.17.13:111][332]LogContentValidation: Display: Validating Material /Game/Art/Materials/Grass/Grass_Material.Grass_Material
+[2022.01.03-21.17.13:113][332]MaterialEditorStats: Base pass shader: 120 instructions
+[2022.01.03-21.17.13:113][332]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2022.01.03-21.17.13:114][332]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.03-21.17.13:114][332]MaterialEditorStats: Texture samplers: 4/16
+[2022.01.03-21.17.13:114][332]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.03-21.17.13:114][332]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.03-21.17.19:298][598]LogSlate: Window 'Grass_Material' being destroyed
+[2022.01.03-21.17.19:342][598]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-21.17.19:342][598]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-21.24.58:734][900]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Art/Models/Banana/Banana_Model.Banana_Model
+[2022.01.03-21.25.15:443][571]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Models/Banana/Banana_Model" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Model.uasset" SILENT=true
+[2022.01.03-21.25.15:501][571]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Banana_ModelA8F6C94242D967072629688FE2398E5C.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Model.uasset'
+[2022.01.03-21.25.15:518][571]AssetCheck: New page: Asset Save: Banana_Model
+[2022.01.03-21.25.15:518][571]LogContentValidation: Display: Validating StaticMesh /Game/Art/Models/Banana/Banana_Model.Banana_Model
+[2022.01.03-21.25.18:886][717]LogSlate: Window 'Banana_Model' being destroyed
+[2022.01.03-21.25.18:900][717]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-21.25.18:900][717]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-21.55.19:606][813]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.01.03-21.55.19:623][813]LogContentBrowser: Creating deferred item: NewFolder
+[2022.01.03-21.55.22:231][967]LogContentBrowser: Attempting asset rename: NewFolder -> Blueprint
+[2022.01.03-21.55.22:231][967]LogContentBrowser: End creating deferred item NewFolder
+[2022.01.03-21.55.29:353][347]LogContentBrowser: Attempting asset rename: Blueprint -> Blueprints
+[2022.01.03-22.02.50:328][355]LogSlate: Window 'Pick Parent Class' being destroyed
+[2022.01.03-22.02.50:336][355]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2022.01.03-22.02.50:353][355]LogContentBrowser: Creating deferred item: NewBlueprint
+[2022.01.03-22.03.04:641][184]LogContentBrowser: Attempting asset rename: NewBlueprint -> NewBlueprint
+[2022.01.03-22.03.04:760][184]LogContentBrowser: End creating deferred item NewBlueprint
+[2022.01.03-22.03.11:225][532]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_Banana
+[2022.01.03-22.03.11:268][532]LogMetaData: Removing '/Game/Blueprints/BP_Banana.BP_Banana:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.01.03-22.03.11:268][532]LogMetaData: Removing '/Game/Blueprints/BP_Banana.SKEL_BP_Banana_C:UserConstructionScript' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.01.03-22.03.11:268][532]LogMetaData: Removing '/Game/Blueprints/BP_Banana.SKEL_BP_Banana_C' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.01.03-22.03.11:268][532]LogMetaData: Removing '/Game/Blueprints/BP_Banana.BP_Banana_C' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.01.03-22.03.11:268][532]LogMetaData: Removing '/Game/Blueprints/BP_Banana.BP_Banana:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.01.03-22.03.11:268][532]LogMetaData: Removing '/Game/Blueprints/BP_Banana.BP_Banana:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.01.03-22.03.11:268][532]LogMetaData: Removing '/Game/Blueprints/BP_Banana.BP_Banana:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.01.03-22.03.11:315][532]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-22.03.11:422][532]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_BananaDEC538004A1EAEE976275BBC7DDCB46A.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-22.03.11:520][532]LogUObjectHash: Compacting FUObjectHashTables data took   3.67ms
+[2022.01.03-22.03.11:558][532]LogUObjectHash: Compacting FUObjectHashTables data took   1.07ms
+[2022.01.03-22.03.11:569][532]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2022.01.03-22.03.11:603][532]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-22.03.11:603][532]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-22.03.15:205][731]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-22.03.15:852][731]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BlueprintGraph' in 0.0186 seconds. Added 126 classes and 0 folders.
+[2022.01.03-22.43.26:301][465]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-22.43.26:478][465]LogUObjectHash: Compacting FUObjectHashTables data took  11.36ms
+[2022.01.03-22.43.27:579][502]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-22.43.27:597][502]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_BananaDBED4ED045D4DF2E2FF10D9BC2EE8928.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-22.43.27:621][502]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-22.43.27:622][502]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-22.45.24:204][477]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-22.45.24:266][477]LogUObjectHash: Compacting FUObjectHashTables data took   2.45ms
+[2022.01.03-22.45.24:953][501]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-22.45.24:972][501]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_BananaF66D6A05430F38DA37A4E5A118A6474A.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-22.45.24:998][501]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-22.45.24:998][501]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-22.50.07:832][558]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-22.50.07:893][558]LogUObjectHash: Compacting FUObjectHashTables data took   2.43ms
+[2022.01.03-22.50.08:535][578]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-22.50.08:550][578]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana011C456A482150E26510CDA1956981EC.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-22.50.08:570][578]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-22.50.08:570][578]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-22.50.10:917][667]LogSlate: Window 'BP_Banana' being destroyed
+[2022.01.03-22.50.18:030][ 60]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.01.03-22.50.18:714][ 94]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Banana_Model)
+[2022.01.03-22.50.20:755][209]Cmd: DELETE
+[2022.01.03-22.50.20:757][209]Cmd: ACTOR DELETE
+[2022.01.03-22.50.20:819][209]LogEditorActor: Deleted Actor: StaticMeshActor
+[2022.01.03-22.50.20:859][209]LogUObjectHash: Compacting FUObjectHashTables data took   2.41ms
+[2022.01.03-22.50.20:861][209]LogEditorActor: Deleted 1 Actors (0.055 secs)
+[2022.01.03-22.50.36:325][ 86]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-22.50.36:352][ 86]LogUObjectHash: Compacting FUObjectHashTables data took   1.38ms
+[2022.01.03-22.50.36:381][ 86]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level11441267B406586C53CFC0B99B620F812.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1.umap'
+[2022.01.03-22.50.36:398][ 86]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1_BuiltData.uasset" SILENT=true
+[2022.01.03-22.50.36:438][ 86]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level1_BuiltDataE0385DFA492ED8A9E325EBB68E2CA3F1.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1_BuiltData.uasset'
+[2022.01.03-22.50.36:455][ 86]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-22.50.36:455][ 86]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Level1_BuiltData.Level1_BuiltData
+[2022.01.03-22.50.36:455][ 86]LogContentValidation: Display: Validating World /Game/Maps/Level1.Level1
+[2022.01.03-22.50.52:879][ 10]LogContentBrowser: Attempting asset rename: Level1 -> Map_Banana
+[2022.01.03-22.50.52:953][ 10]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset" SILENT=true
+[2022.01.03-22.50.52:986][ 10]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana_BuiltDataD9195841404261A4371FB7A4B44CD784.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset'
+[2022.01.03-22.50.52:988][ 10]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-22.50.53:031][ 10]LogUObjectHash: Compacting FUObjectHashTables data took   2.18ms
+[2022.01.03-22.50.53:044][ 10]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_BananaD6733D894C41821BDB4370B7F0D14356.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap'
+[2022.01.03-22.50.53:050][ 10]LogFileHelpers: Saving map 'Map_Banana' took 0.063
+[2022.01.03-22.50.53:163][ 10]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2022.01.03-22.50.53:187][ 10]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2022.01.03-22.50.53:218][ 10]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2022.01.03-22.50.53:244][ 10]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2022.01.03-22.50.53:286][ 10]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-22.50.53:286][ 10]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Map_Banana_BuiltData.Map_Banana_BuiltData
+[2022.01.03-22.50.53:286][ 10]LogContentValidation: Display: Validating World /Game/Maps/Map_Banana.Map_Banana
+[2022.01.03-22.50.54:914][ 98]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-22.50.54:943][ 98]LogUObjectHash: Compacting FUObjectHashTables data took   0.46ms
+[2022.01.03-22.50.54:954][ 98]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana8A7136C44551E9E12443DCA3D7E2C124.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap'
+[2022.01.03-22.50.54:965][ 98]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset" SILENT=true
+[2022.01.03-22.50.54:995][ 98]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana_BuiltData401260D34CCE6CF77A3DB78BD21D6DCE.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset'
+[2022.01.03-22.50.55:009][ 98]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-22.50.55:009][ 98]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Map_Banana_BuiltData.Map_Banana_BuiltData
+[2022.01.03-22.50.55:009][ 98]LogContentValidation: Display: Validating World /Game/Maps/Map_Banana.Map_Banana
+[2022.01.03-22.51.47:415][  3]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.01.03-22.51.49:096][ 99]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.01.03-22.52.25:406][ 77]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-22.52.25:444][ 77]LogUObjectHash: Compacting FUObjectHashTables data took   2.84ms
+[2022.01.03-22.52.25:458][ 77]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana265043EE4E4F3CA8F0CBA58FA9B32A57.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap'
+[2022.01.03-22.52.25:471][ 77]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset" SILENT=true
+[2022.01.03-22.52.25:516][ 77]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana_BuiltData0D66E53042630247F82C8A87B26DFB23.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset'
+[2022.01.03-22.52.25:533][ 77]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-22.52.25:533][ 77]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Map_Banana_BuiltData.Map_Banana_BuiltData
+[2022.01.03-22.52.25:533][ 77]LogContentValidation: Display: Validating World /Game/Maps/Map_Banana.Map_Banana
+[2022.01.03-23.13.23:295][368]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2022.01.03-23.13.23:307][368]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana_Auto242F635F84DE7E78120A86A8216A10043.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Autosaves/Game/Maps/Map_Banana_Auto2.umap'
+[2022.01.03-23.13.23:309][368]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Map_Banana' took 0.044
+[2022.01.03-23.13.23:309][368]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.044
+[2022.01.03-23.13.23:310][368]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/BP_Banana] ([1] browsable assets)...
+[2022.01.03-23.13.23:324][368]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/BP_Banana.BP_Banana]
+[2022.01.03-23.13.23:324][368]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/BP_Banana]
+[2022.01.03-23.13.23:357][368]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana_Auto23184FC284D99BCB9243102BC6B1D35F6.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Autosaves/Game/Blueprints/BP_Banana_Auto2.uasset'
+[2022.01.03-23.13.23:358][368]LogFileHelpers: Auto-saving content packages took 0.049
+[2022.01.03-23.18.40:604][693]LogSlate: Took 0.010475 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2022.01.03-23.18.50:219][194]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.18.50:293][194]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2022.01.03-23.18.50:746][215]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.18.50:795][215]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana0AEC5B0D417D9394350213A67D58075D.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.18.50:814][215]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.18.50:814][215]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.19.49:388][479]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.19.49:450][479]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2022.01.03-23.19.50:000][506]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.19.50:023][506]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana6EC27BF04B519B3BF6FFC5BED2F13B56.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.19.50:039][506]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.19.50:039][506]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.21.11:534][333]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.03-23.21.11:594][333]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.03-23.21.11:598][333]PIE: New page: PIE session: Map_Banana (3 ene. 2022 17:21:11)
+[2022.01.03-23.21.11:658][333]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2022.01.03-23.21.11:674][333]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2022.01.03-23.21.11:681][333]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.21.11:712][333]LogPlayLevel: PIE: StaticDuplicateObject took: (0.031082s)
+[2022.01.03-23.21.11:734][333]LogAIModule: Creating AISystem for world Map_Banana
+[2022.01.03-23.21.11:749][333]LogPlayLevel: PIE: World Init took: (0.036211s)
+[2022.01.03-23.21.11:749][333]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map_Banana.Map_Banana to /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana (0.068577s)
+[2022.01.03-23.21.11:805][333]LogUObjectHash: Compacting FUObjectHashTables data took   4.58ms
+[2022.01.03-23.21.11:813][333]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2022.01.03-23.21.11:817][333]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.03-23.21.11:817][333]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.03-23.21.11:817][333]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.03-23.21.11:817][333]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.03-23.21.11:817][333]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.03-23.21.11:817][333]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.03-23.21.11:817][333]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.03-23.21.11:819][333]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.03-23.21.11:826][333]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.03-23.21.11:826][333]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.03-23.21.11:850][333]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.03-23.21.11:850][333]LogAudioMixer: Display: 1: FrontRight
+[2022.01.03-23.21.11:973][333]LogAudioMixer: Display: Using Audio Device Altavoces (Conexant SmartAudio HD)
+[2022.01.03-23.21.11:975][333]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.03-23.21.11:975][333]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.03-23.21.11:975][333]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.03-23.21.11:982][333]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.03-23.21.11:982][333]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.03-23.21.11:982][333]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.03-23.21.12:013][333]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.03-23.21.12:013][333]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.03-23.21.12:013][333]LogInit: FAudioDevice initialized.
+[2022.01.03-23.21.12:013][333]LogAudio: Display: Audio Device (ID: 2) registered with world 'Map_Banana'.
+[2022.01.03-23.21.12:122][333]LogLoad: Game class is 'GameModeBase'
+[2022.01.03-23.21.12:155][333]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana up for play (max tick rate 60) at 2022.01.03-20.21.12
+[2022.01.03-23.21.12:158][333]LogWorld: Bringing up level for play took: 0.005670
+[2022.01.03-23.21.12:172][333]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2022.01.03-23.21.12:268][333]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'MovieSceneCapture' in 0.0057 seconds. Added 20 classes and 0 folders.
+[2022.01.03-23.21.12:299][333]PIE: Server logged in
+[2022.01.03-23.21.12:312][333]PIE: Play in editor total start time 0,755 seconds.
+[2022.01.03-23.21.31:859][366]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.21.31:860][366]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.21.31:864][366]LogWorld: UWorld::CleanupWorld for Map_Banana, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-23.21.31:867][366]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.21.31:892][366]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.03-23.21.31:917][366]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.21.31:959][366]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.03-23.21.31:971][366]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.21.31:978][366]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.21.32:026][366]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.21.32:155][366]LogUObjectHash: Compacting FUObjectHashTables data took   3.52ms
+[2022.01.03-23.21.32:208][367]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2022.01.03-23.23.43:933][120]LogUObjectHash: Compacting FUObjectHashTables data took   5.42ms
+[2022.01.03-23.23.43:949][120]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana_Auto39110B4FB4821DBFFEEF90C9DFA846EEE.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Autosaves/Game/Maps/Map_Banana_Auto3.umap'
+[2022.01.03-23.23.43:951][120]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Map_Banana' took 0.106
+[2022.01.03-23.23.43:951][120]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.106
+[2022.01.03-23.23.43:952][120]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/BP_Banana] ([1] browsable assets)...
+[2022.01.03-23.23.43:967][120]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/BP_Banana.BP_Banana]
+[2022.01.03-23.23.43:967][120]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/BP_Banana]
+[2022.01.03-23.23.43:986][120]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana_Auto32B0C370F4D5FA296272C358886C66939.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Autosaves/Game/Blueprints/BP_Banana_Auto3.uasset'
+[2022.01.03-23.23.43:987][120]LogFileHelpers: Auto-saving content packages took 0.036
+[2022.01.03-23.25.17:560][687]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.25.17:642][687]LogUObjectHash: Compacting FUObjectHashTables data took   3.24ms
+[2022.01.03-23.25.18:225][715]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.25.18:242][715]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_BananaDE6C631E401C31FC861C95AA8077E0AD.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.25.18:264][715]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.25.18:265][715]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.25.20:448][835]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.03-23.25.20:461][835]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.03-23.25.20:461][835]PIE: New page: PIE session: Map_Banana (3 ene. 2022 17:25:20)
+[2022.01.03-23.25.20:461][835]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.25.20:466][835]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004492s)
+[2022.01.03-23.25.20:470][835]LogAIModule: Creating AISystem for world Map_Banana
+[2022.01.03-23.25.20:471][835]LogPlayLevel: PIE: World Init took: (0.004638s)
+[2022.01.03-23.25.20:471][835]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map_Banana.Map_Banana to /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana (0.009823s)
+[2022.01.03-23.25.20:514][835]LogUObjectHash: Compacting FUObjectHashTables data took   4.43ms
+[2022.01.03-23.25.20:516][835]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2022.01.03-23.25.20:516][835]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.03-23.25.20:516][835]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.03-23.25.20:516][835]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.03-23.25.20:516][835]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.03-23.25.20:516][835]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.03-23.25.20:516][835]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.03-23.25.20:516][835]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.03-23.25.20:516][835]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.03-23.25.20:517][835]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.03-23.25.20:517][835]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.03-23.25.20:519][835]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.03-23.25.20:519][835]LogAudioMixer: Display: 1: FrontRight
+[2022.01.03-23.25.20:613][835]LogAudioMixer: Display: Using Audio Device Altavoces (Conexant SmartAudio HD)
+[2022.01.03-23.25.20:614][835]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.03-23.25.20:614][835]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.03-23.25.20:614][835]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.03-23.25.20:615][835]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.03-23.25.20:615][835]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.03-23.25.20:615][835]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.03-23.25.20:647][835]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.03-23.25.20:647][835]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.03-23.25.20:647][835]LogInit: FAudioDevice initialized.
+[2022.01.03-23.25.20:647][835]LogAudio: Display: Audio Device (ID: 3) registered with world 'Map_Banana'.
+[2022.01.03-23.25.20:669][835]LogLoad: Game class is 'GameModeBase'
+[2022.01.03-23.25.20:670][835]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana up for play (max tick rate 60) at 2022.01.03-20.25.20
+[2022.01.03-23.25.20:670][835]LogWorld: Bringing up level for play took: 0.000779
+[2022.01.03-23.25.20:671][835]LogOnline: OSS: Creating online subsystem instance for: :Context_12
+[2022.01.03-23.25.20:673][835]PIE: Server logged in
+[2022.01.03-23.25.20:674][835]PIE: Play in editor total start time 0,217 seconds.
+[2022.01.03-23.25.56:938][661]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.25.56:938][661]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.25.56:938][661]LogWorld: UWorld::CleanupWorld for Map_Banana, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-23.25.56:938][661]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.25.56:949][661]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.03-23.25.56:962][661]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.25.56:991][661]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.03-23.25.56:991][661]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.25.56:992][661]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.25.57:013][661]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.25.57:026][661]LogUObjectHash: Compacting FUObjectHashTables data took   2.56ms
+[2022.01.03-23.25.57:053][662]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2022.01.03-23.26.03:190][ 19]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-23.26.03:228][ 19]LogUObjectHash: Compacting FUObjectHashTables data took   3.77ms
+[2022.01.03-23.26.03:239][ 19]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_BananaAF7322744E992C126F105DB8A2C9F619.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap'
+[2022.01.03-23.26.03:250][ 19]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset" SILENT=true
+[2022.01.03-23.26.03:286][ 19]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana_BuiltDataEA43AFEE4B567BCE5229B096634D4118.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset'
+[2022.01.03-23.26.03:307][ 19]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-23.26.03:307][ 19]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Map_Banana_BuiltData.Map_Banana_BuiltData
+[2022.01.03-23.26.03:307][ 19]LogContentValidation: Display: Validating World /Game/Maps/Map_Banana.Map_Banana
+[2022.01.03-23.26.07:765][149]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.03-23.26.07:775][149]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.03-23.26.07:775][149]PIE: New page: PIE session: Map_Banana (3 ene. 2022 17:26:07)
+[2022.01.03-23.26.07:776][149]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.26.07:780][149]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003761s)
+[2022.01.03-23.26.07:781][149]LogAIModule: Creating AISystem for world Map_Banana
+[2022.01.03-23.26.07:782][149]LogPlayLevel: PIE: World Init took: (0.001718s)
+[2022.01.03-23.26.07:782][149]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map_Banana.Map_Banana to /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana (0.006013s)
+[2022.01.03-23.26.07:819][149]LogUObjectHash: Compacting FUObjectHashTables data took   3.14ms
+[2022.01.03-23.26.07:820][149]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2022.01.03-23.26.07:821][149]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.03-23.26.07:821][149]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.03-23.26.07:821][149]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.03-23.26.07:821][149]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.03-23.26.07:821][149]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.03-23.26.07:821][149]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.03-23.26.07:821][149]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.03-23.26.07:821][149]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.03-23.26.07:821][149]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.03-23.26.07:821][149]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.03-23.26.07:823][149]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.03-23.26.07:823][149]LogAudioMixer: Display: 1: FrontRight
+[2022.01.03-23.26.07:903][149]LogAudioMixer: Display: Using Audio Device Altavoces (Conexant SmartAudio HD)
+[2022.01.03-23.26.07:904][149]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.03-23.26.07:904][149]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.03-23.26.07:905][149]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.03-23.26.07:905][149]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.03-23.26.07:905][149]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.03-23.26.07:905][149]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.03-23.26.07:933][149]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.03-23.26.07:933][149]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.03-23.26.07:933][149]LogInit: FAudioDevice initialized.
+[2022.01.03-23.26.07:933][149]LogAudio: Display: Audio Device (ID: 4) registered with world 'Map_Banana'.
+[2022.01.03-23.26.07:946][149]LogLoad: Game class is 'GameModeBase'
+[2022.01.03-23.26.07:947][149]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana up for play (max tick rate 60) at 2022.01.03-20.26.07
+[2022.01.03-23.26.07:947][149]LogWorld: Bringing up level for play took: 0.001273
+[2022.01.03-23.26.07:947][149]LogOnline: OSS: Creating online subsystem instance for: :Context_13
+[2022.01.03-23.26.07:950][149]PIE: Server logged in
+[2022.01.03-23.26.07:951][149]PIE: Play in editor total start time 0,18 seconds.
+[2022.01.03-23.27.26:950][281]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.27.26:950][281]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.27.26:950][281]LogWorld: UWorld::CleanupWorld for Map_Banana, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-23.27.26:951][281]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.27.26:968][281]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.03-23.27.26:982][281]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.27.27:015][281]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.03-23.27.27:015][281]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.27.27:016][281]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.27.27:039][281]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.27.27:043][281]LogUObjectHash: Compacting FUObjectHashTables data took   3.10ms
+[2022.01.03-23.27.27:067][282]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2022.01.03-23.27.53:949][505]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.27.54:052][505]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2022.01.03-23.27.54:629][528]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.27.54:658][528]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana35637B5E44D2A62EF829DCA1ED7C483E.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.27.54:684][528]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.27.54:684][528]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.27.56:742][617]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.03-23.27.56:770][617]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.03-23.27.56:770][617]PIE: New page: PIE session: Map_Banana (3 ene. 2022 17:27:56)
+[2022.01.03-23.27.56:771][617]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.27.56:781][617]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010758s)
+[2022.01.03-23.27.56:789][617]LogAIModule: Creating AISystem for world Map_Banana
+[2022.01.03-23.27.56:790][617]LogPlayLevel: PIE: World Init took: (0.007555s)
+[2022.01.03-23.27.56:790][617]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map_Banana.Map_Banana to /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana (0.018765s)
+[2022.01.03-23.27.56:828][617]LogUObjectHash: Compacting FUObjectHashTables data took   3.74ms
+[2022.01.03-23.27.56:829][617]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2022.01.03-23.27.56:829][617]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.03-23.27.56:829][617]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.03-23.27.56:829][617]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.03-23.27.56:829][617]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.03-23.27.56:829][617]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.03-23.27.56:829][617]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.03-23.27.56:829][617]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.03-23.27.56:829][617]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.03-23.27.56:829][617]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.03-23.27.56:829][617]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.03-23.27.56:831][617]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.03-23.27.56:831][617]LogAudioMixer: Display: 1: FrontRight
+[2022.01.03-23.27.56:940][617]LogAudioMixer: Display: Using Audio Device Altavoces (Conexant SmartAudio HD)
+[2022.01.03-23.27.56:941][617]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.03-23.27.56:941][617]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.03-23.27.56:941][617]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.03-23.27.56:942][617]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.03-23.27.56:942][617]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.03-23.27.56:942][617]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.03-23.27.56:966][617]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.03-23.27.56:966][617]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.03-23.27.56:966][617]LogInit: FAudioDevice initialized.
+[2022.01.03-23.27.56:966][617]LogAudio: Display: Audio Device (ID: 5) registered with world 'Map_Banana'.
+[2022.01.03-23.27.56:974][617]LogLoad: Game class is 'GameModeBase'
+[2022.01.03-23.27.56:975][617]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana up for play (max tick rate 60) at 2022.01.03-20.27.56
+[2022.01.03-23.27.56:975][617]LogWorld: Bringing up level for play took: 0.000751
+[2022.01.03-23.27.56:978][617]LogOnline: OSS: Creating online subsystem instance for: :Context_14
+[2022.01.03-23.27.56:980][617]PIE: Server logged in
+[2022.01.03-23.27.56:981][617]PIE: Play in editor total start time 0,222 seconds.
+[2022.01.03-23.28.01:414][801]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.28.01:414][801]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.28.01:415][801]LogWorld: UWorld::CleanupWorld for Map_Banana, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-23.28.01:415][801]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.28.01:429][801]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.03-23.28.01:440][801]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.28.01:473][801]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.03-23.28.01:473][801]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.28.01:474][801]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.28.01:501][801]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.28.01:504][801]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2022.01.03-23.28.01:539][802]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2022.01.03-23.28.57:030][504]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.28.57:140][504]LogUObjectHash: Compacting FUObjectHashTables data took   3.43ms
+[2022.01.03-23.28.57:612][525]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.28.57:629][525]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana825FCD1B4290EA5A827BCCA689EE36F3.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.28.57:652][525]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.28.57:652][525]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.29.12:738][283]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.29.13:276][293]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.29.13:820][314]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.29.14:353][338]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.29.15:003][367]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.29.15:496][391]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.29.15:993][415]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.29.16:565][443]LogEditorTransaction: Undo Create Pin Link
+[2022.01.03-23.29.17:104][467]LogEditorTransaction: Undo Delete current selection
+[2022.01.03-23.30.01:483][628]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.30.01:592][628]LogUObjectHash: Compacting FUObjectHashTables data took   4.21ms
+[2022.01.03-23.30.04:534][748]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-23.30.04:578][748]LogUObjectHash: Compacting FUObjectHashTables data took   3.96ms
+[2022.01.03-23.30.04:590][748]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_BananaFBEA5CFB4F6AD53BCFDDC9A587499579.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap'
+[2022.01.03-23.30.04:601][748]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset" SILENT=true
+[2022.01.03-23.30.04:636][748]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana_BuiltDataCF3CA2364058FBEE14D0C19FA6A76213.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset'
+[2022.01.03-23.30.04:655][748]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-23.30.04:655][748]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Map_Banana_BuiltData.Map_Banana_BuiltData
+[2022.01.03-23.30.04:655][748]LogContentValidation: Display: Validating World /Game/Maps/Map_Banana.Map_Banana
+[2022.01.03-23.30.06:628][830]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.30.06:655][830]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana1D5DECCF4A5192B1702F3295CD35DC06.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.30.06:681][830]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.30.06:681][830]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.30.08:717][915]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.03-23.30.08:733][915]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.03-23.30.08:733][915]PIE: New page: PIE session: Map_Banana (3 ene. 2022 17:30:08)
+[2022.01.03-23.30.08:733][915]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.30.08:736][915]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002789s)
+[2022.01.03-23.30.08:738][915]LogAIModule: Creating AISystem for world Map_Banana
+[2022.01.03-23.30.08:739][915]LogPlayLevel: PIE: World Init took: (0.002712s)
+[2022.01.03-23.30.08:739][915]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map_Banana.Map_Banana to /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana (0.005746s)
+[2022.01.03-23.30.08:816][915]LogUObjectHash: Compacting FUObjectHashTables data took   4.02ms
+[2022.01.03-23.30.08:817][915]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2022.01.03-23.30.08:818][915]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.03-23.30.08:818][915]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.03-23.30.08:818][915]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.03-23.30.08:818][915]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.03-23.30.08:818][915]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.03-23.30.08:818][915]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.03-23.30.08:818][915]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.03-23.30.08:818][915]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.03-23.30.08:818][915]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.03-23.30.08:819][915]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.03-23.30.08:821][915]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.03-23.30.08:821][915]LogAudioMixer: Display: 1: FrontRight
+[2022.01.03-23.30.08:927][915]LogAudioMixer: Display: Using Audio Device Altavoces (Conexant SmartAudio HD)
+[2022.01.03-23.30.08:927][915]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.03-23.30.08:927][915]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.03-23.30.08:927][915]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.03-23.30.08:928][915]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.03-23.30.08:928][915]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.03-23.30.08:928][915]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.03-23.30.08:962][915]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.03-23.30.08:962][915]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.03-23.30.08:962][915]LogInit: FAudioDevice initialized.
+[2022.01.03-23.30.08:962][915]LogAudio: Display: Audio Device (ID: 6) registered with world 'Map_Banana'.
+[2022.01.03-23.30.08:969][915]LogLoad: Game class is 'GameModeBase'
+[2022.01.03-23.30.08:970][915]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana up for play (max tick rate 60) at 2022.01.03-20.30.08
+[2022.01.03-23.30.08:970][915]LogWorld: Bringing up level for play took: 0.000571
+[2022.01.03-23.30.08:970][915]LogOnline: OSS: Creating online subsystem instance for: :Context_15
+[2022.01.03-23.30.08:972][915]PIE: Server logged in
+[2022.01.03-23.30.08:973][915]PIE: Play in editor total start time 0,242 seconds.
+[2022.01.03-23.30.40:428][ 68]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.30.40:428][ 68]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.30.40:428][ 68]LogWorld: UWorld::CleanupWorld for Map_Banana, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-23.30.40:429][ 68]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.30.40:448][ 68]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.03-23.30.40:463][ 68]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.30.40:498][ 68]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.03-23.30.40:498][ 68]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.30.40:499][ 68]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.30.40:526][ 68]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.30.40:531][ 68]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2022.01.03-23.30.40:575][ 69]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2022.01.03-23.30.53:322][682]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.30.53:434][682]LogUObjectHash: Compacting FUObjectHashTables data took   3.37ms
+[2022.01.03-23.30.53:783][695]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.30.53:798][695]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_BananaA9D9B7E14B50566F4A88BDBC5750059A.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.30.53:823][695]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.30.53:823][695]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.30.56:755][814]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-23.30.56:798][814]LogUObjectHash: Compacting FUObjectHashTables data took   4.27ms
+[2022.01.03-23.30.56:809][814]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana1A605A324BF226D8B2CB3EACA2C4D969.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap'
+[2022.01.03-23.30.56:820][814]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset" SILENT=true
+[2022.01.03-23.30.56:853][814]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana_BuiltDataDEDC8148417653DB96D48587E4CEC496.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset'
+[2022.01.03-23.30.56:870][814]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-23.30.56:870][814]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Map_Banana_BuiltData.Map_Banana_BuiltData
+[2022.01.03-23.30.56:870][814]LogContentValidation: Display: Validating World /Game/Maps/Map_Banana.Map_Banana
+[2022.01.03-23.31.44:938][831]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.03-23.31.44:963][831]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.03-23.31.44:964][831]PIE: New page: PIE session: Map_Banana (3 ene. 2022 17:31:44)
+[2022.01.03-23.31.44:964][831]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.31.44:969][831]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005384s)
+[2022.01.03-23.31.44:971][831]LogAIModule: Creating AISystem for world Map_Banana
+[2022.01.03-23.31.44:972][831]LogPlayLevel: PIE: World Init took: (0.002350s)
+[2022.01.03-23.31.44:972][831]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map_Banana.Map_Banana to /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana (0.008052s)
+[2022.01.03-23.31.45:033][831]LogUObjectHash: Compacting FUObjectHashTables data took   4.12ms
+[2022.01.03-23.31.45:036][831]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2022.01.03-23.31.45:036][831]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.03-23.31.45:036][831]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.03-23.31.45:036][831]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.03-23.31.45:036][831]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.03-23.31.45:036][831]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.03-23.31.45:036][831]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.03-23.31.45:036][831]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.03-23.31.45:036][831]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.03-23.31.45:037][831]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.03-23.31.45:037][831]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.03-23.31.45:039][831]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.03-23.31.45:039][831]LogAudioMixer: Display: 1: FrontRight
+[2022.01.03-23.31.45:144][831]LogAudioMixer: Display: Using Audio Device Altavoces (Conexant SmartAudio HD)
+[2022.01.03-23.31.45:145][831]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.03-23.31.45:145][831]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.03-23.31.45:145][831]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.03-23.31.45:146][831]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.03-23.31.45:146][831]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.03-23.31.45:146][831]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.03-23.31.45:173][831]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.03-23.31.45:173][831]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.03-23.31.45:173][831]LogInit: FAudioDevice initialized.
+[2022.01.03-23.31.45:173][831]LogAudio: Display: Audio Device (ID: 7) registered with world 'Map_Banana'.
+[2022.01.03-23.31.45:187][831]LogLoad: Game class is 'GameModeBase'
+[2022.01.03-23.31.45:188][831]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana up for play (max tick rate 60) at 2022.01.03-20.31.45
+[2022.01.03-23.31.45:188][831]LogWorld: Bringing up level for play took: 0.001007
+[2022.01.03-23.31.45:188][831]LogOnline: OSS: Creating online subsystem instance for: :Context_16
+[2022.01.03-23.31.45:193][831]PIE: Server logged in
+[2022.01.03-23.31.45:194][831]PIE: Play in editor total start time 0,241 seconds.
+[2022.01.03-23.32.10:373][860]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.32.10:373][860]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.32.10:373][860]LogWorld: UWorld::CleanupWorld for Map_Banana, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-23.32.10:373][860]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.32.10:385][860]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.03-23.32.10:395][860]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.32.10:429][860]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.32.10:430][860]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.32.10:431][860]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.32.10:457][860]LogUObjectHash: Compacting FUObjectHashTables data took   3.09ms
+[2022.01.03-23.32.10:480][861]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2022.01.03-23.32.50:550][731]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.32.50:651][731]LogUObjectHash: Compacting FUObjectHashTables data took   3.43ms
+[2022.01.03-23.32.51:323][757]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.32.51:339][757]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_BananaEDEA5D70442F1F1ED71CB793B61E9026.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.32.51:360][757]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.32.51:360][757]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.32.53:458][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-23.32.53:535][843]LogUObjectHash: Compacting FUObjectHashTables data took   6.33ms
+[2022.01.03-23.32.53:557][843]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_BananaCC679C1D4A07F8EC416767999720DC9B.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana.umap'
+[2022.01.03-23.32.53:570][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map_Banana_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset" SILENT=true
+[2022.01.03-23.32.53:622][843]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Map_Banana_BuiltData7D303682418E268B1BB819A93049C24F.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Map_Banana_BuiltData.uasset'
+[2022.01.03-23.32.53:651][843]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-23.32.53:651][843]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Map_Banana_BuiltData.Map_Banana_BuiltData
+[2022.01.03-23.32.53:651][843]LogContentValidation: Display: Validating World /Game/Maps/Map_Banana.Map_Banana
+[2022.01.03-23.32.55:123][901]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.03-23.32.55:147][901]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.03-23.32.55:148][901]PIE: New page: PIE session: Map_Banana (3 ene. 2022 17:32:55)
+[2022.01.03-23.32.55:148][901]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.32.55:153][901]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004970s)
+[2022.01.03-23.32.55:155][901]LogAIModule: Creating AISystem for world Map_Banana
+[2022.01.03-23.32.55:155][901]LogPlayLevel: PIE: World Init took: (0.002400s)
+[2022.01.03-23.32.55:155][901]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map_Banana.Map_Banana to /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana (0.007650s)
+[2022.01.03-23.32.55:241][901]LogUObjectHash: Compacting FUObjectHashTables data took   5.50ms
+[2022.01.03-23.32.55:242][901]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2022.01.03-23.32.55:242][901]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.03-23.32.55:242][901]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.03-23.32.55:242][901]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.03-23.32.55:242][901]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.03-23.32.55:242][901]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.03-23.32.55:242][901]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.03-23.32.55:242][901]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.03-23.32.55:242][901]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.03-23.32.55:243][901]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.03-23.32.55:243][901]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.03-23.32.55:248][901]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.03-23.32.55:248][901]LogAudioMixer: Display: 1: FrontRight
+[2022.01.03-23.32.55:402][901]LogAudioMixer: Display: Using Audio Device Altavoces (Conexant SmartAudio HD)
+[2022.01.03-23.32.55:403][901]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.03-23.32.55:403][901]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.03-23.32.55:404][901]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.03-23.32.55:404][901]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.03-23.32.55:404][901]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.03-23.32.55:404][901]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.03-23.32.55:432][901]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.03-23.32.55:432][901]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.03-23.32.55:432][901]LogInit: FAudioDevice initialized.
+[2022.01.03-23.32.55:432][901]LogAudio: Display: Audio Device (ID: 8) registered with world 'Map_Banana'.
+[2022.01.03-23.32.55:447][901]LogLoad: Game class is 'GameModeBase'
+[2022.01.03-23.32.55:448][901]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana up for play (max tick rate 60) at 2022.01.03-20.32.55
+[2022.01.03-23.32.55:448][901]LogWorld: Bringing up level for play took: 0.000889
+[2022.01.03-23.32.55:448][901]LogOnline: OSS: Creating online subsystem instance for: :Context_17
+[2022.01.03-23.32.55:452][901]PIE: Server logged in
+[2022.01.03-23.32.55:453][901]PIE: Play in editor total start time 0,311 seconds.
+[2022.01.03-23.33.10:414][427]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.33.10:414][427]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.33.10:414][427]LogWorld: UWorld::CleanupWorld for Map_Banana, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-23.33.10:414][427]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.33.10:431][427]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.03-23.33.10:446][427]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.33.10:493][427]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.03-23.33.10:493][427]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.33.10:495][427]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.33.10:537][427]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.33.10:542][427]LogUObjectHash: Compacting FUObjectHashTables data took   4.45ms
+[2022.01.03-23.33.10:590][428]LogPlayLevel: Display: Destroying online subsystem :Context_17
+[2022.01.03-23.33.59:042][826]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.33.59:148][826]LogUObjectHash: Compacting FUObjectHashTables data took   5.55ms
+[2022.01.03-23.33.59:722][848]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.33.59:740][848]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana4AAB9EFE49138041A7648CB762DF612B.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.33.59:762][848]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.33.59:762][848]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.34.01:152][908]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.03-23.34.01:168][908]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.03-23.34.01:168][908]PIE: New page: PIE session: Map_Banana (3 ene. 2022 17:34:01)
+[2022.01.03-23.34.01:169][908]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.34.01:181][908]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011319s)
+[2022.01.03-23.34.01:188][908]LogAIModule: Creating AISystem for world Map_Banana
+[2022.01.03-23.34.01:190][908]LogPlayLevel: PIE: World Init took: (0.008247s)
+[2022.01.03-23.34.01:190][908]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map_Banana.Map_Banana to /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana (0.020789s)
+[2022.01.03-23.34.01:231][908]LogUObjectHash: Compacting FUObjectHashTables data took   3.65ms
+[2022.01.03-23.34.01:232][908]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2022.01.03-23.34.01:232][908]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.03-23.34.01:232][908]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.03-23.34.01:232][908]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.03-23.34.01:232][908]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.03-23.34.01:232][908]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.03-23.34.01:232][908]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.03-23.34.01:232][908]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.03-23.34.01:232][908]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.03-23.34.01:233][908]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.03-23.34.01:233][908]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.03-23.34.01:235][908]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.03-23.34.01:235][908]LogAudioMixer: Display: 1: FrontRight
+[2022.01.03-23.34.01:327][908]LogAudioMixer: Display: Using Audio Device Altavoces (Conexant SmartAudio HD)
+[2022.01.03-23.34.01:327][908]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.03-23.34.01:327][908]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.03-23.34.01:328][908]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.03-23.34.01:328][908]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.03-23.34.01:328][908]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.03-23.34.01:328][908]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.03-23.34.01:353][908]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.03-23.34.01:353][908]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.03-23.34.01:353][908]LogInit: FAudioDevice initialized.
+[2022.01.03-23.34.01:353][908]LogAudio: Display: Audio Device (ID: 9) registered with world 'Map_Banana'.
+[2022.01.03-23.34.01:361][908]LogLoad: Game class is 'GameModeBase'
+[2022.01.03-23.34.01:362][908]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana up for play (max tick rate 60) at 2022.01.03-20.34.01
+[2022.01.03-23.34.01:362][908]LogWorld: Bringing up level for play took: 0.000579
+[2022.01.03-23.34.01:362][908]LogOnline: OSS: Creating online subsystem instance for: :Context_18
+[2022.01.03-23.34.01:364][908]PIE: Server logged in
+[2022.01.03-23.34.01:365][908]PIE: Play in editor total start time 0,205 seconds.
+[2022.01.03-23.34.17:649][540]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.34.17:649][540]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.34.17:650][540]LogWorld: UWorld::CleanupWorld for Map_Banana, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-23.34.17:650][540]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.34.17:668][540]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.03-23.34.17:689][540]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.34.17:740][540]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.03-23.34.17:740][540]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.34.17:741][540]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.34.17:769][540]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.34.17:773][540]LogUObjectHash: Compacting FUObjectHashTables data took   2.88ms
+[2022.01.03-23.34.17:809][541]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2022.01.03-23.35.11:940][ 28]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.35.12:058][ 28]LogUObjectHash: Compacting FUObjectHashTables data took   5.39ms
+[2022.01.03-23.35.12:438][ 42]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.35.12:461][ 42]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_BananaA949B2DA47F957B22FCD0DAD77B47540.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.35.12:485][ 42]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.35.12:485][ 42]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.35.37:380][207]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.03-23.35.37:403][207]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.03-23.35.37:403][207]PIE: New page: PIE session: Map_Banana (3 ene. 2022 17:35:37)
+[2022.01.03-23.35.37:403][207]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.35.37:406][207]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002764s)
+[2022.01.03-23.35.37:410][207]LogAIModule: Creating AISystem for world Map_Banana
+[2022.01.03-23.35.37:411][207]LogPlayLevel: PIE: World Init took: (0.004028s)
+[2022.01.03-23.35.37:411][207]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map_Banana.Map_Banana to /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana (0.007196s)
+[2022.01.03-23.35.37:456][207]LogUObjectHash: Compacting FUObjectHashTables data took   3.60ms
+[2022.01.03-23.35.37:459][207]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2022.01.03-23.35.37:460][207]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.03-23.35.37:460][207]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.03-23.35.37:460][207]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.03-23.35.37:460][207]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.03-23.35.37:460][207]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.03-23.35.37:460][207]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.03-23.35.37:460][207]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.03-23.35.37:460][207]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.03-23.35.37:460][207]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.03-23.35.37:460][207]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.03-23.35.37:462][207]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.03-23.35.37:462][207]LogAudioMixer: Display: 1: FrontRight
+[2022.01.03-23.35.37:554][207]LogAudioMixer: Display: Using Audio Device Altavoces (Conexant SmartAudio HD)
+[2022.01.03-23.35.37:555][207]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.03-23.35.37:555][207]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.03-23.35.37:555][207]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.03-23.35.37:556][207]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.03-23.35.37:556][207]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.03-23.35.37:556][207]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.03-23.35.37:583][207]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.03-23.35.37:583][207]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.03-23.35.37:583][207]LogInit: FAudioDevice initialized.
+[2022.01.03-23.35.37:583][207]LogAudio: Display: Audio Device (ID: 10) registered with world 'Map_Banana'.
+[2022.01.03-23.35.37:595][207]LogLoad: Game class is 'GameModeBase'
+[2022.01.03-23.35.37:596][207]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana up for play (max tick rate 60) at 2022.01.03-20.35.37
+[2022.01.03-23.35.37:597][207]LogWorld: Bringing up level for play took: 0.000861
+[2022.01.03-23.35.37:597][207]LogOnline: OSS: Creating online subsystem instance for: :Context_19
+[2022.01.03-23.35.37:599][207]PIE: Server logged in
+[2022.01.03-23.35.37:600][207]PIE: Play in editor total start time 0,204 seconds.
+[2022.01.03-23.35.44:028][456]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.35.44:028][456]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.35.44:028][456]LogWorld: UWorld::CleanupWorld for Map_Banana, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-23.35.44:028][456]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.35.44:041][456]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.03-23.35.44:058][456]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.35.44:095][456]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.03-23.35.44:096][456]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.35.44:097][456]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.35.44:121][456]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.35.44:125][456]LogUObjectHash: Compacting FUObjectHashTables data took   2.99ms
+[2022.01.03-23.35.44:184][457]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2022.01.03-23.36.16:272][  2]LogEditorTransaction: Undo Add Node
+[2022.01.03-23.36.17:818][ 60]LogEditorTransaction: Undo Create Pin Link
+[2022.01.03-23.37.05:489][301]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.37.05:804][305]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.37.05:960][307]LogEditorTransaction: Undo Add Node
+[2022.01.03-23.37.06:165][316]LogEditorTransaction: Undo Delete current selection
+[2022.01.03-23.37.06:327][319]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.37.06:501][325]LogEditorTransaction: Undo Create Pin Link
+[2022.01.03-23.37.06:679][330]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.37.07:482][366]LogEditorTransaction: Undo Create Pin Link
+[2022.01.03-23.37.07:638][371]LogEditorTransaction: Undo Create Pin Link
+[2022.01.03-23.37.07:841][379]LogEditorTransaction: Undo Add Node
+[2022.01.03-23.37.08:044][386]LogEditorTransaction: Undo Delete current selection
+[2022.01.03-23.37.08:375][398]LogEditorTransaction: Undo Add Node
+[2022.01.03-23.37.08:628][407]LogEditorTransaction: Undo Delete current selection
+[2022.01.03-23.37.08:891][414]LogEditorTransaction: Undo Change Number Pin Value
+[2022.01.03-23.37.09:104][418]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.37.09:328][424]LogEditorTransaction: Undo Delete current selection
+[2022.01.03-23.37.09:541][431]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.37.09:755][438]LogEditorTransaction: Undo Move Node
+[2022.01.03-23.37.40:776][768]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.37.41:000][768]LogUObjectHash: Compacting FUObjectHashTables data took   4.87ms
+[2022.01.03-23.37.41:438][784]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.37.41:815][784]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana5518643F458206FFD903F28EF73AE39D.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.37.41:881][784]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.37.41:881][784]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.37.46:564][994]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.37.46:713][994]LogUObjectHash: Compacting FUObjectHashTables data took   7.76ms
+[2022.01.03-23.37.47:227][ 12]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.37.47:258][ 12]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana496BBC5041A77EB0713CADA2366E971E.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.37.47:284][ 12]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.37.47:284][ 12]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.37.48:955][ 74]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.03-23.37.48:984][ 74]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.03-23.37.48:984][ 74]PIE: New page: PIE session: Map_Banana (3 ene. 2022 17:37:48)
+[2022.01.03-23.37.49:016][ 74]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.37.49:019][ 74]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002439s)
+[2022.01.03-23.37.49:021][ 74]LogAIModule: Creating AISystem for world Map_Banana
+[2022.01.03-23.37.49:022][ 74]LogPlayLevel: PIE: World Init took: (0.002435s)
+[2022.01.03-23.37.49:022][ 74]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map_Banana.Map_Banana to /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana (0.005244s)
+[2022.01.03-23.37.49:065][ 74]LogUObjectHash: Compacting FUObjectHashTables data took   4.64ms
+[2022.01.03-23.37.49:066][ 74]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2022.01.03-23.37.49:066][ 74]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.03-23.37.49:066][ 74]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.03-23.37.49:066][ 74]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.03-23.37.49:066][ 74]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.03-23.37.49:066][ 74]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.03-23.37.49:066][ 74]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.03-23.37.49:066][ 74]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.03-23.37.49:066][ 74]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.03-23.37.49:067][ 74]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.03-23.37.49:067][ 74]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.03-23.37.49:071][ 74]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.03-23.37.49:071][ 74]LogAudioMixer: Display: 1: FrontRight
+[2022.01.03-23.37.49:192][ 74]LogAudioMixer: Display: Using Audio Device Altavoces (Conexant SmartAudio HD)
+[2022.01.03-23.37.49:193][ 74]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.03-23.37.49:193][ 74]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.03-23.37.49:193][ 74]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.03-23.37.49:193][ 74]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.03-23.37.49:194][ 74]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.03-23.37.49:194][ 74]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.03-23.37.49:222][ 74]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.03-23.37.49:223][ 74]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.03-23.37.49:223][ 74]LogInit: FAudioDevice initialized.
+[2022.01.03-23.37.49:223][ 74]LogAudio: Display: Audio Device (ID: 11) registered with world 'Map_Banana'.
+[2022.01.03-23.37.49:238][ 74]LogLoad: Game class is 'GameModeBase'
+[2022.01.03-23.37.49:239][ 74]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana up for play (max tick rate 60) at 2022.01.03-20.37.49
+[2022.01.03-23.37.49:239][ 74]LogWorld: Bringing up level for play took: 0.000813
+[2022.01.03-23.37.49:240][ 74]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2022.01.03-23.37.49:242][ 74]PIE: Server logged in
+[2022.01.03-23.37.49:245][ 74]PIE: Play in editor total start time 0,273 seconds.
+[2022.01.03-23.37.56:953][306]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.37.56:954][306]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.37.56:955][306]LogWorld: UWorld::CleanupWorld for Map_Banana, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-23.37.56:956][306]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.37.56:981][306]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.03-23.37.56:999][306]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.37.57:053][306]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.03-23.37.57:053][306]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.37.57:054][306]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.37.57:085][306]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.37.57:090][306]LogUObjectHash: Compacting FUObjectHashTables data took   3.66ms
+[2022.01.03-23.37.57:135][307]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2022.01.03-23.38.17:879][192]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.38.18:019][192]LogUObjectHash: Compacting FUObjectHashTables data took   3.90ms
+[2022.01.03-23.38.18:625][213]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.38.18:655][213]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana464E004E488A1ED794B264B5B83B636F.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.38.18:682][213]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.38.18:682][213]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.38.43:296][238]BlueprintLog: New page: Compile BP_Banana
+[2022.01.03-23.38.43:403][238]LogUObjectHash: Compacting FUObjectHashTables data took   3.64ms
+[2022.01.03-23.38.43:980][258]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.38.44:022][258]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana8F9B05224167EBDBC87962915F871030.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.38.44:068][258]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.38.44:068][258]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
+[2022.01.03-23.38.47:835][406]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.03-23.38.47:862][406]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.03-23.38.47:863][406]PIE: New page: PIE session: Map_Banana (3 ene. 2022 17:38:47)
+[2022.01.03-23.38.47:863][406]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.38.47:872][406]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008821s)
+[2022.01.03-23.38.47:873][406]LogAIModule: Creating AISystem for world Map_Banana
+[2022.01.03-23.38.47:874][406]LogPlayLevel: PIE: World Init took: (0.002003s)
+[2022.01.03-23.38.47:874][406]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map_Banana.Map_Banana to /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana (0.011283s)
+[2022.01.03-23.38.47:939][406]LogUObjectHash: Compacting FUObjectHashTables data took   5.76ms
+[2022.01.03-23.38.47:943][406]LogAudio: Display: Creating Audio Device:                 Id: 12, Scope: Unique, Realtime: True
+[2022.01.03-23.38.47:943][406]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.03-23.38.47:943][406]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.03-23.38.47:943][406]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.03-23.38.47:943][406]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.03-23.38.47:943][406]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.03-23.38.47:943][406]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.03-23.38.47:943][406]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.03-23.38.47:943][406]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.03-23.38.47:944][406]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.03-23.38.47:944][406]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.03-23.38.47:946][406]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.03-23.38.47:947][406]LogAudioMixer: Display: 1: FrontRight
+[2022.01.03-23.38.48:043][406]LogAudioMixer: Display: Using Audio Device Altavoces (Conexant SmartAudio HD)
+[2022.01.03-23.38.48:043][406]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.03-23.38.48:043][406]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.03-23.38.48:043][406]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.03-23.38.48:044][406]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.03-23.38.48:044][406]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.03-23.38.48:044][406]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.03-23.38.48:071][406]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.03-23.38.48:071][406]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.03-23.38.48:071][406]LogInit: FAudioDevice initialized.
+[2022.01.03-23.38.48:071][406]LogAudio: Display: Audio Device (ID: 12) registered with world 'Map_Banana'.
+[2022.01.03-23.38.48:084][406]LogLoad: Game class is 'GameModeBase'
+[2022.01.03-23.38.48:085][406]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map_Banana.Map_Banana up for play (max tick rate 60) at 2022.01.03-20.38.48
+[2022.01.03-23.38.48:085][406]LogWorld: Bringing up level for play took: 0.000753
+[2022.01.03-23.38.48:085][406]LogOnline: OSS: Creating online subsystem instance for: :Context_21
+[2022.01.03-23.38.48:089][406]PIE: Server logged in
+[2022.01.03-23.38.48:090][406]PIE: Play in editor total start time 0,239 seconds.
+[2022.01.03-23.39.21:534][851]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.39.21:535][851]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Map_Banana
+[2022.01.03-23.39.21:535][851]LogWorld: UWorld::CleanupWorld for Map_Banana, bSessionEnded=true, bCleanupResources=true
+[2022.01.03-23.39.21:535][851]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.39.21:556][851]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.03-23.39.21:568][851]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-23.39.21:602][851]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.03-23.39.21:603][851]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.39.21:604][851]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.03-23.39.21:625][851]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.03-23.39.21:629][851]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2022.01.03-23.39.21:665][852]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2022.01.03-23.39.30:169][227]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Banana" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset" SILENT=true
+[2022.01.03-23.39.30:191][227]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/BP_Banana60126A9E429E9C7513B5CCA7B30DDE80.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/BP_Banana.uasset'
+[2022.01.03-23.39.30:214][227]AssetCheck: New page: Asset Save: BP_Banana
+[2022.01.03-23.39.30:214][227]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_Banana.BP_Banana
