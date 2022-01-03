@@ -997,3 +997,114 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.01.03-19.45.09:576][362]LogSlate: Window 'Banana_Model' being destroyed
 [2022.01.03-19.45.09:600][362]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
 [2022.01.03-19.45.09:600][362]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.03-19.48.18:659][785]LogSlate: Window 'Save Level As' being destroyed
+[2022.01.03-19.48.18:727][785]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-19.48.18:752][785]LogUObjectHash: Compacting FUObjectHashTables data took   3.20ms
+[2022.01.03-19.48.18:797][785]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level10A04334E475FFB8091AA20BF0A850BA9.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1.umap'
+[2022.01.03-19.48.18:823][785]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1_BuiltData.uasset" SILENT=true
+[2022.01.03-19.48.18:859][785]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level1_BuiltData9E4236204CA0D8B7C06171AFC4D4C852.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1_BuiltData.uasset'
+[2022.01.03-19.48.18:868][785]LogFileHelpers: Saving map 'Level1' took 0.191
+[2022.01.03-19.48.18:872][785]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-19.48.18:872][785]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Level1_BuiltData.Level1_BuiltData
+[2022.01.03-19.48.18:872][785]LogContentValidation: Display: Validating World /Game/Maps/Level1.Level1
+[2022.01.03-19.48.30:047][415]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.01.03-19.48.30:087][415]LogContentBrowser: Creating deferred item: NewFolder
+[2022.01.03-19.48.37:788][874]LogContentBrowser: Attempting asset rename: NewFolder -> Art
+[2022.01.03-19.48.37:789][874]LogContentBrowser: End creating deferred item NewFolder
+[2022.01.03-19.48.41:496][ 85]LogMetaData: Removing '/Game/Art/Banana/Banana_Model.Banana_Model' ref from Metadata '/Game/Banana/Banana_Model.PackageMetaData'
+[2022.01.03-19.48.41:547][ 85]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Banana/Banana_Texture" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Banana/Banana_Texture.uasset" SILENT=true
+[2022.01.03-19.48.41:577][ 85]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Banana_Texture8A3459D74D98082F6547E1826F360866.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Banana/Banana_Texture.uasset'
+[2022.01.03-19.48.41:589][ 85]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Banana/Banana_Model" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Banana/Banana_Model.uasset" SILENT=true
+[2022.01.03-19.48.41:629][ 85]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Banana_Model01C964B74BB249B91D0B7DB4B44E3BB1.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Banana/Banana_Model.uasset'
+[2022.01.03-19.48.41:717][ 85]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2022.01.03-19.48.41:726][ 85]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2022.01.03-19.48.41:740][ 85]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2022.01.03-19.48.41:746][ 85]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2022.01.03-19.48.41:781][ 85]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-19.48.41:781][ 85]LogContentValidation: Display: Validating Texture2D /Game/Art/Banana/Banana_Texture.Banana_Texture
+[2022.01.03-19.48.41:781][ 85]LogContentValidation: Display: Validating StaticMesh /Game/Art/Banana/Banana_Model.Banana_Model
+[2022.01.03-19.48.45:409][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/01Tree_pCylinder4DE3A2D2040FE5CF66398F58008776A82.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/01Tree_pCylinder4.uasset'
+[2022.01.03-19.48.45:421][273]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/materiales-curso/lambert1" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/lambert1.uasset" SILENT=true
+[2022.01.03-19.48.45:427][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/lambert18167A34B4B5453A7CC4E08920C95A8E5.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/lambert1.uasset'
+[2022.01.03-19.48.45:439][273]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/materiales-curso/01Tree_pSphere7" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/01Tree_pSphere7.uasset" SILENT=true
+[2022.01.03-19.48.45:449][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/01Tree_pSphere71F49606043D00847A2992581FAE9D31F.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/01Tree_pSphere7.uasset'
+[2022.01.03-19.48.45:467][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/02Tree_pCylinder3EA9639DC4386BA1ECCF7C7802AFDE729.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/02Tree_pCylinder3.uasset'
+[2022.01.03-19.48.45:478][273]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/materiales-curso/02Tree_pSphere6" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/02Tree_pSphere6.uasset" SILENT=true
+[2022.01.03-19.48.45:489][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/02Tree_pSphere6C0DDDB4A475B97D92191EB9D8C9A62AB.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/02Tree_pSphere6.uasset'
+[2022.01.03-19.48.45:507][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/03Tree_pCylinder222017F3F4175578BA73729AA34769743.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/03Tree_pCylinder2.uasset'
+[2022.01.03-19.48.45:519][273]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/materiales-curso/03Tree_pSphere5" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/03Tree_pSphere5.uasset" SILENT=true
+[2022.01.03-19.48.45:528][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/03Tree_pSphere504D3532744689DD0CDDDCDA166534F15.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/03Tree_pSphere5.uasset'
+[2022.01.03-19.48.45:554][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Bridge_polySurface1733E92C14FC17A3C46AD568DDED74206.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/Bridge_polySurface1.uasset'
+[2022.01.03-19.48.45:565][273]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/materiales-curso/Cabaña_pCube4" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/Cabaña_pCube4.uasset" SILENT=true
+[2022.01.03-19.48.45:572][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Cabaña_pCube42DFB10B04E71C26E18C13F878A0B61C8.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/Cabaña_pCube4.uasset'
+[2022.01.03-19.48.45:591][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Cabaña_polySurface1C0E7DC0A4B7D350356533F9B35B15D41.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/Cabaña_polySurface1.uasset'
+[2022.01.03-19.48.45:608][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Cabaña_polySurface2647D8D4C438D3E68633A2D863B333FCF.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/Cabaña_polySurface2.uasset'
+[2022.01.03-19.48.45:620][273]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/materiales-curso/PLAZA_pCube2" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/PLAZA_pCube2.uasset" SILENT=true
+[2022.01.03-19.48.45:628][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/PLAZA_pCube21702500D41F7054842CE8495E0C864B7.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/PLAZA_pCube2.uasset'
+[2022.01.03-19.48.45:640][273]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/materiales-curso/PLAZA_pCube3" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/PLAZA_pCube3.uasset" SILENT=true
+[2022.01.03-19.48.45:653][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/PLAZA_pCube344B4B427443707F96869CEB5F3040BB0.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/PLAZA_pCube3.uasset'
+[2022.01.03-19.48.45:666][273]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/materiales-curso/PLAZA_pCube4" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/PLAZA_pCube4.uasset" SILENT=true
+[2022.01.03-19.48.45:674][273]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/PLAZA_pCube4510FC6A84CBE667BE45A4E97775F5EA6.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/materiales-curso/PLAZA_pCube4.uasset'
+[2022.01.03-19.48.45:832][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2022.01.03-19.48.45:838][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2022.01.03-19.48.45:845][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.22ms
+[2022.01.03-19.48.45:851][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2022.01.03-19.48.45:859][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2022.01.03-19.48.45:866][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2022.01.03-19.48.45:873][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2022.01.03-19.48.45:879][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2022.01.03-19.48.45:887][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2022.01.03-19.48.45:893][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.33ms
+[2022.01.03-19.48.45:898][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2022.01.03-19.48.45:904][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.33ms
+[2022.01.03-19.48.45:910][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2022.01.03-19.48.45:917][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2022.01.03-19.48.45:930][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2022.01.03-19.48.45:941][273]LogUObjectHash: Compacting FUObjectHashTables data took   0.35ms
+[2022.01.03-19.48.45:984][273]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-19.48.45:984][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/01Tree_pCylinder4.01Tree_pCylinder4
+[2022.01.03-19.48.45:984][273]LogContentValidation: Display: Validating Material /Game/Art/materiales-curso/lambert1.lambert1
+[2022.01.03-19.48.45:984][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/01Tree_pSphere7.01Tree_pSphere7
+[2022.01.03-19.48.45:984][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/02Tree_pCylinder3.02Tree_pCylinder3
+[2022.01.03-19.48.45:984][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/02Tree_pSphere6.02Tree_pSphere6
+[2022.01.03-19.48.45:985][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/03Tree_pCylinder2.03Tree_pCylinder2
+[2022.01.03-19.48.45:985][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/03Tree_pSphere5.03Tree_pSphere5
+[2022.01.03-19.48.45:985][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/Bridge_polySurface1.Bridge_polySurface1
+[2022.01.03-19.48.45:985][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/Cabaña_pCube4.Cabaña_pCube4
+[2022.01.03-19.48.45:985][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/Cabaña_polySurface1.Cabaña_polySurface1
+[2022.01.03-19.48.45:985][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/Cabaña_polySurface2.Cabaña_polySurface2
+[2022.01.03-19.48.45:985][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/PLAZA_pCube2.PLAZA_pCube2
+[2022.01.03-19.48.45:985][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/PLAZA_pCube3.PLAZA_pCube3
+[2022.01.03-19.48.45:985][273]LogContentValidation: Display: Validating StaticMesh /Game/Art/materiales-curso/PLAZA_pCube4.PLAZA_pCube4
+[2022.01.03-19.48.53:035][678]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.03-19.48.53:044][678]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2022.01.03-19.48.53:057][678]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level11BFBF5B647C83B5481DE409612A58C2E.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1.umap'
+[2022.01.03-19.48.53:066][678]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1_BuiltData.uasset" SILENT=true
+[2022.01.03-19.48.53:096][678]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level1_BuiltData1DCAA6F1451924B8628552B16C07494F.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Level1_BuiltData.uasset'
+[2022.01.03-19.48.53:107][678]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-19.48.53:107][678]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Level1_BuiltData.Level1_BuiltData
+[2022.01.03-19.48.53:107][678]LogContentValidation: Display: Validating World /Game/Maps/Level1.Level1
+[2022.01.03-19.55.40:255][155]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.01.03-19.55.40:273][155]LogContentBrowser: Creating deferred item: NewFolder
+[2022.01.03-19.55.42:964][313]LogContentBrowser: Attempting asset rename: NewFolder -> Models
+[2022.01.03-19.55.42:966][313]LogContentBrowser: End creating deferred item NewFolder
+[2022.01.03-19.55.47:153][540]LogMetaData: Removing '/Game/Art/Models/Banana/Banana_Model.Banana_Model' ref from Metadata '/Game/Art/Banana/Banana_Model.PackageMetaData'
+[2022.01.03-19.55.47:192][540]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Models/Banana/Banana_Texture" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Texture.uasset" SILENT=true
+[2022.01.03-19.55.47:222][540]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Banana_Texture005E6F8F478968FB44C835A295B6D126.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Texture.uasset'
+[2022.01.03-19.55.47:235][540]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Models/Banana/Banana_Model" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Model.uasset" SILENT=true
+[2022.01.03-19.55.47:278][540]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Banana_ModelC1153C144AAD8BB2E48B23925268FD9D.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Content/Art/Models/Banana/Banana_Model.uasset'
+[2022.01.03-19.55.47:340][540]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
+[2022.01.03-19.55.47:348][540]LogUObjectHash: Compacting FUObjectHashTables data took   0.31ms
+[2022.01.03-19.55.47:359][540]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2022.01.03-19.55.47:366][540]LogUObjectHash: Compacting FUObjectHashTables data took   0.21ms
+[2022.01.03-19.55.47:397][540]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.03-19.55.47:397][540]LogContentValidation: Display: Validating Texture2D /Game/Art/Models/Banana/Banana_Texture.Banana_Texture
+[2022.01.03-19.55.47:397][540]LogContentValidation: Display: Validating StaticMesh /Game/Art/Models/Banana/Banana_Model.Banana_Model
+[2022.01.03-19.55.59:292][210]LogUObjectHash: Compacting FUObjectHashTables data took   2.18ms
+[2022.01.03-20.01.16:657][621]LogActorFactory: Actor Factory created Banana_Model
+[2022.01.03-20.01.18:917][752]LogActorFactory: Actor Factory created Banana_Model
+[2022.01.03-20.01.45:143][951]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2022.01.03-20.01.45:148][951]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Autosaves/Game/Maps/Level1_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2022.01.03-20.01.45:157][951]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Level1_Auto1F9EE0DC24BC3E238E3FDD3BF3668B936.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_1/Saved/Autosaves/Game/Maps/Level1_Auto1.umap'
+[2022.01.03-20.01.45:160][951]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Level1' took 0.024
+[2022.01.03-20.01.45:162][951]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.024
