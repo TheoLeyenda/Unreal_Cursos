@@ -1,0 +1,68 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "Spaceship.h"
+#include "Bullet.h"
+#include "Components/BoxComponent.h"
+#include "GameFramework/PawnMovementComponent.h"
+
+// Sets default values
+ASpaceship::ASpaceship()
+{
+ 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
+
+	//PawnMovementComponent = CreateDefaultSubobject<UPawnMovementComponent>(TEXT("Pawn Movement Component"));
+	
+	AutoPossessPlayer = EAutoReceiveInput::Player0;
+}
+
+// Called when the game starts or when spawned
+void ASpaceship::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
+// Called every frame
+void ASpaceship::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	if(!CurrentVelocity.IsZero())
+	{
+		FVector NewLocation = GetActorLocation() + speed * CurrentVelocity * DeltaTime;
+
+		SetActorLocation(NewLocation);
+	}
+}
+
+// Called to bind functionality to input
+void ASpaceship::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+	PlayerInputComponent->BindAxis("Movement_X", this, &ASpaceship::MoveX_Axies);
+	PlayerInputComponent->BindAxis("Movement_Y", this, &ASpaceship::MoveY_Axies);
+	PlayerInputComponent->BindAction("Shoot",IE_Pressed, this, &ASpaceship::OnShootPress);
+}
+
+void ASpaceship::MoveX_Axies(float AxiesValue)
+{
+	CurrentVelocity.X = AxiesValue * 100.0f;
+}
+
+void ASpaceship::MoveY_Axies(float AxiesValue)
+{
+	CurrentVelocity.Y = AxiesValue * 100.0f;
+}
+
+void ASpaceship::OnShootPress()
+{
+	UWorld* World = GetWorld();
+	if(World)
+	{
+		FVector SpawnLocation = OffsetSpawnBullet + GetActorLocation();
+		World->SpawnActor<ABullet>(BulletBlueprint, SpawnLocation, FRotator::ZeroRotator);
+	}
+}
+
+
