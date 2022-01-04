@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h"
 #include "Enemy_Cohete.generated.h"
 
 UCLASS()
@@ -23,6 +24,10 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere, Category= "Spaceship - Collision")
+	UBoxComponent* BoxComponent;
+
+	
 	UPROPERTY(EditAnywhere, Category= "Enemy_Cohete - Movement")
 	float Speed;
 

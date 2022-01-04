@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeCurso_1_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x8AC3BDEF,
+				0x14EF0ABD,
 				0xDB575E36,
 				METADATA_PARAMS(nullptr, 0)
 			};

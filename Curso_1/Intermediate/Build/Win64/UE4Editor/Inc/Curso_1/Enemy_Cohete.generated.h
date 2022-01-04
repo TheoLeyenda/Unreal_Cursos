@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define CURSO_1_Enemy_Cohete_generated_h
 
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_12_SPARSE_DATA
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_12_RPC_WRAPPERS
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_12_INCLASS_NO_PURE_DECLS \
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_SPARSE_DATA
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_RPC_WRAPPERS
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEnemy_Cohete(); \
 	friend struct Z_Construct_UClass_AEnemy_Cohete_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AEnemy_Cohete)
 
 
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_12_INCLASS \
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesAEnemy_Cohete(); \
 	friend struct Z_Construct_UClass_AEnemy_Cohete_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AEnemy_Cohete)
 
 
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_12_STANDARD_CONSTRUCTORS \
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AEnemy_Cohete(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AEnemy_Cohete) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_12_ENHANCED_CONSTRUCTORS \
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AEnemy_Cohete(AEnemy_Cohete&&); \
@@ -58,28 +58,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEnemy_Cohete); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AEnemy_Cohete)
 
 
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_12_PRIVATE_PROPERTY_OFFSET
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_9_PROLOG
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_12_GENERATED_BODY_LEGACY \
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_PRIVATE_PROPERTY_OFFSET
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_10_PROLOG
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Curso_1_Source_Curso_1_Enemy_Cohete_h_12_PRIVATE_PROPERTY_OFFSET \
-	Curso_1_Source_Curso_1_Enemy_Cohete_h_12_SPARSE_DATA \
-	Curso_1_Source_Curso_1_Enemy_Cohete_h_12_RPC_WRAPPERS \
-	Curso_1_Source_Curso_1_Enemy_Cohete_h_12_INCLASS \
-	Curso_1_Source_Curso_1_Enemy_Cohete_h_12_STANDARD_CONSTRUCTORS \
+	Curso_1_Source_Curso_1_Enemy_Cohete_h_13_PRIVATE_PROPERTY_OFFSET \
+	Curso_1_Source_Curso_1_Enemy_Cohete_h_13_SPARSE_DATA \
+	Curso_1_Source_Curso_1_Enemy_Cohete_h_13_RPC_WRAPPERS \
+	Curso_1_Source_Curso_1_Enemy_Cohete_h_13_INCLASS \
+	Curso_1_Source_Curso_1_Enemy_Cohete_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_12_GENERATED_BODY \
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Curso_1_Source_Curso_1_Enemy_Cohete_h_12_PRIVATE_PROPERTY_OFFSET \
-	Curso_1_Source_Curso_1_Enemy_Cohete_h_12_SPARSE_DATA \
-	Curso_1_Source_Curso_1_Enemy_Cohete_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	Curso_1_Source_Curso_1_Enemy_Cohete_h_12_INCLASS_NO_PURE_DECLS \
-	Curso_1_Source_Curso_1_Enemy_Cohete_h_12_ENHANCED_CONSTRUCTORS \
+	Curso_1_Source_Curso_1_Enemy_Cohete_h_13_PRIVATE_PROPERTY_OFFSET \
+	Curso_1_Source_Curso_1_Enemy_Cohete_h_13_SPARSE_DATA \
+	Curso_1_Source_Curso_1_Enemy_Cohete_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	Curso_1_Source_Curso_1_Enemy_Cohete_h_13_INCLASS_NO_PURE_DECLS \
+	Curso_1_Source_Curso_1_Enemy_Cohete_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -29,4 +29,7 @@ public:
 
 	UPROPERTY(EditAnywhere, Category= "Bullet - Movement")
 	float HeihtToDestroy;
+
+	UPROPERTY(EditAnywhere, Category= "Bullet - Collision")
+	UBoxComponent* BoxComponent;
 };

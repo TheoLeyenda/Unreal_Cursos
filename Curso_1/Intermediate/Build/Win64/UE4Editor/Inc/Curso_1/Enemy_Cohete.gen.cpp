@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Cohete() {}
 	CURSO_1_API UClass* Z_Construct_UClass_AEnemy_Cohete();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Curso_1();
+	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 // End Cross Module References
 	void AEnemy_Cohete::StaticRegisterNativesAEnemy_Cohete()
 	{
@@ -31,6 +32,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Cohete() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BoxComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BoxComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Speed_MetaData[];
 #endif
@@ -54,6 +59,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Cohete() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Cohete_Statics::NewProp_BoxComponent_MetaData[] = {
+		{ "Category", "Spaceship - Collision" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Enemy_Cohete.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Cohete_Statics::NewProp_BoxComponent = { "BoxComponent", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Cohete, BoxComponent), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Cohete_Statics::NewProp_BoxComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Cohete_Statics::NewProp_BoxComponent_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Cohete_Statics::NewProp_Speed_MetaData[] = {
 		{ "Category", "Enemy_Cohete - Movement" },
 		{ "ModuleRelativePath", "Enemy_Cohete.h" },
@@ -68,6 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Cohete() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemy_Cohete_Statics::NewProp_HeihtToDestroy = { "HeihtToDestroy", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Cohete, HeihtToDestroy), METADATA_PARAMS(Z_Construct_UClass_AEnemy_Cohete_Statics::NewProp_HeihtToDestroy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Cohete_Statics::NewProp_HeihtToDestroy_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemy_Cohete_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Cohete_Statics::NewProp_BoxComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Cohete_Statics::NewProp_Speed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Cohete_Statics::NewProp_HeihtToDestroy,
 	};
@@ -98,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Cohete() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_Cohete, 3210522741);
+	IMPLEMENT_CLASS(AEnemy_Cohete, 134666125);
 	template<> CURSO_1_API UClass* StaticClass<AEnemy_Cohete>()
 	{
 		return AEnemy_Cohete::StaticClass();
