@@ -3,8 +3,10 @@
 
 #include "Spaceship.h"
 #include "Bullet.h"
+#include "Enemy_Cohete.h"
 #include "Components/BoxComponent.h"
 #include "GameFramework/PawnMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ASpaceship::ASpaceship()
@@ -13,6 +15,10 @@ ASpaceship::ASpaceship()
 	PrimaryActorTick.bCanEverTick = true;
 
 	BoxComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("Root"));
+	
+	BoxComponent->SetGenerateOverlapEvents(true);
+
+	BoxComponent->OnComponentBeginOverlap.AddDynamic(this,&ASpaceship::OnOverlap);
 	
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 }
@@ -72,7 +78,12 @@ void ASpaceship::OnOverlap(UPrimitiveComponent* OverlappedComponent
 		, bool bFromSweep
 		, const FHitResult& SweepResult)
 {
-	
+	if(OtherActor->IsA(AEnemy_Cohete::StaticClass()))
+	{
+		isDead = true;
+		SetActorHiddenInGame(true);
+		UGameplayStatics::SetGamePaused(GetWorld(),true);
+	}
 }
 
 
