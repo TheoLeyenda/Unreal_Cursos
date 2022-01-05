@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Bullet.h"
 #include "Components/BoxComponent.h"
+#include "SpaceShooterGameMode.h"
 #include "GameFramework/Pawn.h"
 #include "Spaceship.generated.h"
 

@@ -83,6 +83,13 @@ void ASpaceship::OnOverlap(UPrimitiveComponent* OverlappedComponent
 	{
 		isDead = true;
 		SetActorHiddenInGame(true);
+
+		ASpaceShooterGameMode* SpaceShooterGameMode = Cast<ASpaceShooterGameMode>(GetWorld()->GetAuthGameMode());
+		if(SpaceShooterGameMode)
+		{
+			SpaceShooterGameMode->GameOver();
+		}
+		
 		UGameplayStatics::SetGamePaused(GetWorld(),true);
 
 		UWorld* World = GetWorld();

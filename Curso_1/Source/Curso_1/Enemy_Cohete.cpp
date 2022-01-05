@@ -47,6 +47,13 @@ void AEnemy_Cohete::OnOverlap(UPrimitiveComponent* OverlappedComponent
 			World->SpawnActor<AActor>(ExplosionBlueprint, GetActorLocation(), FRotator::ZeroRotator);
 		}
 		OtherActor->Destroy();
+
+		ASpaceShooterGameMode* SpaceShooterGameMode = Cast<ASpaceShooterGameMode>(GetWorld()->GetAuthGameMode());
+		if(SpaceShooterGameMode)
+		{
+			SpaceShooterGameMode->AddScore(); 
+		}
+		
 		Destroy();
 	}
 	

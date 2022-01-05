@@ -18,10 +18,57 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 	ENGINE_API UClass* Z_Construct_UClass_AGameMode();
 	UPackage* Z_Construct_UPackage__Script_Curso_1();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	CURSO_1_API UClass* Z_Construct_UClass_AEnemy_Cohete_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ASpaceShooterGameMode::execChangeMenuWidget)
+	{
+		P_GET_OBJECT(UClass,Z_Param_NewWidgetClass);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ChangeMenuWidget(Z_Param_NewWidgetClass);
+		P_NATIVE_END;
+	}
 	void ASpaceShooterGameMode::StaticRegisterNativesASpaceShooterGameMode()
 	{
+		UClass* Class = ASpaceShooterGameMode::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "ChangeMenuWidget", &ASpaceShooterGameMode::execChangeMenuWidget },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget_Statics
+	{
+		struct SpaceShooterGameMode_eventChangeMenuWidget_Parms
+		{
+			TSubclassOf<UUserWidget>  NewWidgetClass;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_NewWidgetClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget_Statics::NewProp_NewWidgetClass = { "NewWidgetClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(SpaceShooterGameMode_eventChangeMenuWidget_Parms, NewWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget_Statics::NewProp_NewWidgetClass,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget_Statics::Function_MetaDataParams[] = {
+		{ "Category", "SpaceShooterGameMode - UMG Game" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASpaceShooterGameMode, nullptr, "ChangeMenuWidget", nullptr, nullptr, sizeof(SpaceShooterGameMode_eventChangeMenuWidget_Parms), Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ASpaceShooterGameMode_NoRegister()
 	{
@@ -30,6 +77,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 	struct Z_Construct_UClass_ASpaceShooterGameMode_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -37,6 +85,14 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Enemy_CoheteBlueprint_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Enemy_CoheteBlueprint;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StartingWidgetClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_StartingWidgetClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentWidget_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentWidget;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -44,6 +100,9 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 	UObject* (*const Z_Construct_UClass_ASpaceShooterGameMode_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_AGameMode,
 		(UObject* (*)())Z_Construct_UPackage__Script_Curso_1,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ASpaceShooterGameMode_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ASpaceShooterGameMode_ChangeMenuWidget, "ChangeMenuWidget" }, // 2830503218
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::Class_MetaDataParams[] = {
@@ -61,8 +120,24 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Enemy_CoheteBlueprint = { "Enemy_CoheteBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, Enemy_CoheteBlueprint), Z_Construct_UClass_AEnemy_Cohete_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Enemy_CoheteBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Enemy_CoheteBlueprint_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_StartingWidgetClass_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - UMG Game" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_StartingWidgetClass = { "StartingWidgetClass", nullptr, (EPropertyFlags)0x0024080000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, StartingWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_StartingWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_StartingWidgetClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_CurrentWidget_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_CurrentWidget = { "CurrentWidget", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, CurrentWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_CurrentWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_CurrentWidget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpaceShooterGameMode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Enemy_CoheteBlueprint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_StartingWidgetClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_CurrentWidget,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASpaceShooterGameMode_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASpaceShooterGameMode>::IsAbstract,
@@ -72,11 +147,11 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ASpaceShooterGameMode_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::PropPointers),
 		0,
 		0x009002ACu,
@@ -91,7 +166,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASpaceShooterGameMode, 368320718);
+	IMPLEMENT_CLASS(ASpaceShooterGameMode, 1235276381);
 	template<> CURSO_1_API UClass* StaticClass<ASpaceShooterGameMode>()
 	{
 		return ASpaceShooterGameMode::StaticClass();

@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Components/BoxComponent.h"
+#include "SpaceShooterGameMode.h"
 #include "Enemy_Cohete.generated.h"
 
 UCLASS()

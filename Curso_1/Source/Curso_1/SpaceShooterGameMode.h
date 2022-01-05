@@ -28,6 +28,19 @@ public:
 	virtual void BeginPlay() override;
 
 	virtual void Tick(float DeltaTime) override;
+
+	UFUNCTION(BlueprintCallable, Category= "SpaceShooterGameMode - UMG Game")
+	void ChangeMenuWidget(TSubclassOf<UUserWidget> NewWidgetClass);
+
+	void AddScore();
+	void GameOver();
+	
 protected:	
 	int Score = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category= "SpaceShooterGameMode - UMG Game")
+	TSubclassOf<UUserWidget> StartingWidgetClass;
+
+	UPROPERTY()
+	UUserWidget* CurrentWidget;
 };

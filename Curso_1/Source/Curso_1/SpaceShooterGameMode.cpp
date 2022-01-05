@@ -3,10 +3,19 @@
 
 #include "SpaceShooterGameMode.h"
 #include "Enemy_Cohete.h"
+#include "GameWidget.h"
 
 void ASpaceShooterGameMode::BeginPlay()
 {
 	Super::BeginPlay();
+
+	ChangeMenuWidget(StartingWidgetClass);
+
+	UGameWidget* GW = Cast<UGameWidget>(CurrentWidget);
+	if(GW) // Puedo usar isValid, Ensure y otras 3 tipos
+	{
+		GW->Load();
+	}
 }
 
 void ASpaceShooterGameMode::Tick(float DeltaTime)
@@ -28,3 +37,43 @@ void ASpaceShooterGameMode::Tick(float DeltaTime)
 		}
 	}
 }
+
+void ASpaceShooterGameMode::ChangeMenuWidget(TSubclassOf<UUserWidget> NewWidgetClass)
+{
+	if(CurrentWidget != nullptr)
+	{
+		CurrentWidget->RemoveFromViewport();
+		CurrentWidget = nullptr;
+	}
+
+	if(NewWidgetClass != nullptr)
+	{
+		CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), NewWidgetClass);
+
+		if(CurrentWidget != nullptr)
+		{
+			CurrentWidget->AddToViewport();
+		}
+	}
+}
+
+void ASpaceShooterGameMode::AddScore()
+{
+	Score+= 10;
+	UGameWidget* GW = Cast<UGameWidget>(CurrentWidget);
+	if(GW) // Puedo usar isValid, Ensure y otras 3 tipos
+	{
+		GW->SetScore(Score);
+	}
+}
+
+void ASpaceShooterGameMode::GameOver()
+{
+	UGameWidget* GW = Cast<UGameWidget>(CurrentWidget);
+	if(GW)
+	{
+		GW->OnGameOver(Score);
+	}
+}
+
+

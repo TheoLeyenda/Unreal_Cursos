@@ -8,14 +8,23 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UUserWidget;
 #ifdef CURSO_1_SpaceShooterGameMode_generated_h
 #error "SpaceShooterGameMode.generated.h already included, missing '#pragma once' in SpaceShooterGameMode.h"
 #endif
 #define CURSO_1_SpaceShooterGameMode_generated_h
 
 #define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_15_SPARSE_DATA
-#define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_15_RPC_WRAPPERS
-#define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execChangeMenuWidget);
+
+
+#define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execChangeMenuWidget);
+
+
 #define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASpaceShooterGameMode(); \
@@ -60,7 +69,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASpaceShooterGameMode); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASpaceShooterGameMode)
 
 
-#define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_15_PRIVATE_PROPERTY_OFFSET
+#define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__StartingWidgetClass() { return STRUCT_OFFSET(ASpaceShooterGameMode, StartingWidgetClass); } \
+	FORCEINLINE static uint32 __PPO__CurrentWidget() { return STRUCT_OFFSET(ASpaceShooterGameMode, CurrentWidget); }
+
+
 #define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_12_PROLOG
 #define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
