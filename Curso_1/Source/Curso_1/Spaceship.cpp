@@ -41,6 +41,7 @@ void ASpaceship::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 	PlayerInputComponent->BindAxis("Movement_X", this, &ASpaceship::MoveX_Axies);
 	PlayerInputComponent->BindAxis("Movement_Y", this, &ASpaceship::MoveY_Axies);
 	PlayerInputComponent->BindAction("Shoot",IE_Pressed, this, &ASpaceship::OnShootPress);
+	PlayerInputComponent->BindAction("Reset", IE_Pressed, this, &ASpaceship::OnResetPress).bExecuteWhenPaused = true;
 }
 
 void ASpaceship::MoveX_Axies(float AxiesValue)
@@ -60,6 +61,14 @@ void ASpaceship::OnShootPress()
 	{
 		FVector SpawnLocation = OffsetSpawnBullet + GetActorLocation();
 		World->SpawnActor<ABullet>(BulletBlueprint, SpawnLocation, FRotator::ZeroRotator);
+	}
+}
+
+void ASpaceship::OnResetPress()
+{
+	if(isDead)
+	{
+		UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
 	}
 }
 

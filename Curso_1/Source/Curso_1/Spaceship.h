@@ -49,6 +49,7 @@ public:
 	void MoveX_Axies(float AxiesValue);
 	void MoveY_Axies(float AxiesValue);
 	void OnShootPress();
+	void OnResetPress();
 	
 	FVector CurrentVelocity;
 	
