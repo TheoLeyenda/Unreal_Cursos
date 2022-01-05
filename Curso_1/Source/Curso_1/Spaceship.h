@@ -18,8 +18,6 @@ public:
 	ASpaceship();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 
 	UPROPERTY()
 	bool isDead = false;
@@ -39,6 +37,9 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Spaceship - Shoot")
 	TSubclassOf<class ABullet> BulletBlueprint;
 
+	UPROPERTY(EditAnywhere, Category= "Spaceship - Destroy")
+	TSubclassOf<class AActor> ExplosionBlueprint;
+	
 	UPROPERTY(EditAnywhere, Category = "Spaceship - Shoot")
 	FVector OffsetSpawnBullet;
 

@@ -152,6 +152,10 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_BulletBlueprint;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ExplosionBlueprint_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ExplosionBlueprint;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OffsetSpawnBullet_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_OffsetSpawnBullet;
@@ -202,6 +206,13 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceship_Statics::NewProp_BulletBlueprint = { "BulletBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceship, BulletBlueprint), Z_Construct_UClass_ABullet_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceship_Statics::NewProp_BulletBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceship_Statics::NewProp_BulletBlueprint_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceship_Statics::NewProp_ExplosionBlueprint_MetaData[] = {
+		{ "Category", "Spaceship - Destroy" },
+		{ "ModuleRelativePath", "Spaceship.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceship_Statics::NewProp_ExplosionBlueprint = { "ExplosionBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceship, ExplosionBlueprint), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceship_Statics::NewProp_ExplosionBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceship_Statics::NewProp_ExplosionBlueprint_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceship_Statics::NewProp_OffsetSpawnBullet_MetaData[] = {
 		{ "Category", "Spaceship - Shoot" },
 		{ "ModuleRelativePath", "Spaceship.h" },
@@ -220,6 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_isDead,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_speed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_BulletBlueprint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_ExplosionBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_OffsetSpawnBullet,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_BoxComponent,
 	};
@@ -250,7 +262,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASpaceship, 2698000490);
+	IMPLEMENT_CLASS(ASpaceship, 3845995069);
 	template<> CURSO_1_API UClass* StaticClass<ASpaceship>()
 	{
 		return ASpaceship::StaticClass();

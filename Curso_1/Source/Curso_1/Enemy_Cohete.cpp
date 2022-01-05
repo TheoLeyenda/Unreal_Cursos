@@ -13,13 +13,6 @@ AEnemy_Cohete::AEnemy_Cohete()
 	BoxComponent->SetBoxExtent(FVector(32.0f, 70.18438f,32.0f), false);  //
 }
 
-// Called when the game starts or when spawned
-void AEnemy_Cohete::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
 // Called every frame
 void AEnemy_Cohete::Tick(float DeltaTime)
 {

@@ -3,6 +3,7 @@
 
 #include "Spaceship.h"
 #include "Bullet.h"
+#include "Explosion.h"
 #include "Enemy_Cohete.h"
 #include "Components/BoxComponent.h"
 #include "GameFramework/PawnMovementComponent.h"
@@ -21,12 +22,6 @@ ASpaceship::ASpaceship()
 	BoxComponent->OnComponentBeginOverlap.AddDynamic(this,&ASpaceship::OnOverlap);
 	
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
-}
-
-// Called when the game starts or when spawned
-void ASpaceship::BeginPlay()
-{
-	Super::BeginPlay();
 }
 
 // Called every frame
@@ -83,6 +78,12 @@ void ASpaceship::OnOverlap(UPrimitiveComponent* OverlappedComponent
 		isDead = true;
 		SetActorHiddenInGame(true);
 		UGameplayStatics::SetGamePaused(GetWorld(),true);
+
+		UWorld* World = GetWorld();
+		if(World && ExplosionBlueprint)
+		{
+			World->SpawnActor<AActor>(ExplosionBlueprint, GetActorLocation(), FRotator::ZeroRotator);
+		}
 	}
 }
 

@@ -13,13 +13,6 @@ ABullet::ABullet()
 	BoxComponent->SetBoxExtent(FVector(5.0f, 25.0f, 5.0f), false);
 }
 
-// Called when the game starts or when spawned
-void ABullet::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
 // Called every frame
 void ABullet::Tick(float DeltaTime)
 {
