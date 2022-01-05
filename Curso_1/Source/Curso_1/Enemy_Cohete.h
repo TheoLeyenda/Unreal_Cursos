@@ -20,13 +20,23 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(EditAnywhere, Category= "Spaceship - Collision")
+	UPROPERTY(EditAnywhere, Category= "Enemy_Cohete - Collision")
 	UBoxComponent* BoxComponent;
 
+	UPROPERTY(EditAnywhere, Category= "Enemy_Cohete - Destroy")
+	TSubclassOf<class AActor> ExplosionBlueprint;
 	
 	UPROPERTY(EditAnywhere, Category= "Enemy_Cohete - Movement")
 	float Speed;
 
 	UPROPERTY(EditAnywhere, Category= "Enemy_Cohete - Movement")
 	float HeihtToDestroy;
+	
+	UFUNCTION()
+	void OnOverlap(UPrimitiveComponent* OverlappedComponent
+		, AActor* OtherActor
+		, UPrimitiveComponent* OtherComponent
+		, int32 OtherBodyIndex
+		, bool bFromSweep
+		, const FHitResult& SweepResult);
 };

@@ -2,6 +2,7 @@
 
 
 #include "Enemy_Cohete.h"
+#include "Bullet.h"
 
 // Sets default values
 AEnemy_Cohete::AEnemy_Cohete()
@@ -10,7 +11,9 @@ AEnemy_Cohete::AEnemy_Cohete()
 	PrimaryActorTick.bCanEverTick = true;
 
 	BoxComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("Root"));
-	BoxComponent->SetBoxExtent(FVector(32.0f, 70.18438f,32.0f), false);  //
+	BoxComponent->SetBoxExtent(FVector(32.0f, 70.18438f,32.0f), false);
+	BoxComponent->SetGenerateOverlapEvents(true);
+	BoxComponent->OnComponentBeginOverlap.AddDynamic(this,&AEnemy_Cohete::OnOverlap);
 }
 
 // Called every frame
@@ -29,3 +32,22 @@ void AEnemy_Cohete::Tick(float DeltaTime)
 	}
 }
 
+void AEnemy_Cohete::OnOverlap(UPrimitiveComponent* OverlappedComponent
+		, AActor* OtherActor
+		, UPrimitiveComponent* OtherComponent
+		, int32 OtherBodyIndex
+		, bool bFromSweep
+		, const FHitResult& SweepResult)
+{
+	if(OtherActor->IsA(ABullet::StaticClass()))
+	{
+		UWorld* World = GetWorld();
+		if(World && ExplosionBlueprint)
+		{
+			World->SpawnActor<AActor>(ExplosionBlueprint, GetActorLocation(), FRotator::ZeroRotator);
+		}
+		OtherActor->Destroy();
+		Destroy();
+	}
+	
+}

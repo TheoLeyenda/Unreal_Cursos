@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef CURSO_1_Enemy_Cohete_generated_h
 #error "Enemy_Cohete.generated.h already included, missing '#pragma once' in Enemy_Cohete.h"
 #endif
 #define CURSO_1_Enemy_Cohete_generated_h
 
 #define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_SPARSE_DATA
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_RPC_WRAPPERS
-#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnOverlap);
+
+
+#define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnOverlap);
+
+
 #define Curso_1_Source_Curso_1_Enemy_Cohete_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEnemy_Cohete(); \
