@@ -24,20 +24,11 @@ void ASpaceShooterGameMode::BeginPlay()
 	DelaySpawnEnemy_Cohete = 0.5f;
 	
 	GetWorld()->GetTimerManager().SetTimer(TimerSpawnEnemy_Cohete,this, &ASpaceShooterGameMode::SpawnEnemy_Cohete, DelaySpawnEnemy_Cohete, false);
-	
-}
-
-void ASpaceShooterGameMode::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-	GameTimer += DeltaTime;
-	//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::FromInt(GetWorld()->GetTimerManager().GetTimerRemaining(TimerSpawnEnemy_Cohete)));
 }
 
 void ASpaceShooterGameMode::SpawnEnemy_Cohete()
 {
-	float DifficultyPorcentage = FMath::Min(GameTimer/TIME_TO_MAX_DIFICULTY, 1.0f);
+	float DifficultyPorcentage = FMath::Min(GetWorld()->GetTimeSeconds()/TIME_TO_MAX_DIFICULTY, 1.0f);
 	DelaySpawnEnemy_Cohete = MAX_TIME_SPAWN - (MAX_TIME_SPAWN - MIN_TIME_SPAWN) * DifficultyPorcentage;
 
 	GetWorld()->GetTimerManager().ClearTimer(TimerSpawnEnemy_Cohete);

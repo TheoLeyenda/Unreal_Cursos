@@ -13,9 +13,12 @@ UCLASS()
 class CURSO_1_API ASpaceShooterGameMode : public AGameMode
 {
 	GENERATED_BODY()
-
+	
+	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning")
 	float MIN_TIME_SPAWN = 0.4f;
+	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning")
 	float MAX_TIME_SPAWN = 2.5f;
+	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning")
 	float TIME_TO_MAX_DIFICULTY = 60.0f;
 	
 public:
@@ -24,15 +27,11 @@ public:
 	
 	float DelaySpawnEnemy_Cohete;
 	FTimerHandle TimerSpawnEnemy_Cohete;
-	float GameTimer;
 	
 	virtual void BeginPlay() override;
-
-	virtual void Tick(float DeltaTime) override;
-
 	UFUNCTION(BlueprintCallable, Category= "SpaceShooterGameMode - UMG Game")
 	void ChangeMenuWidget(TSubclassOf<UUserWidget> NewWidgetClass);
-
+	
 	void AddScore();
 	void GameOver();
 	void SpawnEnemy_Cohete();

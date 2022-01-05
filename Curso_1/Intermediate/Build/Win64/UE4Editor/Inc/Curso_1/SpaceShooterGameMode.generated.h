@@ -70,6 +70,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASpaceShooterGameMode); \
 
 
 #define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__MIN_TIME_SPAWN() { return STRUCT_OFFSET(ASpaceShooterGameMode, MIN_TIME_SPAWN); } \
+	FORCEINLINE static uint32 __PPO__MAX_TIME_SPAWN() { return STRUCT_OFFSET(ASpaceShooterGameMode, MAX_TIME_SPAWN); } \
+	FORCEINLINE static uint32 __PPO__TIME_TO_MAX_DIFICULTY() { return STRUCT_OFFSET(ASpaceShooterGameMode, TIME_TO_MAX_DIFICULTY); } \
 	FORCEINLINE static uint32 __PPO__StartingWidgetClass() { return STRUCT_OFFSET(ASpaceShooterGameMode, StartingWidgetClass); } \
 	FORCEINLINE static uint32 __PPO__CurrentWidget() { return STRUCT_OFFSET(ASpaceShooterGameMode, CurrentWidget); }
 
