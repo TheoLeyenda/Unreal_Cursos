@@ -21,8 +21,9 @@ class CURSO_1_API ASpaceShooterGameMode : public AGameMode
 public:
 	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning")
 	TSubclassOf<class AEnemy_Cohete> Enemy_CoheteBlueprint;
-
+	
 	float DelaySpawnEnemy_Cohete;
+	FTimerHandle TimerSpawnEnemy_Cohete;
 	float GameTimer;
 	
 	virtual void BeginPlay() override;
@@ -34,6 +35,7 @@ public:
 
 	void AddScore();
 	void GameOver();
+	void SpawnEnemy_Cohete();
 	
 protected:	
 	int Score = 0;
