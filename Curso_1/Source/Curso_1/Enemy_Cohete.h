@@ -15,8 +15,7 @@ class CURSO_1_API AEnemy_Cohete : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AEnemy_Cohete();
-
-public:	
+	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
