@@ -61,8 +61,6 @@ void ASpaceship::OnOverlap(UPrimitiveComponent* OverlappedComponent
 {
 	if(OtherActor->IsA(AEnemy_Cohete::StaticClass()))
 	{
-		isDead = true;
-
 		ASpaceShooterGameMode* SpaceShooterGameMode = Cast<ASpaceShooterGameMode>(GetWorld()->GetAuthGameMode());
 		if(SpaceShooterGameMode)
 		{
@@ -78,6 +76,25 @@ void ASpaceship::OnOverlap(UPrimitiveComponent* OverlappedComponent
 		UGameplayStatics::SetGamePaused(GetWorld(),true);
 		
 		Destroy();
+	}
+}
+
+void ASpaceship::ActivateShield(float DelayActivate)
+{
+	UWorld* World = GetWorld();
+	if(!IsValid(shield) && World && ShieldBlueprint)
+	{
+		shield = World->SpawnActor<AShield>(ShieldBlueprint, GetActorLocation(), FRotator::ZeroRotator);
+		if(shield)
+		{
+			shield->DelayShieldDestroy = DelayActivate;
+			shield->Portador = this;
+			shield->InitShield();
+		}
+	}
+	else if(IsValid(shield))
+	{
+		shield->ResetTimer();
 	}
 }
 

@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	CURSO_1_API UClass* Z_Construct_UClass_AShield_NoRegister();
 	CURSO_1_API UClass* Z_Construct_UClass_ABullet_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
@@ -139,14 +140,13 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_isDead_MetaData[];
-#endif
-		static void NewProp_isDead_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isDead;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_speed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_speed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ShieldBlueprint_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ShieldBlueprint;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BulletBlueprint_MetaData[];
 #endif
@@ -182,22 +182,19 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceship_Statics::NewProp_isDead_MetaData[] = {
-		{ "ModuleRelativePath", "Spaceship.h" },
-	};
-#endif
-	void Z_Construct_UClass_ASpaceship_Statics::NewProp_isDead_SetBit(void* Obj)
-	{
-		((ASpaceship*)Obj)->isDead = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ASpaceship_Statics::NewProp_isDead = { "isDead", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ASpaceship), &Z_Construct_UClass_ASpaceship_Statics::NewProp_isDead_SetBit, METADATA_PARAMS(Z_Construct_UClass_ASpaceship_Statics::NewProp_isDead_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceship_Statics::NewProp_isDead_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceship_Statics::NewProp_speed_MetaData[] = {
 		{ "Category", "Spaceship - Movement" },
 		{ "ModuleRelativePath", "Spaceship.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceship_Statics::NewProp_speed = { "speed", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceship, speed), METADATA_PARAMS(Z_Construct_UClass_ASpaceship_Statics::NewProp_speed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceship_Statics::NewProp_speed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceship_Statics::NewProp_ShieldBlueprint_MetaData[] = {
+		{ "Category", "Spaceship - Shield" },
+		{ "ModuleRelativePath", "Spaceship.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceship_Statics::NewProp_ShieldBlueprint = { "ShieldBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceship, ShieldBlueprint), Z_Construct_UClass_AShield_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceship_Statics::NewProp_ShieldBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceship_Statics::NewProp_ShieldBlueprint_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceship_Statics::NewProp_BulletBlueprint_MetaData[] = {
 		{ "Category", "Spaceship - Shoot" },
@@ -228,8 +225,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpaceship_Statics::NewProp_BoxComponent = { "BoxComponent", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceship, BoxComponent), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASpaceship_Statics::NewProp_BoxComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceship_Statics::NewProp_BoxComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpaceship_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_isDead,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_speed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_ShieldBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_BulletBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_ExplosionBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_OffsetSpawnBullet,
@@ -262,7 +259,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASpaceship, 3845995069);
+	IMPLEMENT_CLASS(ASpaceship, 1789683925);
 	template<> CURSO_1_API UClass* StaticClass<ASpaceship>()
 	{
 		return ASpaceship::StaticClass();

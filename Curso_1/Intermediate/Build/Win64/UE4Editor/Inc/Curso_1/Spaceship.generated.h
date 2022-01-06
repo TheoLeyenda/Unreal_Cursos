@@ -16,18 +16,18 @@ struct FHitResult;
 #endif
 #define CURSO_1_Spaceship_generated_h
 
-#define Curso_1_Source_Curso_1_Spaceship_h_15_SPARSE_DATA
-#define Curso_1_Source_Curso_1_Spaceship_h_15_RPC_WRAPPERS \
+#define Curso_1_Source_Curso_1_Spaceship_h_16_SPARSE_DATA
+#define Curso_1_Source_Curso_1_Spaceship_h_16_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnOverlap);
 
 
-#define Curso_1_Source_Curso_1_Spaceship_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Curso_1_Source_Curso_1_Spaceship_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnOverlap);
 
 
-#define Curso_1_Source_Curso_1_Spaceship_h_15_INCLASS_NO_PURE_DECLS \
+#define Curso_1_Source_Curso_1_Spaceship_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASpaceship(); \
 	friend struct Z_Construct_UClass_ASpaceship_Statics; \
@@ -36,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(ASpaceship)
 
 
-#define Curso_1_Source_Curso_1_Spaceship_h_15_INCLASS \
+#define Curso_1_Source_Curso_1_Spaceship_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesASpaceship(); \
 	friend struct Z_Construct_UClass_ASpaceship_Statics; \
@@ -45,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(ASpaceship)
 
 
-#define Curso_1_Source_Curso_1_Spaceship_h_15_STANDARD_CONSTRUCTORS \
+#define Curso_1_Source_Curso_1_Spaceship_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASpaceship(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASpaceship) \
@@ -58,7 +58,7 @@ private: \
 public:
 
 
-#define Curso_1_Source_Curso_1_Spaceship_h_15_ENHANCED_CONSTRUCTORS \
+#define Curso_1_Source_Curso_1_Spaceship_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASpaceship(ASpaceship&&); \
@@ -69,31 +69,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASpaceship); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASpaceship)
 
 
-#define Curso_1_Source_Curso_1_Spaceship_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__isDead() { return STRUCT_OFFSET(ASpaceship, isDead); }
-
-
-#define Curso_1_Source_Curso_1_Spaceship_h_12_PROLOG
-#define Curso_1_Source_Curso_1_Spaceship_h_15_GENERATED_BODY_LEGACY \
+#define Curso_1_Source_Curso_1_Spaceship_h_16_PRIVATE_PROPERTY_OFFSET
+#define Curso_1_Source_Curso_1_Spaceship_h_13_PROLOG
+#define Curso_1_Source_Curso_1_Spaceship_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Curso_1_Source_Curso_1_Spaceship_h_15_PRIVATE_PROPERTY_OFFSET \
-	Curso_1_Source_Curso_1_Spaceship_h_15_SPARSE_DATA \
-	Curso_1_Source_Curso_1_Spaceship_h_15_RPC_WRAPPERS \
-	Curso_1_Source_Curso_1_Spaceship_h_15_INCLASS \
-	Curso_1_Source_Curso_1_Spaceship_h_15_STANDARD_CONSTRUCTORS \
+	Curso_1_Source_Curso_1_Spaceship_h_16_PRIVATE_PROPERTY_OFFSET \
+	Curso_1_Source_Curso_1_Spaceship_h_16_SPARSE_DATA \
+	Curso_1_Source_Curso_1_Spaceship_h_16_RPC_WRAPPERS \
+	Curso_1_Source_Curso_1_Spaceship_h_16_INCLASS \
+	Curso_1_Source_Curso_1_Spaceship_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Curso_1_Source_Curso_1_Spaceship_h_15_GENERATED_BODY \
+#define Curso_1_Source_Curso_1_Spaceship_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Curso_1_Source_Curso_1_Spaceship_h_15_PRIVATE_PROPERTY_OFFSET \
-	Curso_1_Source_Curso_1_Spaceship_h_15_SPARSE_DATA \
-	Curso_1_Source_Curso_1_Spaceship_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	Curso_1_Source_Curso_1_Spaceship_h_15_INCLASS_NO_PURE_DECLS \
-	Curso_1_Source_Curso_1_Spaceship_h_15_ENHANCED_CONSTRUCTORS \
+	Curso_1_Source_Curso_1_Spaceship_h_16_PRIVATE_PROPERTY_OFFSET \
+	Curso_1_Source_Curso_1_Spaceship_h_16_SPARSE_DATA \
+	Curso_1_Source_Curso_1_Spaceship_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	Curso_1_Source_Curso_1_Spaceship_h_16_INCLASS_NO_PURE_DECLS \
+	Curso_1_Source_Curso_1_Spaceship_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
