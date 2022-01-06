@@ -7,13 +7,6 @@
 #include "GameFramework/Actor.h"
 #include "PowerUp.generated.h"
 
-UENUM(BlueprintType)
-enum class TypePowerUp : uint8
-{
-	DelayEffect,
-	InstantEffect,
-};
-
 UCLASS()
 class CURSO_1_API APowerUp : public AActor
 {
@@ -23,9 +16,6 @@ public:
 
 	// Sets default values for this actor's properties
 	APowerUp();
-
-	UPROPERTY(EditAnywhere, Category="PowerUp - FatherClass")
-	TypePowerUp typePowerUp;
 
 	UPROPERTY(EditAnywhere, Category="PowerUp - FatherClass")
 	float delayEffect;

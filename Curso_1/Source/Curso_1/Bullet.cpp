@@ -17,10 +17,11 @@ ABullet::ABullet()
 void ABullet::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	//-transform.right * (speed * Time.deltaTime)
 	FVector NewLocation = GetActorLocation();
-	NewLocation.Y += Speed * DeltaTime;
-	
+
+	NewLocation = NewLocation + (GetActorRightVector() * DeltaTime * Speed);
+
 	SetActorLocation(NewLocation);
 	
 	if(NewLocation.Y >= HeihtToDestroy)

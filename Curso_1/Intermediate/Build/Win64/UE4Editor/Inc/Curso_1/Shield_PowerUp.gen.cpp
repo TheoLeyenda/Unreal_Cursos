@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeShield_PowerUp() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AShield_PowerUp, 3660692091);
+	IMPLEMENT_CLASS(AShield_PowerUp, 3539300053);
 	template<> CURSO_1_API UClass* StaticClass<AShield_PowerUp>()
 	{
 		return AShield_PowerUp::StaticClass();

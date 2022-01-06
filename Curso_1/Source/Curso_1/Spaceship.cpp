@@ -50,6 +50,11 @@ void ASpaceship::Shoot()
 		FVector SpawnLocation = OffsetSpawnBullet + GetActorLocation();
 		World->SpawnActor<ABullet>(BulletBlueprint, SpawnLocation, FRotator::ZeroRotator);
 	}
+
+	if(IsValid(DobleCannon))
+	{
+		DobleCannon->ShootCannons();
+	}
 }
 
 void ASpaceship::OnOverlap(UPrimitiveComponent* OverlappedComponent
@@ -79,23 +84,42 @@ void ASpaceship::OnOverlap(UPrimitiveComponent* OverlappedComponent
 	}
 }
 
+void ASpaceship::ActivateDobleCannon(float DelayActivate)
+{
+	UWorld* World = GetWorld();
+	if(!IsValid(DobleCannon) && World && DobleCannonBlueprint)
+	{
+		DobleCannon = World->SpawnActor<ADobleCannon>(DobleCannonBlueprint, GetActorLocation() + OffsetSpawnBullet, FRotator::ZeroRotator);
+		if(DobleCannon)
+		{
+			DobleCannon->DelayDobleCannonDestroy = DelayActivate;
+			DobleCannon->InitDobleCannon();
+			DobleCannon->User = this;
+		}
+	}
+	else if(IsValid(DobleCannon))
+	{
+    	DobleCannon->ResetTimer(DelayActivate);
+	}
+}
+
 void ASpaceship::ActivateShield(float DelayActivate)
 {
 	UWorld* World = GetWorld();
-	if(!IsValid(shield) && World && ShieldBlueprint)
+	if(!IsValid(Shield) && World && ShieldBlueprint)
 	{
-		shield = World->SpawnActor<AShield>(ShieldBlueprint, GetActorLocation(), FRotator::ZeroRotator);
-		if(shield)
+		Shield = World->SpawnActor<AShield>(ShieldBlueprint, GetActorLocation(), FRotator::ZeroRotator);
+		if(Shield)
 		{
-			shield->DelayShieldDestroy = DelayActivate;
-			shield->InitShield();
-			shield->AttachToComponent(BoxComponent,FAttachmentTransformRules::KeepRelativeTransform, NAME_None);
-			shield->SetActorLocation(GetActorLocation());
+			Shield->DelayShieldDestroy = DelayActivate;
+			Shield->InitShield();
+			Shield->AttachToComponent(BoxComponent,FAttachmentTransformRules::KeepRelativeTransform, NAME_None);
+			Shield->SetActorLocation(GetActorLocation());
 		}
 	}
-	else if(IsValid(shield))
+	else if(IsValid(Shield))
 	{
-		shield->ResetTimer(DelayActivate);
+		Shield->ResetTimer(DelayActivate);
 	}
 }
 

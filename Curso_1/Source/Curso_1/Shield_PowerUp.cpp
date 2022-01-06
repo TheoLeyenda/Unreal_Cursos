@@ -20,7 +20,7 @@ void AShield_PowerUp::OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor
 		Spaceship->ActivateShield(delayEffect);
 		//Destruir la bala.
 		OtherActor->Destroy();
-		Destroy();
 		//Destruirme a mi mismo.
+		Destroy();
 	}
 }

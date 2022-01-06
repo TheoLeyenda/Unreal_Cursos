@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	CURSO_1_API UClass* Z_Construct_UClass_AShield_NoRegister();
+	CURSO_1_API UClass* Z_Construct_UClass_ADobleCannon_NoRegister();
 	CURSO_1_API UClass* Z_Construct_UClass_ABullet_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
@@ -148,6 +149,10 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ShieldBlueprint;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DobleCannonBlueprint_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_DobleCannonBlueprint;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BulletBlueprint_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_BulletBlueprint;
@@ -196,6 +201,13 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceship_Statics::NewProp_ShieldBlueprint = { "ShieldBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceship, ShieldBlueprint), Z_Construct_UClass_AShield_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceship_Statics::NewProp_ShieldBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceship_Statics::NewProp_ShieldBlueprint_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceship_Statics::NewProp_DobleCannonBlueprint_MetaData[] = {
+		{ "Category", "Spaceship - Doble Cannon" },
+		{ "ModuleRelativePath", "Spaceship.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceship_Statics::NewProp_DobleCannonBlueprint = { "DobleCannonBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceship, DobleCannonBlueprint), Z_Construct_UClass_ADobleCannon_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceship_Statics::NewProp_DobleCannonBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceship_Statics::NewProp_DobleCannonBlueprint_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceship_Statics::NewProp_BulletBlueprint_MetaData[] = {
 		{ "Category", "Spaceship - Shoot" },
 		{ "ModuleRelativePath", "Spaceship.h" },
@@ -227,6 +239,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpaceship_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_speed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_ShieldBlueprint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_DobleCannonBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_BulletBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_ExplosionBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceship_Statics::NewProp_OffsetSpawnBullet,
@@ -259,7 +272,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceship() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASpaceship, 1789683925);
+	IMPLEMENT_CLASS(ASpaceship, 4268417649);
 	template<> CURSO_1_API UClass* StaticClass<ASpaceship>()
 	{
 		return ASpaceship::StaticClass();

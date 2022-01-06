@@ -13,70 +13,15 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePowerUp() {}
 // Cross Module References
-	CURSO_1_API UEnum* Z_Construct_UEnum_Curso_1_TypePowerUp();
-	UPackage* Z_Construct_UPackage__Script_Curso_1();
 	CURSO_1_API UClass* Z_Construct_UClass_APowerUp_NoRegister();
 	CURSO_1_API UClass* Z_Construct_UClass_APowerUp();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	UPackage* Z_Construct_UPackage__Script_Curso_1();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 // End Cross Module References
-	static UEnum* TypePowerUp_StaticEnum()
-	{
-		static UEnum* Singleton = nullptr;
-		if (!Singleton)
-		{
-			Singleton = GetStaticEnum(Z_Construct_UEnum_Curso_1_TypePowerUp, Z_Construct_UPackage__Script_Curso_1(), TEXT("TypePowerUp"));
-		}
-		return Singleton;
-	}
-	template<> CURSO_1_API UEnum* StaticEnum<TypePowerUp>()
-	{
-		return TypePowerUp_StaticEnum();
-	}
-	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_TypePowerUp(TypePowerUp_StaticEnum, TEXT("/Script/Curso_1"), TEXT("TypePowerUp"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_Curso_1_TypePowerUp_Hash() { return 2104413866U; }
-	UEnum* Z_Construct_UEnum_Curso_1_TypePowerUp()
-	{
-#if WITH_HOT_RELOAD
-		UPackage* Outer = Z_Construct_UPackage__Script_Curso_1();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("TypePowerUp"), 0, Get_Z_Construct_UEnum_Curso_1_TypePowerUp_Hash(), false);
-#else
-		static UEnum* ReturnEnum = nullptr;
-#endif // WITH_HOT_RELOAD
-		if (!ReturnEnum)
-		{
-			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
-				{ "TypePowerUp::DelayEffect", (int64)TypePowerUp::DelayEffect },
-				{ "TypePowerUp::InstantEffect", (int64)TypePowerUp::InstantEffect },
-			};
-#if WITH_METADATA
-			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "BlueprintType", "true" },
-				{ "DelayEffect.Name", "TypePowerUp::DelayEffect" },
-				{ "InstantEffect.Name", "TypePowerUp::InstantEffect" },
-				{ "ModuleRelativePath", "PowerUp.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FEnumParams EnumParams = {
-				(UObject*(*)())Z_Construct_UPackage__Script_Curso_1,
-				nullptr,
-				"TypePowerUp",
-				"TypePowerUp",
-				Enumerators,
-				UE_ARRAY_COUNT(Enumerators),
-				RF_Public|RF_Transient|RF_MarkAsNative,
-				EEnumFlags::None,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				(uint8)UEnum::ECppForm::EnumClass,
-				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
-			};
-			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
-		}
-		return ReturnEnum;
-	}
 	DEFINE_FUNCTION(APowerUp::execOnOverlap)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComponent);
@@ -190,11 +135,6 @@ void EmptyLinkFunctionForGeneratedCodePowerUp() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_typePowerUp_Underlying;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_typePowerUp_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_typePowerUp;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_delayEffect_MetaData[];
 #endif
@@ -220,14 +160,6 @@ void EmptyLinkFunctionForGeneratedCodePowerUp() {}
 		{ "ModuleRelativePath", "PowerUp.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_APowerUp_Statics::NewProp_typePowerUp_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APowerUp_Statics::NewProp_typePowerUp_MetaData[] = {
-		{ "Category", "PowerUp - FatherClass" },
-		{ "ModuleRelativePath", "PowerUp.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APowerUp_Statics::NewProp_typePowerUp = { "typePowerUp", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APowerUp, typePowerUp), Z_Construct_UEnum_Curso_1_TypePowerUp, METADATA_PARAMS(Z_Construct_UClass_APowerUp_Statics::NewProp_typePowerUp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APowerUp_Statics::NewProp_typePowerUp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APowerUp_Statics::NewProp_delayEffect_MetaData[] = {
 		{ "Category", "PowerUp - FatherClass" },
@@ -246,8 +178,6 @@ void EmptyLinkFunctionForGeneratedCodePowerUp() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APowerUp_Statics::NewProp_SphereComponent = { "SphereComponent", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APowerUp, SphereComponent), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APowerUp_Statics::NewProp_SphereComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APowerUp_Statics::NewProp_SphereComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APowerUp_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APowerUp_Statics::NewProp_typePowerUp_Underlying,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APowerUp_Statics::NewProp_typePowerUp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APowerUp_Statics::NewProp_delayEffect,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APowerUp_Statics::NewProp_SphereComponent,
 	};
@@ -278,7 +208,7 @@ void EmptyLinkFunctionForGeneratedCodePowerUp() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APowerUp, 2517946201);
+	IMPLEMENT_CLASS(APowerUp, 3443086204);
 	template<> CURSO_1_API UClass* StaticClass<APowerUp>()
 	{
 		return APowerUp::StaticClass();

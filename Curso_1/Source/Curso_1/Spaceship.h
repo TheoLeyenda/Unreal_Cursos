@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Bullet.h"
 #include "Shield.h"
+#include "DobleCannon.h"
 #include "Components/BoxComponent.h"
 #include "SpaceShooterGameMode.h"
 #include "GameFramework/Pawn.h"
@@ -24,10 +25,15 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Spaceship - Movement")
 	float speed = 10.0f;
 
-	AShield* shield;
+	AShield* Shield;
 	
 	UPROPERTY(EditAnywhere, Category= "Spaceship - Shield")
 	TSubclassOf<class AShield> ShieldBlueprint;
+
+	ADobleCannon* DobleCannon;
+
+	UPROPERTY(EditAnywhere, Category= "Spaceship - Doble Cannon")
+	TSubclassOf<class ADobleCannon> DobleCannonBlueprint;
 	
 	UPROPERTY(EditAnywhere, Category = "Spaceship - Shoot")
 	TSubclassOf<class ABullet> BulletBlueprint;
@@ -45,7 +51,7 @@ public:
 	void MoveY(float AxiesValue);
 	void Shoot();
 	void ActivateShield(float DelayActivate);
-	
+	void ActivateDobleCannon(float DelayActivate);
 	FVector CurrentVelocity;
 	
 	UFUNCTION()
