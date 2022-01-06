@@ -9,7 +9,7 @@
 AShield::AShield()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 
 	SphereComponent = CreateDefaultSubobject<USphereComponent>(TEXT("Root"));
 	SphereComponent->SetGenerateOverlapEvents(true);
@@ -22,14 +22,6 @@ void AShield::InitShield()
 	{
 		GetWorld()->GetTimerManager().SetTimer(TimerHandle,this, &AShield::DestroyShield, DelayShieldDestroy, false);
 	}
-}
-
-void AShield::Tick(float DeltaSeconds)
-{
-	Super::Tick(DeltaSeconds);
-	
-	FVector NewLocation = Portador->GetActorLocation();
-	SetActorLocation(NewLocation);
 }
 
 void AShield::BeginDestroy()
@@ -51,14 +43,25 @@ void AShield::OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherA
 {
 	if(OtherActor->IsA(AEnemy_Cohete::StaticClass()))
 	{
+
+		ASpaceShooterGameMode* SpaceShooterGameMode = Cast<ASpaceShooterGameMode>(GetWorld()->GetAuthGameMode());
+		if(SpaceShooterGameMode)
+		{
+			SpaceShooterGameMode->AddScore(); 
+		}
+
+		AEnemy_Cohete* Enemy_Cohete = Cast<AEnemy_Cohete>(OtherActor);
+		Enemy_Cohete->SpawnExplotion();
+		
 		OtherActor->Destroy();
 	}
 }
 
-void AShield::ResetTimer()
+void AShield::ResetTimer(float Delay)
 {
 	if(GetWorld())
 	{
+		DelayShieldDestroy += Delay;
 		GetWorld()->GetTimerManager().SetTimer(TimerHandle,this, &AShield::DestroyShield, DelayShieldDestroy, false);
 	}
 }

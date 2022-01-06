@@ -31,6 +31,8 @@ public:
 
 	UPROPERTY(EditAnywhere, Category= "Enemy_Cohete - Movement")
 	float HeihtToDestroy;
+
+	void SpawnExplotion();
 	
 	UFUNCTION()
 	void OnOverlap(UPrimitiveComponent* OverlappedComponent

@@ -88,13 +88,14 @@ void ASpaceship::ActivateShield(float DelayActivate)
 		if(shield)
 		{
 			shield->DelayShieldDestroy = DelayActivate;
-			shield->Portador = this;
 			shield->InitShield();
+			shield->AttachToComponent(BoxComponent,FAttachmentTransformRules::KeepRelativeTransform, NAME_None);
+			shield->SetActorLocation(GetActorLocation());
 		}
 	}
 	else if(IsValid(shield))
 	{
-		shield->ResetTimer();
+		shield->ResetTimer(DelayActivate);
 	}
 }
 

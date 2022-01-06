@@ -17,19 +17,15 @@ public:
 	AShield();
 
 	virtual void InitShield();	
-
-	virtual void Tick(float DeltaSeconds) override;
 	
 	virtual void BeginDestroy() override;
 
 	void DestroyShield();
 
-	void ResetTimer();
+	void ResetTimer(float Delay);
 	
 	float DelayShieldDestroy;
 	FTimerHandle TimerHandle;
-
-	AActor* Portador;
 	
 	UPROPERTY(EditAnywhere, Category= "PowerUp - FatherClass")
 	USphereComponent* SphereComponent;

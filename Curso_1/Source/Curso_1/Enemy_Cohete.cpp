@@ -32,6 +32,15 @@ void AEnemy_Cohete::Tick(float DeltaTime)
 	}
 }
 
+void AEnemy_Cohete::SpawnExplotion()
+{
+	UWorld* World = GetWorld();
+	if(World && ExplosionBlueprint)
+	{
+		World->SpawnActor<AActor>(ExplosionBlueprint, GetActorLocation(), FRotator::ZeroRotator);
+	}
+}
+
 void AEnemy_Cohete::OnOverlap(UPrimitiveComponent* OverlappedComponent
 		, AActor* OtherActor
 		, UPrimitiveComponent* OtherComponent
@@ -41,11 +50,7 @@ void AEnemy_Cohete::OnOverlap(UPrimitiveComponent* OverlappedComponent
 {
 	if(OtherActor->IsA(ABullet::StaticClass()))
 	{
-		UWorld* World = GetWorld();
-		if(World && ExplosionBlueprint)
-		{
-			World->SpawnActor<AActor>(ExplosionBlueprint, GetActorLocation(), FRotator::ZeroRotator);
-		}
+		SpawnExplotion();
 		OtherActor->Destroy();
 
 		ASpaceShooterGameMode* SpaceShooterGameMode = Cast<ASpaceShooterGameMode>(GetWorld()->GetAuthGameMode());
