@@ -29,9 +29,6 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 	UPROPERTY(EditAnywhere, Category = "Spaceship - Movement")
 	float speed = 10.0f;
 
@@ -47,10 +44,9 @@ public:
 	UPROPERTY(EditAnywhere, Category= "Spaceship - Collision")
 	UBoxComponent* BoxComponent;
 	
-	void MoveX_Axies(float AxiesValue);
-	void MoveY_Axies(float AxiesValue);
-	void OnShootPress();
-	void OnResetPress();
+	void MoveX(float AxiesValue);
+	void MoveY(float AxiesValue);
+	void Shoot();
 	
 	FVector CurrentVelocity;
 	
