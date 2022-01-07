@@ -34,14 +34,13 @@ void ASpaceShooterGameMode::SpawnEnemy_Cohete()
 {
 	float DifficultyPorcentage = FMath::Min(GetWorld()->GetTimeSeconds()/TIME_TO_MAX_DIFICULTY, 1.0f);
 	DelaySpawnEnemy_Cohete = MAX_TIME_SPAWN_ENEMY - (MAX_TIME_SPAWN_ENEMY - MIN_TIME_SPAWN_ENEMY) * DifficultyPorcentage;
-
-	GetWorld()->GetTimerManager().ClearTimer(TimerSpawnEnemy_Cohete);
+	
 	GetWorld()->GetTimerManager().SetTimer(TimerSpawnEnemy_Cohete,this, &ASpaceShooterGameMode::SpawnEnemy_Cohete, DelaySpawnEnemy_Cohete, false);
 	
 	UWorld* World = GetWorld();
 	if(World)
 	{
-		FVector NewLocation = FVector(FMath::RandRange(-700.0f, 700.0f), 700.0f , 70.0f);
+		FVector NewLocation = FVector(FMath::RandRange(-700.0f, 700.0f), 600.0f , 70.0f);
 		World->SpawnActor<AEnemy_Cohete>(Enemy_CoheteBlueprint, NewLocation, FRotator::ZeroRotator);
 	}
 }
@@ -82,8 +81,6 @@ void ASpaceShooterGameMode::GameOver()
 	if(GW)
 	{
 		GW->OnGameOver(Score);
-		GetWorld()->GetTimerManager().ClearTimer(TimerSpawnEnemy_Cohete);
-		GetWorld()->GetTimerManager().ClearTimer(TimerSpawnPowerUp);
 	}
 }
 
@@ -108,12 +105,24 @@ void ASpaceShooterGameMode::SpawnPowerUp()
 		{
 			World->SpawnActor<ADobleCannon_PowerUp>(DobleCannon_PowerUpBlueprint, FVector(x,y,z), FRotator::ZeroRotator);
 		}
+		
+		World->GetTimerManager().SetTimer(TimerSpawnPowerUp,this, &ASpaceShooterGameMode::SpawnPowerUp, DelaySpawnPowerUp, false);
 	}
 	
-	GetWorld()->GetTimerManager().SetTimer(TimerSpawnPowerUp,this, &ASpaceShooterGameMode::SpawnPowerUp, DelaySpawnPowerUp, false);
-
 	
 }
+
+void ASpaceShooterGameMode::BeginDestroy()
+{
+	if(GetWorld())
+	{
+		GetWorld()->GetTimerManager().ClearTimer(TimerSpawnEnemy_Cohete);
+		GetWorld()->GetTimerManager().ClearTimer(TimerSpawnPowerUp);
+	}
+
+	Super::BeginDestroy();
+}
+
 
 
 

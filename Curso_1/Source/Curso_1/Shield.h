@@ -27,6 +27,10 @@ public:
 	float DelayShieldDestroy;
 	FTimerHandle TimerHandle;
 	
+	AActor* Portador;
+
+	void Tick(float DeltaSeconds) override;
+	
 	UPROPERTY(EditAnywhere, Category= "PowerUp - FatherClass")
 	USphereComponent* SphereComponent;
 

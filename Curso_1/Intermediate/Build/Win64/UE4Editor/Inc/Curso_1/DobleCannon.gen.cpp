@@ -17,9 +17,9 @@ void EmptyLinkFunctionForGeneratedCodeDobleCannon() {}
 	CURSO_1_API UClass* Z_Construct_UClass_ADobleCannon();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Curso_1();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	CURSO_1_API UClass* Z_Construct_UClass_ABullet_NoRegister();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 // End Cross Module References
 	void ADobleCannon::StaticRegisterNativesADobleCannon()
@@ -35,6 +35,10 @@ void EmptyLinkFunctionForGeneratedCodeDobleCannon() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OffsetSpawnBullets_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_OffsetSpawnBullets;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BulletBlueprint_MetaData[];
 #endif
@@ -69,6 +73,13 @@ void EmptyLinkFunctionForGeneratedCodeDobleCannon() {}
 		{ "ModuleRelativePath", "DobleCannon.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADobleCannon_Statics::NewProp_OffsetSpawnBullets_MetaData[] = {
+		{ "Category", "DobleCannon" },
+		{ "ModuleRelativePath", "DobleCannon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ADobleCannon_Statics::NewProp_OffsetSpawnBullets = { "OffsetSpawnBullets", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADobleCannon, OffsetSpawnBullets), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_ADobleCannon_Statics::NewProp_OffsetSpawnBullets_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADobleCannon_Statics::NewProp_OffsetSpawnBullets_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADobleCannon_Statics::NewProp_BulletBlueprint_MetaData[] = {
 		{ "Category", "DobleCannon" },
@@ -105,6 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeDobleCannon() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ADobleCannon_Statics::NewProp_SpawnCannonRotator2 = { "SpawnCannonRotator2", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADobleCannon, SpawnCannonRotator2), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_ADobleCannon_Statics::NewProp_SpawnCannonRotator2_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADobleCannon_Statics::NewProp_SpawnCannonRotator2_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADobleCannon_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADobleCannon_Statics::NewProp_OffsetSpawnBullets,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADobleCannon_Statics::NewProp_BulletBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADobleCannon_Statics::NewProp_SpawnCannonLocation1,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADobleCannon_Statics::NewProp_SpawnCannonRotator1,
@@ -138,7 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeDobleCannon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADobleCannon, 1711869927);
+	IMPLEMENT_CLASS(ADobleCannon, 3166555911);
 	template<> CURSO_1_API UClass* StaticClass<ADobleCannon>()
 	{
 		return ADobleCannon::StaticClass();

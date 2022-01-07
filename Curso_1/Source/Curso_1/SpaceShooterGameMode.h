@@ -65,6 +65,8 @@ public:
 	void GameOver();
 	void SpawnEnemy_Cohete();
 	void SpawnPowerUp();
+
+	void BeginDestroy() override;
 	
 protected:	
 	int Score = 0;

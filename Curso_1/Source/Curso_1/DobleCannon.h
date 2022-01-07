@@ -16,6 +16,13 @@ public:
 	// Sets default values for this actor's properties
 	ADobleCannon();
 
+	AActor* Portador;
+	
+	bool bEnableUsePowerUp = true;
+	
+	UPROPERTY(EditAnywhere)
+	FVector OffsetSpawnBullets;
+	
 	float DelayDobleCannonDestroy;
 	FTimerHandle TimerHandle;
 	
@@ -36,6 +43,8 @@ public:
 	
 	void InitDobleCannon();
 
+	void Tick(float DeltaSeconds) override;
+	
 	void BeginDestroy() override;
 	
 	void DestroyDobleCannon();

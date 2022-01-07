@@ -18,6 +18,8 @@ ASpaceship::ASpaceship()
 	BoxComponent->OnComponentBeginOverlap.AddDynamic(this,&ASpaceship::OnOverlap);
 	
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
+
+	
 }
 
 // Called every frame
@@ -94,23 +96,36 @@ void ASpaceship::ActivateDobleCannon(float DelayActivate)
 		{
 			DobleCannon->DelayDobleCannonDestroy = DelayActivate;
 			DobleCannon->InitDobleCannon();
-			DobleCannon->AttachToComponent(BoxComponent,FAttachmentTransformRules::KeepRelativeTransform, NAME_None);
-			DobleCannon->SetActorLocation(GetActorLocation() + OffsetSpawnBullet);
-			DobleCannon->OnDestroyed.AddDynamic(this, &ASpaceship::DeattachDobleCannon);
+			DobleCannon->OffsetSpawnBullets = OffsetSpawnBullet;
+			DobleCannon->Portador = this;
+
+			World->GetTimerManager().SetTimer(TimerDobleCannon,this, &ASpaceship::DisableDobleCannon, DelayActivate, false);
+			
+			DobleCannon->OnDestroyed.AddDynamic(this, &ASpaceship::DisableDobleCannon);
 		}
 	}
-	else if(DobleCannon)
+	else if(DobleCannon && World)
 	{
+		World->GetTimerManager().SetTimer(TimerDobleCannon,this, &ASpaceship::DisableDobleCannon, DelayActivate, false);
     	DobleCannon->ResetTimer(DelayActivate);
 	}
 }
 
-void ASpaceship::DeattachDobleCannon(AActor* Cannon)
+void ASpaceship::DisableDobleCannon(AActor* Cannon)
 {
-	DobleCannon->DetachFromActor(FDetachmentTransformRules::KeepRelativeTransform);
 	DobleCannon = nullptr;
 }
 
+void ASpaceship::DisableDobleCannon()
+{
+	DobleCannon = nullptr;
+}
+
+void ASpaceship::DisableShield()
+{
+	Shield->DetachFromActor(FDetachmentTransformRules::KeepRelativeTransform);
+	Shield = nullptr;
+}
 
 void ASpaceship::ActivateShield(float DelayActivate)
 {
@@ -124,12 +139,25 @@ void ASpaceship::ActivateShield(float DelayActivate)
 			Shield->InitShield();
 			Shield->AttachToComponent(BoxComponent,FAttachmentTransformRules::KeepRelativeTransform, NAME_None);
 			Shield->SetActorLocation(GetActorLocation());
+			Shield->Portador = this;
+			World->GetTimerManager().SetTimer(TimerShield,this, &ASpaceship::DisableShield, DelayActivate, false);
 		}
 	}
 	else if(Shield)
 	{
+		World->GetTimerManager().SetTimer(TimerShield,this, &ASpaceship::DisableShield, DelayActivate, false);
 		Shield->ResetTimer(DelayActivate);
 	}
+}
+
+void ASpaceship::BeginDestroy()
+{
+	if(GetWorld())
+	{
+		GetWorld()->GetTimerManager().ClearTimer(TimerDobleCannon);
+		GetWorld()->GetTimerManager().ClearTimer(TimerShield);
+	}
+	Super::BeginDestroy();
 }
 
 

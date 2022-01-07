@@ -16,7 +16,7 @@ public:
 
 	// Sets default values for this actor's properties
 	APowerUp();
-
+	
 	UPROPERTY(EditAnywhere, Category="PowerUp - FatherClass")
 	float delayEffect;
 

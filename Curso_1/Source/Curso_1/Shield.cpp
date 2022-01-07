@@ -9,11 +9,23 @@
 AShield::AShield()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = false;
+	PrimaryActorTick.bCanEverTick = true;
 
 	SphereComponent = CreateDefaultSubobject<USphereComponent>(TEXT("Root"));
 	SphereComponent->SetGenerateOverlapEvents(true);
 	SphereComponent->OnComponentBeginOverlap.AddDynamic(this,&AShield::OnOverlap);
+}
+
+void AShield::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	if(Portador)
+	{
+		FVector NewLocation = Portador->GetActorLocation();
+
+		SetActorLocation(NewLocation);
+	}
 }
 
 void AShield::InitShield()

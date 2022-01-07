@@ -8,8 +8,22 @@
 ADobleCannon::ADobleCannon()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = false;
+	PrimaryActorTick.bCanEverTick = true;
+	bEnableUsePowerUp = true;
 }
+
+void ADobleCannon::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	if(Portador)
+	{
+		FVector NewLocation = Portador->GetActorLocation() + OffsetSpawnBullets;
+
+		SetActorLocation(NewLocation);
+	}
+}
+
 
 void ADobleCannon::InitDobleCannon()
 {
@@ -30,23 +44,27 @@ void ADobleCannon::BeginDestroy()
 
 void ADobleCannon::DestroyDobleCannon()
 {
+	bEnableUsePowerUp = false;
 	Destroy();
 }
 
 void ADobleCannon::ShootCannons()
 {
-	UWorld* World = GetWorld();
-	if(World && BulletBlueprint)
+	if(bEnableUsePowerUp)
 	{
-		SpawnCannonLocation1 = FVector::ZeroVector;
-		SpawnCannonLocation2 = FVector::ZeroVector;
+		UWorld* World = GetWorld();
+		if(World && BulletBlueprint)
+		{
+			SpawnCannonLocation1 = FVector::ZeroVector;
+			SpawnCannonLocation2 = FVector::ZeroVector;
 		
-		SpawnCannonLocation1 = SpawnCannonLocation1 + GetActorLocation();
-		SpawnCannonLocation2 = SpawnCannonLocation2 + GetActorLocation();
+			SpawnCannonLocation1 = SpawnCannonLocation1 + GetActorLocation();
+			SpawnCannonLocation2 = SpawnCannonLocation2 + GetActorLocation();
 		
-		World->SpawnActor<ABullet>(BulletBlueprint, SpawnCannonLocation1, SpawnCannonRotator1);
+			World->SpawnActor<ABullet>(BulletBlueprint, SpawnCannonLocation1, SpawnCannonRotator1);
 
-		World->SpawnActor<ABullet>(BulletBlueprint, SpawnCannonLocation2, SpawnCannonRotator2);
+			World->SpawnActor<ABullet>(BulletBlueprint, SpawnCannonLocation2, SpawnCannonRotator2);
+		}
 	}
 }
 

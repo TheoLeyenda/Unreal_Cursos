@@ -26,12 +26,16 @@ public:
 	float speed = 10.0f;
 
 	AShield* Shield;
+
+	FTimerHandle TimerShield;
 	
 	UPROPERTY(EditAnywhere, Category= "Spaceship - Shield")
 	TSubclassOf<class AShield> ShieldBlueprint;
 	
 	ADobleCannon* DobleCannon;
 
+	FTimerHandle TimerDobleCannon;
+	
 	UPROPERTY(EditAnywhere, Category= "Spaceship - Doble Cannon")
 	TSubclassOf<class ADobleCannon> DobleCannonBlueprint;
 	
@@ -52,7 +56,11 @@ public:
 	void Shoot();
 	void ActivateShield(float DelayActivate);
 	void ActivateDobleCannon(float DelayActivate);
-	void DeattachDobleCannon(AActor* Cannon);
+	void DisableDobleCannon(AActor* Cannon);
+	void DisableDobleCannon();
+	void DisableShield();
+
+	void BeginDestroy() override;
 	
 	FVector CurrentVelocity;
 	
