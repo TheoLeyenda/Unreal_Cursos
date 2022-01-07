@@ -41,6 +41,12 @@ void AEnemy_Cohete::SpawnExplotion()
 	}
 }
 
+void AEnemy_Cohete::BeginDestroy()
+{
+	Super::BeginDestroy();
+}
+
+
 void AEnemy_Cohete::OnOverlap(UPrimitiveComponent* OverlappedComponent
 		, AActor* OtherActor
 		, UPrimitiveComponent* OtherComponent
