@@ -13,8 +13,9 @@ void UGameWidget::Load()
 		TextBlock = NewTextBlock;
 	}
 }
-void UGameWidget::SetScore(int Score)
+void UGameWidget::SetScore_Implementation(int Score)
 {
+	SetScore(Score);
 	if(TextBlock != nullptr)
 	{
 		TextBlock->SetText(FText::FromString(FString(TEXT("Score: ")) + FString::FromInt(Score)));

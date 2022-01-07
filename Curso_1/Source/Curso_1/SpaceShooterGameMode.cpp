@@ -67,11 +67,11 @@ void ASpaceShooterGameMode::ChangeMenuWidget(TSubclassOf<UUserWidget> NewWidgetC
 
 void ASpaceShooterGameMode::AddScore()
 {
-	Score+= 10;
+	Score+= ScoreForEnemy_CoheteDie;
 	UGameWidget* GW = Cast<UGameWidget>(CurrentWidget);
 	if(GW) // Puedo usar isValid, Ensure y otras 3 tipos
 	{
-		GW->SetScore(Score);
+		GW->SetScore_Implementation(Score);
 	}
 }
 

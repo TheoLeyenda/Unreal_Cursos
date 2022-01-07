@@ -14,6 +14,9 @@ class CURSO_1_API ASpaceShooterGameMode : public AGameMode
 {
 	GENERATED_BODY()
 	
+	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Score")
+	float ScoreForEnemy_CoheteDie = 10;
+	
 	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning Enemys")
 	float MIN_TIME_SPAWN_ENEMY = 0.4f;
 	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning Enemys")

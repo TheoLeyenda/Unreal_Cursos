@@ -14,8 +14,25 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define CURSO_1_GameWidget_generated_h
 
 #define Curso_1_Source_Curso_1_GameWidget_h_21_SPARSE_DATA
-#define Curso_1_Source_Curso_1_GameWidget_h_21_RPC_WRAPPERS
-#define Curso_1_Source_Curso_1_GameWidget_h_21_RPC_WRAPPERS_NO_PURE_DECLS
+#define Curso_1_Source_Curso_1_GameWidget_h_21_RPC_WRAPPERS \
+	virtual void SetScore_Implementation(int32 Score); \
+ \
+	DECLARE_FUNCTION(execSetScore);
+
+
+#define Curso_1_Source_Curso_1_GameWidget_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetScore);
+
+
+#define Curso_1_Source_Curso_1_GameWidget_h_21_EVENT_PARMS \
+	struct GameWidget_eventSetScore_Parms \
+	{ \
+		int32 Score; \
+	};
+
+
+#define Curso_1_Source_Curso_1_GameWidget_h_21_CALLBACK_WRAPPERS
 #define Curso_1_Source_Curso_1_GameWidget_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUGameWidget(); \
@@ -61,13 +78,17 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UGameWidget); \
 
 
 #define Curso_1_Source_Curso_1_GameWidget_h_21_PRIVATE_PROPERTY_OFFSET
-#define Curso_1_Source_Curso_1_GameWidget_h_18_PROLOG
+#define Curso_1_Source_Curso_1_GameWidget_h_18_PROLOG \
+	Curso_1_Source_Curso_1_GameWidget_h_21_EVENT_PARMS
+
+
 #define Curso_1_Source_Curso_1_GameWidget_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Curso_1_Source_Curso_1_GameWidget_h_21_PRIVATE_PROPERTY_OFFSET \
 	Curso_1_Source_Curso_1_GameWidget_h_21_SPARSE_DATA \
 	Curso_1_Source_Curso_1_GameWidget_h_21_RPC_WRAPPERS \
+	Curso_1_Source_Curso_1_GameWidget_h_21_CALLBACK_WRAPPERS \
 	Curso_1_Source_Curso_1_GameWidget_h_21_INCLASS \
 	Curso_1_Source_Curso_1_GameWidget_h_21_STANDARD_CONSTRUCTORS \
 public: \
@@ -80,6 +101,7 @@ public: \
 	Curso_1_Source_Curso_1_GameWidget_h_21_PRIVATE_PROPERTY_OFFSET \
 	Curso_1_Source_Curso_1_GameWidget_h_21_SPARSE_DATA \
 	Curso_1_Source_Curso_1_GameWidget_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	Curso_1_Source_Curso_1_GameWidget_h_21_CALLBACK_WRAPPERS \
 	Curso_1_Source_Curso_1_GameWidget_h_21_INCLASS_NO_PURE_DECLS \
 	Curso_1_Source_Curso_1_GameWidget_h_21_ENHANCED_CONSTRUCTORS \
 private: \

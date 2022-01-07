@@ -22,7 +22,12 @@ class CURSO_1_API UGameWidget : public UUserWidget
 
 public:
 	void Load();
+	
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void SetScore(int Score);
+	
+	void SetScore_Implementation(int Score);
+	
 	void OnGameOver(int Score);
 
 	UPROPERTY()
