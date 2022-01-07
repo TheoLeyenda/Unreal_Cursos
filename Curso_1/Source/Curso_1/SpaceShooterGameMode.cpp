@@ -8,6 +8,7 @@
 #include "Enemy_Cohete.h"
 #include "Shield_PowerUp.h"
 #include "DobleCannon_PowerUp.h"
+#include "Nuke_PowerUp.h"
 #include "GameWidget.h"
 #include "../../Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/printf.h"
 
@@ -92,20 +93,23 @@ void ASpaceShooterGameMode::SpawnPowerUp()
 	float y = FMath::RandRange(MIN_POS_Y_SPAWN_POWERUP, MAX_POS_Y_SPAWN_POWERUP);
 	float z = FMath::RandRange(MIN_POS_Z_SPAWN_POWERUP, MAX_POS_Z_SPAWN_POWERUP);
 	
-	float porcentageSpawnPowerUp = FMath::RandRange(0, 100);
+	float porcentageSpawnPowerUp = FMath::RandRange(0, 150);
 	
 	UWorld* World = GetWorld();
 	if(World)
 	{
-		if(porcentageSpawnPowerUp > 50)
+		if(porcentageSpawnPowerUp <= 50)
 		{
 			World->SpawnActor<AShield_PowerUp>(Shield_PowerUpBlueprint, FVector(x,y,z), FRotator::ZeroRotator);
 		}
-		else
+		else if(porcentageSpawnPowerUp > 50 && porcentageSpawnPowerUp < 100)
 		{
 			World->SpawnActor<ADobleCannon_PowerUp>(DobleCannon_PowerUpBlueprint, FVector(x,y,z), FRotator::ZeroRotator);
 		}
-		
+		else if(porcentageSpawnPowerUp >= 100)
+		{
+			World->SpawnActor<ANuke_PowerUp>(Nuke_PowerUpBlueprint, FVector(x,y,z), FRotator::ZeroRotator);
+		}
 		World->GetTimerManager().SetTimer(TimerSpawnPowerUp,this, &ASpaceShooterGameMode::SpawnPowerUp, DelaySpawnPowerUp, false);
 	}
 	

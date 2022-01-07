@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 	CURSO_1_API UClass* Z_Construct_UClass_AEnemy_Cohete_NoRegister();
 	CURSO_1_API UClass* Z_Construct_UClass_AShield_PowerUp_NoRegister();
 	CURSO_1_API UClass* Z_Construct_UClass_ADobleCannon_PowerUp_NoRegister();
+	CURSO_1_API UClass* Z_Construct_UClass_ANuke_PowerUp_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ASpaceShooterGameMode::execChangeMenuWidget)
 	{
@@ -143,6 +144,10 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DobleCannon_PowerUpBlueprint_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_DobleCannon_PowerUpBlueprint;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Nuke_PowerUpBlueprint_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Nuke_PowerUpBlueprint;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StartingWidgetClass_MetaData[];
 #endif
@@ -277,6 +282,13 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_DobleCannon_PowerUpBlueprint = { "DobleCannon_PowerUpBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, DobleCannon_PowerUpBlueprint), Z_Construct_UClass_ADobleCannon_PowerUp_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_DobleCannon_PowerUpBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_DobleCannon_PowerUpBlueprint_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Nuke_PowerUpBlueprint_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning PowerUps" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Nuke_PowerUpBlueprint = { "Nuke_PowerUpBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, Nuke_PowerUpBlueprint), Z_Construct_UClass_ANuke_PowerUp_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Nuke_PowerUpBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Nuke_PowerUpBlueprint_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_StartingWidgetClass_MetaData[] = {
 		{ "Category", "SpaceShooterGameMode - UMG Game" },
 		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
@@ -306,6 +318,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Enemy_CoheteBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Shield_PowerUpBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_DobleCannon_PowerUpBlueprint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Nuke_PowerUpBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_StartingWidgetClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_CurrentWidget,
 	};
@@ -336,7 +349,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASpaceShooterGameMode, 4256440357);
+	IMPLEMENT_CLASS(ASpaceShooterGameMode, 435128588);
 	template<> CURSO_1_API UClass* StaticClass<ASpaceShooterGameMode>()
 	{
 		return ASpaceShooterGameMode::StaticClass();

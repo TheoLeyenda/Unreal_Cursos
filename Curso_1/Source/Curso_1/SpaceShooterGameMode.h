@@ -53,6 +53,9 @@ public:
 
 	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning PowerUps")
 	TSubclassOf<class ADobleCannon_PowerUp> DobleCannon_PowerUpBlueprint;
+
+	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning PowerUps")
+	TSubclassOf<class ANuke_PowerUp> Nuke_PowerUpBlueprint;
 	
 	float DelaySpawnEnemy_Cohete;
 	FTimerHandle TimerSpawnEnemy_Cohete;
