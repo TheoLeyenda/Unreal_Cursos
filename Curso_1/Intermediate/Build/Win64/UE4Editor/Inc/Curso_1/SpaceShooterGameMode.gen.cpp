@@ -20,6 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	CURSO_1_API UClass* Z_Construct_UClass_AEnemy_Cohete_NoRegister();
+	CURSO_1_API UClass* Z_Construct_UClass_AShield_PowerUp_NoRegister();
+	CURSO_1_API UClass* Z_Construct_UClass_ADobleCannon_PowerUp_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ASpaceShooterGameMode::execChangeMenuWidget)
 	{
@@ -82,21 +84,61 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MIN_TIME_SPAWN_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MIN_TIME_SPAWN_ENEMY_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MIN_TIME_SPAWN;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MIN_TIME_SPAWN_ENEMY;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MAX_TIME_SPAWN_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MAX_TIME_SPAWN_ENEMY_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MAX_TIME_SPAWN;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MAX_TIME_SPAWN_ENEMY;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TIME_TO_MAX_DIFICULTY_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TIME_TO_MAX_DIFICULTY;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MIN_TIME_SPAWN_POWERUP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MIN_TIME_SPAWN_POWERUP;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MAX_TIME_SPAWN_POWERUP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MAX_TIME_SPAWN_POWERUP;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MIN_POS_X_SPAWN_POWERUP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MIN_POS_X_SPAWN_POWERUP;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MAX_POS_X_SPAWN_POWERUP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MAX_POS_X_SPAWN_POWERUP;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MIN_POS_Y_SPAWN_POWERUP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MIN_POS_Y_SPAWN_POWERUP;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MAX_POS_Y_SPAWN_POWERUP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MAX_POS_Y_SPAWN_POWERUP;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MIN_POS_Z_SPAWN_POWERUP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MIN_POS_Z_SPAWN_POWERUP;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MAX_POS_Z_SPAWN_POWERUP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MAX_POS_Z_SPAWN_POWERUP;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Enemy_CoheteBlueprint_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Enemy_CoheteBlueprint;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Shield_PowerUpBlueprint_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Shield_PowerUpBlueprint;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DobleCannon_PowerUpBlueprint_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_DobleCannon_PowerUpBlueprint;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StartingWidgetClass_MetaData[];
 #endif
@@ -126,33 +168,103 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_MetaData[] = {
-		{ "Category", "SpaceShooterGameMode - Spawning" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_ENEMY_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning Enemys" },
 		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN = { "MIN_TIME_SPAWN", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MIN_TIME_SPAWN), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_ENEMY = { "MIN_TIME_SPAWN_ENEMY", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MIN_TIME_SPAWN_ENEMY), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_ENEMY_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_ENEMY_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_MetaData[] = {
-		{ "Category", "SpaceShooterGameMode - Spawning" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_ENEMY_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning Enemys" },
 		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN = { "MAX_TIME_SPAWN", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MAX_TIME_SPAWN), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_ENEMY = { "MAX_TIME_SPAWN_ENEMY", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MAX_TIME_SPAWN_ENEMY), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_ENEMY_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_ENEMY_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_TIME_TO_MAX_DIFICULTY_MetaData[] = {
-		{ "Category", "SpaceShooterGameMode - Spawning" },
+		{ "Category", "SpaceShooterGameMode - Spawning Enemys" },
 		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_TIME_TO_MAX_DIFICULTY = { "TIME_TO_MAX_DIFICULTY", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, TIME_TO_MAX_DIFICULTY), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_TIME_TO_MAX_DIFICULTY_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_TIME_TO_MAX_DIFICULTY_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_POWERUP_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning PowerUps" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_POWERUP = { "MIN_TIME_SPAWN_POWERUP", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MIN_TIME_SPAWN_POWERUP), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_POWERUP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_POWERUP_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_POWERUP_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning PowerUps" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_POWERUP = { "MAX_TIME_SPAWN_POWERUP", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MAX_TIME_SPAWN_POWERUP), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_POWERUP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_POWERUP_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_X_SPAWN_POWERUP_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning PowerUps" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_X_SPAWN_POWERUP = { "MIN_POS_X_SPAWN_POWERUP", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MIN_POS_X_SPAWN_POWERUP), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_X_SPAWN_POWERUP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_X_SPAWN_POWERUP_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_X_SPAWN_POWERUP_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning PowerUps" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_X_SPAWN_POWERUP = { "MAX_POS_X_SPAWN_POWERUP", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MAX_POS_X_SPAWN_POWERUP), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_X_SPAWN_POWERUP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_X_SPAWN_POWERUP_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_Y_SPAWN_POWERUP_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning PowerUps" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_Y_SPAWN_POWERUP = { "MIN_POS_Y_SPAWN_POWERUP", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MIN_POS_Y_SPAWN_POWERUP), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_Y_SPAWN_POWERUP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_Y_SPAWN_POWERUP_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_Y_SPAWN_POWERUP_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning PowerUps" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_Y_SPAWN_POWERUP = { "MAX_POS_Y_SPAWN_POWERUP", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MAX_POS_Y_SPAWN_POWERUP), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_Y_SPAWN_POWERUP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_Y_SPAWN_POWERUP_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_Z_SPAWN_POWERUP_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning PowerUps" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_Z_SPAWN_POWERUP = { "MIN_POS_Z_SPAWN_POWERUP", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MIN_POS_Z_SPAWN_POWERUP), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_Z_SPAWN_POWERUP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_Z_SPAWN_POWERUP_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_Z_SPAWN_POWERUP_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning PowerUps" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_Z_SPAWN_POWERUP = { "MAX_POS_Z_SPAWN_POWERUP", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, MAX_POS_Z_SPAWN_POWERUP), METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_Z_SPAWN_POWERUP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_Z_SPAWN_POWERUP_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Enemy_CoheteBlueprint_MetaData[] = {
-		{ "Category", "SpaceShooterGameMode - Spawning" },
+		{ "Category", "SpaceShooterGameMode - Spawning Enemys" },
 		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Enemy_CoheteBlueprint = { "Enemy_CoheteBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, Enemy_CoheteBlueprint), Z_Construct_UClass_AEnemy_Cohete_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Enemy_CoheteBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Enemy_CoheteBlueprint_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Shield_PowerUpBlueprint_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning PowerUps" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Shield_PowerUpBlueprint = { "Shield_PowerUpBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, Shield_PowerUpBlueprint), Z_Construct_UClass_AShield_PowerUp_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Shield_PowerUpBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Shield_PowerUpBlueprint_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_DobleCannon_PowerUpBlueprint_MetaData[] = {
+		{ "Category", "SpaceShooterGameMode - Spawning PowerUps" },
+		{ "ModuleRelativePath", "SpaceShooterGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_DobleCannon_PowerUpBlueprint = { "DobleCannon_PowerUpBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, DobleCannon_PowerUpBlueprint), Z_Construct_UClass_ADobleCannon_PowerUp_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_DobleCannon_PowerUpBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_DobleCannon_PowerUpBlueprint_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_StartingWidgetClass_MetaData[] = {
 		{ "Category", "SpaceShooterGameMode - UMG Game" },
@@ -168,10 +280,20 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_CurrentWidget = { "CurrentWidget", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceShooterGameMode, CurrentWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_CurrentWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_CurrentWidget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpaceShooterGameMode_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_ENEMY,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_ENEMY,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_TIME_TO_MAX_DIFICULTY,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_TIME_SPAWN_POWERUP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_TIME_SPAWN_POWERUP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_X_SPAWN_POWERUP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_X_SPAWN_POWERUP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_Y_SPAWN_POWERUP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_Y_SPAWN_POWERUP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MIN_POS_Z_SPAWN_POWERUP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_MAX_POS_Z_SPAWN_POWERUP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Enemy_CoheteBlueprint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_Shield_PowerUpBlueprint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_DobleCannon_PowerUpBlueprint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_StartingWidgetClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceShooterGameMode_Statics::NewProp_CurrentWidget,
 	};
@@ -202,7 +324,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooterGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASpaceShooterGameMode, 3408243198);
+	IMPLEMENT_CLASS(ASpaceShooterGameMode, 1104671850);
 	template<> CURSO_1_API UClass* StaticClass<ASpaceShooterGameMode>()
 	{
 		return ASpaceShooterGameMode::StaticClass();

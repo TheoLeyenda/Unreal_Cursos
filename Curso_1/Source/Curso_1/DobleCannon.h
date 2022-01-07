@@ -18,8 +18,6 @@ public:
 
 	float DelayDobleCannonDestroy;
 	FTimerHandle TimerHandle;
-
-	AActor* User;
 	
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class ABullet> BulletBlueprint;
@@ -39,8 +37,6 @@ public:
 	void InitDobleCannon();
 
 	void BeginDestroy() override;
-
-	void Tick(float DeltaSeconds) override;
 	
 	void DestroyDobleCannon();
 	

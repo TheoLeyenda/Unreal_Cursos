@@ -29,7 +29,7 @@ public:
 	
 	UPROPERTY(EditAnywhere, Category= "Spaceship - Shield")
 	TSubclassOf<class AShield> ShieldBlueprint;
-
+	
 	ADobleCannon* DobleCannon;
 
 	UPROPERTY(EditAnywhere, Category= "Spaceship - Doble Cannon")
@@ -52,6 +52,8 @@ public:
 	void Shoot();
 	void ActivateShield(float DelayActivate);
 	void ActivateDobleCannon(float DelayActivate);
+	void DeattachDobleCannon(AActor* Cannon);
+	
 	FVector CurrentVelocity;
 	
 	UFUNCTION()

@@ -51,7 +51,7 @@ void ASpaceship::Shoot()
 		World->SpawnActor<ABullet>(BulletBlueprint, SpawnLocation, FRotator::ZeroRotator);
 	}
 
-	if(IsValid(DobleCannon))
+	if(DobleCannon)
 	{
 		DobleCannon->ShootCannons();
 	}
@@ -87,26 +87,35 @@ void ASpaceship::OnOverlap(UPrimitiveComponent* OverlappedComponent
 void ASpaceship::ActivateDobleCannon(float DelayActivate)
 {
 	UWorld* World = GetWorld();
-	if(!IsValid(DobleCannon) && World && DobleCannonBlueprint)
+	if(!DobleCannon && World && DobleCannonBlueprint)
 	{
 		DobleCannon = World->SpawnActor<ADobleCannon>(DobleCannonBlueprint, GetActorLocation() + OffsetSpawnBullet, FRotator::ZeroRotator);
 		if(DobleCannon)
 		{
 			DobleCannon->DelayDobleCannonDestroy = DelayActivate;
 			DobleCannon->InitDobleCannon();
-			DobleCannon->User = this;
+			DobleCannon->AttachToComponent(BoxComponent,FAttachmentTransformRules::KeepRelativeTransform, NAME_None);
+			DobleCannon->SetActorLocation(GetActorLocation() + OffsetSpawnBullet);
+			DobleCannon->OnDestroyed.AddDynamic(this, &ASpaceship::DeattachDobleCannon);
 		}
 	}
-	else if(IsValid(DobleCannon))
+	else if(DobleCannon)
 	{
     	DobleCannon->ResetTimer(DelayActivate);
 	}
 }
 
+void ASpaceship::DeattachDobleCannon(AActor* Cannon)
+{
+	DobleCannon->DetachFromActor(FDetachmentTransformRules::KeepRelativeTransform);
+	DobleCannon = nullptr;
+}
+
+
 void ASpaceship::ActivateShield(float DelayActivate)
 {
 	UWorld* World = GetWorld();
-	if(!IsValid(Shield) && World && ShieldBlueprint)
+	if(!Shield && World && ShieldBlueprint)
 	{
 		Shield = World->SpawnActor<AShield>(ShieldBlueprint, GetActorLocation(), FRotator::ZeroRotator);
 		if(Shield)
@@ -117,7 +126,7 @@ void ASpaceship::ActivateShield(float DelayActivate)
 			Shield->SetActorLocation(GetActorLocation());
 		}
 	}
-	else if(IsValid(Shield))
+	else if(Shield)
 	{
 		Shield->ResetTimer(DelayActivate);
 	}

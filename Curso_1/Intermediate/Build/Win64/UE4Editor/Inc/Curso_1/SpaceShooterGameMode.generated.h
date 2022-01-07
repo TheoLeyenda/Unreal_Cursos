@@ -70,9 +70,17 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASpaceShooterGameMode); \
 
 
 #define Curso_1_Source_Curso_1_SpaceShooterGameMode_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__MIN_TIME_SPAWN() { return STRUCT_OFFSET(ASpaceShooterGameMode, MIN_TIME_SPAWN); } \
-	FORCEINLINE static uint32 __PPO__MAX_TIME_SPAWN() { return STRUCT_OFFSET(ASpaceShooterGameMode, MAX_TIME_SPAWN); } \
+	FORCEINLINE static uint32 __PPO__MIN_TIME_SPAWN_ENEMY() { return STRUCT_OFFSET(ASpaceShooterGameMode, MIN_TIME_SPAWN_ENEMY); } \
+	FORCEINLINE static uint32 __PPO__MAX_TIME_SPAWN_ENEMY() { return STRUCT_OFFSET(ASpaceShooterGameMode, MAX_TIME_SPAWN_ENEMY); } \
 	FORCEINLINE static uint32 __PPO__TIME_TO_MAX_DIFICULTY() { return STRUCT_OFFSET(ASpaceShooterGameMode, TIME_TO_MAX_DIFICULTY); } \
+	FORCEINLINE static uint32 __PPO__MIN_TIME_SPAWN_POWERUP() { return STRUCT_OFFSET(ASpaceShooterGameMode, MIN_TIME_SPAWN_POWERUP); } \
+	FORCEINLINE static uint32 __PPO__MAX_TIME_SPAWN_POWERUP() { return STRUCT_OFFSET(ASpaceShooterGameMode, MAX_TIME_SPAWN_POWERUP); } \
+	FORCEINLINE static uint32 __PPO__MIN_POS_X_SPAWN_POWERUP() { return STRUCT_OFFSET(ASpaceShooterGameMode, MIN_POS_X_SPAWN_POWERUP); } \
+	FORCEINLINE static uint32 __PPO__MAX_POS_X_SPAWN_POWERUP() { return STRUCT_OFFSET(ASpaceShooterGameMode, MAX_POS_X_SPAWN_POWERUP); } \
+	FORCEINLINE static uint32 __PPO__MIN_POS_Y_SPAWN_POWERUP() { return STRUCT_OFFSET(ASpaceShooterGameMode, MIN_POS_Y_SPAWN_POWERUP); } \
+	FORCEINLINE static uint32 __PPO__MAX_POS_Y_SPAWN_POWERUP() { return STRUCT_OFFSET(ASpaceShooterGameMode, MAX_POS_Y_SPAWN_POWERUP); } \
+	FORCEINLINE static uint32 __PPO__MIN_POS_Z_SPAWN_POWERUP() { return STRUCT_OFFSET(ASpaceShooterGameMode, MIN_POS_Z_SPAWN_POWERUP); } \
+	FORCEINLINE static uint32 __PPO__MAX_POS_Z_SPAWN_POWERUP() { return STRUCT_OFFSET(ASpaceShooterGameMode, MAX_POS_Z_SPAWN_POWERUP); } \
 	FORCEINLINE static uint32 __PPO__StartingWidgetClass() { return STRUCT_OFFSET(ASpaceShooterGameMode, StartingWidgetClass); } \
 	FORCEINLINE static uint32 __PPO__CurrentWidget() { return STRUCT_OFFSET(ASpaceShooterGameMode, CurrentWidget); }
 

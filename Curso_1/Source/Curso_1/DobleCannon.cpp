@@ -2,12 +2,13 @@
 
 
 #include "DobleCannon.h"
+#include "Spaceship.h"
 
 // Sets default values
 ADobleCannon::ADobleCannon()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 }
 
 void ADobleCannon::InitDobleCannon()
@@ -24,20 +25,8 @@ void ADobleCannon::BeginDestroy()
 	{
 		GetWorld()->GetTimerManager().ClearTimer(TimerHandle);
 	}
-	
 	Super::BeginDestroy();
 }
-
-void ADobleCannon::Tick(float DeltaSeconds)
-{
-	Super::Tick(DeltaSeconds);
-
-	if(IsValid(User))
-	{
-		SetActorLocation(User->GetActorLocation());
-	}
-}
-
 
 void ADobleCannon::DestroyDobleCannon()
 {
@@ -47,7 +36,7 @@ void ADobleCannon::DestroyDobleCannon()
 void ADobleCannon::ShootCannons()
 {
 	UWorld* World = GetWorld();
-	if(World)
+	if(World && BulletBlueprint)
 	{
 		SpawnCannonLocation1 = FVector::ZeroVector;
 		SpawnCannonLocation2 = FVector::ZeroVector;
