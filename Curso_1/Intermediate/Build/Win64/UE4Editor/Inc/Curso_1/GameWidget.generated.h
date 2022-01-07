@@ -15,17 +15,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Curso_1_Source_Curso_1_GameWidget_h_21_SPARSE_DATA
 #define Curso_1_Source_Curso_1_GameWidget_h_21_RPC_WRAPPERS \
+	virtual void OnGameOver_Implementation(int32 Score); \
 	virtual void SetScore_Implementation(int32 Score); \
  \
+	DECLARE_FUNCTION(execOnGameOver); \
 	DECLARE_FUNCTION(execSetScore);
 
 
 #define Curso_1_Source_Curso_1_GameWidget_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOnGameOver); \
 	DECLARE_FUNCTION(execSetScore);
 
 
 #define Curso_1_Source_Curso_1_GameWidget_h_21_EVENT_PARMS \
+	struct GameWidget_eventOnGameOver_Parms \
+	{ \
+		int32 Score; \
+	}; \
 	struct GameWidget_eventSetScore_Parms \
 	{ \
 		int32 Score; \

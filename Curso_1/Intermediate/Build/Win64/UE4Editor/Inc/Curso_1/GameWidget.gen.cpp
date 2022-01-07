@@ -19,6 +19,14 @@ void EmptyLinkFunctionForGeneratedCodeGameWidget() {}
 	UPackage* Z_Construct_UPackage__Script_Curso_1();
 	UMG_API UClass* Z_Construct_UClass_UTextBlock_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UGameWidget::execOnGameOver)
+	{
+		P_GET_PROPERTY(FIntProperty,Z_Param_Score);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnGameOver_Implementation(Z_Param_Score);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UGameWidget::execSetScore)
 	{
 		P_GET_PROPERTY(FIntProperty,Z_Param_Score);
@@ -26,6 +34,13 @@ void EmptyLinkFunctionForGeneratedCodeGameWidget() {}
 		P_NATIVE_BEGIN;
 		P_THIS->SetScore_Implementation(Z_Param_Score);
 		P_NATIVE_END;
+	}
+	static FName NAME_UGameWidget_OnGameOver = FName(TEXT("OnGameOver"));
+	void UGameWidget::OnGameOver(int32 Score)
+	{
+		GameWidget_eventOnGameOver_Parms Parms;
+		Parms.Score=Score;
+		ProcessEvent(FindFunctionChecked(NAME_UGameWidget_OnGameOver),&Parms);
 	}
 	static FName NAME_UGameWidget_SetScore = FName(TEXT("SetScore"));
 	void UGameWidget::SetScore(int32 Score)
@@ -38,9 +53,38 @@ void EmptyLinkFunctionForGeneratedCodeGameWidget() {}
 	{
 		UClass* Class = UGameWidget::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "OnGameOver", &UGameWidget::execOnGameOver },
 			{ "SetScore", &UGameWidget::execSetScore },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UGameWidget_OnGameOver_Statics
+	{
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Score;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UGameWidget_OnGameOver_Statics::NewProp_Score = { "Score", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GameWidget_eventOnGameOver_Parms, Score), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGameWidget_OnGameOver_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGameWidget_OnGameOver_Statics::NewProp_Score,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGameWidget_OnGameOver_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "GameWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UGameWidget_OnGameOver_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGameWidget, nullptr, "OnGameOver", nullptr, nullptr, sizeof(GameWidget_eventOnGameOver_Parms), Z_Construct_UFunction_UGameWidget_OnGameOver_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGameWidget_OnGameOver_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGameWidget_OnGameOver_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGameWidget_OnGameOver_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UGameWidget_OnGameOver()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UGameWidget_OnGameOver_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UGameWidget_SetScore_Statics
 	{
@@ -94,6 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeGameWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Curso_1,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UGameWidget_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UGameWidget_OnGameOver, "OnGameOver" }, // 1500159761
 		{ &Z_Construct_UFunction_UGameWidget_SetScore, "SetScore" }, // 3567049419
 	};
 #if WITH_METADATA
@@ -140,7 +185,7 @@ void EmptyLinkFunctionForGeneratedCodeGameWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGameWidget, 1565023658);
+	IMPLEMENT_CLASS(UGameWidget, 1679977129);
 	template<> CURSO_1_API UClass* StaticClass<UGameWidget>()
 	{
 		return UGameWidget::StaticClass();

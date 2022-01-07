@@ -80,7 +80,7 @@ void ASpaceShooterGameMode::GameOver()
 	UGameWidget* GW = Cast<UGameWidget>(CurrentWidget);
 	if(GW)
 	{
-		GW->OnGameOver(Score);
+		GW->OnGameOver_Implementation(Score);
 	}
 }
 
