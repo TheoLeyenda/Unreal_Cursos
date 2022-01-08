@@ -13,9 +13,15 @@ UCLASS()
 class CURSO_1_API ASpaceshipController : public APlayerController
 {
 	GENERATED_BODY()
+
+	class ASpaceship* Spaceship;
 protected:
 	bool bHasInitializedInputComponent = false;
+
+	void BeginPlay() override;
 public:
+
+	
 	virtual void SetupInputComponent() override;
 
 	void MoveX_Axies(float AxiesValue);

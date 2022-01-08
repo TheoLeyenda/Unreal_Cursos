@@ -3,6 +3,8 @@
 
 #include "Shield.h"
 #include "Enemy_Cohete.h"
+#include "Enemy_Airplane.h"
+#include "EnemyBullet.h"
 #include "Chaos/GeometryParticlesfwd.h"
 
 // Sets default values
@@ -53,7 +55,9 @@ void AShield::DestroyShield()
 
 void AShield::OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if(OtherActor->IsA(AEnemy_Cohete::StaticClass()))
+	if(OtherActor->IsA(AEnemy_Cohete::StaticClass())
+		|| OtherActor->IsA(AEnemy_Airplane::StaticClass())
+		|| OtherActor->IsA(AEnemyBullet::StaticClass()))
 	{
 
 		ASpaceShooterGameMode* SpaceShooterGameMode = Cast<ASpaceShooterGameMode>(GetWorld()->GetAuthGameMode());
@@ -63,7 +67,15 @@ void AShield::OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherA
 		}
 
 		AEnemy_Cohete* Enemy_Cohete = Cast<AEnemy_Cohete>(OtherActor);
-		Enemy_Cohete->SpawnExplotion();
+		if(Enemy_Cohete)
+		{
+			Enemy_Cohete->SpawnExplotion();
+		}
+		AEnemy_Airplane* Enemy_Airplane = Cast<AEnemy_Airplane>(OtherActor);
+		if(Enemy_Airplane)
+		{
+			Enemy_Airplane->SpawnExplotion();
+		}
 		
 		OtherActor->Destroy();
 	}

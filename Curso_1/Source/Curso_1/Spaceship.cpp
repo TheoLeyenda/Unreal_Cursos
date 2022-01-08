@@ -4,6 +4,8 @@
 #include "Spaceship.h"
 #include "Bullet.h"
 #include "Enemy_Cohete.h"
+#include "Enemy_Airplane.h"
+#include "EnemyBullet.h"
 #include "Components/BoxComponent.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -66,7 +68,10 @@ void ASpaceship::OnOverlap(UPrimitiveComponent* OverlappedComponent
 		, bool bFromSweep
 		, const FHitResult& SweepResult)
 {
-	if(OtherActor->IsA(AEnemy_Cohete::StaticClass()))
+	//Fijarse las responsabilidades (¿Quien es responsable de hacer daño a quien ? El Enemigo al player/ EnemyBullet al player)
+	if(OtherActor->IsA(AEnemy_Cohete::StaticClass())
+		|| OtherActor->IsA(AEnemy_Airplane::StaticClass())
+		|| OtherActor->IsA(AEnemyBullet::StaticClass()))
 	{
 		ASpaceShooterGameMode* SpaceShooterGameMode = Cast<ASpaceShooterGameMode>(GetWorld()->GetAuthGameMode());
 		if(SpaceShooterGameMode)

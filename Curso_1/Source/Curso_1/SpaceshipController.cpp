@@ -19,11 +19,16 @@ void ASpaceshipController::SetupInputComponent()
 	}
 }
 
+void ASpaceshipController::BeginPlay()
+{
+	Super::BeginPlay();
+	Spaceship = Cast<ASpaceship>(GetPawn());
+}
+
+
 void ASpaceshipController::MoveX_Axies(float AxiesValue)
 {
-	ASpaceship* Spaceship = Cast<ASpaceship>(GetPawn());
-
-	if(IsValid(Spaceship))
+	if(Spaceship)
 	{
 		Spaceship->MoveX(AxiesValue);
 	}
@@ -31,9 +36,7 @@ void ASpaceshipController::MoveX_Axies(float AxiesValue)
 
 void ASpaceshipController::MoveY_Axies(float AxiesValue)
 {
-	ASpaceship* Spaceship = Cast<ASpaceship>(GetPawn());
-
-	if(IsValid(Spaceship))
+	if(Spaceship)
 	{
 		Spaceship->MoveY(AxiesValue);
 	}
@@ -41,9 +44,7 @@ void ASpaceshipController::MoveY_Axies(float AxiesValue)
 
 void ASpaceshipController::OnShootPress()
 {
-	ASpaceship* Spaceship = Cast<ASpaceship>(GetPawn());
-
-	if(IsValid(Spaceship))
+	if(Spaceship)
 	{
 		Spaceship->Shoot();
 	}
@@ -51,9 +52,8 @@ void ASpaceshipController::OnShootPress()
 
 void ASpaceshipController::OnResetPress()
 {
-	ASpaceship* Spaceship = Cast<ASpaceship>(GetPawn());
-	
-	if(!IsValid(Spaceship))
+	Spaceship = Cast<ASpaceship>(GetPawn());
+	if(!Spaceship)
 	{
 		UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
 	}

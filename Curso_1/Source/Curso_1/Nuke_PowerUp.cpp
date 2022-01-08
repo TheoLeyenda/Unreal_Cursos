@@ -25,7 +25,7 @@ void ANuke_PowerUp::OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* 
 		
 		if(Actors.Num() > 0)
 		{
-			for(int i = 0; i < Actors.Num(); i++)
+			for(int32 i = 0; i < Actors.Num(); i++)
 			{
 				AEnemy_Cohete* enemy = Cast<AEnemy_Cohete>(Actors[i]);
 				if(enemy)

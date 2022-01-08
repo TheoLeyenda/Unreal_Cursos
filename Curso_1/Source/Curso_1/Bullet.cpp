@@ -1,6 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
+//Hacer una jerarquia para las balas
+
 #include "Bullet.h"
 
 // Sets default values

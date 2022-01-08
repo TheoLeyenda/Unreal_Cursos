@@ -43,11 +43,21 @@ class CURSO_1_API ASpaceShooterGameMode : public AGameMode
 	float MIN_POS_Z_SPAWN_POWERUP;
 	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning PowerUps")
 	float MAX_POS_Z_SPAWN_POWERUP;
-	
+
+	UPROPERTY(EditAnywhere, Category="SpaceShooterGameMode - Spawning Enemys")
+	int porcentageSpawnEnemy_Cohete = 80;
 public:
+	
+	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning Enemys")
+	TSubclassOf<class AEnemy_Airplane> Enemy_AirplaneBlueprint;
+	
 	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning Enemys")
 	TSubclassOf<class AEnemy_Cohete> Enemy_CoheteBlueprint;
 
+	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning PowerUps")
+	TArray<TSubclassOf<class APowerUp>> PowerUps;
+
+	//Pasar esto al TArray PowerUps y cambiar el spawn de powerUps para que use el TArray.
 	UPROPERTY(EditAnywhere, Category= "SpaceShooterGameMode - Spawning PowerUps")
 	TSubclassOf<class AShield_PowerUp> Shield_PowerUpBlueprint;
 
@@ -69,7 +79,7 @@ public:
 	
 	void AddScore();
 	void GameOver();
-	void SpawnEnemy_Cohete();
+	void SpawnEnemy();
 	void SpawnPowerUp();
 
 	void BeginDestroy() override;

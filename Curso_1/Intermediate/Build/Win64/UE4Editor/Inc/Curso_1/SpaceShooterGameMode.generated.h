@@ -82,6 +82,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASpaceShooterGameMode); \
 	FORCEINLINE static uint32 __PPO__MAX_POS_Y_SPAWN_POWERUP() { return STRUCT_OFFSET(ASpaceShooterGameMode, MAX_POS_Y_SPAWN_POWERUP); } \
 	FORCEINLINE static uint32 __PPO__MIN_POS_Z_SPAWN_POWERUP() { return STRUCT_OFFSET(ASpaceShooterGameMode, MIN_POS_Z_SPAWN_POWERUP); } \
 	FORCEINLINE static uint32 __PPO__MAX_POS_Z_SPAWN_POWERUP() { return STRUCT_OFFSET(ASpaceShooterGameMode, MAX_POS_Z_SPAWN_POWERUP); } \
+	FORCEINLINE static uint32 __PPO__porcentageSpawnEnemy_Cohete() { return STRUCT_OFFSET(ASpaceShooterGameMode, porcentageSpawnEnemy_Cohete); } \
 	FORCEINLINE static uint32 __PPO__StartingWidgetClass() { return STRUCT_OFFSET(ASpaceShooterGameMode, StartingWidgetClass); } \
 	FORCEINLINE static uint32 __PPO__CurrentWidget() { return STRUCT_OFFSET(ASpaceShooterGameMode, CurrentWidget); }
 
