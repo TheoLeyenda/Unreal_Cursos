@@ -1195,3 +1195,75 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.01.11-13.41.22:530][409]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
 [2022.01.11-13.41.22:548][409]LogUObjectHash: Compacting FUObjectHashTables data took   2.55ms
 [2022.01.11-13.41.22:566][410]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2022.01.11-13.43.09:849][ 54]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.11-13.43.09:853][ 54]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.11-13.43.09:853][ 54]PIE: New page: PIE session: Rookie_Kong (Jan 11, 2022, 7:43:09 AM)
+[2022.01.11-13.43.09:882][ 54]LogPlayLevel: Creating play world package: /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.11-13.43.09:910][ 54]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027717s)
+[2022.01.11-13.43.09:911][ 54]LogAIModule: Creating AISystem for world Rookie_Kong
+[2022.01.11-13.43.09:911][ 54]LogPlayLevel: PIE: World Init took: (0.000854s)
+[2022.01.11-13.43.09:911][ 54]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong to /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong (0.028764s)
+[2022.01.11-13.43.09:947][ 54]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2022.01.11-13.43.09:948][ 54]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2022.01.11-13.43.09:948][ 54]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.11-13.43.09:948][ 54]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.11-13.43.09:948][ 54]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.11-13.43.09:948][ 54]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.11-13.43.09:948][ 54]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.11-13.43.09:948][ 54]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.11-13.43.09:948][ 54]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.11-13.43.09:948][ 54]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.11-13.43.09:949][ 54]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.11-13.43.09:949][ 54]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.11-13.43.09:955][ 54]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.11-13.43.09:955][ 54]LogAudioMixer: Display: 1: FrontRight
+[2022.01.11-13.43.09:971][ 54]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.11-13.43.09:971][ 54]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.11-13.43.09:971][ 54]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.11-13.43.09:971][ 54]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.11-13.43.09:971][ 54]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.11-13.43.09:971][ 54]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.11-13.43.09:971][ 54]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.11-13.43.09:972][ 54]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.11-13.43.09:972][ 54]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.11-13.43.09:972][ 54]LogInit: FAudioDevice initialized.
+[2022.01.11-13.43.09:972][ 54]LogAudio: Display: Audio Device (ID: 5) registered with world 'Rookie_Kong'.
+[2022.01.11-13.43.09:986][ 54]LogLoad: Game class is 'BP_RKGameMode_C'
+[2022.01.11-13.43.09:988][ 54]LogWorld: Bringing World /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong up for play (max tick rate 0) at 2022.01.11-10.43.09
+[2022.01.11-13.43.09:988][ 54]LogWorld: Bringing up level for play took: 0.000959
+[2022.01.11-13.43.09:988][ 54]LogOnline: OSS: Creating online subsystem instance for: :Context_28
+[2022.01.11-13.43.09:990][ 54]PIE: Server logged in
+[2022.01.11-13.43.09:991][ 54]PIE: Play in editor total start time 0.138 seconds.
+[2022.01.11-13.43.21:687][451]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.11-13.43.21:687][451]LogWorld: BeginTearingDown for /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.11-13.43.21:687][451]LogWorld: UWorld::CleanupWorld for Rookie_Kong, bSessionEnded=true, bCleanupResources=true
+[2022.01.11-13.43.21:689][451]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.11-13.43.21:707][451]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.11-13.43.21:724][451]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.11-13.43.21:773][451]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.11-13.43.21:773][451]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.11-13.43.21:774][451]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.11-13.43.21:791][451]LogUObjectHash: Compacting FUObjectHashTables data took   2.85ms
+[2022.01.11-13.43.21:808][452]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2022.01.11-13.53.25:386][715]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.01.11-13.53.25:406][715]LogContentBrowser: Creating deferred item: NewFolder
+[2022.01.11-13.53.28:309][ 64]LogContentBrowser: Attempting asset rename: NewFolder -> Sounds
+[2022.01.11-13.53.28:309][ 64]LogContentBrowser: End creating deferred item NewFolder
+[2022.01.11-13.53.41:399][541]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:\Users\Theo\Downloads\Footstep.wav)
+[2022.01.11-13.53.41:416][541]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:\Users\Theo\Downloads\Dead.wav)
+[2022.01.11-13.53.48:904][575]LogAssetEditorSubsystem: Opening Asset editor for SoundWave /Game/Blueprints/Proyecto_3/Sounds/Dead.Dead
+[2022.01.11-13.53.51:260][841]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Sounds/Dead" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Sounds/Dead.uasset" SILENT=true
+[2022.01.11-13.53.51:262][841]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/Dead389829EE499ED0246EE38482B20386B3.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Sounds/Dead.uasset'
+[2022.01.11-13.53.51:271][841]AssetCheck: New page: Asset Save: Dead
+[2022.01.11-13.53.51:271][841]LogContentValidation: Display: Validating SoundWave /Game/Blueprints/Proyecto_3/Sounds/Dead.Dead
+[2022.01.11-13.53.54:568][206]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave Footstep...
+[2022.01.11-13.53.54:568][206]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Blueprints/Proyecto_3/Sounds/Footstep.Footstep will be modified from 40 to 40.
+[2022.01.11-13.53.54:665][206]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 43236 while cooking SoundWave /Game/Blueprints/Proyecto_3/Sounds/Footstep.Footstep.
+[2022.01.11-13.53.55:594][311]LogAssetEditorSubsystem: Opening Asset editor for SoundWave /Game/Blueprints/Proyecto_3/Sounds/Footstep.Footstep
+[2022.01.11-13.53.56:697][433]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Sounds/Footstep" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Sounds/Footstep.uasset" SILENT=true
+[2022.01.11-13.53.56:699][433]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/FootstepFA7E4B2243335F6DC2C9B8A1BE3BAD3A.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Sounds/Footstep.uasset'
+[2022.01.11-13.53.56:708][433]AssetCheck: New page: Asset Save: Footstep
+[2022.01.11-13.53.56:708][433]LogContentValidation: Display: Validating SoundWave /Game/Blueprints/Proyecto_3/Sounds/Footstep.Footstep
+[2022.01.11-13.54.00:532][849]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave Dead...
+[2022.01.11-13.54.00:532][849]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Blueprints/Proyecto_3/Sounds/Dead.Dead will be modified from 40 to 40.
+[2022.01.11-13.54.00:558][849]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 128656 while cooking SoundWave /Game/Blueprints/Proyecto_3/Sounds/Dead.Dead.
