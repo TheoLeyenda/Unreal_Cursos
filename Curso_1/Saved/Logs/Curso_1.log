@@ -3720,3 +3720,222 @@ Make sure 'BP_RKGameMode_C' has been compiled for  Get Camera
 [2022.01.11-17.16.31:326][588]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHUD1779B5AD4FFDBAB63460929E4686CD72.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset'
 [2022.01.11-17.16.31:338][588]AssetCheck: New page: Asset Save: BP_RKHUD
 [2022.01.11-17.16.31:338][588]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/Menus/BP_RKHUD.BP_RKHUD
+[2022.01.11-17.17.29:297][860]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.11-17.17.29:301][860]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.11-17.17.29:301][860]PIE: New page: PIE session: Rookie_Kong (Jan 11, 2022, 11:17:29 AM)
+[2022.01.11-17.17.29:328][860]LogPlayLevel: Creating play world package: /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.11-17.17.29:339][860]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010793s)
+[2022.01.11-17.17.29:339][860]LogAIModule: Creating AISystem for world Rookie_Kong
+[2022.01.11-17.17.29:340][860]LogPlayLevel: PIE: World Init took: (0.000864s)
+[2022.01.11-17.17.29:340][860]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong to /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong (0.011810s)
+[2022.01.11-17.17.29:376][860]LogUObjectHash: Compacting FUObjectHashTables data took   2.87ms
+[2022.01.11-17.17.29:376][860]LogAudio: Display: Creating Audio Device:                 Id: 42, Scope: Unique, Realtime: True
+[2022.01.11-17.17.29:376][860]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.11-17.17.29:376][860]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.11-17.17.29:376][860]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.11-17.17.29:376][860]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.11-17.17.29:376][860]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.11-17.17.29:376][860]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.11-17.17.29:376][860]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.11-17.17.29:376][860]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.11-17.17.29:377][860]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.11-17.17.29:377][860]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.11-17.17.29:384][860]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.11-17.17.29:384][860]LogAudioMixer: Display: 1: FrontRight
+[2022.01.11-17.17.29:400][860]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.11-17.17.29:401][860]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.11-17.17.29:401][860]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.11-17.17.29:401][860]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.11-17.17.29:401][860]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.11-17.17.29:401][860]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.11-17.17.29:401][860]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.11-17.17.29:402][860]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.11-17.17.29:402][860]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.11-17.17.29:402][860]LogInit: FAudioDevice initialized.
+[2022.01.11-17.17.29:402][860]LogAudio: Display: Audio Device (ID: 42) registered with world 'Rookie_Kong'.
+[2022.01.11-17.17.29:417][860]LogLoad: Game class is 'BP_RKGameMode_C'
+[2022.01.11-17.17.29:419][860]LogWorld: Bringing World /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong up for play (max tick rate 0) at 2022.01.11-14.17.29
+[2022.01.11-17.17.29:419][860]LogWorld: Bringing up level for play took: 0.001079
+[2022.01.11-17.17.29:419][860]LogOnline: OSS: Creating online subsystem instance for: :Context_62
+[2022.01.11-17.17.29:422][860]PIE: Server logged in
+[2022.01.11-17.17.29:422][860]PIE: Play in editor total start time 0.122 seconds.
+[2022.01.11-17.17.40:243][153]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.11-17.17.40:243][153]LogWorld: BeginTearingDown for /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.11-17.17.40:243][153]LogWorld: UWorld::CleanupWorld for Rookie_Kong, bSessionEnded=true, bCleanupResources=true
+[2022.01.11-17.17.40:245][153]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.11-17.17.40:252][153]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.11-17.17.40:256][153]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.11-17.17.40:287][153]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.11-17.17.40:287][153]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.11-17.17.40:288][153]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.11-17.17.40:303][153]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.11-17.17.40:306][153]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
+[2022.01.11-17.17.40:320][154]LogPlayLevel: Display: Destroying online subsystem :Context_62
+[2022.01.11-17.19.29:540][401]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2022.01.11-17.19.29:541][401]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Proyecto_3/Rookie_Kong' took 0.035
+[2022.01.11-17.19.29:543][401]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD] ([1] browsable assets)...
+[2022.01.11-17.19.29:543][401]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD]
+[2022.01.11-17.19.29:548][401]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHUD_Auto3B9A14ACB436BF08D081ED4BF885BFB4B.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/Autosaves/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD_Auto3.uasset'
+[2022.01.11-17.19.29:549][401]LogFileHelpers: Auto-saving content packages took 0.006
+[2022.01.11-17.20.32:148][260]LogSlate: Window 'Color Picker' being destroyed
+[2022.01.11-17.20.45:779][667]LogSlate: Window 'Color Picker' being destroyed
+[2022.01.11-17.25.20:827][770]BlueprintLog: New page: Compile BP_RKHUD
+[2022.01.11-17.25.20:885][770]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2022.01.11-17.25.21:981][891]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset" SILENT=true
+[2022.01.11-17.25.21:990][891]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHUDC7D19A6440C8ED229EC4488A53820863.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset'
+[2022.01.11-17.25.22:002][891]AssetCheck: New page: Asset Save: BP_RKHUD
+[2022.01.11-17.25.22:002][891]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/Menus/BP_RKHUD.BP_RKHUD
+[2022.01.11-17.25.48:675][ 27]BlueprintLog: New page: Compile BP_RKHUD
+[2022.01.11-17.25.48:725][ 27]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2022.01.11-17.25.49:538][114]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset" SILENT=true
+[2022.01.11-17.25.49:546][114]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHUD2465E33941D5780582A41C83A1C52E9E.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset'
+[2022.01.11-17.25.49:560][114]AssetCheck: New page: Asset Save: BP_RKHUD
+[2022.01.11-17.25.49:561][114]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/Menus/BP_RKHUD.BP_RKHUD
+[2022.01.11-17.27.55:582][640]LogSlate: Window 'Color Picker' being destroyed
+[2022.01.11-17.30.20:013][767]BlueprintLog: New page: Compile BP_RKHUD
+[2022.01.11-17.30.20:016][767]LogBlueprint: Error: [AssetLog] C:\Users\Theo\Desktop\Unreal_Cursos\Curso_1\Content\Blueprints\Proyecto_3\Menus\BP_RKHUD.uasset: [Compiler] The current value of the ' Context ' pin is invalid: 'Context' in action 'Draw Text' must have an input wired into it ("by ref" params expect a valid input to operate on).
+[2022.01.11-17.30.20:068][767]LogUObjectHash: Compacting FUObjectHashTables data took   3.26ms
+[2022.01.11-17.30.20:523][816]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset" SILENT=true
+[2022.01.11-17.30.20:533][816]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHUD38958ABD4ABF3D1A6702449AD4E2CD69.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset'
+[2022.01.11-17.30.20:546][816]AssetCheck: New page: Asset Save: BP_RKHUD
+[2022.01.11-17.30.20:546][816]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/Menus/BP_RKHUD.BP_RKHUD
+[2022.01.11-17.30.48:517][620]BlueprintLog: New page: Compile BP_RKHUD
+[2022.01.11-17.30.48:520][620]LogBlueprint: Error: [AssetLog] C:\Users\Theo\Desktop\Unreal_Cursos\Curso_1\Content\Blueprints\Proyecto_3\Menus\BP_RKHUD.uasset: [Compiler] The current value of the ' Context ' pin is invalid: 'Context' in action 'Draw Text' must have an input wired into it ("by ref" params expect a valid input to operate on).
+[2022.01.11-17.30.48:570][620]LogUObjectHash: Compacting FUObjectHashTables data took   2.95ms
+[2022.01.11-17.30.49:246][687]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset" SILENT=true
+[2022.01.11-17.30.49:256][687]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHUD91B4097340D319585A3A96BD21A4EC2B.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset'
+[2022.01.11-17.30.49:269][687]AssetCheck: New page: Asset Save: BP_RKHUD
+[2022.01.11-17.30.49:269][687]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/Menus/BP_RKHUD.BP_RKHUD
+[2022.01.11-17.31.39:065][239]BlueprintLog: New page: Compile BP_RKHUD
+[2022.01.11-17.31.39:118][239]LogUObjectHash: Compacting FUObjectHashTables data took   3.04ms
+[2022.01.11-17.31.39:754][312]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset" SILENT=true
+[2022.01.11-17.31.39:764][312]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHUD268BC0EB4B702958C2642CBA30D2AA41.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset'
+[2022.01.11-17.31.39:777][312]AssetCheck: New page: Asset Save: BP_RKHUD
+[2022.01.11-17.31.39:777][312]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/Menus/BP_RKHUD.BP_RKHUD
+[2022.01.11-17.31.44:386][481]LogSlate: Window 'Color Picker' being destroyed
+[2022.01.11-17.34.32:508][642]BlueprintLog: New page: Compile BP_RKHUD
+[2022.01.11-17.34.32:564][642]LogUObjectHash: Compacting FUObjectHashTables data took   3.07ms
+[2022.01.11-17.35.45:610][942]BlueprintLog: New page: Compile BP_RKHUD
+[2022.01.11-17.35.45:662][942]LogUObjectHash: Compacting FUObjectHashTables data took   2.78ms
+[2022.01.11-17.35.46:536][ 36]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset" SILENT=true
+[2022.01.11-17.35.46:549][ 36]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHUDCA74A740477D3A5EDE171A8AE284AEAD.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset'
+[2022.01.11-17.35.46:561][ 36]AssetCheck: New page: Asset Save: BP_RKHUD
+[2022.01.11-17.35.46:561][ 36]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/Menus/BP_RKHUD.BP_RKHUD
+[2022.01.11-17.36.00:475][435]BlueprintLog: New page: Compile BP_RKHUD
+[2022.01.11-17.36.00:530][435]LogUObjectHash: Compacting FUObjectHashTables data took   2.79ms
+[2022.01.11-17.36.02:516][627]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset" SILENT=true
+[2022.01.11-17.36.02:529][627]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHUD0018D1C649173C67F493B5953F41A5E9.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset'
+[2022.01.11-17.36.02:540][627]AssetCheck: New page: Asset Save: BP_RKHUD
+[2022.01.11-17.36.02:540][627]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/Menus/BP_RKHUD.BP_RKHUD
+[2022.01.11-17.36.12:762][812]BlueprintLog: New page: Compile BP_RKHUD
+[2022.01.11-17.36.12:816][812]LogUObjectHash: Compacting FUObjectHashTables data took   2.75ms
+[2022.01.11-17.36.13:173][848]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset" SILENT=true
+[2022.01.11-17.36.13:187][848]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHUD1575A3A7418F53E32568FDAB409BFDA9.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset'
+[2022.01.11-17.36.13:197][848]AssetCheck: New page: Asset Save: BP_RKHUD
+[2022.01.11-17.36.13:197][848]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/Menus/BP_RKHUD.BP_RKHUD
+[2022.01.11-17.36.42:628][643]BlueprintLog: New page: Compile BP_RKHUD
+[2022.01.11-17.36.42:680][643]LogUObjectHash: Compacting FUObjectHashTables data took   2.79ms
+[2022.01.11-17.36.43:283][709]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Menus/BP_RKHUD" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset" SILENT=true
+[2022.01.11-17.36.43:297][709]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHUD91C298E847FC9FAF3D08E28AEB968FD5.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Menus/BP_RKHUD.uasset'
+[2022.01.11-17.36.43:307][709]AssetCheck: New page: Asset Save: BP_RKHUD
+[2022.01.11-17.36.43:307][709]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/Menus/BP_RKHUD.BP_RKHUD
+[2022.01.11-17.38.50:417][195]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.01.11-17.38.50:438][195]LogContentBrowser: Creating deferred item: NewFolder
+[2022.01.11-17.38.52:407][432]LogContentBrowser: Attempting asset rename: NewFolder -> Fonts
+[2022.01.11-17.38.52:407][432]LogContentBrowser: End creating deferred item NewFolder
+[2022.01.11-17.38.56:920][931]LogPackageName: Error: DoesPackageExist: DoesPackageExist FAILED: '/Game/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/__MACOSX/' is not a standard unreal filename or a long path name. Reason: Path may not end with a '/'
+[2022.01.11-17.38.56:920][931]LogPackageName: Error: DoesPackageExist: DoesPackageExist FAILED: '/Game/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/__MACOSX/' is not a standard unreal filename or a long path name. Reason: Path may not end with a '/'
+[2022.01.11-17.38.56:943][931]LogAssetTools: Warning: Failed to import 'C:\Users\Theo\Desktop\sensations_and_qualities/LICENSE REQUEST.txt'. Unknown extension 'txt'.
+[2022.01.11-17.38.56:944][931]LogFactory: FactoryCreateFile: FontFace with FontFileImportFactory (0 0 C:\Users\Theo\Desktop\sensations_and_qualities/Sensations and Qualities.ttf)
+[2022.01.11-17.38.58:806][931]LogSlate: Window 'Font Face Import Options' being destroyed
+[2022.01.11-17.38.58:811][931]Message dialog closed, result: YesAll, title: Font Face Import Options, text: Would you like to create a new Font asset using the imported Font Face as its default font?
+[2022.01.11-17.38.58:815][931]LogSlate: FontCache flush requested. Reason: UFontFace::PostEditChangeProperty
+[2022.01.11-17.38.58:816][931]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.11-17.38.58:819][931]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Theo\Desktop\sensations_and_qualities/Sensations.png)
+[2022.01.11-17.38.58:827][931]LogTexture: Display: Building textures: Sensations (AutoDXT, 800X400)
+[2022.01.11-17.38.58:890][931]LogAssetTools: Warning: Failed to import 'C:\Users\Theo\Desktop\sensations_and_qualities/__MACOSX/._sensations_and_qualities'. Unknown extension '_sensations_and_qualities'.
+[2022.01.11-17.38.58:892][931]LogAssetTools: Warning: Failed to import 'C:\Users\Theo\Desktop\sensations_and_qualities/__MACOSX/sensations_and_qualities/._LICENSE REQUEST.txt'. Unknown extension 'txt'.
+[2022.01.11-17.38.58:893][931]LogFactory: FactoryCreateFile: FontFace with FontFileImportFactory (0 0 C:\Users\Theo\Desktop\sensations_and_qualities/__MACOSX/sensations_and_qualities/._Sensations and Qualities.ttf)
+[2022.01.11-17.38.58:901][931]LogSlate: FontCache flush requested. Reason: UFontFace::PostEditChangeProperty
+[2022.01.11-17.38.58:902][931]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Theo\Desktop\sensations_and_qualities/__MACOSX/sensations_and_qualities/._Sensations.png)
+[2022.01.11-17.38.59:074][931]Error: Texture import failed
+[2022.01.11-17.38.59:121][931]LogSlate: Took 0.000146 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.01.11-17.38.59:202][931]LogSlate: Took 0.000144 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.01.11-17.38.59:280][931]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.11-17.38.59:281][931]LogSlate: Took 0.000109 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.01.11-17.38.59:283][931]LogSlate: Took 0.000075 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.01.11-17.39.02:184][931]LogSlate: Window 'Message' being destroyed
+[2022.01.11-17.39.02:189][931]Message dialog closed, result: Ok, title: Message, text: Failed to import 'C:\Users\Theo\Desktop\sensations_and_qualities/__MACOSX/sensations_and_qualities/._Sensations.png'. Failed to create asset '/Game/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/__MACOSX/sensations_and_qualities/__Sensations'.
+Please see Output Log for details.
+[2022.01.11-17.39.02:189][931]LogAssetTools: Warning: Failed to import 'C:\Users\Theo\Desktop\sensations_and_qualities/__MACOSX/sensations_and_qualities/._Sensations.png'. Failed to create asset '/Game/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/__MACOSX/sensations_and_qualities/__Sensations'.
+Please see Output Log for details.
+[2022.01.11-17.39.02:214][931]LogSlate: Took 0.000133 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2022.01.11-17.39.02:220][931]LogSlate: Took 0.000137 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2022.01.11-17.39.02:240][932]LogSlate: Last resort fallback font was requested. Font: '/Game/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/__MACOSX/sensations_and_qualities/__Sensations_and_Qualities.__Sensations_and_Qualities', Character: '_ (U+005f)'
+[2022.01.11-17.39.02:278][932]LogSlate: Took 0.036844 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
+[2022.01.11-17.39.15:843][479]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2022.01.11-17.39.15:858][479]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/Sensations_and_Qualities0C8ACC7E485129A70F892EAF5BCBCE91.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/Sensations_and_Qualities.uasset'
+[2022.01.11-17.39.15:863][479]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/Sensations_and_Qualities_FontB405A24E494D5172556D40BA41105061.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/Sensations_and_Qualities_Font.uasset'
+[2022.01.11-17.39.15:878][479]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/Sensations5D97B1E949C0CFCCEDD59BB962E1E396.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/Sensations.uasset'
+[2022.01.11-17.39.15:880][479]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/__Sensations_and_Qualities83AD9BFA44208A00A2E0A1B82BA50FC8.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/__MACOSX/sensations_and_qualities/__Sensations_and_Qualities.uasset'
+[2022.01.11-17.39.15:885][479]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/__Sensations_and_Qualities_Font176403A9471144C1E4E1E094DFE454A6.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/__MACOSX/sensations_and_qualities/__Sensations_and_Qualities_Font.uasset'
+[2022.01.11-17.39.15:902][479]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.11-17.39.15:902][479]LogContentValidation: Display: Validating Font /Game/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/__MACOSX/sensations_and_qualities/__Sensations_and_Qualities_Font.__Sensations_and_Qualities_Font
+[2022.01.11-17.39.15:902][479]LogContentValidation: Display: Validating FontFace /Game/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/__MACOSX/sensations_and_qualities/__Sensations_and_Qualities.__Sensations_and_Qualities
+[2022.01.11-17.39.15:902][479]LogContentValidation: Display: Validating Texture2D /Game/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/Sensations.Sensations
+[2022.01.11-17.39.15:902][479]LogContentValidation: Display: Validating Font /Game/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/Sensations_and_Qualities_Font.Sensations_and_Qualities_Font
+[2022.01.11-17.39.15:902][479]LogContentValidation: Display: Validating FontFace /Game/Blueprints/Proyecto_3/Fonts/sensations_and_qualities/Sensations_and_Qualities.Sensations_and_Qualities
+[2022.01.11-17.39.30:677][922]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.11-17.39.30:682][922]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.11-17.39.30:682][922]PIE: New page: PIE session: Rookie_Kong (Jan 11, 2022, 11:39:30 AM)
+[2022.01.11-17.39.30:717][922]LogPlayLevel: Creating play world package: /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.11-17.39.30:728][922]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010487s)
+[2022.01.11-17.39.30:729][922]LogAIModule: Creating AISystem for world Rookie_Kong
+[2022.01.11-17.39.30:729][922]LogPlayLevel: PIE: World Init took: (0.001038s)
+[2022.01.11-17.39.30:729][922]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong to /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong (0.011692s)
+[2022.01.11-17.39.30:766][922]LogUObjectHash: Compacting FUObjectHashTables data took   2.18ms
+[2022.01.11-17.39.30:767][922]LogAudio: Display: Creating Audio Device:                 Id: 43, Scope: Unique, Realtime: True
+[2022.01.11-17.39.30:767][922]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.11-17.39.30:767][922]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.11-17.39.30:767][922]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.11-17.39.30:767][922]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.11-17.39.30:767][922]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.11-17.39.30:767][922]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.11-17.39.30:767][922]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.11-17.39.30:767][922]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.11-17.39.30:767][922]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.11-17.39.30:767][922]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.11-17.39.30:773][922]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.11-17.39.30:773][922]LogAudioMixer: Display: 1: FrontRight
+[2022.01.11-17.39.30:788][922]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.11-17.39.30:788][922]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.11-17.39.30:788][922]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.11-17.39.30:788][922]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.11-17.39.30:789][922]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.11-17.39.30:789][922]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.11-17.39.30:789][922]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.11-17.39.30:802][922]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.11-17.39.30:802][922]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.11-17.39.30:802][922]LogInit: FAudioDevice initialized.
+[2022.01.11-17.39.30:802][922]LogAudio: Display: Audio Device (ID: 43) registered with world 'Rookie_Kong'.
+[2022.01.11-17.39.30:809][922]LogLoad: Game class is 'BP_RKGameMode_C'
+[2022.01.11-17.39.30:811][922]LogWorld: Bringing World /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong up for play (max tick rate 0) at 2022.01.11-14.39.30
+[2022.01.11-17.39.30:811][922]LogWorld: Bringing up level for play took: 0.001079
+[2022.01.11-17.39.30:811][922]LogOnline: OSS: Creating online subsystem instance for: :Context_63
+[2022.01.11-17.39.30:814][922]PIE: Server logged in
+[2022.01.11-17.39.30:815][922]PIE: Play in editor total start time 0.133 seconds.
+[2022.01.11-17.39.59:099][191]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.11-17.39.59:099][191]LogWorld: BeginTearingDown for /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.11-17.39.59:099][191]LogWorld: UWorld::CleanupWorld for Rookie_Kong, bSessionEnded=true, bCleanupResources=true
+[2022.01.11-17.39.59:100][191]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.11-17.39.59:111][191]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.11-17.39.59:116][191]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.11-17.39.59:149][191]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.11-17.39.59:149][191]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.11-17.39.59:150][191]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.11-17.39.59:165][191]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.11-17.39.59:168][191]LogUObjectHash: Compacting FUObjectHashTables data took   2.18ms
+[2022.01.11-17.39.59:181][192]LogPlayLevel: Display: Destroying online subsystem :Context_63
+[2022.01.11-17.40.03:953][742]LogSlate: Took 0.000159 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.01.11-17.40.03:958][742]LogSlate: Took 0.000136 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2022.01.11-17.40.03:965][743]LogSlate: Took 0.000158 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
