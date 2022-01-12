@@ -7,7 +7,7 @@
 #include "Grabber.generated.h"
 
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent), Blueprintable )
 class BLUEPRINTSTOCPP_API UGrabber : public USceneComponent
 {
 	GENERATED_BODY()
