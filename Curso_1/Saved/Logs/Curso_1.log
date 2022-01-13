@@ -3519,3 +3519,280 @@ Make sure 'BP_RKCameraActor_C' has been compiled for  Attach Target Follow
 [2022.01.13-19.39.05:738][807]LogFileHelpers: Saving map 'Rookie_Kong' took 0.051
 [2022.01.13-19.39.05:748][807]AssetCheck: New page: Asset Save: Rookie_Kong
 [2022.01.13-19.39.05:748][807]LogContentValidation: Display: Validating World /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong
+[2022.01.13-19.47.39:195][ 65]BlueprintLog: New page: Compile BP_RKCameraManager
+[2022.01.13-19.47.39:250][ 65]LogUObjectHash: Compacting FUObjectHashTables data took   3.14ms
+[2022.01.13-19.47.54:145][769]BlueprintLog: New page: Compile BP_RKCameraManager
+[2022.01.13-19.47.54:195][769]LogUObjectHash: Compacting FUObjectHashTables data took   2.92ms
+[2022.01.13-19.47.54:622][812]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/BP_RKCameraManager" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset" SILENT=true
+[2022.01.13-19.47.54:634][812]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKCameraManagerB77ED94244BF7E20F8722CA970ED1B79.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset'
+[2022.01.13-19.47.54:645][812]AssetCheck: New page: Asset Save: BP_RKCameraManager
+[2022.01.13-19.47.54:645][812]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/BP_RKCameraManager.BP_RKCameraManager
+[2022.01.13-19.47.59:029][298]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.13-19.47.59:033][298]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.13-19.47.59:033][298]PIE: New page: PIE session: Rookie_Kong (Jan 13, 2022, 1:47:59 PM)
+[2022.01.13-19.47.59:066][298]LogPlayLevel: Creating play world package: /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.13-19.47.59:073][298]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008285s)
+[2022.01.13-19.47.59:074][298]LogAIModule: Creating AISystem for world Rookie_Kong
+[2022.01.13-19.47.59:074][298]LogPlayLevel: PIE: World Init took: (0.000863s)
+[2022.01.13-19.47.59:074][298]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong to /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong (0.009294s)
+[2022.01.13-19.47.59:105][298]LogUObjectHash: Compacting FUObjectHashTables data took   2.99ms
+[2022.01.13-19.47.59:106][298]LogAudio: Display: Creating Audio Device:                 Id: 40, Scope: Unique, Realtime: True
+[2022.01.13-19.47.59:106][298]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.13-19.47.59:106][298]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.13-19.47.59:106][298]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.13-19.47.59:106][298]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.13-19.47.59:106][298]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.13-19.47.59:106][298]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.13-19.47.59:106][298]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.13-19.47.59:106][298]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.13-19.47.59:107][298]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.13-19.47.59:107][298]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.13-19.47.59:113][298]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.13-19.47.59:113][298]LogAudioMixer: Display: 1: FrontRight
+[2022.01.13-19.47.59:129][298]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.13-19.47.59:129][298]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.13-19.47.59:129][298]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.13-19.47.59:129][298]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.13-19.47.59:129][298]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.13-19.47.59:129][298]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.13-19.47.59:129][298]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.13-19.47.59:141][298]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.13-19.47.59:141][298]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.13-19.47.59:141][298]LogInit: FAudioDevice initialized.
+[2022.01.13-19.47.59:141][298]LogAudio: Display: Audio Device (ID: 40) registered with world 'Rookie_Kong'.
+[2022.01.13-19.47.59:237][298]LogLoad: Game class is 'BP_RKGameMode_C'
+[2022.01.13-19.47.59:238][298]LogWorld: Bringing World /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong up for play (max tick rate 0) at 2022.01.13-16.47.59
+[2022.01.13-19.47.59:238][298]LogWorld: Bringing up level for play took: 0.001042
+[2022.01.13-19.47.59:238][298]LogOnline: OSS: Creating online subsystem instance for: :Context_59
+[2022.01.13-19.47.59:241][298]PIE: Server logged in
+[2022.01.13-19.47.59:242][298]PIE: Play in editor total start time 0.21 seconds.
+[2022.01.13-19.48.07:959][325]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.13-19.48.07:959][325]LogWorld: BeginTearingDown for /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.13-19.48.07:960][325]LogWorld: UWorld::CleanupWorld for Rookie_Kong, bSessionEnded=true, bCleanupResources=true
+[2022.01.13-19.48.07:961][325]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.48.07:986][325]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.13-19.48.08:044][325]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.48.08:071][325]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.13-19.48.08:072][325]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.13-19.48.08:072][325]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.13-19.48.08:086][325]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.13-19.48.08:090][325]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2022.01.13-19.48.08:139][326]LogPlayLevel: Display: Destroying online subsystem :Context_59
+[2022.01.13-19.49.13:043][968]BlueprintLog: New page: Compile BP_RKCameraManager
+[2022.01.13-19.49.13:091][968]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
+[2022.01.13-19.49.19:085][659]BlueprintLog: New page: Compile BP_RKCameraManager
+[2022.01.13-19.49.19:135][659]LogUObjectHash: Compacting FUObjectHashTables data took   3.16ms
+[2022.01.13-19.49.19:738][721]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/BP_RKCameraManager" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset" SILENT=true
+[2022.01.13-19.49.19:750][721]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKCameraManager126FEACE44F8B8973B283C9B77228475.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset'
+[2022.01.13-19.49.19:759][721]AssetCheck: New page: Asset Save: BP_RKCameraManager
+[2022.01.13-19.49.19:759][721]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/BP_RKCameraManager.BP_RKCameraManager
+[2022.01.13-19.50.08:364][870]LogUObjectHash: Compacting FUObjectHashTables data took   3.05ms
+[2022.01.13-19.50.08:364][870]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Proyecto_3/Rookie_Kong' took 0.034
+[2022.01.13-19.50.08:365][870]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Proyecto_3/BP_RKCameraManager] ([2] browsable assets)...
+[2022.01.13-19.50.08:365][870]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Proyecto_3/BP_RKCameraManager]
+[2022.01.13-19.50.08:377][870]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKCameraManager_Auto5609B93024BB2D0D1D1B671973EF7A838.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/Autosaves/Game/Blueprints/Proyecto_3/BP_RKCameraManager_Auto5.uasset'
+[2022.01.13-19.50.08:377][870]LogFileHelpers: Auto-saving content packages took 0.013
+[2022.01.13-19.53.06:318][935]LogEditorTransaction: Undo Move Node
+[2022.01.13-19.53.06:966][964]LogEditorTransaction: Undo Create Pin Link
+[2022.01.13-19.53.07:726][ 41]LogEditorTransaction: Undo Move Node
+[2022.01.13-19.53.08:286][ 97]LogEditorTransaction: Undo Move Node
+[2022.01.13-19.53.08:661][133]LogEditorTransaction: Undo Create Pin Link
+[2022.01.13-19.53.09:078][174]LogEditorTransaction: Undo Move Node
+[2022.01.13-19.53.09:612][229]LogEditorTransaction: Undo Move Nodes
+[2022.01.13-19.53.10:245][296]LogEditorTransaction: Undo Move Node
+[2022.01.13-19.53.10:985][376]LogEditorTransaction: Undo Create Pin Link
+[2022.01.13-19.53.11:427][419]LogEditorTransaction: Undo Add Node
+[2022.01.13-19.53.12:094][490]LogEditorTransaction: Undo Move Nodes
+[2022.01.13-19.53.19:196][308]BlueprintLog: New page: Compile BP_RKCameraManager
+[2022.01.13-19.53.19:249][308]LogUObjectHash: Compacting FUObjectHashTables data took   2.97ms
+[2022.01.13-19.53.19:733][356]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/BP_RKCameraManager" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset" SILENT=true
+[2022.01.13-19.53.19:746][356]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKCameraManager16640B204AF007F4B75B82B2C5A28FCD.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset'
+[2022.01.13-19.53.19:757][356]AssetCheck: New page: Asset Save: BP_RKCameraManager
+[2022.01.13-19.53.19:757][356]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/BP_RKCameraManager.BP_RKCameraManager
+[2022.01.13-19.53.27:804][259]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.13-19.53.27:809][259]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.13-19.53.27:809][259]PIE: New page: PIE session: Rookie_Kong (Jan 13, 2022, 1:53:27 PM)
+[2022.01.13-19.53.27:846][259]LogPlayLevel: Creating play world package: /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.13-19.53.27:881][259]LogPlayLevel: PIE: StaticDuplicateObject took: (0.035096s)
+[2022.01.13-19.53.27:883][259]LogAIModule: Creating AISystem for world Rookie_Kong
+[2022.01.13-19.53.27:884][259]LogPlayLevel: PIE: World Init took: (0.002048s)
+[2022.01.13-19.53.27:884][259]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong to /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong (0.037705s)
+[2022.01.13-19.53.27:918][259]LogUObjectHash: Compacting FUObjectHashTables data took   2.86ms
+[2022.01.13-19.53.27:919][259]LogAudio: Display: Creating Audio Device:                 Id: 41, Scope: Unique, Realtime: True
+[2022.01.13-19.53.27:919][259]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.13-19.53.27:919][259]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.13-19.53.27:919][259]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.13-19.53.27:919][259]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.13-19.53.27:919][259]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.13-19.53.27:919][259]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.13-19.53.27:919][259]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.13-19.53.27:919][259]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.13-19.53.27:919][259]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.13-19.53.27:919][259]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.13-19.53.27:925][259]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.13-19.53.27:925][259]LogAudioMixer: Display: 1: FrontRight
+[2022.01.13-19.53.27:940][259]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.13-19.53.27:940][259]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.13-19.53.27:940][259]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.13-19.53.27:940][259]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.13-19.53.27:941][259]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.13-19.53.27:941][259]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.13-19.53.27:941][259]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.13-19.53.27:953][259]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.13-19.53.27:953][259]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.13-19.53.27:953][259]LogInit: FAudioDevice initialized.
+[2022.01.13-19.53.27:953][259]LogAudio: Display: Audio Device (ID: 41) registered with world 'Rookie_Kong'.
+[2022.01.13-19.53.27:959][259]LogLoad: Game class is 'BP_RKGameMode_C'
+[2022.01.13-19.53.27:961][259]LogWorld: Bringing World /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong up for play (max tick rate 0) at 2022.01.13-16.53.27
+[2022.01.13-19.53.27:961][259]LogWorld: Bringing up level for play took: 0.001033
+[2022.01.13-19.53.27:961][259]LogOnline: OSS: Creating online subsystem instance for: :Context_60
+[2022.01.13-19.53.27:964][259]PIE: Server logged in
+[2022.01.13-19.53.27:965][259]PIE: Play in editor total start time 0.157 seconds.
+[2022.01.13-19.53.37:619][412]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.13-19.53.37:619][412]LogWorld: BeginTearingDown for /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.13-19.53.37:620][412]LogWorld: UWorld::CleanupWorld for Rookie_Kong, bSessionEnded=true, bCleanupResources=true
+[2022.01.13-19.53.37:622][412]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.53.37:647][412]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.13-19.53.37:703][412]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.53.37:732][412]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.13-19.53.37:732][412]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.13-19.53.37:733][412]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.13-19.53.37:746][412]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.13-19.53.37:750][412]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
+[2022.01.13-19.53.37:798][413]LogPlayLevel: Display: Destroying online subsystem :Context_60
+[2022.01.13-19.54.44:353][180]BlueprintLog: New page: Compile BP_RKCameraManager
+[2022.01.13-19.54.44:404][180]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2022.01.13-19.54.44:915][232]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/BP_RKCameraManager" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset" SILENT=true
+[2022.01.13-19.54.44:928][232]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKCameraManager9D6617574A2D8A37FE31418531725101.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset'
+[2022.01.13-19.54.44:940][232]AssetCheck: New page: Asset Save: BP_RKCameraManager
+[2022.01.13-19.54.44:940][232]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/BP_RKCameraManager.BP_RKCameraManager
+[2022.01.13-19.54.45:996][340]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.13-19.54.46:001][340]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.13-19.54.46:001][340]PIE: New page: PIE session: Rookie_Kong (Jan 13, 2022, 1:54:46 PM)
+[2022.01.13-19.54.46:035][340]LogPlayLevel: Creating play world package: /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.13-19.54.46:046][340]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010521s)
+[2022.01.13-19.54.46:046][340]LogAIModule: Creating AISystem for world Rookie_Kong
+[2022.01.13-19.54.46:047][340]LogPlayLevel: PIE: World Init took: (0.000766s)
+[2022.01.13-19.54.46:047][340]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong to /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong (0.011455s)
+[2022.01.13-19.54.46:077][340]LogUObjectHash: Compacting FUObjectHashTables data took   2.93ms
+[2022.01.13-19.54.46:078][340]LogAudio: Display: Creating Audio Device:                 Id: 42, Scope: Unique, Realtime: True
+[2022.01.13-19.54.46:078][340]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.13-19.54.46:078][340]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.13-19.54.46:078][340]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.13-19.54.46:078][340]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.13-19.54.46:078][340]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.13-19.54.46:078][340]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.13-19.54.46:078][340]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.13-19.54.46:078][340]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.13-19.54.46:079][340]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.13-19.54.46:079][340]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.13-19.54.46:083][340]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.13-19.54.46:083][340]LogAudioMixer: Display: 1: FrontRight
+[2022.01.13-19.54.46:098][340]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.13-19.54.46:098][340]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.13-19.54.46:098][340]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.13-19.54.46:098][340]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.13-19.54.46:099][340]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.13-19.54.46:099][340]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.13-19.54.46:099][340]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.13-19.54.46:110][340]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.13-19.54.46:110][340]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.13-19.54.46:110][340]LogInit: FAudioDevice initialized.
+[2022.01.13-19.54.46:110][340]LogAudio: Display: Audio Device (ID: 42) registered with world 'Rookie_Kong'.
+[2022.01.13-19.54.46:118][340]LogLoad: Game class is 'BP_RKGameMode_C'
+[2022.01.13-19.54.46:120][340]LogWorld: Bringing World /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong up for play (max tick rate 0) at 2022.01.13-16.54.46
+[2022.01.13-19.54.46:120][340]LogWorld: Bringing up level for play took: 0.001009
+[2022.01.13-19.54.46:120][340]LogOnline: OSS: Creating online subsystem instance for: :Context_61
+[2022.01.13-19.54.46:123][340]PIE: Server logged in
+[2022.01.13-19.54.46:123][340]PIE: Play in editor total start time 0.124 seconds.
+[2022.01.13-19.54.53:709][244]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.13-19.54.53:710][244]LogWorld: BeginTearingDown for /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.13-19.54.53:710][244]LogWorld: UWorld::CleanupWorld for Rookie_Kong, bSessionEnded=true, bCleanupResources=true
+[2022.01.13-19.54.53:711][244]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.54.53:723][244]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.13-19.54.53:755][244]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.54.53:783][244]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.13-19.54.53:784][244]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.13-19.54.53:784][244]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.13-19.54.53:798][244]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.13-19.54.53:802][244]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2022.01.13-19.54.53:851][245]LogPlayLevel: Display: Destroying online subsystem :Context_61
+[2022.01.13-19.55.29:936][489]BlueprintLog: New page: Compile BP_RKCameraManager
+[2022.01.13-19.55.29:988][489]LogUObjectHash: Compacting FUObjectHashTables data took   2.45ms
+[2022.01.13-19.55.30:431][532]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/BP_RKCameraManager" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset" SILENT=true
+[2022.01.13-19.55.30:444][532]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKCameraManagerCE95425D448A68A65C61D9863E9E4481.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset'
+[2022.01.13-19.55.30:455][532]AssetCheck: New page: Asset Save: BP_RKCameraManager
+[2022.01.13-19.55.30:456][532]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/BP_RKCameraManager.BP_RKCameraManager
+[2022.01.13-19.55.48:047][612]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.13-19.55.48:051][612]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.13-19.55.48:051][612]PIE: New page: PIE session: Rookie_Kong (Jan 13, 2022, 1:55:48 PM)
+[2022.01.13-19.55.48:075][612]LogPlayLevel: Creating play world package: /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.13-19.55.48:083][612]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007956s)
+[2022.01.13-19.55.48:084][612]LogAIModule: Creating AISystem for world Rookie_Kong
+[2022.01.13-19.55.48:084][612]LogPlayLevel: PIE: World Init took: (0.000756s)
+[2022.01.13-19.55.48:084][612]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong to /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong (0.008850s)
+[2022.01.13-19.55.48:115][612]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2022.01.13-19.55.48:116][612]LogAudio: Display: Creating Audio Device:                 Id: 43, Scope: Unique, Realtime: True
+[2022.01.13-19.55.48:116][612]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.13-19.55.48:116][612]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.13-19.55.48:116][612]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.13-19.55.48:116][612]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.13-19.55.48:116][612]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.13-19.55.48:116][612]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.13-19.55.48:116][612]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.13-19.55.48:116][612]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.13-19.55.48:116][612]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.13-19.55.48:116][612]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.13-19.55.48:121][612]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.13-19.55.48:121][612]LogAudioMixer: Display: 1: FrontRight
+[2022.01.13-19.55.48:136][612]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.13-19.55.48:136][612]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.13-19.55.48:136][612]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.13-19.55.48:136][612]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.13-19.55.48:136][612]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.13-19.55.48:136][612]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.13-19.55.48:136][612]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.13-19.55.48:148][612]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.13-19.55.48:148][612]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.13-19.55.48:148][612]LogInit: FAudioDevice initialized.
+[2022.01.13-19.55.48:148][612]LogAudio: Display: Audio Device (ID: 43) registered with world 'Rookie_Kong'.
+[2022.01.13-19.55.48:158][612]LogLoad: Game class is 'BP_RKGameMode_C'
+[2022.01.13-19.55.48:160][612]LogWorld: Bringing World /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong up for play (max tick rate 0) at 2022.01.13-16.55.48
+[2022.01.13-19.55.48:160][612]LogWorld: Bringing up level for play took: 0.001016
+[2022.01.13-19.55.48:160][612]LogOnline: OSS: Creating online subsystem instance for: :Context_62
+[2022.01.13-19.55.48:163][612]PIE: Server logged in
+[2022.01.13-19.55.48:163][612]PIE: Play in editor total start time 0.114 seconds.
+[2022.01.13-19.56.07:530][921]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.13-19.56.07:530][921]LogWorld: BeginTearingDown for /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.13-19.56.07:530][921]LogWorld: UWorld::CleanupWorld for Rookie_Kong, bSessionEnded=true, bCleanupResources=true
+[2022.01.13-19.56.07:532][921]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.56.07:558][921]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.13-19.56.07:629][921]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.56.07:657][921]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.13-19.56.07:657][921]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.13-19.56.07:658][921]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.13-19.56.07:672][921]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.13-19.56.07:675][921]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2022.01.13-19.56.07:724][922]LogPlayLevel: Display: Destroying online subsystem :Context_62
+[2022.01.13-19.56.58:098][833]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/BP_RKCameraManager" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset" SILENT=true
+[2022.01.13-19.56.58:110][833]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKCameraManagerADC47CA14011BF6EA99855A7D3A082CE.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/BP_RKCameraManager.uasset'
+[2022.01.13-19.56.58:121][833]AssetCheck: New page: Asset Save: BP_RKCameraManager
+[2022.01.13-19.56.58:121][833]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/BP_RKCameraManager.BP_RKCameraManager
+[2022.01.13-19.57.02:722][354]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2022.01.13-19.57.02:722][354]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.57.10:967][300]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2022.01.13-19.57.10:967][300]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2022.01.13-19.57.10:967][300]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.57.12:196][439]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2022.01.13-19.57.12:196][439]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2022.01.13-19.57.12:196][439]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.57.13:313][565]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2022.01.13-19.57.13:313][565]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2022.01.13-19.57.13:313][565]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.13-19.57.18:663][157]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Proyecto_3/GameMode/BP_RKGameMode.BP_RKGameMode
+[2022.01.13-19.57.31:848][677]BlueprintLog: New page: Compile BP_RKGameMode
+[2022.01.13-19.57.31:928][677]LogUObjectHash: Compacting FUObjectHashTables data took   3.70ms
+[2022.01.13-19.57.32:562][741]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/GameMode/BP_RKGameMode" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/GameMode/BP_RKGameMode.uasset" SILENT=true
+[2022.01.13-19.57.32:600][741]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKGameModeA8DD20944CB31C70C1DB8BAB2379CE0D.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/GameMode/BP_RKGameMode.uasset'
+[2022.01.13-19.57.32:610][741]AssetCheck: New page: Asset Save: BP_RKGameMode
+[2022.01.13-19.57.32:610][741]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/GameMode/BP_RKGameMode.BP_RKGameMode
