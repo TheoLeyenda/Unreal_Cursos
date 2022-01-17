@@ -5142,3 +5142,227 @@ Make sure 'BP_RKActivateHammer_C' has been compiled for  Call OnActivateHammer
 [2022.01.17-13.42.09:390][558]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
 [2022.01.17-13.42.09:407][558]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
 [2022.01.17-13.42.09:440][559]LogPlayLevel: Display: Destroying online subsystem :Context_65
+[2022.01.17-13.43.17:908][499]BlueprintLog: New page: Compile BP_RKPowerUp
+[2022.01.17-13.43.17:985][499]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2022.01.17-13.43.17:987][499]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_445.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.43.17:988][499]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_399.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.43.18:007][499]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_447.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.43.18:008][499]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_401.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.43.18:515][549]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/PowerUps/BP_RKPowerUp" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/PowerUps/BP_RKPowerUp.uasset" SILENT=true
+[2022.01.17-13.43.18:536][549]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKPowerUpA411C9CC4270747920B0C0942C7C578F.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/PowerUps/BP_RKPowerUp.uasset'
+[2022.01.17-13.43.18:547][549]AssetCheck: New page: Asset Save: BP_RKPowerUp
+[2022.01.17-13.43.18:547][549]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/PowerUps/BP_RKPowerUp.BP_RKPowerUp
+[2022.01.17-13.43.25:450][279]Cmd: EDIT COPY
+[2022.01.17-13.43.25:997][344]Cmd: EDIT PASTE
+[2022.01.17-13.43.31:274][944]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Proyecto_3/Rookie_Kong" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Proyecto_3/Rookie_Kong.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.17-13.43.31:308][944]LogUObjectHash: Compacting FUObjectHashTables data took   3.26ms
+[2022.01.17-13.43.31:330][944]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/Rookie_KongBF88740F4271CF4AF1AC5FA52C791C19.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Proyecto_3/Rookie_Kong.umap'
+[2022.01.17-13.43.31:336][944]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Proyecto_3/Rookie_Kong_BuiltData" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Proyecto_3/Rookie_Kong_BuiltData.uasset" SILENT=true
+[2022.01.17-13.43.31:384][944]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/Rookie_Kong_BuiltData3521C46A49AD75A570E9C18B6B97C48B.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Proyecto_3/Rookie_Kong_BuiltData.uasset'
+[2022.01.17-13.43.31:395][944]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.17-13.43.31:395][944]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Proyecto_3/Rookie_Kong_BuiltData.Rookie_Kong_BuiltData
+[2022.01.17-13.43.31:395][944]LogContentValidation: Display: Validating World /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong
+[2022.01.17-13.43.33:626][191]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.17-13.43.33:632][191]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.17-13.43.33:632][191]PIE: New page: PIE session: Rookie_Kong (Jan 17, 2022, 7:43:33 AM)
+[2022.01.17-13.43.33:667][191]LogPlayLevel: Creating play world package: /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.17-13.43.33:677][191]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009875s)
+[2022.01.17-13.43.33:678][191]LogAIModule: Creating AISystem for world Rookie_Kong
+[2022.01.17-13.43.33:678][191]LogPlayLevel: PIE: World Init took: (0.000861s)
+[2022.01.17-13.43.33:678][191]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong to /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong (0.010917s)
+[2022.01.17-13.43.33:708][191]LogUObjectHash: Compacting FUObjectHashTables data took   2.47ms
+[2022.01.17-13.43.33:709][191]LogAudio: Display: Creating Audio Device:                 Id: 53, Scope: Unique, Realtime: True
+[2022.01.17-13.43.33:709][191]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.17-13.43.33:709][191]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.17-13.43.33:709][191]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.17-13.43.33:709][191]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.17-13.43.33:709][191]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.17-13.43.33:709][191]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.17-13.43.33:709][191]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.17-13.43.33:709][191]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.17-13.43.33:710][191]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.17-13.43.33:710][191]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.17-13.43.33:715][191]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.17-13.43.33:715][191]LogAudioMixer: Display: 1: FrontRight
+[2022.01.17-13.43.33:731][191]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.17-13.43.33:732][191]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.17-13.43.33:732][191]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.17-13.43.33:732][191]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.17-13.43.33:732][191]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.17-13.43.33:732][191]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.17-13.43.33:732][191]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.17-13.43.33:744][191]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.17-13.43.33:744][191]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.17-13.43.33:744][191]LogInit: FAudioDevice initialized.
+[2022.01.17-13.43.33:744][191]LogAudio: Display: Audio Device (ID: 53) registered with world 'Rookie_Kong'.
+[2022.01.17-13.43.33:753][191]LogLoad: Game class is 'BP_RKGameMode_C'
+[2022.01.17-13.43.33:755][191]LogWorld: Bringing World /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong up for play (max tick rate 0) at 2022.01.17-10.43.33
+[2022.01.17-13.43.33:755][191]LogWorld: Bringing up level for play took: 0.001155
+[2022.01.17-13.43.33:755][191]LogOnline: OSS: Creating online subsystem instance for: :Context_66
+[2022.01.17-13.43.33:758][191]PIE: Server logged in
+[2022.01.17-13.43.33:759][191]PIE: Play in editor total start time 0.128 seconds.
+[2022.01.17-13.43.37:330][612]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.17-13.43.37:330][612]LogWorld: BeginTearingDown for /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.17-13.43.37:331][612]LogWorld: UWorld::CleanupWorld for Rookie_Kong, bSessionEnded=true, bCleanupResources=true
+[2022.01.17-13.43.37:332][612]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.17-13.43.37:347][612]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.17-13.43.37:366][612]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.17-13.43.37:399][612]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.17-13.43.37:399][612]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.17-13.43.37:400][612]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.17-13.43.37:417][612]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
+[2022.01.17-13.43.37:449][613]LogPlayLevel: Display: Destroying online subsystem :Context_66
+[2022.01.17-13.43.38:635][753]LogEditorViewport: Clicking on Actor (LMB): BP_RKActivateHammer_C (BP_RKActivateHammer)
+[2022.01.17-13.43.54:090][484]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.17-13.43.54:094][484]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.17-13.43.54:094][484]PIE: New page: PIE session: Rookie_Kong (Jan 17, 2022, 7:43:54 AM)
+[2022.01.17-13.43.54:127][484]LogPlayLevel: Creating play world package: /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.17-13.43.54:135][484]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008140s)
+[2022.01.17-13.43.54:136][484]LogAIModule: Creating AISystem for world Rookie_Kong
+[2022.01.17-13.43.54:136][484]LogPlayLevel: PIE: World Init took: (0.000810s)
+[2022.01.17-13.43.54:136][484]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong to /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong (0.009121s)
+[2022.01.17-13.43.54:167][484]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
+[2022.01.17-13.43.54:168][484]LogAudio: Display: Creating Audio Device:                 Id: 54, Scope: Unique, Realtime: True
+[2022.01.17-13.43.54:169][484]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.17-13.43.54:169][484]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.17-13.43.54:169][484]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.17-13.43.54:169][484]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.17-13.43.54:169][484]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.17-13.43.54:169][484]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.17-13.43.54:169][484]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.17-13.43.54:169][484]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.17-13.43.54:169][484]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.17-13.43.54:169][484]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.17-13.43.54:176][484]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.17-13.43.54:176][484]LogAudioMixer: Display: 1: FrontRight
+[2022.01.17-13.43.54:192][484]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.17-13.43.54:192][484]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.17-13.43.54:192][484]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.17-13.43.54:192][484]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.17-13.43.54:192][484]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.17-13.43.54:192][484]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.17-13.43.54:192][484]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.17-13.43.54:204][484]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.17-13.43.54:204][484]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.17-13.43.54:204][484]LogInit: FAudioDevice initialized.
+[2022.01.17-13.43.54:204][484]LogAudio: Display: Audio Device (ID: 54) registered with world 'Rookie_Kong'.
+[2022.01.17-13.43.54:213][484]LogLoad: Game class is 'BP_RKGameMode_C'
+[2022.01.17-13.43.54:215][484]LogWorld: Bringing World /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong up for play (max tick rate 0) at 2022.01.17-10.43.54
+[2022.01.17-13.43.54:215][484]LogWorld: Bringing up level for play took: 0.001141
+[2022.01.17-13.43.54:215][484]LogOnline: OSS: Creating online subsystem instance for: :Context_67
+[2022.01.17-13.43.54:219][484]PIE: Server logged in
+[2022.01.17-13.43.54:219][484]PIE: Play in editor total start time 0.126 seconds.
+[2022.01.17-13.43.58:322][971]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.17-13.43.58:322][971]LogWorld: BeginTearingDown for /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.17-13.43.58:323][971]LogWorld: UWorld::CleanupWorld for Rookie_Kong, bSessionEnded=true, bCleanupResources=true
+[2022.01.17-13.43.58:325][971]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.17-13.43.58:344][971]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.17-13.43.58:368][971]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.17-13.43.58:399][971]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.17-13.43.58:399][971]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.17-13.43.58:400][971]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.17-13.43.58:417][971]LogUObjectHash: Compacting FUObjectHashTables data took   2.19ms
+[2022.01.17-13.43.58:450][972]LogPlayLevel: Display: Destroying online subsystem :Context_67
+[2022.01.17-13.44.15:587][917]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKActivateHammer498B0BD340B33FEEECFA25BA16C1417F.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/PowerUps/BP_RKActivateHammer.uasset'
+[2022.01.17-13.44.15:598][917]AssetCheck: New page: Asset Save: BP_RKActivateHammer
+[2022.01.17-13.44.15:598][917]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/PowerUps/BP_RKActivateHammer.BP_RKActivateHammer
+[2022.01.17-13.45.11:171][171]BlueprintLog: New page: Compile BP_RKActivateHammer
+[2022.01.17-13.45.11:242][171]LogUObjectHash: Compacting FUObjectHashTables data took   3.08ms
+[2022.01.17-13.45.11:245][171]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_449.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.45.11:246][171]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_403.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.45.11:259][171]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_451.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.45.11:259][171]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_405.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.45.11:732][208]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKActivateHammerC484091C4C3E4396FB60D38D53D5D375.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/PowerUps/BP_RKActivateHammer.uasset'
+[2022.01.17-13.45.11:743][208]AssetCheck: New page: Asset Save: BP_RKActivateHammer
+[2022.01.17-13.45.11:743][208]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/PowerUps/BP_RKActivateHammer.BP_RKActivateHammer
+[2022.01.17-13.53.01:681][656]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Proyecto_3/Rookie_Kong" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Proyecto_3/Rookie_Kong.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.17-13.53.01:719][656]LogUObjectHash: Compacting FUObjectHashTables data took   3.30ms
+[2022.01.17-13.53.01:742][656]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/Rookie_KongD4A69F8C4E7D0EF1F1BB84B92401E7D5.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Proyecto_3/Rookie_Kong.umap'
+[2022.01.17-13.53.01:749][656]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Proyecto_3/Rookie_Kong_BuiltData" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Proyecto_3/Rookie_Kong_BuiltData.uasset" SILENT=true
+[2022.01.17-13.53.01:795][656]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/Rookie_Kong_BuiltDataDCA5338144C030ECBDCF49904143B609.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Maps/Proyecto_3/Rookie_Kong_BuiltData.uasset'
+[2022.01.17-13.53.01:809][656]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.17-13.53.01:809][656]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/Proyecto_3/Rookie_Kong_BuiltData.Rookie_Kong_BuiltData
+[2022.01.17-13.53.01:809][656]LogContentValidation: Display: Validating World /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong
+[2022.01.17-13.53.10:723][650]BlueprintLog: New page: Compile BP_RKActivateHammer
+[2022.01.17-13.53.10:780][650]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2022.01.17-13.53.10:782][650]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_407.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.10:783][650]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_453.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.10:793][650]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_409.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.10:794][650]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_455.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.11:322][697]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKActivateHammer904933A04407FB7C9F325C878E75AA7F.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/PowerUps/BP_RKActivateHammer.uasset'
+[2022.01.17-13.53.11:333][697]AssetCheck: New page: Asset Save: BP_RKActivateHammer
+[2022.01.17-13.53.11:333][697]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/PowerUps/BP_RKActivateHammer.BP_RKActivateHammer
+[2022.01.17-13.53.24:942][187]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_411.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.24:943][187]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_457.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.35:804][401]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_413.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.35:804][401]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_459.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.37:629][586]BlueprintLog: New page: Compile BP_RKHammer
+[2022.01.17-13.53.37:685][586]LogUObjectHash: Compacting FUObjectHashTables data took   3.27ms
+[2022.01.17-13.53.37:688][586]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_415.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.37:689][586]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_461.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.37:699][586]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_417.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.37:700][586]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_463.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.53.38:509][661]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Proyecto_3/Hammer/BP_RKHammer" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Hammer/BP_RKHammer.uasset" SILENT=true
+[2022.01.17-13.53.38:534][661]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKHammer947030534862021DDEA0C9A744DC9697.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/Hammer/BP_RKHammer.uasset'
+[2022.01.17-13.53.38:545][661]AssetCheck: New page: Asset Save: BP_RKHammer
+[2022.01.17-13.53.38:546][661]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/Hammer/BP_RKHammer.BP_RKHammer
+[2022.01.17-13.56.41:463][136]BlueprintLog: New page: Compile BP_RKActivateHammer
+[2022.01.17-13.56.41:526][136]LogUObjectHash: Compacting FUObjectHashTables data took   3.52ms
+[2022.01.17-13.56.41:529][136]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_465.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.56.41:530][136]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_419.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.56.41:542][136]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_11:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_467.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.56.41:542][136]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_10:PersistentLevel.DESTROYED_BP_RKHammer_C_CHILDACTOR_421.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.01.17-13.56.42:302][214]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Saved/BP_RKActivateHammer2DCDDB1342CD22622C3A5D9E60AE6FFA.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_1/Content/Blueprints/Proyecto_3/PowerUps/BP_RKActivateHammer.uasset'
+[2022.01.17-13.56.42:314][214]AssetCheck: New page: Asset Save: BP_RKActivateHammer
+[2022.01.17-13.56.42:314][214]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Proyecto_3/PowerUps/BP_RKActivateHammer.BP_RKActivateHammer
+[2022.01.17-13.56.46:853][717]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.17-13.56.46:859][717]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.17-13.56.46:859][717]PIE: New page: PIE session: Rookie_Kong (Jan 17, 2022, 7:56:46 AM)
+[2022.01.17-13.56.46:896][717]LogPlayLevel: Creating play world package: /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.17-13.56.46:932][717]LogPlayLevel: PIE: StaticDuplicateObject took: (0.035045s)
+[2022.01.17-13.56.46:932][717]LogAIModule: Creating AISystem for world Rookie_Kong
+[2022.01.17-13.56.46:933][717]LogPlayLevel: PIE: World Init took: (0.000878s)
+[2022.01.17-13.56.46:933][717]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Proyecto_3/Rookie_Kong.Rookie_Kong to /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong (0.036333s)
+[2022.01.17-13.56.46:964][717]LogUObjectHash: Compacting FUObjectHashTables data took   3.07ms
+[2022.01.17-13.56.46:965][717]LogAudio: Display: Creating Audio Device:                 Id: 55, Scope: Unique, Realtime: True
+[2022.01.17-13.56.46:966][717]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.17-13.56.46:966][717]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.17-13.56.46:966][717]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.17-13.56.46:966][717]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.17-13.56.46:966][717]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.17-13.56.46:966][717]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.17-13.56.46:966][717]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.17-13.56.46:966][717]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.17-13.56.46:966][717]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.17-13.56.46:966][717]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.17-13.56.46:973][717]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.17-13.56.46:973][717]LogAudioMixer: Display: 1: FrontRight
+[2022.01.17-13.56.46:989][717]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.17-13.56.46:989][717]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.17-13.56.46:989][717]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.17-13.56.46:989][717]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.17-13.56.46:990][717]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.17-13.56.46:990][717]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.17-13.56.46:990][717]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.17-13.56.47:001][717]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.17-13.56.47:001][717]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.17-13.56.47:001][717]LogInit: FAudioDevice initialized.
+[2022.01.17-13.56.47:001][717]LogAudio: Display: Audio Device (ID: 55) registered with world 'Rookie_Kong'.
+[2022.01.17-13.56.47:010][717]LogLoad: Game class is 'BP_RKGameMode_C'
+[2022.01.17-13.56.47:012][717]LogWorld: Bringing World /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong.Rookie_Kong up for play (max tick rate 0) at 2022.01.17-10.56.47
+[2022.01.17-13.56.47:012][717]LogWorld: Bringing up level for play took: 0.001109
+[2022.01.17-13.56.47:012][717]LogOnline: OSS: Creating online subsystem instance for: :Context_68
+[2022.01.17-13.56.47:015][717]PIE: Server logged in
+[2022.01.17-13.56.47:016][717]PIE: Play in editor total start time 0.158 seconds.
+[2022.01.17-13.56.55:277][701]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.17-13.56.55:277][701]LogWorld: BeginTearingDown for /Game/Maps/Proyecto_3/UEDPIE_0_Rookie_Kong
+[2022.01.17-13.56.55:278][701]LogWorld: UWorld::CleanupWorld for Rookie_Kong, bSessionEnded=true, bCleanupResources=true
+[2022.01.17-13.56.55:279][701]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.17-13.56.55:296][701]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.17-13.56.55:311][701]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.17-13.56.55:343][701]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.17-13.56.55:343][701]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.17-13.56.55:344][701]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.17-13.56.55:358][701]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.17-13.56.55:361][701]LogUObjectHash: Compacting FUObjectHashTables data took   2.01ms
+[2022.01.17-13.56.55:403][702]LogPlayLevel: Display: Destroying online subsystem :Context_68
