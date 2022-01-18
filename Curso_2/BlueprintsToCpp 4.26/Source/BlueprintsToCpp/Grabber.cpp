@@ -2,7 +2,7 @@
 
 
 #include "Grabber.h"
-#include "Kismet/KismetMathLibrary.h"
+
 
 // Sets default values for this component's properties
 UGrabber::UGrabber()
@@ -25,6 +25,11 @@ void UGrabber::BeginPlay()
 }
 
 
+bool UGrabber::TraceForPhysicsBodies_Implementation(AActor*& HitActor, UPrimitiveComponent*& HitComponent)
+{
+	return false;
+}
+
 // Called every frame
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
@@ -35,6 +40,19 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 
 FVector UGrabber::GetMaxGrabLocation() const
 {
-	return	GetComponentLocation() + UKismetMathLibrary::GetForwardVector(GetComponentRotation()) * MaxGrabDistance;
+	//return	GetComponentLocation() + UKismetMathLibrary::GetForwardVector(GetComponentRotation()) * MaxGrabDistance;
+	return GetComponentLocation() + GetComponentRotation().Vector() * MaxGrabDistance; // mas eficiente.
 }
+
+FVector UGrabber::GetHoldLocation() const
+{
+	return GetComponentLocation() + GetComponentRotation().Vector() * HoldDistance; 
+}
+
+UPhysicsHandleComponent* UGrabber::GetPhysicsComponent()
+{
+	return GetOwner()->FindComponentByClass<UPhysicsHandleComponent>();
+}
+
+
 
