@@ -1851,3 +1851,156 @@ Please see Output Log for details.
 [2022.01.18-19.56.12:738][579]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
 [2022.01.18-19.56.12:786][582]LogPlayLevel: Display: Destroying online subsystem :Context_8
 [2022.01.18-19.56.14:550][792]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2022.01.18-20.01.37:290][885]LogContentBrowser: Deferred new asset file creation: Wood_Inst
+[2022.01.18-20.01.37:305][885]LogContentBrowser: Creating deferred item: Wood_Inst
+[2022.01.18-20.02.00:901][715]LogContentBrowser: Attempting asset rename: Wood_Inst -> DoorFrame_Wood
+[2022.01.18-20.02.00:901][715]LogContentBrowser: End creating deferred item Wood_Inst
+[2022.01.18-20.02.07:801][522]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2022.01.18-20.02.07:829][522]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Models/Door/DoorFrame_Wood" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Door/DoorFrame_Wood.uasset" SILENT=true
+[2022.01.18-20.02.07:834][522]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DoorFrame_Wood0CAD250D460D51187FF9A7BBE804735E.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Door/DoorFrame_Wood.uasset'
+[2022.01.18-20.02.07:841][522]AssetCheck: New page: Asset Save: DoorFrame_Wood
+[2022.01.18-20.02.07:841][522]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Art/Models/Door/DoorFrame_Wood.DoorFrame_Wood
+[2022.01.18-20.02.49:670][741]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.18-20.02.49:674][741]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2022.01.18-20.02.49:682][741]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScapeD92ED3634A20E8924954CFB817D522BC.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.01.18-20.02.49:686][741]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.01.18-20.02.49:698][741]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltData96A57FA84FB973BF486860932B82072E.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.01.18-20.02.49:706][741]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.18-20.02.49:706][741]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.01.18-20.02.49:706][741]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.01.18-20.02.59:346][898]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2x1_Door_and_Frame_Door)
+[2022.01.18-20.03.00:991][ 91]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2x1_Door_and_Frame_Frame)
+[2022.01.18-20.03.05:895][673]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2x1_Door_and_Frame_Door)
+[2022.01.18-20.08.11:762][526]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2022.01.18-20.08.40:743][633]LogActorFactory: Actor Factory created 2x1_Door_and_Frame_Frame
+[2022.01.18-20.08.40:743][633]LogActorFactory: Actor Factory created 2x1_Door_and_Frame_Door
+[2022.01.18-20.08.42:943][896]LogActorFactory: Actor Factory created 2x1_Door_and_Frame_Frame
+[2022.01.18-20.08.42:955][896]LogActorFactory: Actor Factory created 2x1_Door_and_Frame_Door
+[2022.01.18-20.08.51:665][916]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Art/Models/Door/2x1_Door_and_Frame_Door.2x1_Door_and_Frame_Door
+[2022.01.18-20.08.52:100][917]LogRenderer: Reallocating scene render targets to support 1432x920 Format 9 NumSamples 1 (Frame:1).
+[2022.01.18-20.09.28:468][680]LogEditorTransaction: Undo StaticMesh: Material changed
+[2022.01.18-20.09.28:475][680]LogMaterial: Display: Missing cached shader map for material Broken_Concrete, compiling. 
+[2022.01.18-20.09.28:516][680]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 11
+[2022.01.18-20.09.28:516][680]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 10
+[2022.01.18-20.09.28:516][680]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 9
+[2022.01.18-20.09.28:516][680]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 8
+[2022.01.18-20.09.28:516][680]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2022.01.18-20.09.28:516][680]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 6
+[2022.01.18-20.09.28:516][680]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 5
+[2022.01.18-20.09.28:516][680]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 4
+[2022.01.18-20.09.28:569][680]LogMaterial: Display: Missing cached shader map for material Wood, compiling. 
+[2022.01.18-20.09.28:977][688]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 14
+[2022.01.18-20.09.28:987][690]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 13
+[2022.01.18-20.09.29:121][703]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 12
+[2022.01.18-20.09.29:180][708]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 11
+[2022.01.18-20.09.29:188][709]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 10
+[2022.01.18-20.09.29:221][712]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 9
+[2022.01.18-20.09.29:227][712]LogEditorTransaction: Undo Create Actors
+[2022.01.18-20.09.29:236][712]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 8
+[2022.01.18-20.09.29:256][712]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2022.01.18-20.09.29:257][712]LogMaterial: Display: Missing cached shader map for material Broken_Concrete, compiling. 
+[2022.01.18-20.09.29:337][712]LogMaterial: Display: Missing cached shader map for material Wood, compiling. 
+[2022.01.18-20.09.29:471][713]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 22
+[2022.01.18-20.09.29:471][713]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 21
+[2022.01.18-20.09.29:490][714]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 20
+[2022.01.18-20.09.29:597][725]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 19
+[2022.01.18-20.09.29:719][735]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 18
+[2022.01.18-20.09.29:785][740]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 17
+[2022.01.18-20.09.29:794][741]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 16
+[2022.01.18-20.09.29:889][749]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 15
+[2022.01.18-20.09.29:990][757]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 14
+[2022.01.18-20.09.30:016][759]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 13
+[2022.01.18-20.09.30:096][766]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 12
+[2022.01.18-20.09.30:111][767]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2022.01.18-20.09.30:280][781]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 10
+[2022.01.18-20.09.30:375][789]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 9
+[2022.01.18-20.09.30:388][790]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 8
+[2022.01.18-20.09.30:437][794]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 7
+[2022.01.18-20.09.30:477][798]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 6
+[2022.01.18-20.09.30:577][806]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 5
+[2022.01.18-20.09.30:597][807]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 4
+[2022.01.18-20.09.30:720][817]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 3
+[2022.01.18-20.09.30:765][822]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 2
+[2022.01.18-20.09.30:875][835]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 1
+[2022.01.18-20.09.31:030][852]MaterialEditorStats: Base pass shader: 120 instructions
+[2022.01.18-20.09.31:030][852]MaterialEditorStats: Base pass shader with Surface Lightmap: 147 instructions
+[2022.01.18-20.09.31:030][852]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2022.01.18-20.09.31:030][852]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.18-20.09.31:030][852]MaterialEditorStats: Texture samplers: 3/16
+[2022.01.18-20.09.31:030][852]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.18-20.09.31:030][852]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.18-20.09.31:240][875]MaterialEditorStats: Base pass shader: 120 instructions
+[2022.01.18-20.09.31:240][875]MaterialEditorStats: Base pass shader with Surface Lightmap: 147 instructions
+[2022.01.18-20.09.31:240][875]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2022.01.18-20.09.31:240][875]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.18-20.09.31:240][875]MaterialEditorStats: Texture samplers: 3/16
+[2022.01.18-20.09.31:240][875]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.18-20.09.31:240][875]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.18-20.09.52:307][341]LogContentBrowser: Deferred new asset file creation: Brass_Inst
+[2022.01.18-20.09.52:328][341]LogContentBrowser: Creating deferred item: Brass_Inst
+[2022.01.18-20.10.06:847][ 82]LogContentBrowser: Attempting asset rename: Brass_Inst -> DoorFrame_Brass
+[2022.01.18-20.10.06:847][ 82]LogContentBrowser: End creating deferred item Brass_Inst
+[2022.01.18-20.10.11:318][586]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2022.01.18-20.10.11:365][586]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/2x1_Door_and_Frame_Door643BE4ED4B40D00A49832D8CABAA96E3.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Door/2x1_Door_and_Frame_Door.uasset'
+[2022.01.18-20.10.11:373][586]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Models/Door/DoorFrame_Concrete" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Door/DoorFrame_Concrete.uasset" SILENT=true
+[2022.01.18-20.10.11:377][586]LogUObjectHash: Compacting FUObjectHashTables data took   0.17ms
+[2022.01.18-20.10.11:377][586]TextureStreamingBuild: Display: Compiling optional shaders took 0.000 seconds.
+[2022.01.18-20.10.11:382][586]LogUObjectHash: Compacting FUObjectHashTables data took   0.17ms
+[2022.01.18-20.10.11:386][586]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DoorFrame_ConcreteD414941A42B4D5B0641094848F033C96.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Door/DoorFrame_Concrete.uasset'
+[2022.01.18-20.10.11:394][586]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Models/Door/DoorFrame_Brass" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Door/DoorFrame_Brass.uasset" SILENT=true
+[2022.01.18-20.10.11:398][586]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DoorFrame_Brass0726D7444F52B5AD555E80AF7764F22A.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Door/DoorFrame_Brass.uasset'
+[2022.01.18-20.10.11:406][586]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.18-20.10.11:406][586]LogContentValidation: Display: Validating StaticMesh /Game/Art/Models/Door/2x1_Door_and_Frame_Door.2x1_Door_and_Frame_Door
+[2022.01.18-20.10.11:406][586]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Art/Models/Door/DoorFrame_Concrete.DoorFrame_Concrete
+[2022.01.18-20.10.11:406][586]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Art/Models/Door/DoorFrame_Brass.DoorFrame_Brass
+[2022.01.18-20.10.27:180][397]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/2x1_Door_and_Frame_DoorD5C96D2E45C7367E1C9F28952C6D2F37.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Door/2x1_Door_and_Frame_Door.uasset'
+[2022.01.18-20.10.27:189][397]AssetCheck: New page: Asset Save: 2x1_Door_and_Frame_Door
+[2022.01.18-20.10.27:189][397]LogContentValidation: Display: Validating StaticMesh /Game/Art/Models/Door/2x1_Door_and_Frame_Door.2x1_Door_and_Frame_Door
+[2022.01.18-20.10.33:611][133]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Art/Models/Door/2x1_Door_and_Frame_Frame.2x1_Door_and_Frame_Frame
+[2022.01.18-20.10.38:422][644]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/2x1_Door_and_Frame_FrameA8843BD34EDF4C875A1575B04D76CE1A.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Door/2x1_Door_and_Frame_Frame.uasset'
+[2022.01.18-20.10.38:428][644]AssetCheck: New page: Asset Save: 2x1_Door_and_Frame_Frame
+[2022.01.18-20.10.38:428][644]LogContentValidation: Display: Validating StaticMesh /Game/Art/Models/Door/2x1_Door_and_Frame_Frame.2x1_Door_and_Frame_Frame
+[2022.01.18-20.10.42:372][ 73]LogActorFactory: Actor Factory created 2x1_Door_and_Frame_Frame
+[2022.01.18-20.10.42:372][ 73]LogActorFactory: Actor Factory created 2x1_Door_and_Frame_Door
+[2022.01.18-20.10.43:882][252]LogActorFactory: Actor Factory created 2x1_Door_and_Frame_Frame
+[2022.01.18-20.10.43:893][252]LogActorFactory: Actor Factory created 2x1_Door_and_Frame_Door
+[2022.01.18-20.10.46:113][510]Cmd: TRANSACTION UNDO
+[2022.01.18-20.10.46:113][510]LogEditorTransaction: Undo Create Actors
+[2022.01.18-20.10.46:125][510]LogMaterial: Display: Missing cached shader map for material Broken_Concrete, compiling. 
+[2022.01.18-20.10.46:166][510]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 11
+[2022.01.18-20.10.46:166][510]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 10
+[2022.01.18-20.10.46:166][510]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 9
+[2022.01.18-20.10.46:166][510]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 8
+[2022.01.18-20.10.46:166][510]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2022.01.18-20.10.46:166][510]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 6
+[2022.01.18-20.10.46:166][510]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 5
+[2022.01.18-20.10.46:166][510]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 4
+[2022.01.18-20.10.46:295][510]LogMaterial: Display: Missing cached shader map for material Wood, compiling. 
+[2022.01.18-20.10.46:580][511]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 14
+[2022.01.18-20.10.46:692][515]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 13
+[2022.01.18-20.10.46:713][516]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 12
+[2022.01.18-20.10.46:789][519]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 11
+[2022.01.18-20.10.46:819][521]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 10
+[2022.01.18-20.10.46:851][523]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 9
+[2022.01.18-20.10.46:862][524]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 8
+[2022.01.18-20.10.46:913][529]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 7
+[2022.01.18-20.10.47:074][541]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 6
+[2022.01.18-20.10.47:151][545]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 5
+[2022.01.18-20.10.47:246][553]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 4
+[2022.01.18-20.10.47:266][554]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2022.01.18-20.10.47:267][554]MaterialEditorStats: Base pass shader: 120 instructions
+[2022.01.18-20.10.47:267][554]MaterialEditorStats: Base pass shader with Surface Lightmap: 147 instructions
+[2022.01.18-20.10.47:267][554]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2022.01.18-20.10.47:267][554]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.18-20.10.47:267][554]MaterialEditorStats: Texture samplers: 3/16
+[2022.01.18-20.10.47:267][554]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.18-20.10.47:267][554]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.18-20.10.47:421][566]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 2
+[2022.01.18-20.10.47:448][568]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 1
+[2022.01.18-20.10.47:860][608]MaterialEditorStats: Base pass shader: 120 instructions
+[2022.01.18-20.10.47:860][608]MaterialEditorStats: Base pass shader with Surface Lightmap: 147 instructions
+[2022.01.18-20.10.47:860][608]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2022.01.18-20.10.47:860][608]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.18-20.10.47:860][608]MaterialEditorStats: Texture samplers: 3/16
+[2022.01.18-20.10.47:860][608]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.18-20.10.47:860][608]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
