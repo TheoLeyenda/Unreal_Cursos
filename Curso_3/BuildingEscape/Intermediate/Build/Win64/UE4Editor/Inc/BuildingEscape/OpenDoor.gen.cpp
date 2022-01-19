@@ -33,7 +33,7 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 		return ETypeOpenDoor_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ETypeOpenDoor(ETypeOpenDoor_StaticEnum, TEXT("/Script/BuildingEscape"), TEXT("ETypeOpenDoor"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor_Hash() { return 670406146U; }
+	uint32 Get_Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor_Hash() { return 3454584627U; }
 	UEnum* Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor()
 	{
 #if WITH_HOT_RELOAD
@@ -45,18 +45,14 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 		if (!ReturnEnum)
 		{
 			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
-				{ "ETypeOpenDoor::TickAndLerp", (int64)ETypeOpenDoor::TickAndLerp },
-				{ "ETypeOpenDoor::TickAndInterpolation", (int64)ETypeOpenDoor::TickAndInterpolation },
-				{ "ETypeOpenDoor::TimelineAndInterpolation", (int64)ETypeOpenDoor::TimelineAndInterpolation },
-				{ "ETypeOpenDoor::TimelineAndlerp", (int64)ETypeOpenDoor::TimelineAndlerp },
+				{ "ETypeOpenDoor::Lerp", (int64)ETypeOpenDoor::Lerp },
+				{ "ETypeOpenDoor::Interpolation", (int64)ETypeOpenDoor::Interpolation },
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "Interpolation.Name", "ETypeOpenDoor::Interpolation" },
+				{ "Lerp.Name", "ETypeOpenDoor::Lerp" },
 				{ "ModuleRelativePath", "OpenDoor.h" },
-				{ "TickAndInterpolation.Name", "ETypeOpenDoor::TickAndInterpolation" },
-				{ "TickAndLerp.Name", "ETypeOpenDoor::TickAndLerp" },
-				{ "TimelineAndInterpolation.Name", "ETypeOpenDoor::TimelineAndInterpolation" },
-				{ "TimelineAndlerp.Name", "ETypeOpenDoor::TimelineAndlerp" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -100,9 +96,9 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 		static void NewProp_bUseShowRotationYaw_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseShowRotationYaw;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpeedOpenDoorByLerp_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpeedOpenDoor_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SpeedOpenDoorByLerp;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SpeedOpenDoor;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TargetYaw_MetaData[];
 #endif
@@ -143,12 +139,12 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOpenDoor_Statics::NewProp_bUseShowRotationYaw = { "bUseShowRotationYaw", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UOpenDoor), &Z_Construct_UClass_UOpenDoor_Statics::NewProp_bUseShowRotationYaw_SetBit, METADATA_PARAMS(Z_Construct_UClass_UOpenDoor_Statics::NewProp_bUseShowRotationYaw_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOpenDoor_Statics::NewProp_bUseShowRotationYaw_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedOpenDoorByLerp_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedOpenDoor_MetaData[] = {
 		{ "Category", "Open Door Settings" },
 		{ "ModuleRelativePath", "OpenDoor.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedOpenDoorByLerp = { "SpeedOpenDoorByLerp", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOpenDoor, SpeedOpenDoorByLerp), METADATA_PARAMS(Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedOpenDoorByLerp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedOpenDoorByLerp_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedOpenDoor = { "SpeedOpenDoor", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOpenDoor, SpeedOpenDoor), METADATA_PARAMS(Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedOpenDoor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedOpenDoor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOpenDoor_Statics::NewProp_TargetYaw_MetaData[] = {
 		{ "Category", "Open Door Settings" },
@@ -160,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeOpenDoor_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeOpenDoor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_bUseShowRotationYaw,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedOpenDoorByLerp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedOpenDoor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_TargetYaw,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UOpenDoor_Statics::StaticCppClassTypeInfo = {
@@ -190,7 +186,7 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UOpenDoor, 3733317644);
+	IMPLEMENT_CLASS(UOpenDoor, 2559626206);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UOpenDoor>()
 	{
 		return UOpenDoor::StaticClass();

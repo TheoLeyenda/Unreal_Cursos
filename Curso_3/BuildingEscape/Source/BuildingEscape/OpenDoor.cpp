@@ -27,11 +27,8 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	{
 		ShowCurrentRotationYaw();
 	}
-
-	if(TypeOpenDoor == ETypeOpenDoor::TickAndLerp || TypeOpenDoor == ETypeOpenDoor::TickAndInterpolation)
-	{
-		OpenDoorByLerp(TargetYaw, 0, 1, DeltaTime);
-	}
+	
+	OpenDoorByLerp(TargetYaw, 0, 1, DeltaTime);
 }
 
 void UOpenDoor::RotateDoorAngle90()
@@ -56,13 +53,13 @@ void UOpenDoor::OpenDoorByLerp(float TargetYawRotationDoor, float MinAlpha, floa
 	float CurrentYaw = CurrentRotation.Yaw;
 	float newYaw = 0;
 
-	if(TypeOpenDoor == ETypeOpenDoor::TickAndLerp || TypeOpenDoor == ETypeOpenDoor::TimelineAndlerp)
+	if(TypeOpenDoor == ETypeOpenDoor::Lerp)
 	{
-		newYaw= FMath::Lerp(CurrentYaw, TargetYawRotationDoor, SpeedOpenDoorByLerp* DeltaTime);
+		newYaw= FMath::Lerp(CurrentYaw, TargetYawRotationDoor, SpeedOpenDoor* DeltaTime);
 	}
-	else if(TypeOpenDoor == ETypeOpenDoor::TickAndInterpolation || TypeOpenDoor == ETypeOpenDoor::TimelineAndInterpolation)
+	else if(TypeOpenDoor == ETypeOpenDoor::Interpolation)
 	{
-		newYaw= FMath::FInterpConstantTo(CurrentYaw, TargetYawRotationDoor,DeltaTime, SpeedOpenDoorByLerp);
+		newYaw= FMath::FInterpConstantTo(CurrentYaw, TargetYawRotationDoor,DeltaTime, SpeedOpenDoor);
 	}
 	
 	FRotator NewRotation = FRotator(CurrentRotation.Pitch, newYaw, CurrentRotation.Roll);

@@ -9,10 +9,8 @@
 UENUM()
 enum class ETypeOpenDoor
 {
-	TickAndLerp,
-	TickAndInterpolation,
-	TimelineAndInterpolation,
-	TimelineAndlerp,
+	Lerp,
+	Interpolation,
 };
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -29,13 +27,13 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, Category = "Open Door Settings")
-	ETypeOpenDoor TypeOpenDoor = ETypeOpenDoor::TickAndInterpolation;
+	ETypeOpenDoor TypeOpenDoor = ETypeOpenDoor::Lerp;
 
 	UPROPERTY(EditAnywhere, Category = "Open Door Settings")
 	bool bUseShowRotationYaw = true;
 
 	UPROPERTY(EditAnywhere, Category = "Open Door Settings")
-	float SpeedOpenDoorByLerp;
+	float SpeedOpenDoor;
 	
 public:	
 	// Called every frame
