@@ -9,8 +9,10 @@
 UENUM()
 enum class ETypeOpenDoor
 {
-	Tick,
-	Timeline,
+	TickAndLerp,
+	TickAndInterpolation,
+	TimelineAndInterpolation,
+	TimelineAndlerp,
 };
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -27,7 +29,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, Category = "Open Door Settings")
-	ETypeOpenDoor TypeOpenDoor = ETypeOpenDoor::Tick;
+	ETypeOpenDoor TypeOpenDoor = ETypeOpenDoor::TickAndInterpolation;
 
 	UPROPERTY(EditAnywhere, Category = "Open Door Settings")
 	bool bUseShowRotationYaw = true;

@@ -33,7 +33,7 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 		return ETypeOpenDoor_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ETypeOpenDoor(ETypeOpenDoor_StaticEnum, TEXT("/Script/BuildingEscape"), TEXT("ETypeOpenDoor"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor_Hash() { return 3049017793U; }
+	uint32 Get_Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor_Hash() { return 670406146U; }
 	UEnum* Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor()
 	{
 #if WITH_HOT_RELOAD
@@ -45,14 +45,18 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 		if (!ReturnEnum)
 		{
 			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
-				{ "ETypeOpenDoor::Tick", (int64)ETypeOpenDoor::Tick },
-				{ "ETypeOpenDoor::Timeline", (int64)ETypeOpenDoor::Timeline },
+				{ "ETypeOpenDoor::TickAndLerp", (int64)ETypeOpenDoor::TickAndLerp },
+				{ "ETypeOpenDoor::TickAndInterpolation", (int64)ETypeOpenDoor::TickAndInterpolation },
+				{ "ETypeOpenDoor::TimelineAndInterpolation", (int64)ETypeOpenDoor::TimelineAndInterpolation },
+				{ "ETypeOpenDoor::TimelineAndlerp", (int64)ETypeOpenDoor::TimelineAndlerp },
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "ModuleRelativePath", "OpenDoor.h" },
-				{ "Tick.Name", "ETypeOpenDoor::Tick" },
-				{ "Timeline.Name", "ETypeOpenDoor::Timeline" },
+				{ "TickAndInterpolation.Name", "ETypeOpenDoor::TickAndInterpolation" },
+				{ "TickAndLerp.Name", "ETypeOpenDoor::TickAndLerp" },
+				{ "TimelineAndInterpolation.Name", "ETypeOpenDoor::TimelineAndInterpolation" },
+				{ "TimelineAndlerp.Name", "ETypeOpenDoor::TimelineAndlerp" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
