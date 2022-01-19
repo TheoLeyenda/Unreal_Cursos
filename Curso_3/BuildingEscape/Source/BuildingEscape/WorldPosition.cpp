@@ -18,8 +18,10 @@ UWorldPosition::UWorldPosition()
 void UWorldPosition::BeginPlay()
 {
 	Super::BeginPlay();
-	ShowMessegeLogs();
-
+	if(bUseShowMessegeLogs)
+	{
+		ShowMessegeLogs();
+	}
 }
 
 

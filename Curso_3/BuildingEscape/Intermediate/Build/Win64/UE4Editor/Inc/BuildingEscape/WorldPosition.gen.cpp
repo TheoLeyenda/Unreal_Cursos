@@ -31,6 +31,12 @@ void EmptyLinkFunctionForGeneratedCodeWorldPosition() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUseShowMessegeLogs_MetaData[];
+#endif
+		static void NewProp_bUseShowMessegeLogs_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseShowMessegeLogs;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -46,6 +52,20 @@ void EmptyLinkFunctionForGeneratedCodeWorldPosition() {}
 		{ "ModuleRelativePath", "WorldPosition.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UWorldPosition_Statics::NewProp_bUseShowMessegeLogs_MetaData[] = {
+		{ "Category", "WorldPosition" },
+		{ "ModuleRelativePath", "WorldPosition.h" },
+	};
+#endif
+	void Z_Construct_UClass_UWorldPosition_Statics::NewProp_bUseShowMessegeLogs_SetBit(void* Obj)
+	{
+		((UWorldPosition*)Obj)->bUseShowMessegeLogs = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UWorldPosition_Statics::NewProp_bUseShowMessegeLogs = { "bUseShowMessegeLogs", nullptr, (EPropertyFlags)0x0020080000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UWorldPosition), &Z_Construct_UClass_UWorldPosition_Statics::NewProp_bUseShowMessegeLogs_SetBit, METADATA_PARAMS(Z_Construct_UClass_UWorldPosition_Statics::NewProp_bUseShowMessegeLogs_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UWorldPosition_Statics::NewProp_bUseShowMessegeLogs_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UWorldPosition_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWorldPosition_Statics::NewProp_bUseShowMessegeLogs,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UWorldPosition_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UWorldPosition>::IsAbstract,
 	};
@@ -55,11 +75,11 @@ void EmptyLinkFunctionForGeneratedCodeWorldPosition() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_UWorldPosition_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_UWorldPosition_Statics::PropPointers),
 		0,
 		0x00B000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_UWorldPosition_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UWorldPosition_Statics::Class_MetaDataParams))
@@ -73,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldPosition() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UWorldPosition, 4216100575);
+	IMPLEMENT_CLASS(UWorldPosition, 4281118000);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UWorldPosition>()
 	{
 		return UWorldPosition::StaticClass();

@@ -58,7 +58,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UWorldPosition); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UWorldPosition)
 
 
-#define BuildingEscape_Source_BuildingEscape_WorldPosition_h_13_PRIVATE_PROPERTY_OFFSET
+#define BuildingEscape_Source_BuildingEscape_WorldPosition_h_13_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__bUseShowMessegeLogs() { return STRUCT_OFFSET(UWorldPosition, bUseShowMessegeLogs); }
+
+
 #define BuildingEscape_Source_BuildingEscape_WorldPosition_h_10_PROLOG
 #define BuildingEscape_Source_BuildingEscape_WorldPosition_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
