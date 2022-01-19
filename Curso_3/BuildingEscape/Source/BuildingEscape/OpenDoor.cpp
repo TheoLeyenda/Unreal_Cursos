@@ -17,6 +17,11 @@ void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
 	ActorThatOpen = UGameplayStatics::GetPlayerPawn(GetWorld(),0);
+
+	if(!PressurePlate)
+	{
+		UE_LOG(LogTemp, Error, TEXT("%s has the open door component on it, but no pressureplate set") , *GetOwner()->GetName())
+	}
 }
 
 
@@ -75,6 +80,7 @@ void UOpenDoor::CheckOpenDoorByPressurePlate(float DeltaTime)
 			OpenDoor(TargetYaw, DeltaTime);
 		}
 	}
+	
 }
 
 void UOpenDoor::CheckShowCurrentRotationYaw()
