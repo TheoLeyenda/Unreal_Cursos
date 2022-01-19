@@ -28,7 +28,7 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 		ShowCurrentRotationYaw();
 	}
 	
-	OpenDoorByLerp(TargetYaw, 0, 1, DeltaTime);
+	OpenDoorByLerp(TargetYaw, DeltaTime);
 }
 
 void UOpenDoor::RotateDoorAngle90()
@@ -46,7 +46,7 @@ void UOpenDoor::ShowCurrentRotationYaw()
 
 }
 
-void UOpenDoor::OpenDoorByLerp(float TargetYawRotationDoor, float MinAlpha, float MaxAlpha, float DeltaTime)
+void UOpenDoor::OpenDoorByLerp(float TargetYawRotationDoor, float DeltaTime)
 {
 	AActor* Owner = GetOwner();
 	FRotator CurrentRotation = Owner->GetActorRotation();

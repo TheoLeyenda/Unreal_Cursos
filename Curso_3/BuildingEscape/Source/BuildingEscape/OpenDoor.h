@@ -39,7 +39,7 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	void RotateDoorAngle90();
-	void OpenDoorByLerp(float TargetYaw, float MinAlpha, float MaxAlpha, float DeltaTime);
+	void OpenDoorByLerp(float TargetYaw, float DeltaTime);
 	void ShowCurrentRotationYaw();
 private:
 		UPROPERTY(EditAnywhere, Category = "Open Door Settings")
