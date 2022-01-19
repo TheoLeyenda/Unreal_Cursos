@@ -2,6 +2,7 @@
 
 
 #include "OpenDoor.h"
+#include "Kismet/GameplayStatics.h"
 #include "GameFramework/Actor.h"
 
 // Sets default values for this component's properties
@@ -15,6 +16,7 @@ UOpenDoor::UOpenDoor()
 void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
+	ActorThatOpen = UGameplayStatics::GetPlayerPawn(GetWorld(),0);
 }
 
 
@@ -23,12 +25,9 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	if(bUseShowRotationYaw)
-	{
-		ShowCurrentRotationYaw();
-	}
-	
-	OpenDoorByLerp(TargetYaw, DeltaTime);
+	CheckShowCurrentRotationYaw();
+
+	CheckOpenDoorByPressurePlate(DeltaTime);
 }
 
 void UOpenDoor::RotateDoorAngle90()
@@ -46,7 +45,7 @@ void UOpenDoor::ShowCurrentRotationYaw()
 
 }
 
-void UOpenDoor::OpenDoorByLerp(float TargetYawRotationDoor, float DeltaTime)
+void UOpenDoor::OpenDoor(float TargetYawRotationDoor, float DeltaTime)
 {
 	AActor* Owner = GetOwner();
 	FRotator CurrentRotation = Owner->GetActorRotation();
@@ -65,4 +64,23 @@ void UOpenDoor::OpenDoorByLerp(float TargetYawRotationDoor, float DeltaTime)
 	FRotator NewRotation = FRotator(CurrentRotation.Pitch, newYaw, CurrentRotation.Roll);
 	
 	Owner->SetActorRotation(NewRotation);
+}
+
+void UOpenDoor::CheckOpenDoorByPressurePlate(float DeltaTime)
+{
+	if(PressurePlate)
+	{
+		if(PressurePlate->IsOverlappingActor(ActorThatOpen))
+		{
+			OpenDoor(TargetYaw, DeltaTime);
+		}
+	}
+}
+
+void UOpenDoor::CheckShowCurrentRotationYaw()
+{
+	if(bUseShowRotationYaw)
+	{
+		ShowCurrentRotationYaw();
+	}
 }

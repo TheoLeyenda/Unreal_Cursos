@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Engine/TriggerVolume.h"
 #include "OpenDoor.generated.h"
 
 UENUM()
@@ -34,13 +35,21 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category = "Open Door Settings")
 	float SpeedOpenDoor;
+
+	UPROPERTY(EditAnywhere)
+	ATriggerVolume* PressurePlate;
+
+	UPROPERTY(EditAnywhere)
+	AActor* ActorThatOpen;
 	
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	void RotateDoorAngle90();
-	void OpenDoorByLerp(float TargetYaw, float DeltaTime);
+	void OpenDoor(float TargetYaw, float DeltaTime);
 	void ShowCurrentRotationYaw();
+	void CheckOpenDoorByPressurePlate(float DeltaTime);
+	void CheckShowCurrentRotationYaw();
 private:
 		UPROPERTY(EditAnywhere, Category = "Open Door Settings")
 		float TargetYaw = 90.0f;
