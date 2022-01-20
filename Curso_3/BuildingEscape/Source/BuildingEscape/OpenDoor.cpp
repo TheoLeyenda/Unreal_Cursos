@@ -56,18 +56,18 @@ void UOpenDoor::ShowCurrentRotationYaw()
 
 }
 
-void UOpenDoor::RotationDooYaw(float TargetYawRotationDoor, float DeltaTime, float SpeedRotation)
+void UOpenDoor::RotationDoorYaw(float TargetYawRotationDoor, float DeltaTime, float SpeedRotation, ETypeRotationDoor TypeRotation)
 {
 	AActor* Owner = GetOwner();
 	FRotator CurrentRotation = Owner->GetActorRotation();
 	float CurrentYaw = CurrentRotation.Yaw;
 	float newYaw = 0;
 
-	if(TypeOpenDoor == ETypeOpenDoor::Lerp)
+	if(TypeRotation == ETypeRotationDoor::Lerp)
 	{
 		newYaw= FMath::Lerp(CurrentYaw, TargetYawRotationDoor, SpeedRotation* DeltaTime);
 	}
-	else if(TypeOpenDoor == ETypeOpenDoor::Interpolation)
+	else if(TypeRotation == ETypeRotationDoor::Interpolation)
 	{
 		newYaw= FMath::FInterpConstantTo(CurrentYaw, TargetYawRotationDoor,DeltaTime, SpeedRotation);
 	}
@@ -83,11 +83,15 @@ void UOpenDoor::CheckDoorByPressurePlate(float DeltaTime)
 	{
 		if(PressurePlate->IsOverlappingActor(ActorThatOpen))
 		{
-			RotationDooYaw(TargetYawOpenDoor, DeltaTime, SpeedOpenDoor);
+			RotationDoorYaw(TargetYawOpenDoor, DeltaTime, SpeedOpenDoor, TypeRotationDoor);
+			DoorLastOpened = GetWorld()->GetTimeSeconds();
 		}
 		else
 		{
-			RotationDooYaw(TargetYawCloseDoor, DeltaTime, SpeedCloseDoor);
+			if(GetWorld()->GetTimeSeconds() - DoorLastOpened > DoorCloseDelay)
+			{
+				RotationDoorYaw(TargetYawCloseDoor, DeltaTime, SpeedCloseDoor, TypeRotationDoor);
+			}
 		}
 	}
 	

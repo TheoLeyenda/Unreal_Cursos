@@ -59,14 +59,15 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOpenDoor); \
 
 
 #define BuildingEscape_Source_BuildingEscape_OpenDoor_h_20_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__TypeOpenDoor() { return STRUCT_OFFSET(UOpenDoor, TypeOpenDoor); } \
+	FORCEINLINE static uint32 __PPO__TypeRotationDoor() { return STRUCT_OFFSET(UOpenDoor, TypeRotationDoor); } \
 	FORCEINLINE static uint32 __PPO__bUseShowRotationYaw() { return STRUCT_OFFSET(UOpenDoor, bUseShowRotationYaw); } \
 	FORCEINLINE static uint32 __PPO__SpeedOpenDoor() { return STRUCT_OFFSET(UOpenDoor, SpeedOpenDoor); } \
 	FORCEINLINE static uint32 __PPO__SpeedCloseDoor() { return STRUCT_OFFSET(UOpenDoor, SpeedCloseDoor); } \
 	FORCEINLINE static uint32 __PPO__TargetYawOpenDoor() { return STRUCT_OFFSET(UOpenDoor, TargetYawOpenDoor); } \
 	FORCEINLINE static uint32 __PPO__TargetYawCloseDoor() { return STRUCT_OFFSET(UOpenDoor, TargetYawCloseDoor); } \
 	FORCEINLINE static uint32 __PPO__PressurePlate() { return STRUCT_OFFSET(UOpenDoor, PressurePlate); } \
-	FORCEINLINE static uint32 __PPO__ActorThatOpen() { return STRUCT_OFFSET(UOpenDoor, ActorThatOpen); }
+	FORCEINLINE static uint32 __PPO__ActorThatOpen() { return STRUCT_OFFSET(UOpenDoor, ActorThatOpen); } \
+	FORCEINLINE static uint32 __PPO__DoorCloseDelay() { return STRUCT_OFFSET(UOpenDoor, DoorCloseDelay); }
 
 
 #define BuildingEscape_Source_BuildingEscape_OpenDoor_h_17_PROLOG
@@ -100,11 +101,11 @@ template<> BUILDINGESCAPE_API UClass* StaticClass<class UOpenDoor>();
 #define CURRENT_FILE_ID BuildingEscape_Source_BuildingEscape_OpenDoor_h
 
 
-#define FOREACH_ENUM_ETYPEOPENDOOR(op) \
-	op(ETypeOpenDoor::Lerp) \
-	op(ETypeOpenDoor::Interpolation) 
+#define FOREACH_ENUM_ETYPEROTATIONDOOR(op) \
+	op(ETypeRotationDoor::Lerp) \
+	op(ETypeRotationDoor::Interpolation) 
 
-enum class ETypeOpenDoor;
-template<> BUILDINGESCAPE_API UEnum* StaticEnum<ETypeOpenDoor>();
+enum class ETypeRotationDoor;
+template<> BUILDINGESCAPE_API UEnum* StaticEnum<ETypeRotationDoor>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
