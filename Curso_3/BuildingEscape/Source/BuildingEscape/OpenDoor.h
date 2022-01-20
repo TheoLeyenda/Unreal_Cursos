@@ -51,7 +51,7 @@ protected:
 	UPROPERTY(EditAnywhere, Category= "Door Settings")
 	AActor* ActorThatOpen;
 
-	float DoorLastOpened;
+	float DoorLastOpened = 0.0f;
 	
 	UPROPERTY(EditAnywhere, Category= "Door Settings")
 	float DoorCloseDelay = 2.0f;
