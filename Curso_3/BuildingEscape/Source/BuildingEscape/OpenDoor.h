@@ -55,7 +55,9 @@ protected:
 	
 	UPROPERTY(EditAnywhere, Category= "Door Settings")
 	float DoorCloseDelay = 2.0f;
-	
+
+	UPROPERTY(EditAnywhere, Category= "Door Settings")
+	float MassToOpenDoor = 50.0f;
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
@@ -64,5 +66,5 @@ public:
 	void ShowCurrentRotationYaw();
 	void CheckDoorByPressurePlate(float DeltaTime);
 	void CheckShowCurrentRotationYaw();
-	
+	float TotalMassActors() const;
 };

@@ -81,7 +81,7 @@ void UOpenDoor::CheckDoorByPressurePlate(float DeltaTime)
 {
 	if(PressurePlate)
 	{
-		if(PressurePlate->IsOverlappingActor(ActorThatOpen))
+		if(TotalMassActors() > MassToOpenDoor)
 		{
 			RotationDoorYaw(TargetYawOpenDoor, DeltaTime, SpeedOpenDoor, TypeRotationDoor);
 			DoorLastOpened = GetWorld()->GetTimeSeconds();
@@ -103,4 +103,19 @@ void UOpenDoor::CheckShowCurrentRotationYaw()
 	{
 		ShowCurrentRotationYaw();
 	}
+}
+
+float UOpenDoor::TotalMassActors() const
+{
+	float TotalMass = 0.0f;
+	TArray<AActor*> OverlapingActors;
+
+	PressurePlate->GetOverlappingActors(OverlapingActors);
+
+	for(AActor* Actor: OverlapingActors)
+	{
+		TotalMass += Actor->FindComponentByClass<UPrimitiveComponent>()->GetMass();
+	}
+	
+	return TotalMass;
 }
