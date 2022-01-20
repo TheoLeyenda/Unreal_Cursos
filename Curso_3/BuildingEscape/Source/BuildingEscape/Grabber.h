@@ -65,5 +65,9 @@ private:
 	void ShowLogsPlayerlocationAndRotation();
 	void ShowLineTraceHitActor(FHitResult Hit);
 	
-	FHitResult GetFirstPhysicsBodyInReach() const;
+	FHitResult GetFirstPhysicsBodyInReach();
+
+	FVector PlayerViewPointLocation;
+	FRotator PlayerViewPointRotation;
+	FVector GetPlayerReach();
 };
