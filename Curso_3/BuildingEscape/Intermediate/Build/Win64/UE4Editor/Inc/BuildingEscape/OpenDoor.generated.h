@@ -62,9 +62,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOpenDoor); \
 	FORCEINLINE static uint32 __PPO__TypeOpenDoor() { return STRUCT_OFFSET(UOpenDoor, TypeOpenDoor); } \
 	FORCEINLINE static uint32 __PPO__bUseShowRotationYaw() { return STRUCT_OFFSET(UOpenDoor, bUseShowRotationYaw); } \
 	FORCEINLINE static uint32 __PPO__SpeedOpenDoor() { return STRUCT_OFFSET(UOpenDoor, SpeedOpenDoor); } \
+	FORCEINLINE static uint32 __PPO__SpeedCloseDoor() { return STRUCT_OFFSET(UOpenDoor, SpeedCloseDoor); } \
+	FORCEINLINE static uint32 __PPO__TargetYawOpenDoor() { return STRUCT_OFFSET(UOpenDoor, TargetYawOpenDoor); } \
+	FORCEINLINE static uint32 __PPO__TargetYawCloseDoor() { return STRUCT_OFFSET(UOpenDoor, TargetYawCloseDoor); } \
 	FORCEINLINE static uint32 __PPO__PressurePlate() { return STRUCT_OFFSET(UOpenDoor, PressurePlate); } \
-	FORCEINLINE static uint32 __PPO__ActorThatOpen() { return STRUCT_OFFSET(UOpenDoor, ActorThatOpen); } \
-	FORCEINLINE static uint32 __PPO__TargetYaw() { return STRUCT_OFFSET(UOpenDoor, TargetYaw); }
+	FORCEINLINE static uint32 __PPO__ActorThatOpen() { return STRUCT_OFFSET(UOpenDoor, ActorThatOpen); }
 
 
 #define BuildingEscape_Source_BuildingEscape_OpenDoor_h_17_PROLOG

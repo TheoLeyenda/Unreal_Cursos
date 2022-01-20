@@ -27,14 +27,23 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, Category = "Open Door Settings")
+	UPROPERTY(EditAnywhere, Category = "Door Settings")
 	ETypeOpenDoor TypeOpenDoor = ETypeOpenDoor::Lerp;
 
-	UPROPERTY(EditAnywhere, Category = "Open Door Settings")
+	UPROPERTY(EditAnywhere, Category = "Door Settings")
 	bool bUseShowRotationYaw = true;
 
-	UPROPERTY(EditAnywhere, Category = "Open Door Settings")
+	UPROPERTY(EditAnywhere, Category = "Door Settings")
 	float SpeedOpenDoor;
+
+	UPROPERTY(EditAnywhere, Category= "Door Settings")
+	float SpeedCloseDoor;
+
+	UPROPERTY(EditAnywhere, Category = "Door Settings")
+	float TargetYawOpenDoor = 90.0f;
+
+	UPROPERTY(EditAnywhere, Category= "Door Settings")
+	float TargetYawCloseDoor = 0.0f;
 
 	UPROPERTY(EditAnywhere)
 	ATriggerVolume* PressurePlate;
@@ -46,11 +55,9 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	void RotateDoorAngle90();
-	void OpenDoor(float TargetYaw, float DeltaTime);
+	void RotationDooYaw(float TargetAngleYaw, float DeltaTime, float SpeedRotation);
 	void ShowCurrentRotationYaw();
-	void CheckOpenDoorByPressurePlate(float DeltaTime);
+	void CheckDoorByPressurePlate(float DeltaTime);
 	void CheckShowCurrentRotationYaw();
-private:
-		UPROPERTY(EditAnywhere, Category = "Open Door Settings")
-		float TargetYaw = 90.0f;
+	
 };

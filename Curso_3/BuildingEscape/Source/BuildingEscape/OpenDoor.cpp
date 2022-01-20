@@ -2,7 +2,11 @@
 
 
 #include "OpenDoor.h"
-#include "Kismet/GameplayStatics.h"
+#include "Kismet/GameplayStatics.h" //UGameplayStatics
+
+#include "Engine/World.h"
+#include "GameFramework/PlayerController.h"
+
 #include "GameFramework/Actor.h"
 
 // Sets default values for this component's properties
@@ -16,8 +20,10 @@ UOpenDoor::UOpenDoor()
 void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
-	ActorThatOpen = UGameplayStatics::GetPlayerPawn(GetWorld(),0);
-
+	
+	//ActorThatOpen = UGameplayStatics::GetPlayerPawn(GetWorld(),0);
+	ActorThatOpen = GetWorld()->GetFirstPlayerController()->GetPawn();
+	
 	if(!PressurePlate)
 	{
 		UE_LOG(LogTemp, Error, TEXT("%s has the open door component on it, but no pressureplate set") , *GetOwner()->GetName())
@@ -32,7 +38,7 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 
 	CheckShowCurrentRotationYaw();
 
-	CheckOpenDoorByPressurePlate(DeltaTime);
+	CheckDoorByPressurePlate(DeltaTime);
 }
 
 void UOpenDoor::RotateDoorAngle90()
@@ -50,7 +56,7 @@ void UOpenDoor::ShowCurrentRotationYaw()
 
 }
 
-void UOpenDoor::OpenDoor(float TargetYawRotationDoor, float DeltaTime)
+void UOpenDoor::RotationDooYaw(float TargetYawRotationDoor, float DeltaTime, float SpeedRotation)
 {
 	AActor* Owner = GetOwner();
 	FRotator CurrentRotation = Owner->GetActorRotation();
@@ -59,11 +65,11 @@ void UOpenDoor::OpenDoor(float TargetYawRotationDoor, float DeltaTime)
 
 	if(TypeOpenDoor == ETypeOpenDoor::Lerp)
 	{
-		newYaw= FMath::Lerp(CurrentYaw, TargetYawRotationDoor, SpeedOpenDoor* DeltaTime);
+		newYaw= FMath::Lerp(CurrentYaw, TargetYawRotationDoor, SpeedRotation* DeltaTime);
 	}
 	else if(TypeOpenDoor == ETypeOpenDoor::Interpolation)
 	{
-		newYaw= FMath::FInterpConstantTo(CurrentYaw, TargetYawRotationDoor,DeltaTime, SpeedOpenDoor);
+		newYaw= FMath::FInterpConstantTo(CurrentYaw, TargetYawRotationDoor,DeltaTime, SpeedRotation);
 	}
 	
 	FRotator NewRotation = FRotator(CurrentRotation.Pitch, newYaw, CurrentRotation.Roll);
@@ -71,13 +77,17 @@ void UOpenDoor::OpenDoor(float TargetYawRotationDoor, float DeltaTime)
 	Owner->SetActorRotation(NewRotation);
 }
 
-void UOpenDoor::CheckOpenDoorByPressurePlate(float DeltaTime)
+void UOpenDoor::CheckDoorByPressurePlate(float DeltaTime)
 {
 	if(PressurePlate)
 	{
 		if(PressurePlate->IsOverlappingActor(ActorThatOpen))
 		{
-			OpenDoor(TargetYaw, DeltaTime);
+			RotationDooYaw(TargetYawOpenDoor, DeltaTime, SpeedOpenDoor);
+		}
+		else
+		{
+			RotationDooYaw(TargetYawCloseDoor, DeltaTime, SpeedCloseDoor);
 		}
 	}
 	
