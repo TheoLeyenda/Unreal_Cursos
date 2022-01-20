@@ -50,7 +50,8 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	
-	void Grab();
+	void GrabPressed();
+	void GrabRelease();
 private:
 	UInputComponent* InputComponent = nullptr;
 
