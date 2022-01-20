@@ -56,8 +56,6 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	);
 	
 	//Ray-Cast out to a certain distance (Reach)
-
-	
 	
 	//See what it hits
 }
