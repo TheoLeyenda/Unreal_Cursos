@@ -5,6 +5,9 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "DrawDebugHelpers.h"
+#include "CollisionQueryParams.h"
+#include "../../Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/format.h"
+#include "PhysicsEngine/PhysicsHandleComponent.h"
 #include "Grabber.generated.h"
 
 #define OUT
@@ -30,8 +33,14 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 	FColor ColorDebugLine = FColor::Emerald;
+
+	UPhysicsHandleComponent* PhysicsHandle = nullptr;
+
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	
+	void Grab();
+private:
+	UInputComponent* InputComponent = nullptr;
 };
