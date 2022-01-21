@@ -20,14 +20,10 @@ UOpenDoor::UOpenDoor()
 void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	FindAuidioComponent();
 	//ActorThatOpen = UGameplayStatics::GetPlayerPawn(GetWorld(),0);
 	ActorThatOpen = GetWorld()->GetFirstPlayerController()->GetPawn();
-	
-	if(!PressurePlate)
-	{
-		UE_LOG(LogTemp, Error, TEXT("%s has the open door component on it, but no pressureplate set") , *GetOwner()->GetName())
-	}
 }
 
 
@@ -89,22 +85,24 @@ void UOpenDoor::CheckTypeOpenDoor(float DeltaTime)
 	}
 }
 
-
 void UOpenDoor::CheckOpenDoorByMassInPressurePlate(float DeltaTime)
 {
-	if(PressurePlate)
+	if(!PressurePlate)
 	{
-		if(TotalMassActors() > MassToOpenDoor)
+		return;
+	}
+	if(TotalMassActors() > MassToOpenDoor)
+	{
+		RotationDoorYaw(TargetYawOpenDoor, DeltaTime, SpeedOpenDoor, TypeRotationDoor);
+		DoorLastOpened = GetWorld()->GetTimeSeconds();
+		CheckOpenDoorSound();
+	}
+	else
+	{
+		if(GetWorld()->GetTimeSeconds() - DoorLastOpened > DoorCloseDelay)
 		{
-			RotationDoorYaw(TargetYawOpenDoor, DeltaTime, SpeedOpenDoor, TypeRotationDoor);
-			DoorLastOpened = GetWorld()->GetTimeSeconds();
-		}
-		else
-		{
-			if(GetWorld()->GetTimeSeconds() - DoorLastOpened > DoorCloseDelay)
-			{
-				RotationDoorYaw(TargetYawCloseDoor, DeltaTime, SpeedCloseDoor, TypeRotationDoor);
-			}
+			RotationDoorYaw(TargetYawCloseDoor, DeltaTime, SpeedCloseDoor, TypeRotationDoor);
+			CheckCloseDoorSound();
 		}
 	}
 	
@@ -112,19 +110,20 @@ void UOpenDoor::CheckOpenDoorByMassInPressurePlate(float DeltaTime)
 
 void UOpenDoor::CheckOpenDoorByCollisionPlayer(float DeltaTime)
 {
-	if(PressurePlate)
+	if(!PressurePlate || !ActorThatOpen){return;}
+	
+	if(PressurePlate->IsOverlappingActor(ActorThatOpen))
 	{
-		if(PressurePlate->IsOverlappingActor(ActorThatOpen))
+		RotationDoorYaw(TargetYawOpenDoor, DeltaTime, SpeedOpenDoor, TypeRotationDoor);
+		DoorLastOpened = GetWorld()->GetTimeSeconds();
+		CheckOpenDoorSound();
+	}
+	else
+	{
+		if(GetWorld()->GetTimeSeconds() - DoorLastOpened > DoorCloseDelay)
 		{
-			RotationDoorYaw(TargetYawOpenDoor, DeltaTime, SpeedOpenDoor, TypeRotationDoor);
-			DoorLastOpened = GetWorld()->GetTimeSeconds();
-		}
-		else
-		{
-			if(GetWorld()->GetTimeSeconds() - DoorLastOpened > DoorCloseDelay)
-			{
-				RotationDoorYaw(TargetYawCloseDoor, DeltaTime, SpeedCloseDoor, TypeRotationDoor);
-			}
+			RotationDoorYaw(TargetYawCloseDoor, DeltaTime, SpeedCloseDoor, TypeRotationDoor);
+			CheckCloseDoorSound();
 		}
 	}
 }
@@ -140,9 +139,11 @@ void UOpenDoor::CheckShowCurrentRotationYaw()
 
 float UOpenDoor::TotalMassActors() const
 {
+	if(!PressurePlate){return 0.0f;}
+	
 	float TotalMass = 0.0f;
 	TArray<AActor*> OverlapingActors;
-
+	
 	PressurePlate->GetOverlappingActors(OverlapingActors);
 
 	for(AActor* Actor: OverlapingActors)
@@ -151,4 +152,39 @@ float UOpenDoor::TotalMassActors() const
 	}
 	
 	return TotalMass;
+}
+
+void UOpenDoor::FindAuidioComponent()
+{
+	AudioComponent = GetOwner()->FindComponentByClass<UAudioComponent>();
+
+	if(!AudioComponent)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Missing audio component on s%"), *GetOwner()->GetName());
+	}
+}
+
+
+void UOpenDoor::CheckCloseDoorSound()
+{
+	if(!AudioComponent){return;}
+
+	bOpenDoorSound = false;
+	if(!bCloseDoorSound)
+	{
+		AudioComponent->Play();
+		bCloseDoorSound = true;
+	}
+}
+
+void UOpenDoor::CheckOpenDoorSound()
+{
+	if(!AudioComponent){return;}
+
+	bCloseDoorSound = false;
+	if(!bOpenDoorSound)
+	{
+		AudioComponent->Play();
+		bOpenDoorSound = true;
+	}
 }

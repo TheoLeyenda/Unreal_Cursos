@@ -49,34 +49,36 @@ void UGrabber::GrabPressed()
 	UPrimitiveComponent* ComponentToGrab = HitResult.GetComponent();
 
 	AActor* ActorHit = HitResult.GetActor();
-	if(ActorHit)
-	{
-		if(TypeGrabbel == ETypeGrabbel::AtLocation)
-		{
-			PhysicsHandle->GrabComponentAtLocation
-			(
-				ComponentToGrab,
-				NAME_None,
-				LineTraceEnd
-			);
-		}
-		else if(TypeGrabbel == ETypeGrabbel::AtLocationAndRotation)
-		{
-			PhysicsHandle->GrabComponentAtLocationWithRotation
-			(
-				ComponentToGrab,
-				NAME_None,
-				LineTraceEnd,
-				ActorHit->GetActorRotation()
-			);
-		}
-	}
+
+	if(!ActorHit || !PhysicsHandle){return;}
 	
+	if(TypeGrabbel == ETypeGrabbel::AtLocation)
+	{
+		PhysicsHandle->GrabComponentAtLocation
+		(
+			ComponentToGrab,
+			NAME_None,
+			LineTraceEnd
+		);
+	}
+	else if(TypeGrabbel == ETypeGrabbel::AtLocationAndRotation)
+	{
+		PhysicsHandle->GrabComponentAtLocationWithRotation
+		(
+			ComponentToGrab,
+			NAME_None,
+			LineTraceEnd,
+			ActorHit->GetActorRotation()
+		);
+	}
 }
 
 void UGrabber::GrabRelease()
 {
-	PhysicsHandle->ReleaseComponent();
+	if(PhysicsHandle)
+	{
+		PhysicsHandle->ReleaseComponent();
+	}
 }
 
 

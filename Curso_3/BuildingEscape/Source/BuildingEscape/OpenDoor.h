@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/AudioComponent.h"
 #include "Components/ActorComponent.h"
 #include "Engine/TriggerVolume.h"
 #include "OpenDoor.generated.h"
@@ -67,6 +68,15 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category= "Door Settings")
 	float MassToOpenDoor = 50.0f;
+
+	UPROPERTY()
+	UAudioComponent* AudioComponent = nullptr;
+
+	bool bOpenDoorSound = false;
+	bool bCloseDoorSound = true;
+	void CheckCloseDoorSound();
+	void CheckOpenDoorSound();
+	
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
@@ -78,4 +88,5 @@ public:
 	void CheckOpenDoorByCollisionPlayer(float DeltaTime);
 	void CheckShowCurrentRotationYaw();
 	float TotalMassActors() const;
+	void FindAuidioComponent();
 };
