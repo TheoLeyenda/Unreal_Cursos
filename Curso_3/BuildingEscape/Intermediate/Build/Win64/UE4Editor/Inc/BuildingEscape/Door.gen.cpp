@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UTimelineComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCurveFloat_NoRegister();
 // End Cross Module References
 	static UEnum* EStateDoor_StaticEnum()
@@ -149,6 +150,10 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DoorTimelineComp;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AudioComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AudioComponent;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DoorTimelineFloatCurve_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DoorTimelineFloatCurve;
@@ -194,6 +199,13 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineComp = { "DoorTimelineComp", nullptr, (EPropertyFlags)0x00200800000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoor, DoorTimelineComp), Z_Construct_UClass_UTimelineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineComp_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::NewProp_AudioComponent_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Door.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoor_Statics::NewProp_AudioComponent = { "AudioComponent", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoor, AudioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoor_Statics::NewProp_AudioComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::NewProp_AudioComponent_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineFloatCurve_MetaData[] = {
 		{ "Category", "Door Settings" },
 		{ "Comment", "// Variable to hold the Curve asset\n" },
@@ -206,6 +218,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_DoorFrame,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_Door,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineComp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_AudioComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineFloatCurve,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ADoor_Statics::StaticCppClassTypeInfo = {
@@ -235,7 +248,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoor, 2869478058);
+	IMPLEMENT_CLASS(ADoor, 1046077913);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ADoor>()
 	{
 		return ADoor::StaticClass();

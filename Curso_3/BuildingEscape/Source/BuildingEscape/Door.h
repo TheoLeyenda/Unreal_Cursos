@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/TimelineComponent.h"
+#include "Components/AudioComponent.h"
 #include "GameFramework/Actor.h"
 #include "Door.generated.h"
 
@@ -38,6 +39,14 @@ protected:
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	UTimelineComponent* DoorTimelineComp;
+
+	UPROPERTY()
+	UAudioComponent* AudioComponent = nullptr;
+	
+	bool bOpenDoorSound = false;
+	bool bCloseDoorSound = true;
+	void CheckCloseDoorSound();
+	void CheckOpenDoorSound();
 	
 public:	
 
@@ -48,6 +57,8 @@ public:
 	UPROPERTY(EditAnywhere, Category= "Door Settings")
 	UCurveFloat* DoorTimelineFloatCurve;
 
+	void FindAuidioComponent();
+	
 private:
 	//Float Track Signature to handle our update track event
 	FOnTimelineFloat UpdateFunctionFloat;

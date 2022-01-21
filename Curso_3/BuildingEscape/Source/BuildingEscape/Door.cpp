@@ -24,6 +24,8 @@ void ADoor::BeginPlay()
 {
 	Super::BeginPlay();
 
+	FindAuidioComponent();
+	
 	//Binding our float track to our UpdateTimelineComp Function's output
 	UpdateFunctionFloat.BindDynamic(this, &ADoor::UpdateTimelineComp);
 
@@ -37,11 +39,13 @@ void ADoor::BeginPlay()
 void ADoor::OpenDoor()
 {
 	DoorTimelineComp->Play();
+	CheckOpenDoorSound();
 }
 
 void ADoor::CloseDoor()
 {
 	DoorTimelineComp->Reverse();
+	CheckCloseDoorSound();
 }
 
 void ADoor::CheckDoor()
@@ -68,3 +72,38 @@ void ADoor::UpdateTimelineComp(float Output)
 	FRotator DoorNewRotation = FRotator(0.0f, Output, 0.f);
 	Door->SetRelativeRotation(DoorNewRotation);
 }
+
+void ADoor::FindAuidioComponent()
+{
+	AudioComponent = FindComponentByClass<UAudioComponent>();
+
+	if(!AudioComponent)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Missing audio component on s%"), *GetOwner()->GetName());
+	}
+}
+
+void ADoor::CheckOpenDoorSound()
+{
+	if(!AudioComponent){return;}
+
+	bCloseDoorSound = false;
+	if(!bOpenDoorSound)
+	{
+		AudioComponent->Play();
+		bOpenDoorSound = true;
+	}
+}
+
+void ADoor::CheckCloseDoorSound()
+{
+	if(!AudioComponent){return;}
+
+	bOpenDoorSound = false;
+	if(!bCloseDoorSound)
+	{
+		AudioComponent->Play();
+		bCloseDoorSound = true;
+	}
+}
+
