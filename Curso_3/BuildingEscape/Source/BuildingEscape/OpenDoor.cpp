@@ -37,8 +37,8 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	CheckShowCurrentRotationYaw();
-
-	CheckDoorByPressurePlate(DeltaTime);
+	
+	CheckTypeOpenDoor(DeltaTime);
 }
 
 void UOpenDoor::RotateDoorAngle90()
@@ -77,7 +77,20 @@ void UOpenDoor::RotationDoorYaw(float TargetYawRotationDoor, float DeltaTime, fl
 	Owner->SetActorRotation(NewRotation);
 }
 
-void UOpenDoor::CheckDoorByPressurePlate(float DeltaTime)
+void UOpenDoor::CheckTypeOpenDoor(float DeltaTime)
+{
+	if(TypeOpenDoor == ETypeOpenDoor::TriggerVolumenMassNumber)
+	{
+		CheckOpenDoorByMassInPressurePlate(DeltaTime);
+	}
+	else if(TypeOpenDoor == ETypeOpenDoor::TriggerVolumenCollisionPlayer)
+	{
+		CheckOpenDoorByCollisionPlayer(DeltaTime);
+	}
+}
+
+
+void UOpenDoor::CheckOpenDoorByMassInPressurePlate(float DeltaTime)
 {
 	if(PressurePlate)
 	{
@@ -96,6 +109,26 @@ void UOpenDoor::CheckDoorByPressurePlate(float DeltaTime)
 	}
 	
 }
+
+void UOpenDoor::CheckOpenDoorByCollisionPlayer(float DeltaTime)
+{
+	if(PressurePlate)
+	{
+		if(PressurePlate->IsOverlappingActor(ActorThatOpen))
+		{
+			RotationDoorYaw(TargetYawOpenDoor, DeltaTime, SpeedOpenDoor, TypeRotationDoor);
+			DoorLastOpened = GetWorld()->GetTimeSeconds();
+		}
+		else
+		{
+			if(GetWorld()->GetTimeSeconds() - DoorLastOpened > DoorCloseDelay)
+			{
+				RotationDoorYaw(TargetYawCloseDoor, DeltaTime, SpeedCloseDoor, TypeRotationDoor);
+			}
+		}
+	}
+}
+
 
 void UOpenDoor::CheckShowCurrentRotationYaw()
 {

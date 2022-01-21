@@ -13,14 +13,68 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 // Cross Module References
-	BUILDINGESCAPE_API UEnum* Z_Construct_UEnum_BuildingEscape_ETypeRotationDoor();
+	BUILDINGESCAPE_API UEnum* Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
+	BUILDINGESCAPE_API UEnum* Z_Construct_UEnum_BuildingEscape_ETypeRotationDoor();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UOpenDoor_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UOpenDoor();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	ENGINE_API UClass* Z_Construct_UClass_ATriggerVolume_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
+	static UEnum* ETypeOpenDoor_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor, Z_Construct_UPackage__Script_BuildingEscape(), TEXT("ETypeOpenDoor"));
+		}
+		return Singleton;
+	}
+	template<> BUILDINGESCAPE_API UEnum* StaticEnum<ETypeOpenDoor>()
+	{
+		return ETypeOpenDoor_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ETypeOpenDoor(ETypeOpenDoor_StaticEnum, TEXT("/Script/BuildingEscape"), TEXT("ETypeOpenDoor"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor_Hash() { return 1787743173U; }
+	UEnum* Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_BuildingEscape();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ETypeOpenDoor"), 0, Get_Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "ETypeOpenDoor::TriggerVolumenCollisionPlayer", (int64)ETypeOpenDoor::TriggerVolumenCollisionPlayer },
+				{ "ETypeOpenDoor::TriggerVolumenMassNumber", (int64)ETypeOpenDoor::TriggerVolumenMassNumber },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "ModuleRelativePath", "OpenDoor.h" },
+				{ "TriggerVolumenCollisionPlayer.Name", "ETypeOpenDoor::TriggerVolumenCollisionPlayer" },
+				{ "TriggerVolumenMassNumber.Name", "ETypeOpenDoor::TriggerVolumenMassNumber" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_BuildingEscape,
+				nullptr,
+				"ETypeOpenDoor",
+				"ETypeOpenDoor",
+				Enumerators,
+				UE_ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	static UEnum* ETypeRotationDoor_StaticEnum()
 	{
 		static UEnum* Singleton = nullptr;
@@ -92,6 +146,11 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TypeRotationDoor_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_TypeRotationDoor;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_TypeOpenDoor_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TypeOpenDoor_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_TypeOpenDoor;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUseShowRotationYaw_MetaData[];
 #endif
@@ -153,6 +212,14 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeRotationDoor = { "TypeRotationDoor", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOpenDoor, TypeRotationDoor), Z_Construct_UEnum_BuildingEscape_ETypeRotationDoor, METADATA_PARAMS(Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeRotationDoor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeRotationDoor_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeOpenDoor_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeOpenDoor_MetaData[] = {
+		{ "Category", "Door Settings" },
+		{ "ModuleRelativePath", "OpenDoor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeOpenDoor = { "TypeOpenDoor", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOpenDoor, TypeOpenDoor), Z_Construct_UEnum_BuildingEscape_ETypeOpenDoor, METADATA_PARAMS(Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeOpenDoor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeOpenDoor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOpenDoor_Statics::NewProp_bUseShowRotationYaw_MetaData[] = {
 		{ "Category", "Door Settings" },
@@ -223,6 +290,8 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOpenDoor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeRotationDoor_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeRotationDoor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeOpenDoor_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_TypeOpenDoor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_bUseShowRotationYaw,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedOpenDoor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOpenDoor_Statics::NewProp_SpeedCloseDoor,
@@ -260,7 +329,7 @@ void EmptyLinkFunctionForGeneratedCodeOpenDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UOpenDoor, 939316530);
+	IMPLEMENT_CLASS(UOpenDoor, 2700180216);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UOpenDoor>()
 	{
 		return UOpenDoor::StaticClass();

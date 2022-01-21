@@ -13,7 +13,13 @@ enum class ETypeRotationDoor
 	Lerp,
 	Interpolation,
 };
-
+UENUM()
+enum class ETypeOpenDoor
+{
+	TriggerVolumenCollisionPlayer,
+	TriggerVolumenMassNumber,
+	
+};
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class BUILDINGESCAPE_API UOpenDoor : public UActorComponent
 {
@@ -30,6 +36,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Door Settings")
 	ETypeRotationDoor TypeRotationDoor = ETypeRotationDoor::Lerp;
 
+	UPROPERTY(EditAnywhere, Category= "Door Settings")
+	ETypeOpenDoor TypeOpenDoor = ETypeOpenDoor::TriggerVolumenMassNumber;
+	
 	UPROPERTY(EditAnywhere, Category = "Door Settings")
 	bool bUseShowRotationYaw = true;
 
@@ -64,7 +73,9 @@ public:
 	void RotateDoorAngle90();
 	void RotationDoorYaw(float TargetAngleYaw, float DeltaTime, float SpeedRotation, ETypeRotationDoor TypeRotation);
 	void ShowCurrentRotationYaw();
-	void CheckDoorByPressurePlate(float DeltaTime);
+	void CheckTypeOpenDoor(float DeltaTime);
+	void CheckOpenDoorByMassInPressurePlate(float DeltaTime);
+	void CheckOpenDoorByCollisionPlayer(float DeltaTime);
 	void CheckShowCurrentRotationYaw();
 	float TotalMassActors() const;
 };
