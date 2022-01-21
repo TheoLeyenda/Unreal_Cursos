@@ -30,7 +30,7 @@ void AInteractDoorTriggerMass::OnOverlapBegin(UPrimitiveComponent* OverlappedCom
 	, const FHitResult& SweepResult)
 {
 	Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
-
+	if(Doors.Num() <= 0) {return;}
 	CheckMassInOverlap();
 	
 }
@@ -42,6 +42,8 @@ void AInteractDoorTriggerMass::OnOverlapEnd(UPrimitiveComponent* OverlappedComp
 {
 	Super::OnOverlapEnd(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex);
 
+	if(Doors.Num() <= 0) {return;}
+	
 	CheckMassInOverlap();
 }
 

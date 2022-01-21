@@ -22,7 +22,8 @@ void AInteractDoorTriggerActor::OnOverlapBegin(UPrimitiveComponent* OverlappedCo
 		{
 			if(OtherActor->GetClass() == Actor)
 			{
-				AddActorActorsInOverlap(OtherActor);
+				UE_LOG(LogTemp, Warning, TEXT("ActorsInOverlap.Num = %d"), ActorsInOverlap.Num());
+				BoxTriggerVolume->GetOverlappingActors(ActorsInOverlap);
 				OpenDoors();
 			}
 		}
@@ -45,47 +46,14 @@ void AInteractDoorTriggerActor::OnOverlapEnd(UPrimitiveComponent* OverlappedComp
 		{
 			if(OtherActor->GetClass() == Actor)
 			{
-				RemoveActorActorsInOverlap(OtherActor);
+				UE_LOG(LogTemp, Warning, TEXT("ActorsInOverlap.Num = %d"), ActorsInOverlap.Num() - 1);
+				BoxTriggerVolume->GetOverlappingActors(ActorsInOverlap);
 			}
 		}
 	}
 	if(ActorsInOverlap.Num() <= 0)
 	{
 		CloseDoorByTimeToCloseDoor();
-	}
-}
-
-bool AInteractDoorTriggerActor::FindActorActorsInOverlap(AActor* Item)
-{
-	for(int i = 0; i < ActorsInOverlap.Num(); i++)
-	{
-		if(Item == ActorsInOverlap[i])
-		{
-			return true;
-		}	
-	}
-	return false;
-}
-
-void AInteractDoorTriggerActor::AddActorActorsInOverlap(AActor* Item)
-{
-	if(!Item){ return;}
-	
-	if(!FindActorActorsInOverlap(Item))
-	{
-		ActorsInOverlap.Add(Item);
-		UE_LOG(LogTemp, Warning, TEXT("ActorsInOverlap.Num = %d"), ActorsInOverlap.Num());
-	}
-}
-
-void AInteractDoorTriggerActor::RemoveActorActorsInOverlap(AActor* Item)
-{
-	if(!Item){ return;}
-	
-	if(FindActorActorsInOverlap(Item))
-	{
-		UE_LOG(LogTemp, Warning, TEXT("ActorsInOverlap.Num = %d"), ActorsInOverlap.Num() - 1);
-		ActorsInOverlap.Remove(Item);
 	}
 }
 

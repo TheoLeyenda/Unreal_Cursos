@@ -21,10 +21,6 @@ protected:
 	TArray<TSubclassOf<AActor>> ActorsTriggerClass;
 
 	TArray<AActor*> ActorsInOverlap;
-
-	void AddActorActorsInOverlap(AActor* Item);
-	void RemoveActorActorsInOverlap(AActor* Item);
-	bool FindActorActorsInOverlap(AActor* Item);
 	
 	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp
 		, AActor* OtherActor
