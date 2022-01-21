@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h"
 #include "Door.h"
 #include "InteractDoorTrigger.generated.h"
 
@@ -22,7 +23,7 @@ protected:
 
 	//BoxComponent which will be used as our proximity volume.
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Interact Door Trigger")
-	class UBoxComponent* BoxTriggerVolume;
+	UBoxComponent* BoxTriggerVolume;
 
 	UPROPERTY(EditAnywhere, Category= "Interact Door Trigger")
 	TArray<ADoor*> Doors;

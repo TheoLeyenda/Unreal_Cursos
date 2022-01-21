@@ -3,10 +3,6 @@
 
 #include "InteractDoorTriggerActor.h"
 
-#include <Actor.h>
-
-#include "Chaos/GeometryParticlesfwd.h"
-
 AInteractDoorTriggerActor::AInteractDoorTriggerActor() : AInteractDoorTrigger(){}
 
 void AInteractDoorTriggerActor::OnOverlapBegin(UPrimitiveComponent* OverlappedComp

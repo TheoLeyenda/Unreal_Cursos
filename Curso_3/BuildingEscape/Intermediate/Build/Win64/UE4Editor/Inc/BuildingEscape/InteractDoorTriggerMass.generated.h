@@ -58,7 +58,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AInteractDoorTriggerMass); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AInteractDoorTriggerMass)
 
 
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTriggerMass_h_15_PRIVATE_PROPERTY_OFFSET
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTriggerMass_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__MassToOpenDoor() { return STRUCT_OFFSET(AInteractDoorTriggerMass, MassToOpenDoor); }
+
+
 #define BuildingEscape_Source_BuildingEscape_InteractDoorTriggerMass_h_12_PROLOG
 #define BuildingEscape_Source_BuildingEscape_InteractDoorTriggerMass_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

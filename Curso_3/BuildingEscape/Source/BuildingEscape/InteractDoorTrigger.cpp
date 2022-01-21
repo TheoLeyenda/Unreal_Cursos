@@ -4,7 +4,6 @@
 #include "InteractDoorTrigger.h"
 
 #include "NetworkMessage.h"
-#include "Components/BoxComponent.h"
 
 // Sets default values
 AInteractDoorTrigger::AInteractDoorTrigger()
