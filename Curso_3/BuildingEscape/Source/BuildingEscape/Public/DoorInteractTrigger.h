@@ -44,5 +44,5 @@ protected:
 	virtual void BeginDestroy() override;
 	
 private:
-	bool enableClearTimer = false;
+	bool bEnableClearTimer = false;
 };

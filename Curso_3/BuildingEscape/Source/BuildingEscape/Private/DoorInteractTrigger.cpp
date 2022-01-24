@@ -43,7 +43,7 @@ void ADoorInteractTrigger::CloseDoorByTimeToCloseDoor()
 {
 	if(TimeToCloseDoor > 0 && GetWorld())
 	{
-		enableClearTimer = true;
+		bEnableClearTimer = true;
 		GetWorld()->GetTimerManager().SetTimer(TimerCloseDoor,this, &ADoorInteractTrigger::CloseDoors, TimeToCloseDoor, false);
 	}
 	else
@@ -54,7 +54,7 @@ void ADoorInteractTrigger::CloseDoorByTimeToCloseDoor()
 
 void ADoorInteractTrigger::BeginDestroy()
 {
-	if(enableClearTimer && GetWorld())
+	if(bEnableClearTimer && GetWorld())
 	{
 		GetWorld()->GetTimerManager().ClearTimer(TimerCloseDoor);
 	}
