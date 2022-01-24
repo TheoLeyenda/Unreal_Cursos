@@ -33,5 +33,7 @@ protected:
 		, AActor* OtherActor
 		, UPrimitiveComponent* OtherComp
 		, int32 OtherBodyIndex) override;
+
+	virtual bool ExecuteStrategyInteract() override;
 };
 

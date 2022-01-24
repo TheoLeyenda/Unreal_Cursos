@@ -13,16 +13,71 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeInteractDoorTrigger() {}
 // Cross Module References
+	BUILDINGESCAPE_API UEnum* Z_Construct_UEnum_BuildingEscape_ELastStateObjectOverlap();
+	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AInteractDoorTrigger_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AInteractDoorTrigger();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
-	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ADoor_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UStrategyInteract_NoRegister();
 // End Cross Module References
+	static UEnum* ELastStateObjectOverlap_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_BuildingEscape_ELastStateObjectOverlap, Z_Construct_UPackage__Script_BuildingEscape(), TEXT("ELastStateObjectOverlap"));
+		}
+		return Singleton;
+	}
+	template<> BUILDINGESCAPE_API UEnum* StaticEnum<ELastStateObjectOverlap>()
+	{
+		return ELastStateObjectOverlap_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ELastStateObjectOverlap(ELastStateObjectOverlap_StaticEnum, TEXT("/Script/BuildingEscape"), TEXT("ELastStateObjectOverlap"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_BuildingEscape_ELastStateObjectOverlap_Hash() { return 1627052872U; }
+	UEnum* Z_Construct_UEnum_BuildingEscape_ELastStateObjectOverlap()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_BuildingEscape();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ELastStateObjectOverlap"), 0, Get_Z_Construct_UEnum_BuildingEscape_ELastStateObjectOverlap_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "ELastStateObjectOverlap::BeginOverlap", (int64)ELastStateObjectOverlap::BeginOverlap },
+				{ "ELastStateObjectOverlap::EndOverlap", (int64)ELastStateObjectOverlap::EndOverlap },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "BeginOverlap.Name", "ELastStateObjectOverlap::BeginOverlap" },
+				{ "EndOverlap.Name", "ELastStateObjectOverlap::EndOverlap" },
+				{ "ModuleRelativePath", "InteractDoorTrigger.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_BuildingEscape,
+				nullptr,
+				"ELastStateObjectOverlap",
+				"ELastStateObjectOverlap",
+				Enumerators,
+				UE_ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	DEFINE_FUNCTION(AInteractDoorTrigger::execOnOverlapEnd)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp);
@@ -222,6 +277,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractDoorTrigger() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TimeToCloseDoor;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -270,6 +326,9 @@ void EmptyLinkFunctionForGeneratedCodeInteractDoorTrigger() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AInteractDoorTrigger_Statics::NewProp_Doors,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AInteractDoorTrigger_Statics::NewProp_TimeToCloseDoor,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AInteractDoorTrigger_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UStrategyInteract_NoRegister, (int32)VTABLE_OFFSET(AInteractDoorTrigger, IStrategyInteract), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AInteractDoorTrigger_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AInteractDoorTrigger>::IsAbstract,
 	};
@@ -280,11 +339,11 @@ void EmptyLinkFunctionForGeneratedCodeInteractDoorTrigger() {}
 		DependentSingletons,
 		FuncInfo,
 		Z_Construct_UClass_AInteractDoorTrigger_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AInteractDoorTrigger_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AInteractDoorTrigger_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AInteractDoorTrigger_Statics::Class_MetaDataParams))
 	};
@@ -297,7 +356,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractDoorTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AInteractDoorTrigger, 3155661497);
+	IMPLEMENT_CLASS(AInteractDoorTrigger, 1721804355);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AInteractDoorTrigger>()
 	{
 		return AInteractDoorTrigger::StaticClass();

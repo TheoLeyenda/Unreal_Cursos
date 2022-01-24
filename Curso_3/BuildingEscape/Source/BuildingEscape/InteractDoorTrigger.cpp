@@ -2,7 +2,6 @@
 
 
 #include "InteractDoorTrigger.h"
-
 #include "NetworkMessage.h"
 
 // Sets default values
@@ -30,7 +29,8 @@ void AInteractDoorTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp
 	, bool bFromSweep
 	, const FHitResult& SweepResult)
 {
-	
+	LastObjectRegister = ELastStateObjectOverlap::BeginOverlap;
+	ExecuteStrategyInteract();
 }
 
 void AInteractDoorTrigger::OnOverlapEnd(UPrimitiveComponent* OverlappedComp
@@ -38,7 +38,8 @@ void AInteractDoorTrigger::OnOverlapEnd(UPrimitiveComponent* OverlappedComp
 	, UPrimitiveComponent* OtherComp
 	, int32 OtherBodyIndex)
 {
-	
+	LastObjectRegister = ELastStateObjectOverlap::EndOverlap;
+	ExecuteStrategyInteract();
 }
 
 void AInteractDoorTrigger::OpenDoors()
@@ -79,6 +80,11 @@ void AInteractDoorTrigger::BeginDestroy()
 		GetWorld()->GetTimerManager().ClearTimer(TimerCloseDoor);
 	}
 	Super::BeginDestroy();
+}
+
+bool AInteractDoorTrigger::ExecuteStrategyInteract()
+{
+	return false;
 }
 
 

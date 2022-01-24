@@ -16,38 +16,40 @@ struct FHitResult;
 #endif
 #define BUILDINGESCAPE_InteractDoorTrigger_generated_h
 
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_RPC_WRAPPERS \
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_SPARSE_DATA
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_INCLASS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAInteractDoorTrigger(); \
 	friend struct Z_Construct_UClass_AInteractDoorTrigger_Statics; \
 public: \
 	DECLARE_CLASS(AInteractDoorTrigger, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
-	DECLARE_SERIALIZER(AInteractDoorTrigger)
+	DECLARE_SERIALIZER(AInteractDoorTrigger) \
+	virtual UObject* _getUObject() const override { return const_cast<AInteractDoorTrigger*>(this); }
 
 
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_INCLASS \
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_INCLASS \
 private: \
 	static void StaticRegisterNativesAInteractDoorTrigger(); \
 	friend struct Z_Construct_UClass_AInteractDoorTrigger_Statics; \
 public: \
 	DECLARE_CLASS(AInteractDoorTrigger, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
-	DECLARE_SERIALIZER(AInteractDoorTrigger)
+	DECLARE_SERIALIZER(AInteractDoorTrigger) \
+	virtual UObject* _getUObject() const override { return const_cast<AInteractDoorTrigger*>(this); }
 
 
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_STANDARD_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AInteractDoorTrigger(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AInteractDoorTrigger) \
@@ -60,7 +62,7 @@ private: \
 public:
 
 
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_ENHANCED_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AInteractDoorTrigger(AInteractDoorTrigger&&); \
@@ -71,33 +73,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AInteractDoorTrigger); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AInteractDoorTrigger)
 
 
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_PRIVATE_PROPERTY_OFFSET \
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__BoxTriggerVolume() { return STRUCT_OFFSET(AInteractDoorTrigger, BoxTriggerVolume); } \
 	FORCEINLINE static uint32 __PPO__Doors() { return STRUCT_OFFSET(AInteractDoorTrigger, Doors); } \
 	FORCEINLINE static uint32 __PPO__TimeToCloseDoor() { return STRUCT_OFFSET(AInteractDoorTrigger, TimeToCloseDoor); }
 
 
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_11_PROLOG
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_GENERATED_BODY_LEGACY \
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_19_PROLOG
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_RPC_WRAPPERS \
-	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_INCLASS \
-	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_STANDARD_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_RPC_WRAPPERS \
+	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_INCLASS \
+	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_GENERATED_BODY \
+#define BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_INCLASS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_14_ENHANCED_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_INCLASS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -107,5 +109,12 @@ template<> BUILDINGESCAPE_API UClass* StaticClass<class AInteractDoorTrigger>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID BuildingEscape_Source_BuildingEscape_InteractDoorTrigger_h
 
+
+#define FOREACH_ENUM_ELASTSTATEOBJECTOVERLAP(op) \
+	op(ELastStateObjectOverlap::BeginOverlap) \
+	op(ELastStateObjectOverlap::EndOverlap) 
+
+enum class ELastStateObjectOverlap;
+template<> BUILDINGESCAPE_API UEnum* StaticEnum<ELastStateObjectOverlap>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
