@@ -30,9 +30,8 @@ void AInteractDoorTriggerMass::OnOverlapBegin(UPrimitiveComponent* OverlappedCom
 	, const FHitResult& SweepResult)
 {
 	Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
-	if(Doors.Num() <= 0) {return;}
-	CheckMassInOverlap();
 	
+	ExecuteStrategyInteract();
 }
 
 void AInteractDoorTriggerMass::OnOverlapEnd(UPrimitiveComponent* OverlappedComp
@@ -42,9 +41,7 @@ void AInteractDoorTriggerMass::OnOverlapEnd(UPrimitiveComponent* OverlappedComp
 {
 	Super::OnOverlapEnd(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex);
 
-	if(Doors.Num() <= 0) {return;}
-	
-	CheckMassInOverlap();
+	ExecuteStrategyInteract();
 }
 
 void AInteractDoorTriggerMass::CheckMassInOverlap()
@@ -57,5 +54,13 @@ void AInteractDoorTriggerMass::CheckMassInOverlap()
 	{
 		CloseDoorByTimeToCloseDoor();
 	}
+}
+
+bool AInteractDoorTriggerMass::ExecuteStrategyInteract()
+{
+	if(Doors.Num() <= 0) { return false;}
+	CheckMassInOverlap();
+
+	return true;
 }
 

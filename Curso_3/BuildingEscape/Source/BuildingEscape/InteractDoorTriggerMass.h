@@ -38,4 +38,6 @@ protected:
 	float MassToOpenDoor;
 
 	void CheckMassInOverlap();
+
+	virtual bool ExecuteStrategyInteract() override;
 };
