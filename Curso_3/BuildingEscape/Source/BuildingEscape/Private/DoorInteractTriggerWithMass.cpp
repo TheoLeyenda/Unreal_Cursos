@@ -58,9 +58,8 @@ void ADoorInteractTriggerWithMass::CheckMassInOverlap()
 
 bool ADoorInteractTriggerWithMass::ExecuteInteractInterface()
 {
-	UE_LOG(LogTemp, Warning, TEXT("ENTRE A ExecuteInteractInterface"));
 	if(Doors.Num() <= 0) { return false;}
 	CheckMassInOverlap();
-	UE_LOG(LogTemp, Warning, TEXT("Y retorne true"));
+	
 	return true;
 }

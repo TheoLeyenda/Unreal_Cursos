@@ -48,25 +48,21 @@ void ADoorInteractTriggerWithActors::OnOverlapEnd(UPrimitiveComponent* Overlappe
 
 bool ADoorInteractTriggerWithActors::ExecuteInteractInterface()
 {
+	if(Doors.Num() <= 0){ return false; }
+
+	BoxTriggerVolume->GetOverlappingActors(ActorsInOverlap);
+	
 	if(LastObjectRegister == ELastStateObjectOverlap::BeginOverlap)
 	{
-		if(Doors.Num() <= 0){ return false; }
-		
 		UE_LOG(LogTemp, Warning, TEXT("ActorsInOverlap.Num = %d"), ActorsInOverlap.Num());
-		BoxTriggerVolume->GetOverlappingActors(ActorsInOverlap);
+
 		OpenDoors();
 	}
-	else
+	else if(ActorsInOverlap.Num() <= 0)
 	{
-		if(Doors.Num() <= 0){ return false; }
-		
 		UE_LOG(LogTemp, Warning, TEXT("ActorsInOverlap.Num = %d"), ActorsInOverlap.Num() - 1);
-		BoxTriggerVolume->GetOverlappingActors(ActorsInOverlap);
 
-		if(ActorsInOverlap.Num() <= 0)
-		{
-			CloseDoorByTimeToCloseDoor();
-		}
+		CloseDoorByTimeToCloseDoor();
 	}
 	return true;
 }
