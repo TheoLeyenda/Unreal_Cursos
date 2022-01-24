@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BuildingEscape/Door.h"
+#include "BuildingEscape/Public/Door.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -37,7 +37,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		return EStateDoor_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EStateDoor(EStateDoor_StaticEnum, TEXT("/Script/BuildingEscape"), TEXT("EStateDoor"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_BuildingEscape_EStateDoor_Hash() { return 622866442U; }
+	uint32 Get_Z_Construct_UEnum_BuildingEscape_EStateDoor_Hash() { return 3538349166U; }
 	UEnum* Z_Construct_UEnum_BuildingEscape_EStateDoor()
 	{
 #if WITH_HOT_RELOAD
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "Closed.Name", "EStateDoor::Closed" },
-				{ "ModuleRelativePath", "Door.h" },
+				{ "ModuleRelativePath", "Public/Door.h" },
 				{ "Opened.Name", "EStateDoor::Opened" },
 			};
 #endif
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADoor_UpdateTimelineComp_Statics::Function_MetaDataParams[] = {
 		{ "Comment", "//Function which updates our Door's relative location with the timeline graph\n" },
-		{ "ModuleRelativePath", "Door.h" },
+		{ "ModuleRelativePath", "Public/Door.h" },
 		{ "ToolTip", "Function which updates our Door's relative location with the timeline graph" },
 	};
 #endif
@@ -166,19 +166,19 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ADoor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ADoor_UpdateTimelineComp, "UpdateTimelineComp" }, // 2785489959
+		{ &Z_Construct_UFunction_ADoor_UpdateTimelineComp, "UpdateTimelineComp" }, // 1887595344
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Door.h" },
-		{ "ModuleRelativePath", "Door.h" },
+		{ "ModuleRelativePath", "Public/Door.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::NewProp_DoorFrame_MetaData[] = {
 		{ "Category", "Door" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Door.h" },
+		{ "ModuleRelativePath", "Public/Door.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoor_Statics::NewProp_DoorFrame = { "DoorFrame", nullptr, (EPropertyFlags)0x00200800000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoor, DoorFrame), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoor_Statics::NewProp_DoorFrame_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::NewProp_DoorFrame_MetaData)) };
@@ -186,7 +186,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::NewProp_Door_MetaData[] = {
 		{ "Category", "Door" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Door.h" },
+		{ "ModuleRelativePath", "Public/Door.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoor_Statics::NewProp_Door = { "Door", nullptr, (EPropertyFlags)0x00200800000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoor, Door), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoor_Statics::NewProp_Door_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::NewProp_Door_MetaData)) };
@@ -194,14 +194,14 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineComp_MetaData[] = {
 		{ "Category", "Door" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Door.h" },
+		{ "ModuleRelativePath", "Public/Door.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineComp = { "DoorTimelineComp", nullptr, (EPropertyFlags)0x00200800000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoor, DoorTimelineComp), Z_Construct_UClass_UTimelineComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineComp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::NewProp_AudioComponent_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Door.h" },
+		{ "ModuleRelativePath", "Public/Door.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoor_Statics::NewProp_AudioComponent = { "AudioComponent", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoor, AudioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoor_Statics::NewProp_AudioComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::NewProp_AudioComponent_MetaData)) };
@@ -209,7 +209,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineFloatCurve_MetaData[] = {
 		{ "Category", "Door Settings" },
 		{ "Comment", "// Variable to hold the Curve asset\n" },
-		{ "ModuleRelativePath", "Door.h" },
+		{ "ModuleRelativePath", "Public/Door.h" },
 		{ "ToolTip", "Variable to hold the Curve asset" },
 	};
 #endif
@@ -248,7 +248,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoor, 1046077913);
+	IMPLEMENT_CLASS(ADoor, 3396477302);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ADoor>()
 	{
 		return ADoor::StaticClass();
