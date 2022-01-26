@@ -54,6 +54,8 @@ public:
 	void SetPlayerHealth(float Value);
 
 	float GetPlayerHealth();
+
+	void CheckTakeObject();
 	
 	UFUNCTION(BlueprintCallable)
     void UseItem(class UItem* Item);

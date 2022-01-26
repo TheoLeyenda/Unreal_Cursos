@@ -70,6 +70,7 @@ void ABuildingScapeCharacter::LookUp(float Value)
 }
 
 
+
 void ABuildingScapeCharacter::SetPlayerHealth(float Value)
 {
 	Health = Value;
