@@ -109,6 +109,11 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 #endif
 		static void NewProp_bShowDrawDebugLine_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bShowDrawDebugLine;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bShowHitActorName_MetaData[];
+#endif
+		static void NewProp_bShowHitActorName_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bShowHitActorName;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -169,6 +174,17 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		((UGrabber*)Obj)->bShowDrawDebugLine = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGrabber_Statics::NewProp_bShowDrawDebugLine = { "bShowDrawDebugLine", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UGrabber), &Z_Construct_UClass_UGrabber_Statics::NewProp_bShowDrawDebugLine_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGrabber_Statics::NewProp_bShowDrawDebugLine_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrabber_Statics::NewProp_bShowDrawDebugLine_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGrabber_Statics::NewProp_bShowHitActorName_MetaData[] = {
+		{ "Category", "Grabber" },
+		{ "ModuleRelativePath", "Private/Grabber.h" },
+	};
+#endif
+	void Z_Construct_UClass_UGrabber_Statics::NewProp_bShowHitActorName_SetBit(void* Obj)
+	{
+		((UGrabber*)Obj)->bShowHitActorName = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGrabber_Statics::NewProp_bShowHitActorName = { "bShowHitActorName", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UGrabber), &Z_Construct_UClass_UGrabber_Statics::NewProp_bShowHitActorName_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGrabber_Statics::NewProp_bShowHitActorName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrabber_Statics::NewProp_bShowHitActorName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UGrabber_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_Reach,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_ColorDebugLine,
@@ -176,6 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_TypeGrabbel,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_bShowLogsPlayerLocationAndRotation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_bShowDrawDebugLine,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_bShowHitActorName,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UGrabber_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UGrabber>::IsAbstract,
@@ -204,7 +221,7 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGrabber, 3819821814);
+	IMPLEMENT_CLASS(UGrabber, 115194658);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UGrabber>()
 	{
 		return UGrabber::StaticClass();

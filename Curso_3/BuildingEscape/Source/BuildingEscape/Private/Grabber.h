@@ -59,6 +59,9 @@ private:
 	UPROPERTY(EditAnywhere)
 	bool bShowDrawDebugLine = false;
 
+	UPROPERTY(EditAnywhere)
+	bool bShowHitActorName = false;
+
 	void ShowDrawDebugLine();
 	void ShowLogsPlayerlocationAndRotation();
 	void ShowLineTraceHitActor(FHitResult Hit);

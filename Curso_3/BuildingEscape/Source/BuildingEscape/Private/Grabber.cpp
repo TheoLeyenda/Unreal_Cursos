@@ -38,6 +38,8 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	{
 		ShowDrawDebugLine();
 	}
+
+	
 }
 
 void UGrabber::GrabPressed()
@@ -51,6 +53,11 @@ void UGrabber::GrabPressed()
 	AActor* ActorHit = HitResult.GetActor();
 
 	if(!ActorHit || !PhysicsHandle){return;}
+
+	if(bShowHitActorName)
+	{
+		ShowLineTraceHitActor(HitResult);
+	}
 	
 	if(TypeGrabbel == ETypeGrabbel::AtLocation)
 	{
