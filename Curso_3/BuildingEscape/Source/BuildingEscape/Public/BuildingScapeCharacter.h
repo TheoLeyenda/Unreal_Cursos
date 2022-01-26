@@ -22,8 +22,6 @@ public:
 	ABuildingScapeCharacter();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Camera)
 	float BaseTurnRate;
@@ -32,6 +30,15 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Camera)
 	float BaseLookUpRate;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Player Stats")
+	float Health = 100.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Player Stats")
+	bool bEnableMovement = true;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	class UInventoryComponent* InventoryComponent;
+
 public:	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -39,5 +46,15 @@ public:
 	void MoveForward(float Val);
 
 	void MoveRight(float Val);
+
+	void Turn(float Value);
+
+	void LookUp(float Value);
 	
+	void SetPlayerHealth(float Value);
+
+	float GetPlayerHealth();
+	
+	UFUNCTION(BlueprintCallable)
+    void UseItem(class UItem* Item);
 };

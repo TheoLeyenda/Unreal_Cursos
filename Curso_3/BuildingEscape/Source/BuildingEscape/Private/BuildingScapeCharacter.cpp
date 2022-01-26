@@ -2,6 +2,9 @@
 
 
 #include "BuildingScapeCharacter.h"
+#include "InventoryComponent.h"
+#include "Item.h"
+
 
 // Sets default values
 ABuildingScapeCharacter::ABuildingScapeCharacter()
@@ -14,13 +17,9 @@ ABuildingScapeCharacter::ABuildingScapeCharacter()
 	FirstPersonCameraComponent->SetupAttachment(GetCapsuleComponent());
 	FirstPersonCameraComponent->SetRelativeLocation(FVector(-39.56f, 1.75f, 64.f)); // Position the camera
 	FirstPersonCameraComponent->bUsePawnControlRotation = true;
-}
 
-// Called when the game starts or when spawned
-void ABuildingScapeCharacter::BeginPlay()
-{
-	Super::BeginPlay();
-	
+	// Inventory System //
+	InventoryComponent = CreateDefaultSubobject<UInventoryComponent>("Inventory");
 }
 
 // Called to bind functionality to input
@@ -34,14 +33,15 @@ void ABuildingScapeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 	PlayerInputComponent->BindAxis("MoveForward", this, &ABuildingScapeCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ABuildingScapeCharacter::MoveRight);
 
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
+	PlayerInputComponent->BindAxis("Turn", this, &ABuildingScapeCharacter::Turn);
 
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis("LookUp", this, &ABuildingScapeCharacter::LookUp);
 
 }
 
 void ABuildingScapeCharacter::MoveForward(float Value)
 {
+	if(!bEnableMovement){return;}
 	if (Value != 0.0f)
 	{
 		AddMovementInput(GetActorForwardVector(), Value);
@@ -50,8 +50,41 @@ void ABuildingScapeCharacter::MoveForward(float Value)
 
 void ABuildingScapeCharacter::MoveRight(float Value)
 {
+	if(!bEnableMovement){return;}
 	if (Value != 0.0f)
 	{
 		AddMovementInput(GetActorRightVector(), Value);
+	}
+}
+
+void ABuildingScapeCharacter::Turn(float Value)
+{
+	if(!bEnableMovement){return;}
+	AddControllerYawInput(Value);
+}
+
+void ABuildingScapeCharacter::LookUp(float Value)
+{
+	if(!bEnableMovement){return;}
+	AddControllerPitchInput(Value);
+}
+
+
+void ABuildingScapeCharacter::SetPlayerHealth(float Value)
+{
+	Health = Value;
+}
+
+float ABuildingScapeCharacter::GetPlayerHealth()
+{
+	return Health;
+}
+
+void ABuildingScapeCharacter::UseItem(UItem* Item)
+{
+	if(Item)
+	{
+		Item->Use(this);
+		Item->OnUse(this); //bp->Event.
 	}
 }

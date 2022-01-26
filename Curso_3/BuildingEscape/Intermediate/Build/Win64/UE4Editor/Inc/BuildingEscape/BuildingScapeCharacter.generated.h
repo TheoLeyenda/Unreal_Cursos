@@ -8,14 +8,23 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UItem;
 #ifdef BUILDINGESCAPE_BuildingScapeCharacter_generated_h
 #error "BuildingScapeCharacter.generated.h already included, missing '#pragma once' in BuildingScapeCharacter.h"
 #endif
 #define BUILDINGESCAPE_BuildingScapeCharacter_generated_h
 
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execUseItem);
+
+
+#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execUseItem);
+
+
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABuildingScapeCharacter(); \
@@ -61,7 +70,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABuildingScapeCharacter); \
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(ABuildingScapeCharacter, FirstPersonCameraComponent); } \
 	FORCEINLINE static uint32 __PPO__BaseTurnRate() { return STRUCT_OFFSET(ABuildingScapeCharacter, BaseTurnRate); } \
-	FORCEINLINE static uint32 __PPO__BaseLookUpRate() { return STRUCT_OFFSET(ABuildingScapeCharacter, BaseLookUpRate); }
+	FORCEINLINE static uint32 __PPO__BaseLookUpRate() { return STRUCT_OFFSET(ABuildingScapeCharacter, BaseLookUpRate); } \
+	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(ABuildingScapeCharacter, Health); } \
+	FORCEINLINE static uint32 __PPO__bEnableMovement() { return STRUCT_OFFSET(ABuildingScapeCharacter, bEnableMovement); } \
+	FORCEINLINE static uint32 __PPO__InventoryComponent() { return STRUCT_OFFSET(ABuildingScapeCharacter, InventoryComponent); }
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_11_PROLOG
