@@ -4,7 +4,6 @@
 #include "Pickup.h"
 #include "BuildingScapeCharacter.h"
 #include "Kismet/GameplayStatics.h"
-
 // Sets default values
 APickup::APickup()
 {
@@ -20,10 +19,10 @@ APickup::APickup()
 
 void APickup::Tick(float DeltaSeconds)
 {
-	if(!bUseMessagePickup && !bUseRotatePickup){return;}
+	if(!bEnableUseMessagePickup && !bUseMessagePickup && !bUseRotatePickup){return;}
 	Super::Tick(DeltaSeconds);
 
-	if(bUseMessagePickup)
+	if(bEnableUseMessagePickup)
 	{
 		MakeTextFacePlayer();
 	}
@@ -37,19 +36,53 @@ void APickup::Tick(float DeltaSeconds)
 void APickup::MakeTextFacePlayer()
 {
 	//ACharacter* Character = UGameplayStatics::GetPlayerCharacter(this,0);
-	//UE_LOG(LogTemp, Warning, TEXT("ESTOY ENTRANDO FORRO"));
+
+	//FRotator NewRotator = Character->GetActorRotation();
 	
 	ABuildingScapeCharacter* BuildingScapeCharacter = Cast<ABuildingScapeCharacter>(UGameplayStatics::GetPlayerCharacter(this,0));
 
 	FRotator NewRotator = BuildingScapeCharacter->GetActorRotation();
-
-	//FRotator NewRotator = Character->GetActorRotation();
+	
 	NewRotator.Yaw += 180.0f;
 
 	MyText->SetRelativeRotation(NewRotator);
 }
 
+
 void APickup::RotatePickUp(float DeltaTime)
 {
 	StaticMeshComponent->SetRelativeRotation(StaticMeshComponent->GetRelativeRotation() + FRotator(0, SpeedRotatePickup * DeltaTime, 0));
 }
+
+void APickup::ShowMessagePickup()
+{
+	if(bEnableUseMessagePickup)
+	{
+		bUseMessagePickup = true;
+		MyText->SetHiddenInGame(false);
+		GetWorld()->GetTimerManager().SetTimer(TimerToCheckHideMessage,this, &APickup::HideMessagePickup, TimeToHideMessage, false);
+		bEnableDestroyTimer = true;
+	}
+}
+
+void APickup::HideMessagePickup()
+{
+	if(bEnableUseMessagePickup)
+	{
+		bUseMessagePickup = false;
+		MyText->SetHiddenInGame(true);
+	}
+	
+}
+
+void APickup::BeginDestroy()
+{
+	//Si descomento esto se muere Unreal.
+	
+	//if(bEnableDestroyTimer)
+	//{
+	//	GetWorld()->GetTimerManager().ClearTimer(TimerToCheckHideMessage);
+	//}
+	Super::BeginDestroy();
+}
+

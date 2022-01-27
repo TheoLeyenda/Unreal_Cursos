@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "Camera/CameraComponent.h"
-#include "Components/CapsuleComponent.h"
 #include "GameFramework/Character.h"
 #include "BuildingScapeCharacter.generated.h"
 
@@ -22,7 +21,7 @@ public:
 	ABuildingScapeCharacter();
 
 protected:
-
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Camera)
 	float BaseTurnRate;
 
@@ -36,13 +35,16 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Player Stats")
 	bool bEnableMovement = true;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats")
 	class UInventoryComponent* InventoryComponent;
 
+	class APickup* CurrentPickupTake;
 public:	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	virtual void Tick(float DeltaSeconds) override;
+	
 	void MoveForward(float Val);
 
 	void MoveRight(float Val);
@@ -55,8 +57,18 @@ public:
 
 	float GetPlayerHealth();
 
-	void CheckTakeObject();
+	void TakeObject();
 	
+	void CheckEnableTakeObject();
+
+	//PASAR A UNA CLASE QUE TENGA FUNCIONALIDADES DE LineTrace Y UTILIZARLO TAMBIEN EN EL Grabber
+	FVector PlayerViewPointLocation;
+    FRotator PlayerViewPointRotation;
+	FVector GetPlayerReach();
+	FHitResult GetFirstPhysicsBodyInReach();
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Player Stats")
+	float Reach = 100.0f;
+	//------------------------------------------------------------------------------------------//
 	UFUNCTION(BlueprintCallable)
     void UseItem(class UItem* Item);
 };

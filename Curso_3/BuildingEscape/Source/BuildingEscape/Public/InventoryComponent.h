@@ -23,9 +23,6 @@ public:
 	bool AddItem(class UItem* Item);
 	bool RemoveItem(class UItem* Item);
 
-	UPROPERTY(EditDefaultsOnly, Instanced, Category= "Items")
-	TArray<class UItem*> DefaultItems;
-
 	UPROPERTY(EditAnywhere, Category="Inventory", meta = (ClampMin = 0.0))
 	int32 Capacity = 20;
 
