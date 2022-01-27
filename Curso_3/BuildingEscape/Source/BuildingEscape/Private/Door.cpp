@@ -2,7 +2,6 @@
 
 
 #include "Door.h"
-
 // Sets default values
 ADoor::ADoor()
 {
@@ -27,10 +26,8 @@ void ADoor::BeginPlay()
 
 	FindAuidioComponent();
 	
-	//Binding our float track to our UpdateTimelineComp Function's output
 	UpdateFunctionFloat.BindDynamic(this, &ADoor::UpdateTimelineComp);
-
-	//If we have a float curve, bind it's graph to our update function
+	
 	if (DoorTimelineFloatCurve)
 	{
 		DoorTimelineComp->AddInterpFloat(DoorTimelineFloatCurve, UpdateFunctionFloat);
@@ -94,7 +91,7 @@ void ADoor::FindAuidioComponent()
 
 	if(!AudioComponent)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Missing audio component on s%"), *GetOwner()->GetName());
+		UE_LOG(LogTemp, Warning, TEXT("Missing audio component on s%"), *GetName());
 	}
 }
 

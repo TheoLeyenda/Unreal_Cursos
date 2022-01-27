@@ -3,10 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
 #include "Components/TimelineComponent.h"
 #include "Components/AudioComponent.h"
-#include "GameFramework/Actor.h"
 #include "Door.generated.h"
+
 
 UENUM()
 enum class EStateDoor
@@ -45,7 +46,7 @@ protected:
 	UStaticMeshComponent* Door;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	UTimelineComponent* DoorTimelineComp;
+	class UTimelineComponent* DoorTimelineComp;
 
 	UPROPERTY()
 	UAudioComponent* AudioComponent = nullptr;
