@@ -11,8 +11,7 @@ UCLASS()
 class BUILDINGESCAPE_API ABuildingScapeCharacter : public ACharacter
 {
 	GENERATED_BODY()
-
-private:
+	
 	/** First person camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FirstPersonCameraComponent;
@@ -39,6 +38,16 @@ protected:
 	class UInventoryComponent* InventoryComponent;
 	
 	class APickup* CurrentPickupTake;
+
+	class ADoor* CurrentDoor;
+
+	void TakeObject();
+	
+	void CheckEnableTakeObject();
+
+	void InteractDoor();
+	
+	void CheckEnableInteractDoor();
 public:	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -56,11 +65,7 @@ public:
 	void SetPlayerHealth(float Value);
 
 	float GetPlayerHealth();
-
-	void TakeObject();
 	
-	void CheckEnableTakeObject();
-
 	void RestartGamePressed();
 
 	//PASAR A UNA CLASE QUE TENGA FUNCIONALIDADES DE LineTrace Y UTILIZARLO TAMBIEN EN EL Grabber

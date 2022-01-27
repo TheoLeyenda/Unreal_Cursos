@@ -17,6 +17,7 @@ ADoor::ADoor()
 	//Setup our Attachments
 	DoorFrame->SetupAttachment(RootComponent);
 	Door->AttachToComponent(DoorFrame,FAttachmentTransformRules::KeepRelativeTransform);
+	
 }
 
 // Called when the game starts or when spawned
@@ -33,6 +34,11 @@ void ADoor::BeginPlay()
 	if (DoorTimelineFloatCurve)
 	{
 		DoorTimelineComp->AddInterpFloat(DoorTimelineFloatCurve, UpdateFunctionFloat);
+	}
+	OpenOrClose = StateDoor;
+	if(bUseInitCheckDoor)
+	{
+		CheckDoor();
 	}
 }
 
@@ -53,7 +59,16 @@ void ADoor::CheckDoor()
 	switch (StateDoor)
 	{
 		case EStateDoor::Opened:
-			OpenDoor();
+			if(OpenOrClose == EStateDoor::Opened)
+			{
+				CloseDoor();
+				OpenOrClose = EStateDoor::Closed;
+			}
+			else
+			{
+				OpenDoor();
+				OpenOrClose = EStateDoor::Opened;
+			}
 			break;
 		case EStateDoor::Closed:
 			CloseDoor();

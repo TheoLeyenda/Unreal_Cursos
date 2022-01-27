@@ -4,6 +4,7 @@
 #include "BuildingScapeCharacter.h"
 
 #include "BuildingEscapeGameMode.h"
+#include "Door.h"
 #include "InventoryComponent.h"
 #include "DrawDebugHelpers.h"
 #include "Grabber.h"
@@ -39,6 +40,7 @@ void ABuildingScapeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ABuildingScapeCharacter::TakeObject);
+	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ABuildingScapeCharacter::InteractDoor);
 	PlayerInputComponent->BindAction("Restart", IE_Pressed, this, &ABuildingScapeCharacter::RestartGamePressed);
 	
 	
@@ -56,6 +58,8 @@ void ABuildingScapeCharacter::Tick(float DeltaSeconds)
 	Super::Tick(DeltaSeconds);
 
 	CheckEnableTakeObject();
+
+	CheckEnableInteractDoor();
 	
 }
 
@@ -107,6 +111,35 @@ void ABuildingScapeCharacter::CheckEnableTakeObject()
 	{
 		CurrentPickupTake->ShowMessagePickup();
 	}
+	
+}
+
+void ABuildingScapeCharacter::InteractDoor()
+{
+	if(!CurrentDoor) {return;}
+	
+	CurrentDoor->CheckDoor();
+}
+
+void ABuildingScapeCharacter::CheckEnableInteractDoor()
+{
+	FHitResult HitResult = GetFirstPhysicsBodyInReach();
+
+	AActor* ActorHit = HitResult.GetActor();
+	
+	if(!ActorHit)
+	{
+		CurrentDoor = nullptr;
+		return;
+	}
+	
+	ADoor* Door = Cast<ADoor>(ActorHit);
+	if(!Door)
+	{
+		CurrentDoor = nullptr;
+		return;
+	}
+	CurrentDoor = Door;
 }
 
 void ABuildingScapeCharacter::RestartGamePressed()

@@ -67,6 +67,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADoor); \
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_Door_h_21_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__StateDoor() { return STRUCT_OFFSET(ADoor, StateDoor); } \
+	FORCEINLINE static uint32 __PPO__bUseInitCheckDoor() { return STRUCT_OFFSET(ADoor, bUseInitCheckDoor); } \
 	FORCEINLINE static uint32 __PPO__DoorFrame() { return STRUCT_OFFSET(ADoor, DoorFrame); } \
 	FORCEINLINE static uint32 __PPO__Door() { return STRUCT_OFFSET(ADoor, Door); } \
 	FORCEINLINE static uint32 __PPO__DoorTimelineComp() { return STRUCT_OFFSET(ADoor, DoorTimelineComp); } \

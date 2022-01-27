@@ -27,8 +27,15 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
+ 
+	UPROPERTY(EditAnywhere, Category= "Door Settings")
 	EStateDoor StateDoor;
+
+	EStateDoor OpenOrClose;
+	
+	UPROPERTY(EditAnywhere, Category= "Door Settings")
+	bool bUseInitCheckDoor;
+	
 	void OpenDoor();
 	void CloseDoor();
 	
