@@ -37,7 +37,7 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats")
 	class UInventoryComponent* InventoryComponent;
-
+	
 	class APickup* CurrentPickupTake;
 public:	
 	// Called to bind functionality to input
@@ -61,6 +61,8 @@ public:
 	
 	void CheckEnableTakeObject();
 
+	void RestartGamePressed();
+
 	//PASAR A UNA CLASE QUE TENGA FUNCIONALIDADES DE LineTrace Y UTILIZARLO TAMBIEN EN EL Grabber
 	FVector PlayerViewPointLocation;
     FRotator PlayerViewPointRotation;
@@ -71,4 +73,9 @@ public:
 	//------------------------------------------------------------------------------------------//
 	UFUNCTION(BlueprintCallable)
     void UseItem(class UItem* Item);
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Grabber")
+	class UGrabber* Grabber;
+
+
 };

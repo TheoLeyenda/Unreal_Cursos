@@ -26,12 +26,11 @@ public:
 	// Sets default values for this component's properties
 	UGrabber();
 
+	UPROPERTY(EditAnywhere)
+	float Reach = 100.0f;
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
-
-	UPROPERTY(EditAnywhere)
-	float Reach = 100.0f;
 
 	UPROPERTY(EditAnywhere)
 	FColor ColorDebugLine = FColor::Emerald;

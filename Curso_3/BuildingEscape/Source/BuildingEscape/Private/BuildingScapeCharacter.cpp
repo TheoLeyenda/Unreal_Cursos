@@ -2,11 +2,15 @@
 
 
 #include "BuildingScapeCharacter.h"
+
+#include "BuildingEscapeGameMode.h"
 #include "InventoryComponent.h"
 #include "DrawDebugHelpers.h"
+#include "Grabber.h"
 #include "Item.h"
 #include "Pickup.h"
 #include "Components/CapsuleComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ABuildingScapeCharacter::ABuildingScapeCharacter()
@@ -21,6 +25,8 @@ ABuildingScapeCharacter::ABuildingScapeCharacter()
 	FirstPersonCameraComponent->SetRelativeLocation(FVector(-39.56f, 1.75f, 64.f)); // Position the camera
 	FirstPersonCameraComponent->bUsePawnControlRotation = true;
 
+	Grabber = CreateDefaultSubobject<UGrabber>(TEXT("Grabber"));
+	
 	// Inventory System //
 	InventoryComponent = CreateDefaultSubobject<UInventoryComponent>("Inventory");
 }
@@ -33,6 +39,8 @@ void ABuildingScapeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ABuildingScapeCharacter::TakeObject);
+	PlayerInputComponent->BindAction("Restart", IE_Pressed, this, &ABuildingScapeCharacter::RestartGamePressed);
+	
 	
 	PlayerInputComponent->BindAxis("MoveForward", this, &ABuildingScapeCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ABuildingScapeCharacter::MoveRight);
@@ -101,6 +109,14 @@ void ABuildingScapeCharacter::CheckEnableTakeObject()
 	}
 }
 
+void ABuildingScapeCharacter::RestartGamePressed()
+{
+	ABuildingEscapeGameMode* BuildingEscapeGameMode = Cast<ABuildingEscapeGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+	if(!BuildingEscapeGameMode){ return; }
+
+	BuildingEscapeGameMode->Restart();
+}
+
 FVector ABuildingScapeCharacter::GetPlayerReach()
 {
 	GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(OUT PlayerViewPointLocation,OUT PlayerViewPointRotation);
@@ -124,27 +140,6 @@ FHitResult ABuildingScapeCharacter::GetFirstPhysicsBodyInReach()
 	);
 
 	AActor* ActorHit = Hit.GetActor();
-
-//	DrawDebugLine(
-//	GetWorld(),
-//	PlayerViewPointLocation,
-//	LineTraceEnd,
-//	FColor::Green,
-//	false,
-//	0.0f,
-//	0,
-//	5.
-//	);
-	
-	if(ActorHit)
-	{
-		//Logging out to test
-		UE_LOG(LogTemp, Warning, TEXT("Line trace has hit: %s"), *ActorHit->GetName());
-	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("NO le hice hit a un sorongo"));
-	}
 	return Hit;
 }
 

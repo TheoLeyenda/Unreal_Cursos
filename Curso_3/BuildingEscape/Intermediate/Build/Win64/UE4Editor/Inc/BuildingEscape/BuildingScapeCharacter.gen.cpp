@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UItem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UGrabber_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ABuildingScapeCharacter::execUseItem)
 	{
@@ -118,6 +119,10 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Reach_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Reach;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Grabber_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Grabber;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -196,6 +201,14 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Reach = { "Reach", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, Reach), METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Reach_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Reach_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber_MetaData[] = {
+		{ "Category", "Grabber" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber = { "Grabber", nullptr, (EPropertyFlags)0x001000000009000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, Grabber), Z_Construct_UClass_UGrabber_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABuildingScapeCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_FirstPersonCameraComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BaseTurnRate,
@@ -204,6 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Reach,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABuildingScapeCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABuildingScapeCharacter>::IsAbstract,
@@ -232,7 +246,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingScapeCharacter, 2015796261);
+	IMPLEMENT_CLASS(ABuildingScapeCharacter, 3047507718);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABuildingScapeCharacter>()
 	{
 		return ABuildingScapeCharacter::StaticClass();

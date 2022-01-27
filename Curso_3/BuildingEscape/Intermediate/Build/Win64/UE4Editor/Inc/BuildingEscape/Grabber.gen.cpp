@@ -136,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		{ "ModuleRelativePath", "Private/Grabber.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGrabber_Statics::NewProp_Reach = { "Reach", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGrabber, Reach), METADATA_PARAMS(Z_Construct_UClass_UGrabber_Statics::NewProp_Reach_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrabber_Statics::NewProp_Reach_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGrabber_Statics::NewProp_Reach = { "Reach", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGrabber, Reach), METADATA_PARAMS(Z_Construct_UClass_UGrabber_Statics::NewProp_Reach_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrabber_Statics::NewProp_Reach_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGrabber_Statics::NewProp_ColorDebugLine_MetaData[] = {
 		{ "Category", "Grabber" },
@@ -221,7 +221,7 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGrabber, 115194658);
+	IMPLEMENT_CLASS(UGrabber, 2381152252);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UGrabber>()
 	{
 		return UGrabber::StaticClass();
