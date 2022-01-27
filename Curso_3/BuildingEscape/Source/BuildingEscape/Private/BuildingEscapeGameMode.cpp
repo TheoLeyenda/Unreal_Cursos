@@ -2,9 +2,8 @@
 
 
 #include "BuildingEscapeGameMode.h"
-#include "Grabber.h"
 #include "Kismet/GameplayStatics.h"
-
+#include "BuildingScapeCharacter.h"
 void ABuildingEscapeGameMode::BeginPlay()
 {
 	Super::BeginPlay();
@@ -23,10 +22,12 @@ void ABuildingEscapeGameMode::FindPlayerSpawn()
 
 void ABuildingEscapeGameMode::Restart()
 {
+	ABuildingScapeCharacter* BuildingEscapeGameMode = Cast<ABuildingScapeCharacter>(GetWorld()->GetFirstPlayerController()->GetCharacter());
+	BuildingEscapeGameMode->SetActorLocation(PlayerStart->GetActorLocation());
 	for(AObjectSpawner* Spawner : SpawnersObjects)
 	{
 		Spawner->DestroySpawnedObjects();
-		Spawner->SpawnObjects();
+		Spawner->SendTimerSpawnObject();
 	}
 }
 

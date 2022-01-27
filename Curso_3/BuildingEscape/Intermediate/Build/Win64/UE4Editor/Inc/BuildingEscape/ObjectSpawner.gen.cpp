@@ -134,6 +134,10 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ObjectsSpawn_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ObjectsSpawn;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DelaySpawnObject_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DelaySpawnObject;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -156,9 +160,17 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn = { "ObjectsSpawn", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AObjectSpawner, ObjectsSpawn), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObjectSpawner_Statics::NewProp_DelaySpawnObject_MetaData[] = {
+		{ "Category", "ObjectSpawner" },
+		{ "ModuleRelativePath", "Public/ObjectSpawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AObjectSpawner_Statics::NewProp_DelaySpawnObject = { "DelaySpawnObject", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AObjectSpawner, DelaySpawnObject), METADATA_PARAMS(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_DelaySpawnObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_DelaySpawnObject_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AObjectSpawner_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_DelaySpawnObject,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AObjectSpawner_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AObjectSpawner>::IsAbstract,
@@ -187,7 +199,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AObjectSpawner, 2141488993);
+	IMPLEMENT_CLASS(AObjectSpawner, 4045778006);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AObjectSpawner>()
 	{
 		return AObjectSpawner::StaticClass();

@@ -23,6 +23,9 @@ class BUILDINGESCAPE_API AObjectSpawner : public AActor
 	GENERATED_BODY()
 
 	UWorld* World;
+
+	int CurrentIndexSpawn = 0;
+	int CountObjectSpawn = 0;
 	
 public:
 	virtual void BeginPlay() override;
@@ -32,6 +35,11 @@ public:
 	UPROPERTY(EditAnywhere, Category="Objects Spawn")
 	TArray<FObjectSpawn> ObjectsSpawn;
 
+	FTimerHandle TimerSpawnObject;
+	UPROPERTY(EditAnywhere)
+	float DelaySpawnObject = 0.5f;
+	void SendTimerSpawnObject();
+	
 	TArray<AActor*> ObjectSpawned;
 	
 	void SpawnObjects();

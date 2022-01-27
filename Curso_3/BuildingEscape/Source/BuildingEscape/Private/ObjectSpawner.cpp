@@ -17,17 +17,31 @@ void AObjectSpawner::BeginPlay()
 	
 }
 
+void AObjectSpawner::SendTimerSpawnObject()
+{
+	GetWorld()->GetTimerManager().SetTimer(TimerSpawnObject,this, &AObjectSpawner::SpawnObjects, DelaySpawnObject, false);
+	CurrentIndexSpawn = 0;
+	CountObjectSpawn = 0;
+}
+
+
 void AObjectSpawner::SpawnObjects()
 {
 	if(ObjectsSpawn.Num() <= 0){return;}
 	
-	for (int i = 0; i <  ObjectsSpawn.Num(); i++)
+	if(CurrentIndexSpawn <  ObjectsSpawn.Num())
 	{
-		for(int j = 0; j < ObjectsSpawn[i].CountObjectsSpawn; j++)
+		ObjectSpawned.Add(World->SpawnActor<AActor>(ObjectsSpawn[CurrentIndexSpawn].ObjectBlueprint, GetActorLocation(), GetActorRotation()));
+		CountObjectSpawn++;
+		GetWorld()->GetTimerManager().SetTimer(TimerSpawnObject,this, &AObjectSpawner::SpawnObjects, DelaySpawnObject, false);
+
+		if(CountObjectSpawn >= ObjectsSpawn[CurrentIndexSpawn].CountObjectsSpawn)
 		{
-			ObjectSpawned.Add(World->SpawnActor<AActor>(ObjectsSpawn[i].ObjectBlueprint, GetActorLocation(), GetActorRotation()));
+			CountObjectSpawn = 0;
+			CurrentIndexSpawn++;
 		}
 	}
+	
 }
 
 void AObjectSpawner::DestroySpawnedObjects()
@@ -36,11 +50,9 @@ void AObjectSpawner::DestroySpawnedObjects()
 	
 	for(AActor* Actor : ObjectSpawned)
 	{
-		AActor* AuxActor = Actor;
-		ObjectSpawned.RemoveSingle(Actor);
-		
-		AuxActor->Destroy();
+		Actor->Destroy();
 	}
+	ObjectSpawned.Empty();
 }
 
 
