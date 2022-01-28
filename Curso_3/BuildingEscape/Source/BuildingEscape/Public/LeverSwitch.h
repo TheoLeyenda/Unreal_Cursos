@@ -6,6 +6,7 @@
 #include "Components/TimelineComponent.h"
 #include "Components/AudioComponent.h"
 #include "Components/SceneComponent.h"
+#include "InteractInterface.h"
 #include "GameFramework/Actor.h"
 #include "LeverSwitch.generated.h"
 
@@ -17,10 +18,11 @@ enum class EPositiveShiwtch
 };
 
 UCLASS()
-class BUILDINGESCAPE_API ALeverSwitch : public AActor
+class BUILDINGESCAPE_API ALeverSwitch : public AActor, public IInteractInterface
 {
 	GENERATED_BODY()
-	
+protected:
+	bool bFlagInitSound = true;
 public:	
 	// Sets default values for this actor's properties
 	ALeverSwitch();
@@ -46,21 +48,19 @@ public:
 	
 	void Switch();
 
+	virtual bool ExecuteInteractInterface(ABuildingScapeCharacter* Character) override;
+	
 	UPROPERTY(EditAnywhere)
 	EPositiveShiwtch PositiveShiwtch = EPositiveShiwtch::Up;
 	
 	void UpSwitch();
 	void DownSwitch();
-
 	
 	UPROPERTY()
 	UAudioComponent* AudioComponent = nullptr;
-
-	bool bUpSwitchSound = false;
-	bool bDownSwitchSound = true;
-	void CheckDownSwitchSound();
-	void CheckUpSwitchSound();
-
+	
+	void SwitchSound();
+	
 	void FindAuidioComponent();
 private:
 	//Float Track Signature to handle our update track event
@@ -69,6 +69,6 @@ private:
 	//Function which updates our Door's relative location with the timeline graph
 	UFUNCTION()
 	void UpdateTimelineComp(float Output);
-
+	
 	
 };

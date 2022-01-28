@@ -16,14 +16,33 @@ ALeverSwitch::ALeverSwitch()
 	MeshBase->SetupAttachment(RootComponent);
 	Scene->SetupAttachment(MeshBase);
 	MeshLever->AttachToComponent(Scene, FAttachmentTransformRules::KeepRelativeTransform);
+
+	int random = FMath::RandRange(0,2);
+
+	if(random == 0)
+	{
+		SwitchOn = true;
+	}
+	else
+	{
+		SwitchOn = false;
+	}
+	Switch();
+	
 }
 
 void ALeverSwitch::BeginPlay()
 {
+	Super::BeginPlay();
+
+	bFlagInitSound = true;
+	
+	FindAuidioComponent();
 	UpdateFunctionFloat.BindDynamic(this, &ALeverSwitch::UpdateTimelineComp);
 	
 	if (TimelineFloatCurve)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Existo"));
 		TimelineComp->AddInterpFloat(TimelineFloatCurve, UpdateFunctionFloat);
 	}
 }
@@ -47,50 +66,41 @@ void ALeverSwitch::Switch()
 	{
 		if(PositiveShiwtch == EPositiveShiwtch::Down)
 		{
-			DownSwitch();
+			UpSwitch();
 		}
 		else
 		{
-			UpSwitch();
+			DownSwitch();
 		}
 	}
 }
 
 void ALeverSwitch::UpSwitch()
 {
+	UE_LOG(LogTemp, Warning, TEXT("ENTRE AL UpSwitch"));
 	TimelineComp->Play();
-	CheckUpSwitchSound();
+	SwitchSound();
 }
 
 void ALeverSwitch::DownSwitch()
 {
+	UE_LOG(LogTemp, Warning, TEXT("ENTRE AL DownSwitch"));
 	TimelineComp->Reverse();
-	CheckDownSwitchSound();
+	SwitchSound();
 }
 
 
-void ALeverSwitch::CheckUpSwitchSound()
+void ALeverSwitch::SwitchSound()
 {
 	if(!AudioComponent){return;}
 
-	bDownSwitchSound = false;
-	if(!bUpSwitchSound)
+	if(!bFlagInitSound)
 	{
 		AudioComponent->Play();
-		bUpSwitchSound = true;
 	}
-}
-
-
-void ALeverSwitch::CheckDownSwitchSound()
-{
-	if(!AudioComponent){return;}
-
-	bUpSwitchSound = false;
-	if(!bDownSwitchSound)
+	else
 	{
-		AudioComponent->Play();
-		bDownSwitchSound = true;
+		bFlagInitSound = false;
 	}
 }
 
@@ -106,8 +116,16 @@ void ALeverSwitch::FindAuidioComponent()
 
 void ALeverSwitch::UpdateTimelineComp(float Output)
 {
+	UE_LOG(LogTemp, Warning, TEXT("ENTRE AL UpdateTimelineComp"));
 	// Create and set our Door's new relative location based on the output from our Timeline Curve
-	FRotator DoorNewRotation = FRotator(Output, 0.0f, 0.f);
+	FRotator DoorNewRotation = FRotator(0, 0, Output);
 	Scene->SetRelativeRotation(DoorNewRotation);
+}
+
+bool ALeverSwitch::ExecuteInteractInterface(ABuildingScapeCharacter* Character)
+{
+	Switch();
+	
+	return true;
 }
 

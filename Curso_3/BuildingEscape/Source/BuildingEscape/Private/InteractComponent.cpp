@@ -33,6 +33,12 @@ FHitResult UInteractComponent::GetFirstPhysicsBodyInReach()
 	);
 
 	AActor* ActorHit = Hit.GetActor();
+/*	if(ActorHit)
+	{
+		//Logging out to test
+		UE_LOG(LogTemp, Warning, TEXT("Line trace has hit: %s"), *ActorHit->GetName());
+	}
+*/
 	return Hit;
 }
 
@@ -63,6 +69,7 @@ void UInteractComponent::Interact(ABuildingScapeCharacter* Character)
 {
 	if(bEnableInteract)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("ENTRE AL INTERACT"));
 		InteractInterface->ExecuteInteractInterface(Character);
 	}
 }
