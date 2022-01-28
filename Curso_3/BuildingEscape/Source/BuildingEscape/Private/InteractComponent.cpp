@@ -47,7 +47,7 @@ void UInteractComponent::CheckEnableInteract(float DeltaSeconds)
 	FHitResult HitResult = GetFirstPhysicsBodyInReach();
 
 	AActor* ActorHit = HitResult.GetActor();
-	
+	//ActorHit->Implements<IInteractInterface>();
 	if(!InteractInterface)
 	{
 		InteractInterface = Cast<IInteractInterface>(ActorHit);

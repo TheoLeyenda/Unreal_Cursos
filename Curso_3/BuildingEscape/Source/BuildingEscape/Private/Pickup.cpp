@@ -12,9 +12,21 @@ APickup::APickup()
 	SceneComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Scene"));
 	MyText = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Message PickUp"));
 	StaticMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh Pickup"));
-
+	
 	MyText->SetupAttachment(SceneComponent, NAME_None);
 	StaticMeshComponent->SetupAttachment(SceneComponent, NAME_None);
+}
+
+void APickup::BeginPlay()
+{
+	Super::BeginPlay();
+	if(bAttachTextToMesh)
+	{
+		StaticMeshComponent->SetupAttachment(SceneComponent, NAME_None);
+		MyText->AttachToComponent(StaticMeshComponent, FAttachmentTransformRules::KeepRelativeTransform);
+		MyText->SetRelativeLocation(FVector(0.0f,0.0f,220.0f));
+		MyText->SetRelativeScale3D(FVector(5.0f,5.0f,5.0f));
+	}
 }
 
 void APickup::Tick(float DeltaSeconds)
