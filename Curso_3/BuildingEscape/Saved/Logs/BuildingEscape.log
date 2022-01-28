@@ -1750,3 +1750,198 @@ Script Stack (0 frames):
 [2022.01.28-21.09.13:825][684]AssetCheck: New page: Asset Save: multiple assets
 [2022.01.28-21.09.13:825][684]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
 [2022.01.28-21.09.13:825][684]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Art/Materials/MI_Cookie.MI_Cookie
+[2022.01.28-21.22.07:912][626]LogSlate: Warning: Slate: Had to block on waiting for a draw buffer
+[2022.01.28-21.22.13:905][626]LogSlate: Window 'Pick Parent Class' being destroyed
+[2022.01.28-21.22.13:911][626]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2022.01.28-21.22.13:925][626]LogContentBrowser: Creating deferred item: NewBlueprint
+[2022.01.28-21.22.32:695][788]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_ChickenPickup
+[2022.01.28-21.22.32:698][788]LogContentBrowser: End creating deferred item NewBlueprint
+[2022.01.28-21.22.32:701][788]LogActor: Warning: BP_ChickenPickup_C /Engine/Transient.World_25:PersistentLevel.BP_ChickenPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.22.42:980][637]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_Pickup.BP_Pickup:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Objects/BP_Pickup.PackageMetaData'
+[2022.01.28-21.22.42:980][637]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_Pickup.BP_Pickup_C' ref from Metadata '/Game/Blueprints/Objects/BP_Pickup.PackageMetaData'
+[2022.01.28-21.22.42:980][637]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_Pickup.BP_Pickup:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/Objects/BP_Pickup.PackageMetaData'
+[2022.01.28-21.22.42:980][637]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_Pickup.BP_Pickup:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/Objects/BP_Pickup.PackageMetaData'
+[2022.01.28-21.22.42:980][637]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_Pickup.BP_Pickup:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Blueprints/Objects/BP_Pickup.PackageMetaData'
+[2022.01.28-21.22.42:980][637]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_Pickup.SKEL_BP_Pickup_C:ReceiveBeginPlay' ref from Metadata '/Game/Blueprints/Objects/BP_Pickup.PackageMetaData'
+[2022.01.28-21.22.42:980][637]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_Pickup.SKEL_BP_Pickup_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Blueprints/Objects/BP_Pickup.PackageMetaData'
+[2022.01.28-21.22.42:980][637]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_Pickup.SKEL_BP_Pickup_C:ReceiveTick' ref from Metadata '/Game/Blueprints/Objects/BP_Pickup.PackageMetaData'
+[2022.01.28-21.22.42:980][637]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_Pickup.SKEL_BP_Pickup_C:UserConstructionScript' ref from Metadata '/Game/Blueprints/Objects/BP_Pickup.PackageMetaData'
+[2022.01.28-21.22.42:980][637]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_Pickup.SKEL_BP_Pickup_C' ref from Metadata '/Game/Blueprints/Objects/BP_Pickup.PackageMetaData'
+[2022.01.28-21.22.43:163][637]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Objects/PickUps/BP_Pickup" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_Pickup.uasset" SILENT=true
+[2022.01.28-21.22.43:223][637]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_Pickup7459CE5E4A1DBCA122EF1D880F2A02F4.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_Pickup.uasset'
+[2022.01.28-21.22.43:356][637]LogUObjectHash: Compacting FUObjectHashTables data took   2.12ms
+[2022.01.28-21.22.43:387][637]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2022.01.28-21.22.43:410][637]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2022.01.28-21.22.43:534][637]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_PorkChopPickup02C4D5D844BA5E33A54C4DB168DA4F6D.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_PorkChopPickup.uasset'
+[2022.01.28-21.22.43:621][637]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_BreadPickup1C782987434720B45726E884978BE724.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_BreadPickup.uasset'
+[2022.01.28-21.22.43:716][637]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_FilletPickup80AD61384580BFDD7DE240A8C68027BE.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_FilletPickup.uasset'
+[2022.01.28-21.22.43:798][637]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_CarrotPickupD88FE5D046D1C2D2C2510F95F98B9C30.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_CarrotPickup.uasset'
+[2022.01.28-21.22.43:843][637]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.28-21.22.43:843][637]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_Pickup.BP_Pickup
+[2022.01.28-21.22.43:843][637]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_FilletPickup.BP_FilletPickup
+[2022.01.28-21.22.43:843][637]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_PorkChopPickup.BP_PorkChopPickup
+[2022.01.28-21.22.43:844][637]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_CarrotPickup.BP_CarrotPickup
+[2022.01.28-21.22.43:844][637]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_BreadPickup.BP_BreadPickup
+[2022.01.28-21.22.45:029][725]LogActor: Warning: BP_ObjectSpawnLeverSwitcher_C /Engine/Transient.World_26:PersistentLevel.BP_ObjectSpawnLeverSwitcher_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.22.45:041][726]LogActor: Warning: BP_LeverSwitcher_C /Engine/Transient.World_27:PersistentLevel.BP_LeverSwitcher_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.22.49:399][ 14]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Objects/PickUps/BP_ChickenPickup.BP_ChickenPickup
+[2022.01.28-21.22.49:729][ 14]LogActor: Warning: BP_ChickenPickup_C /Engine/Transient.World_28:PersistentLevel.BP_ChickenPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.22.53:144][344]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.01.28-21.23.43:892][481]LogSlate: Window 'Pick Parent Class' being destroyed
+[2022.01.28-21.23.44:895][560]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Inventory/Items/BP_PorkChop.BP_PorkChop
+[2022.01.28-21.23.46:969][755]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2022.01.28-21.23.46:970][755]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/BuildingScape' took 0.034
+[2022.01.28-21.23.46:970][755]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/Objects/PickUps/BP_ChickenPickup] ([1] browsable assets)...
+[2022.01.28-21.23.46:980][755]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/Objects/PickUps/BP_ChickenPickup.BP_ChickenPickup]
+[2022.01.28-21.23.46:980][755]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Objects/PickUps/BP_ChickenPickup]
+[2022.01.28-21.23.47:061][755]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_ChickenPickup_Auto2202F28494D72876A7F2E3BBE6F81D192.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Autosaves/Game/Blueprints/Objects/PickUps/BP_ChickenPickup_Auto2.uasset'
+[2022.01.28-21.23.47:062][755]LogFileHelpers: Auto-saving content packages took 0.092
+[2022.01.28-21.23.48:619][906]LogWorld: UWorld::CleanupWorld for World_29, bSessionEnded=true, bCleanupResources=true
+[2022.01.28-21.23.48:619][906]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-21.23.56:019][120]LogSlate: Window 'Pick Parent Class' being destroyed
+[2022.01.28-21.23.56:025][120]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2022.01.28-21.23.56:036][120]LogContentBrowser: Creating deferred item: NewBlueprint
+[2022.01.28-21.24.02:625][874]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_
+[2022.01.28-21.24.02:628][874]LogContentBrowser: End creating deferred item NewBlueprint
+[2022.01.28-21.24.02:786][890]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Inventory/Items/BP_ItemFood.BP_ItemFood
+[2022.01.28-21.24.07:336][345]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Inventory/Items/BP_Bread.BP_Bread
+[2022.01.28-21.24.10:886][648]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Inventory/Items/BP_Carrot.BP_Carrot
+[2022.01.28-21.24.13:363][870]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Inventory/Items/BP_Fillet.BP_Fillet
+[2022.01.28-21.24.16:171][136]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Inventory/Items/BP_PorkChop.BP_PorkChop
+[2022.01.28-21.24.21:803][650]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Inventory/Items/BP_.BP_
+[2022.01.28-21.24.30:429][557]LogContentBrowser: Attempting asset rename: BP_ -> BP_Chicken
+[2022.01.28-21.24.30:454][557]LogMetaData: Removing '/Game/Blueprints/Inventory/Items/BP_Chicken.SKEL_BP_Chicken_C' ref from Metadata '/Game/Blueprints/Inventory/Items/BP_.PackageMetaData'
+[2022.01.28-21.24.30:454][557]LogMetaData: Removing '/Game/Blueprints/Inventory/Items/BP_Chicken.BP_Chicken_C' ref from Metadata '/Game/Blueprints/Inventory/Items/BP_.PackageMetaData'
+[2022.01.28-21.24.30:499][557]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_ChickenA0111BBE4DAB782EC52D14AF38A8B088.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Inventory/Items/BP_Chicken.uasset'
+[2022.01.28-21.24.30:590][557]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
+[2022.01.28-21.24.30:633][557]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2022.01.28-21.24.30:669][557]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2022.01.28-21.24.30:702][557]AssetCheck: New page: Asset Save: BP_Chicken
+[2022.01.28-21.24.30:702][557]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Inventory/Items/BP_Chicken.BP_Chicken
+[2022.01.28-21.25.06:310][684]BlueprintLog: New page: Compile BP_Chicken
+[2022.01.28-21.25.06:352][684]LogUObjectHash: Compacting FUObjectHashTables data took   2.48ms
+[2022.01.28-21.25.06:803][730]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_ChickenEC681B5644683D106C10718C97E30FC4.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Inventory/Items/BP_Chicken.uasset'
+[2022.01.28-21.25.06:812][730]AssetCheck: New page: Asset Save: BP_Chicken
+[2022.01.28-21.25.06:813][730]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Inventory/Items/BP_Chicken.BP_Chicken
+[2022.01.28-21.25.14:081][592]LogWorld: UWorld::CleanupWorld for World_33, bSessionEnded=true, bCleanupResources=true
+[2022.01.28-21.25.14:081][592]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-21.25.15:091][708]LogWorld: UWorld::CleanupWorld for World_34, bSessionEnded=true, bCleanupResources=true
+[2022.01.28-21.25.15:091][708]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-21.25.15:707][776]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2022.01.28-21.25.15:707][776]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-21.25.17:115][938]LogWorld: UWorld::CleanupWorld for World_31, bSessionEnded=true, bCleanupResources=true
+[2022.01.28-21.25.17:115][938]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-21.25.25:605][850]LogSlate: Warning: Slate: Had to block on waiting for a draw buffer
+[2022.01.28-21.25.45:893][850]LogSlate: Window 'Pick Parent Class' being destroyed
+[2022.01.28-21.25.45:899][850]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2022.01.28-21.25.45:910][850]LogContentBrowser: Creating deferred item: NewBlueprint
+[2022.01.28-21.25.50:231][350]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_Cookie
+[2022.01.28-21.25.50:234][350]LogContentBrowser: End creating deferred item NewBlueprint
+[2022.01.28-21.25.53:018][666]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Inventory/Items/BP_Cookie.BP_Cookie
+[2022.01.28-21.26.07:441][307]BlueprintLog: New page: Compile BP_Cookie
+[2022.01.28-21.26.07:485][307]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2022.01.28-21.26.07:908][349]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Inventory/Items/BP_Cookie" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Inventory/Items/BP_Cookie.uasset" SILENT=true
+[2022.01.28-21.26.07:967][349]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_Cookie0823BC8A4C0DB24331D6F5B825D9122F.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Inventory/Items/BP_Cookie.uasset'
+[2022.01.28-21.26.07:978][349]AssetCheck: New page: Asset Save: BP_Cookie
+[2022.01.28-21.26.07:979][349]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Inventory/Items/BP_Cookie.BP_Cookie
+[2022.01.28-21.27.54:445][477]BlueprintLog: New page: Compile BP_ChickenPickup
+[2022.01.28-21.27.54:452][477]LogActor: Warning: BP_ChickenPickup_C /Engine/Transient.World_25:PersistentLevel.BP_ChickenPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.27.54:453][477]LogActor: Warning: BP_ChickenPickup_C /Engine/Transient.World_28:PersistentLevel.BP_ChickenPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.27.54:498][477]LogUObjectHash: Compacting FUObjectHashTables data took   2.59ms
+[2022.01.28-21.27.54:499][477]LogActor: Warning: BP_ChickenPickup_C /Engine/Transient.World_25:PersistentLevel.BP_ChickenPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.27.55:176][529]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_ChickenPickupCBBB3C6147736E97A9467C87CC6CF808.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_ChickenPickup.uasset'
+[2022.01.28-21.27.55:187][529]AssetCheck: New page: Asset Save: BP_ChickenPickup
+[2022.01.28-21.27.55:187][529]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_ChickenPickup.BP_ChickenPickup
+[2022.01.28-21.27.57:347][754]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.01.28-21.28.21:779][144]BlueprintLog: New page: Compile BP_ChickenPickup
+[2022.01.28-21.28.21:793][144]LogActor: Warning: BP_ChickenPickup_C /Engine/Transient.World_28:PersistentLevel.BP_ChickenPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.28.21:794][144]LogActor: Warning: BP_ChickenPickup_C /Engine/Transient.World_25:PersistentLevel.BP_ChickenPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.28.21:862][144]LogUObjectHash: Compacting FUObjectHashTables data took   3.53ms
+[2022.01.28-21.28.21:864][144]LogActor: Warning: BP_ChickenPickup_C /Engine/Transient.World_25:PersistentLevel.BP_ChickenPickup_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.28.22:753][219]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_ChickenPickupE9E0D083451ADBAADFCC939CBCFE38E9.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_ChickenPickup.uasset'
+[2022.01.28-21.28.22:766][219]AssetCheck: New page: Asset Save: BP_ChickenPickup
+[2022.01.28-21.28.22:766][219]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_ChickenPickup.BP_ChickenPickup
+[2022.01.28-21.28.52:814][157]LogContentBrowser: Deferred new asset file creation: BP_ChickenPickup_Child
+[2022.01.28-21.28.52:852][157]LogContentBrowser: Creating deferred item: BP_ChickenPickup_Child
+[2022.01.28-21.29.07:224][869]LogContentBrowser: Attempting asset rename: BP_ChickenPickup_Child -> BP_ChikenPhysicsPikup
+[2022.01.28-21.29.07:227][869]LogContentBrowser: End creating deferred item BP_ChickenPickup_Child
+[2022.01.28-21.29.07:230][869]LogActor: Warning: BP_ChikenPhysicsPikup_C /Engine/Transient.World_37:PersistentLevel.BP_ChikenPhysicsPikup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.29.09:112][ 50]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Objects/PickUps/BP_ChikenPhysicsPikup.BP_ChikenPhysicsPikup
+[2022.01.28-21.29.09:449][ 50]LogActor: Warning: BP_ChikenPhysicsPikup_C /Engine/Transient.World_38:PersistentLevel.BP_ChikenPhysicsPikup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.29.27:546][823]BlueprintLog: New page: Compile BP_ChikenPhysicsPikup
+[2022.01.28-21.29.27:555][823]LogActor: Warning: BP_ChikenPhysicsPikup_C /Engine/Transient.World_37:PersistentLevel.BP_ChikenPhysicsPikup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.29.27:555][823]LogActor: Warning: BP_ChikenPhysicsPikup_C /Engine/Transient.World_38:PersistentLevel.BP_ChikenPhysicsPikup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.29.27:618][823]LogUObjectHash: Compacting FUObjectHashTables data took   3.60ms
+[2022.01.28-21.29.27:620][823]LogActor: Warning: BP_ChikenPhysicsPikup_C /Engine/Transient.World_37:PersistentLevel.BP_ChikenPhysicsPikup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.29.28:142][859]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_ChikenPhysicsPikup3B8D38B74D6D3DDAAB9BC68D4119FB91.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_ChikenPhysicsPikup.uasset'
+[2022.01.28-21.29.28:155][859]AssetCheck: New page: Asset Save: BP_ChikenPhysicsPikup
+[2022.01.28-21.29.28:155][859]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_ChikenPhysicsPikup.BP_ChikenPhysicsPikup
+[2022.01.28-21.29.47:475][549]LogContentBrowser: Deferred new asset file creation: BP_Pickup_Child
+[2022.01.28-21.29.47:524][549]LogContentBrowser: Creating deferred item: BP_Pickup_Child
+[2022.01.28-21.29.53:070][153]LogContentBrowser: Attempting asset rename: BP_Pickup_Child -> BP_Cookie
+[2022.01.28-21.29.53:073][153]LogContentBrowser: End creating deferred item BP_Pickup_Child
+[2022.01.28-21.29.53:075][153]LogActor: Warning: BP_Cookie_C /Engine/Transient.World_39:PersistentLevel.BP_Cookie_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.29.59:312][763]LogContentBrowser: Attempting asset rename: BP_Cookie -> BP_CookiePickup
+[2022.01.28-21.29.59:337][763]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/Objects/PickUps/BP_Cookie.PackageMetaData'
+[2022.01.28-21.29.59:337][763]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_CookiePickup.SKEL_BP_CookiePickup_C:UserConstructionScript' ref from Metadata '/Game/Blueprints/Objects/PickUps/BP_Cookie.PackageMetaData'
+[2022.01.28-21.29.59:337][763]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_CookiePickup.SKEL_BP_CookiePickup_C' ref from Metadata '/Game/Blueprints/Objects/PickUps/BP_Cookie.PackageMetaData'
+[2022.01.28-21.29.59:337][763]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup_C' ref from Metadata '/Game/Blueprints/Objects/PickUps/BP_Cookie.PackageMetaData'
+[2022.01.28-21.29.59:337][763]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/Objects/PickUps/BP_Cookie.PackageMetaData'
+[2022.01.28-21.29.59:337][763]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup:EventGraph.K2Node_CallParentFunction_0' ref from Metadata '/Game/Blueprints/Objects/PickUps/BP_Cookie.PackageMetaData'
+[2022.01.28-21.29.59:337][763]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/Objects/PickUps/BP_Cookie.PackageMetaData'
+[2022.01.28-21.29.59:337][763]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup:EventGraph.K2Node_CallParentFunction_1' ref from Metadata '/Game/Blueprints/Objects/PickUps/BP_Cookie.PackageMetaData'
+[2022.01.28-21.29.59:337][763]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Blueprints/Objects/PickUps/BP_Cookie.PackageMetaData'
+[2022.01.28-21.29.59:337][763]LogMetaData: Removing '/Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup:EventGraph.K2Node_CallParentFunction_2' ref from Metadata '/Game/Blueprints/Objects/PickUps/BP_Cookie.PackageMetaData'
+[2022.01.28-21.29.59:380][763]LogActor: Warning: BP_CookiePickup_C /Engine/Transient.World_40:PersistentLevel.BP_CookiePickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.29.59:468][763]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_CookiePickup45D19126470E37039E4588AAEA16CD7F.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_CookiePickup.uasset'
+[2022.01.28-21.29.59:560][763]LogUObjectHash: Compacting FUObjectHashTables data took   3.01ms
+[2022.01.28-21.29.59:605][763]LogUObjectHash: Compacting FUObjectHashTables data took   2.10ms
+[2022.01.28-21.29.59:643][763]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2022.01.28-21.29.59:680][763]AssetCheck: New page: Asset Save: BP_CookiePickup
+[2022.01.28-21.29.59:680][763]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup
+[2022.01.28-21.30.09:115][436]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup
+[2022.01.28-21.30.09:402][436]LogActor: Warning: BP_CookiePickup_C /Engine/Transient.World_41:PersistentLevel.BP_CookiePickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.30.12:203][697]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.01.28-21.30.23:772][901]BlueprintLog: New page: Compile BP_CookiePickup
+[2022.01.28-21.30.23:781][901]LogActor: Warning: BP_CookiePickup_C /Engine/Transient.World_39:PersistentLevel.BP_Cookie_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.30.23:781][901]LogActor: Warning: BP_CookiePickup_C /Engine/Transient.World_40:PersistentLevel.BP_CookiePickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.30.23:781][901]LogActor: Warning: BP_CookiePickup_C /Engine/Transient.World_41:PersistentLevel.BP_CookiePickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.30.23:841][901]LogUObjectHash: Compacting FUObjectHashTables data took   3.24ms
+[2022.01.28-21.30.23:842][901]LogActor: Warning: BP_CookiePickup_C /Engine/Transient.World_40:PersistentLevel.BP_CookiePickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.30.24:228][925]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_CookiePickupBCFE0A6A4EC2C6FE598AE7AF2775A690.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_CookiePickup.uasset'
+[2022.01.28-21.30.24:240][925]AssetCheck: New page: Asset Save: BP_CookiePickup
+[2022.01.28-21.30.24:240][925]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup
+[2022.01.28-21.30.38:272][294]BlueprintLog: New page: Compile BP_CookiePickup
+[2022.01.28-21.30.38:285][294]LogActor: Warning: BP_CookiePickup_C /Engine/Transient.World_39:PersistentLevel.BP_Cookie_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.30.38:285][294]LogActor: Warning: BP_CookiePickup_C /Engine/Transient.World_41:PersistentLevel.BP_CookiePickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.30.38:286][294]LogActor: Warning: BP_CookiePickup_C /Engine/Transient.World_40:PersistentLevel.BP_CookiePickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.30.38:347][294]LogUObjectHash: Compacting FUObjectHashTables data took   3.49ms
+[2022.01.28-21.30.38:348][294]LogActor: Warning: BP_CookiePickup_C /Engine/Transient.World_40:PersistentLevel.BP_CookiePickup_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.30.39:052][347]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_CookiePickup9C6134EA4852A32D1C980687576B142A.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_CookiePickup.uasset'
+[2022.01.28-21.30.39:066][347]AssetCheck: New page: Asset Save: BP_CookiePickup
+[2022.01.28-21.30.39:066][347]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_CookiePickup.BP_CookiePickup
+[2022.01.28-21.30.48:886][162]LogContentBrowser: Deferred new asset file creation: BP_CookiePickup_Child
+[2022.01.28-21.30.48:926][162]LogContentBrowser: Creating deferred item: BP_CookiePickup_Child
+[2022.01.28-21.31.08:679][857]LogContentBrowser: Attempting asset rename: BP_CookiePickup_Child -> BP_CookiePhysicsPickup
+[2022.01.28-21.31.08:682][857]LogContentBrowser: End creating deferred item BP_CookiePickup_Child
+[2022.01.28-21.31.08:690][857]LogActor: Warning: BP_CookiePhysicsPickup_C /Engine/Transient.World_42:PersistentLevel.BP_CookiePhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.31.11:118][ 41]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Objects/PickUps/BP_CookiePhysicsPickup.BP_CookiePhysicsPickup
+[2022.01.28-21.31.11:414][ 41]LogActor: Warning: BP_CookiePhysicsPickup_C /Engine/Transient.World_43:PersistentLevel.BP_CookiePhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.31.22:213][124]BlueprintLog: New page: Compile BP_CookiePhysicsPickup
+[2022.01.28-21.31.22:222][124]LogActor: Warning: BP_CookiePhysicsPickup_C /Engine/Transient.World_42:PersistentLevel.BP_CookiePhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.31.22:223][124]LogActor: Warning: BP_CookiePhysicsPickup_C /Engine/Transient.World_43:PersistentLevel.BP_CookiePhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.31.22:287][124]LogUObjectHash: Compacting FUObjectHashTables data took   3.29ms
+[2022.01.28-21.31.22:290][124]LogActor: Warning: BP_CookiePhysicsPickup_C /Engine/Transient.World_42:PersistentLevel.BP_CookiePhysicsPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.31.22:691][144]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_CookiePhysicsPickup331785F6416B0B68D9694DB60E5057AD.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_CookiePhysicsPickup.uasset'
+[2022.01.28-21.31.22:705][144]AssetCheck: New page: Asset Save: BP_CookiePhysicsPickup
+[2022.01.28-21.31.22:705][144]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_CookiePhysicsPickup.BP_CookiePhysicsPickup
+[2022.01.28-21.31.27:255][523]BlueprintLog: New page: Compile BP_CookiePhysicsPickup
+[2022.01.28-21.31.27:268][523]LogActor: Warning: BP_CookiePhysicsPickup_C /Engine/Transient.World_43:PersistentLevel.BP_CookiePhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.31.27:269][523]LogActor: Warning: BP_CookiePhysicsPickup_C /Engine/Transient.World_42:PersistentLevel.BP_CookiePhysicsPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.31.27:333][523]LogUObjectHash: Compacting FUObjectHashTables data took   3.42ms
+[2022.01.28-21.31.27:334][523]LogActor: Warning: BP_CookiePhysicsPickup_C /Engine/Transient.World_42:PersistentLevel.BP_CookiePhysicsPickup_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-21.31.27:718][550]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_CookiePhysicsPickupDD4E67F24038F667D10CE9BC46B308FB.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_CookiePhysicsPickup.uasset'
+[2022.01.28-21.31.27:730][550]AssetCheck: New page: Asset Save: BP_CookiePhysicsPickup
+[2022.01.28-21.31.27:730][550]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_CookiePhysicsPickup.BP_CookiePhysicsPickup
+[2022.01.28-21.31.33:624][135]LogUObjectHash: Compacting FUObjectHashTables data took   3.35ms
+[2022.01.28-21.31.38:709][588]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
