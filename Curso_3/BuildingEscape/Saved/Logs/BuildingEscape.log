@@ -942,3 +942,430 @@ Script Stack (0 frames):
 [2022.01.28-20.46.27:041][206]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
 [2022.01.28-20.46.27:057][206]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
 [2022.01.28-20.46.27:093][208]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2022.01.28-20.47.12:509][854]LogActor: Warning: BP_Pickup_C /Engine/Transient.World_1:PersistentLevel.BP_Pickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.47.12:539][855]LogActor: Warning: BP_Door_C /Engine/Transient.World_2:PersistentLevel.BP_Door_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.47.13:537][940]LogActor: Warning: BP_PorkChopPickup_C /Engine/Transient.World_5:PersistentLevel.BP_PorkChopPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.47.13:546][941]LogActor: Warning: BP_PorkChopPhysicsPickUp_C /Engine/Transient.World_6:PersistentLevel.BP_PorkChopPhysicsPickUp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.47.13:550][941]LogActor: Warning: BP_FilletPickup_C /Engine/Transient.World_7:PersistentLevel.BP_FilletPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.47.30:217][561]LogContentBrowser: Deferred new asset file creation: BP_FilletPickup_Child
+[2022.01.28-20.47.30:250][561]LogContentBrowser: Creating deferred item: BP_FilletPickup_Child
+[2022.01.28-20.47.42:348][  2]LogContentBrowser: Attempting asset rename: BP_FilletPickup_Child -> BP_FilletPhysicsPickUp
+[2022.01.28-20.47.42:350][  2]LogContentBrowser: End creating deferred item BP_FilletPickup_Child
+[2022.01.28-20.47.42:354][  2]LogActor: Warning: BP_FilletPhysicsPickUp_C /Engine/Transient.World_8:PersistentLevel.BP_FilletPhysicsPickUp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.47.50:457][836]LogContentBrowser: Attempting asset rename: BP_PorkChopPhysicsPickUp -> BP_PorkChopPhysicsPickup
+[2022.01.28-20.47.50:560][836]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2022.01.28-20.47.50:864][836]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.304 s
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: === Handled ensure: ===
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: 
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: Ensure condition failed: !SeenPaths.Contains(NewPath) [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/CoreUObject/Private/Misc/RedirectCollector.cpp] [Line: 222]
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: Found circular redirect from /Game/Blueprints/Objects/PickUps/BP_PorkChopPhysicsPickUp.BP_PorkChopPhysicsPickUp to /Game/Blueprints/Objects/PickUps/BP_PorkChopPhysicsPickup.BP_PorkChopPhysicsPickup! Returning None instead
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: Stack: 
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97de7093 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: [Callstack] 0x00007ffd979927e0 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97ccf1a6 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97ce82be UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: [Callstack] 0x00007ffd979c7c47 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: [Callstack] 0x00007ffd59e75082 UE4Editor-Core.dll!UnknownFunction []
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97cdfc33 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:864][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97bde789 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97b357f6 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97c93e37 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97c943b4 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97b38543 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97b35ffc UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97b3590e UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97c93e37 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97c29115 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97c943b4 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97b38543 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97b35ffc UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97c294a4 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97c27a90 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97c274fb UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd530e5f10 UE4Editor-Engine.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd530e5b04 UE4Editor-Engine.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97c76742 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97c989cb UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd97c7df5c UE4Editor-CoreUObject.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd569426be UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd569431ae UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd5697e6b2 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd5697afec UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd571fdb77 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd56c7a5c3 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.01.28-20.47.50:865][836]LogOutputDevice: Error: [Callstack] 0x00007ffd56c78edd UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd56ca1f80 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd4a72e137 UE4Editor-AssetTools.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd4a6cfd9a UE4Editor-AssetTools.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd4a748b02 UE4Editor-AssetTools.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd385df233 UE4Editor-ContentBrowserAssetDataSource.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd385df521 UE4Editor-ContentBrowserAssetDataSource.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd385df5fb UE4Editor-ContentBrowserAssetDataSource.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd4b4e8d56 UE4Editor-ContentBrowserData.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd4b1d402e UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd4b218ebf UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd4b238c3b UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd4b2180e7 UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd59875f44 UE4Editor-Slate.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd5985b7f7 UE4Editor-Slate.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd59804c48 UE4Editor-Slate.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd597e3757 UE4Editor-Slate.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd59863c06 UE4Editor-Slate.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd59865018 UE4Editor-Slate.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd5975f024 UE4Editor-Slate.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd595a25b2 UE4Editor-Slate.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd5960e368 UE4Editor-Slate.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffd59602226 UE4Editor-Slate.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffdcdb2b958 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffdcdb19197 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffdcdb2e389 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2022.01.28-20.47.50:866][836]LogOutputDevice: Error: [Callstack] 0x00007ffdcdb14310 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2022.01.28-20.47.50:867][836]LogOutputDevice: Error: [Callstack] 0x00007ffddacbe7e8 USER32.dll!UnknownFunction []
+[2022.01.28-20.47.50:867][836]LogOutputDevice: Error: [Callstack] 0x00007ffddacbe229 USER32.dll!UnknownFunction []
+[2022.01.28-20.47.50:867][836]LogOutputDevice: Error: [Callstack] 0x00007ffdcdb2f914 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2022.01.28-20.47.50:867][836]LogOutputDevice: Error: [Callstack] 0x00007ff773448848 UE4Editor.exe!UnknownFunction []
+[2022.01.28-20.47.50:867][836]LogOutputDevice: Error: [Callstack] 0x00007ff77346117c UE4Editor.exe!UnknownFunction []
+[2022.01.28-20.47.50:867][836]LogOutputDevice: Error: [Callstack] 0x00007ff77346125a UE4Editor.exe!UnknownFunction []
+[2022.01.28-20.47.50:867][836]LogOutputDevice: Error: [Callstack] 0x00007ff7734752bd UE4Editor.exe!UnknownFunction []
+[2022.01.28-20.47.50:867][836]LogOutputDevice: Error: [Callstack] 0x00007ff773477fea UE4Editor.exe!UnknownFunction []
+[2022.01.28-20.47.50:867][836]LogOutputDevice: Error: [Callstack] 0x00007ffddb307034 KERNEL32.DLL!UnknownFunction []
+[2022.01.28-20.47.50:867][836]LogOutputDevice: Error: [Callstack] 0x00007ffddcc22651 ntdll.dll!UnknownFunction []
+[2022.01.28-20.47.50:867][836]LogOutputDevice: Error: 
+[2022.01.28-20.47.50:876][836]LogStats:                SubmitErrorReport -  0.000 s
+[2022.01.28-20.47.53:126][836]LogStats:                    SendNewReport -  2.249 s
+[2022.01.28-20.47.53:126][836]LogStats:             FDebug::EnsureFailed -  2.565 s
+[2022.01.28-20.47.53:238][836]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_PorkChopPhysicsPickUp4E38C923479A9DA09D40FC887C4C2CC4.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_PorkChopPhysicsPickUp.uasset'
+[2022.01.28-20.47.53:304][836]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.28-20.47.53:304][836]LogContentValidation: Display: Validating ObjectRedirector /Game/Blueprints/Objects/PickUps/BP_PorkChopPhysicsPickUp.Default__BP_PorkChopPhysicsPickUp_C_1
+[2022.01.28-20.47.53:304][836]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_PorkChopPhysicsPickUp.BP_PorkChopPhysicsPickup
+[2022.01.28-20.47.53:308][836]LogAudioMixer: Resetting audio stream to device id 
+[2022.01.28-20.47.53:331][836]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.28-20.47.53:331][836]LogAudioMixer: Display: 1: FrontRight
+[2022.01.28-20.48.11:329][688]LogContentBrowser: Attempting asset rename: BP_PorkChopPhysicsPickup -> BP_PorkChopPhysicsPickup
+[2022.01.28-20.48.14:576][993]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2022.01.28-20.48.16:453][993]LogSlate: Window 'Delete Assets' being destroyed
+[2022.01.28-20.48.18:899][218]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2022.01.28-20.48.20:476][218]LogSlate: Window 'Delete Assets' being destroyed
+[2022.01.28-20.48.21:509][309]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Objects/PickUps/BP_PorkChopPhysicsPickUp.BP_PorkChopPhysicsPickup
+[2022.01.28-20.48.21:650][309]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BlueprintGraph' in 0.0004 seconds. Added 126 classes and 0 folders.
+[2022.01.28-20.48.22:303][309]LogActor: Warning: BP_PorkChopPhysicsPickup_C /Engine/Transient.World_9:PersistentLevel.BP_PorkChopPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.48.24:557][557]LogSlate: Window 'BP_PorkChopPhysicsPickup' being destroyed
+[2022.01.28-20.48.24:605][557]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2022.01.28-20.48.24:605][557]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-20.48.24:641][557]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Objects/PickUps/BP_PorkChopPhysicsPickUp.BP_PorkChopPhysicsPickup
+[2022.01.28-20.48.25:030][557]LogActor: Warning: BP_PorkChopPhysicsPickup_C /Engine/Transient.World_10:PersistentLevel.BP_PorkChopPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.48.25:033][557]LogSlate: Took 0.000124 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.01.28-20.48.37:286][812]LogContentBrowser: Attempting asset rename: BP_FilletPhysicsPickUp -> BP_FilletPhysicsPickup
+[2022.01.28-20.48.37:438][812]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_FilletPhysicsPickUp8AF25239466EED2B93D5C6BA40879F6E.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_FilletPhysicsPickUp.uasset'
+[2022.01.28-20.48.37:491][812]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2022.01.28-20.48.37:520][812]AssetCheck: New page: Asset Save: BP_FilletPhysicsPickup
+[2022.01.28-20.48.37:520][812]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_FilletPhysicsPickUp.BP_FilletPhysicsPickup
+[2022.01.28-20.48.40:994][212]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Objects/PickUps/BP_FilletPhysicsPickUp.BP_FilletPhysicsPickup
+[2022.01.28-20.48.41:250][212]LogActor: Warning: BP_FilletPhysicsPickup_C /Engine/Transient.World_11:PersistentLevel.BP_FilletPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.48.41:318][213]LogRenderer: Reallocating scene render targets to support 1144x708 Format 9 NumSamples 1 (Frame:1).
+[2022.01.28-20.48.43:079][397]BlueprintLog: New page: Compile BP_FilletPhysicsPickup
+[2022.01.28-20.48.43:088][397]LogActor: Warning: BP_FilletPhysicsPickup_C /Engine/Transient.World_8:PersistentLevel.BP_FilletPhysicsPickUp_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.48.43:089][397]LogActor: Warning: BP_FilletPhysicsPickup_C /Engine/Transient.World_11:PersistentLevel.BP_FilletPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.48.43:115][397]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2022.01.28-20.48.43:116][397]LogActor: Warning: BP_FilletPhysicsPickup_C /Engine/Transient.World_8:PersistentLevel.BP_FilletPhysicsPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.48.43:129][397]LogSlate: Took 0.000130 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2022.01.28-20.48.43:984][475]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_FilletPhysicsPickUp7D29344842774FE293AF15BEA2EBAA54.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_FilletPhysicsPickUp.uasset'
+[2022.01.28-20.48.43:994][475]AssetCheck: New page: Asset Save: BP_FilletPhysicsPickup
+[2022.01.28-20.48.43:994][475]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_FilletPhysicsPickUp.BP_FilletPhysicsPickup
+[2022.01.28-20.48.44:069][482]LogSlate: Took 0.000146 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2022.01.28-20.48.57:751][800]LogActor: Warning: BP_CarrotPickup_C /Engine/Transient.World_12:PersistentLevel.BP_CarrotPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.48.59:026][902]LogContentBrowser: Deferred new asset file creation: BP_CarrotPickup_Child
+[2022.01.28-20.48.59:063][902]LogContentBrowser: Creating deferred item: BP_CarrotPickup_Child
+[2022.01.28-20.49.06:874][835]LogContentBrowser: Attempting asset rename: BP_CarrotPickup_Child -> BP_CarrotPhysicsPickup
+[2022.01.28-20.49.06:877][835]LogContentBrowser: End creating deferred item BP_CarrotPickup_Child
+[2022.01.28-20.49.06:879][835]LogActor: Warning: BP_CarrotPhysicsPickup_C /Engine/Transient.World_13:PersistentLevel.BP_CarrotPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.49.08:899][ 43]LogActor: Warning: BP_BreadPickup_C /Engine/Transient.World_14:PersistentLevel.BP_BreadPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.49.10:027][141]LogContentBrowser: Deferred new asset file creation: BP_BreadPickup_Child
+[2022.01.28-20.49.10:064][141]LogContentBrowser: Creating deferred item: BP_BreadPickup_Child
+[2022.01.28-20.49.24:513][656]LogContentBrowser: Attempting asset rename: BP_BreadPickup_Child -> BP_BreadPhysicsPickup
+[2022.01.28-20.49.24:515][656]LogContentBrowser: End creating deferred item BP_BreadPickup_Child
+[2022.01.28-20.49.24:522][656]LogActor: Warning: BP_BreadPhysicsPickup_C /Engine/Transient.World_15:PersistentLevel.BP_BreadPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.49.28:387][  5]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2022.01.28-20.49.28:495][  5]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_CarrotPhysicsPickup10CA4CFD42BB3E0B50686187DA91FDF7.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_CarrotPhysicsPickup.uasset'
+[2022.01.28-20.49.28:579][  5]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_BreadPhysicsPickupD8E7491B4581D512D66B42B33E218C68.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_BreadPhysicsPickup.uasset'
+[2022.01.28-20.49.28:590][  5]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.28-20.49.28:590][  5]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_BreadPhysicsPickup.BP_BreadPhysicsPickup
+[2022.01.28-20.49.28:590][  5]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_CarrotPhysicsPickup.BP_CarrotPhysicsPickup
+[2022.01.28-20.49.29:694][ 94]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Objects/PickUps/BP_BreadPhysicsPickup.BP_BreadPhysicsPickup
+[2022.01.28-20.49.29:977][ 94]LogActor: Warning: BP_BreadPhysicsPickup_C /Engine/Transient.World_16:PersistentLevel.BP_BreadPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.49.34:950][610]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Objects/PickUps/BP_CarrotPhysicsPickup.BP_CarrotPhysicsPickup
+[2022.01.28-20.49.35:204][610]LogActor: Warning: BP_CarrotPhysicsPickup_C /Engine/Transient.World_17:PersistentLevel.BP_CarrotPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.01:195][398]BlueprintLog: New page: Compile BP_FilletPhysicsPickup
+[2022.01.28-20.50.01:208][398]LogActor: Warning: BP_FilletPhysicsPickup_C /Engine/Transient.World_8:PersistentLevel.BP_FilletPhysicsPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.01:209][398]LogActor: Warning: BP_FilletPhysicsPickup_C /Engine/Transient.World_11:PersistentLevel.BP_FilletPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.01:239][398]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2022.01.28-20.50.01:241][398]LogActor: Warning: BP_FilletPhysicsPickup_C /Engine/Transient.World_8:PersistentLevel.BP_FilletPhysicsPickup_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.02:116][484]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_FilletPhysicsPickUpA8715A874E02CE87A3805780361F2A83.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_FilletPhysicsPickUp.uasset'
+[2022.01.28-20.50.02:126][484]AssetCheck: New page: Asset Save: BP_FilletPhysicsPickup
+[2022.01.28-20.50.02:126][484]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_FilletPhysicsPickUp.BP_FilletPhysicsPickup
+[2022.01.28-20.50.09:913][372]BlueprintLog: New page: Compile BP_FilletPhysicsPickup
+[2022.01.28-20.50.09:922][372]LogActor: Warning: BP_FilletPhysicsPickup_C /Engine/Transient.World_11:PersistentLevel.BP_FilletPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.09:922][372]LogActor: Warning: BP_FilletPhysicsPickup_C /Engine/Transient.World_8:PersistentLevel.BP_FilletPhysicsPickup_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.09:951][372]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2022.01.28-20.50.09:952][372]LogActor: Warning: BP_FilletPhysicsPickup_C /Engine/Transient.World_8:PersistentLevel.BP_FilletPhysicsPickup_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.10:727][443]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_FilletPhysicsPickUpD73595D040146AC8D051DF9C89C312AB.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_FilletPhysicsPickUp.uasset'
+[2022.01.28-20.50.10:737][443]AssetCheck: New page: Asset Save: BP_FilletPhysicsPickup
+[2022.01.28-20.50.10:737][443]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_FilletPhysicsPickUp.BP_FilletPhysicsPickup
+[2022.01.28-20.50.31:228][627]BlueprintLog: New page: Compile BP_CarrotPhysicsPickup
+[2022.01.28-20.50.31:242][627]LogActor: Warning: BP_CarrotPhysicsPickup_C /Engine/Transient.World_13:PersistentLevel.BP_CarrotPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.31:242][627]LogActor: Warning: BP_CarrotPhysicsPickup_C /Engine/Transient.World_17:PersistentLevel.BP_CarrotPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.31:273][627]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2022.01.28-20.50.31:274][627]LogActor: Warning: BP_CarrotPhysicsPickup_C /Engine/Transient.World_13:PersistentLevel.BP_CarrotPhysicsPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.31:794][672]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_CarrotPhysicsPickupE7CD81824621577F581BAE84279D4D94.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_CarrotPhysicsPickup.uasset'
+[2022.01.28-20.50.31:803][672]AssetCheck: New page: Asset Save: BP_CarrotPhysicsPickup
+[2022.01.28-20.50.31:803][672]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_CarrotPhysicsPickup.BP_CarrotPhysicsPickup
+[2022.01.28-20.50.32:731][773]BlueprintLog: New page: Compile BP_BreadPhysicsPickup
+[2022.01.28-20.50.32:743][773]LogActor: Warning: BP_BreadPhysicsPickup_C /Engine/Transient.World_15:PersistentLevel.BP_BreadPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.32:743][773]LogActor: Warning: BP_BreadPhysicsPickup_C /Engine/Transient.World_16:PersistentLevel.BP_BreadPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.32:773][773]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2022.01.28-20.50.32:774][773]LogActor: Warning: BP_BreadPhysicsPickup_C /Engine/Transient.World_15:PersistentLevel.BP_BreadPhysicsPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.33:399][824]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_BreadPhysicsPickup0D25CE074341BCFD876FB0A6855791A7.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/PickUps/BP_BreadPhysicsPickup.uasset'
+[2022.01.28-20.50.33:409][824]AssetCheck: New page: Asset Save: BP_BreadPhysicsPickup
+[2022.01.28-20.50.33:409][824]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/PickUps/BP_BreadPhysicsPickup.BP_BreadPhysicsPickup
+[2022.01.28-20.50.58:132][512]LogActor: Warning: BP_FilletPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_FilletPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.50.58:577][562]LogActor: Warning: BP_FilletPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_FilletPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.02:331][920]LogActor: Warning: BP_CarrotPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_CarrotPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.02:667][957]LogActor: Warning: BP_CarrotPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_CarrotPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.07:759][502]LogActor: Warning: BP_BreadPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_BreadPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.08:377][568]LogActor: Warning: BP_BreadPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_BreadPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.16:119][473]LogEditorViewport: Clicking on Actor (LMB): BP_FilletPickup_C (BP_FilletPickup2)
+[2022.01.28-20.51.23:793][348]LogEditorViewport: Clicking on Actor (LMB): BP_PorkChopPickup_C (BP_PorkChopPickup)
+[2022.01.28-20.51.33:116][314]LogActor: Warning: BP_CarrotPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_CarrotPickup_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.34:397][438]LogActor: Warning: BP_CarrotPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_CarrotPickup_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.40:779][152]LogActor: Warning: BP_FilletPhysicsPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_FilletPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.41:431][218]LogActor: Warning: BP_FilletPhysicsPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_FilletPhysicsPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.43:898][463]LogActor: Warning: BP_CarrotPhysicsPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_CarrotPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.44:423][513]LogActor: Warning: BP_CarrotPhysicsPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_CarrotPhysicsPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.46:300][705]LogActor: Warning: BP_BreadPhysicsPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_BreadPhysicsPickup_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.46:760][751]LogActor: Warning: BP_BreadPhysicsPickup_C /Game/Maps/BuildingScape.BuildingScape:PersistentLevel.BP_BreadPhysicsPickup_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.01.28-20.51.48:531][954]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.28-20.51.48:542][954]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.28-20.51.48:543][954]PIE: New page: PIE session: BuildingScape (Jan 28, 2022, 2:51:48 PM)
+[2022.01.28-20.51.48:543][954]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.01.28-20.51.48:561][954]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018265s)
+[2022.01.28-20.51.48:562][954]LogAIModule: Creating AISystem for world BuildingScape
+[2022.01.28-20.51.48:562][954]LogPlayLevel: PIE: World Init took: (0.000904s)
+[2022.01.28-20.51.48:562][954]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.019345s)
+[2022.01.28-20.51.48:583][954]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2022.01.28-20.51.48:584][954]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2022.01.28-20.51.48:585][954]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.28-20.51.48:585][954]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.28-20.51.48:585][954]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.28-20.51.48:585][954]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.28-20.51.48:585][954]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.28-20.51.48:585][954]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.28-20.51.48:585][954]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.28-20.51.48:585][954]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.28-20.51.48:585][954]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.28-20.51.48:585][954]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.28-20.51.48:590][954]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.28-20.51.48:591][954]LogAudioMixer: Display: 1: FrontRight
+[2022.01.28-20.51.48:607][954]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.28-20.51.48:607][954]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.28-20.51.48:607][954]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.28-20.51.48:607][954]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.28-20.51.48:608][954]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.28-20.51.48:608][954]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.28-20.51.48:608][954]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.28-20.51.48:620][954]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.28-20.51.48:620][954]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.28-20.51.48:620][954]LogInit: FAudioDevice initialized.
+[2022.01.28-20.51.48:620][954]LogAudio: Display: Audio Device (ID: 4) registered with world 'BuildingScape'.
+[2022.01.28-20.51.48:624][954]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.01.28-20.51.48:627][954]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.01.28-17.51.48
+[2022.01.28-20.51.48:627][954]LogWorld: Bringing up level for play took: 0.001641
+[2022.01.28-20.51.48:627][954]LogOnline: OSS: Creating online subsystem instance for: :Context_23
+[2022.01.28-20.51.48:629][954]PIE: Server logged in
+[2022.01.28-20.51.48:630][954]PIE: Play in editor total start time 0.09 seconds.
+[2022.01.28-20.51.55:715][793]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.51.57:825][ 46]LogTemp: Warning: Line trace has hit: BP_PorkChopPhysicsPickUp_2
+[2022.01.28-20.52.00:984][425]LogTemp: Warning: Line trace has hit: BP_FilletPhysicsPickup_2
+[2022.01.28-20.52.03:501][727]LogTemp: Warning: Line trace has hit: BP_BreadPhysicsPickup_2
+[2022.01.28-20.52.07:952][261]LogTemp: Warning: Line trace has hit: BP_BreadPhysicsPickup_2
+[2022.01.28-20.52.10:151][525]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.11:236][655]LogTemp: Warning: Line trace has hit: BP_CarrotPhysicsPickup_2
+[2022.01.28-20.52.14:995][106]LogTemp: Warning: Line trace has hit: BP_CarrotPhysicsPickup_2
+[2022.01.28-20.52.17:486][405]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.18:336][507]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.18:805][563]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.25:823][402]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.26:374][468]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.27:249][573]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.29:391][830]LogTemp: Warning: Line trace has hit: BP_PorkChopPhysicsPickUp_2
+[2022.01.28-20.52.33:233][291]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.33:793][358]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.01.28-20.52.33:793][358]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2022.01.28-20.52.33:793][358]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CaptureDuringMouseDown
+[2022.01.28-20.52.35:583][573]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.01.28-20.52.35:583][573]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.01.28-20.52.36:169][643]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.01.28-20.52.36:169][643]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.01.28-20.52.37:070][745]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.28-20.52.37:070][745]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.01.28-20.52.37:071][745]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.01.28-20.52.37:071][745]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-20.52.37:076][745]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.28-20.52.37:095][745]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-20.52.37:119][745]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.01.28-20.52.37:119][745]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.28-20.52.37:120][745]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.28-20.52.37:143][745]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.28-20.52.37:145][745]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2022.01.28-20.52.37:172][746]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2022.01.28-20.52.38:543][881]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.28-20.52.38:552][881]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.28-20.52.38:552][881]PIE: New page: PIE session: BuildingScape (Jan 28, 2022, 2:52:38 PM)
+[2022.01.28-20.52.38:552][881]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.01.28-20.52.38:569][881]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017548s)
+[2022.01.28-20.52.38:570][881]LogAIModule: Creating AISystem for world BuildingScape
+[2022.01.28-20.52.38:570][881]LogPlayLevel: PIE: World Init took: (0.000822s)
+[2022.01.28-20.52.38:570][881]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.018533s)
+[2022.01.28-20.52.38:590][881]LogUObjectHash: Compacting FUObjectHashTables data took   1.31ms
+[2022.01.28-20.52.38:590][881]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2022.01.28-20.52.38:591][881]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.28-20.52.38:591][881]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.28-20.52.38:591][881]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.28-20.52.38:591][881]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.28-20.52.38:591][881]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.28-20.52.38:591][881]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.28-20.52.38:591][881]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.28-20.52.38:591][881]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.28-20.52.38:591][881]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.28-20.52.38:591][881]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.28-20.52.38:597][881]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.28-20.52.38:597][881]LogAudioMixer: Display: 1: FrontRight
+[2022.01.28-20.52.38:613][881]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.28-20.52.38:613][881]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.28-20.52.38:613][881]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.28-20.52.38:613][881]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.28-20.52.38:613][881]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.28-20.52.38:613][881]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.28-20.52.38:613][881]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.28-20.52.38:625][881]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.28-20.52.38:625][881]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.28-20.52.38:625][881]LogInit: FAudioDevice initialized.
+[2022.01.28-20.52.38:625][881]LogAudio: Display: Audio Device (ID: 5) registered with world 'BuildingScape'.
+[2022.01.28-20.52.38:633][881]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.01.28-20.52.38:636][881]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.01.28-17.52.38
+[2022.01.28-20.52.38:636][881]LogWorld: Bringing up level for play took: 0.001657
+[2022.01.28-20.52.38:636][881]LogOnline: OSS: Creating online subsystem instance for: :Context_24
+[2022.01.28-20.52.38:638][881]PIE: Server logged in
+[2022.01.28-20.52.38:639][881]PIE: Play in editor total start time 0.088 seconds.
+[2022.01.28-20.52.41:945][270]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.42:244][306]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.42:586][347]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.42:895][384]LogCharacterMovement: BP_BuildingScapeCharacter_C_0 is stuck and failed to move! Velocity: X=114.39 Y=15.68 Z=0.00 Location: X=-50.22 Y=1839.97 Z=582.15 Normal: X=-0.61 Y=0.79 Z=-0.00 PenetrationDepth:0.372 Actor:BP_BreadPickup_2 Component:Mesh Pickup BoneName:None (0 other events since notify)
+[2022.01.28-20.52.43:320][435]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.45:429][688]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.46:180][778]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.46:612][830]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.47:329][916]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.48:404][ 45]LogTemp: Warning: ENTRE AL INTERACT
+[2022.01.28-20.52.49:122][128]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.28-20.52.49:122][128]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.01.28-20.52.49:122][128]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.01.28-20.52.49:122][128]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-20.52.49:130][128]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.28-20.52.49:146][128]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-20.52.49:166][128]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.28-20.52.49:166][128]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.28-20.52.49:167][128]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.28-20.52.49:184][128]LogUObjectHash: Compacting FUObjectHashTables data took   1.42ms
+[2022.01.28-20.52.49:211][129]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2022.01.28-20.52.53:102][509]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.28-20.52.53:124][509]LogUObjectHash: Compacting FUObjectHashTables data took   1.25ms
+[2022.01.28-20.52.57:734][509]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScapeF093F8854DB5AC364508508750967350.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.01.28-20.52.57:742][509]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.01.28-20.52.58:218][509]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltDataAB2884FF44BA3DEC5CAA2BAE82D20BC6.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.01.28-20.52.58:228][509]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.28-20.52.58:228][509]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.01.28-20.52.58:228][509]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.01.28-20.53.00:884][746]LogUObjectHash: Compacting FUObjectHashTables data took   1.41ms
+[2022.01.28-20.53.08:552][593]LogEditorViewport: Clicking on Actor (LMB): BP_BreadPickup_C (BP_BreadPickup)
+[2022.01.28-20.53.09:234][671]LogEditorViewport: Clicking on Actor (CTRL LMB): BP_FilletPickup_C (BP_FilletPickup2)
+[2022.01.28-20.53.09:938][752]LogEditorViewport: Clicking on Actor (CTRL LMB): BP_PorkChopPickup_C (BP_PorkChopPickup)
+[2022.01.28-20.53.10:616][830]LogEditorViewport: Clicking on Actor (CTRL LMB): BP_CarrotPickup_C (BP_CarrotPickup2)
+[2022.01.28-20.53.12:851][ 62]LogEditorViewport: Clicking on Actor (CTRL LMB): BP_FilletPhysicsPickup_C (BP_FilletPhysicsPickup)
+[2022.01.28-20.53.13:405][125]LogEditorViewport: Clicking on Actor (CTRL LMB): BP_BreadPhysicsPickup_C (BP_BreadPhysicsPickup)
+[2022.01.28-20.53.14:509][254]LogEditorViewport: Clicking on Actor (CTRL LMB): BP_PorkChopPhysicsPickup_C (BP_PorkChopPhysicsPickUp)
+[2022.01.28-20.53.16:528][481]LogEditorViewport: Clicking on Actor (CTRL LMB): BP_CarrotPhysicsPickup_C (BP_CarrotPhysicsPickup)
+[2022.01.28-20.53.18:787][727]LogEditorViewport: Clicking on Actor (CTRL LMB): BP_CarrotPickup_C (BP_CarrotPickup)
+[2022.01.28-20.53.23:189][243]Cmd: DELETE
+[2022.01.28-20.53.23:189][243]Cmd: ACTOR DELETE
+[2022.01.28-20.53.23:195][243]LogEditorActor: Deleted Actor: BP_BreadPickup_C
+[2022.01.28-20.53.23:195][243]LogEditorActor: Deleted Actor: BP_FilletPickup_C
+[2022.01.28-20.53.23:196][243]LogEditorActor: Deleted Actor: BP_PorkChopPickup_C
+[2022.01.28-20.53.23:196][243]LogEditorActor: Deleted Actor: BP_CarrotPickup_C
+[2022.01.28-20.53.23:196][243]LogEditorActor: Deleted Actor: BP_FilletPhysicsPickup_C
+[2022.01.28-20.53.23:197][243]LogEditorActor: Deleted Actor: BP_BreadPhysicsPickup_C
+[2022.01.28-20.53.23:197][243]LogEditorActor: Deleted Actor: BP_PorkChopPhysicsPickup_C
+[2022.01.28-20.53.23:198][243]LogEditorActor: Deleted Actor: BP_CarrotPhysicsPickup_C
+[2022.01.28-20.53.23:198][243]LogEditorActor: Deleted Actor: BP_CarrotPickup_C
+[2022.01.28-20.53.23:219][243]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2022.01.28-20.53.23:220][243]LogEditorActor: Deleted 9 Actors (0.031 secs)
+[2022.01.28-20.53.26:423][607]LogTemp: Repeating last play command: Selected Viewport
+[2022.01.28-20.53.26:429][607]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.01.28-20.53.26:430][607]PIE: New page: PIE session: BuildingScape (Jan 28, 2022, 2:53:26 PM)
+[2022.01.28-20.53.26:430][607]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.01.28-20.53.26:446][607]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016490s)
+[2022.01.28-20.53.26:447][607]LogAIModule: Creating AISystem for world BuildingScape
+[2022.01.28-20.53.26:447][607]LogPlayLevel: PIE: World Init took: (0.000782s)
+[2022.01.28-20.53.26:447][607]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.017424s)
+[2022.01.28-20.53.26:469][607]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
+[2022.01.28-20.53.26:469][607]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2022.01.28-20.53.26:469][607]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.01.28-20.53.26:469][607]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.01.28-20.53.26:469][607]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.01.28-20.53.26:469][607]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.01.28-20.53.26:469][607]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.01.28-20.53.26:469][607]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.01.28-20.53.26:470][607]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.01.28-20.53.26:470][607]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.01.28-20.53.26:470][607]LogAudio: Display: Using built-in audio occlusion.
+[2022.01.28-20.53.26:470][607]LogAudioMixer: Display: Initializing audio mixer.
+[2022.01.28-20.53.26:475][607]LogAudioMixer: Display: 0: FrontLeft
+[2022.01.28-20.53.26:475][607]LogAudioMixer: Display: 1: FrontRight
+[2022.01.28-20.53.26:492][607]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.01.28-20.53.26:492][607]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.01.28-20.53.26:492][607]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.01.28-20.53.26:492][607]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.01.28-20.53.26:492][607]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.01.28-20.53.26:492][607]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.01.28-20.53.26:492][607]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.01.28-20.53.26:504][607]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.01.28-20.53.26:504][607]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.01.28-20.53.26:504][607]LogInit: FAudioDevice initialized.
+[2022.01.28-20.53.26:504][607]LogAudio: Display: Audio Device (ID: 6) registered with world 'BuildingScape'.
+[2022.01.28-20.53.26:512][607]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.01.28-20.53.26:515][607]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.01.28-17.53.26
+[2022.01.28-20.53.26:515][607]LogWorld: Bringing up level for play took: 0.001594
+[2022.01.28-20.53.26:515][607]LogOnline: OSS: Creating online subsystem instance for: :Context_25
+[2022.01.28-20.53.26:517][607]PIE: Server logged in
+[2022.01.28-20.53.26:518][607]PIE: Play in editor total start time 0.09 seconds.
+[2022.01.28-20.53.27:866][763]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.28-20.53.27:866][763]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.01.28-20.53.27:867][763]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.01.28-20.53.27:867][763]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-20.53.27:872][763]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.01.28-20.53.27:875][763]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.28-20.53.27:894][763]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.01.28-20.53.27:894][763]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.28-20.53.27:895][763]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.01.28-20.53.27:911][763]LogUObjectHash: Compacting FUObjectHashTables data took   1.40ms
+[2022.01.28-20.53.27:952][765]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2022.01.28-20.53.29:762][975]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.01.28-20.53.29:782][975]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2022.01.28-20.53.33:412][975]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape46C0ABB946AFC0D9876E63990B188720.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.01.28-20.53.33:419][975]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.01.28-20.53.33:580][975]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltDataB706B0424ABA44DCD2277D805D92DD25.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.01.28-20.53.33:599][975]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.28-20.53.33:599][975]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.01.28-20.53.33:599][975]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
