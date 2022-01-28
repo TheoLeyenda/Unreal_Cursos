@@ -107,6 +107,12 @@ void ADoor::CheckOpenDoorSound()
 	}
 }
 
+bool ADoor::ExecuteInteractInterface(ABuildingScapeCharacter* Character)
+{
+	CheckDoor();
+	return true;
+}
+
 void ADoor::CheckCloseDoorSound()
 {
 	if(!AudioComponent){return;}

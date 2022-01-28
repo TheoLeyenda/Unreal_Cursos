@@ -4,12 +4,10 @@
 #include "BuildingScapeCharacter.h"
 
 #include "BuildingEscapeGameMode.h"
-#include "Door.h"
 #include "InventoryComponent.h"
-#include "DrawDebugHelpers.h"
 #include "Grabber.h"
+#include "InteractComponent.h"
 #include "Item.h"
-#include "Pickup.h"
 #include "Components/CapsuleComponent.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -29,7 +27,9 @@ ABuildingScapeCharacter::ABuildingScapeCharacter()
 	Grabber = CreateDefaultSubobject<UGrabber>(TEXT("Grabber"));
 	
 	// Inventory System //
-	InventoryComponent = CreateDefaultSubobject<UInventoryComponent>("Inventory");
+	InventoryComponent = CreateDefaultSubobject<UInventoryComponent>(TEXT("Inventory"));
+
+	InteractComponent = CreateDefaultSubobject<UInteractComponent>(TEXT("InteractComponent"));
 }
 
 // Called to bind functionality to input
@@ -39,8 +39,7 @@ void ABuildingScapeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 	
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
-	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ABuildingScapeCharacter::TakeObject);
-	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ABuildingScapeCharacter::InteractDoor);
+	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ABuildingScapeCharacter::Interact);
 	PlayerInputComponent->BindAction("Restart", IE_Pressed, this, &ABuildingScapeCharacter::RestartGamePressed);
 	
 	
@@ -56,11 +55,9 @@ void ABuildingScapeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 void ABuildingScapeCharacter::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-
-	CheckEnableTakeObject();
-
-	CheckEnableInteractDoor();
 	
+	if(!InteractComponent){return;}
+	InteractComponent->CheckEnableInteract(DeltaSeconds);
 }
 
 void ABuildingScapeCharacter::MoveForward(float Value)
@@ -93,53 +90,9 @@ void ABuildingScapeCharacter::LookUp(float Value)
 	AddControllerPitchInput(Value);
 }
 
-void ABuildingScapeCharacter::CheckEnableTakeObject()
+void ABuildingScapeCharacter::Interact()
 {
-	FHitResult HitResult = GetFirstPhysicsBodyInReach();
-
-	AActor* ActorHit = HitResult.GetActor();
-
-	if(!ActorHit)
-	{
-		CurrentPickupTake = nullptr;
-		return;
-	}
-
-	APickup* Pickup = Cast<APickup>(ActorHit);
-	CurrentPickupTake = Pickup;
-	if(CurrentPickupTake)
-	{
-		CurrentPickupTake->ShowMessagePickup();
-	}
-	
-}
-
-void ABuildingScapeCharacter::InteractDoor()
-{
-	if(!CurrentDoor) {return;}
-	
-	CurrentDoor->CheckDoor();
-}
-
-void ABuildingScapeCharacter::CheckEnableInteractDoor()
-{
-	FHitResult HitResult = GetFirstPhysicsBodyInReach();
-
-	AActor* ActorHit = HitResult.GetActor();
-	
-	if(!ActorHit)
-	{
-		CurrentDoor = nullptr;
-		return;
-	}
-	
-	ADoor* Door = Cast<ADoor>(ActorHit);
-	if(!Door)
-	{
-		CurrentDoor = nullptr;
-		return;
-	}
-	CurrentDoor = Door;
+	InteractComponent->Interact(this);
 }
 
 void ABuildingScapeCharacter::RestartGamePressed()
@@ -148,45 +101,6 @@ void ABuildingScapeCharacter::RestartGamePressed()
 	if(!BuildingEscapeGameMode){ return; }
 
 	BuildingEscapeGameMode->Restart();
-}
-
-FVector ABuildingScapeCharacter::GetPlayerReach()
-{
-	GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(OUT PlayerViewPointLocation,OUT PlayerViewPointRotation);
-	FVector LineTraceEnd = PlayerViewPointLocation + PlayerViewPointRotation.Vector() * Reach;
-
-	return LineTraceEnd;
-}
-
-FHitResult ABuildingScapeCharacter::GetFirstPhysicsBodyInReach()
-{
-	FVector LineTraceEnd = GetPlayerReach();
-	
-	FHitResult Hit;
-	FCollisionQueryParams TraceParams(FName(TEXT("")), false, GetOwner());
-	GetWorld()->LineTraceSingleByObjectType(
-		OUT Hit,
-		PlayerViewPointLocation,
-		LineTraceEnd,
-		FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody),
-		TraceParams
-	);
-
-	AActor* ActorHit = Hit.GetActor();
-	return Hit;
-}
-
-void ABuildingScapeCharacter::TakeObject()
-{
-	if(CurrentPickupTake)
-	{
-		if(CurrentPickupTake->PickupItem)
-		{
-			InventoryComponent->AddItem(CurrentPickupTake->PickupItem);
-		}
-		CurrentPickupTake->Destroy();
-		CurrentPickupTake = nullptr;
-	}
 }
 
 void ABuildingScapeCharacter::SetPlayerHealth(float Value)
@@ -198,8 +112,6 @@ float ABuildingScapeCharacter::GetPlayerHealth()
 {
 	return Health;
 }
-
-
 
 void ABuildingScapeCharacter::UseItem(UItem* Item)
 {

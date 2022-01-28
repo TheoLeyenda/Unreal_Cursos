@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "Components/TextRenderComponent.h"
+#include "InteractInterface.h"
 #include "Item.h"
 #include "GameFramework/Actor.h"
 #include "Pickup.generated.h"
 
-
 UCLASS()
-class BUILDINGESCAPE_API APickup : public AActor
+class BUILDINGESCAPE_API APickup : public AActor, public IInteractInterface
 {
 	GENERATED_BODY()
 
@@ -18,11 +18,12 @@ protected:
 	FTimerHandle TimerToCheckHideMessage;
 	float TimeToHideMessage = 0.1f;
 	bool bEnableDestroyTimer = false;
+	
 public:	
 	// Sets default values for this actor's properties
 	APickup();
-	
-	virtual void Tick(float DeltaSeconds) override;
+
+	void Tick(float DeltaSeconds) override;
 	
 	UPROPERTY(EditAnywhere, Category= "Pickup")
 	bool bEnableUseMessagePickup = true;
@@ -44,6 +45,10 @@ public:
 	void MakeTextFacePlayer();
 
 	virtual void BeginDestroy() override;
+
+	virtual bool ExecuteInteractInterface(ABuildingScapeCharacter* Character) override;
+	
+	virtual bool ExecuteInterfaceOnHitInteraction(float DeltaSeconds) override;
 	
 	UPROPERTY(EditAnywhere, Category="Pickup")
 	UTextRenderComponent* MyText;

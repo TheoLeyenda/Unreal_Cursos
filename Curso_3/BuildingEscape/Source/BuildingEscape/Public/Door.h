@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "InteractInterface.h"
 #include "Components/TimelineComponent.h"
 #include "Components/AudioComponent.h"
 #include "Door.generated.h"
@@ -17,7 +18,7 @@ enum class EStateDoor
 };
 
 UCLASS()
-class BUILDINGESCAPE_API ADoor : public AActor
+class BUILDINGESCAPE_API ADoor : public AActor, public IInteractInterface
 {
 	GENERATED_BODY()
 	
@@ -55,6 +56,8 @@ protected:
 	bool bCloseDoorSound = true;
 	void CheckCloseDoorSound();
 	void CheckOpenDoorSound();
+
+	virtual bool ExecuteInteractInterface(ABuildingScapeCharacter* Character) override;
 	
 public:	
 

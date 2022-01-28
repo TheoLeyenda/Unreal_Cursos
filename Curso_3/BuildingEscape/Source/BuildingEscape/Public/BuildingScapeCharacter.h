@@ -34,20 +34,8 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Player Stats")
 	bool bEnableMovement = true;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats")
-	class UInventoryComponent* InventoryComponent;
+	void Interact();
 	
-	class APickup* CurrentPickupTake;
-
-	class ADoor* CurrentDoor;
-
-	void TakeObject();
-	
-	void CheckEnableTakeObject();
-
-	void InteractDoor();
-	
-	void CheckEnableInteractDoor();
 public:	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -67,20 +55,16 @@ public:
 	float GetPlayerHealth();
 	
 	void RestartGamePressed();
-
-	//PASAR A UNA CLASE QUE TENGA FUNCIONALIDADES DE LineTrace Y UTILIZARLO TAMBIEN EN EL Grabber
-	FVector PlayerViewPointLocation;
-    FRotator PlayerViewPointRotation;
-	FVector GetPlayerReach();
-	FHitResult GetFirstPhysicsBodyInReach();
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Player Stats")
-	float Reach = 100.0f;
-	//------------------------------------------------------------------------------------------//
+	
 	UFUNCTION(BlueprintCallable)
     void UseItem(class UItem* Item);
-
+	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Grabber")
 	class UGrabber* Grabber;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Player Stats")
+	class UInventoryComponent* InventoryComponent;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Player Stats")
+	class UInteractComponent* InteractComponent;
 };

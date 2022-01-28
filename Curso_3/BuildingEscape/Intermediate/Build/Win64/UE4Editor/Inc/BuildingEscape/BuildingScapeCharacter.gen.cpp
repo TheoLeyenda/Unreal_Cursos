@@ -19,8 +19,9 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UItem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UGrabber_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInteractComponent_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ABuildingScapeCharacter::execUseItem)
 	{
@@ -65,7 +66,6 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "//------------------------------------------------------------------------------------------//\n" },
 		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
 	};
 #endif
@@ -112,17 +112,17 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		static void NewProp_bEnableMovement_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bEnableMovement;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Grabber_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Grabber;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InventoryComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InventoryComponent;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Reach_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractComponent_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Reach;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Grabber_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Grabber;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InteractComponent;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -132,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABuildingScapeCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ABuildingScapeCharacter_UseItem, "UseItem" }, // 3969207005
+		{ &Z_Construct_UFunction_ABuildingScapeCharacter_UseItem, "UseItem" }, // 2139418709
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::Class_MetaDataParams[] = {
@@ -187,21 +187,6 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement = { "bEnableMovement", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ABuildingScapeCharacter), &Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent_MetaData[] = {
-		{ "Category", "Player Stats" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent = { "InventoryComponent", nullptr, (EPropertyFlags)0x002008000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, InventoryComponent), Z_Construct_UClass_UInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Reach_MetaData[] = {
-		{ "Category", "Player Stats" },
-		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Reach = { "Reach", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, Reach), METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Reach_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Reach_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber_MetaData[] = {
 		{ "Category", "Grabber" },
 		{ "EditInline", "true" },
@@ -209,15 +194,31 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber = { "Grabber", nullptr, (EPropertyFlags)0x001000000009000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, Grabber), Z_Construct_UClass_UGrabber_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent_MetaData[] = {
+		{ "Category", "Player Stats" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent = { "InventoryComponent", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, InventoryComponent), Z_Construct_UClass_UInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InteractComponent_MetaData[] = {
+		{ "Category", "Player Stats" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InteractComponent = { "InteractComponent", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, InteractComponent), Z_Construct_UClass_UInteractComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InteractComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InteractComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABuildingScapeCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_FirstPersonCameraComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BaseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BaseLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Health,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Reach,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InteractComponent,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABuildingScapeCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABuildingScapeCharacter>::IsAbstract,
@@ -246,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingScapeCharacter, 3047507718);
+	IMPLEMENT_CLASS(ABuildingScapeCharacter, 754040014);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABuildingScapeCharacter>()
 	{
 		return ABuildingScapeCharacter::StaticClass();

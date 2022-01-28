@@ -72,8 +72,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABuildingScapeCharacter); \
 	FORCEINLINE static uint32 __PPO__BaseTurnRate() { return STRUCT_OFFSET(ABuildingScapeCharacter, BaseTurnRate); } \
 	FORCEINLINE static uint32 __PPO__BaseLookUpRate() { return STRUCT_OFFSET(ABuildingScapeCharacter, BaseLookUpRate); } \
 	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(ABuildingScapeCharacter, Health); } \
-	FORCEINLINE static uint32 __PPO__bEnableMovement() { return STRUCT_OFFSET(ABuildingScapeCharacter, bEnableMovement); } \
-	FORCEINLINE static uint32 __PPO__InventoryComponent() { return STRUCT_OFFSET(ABuildingScapeCharacter, InventoryComponent); }
+	FORCEINLINE static uint32 __PPO__bEnableMovement() { return STRUCT_OFFSET(ABuildingScapeCharacter, bEnableMovement); }
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_10_PROLOG

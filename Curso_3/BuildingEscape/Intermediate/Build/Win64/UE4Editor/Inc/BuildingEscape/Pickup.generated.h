@@ -22,7 +22,8 @@ private: \
 	friend struct Z_Construct_UClass_APickup_Statics; \
 public: \
 	DECLARE_CLASS(APickup, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
-	DECLARE_SERIALIZER(APickup)
+	DECLARE_SERIALIZER(APickup) \
+	virtual UObject* _getUObject() const override { return const_cast<APickup*>(this); }
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_Pickup_h_15_INCLASS \
@@ -31,7 +32,8 @@ private: \
 	friend struct Z_Construct_UClass_APickup_Statics; \
 public: \
 	DECLARE_CLASS(APickup, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
-	DECLARE_SERIALIZER(APickup)
+	DECLARE_SERIALIZER(APickup) \
+	virtual UObject* _getUObject() const override { return const_cast<APickup*>(this); }
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_Pickup_h_15_STANDARD_CONSTRUCTORS \

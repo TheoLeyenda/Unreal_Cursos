@@ -3,6 +3,7 @@
 
 #include "Pickup.h"
 #include "BuildingScapeCharacter.h"
+
 #include "Kismet/GameplayStatics.h"
 // Sets default values
 APickup::APickup()
@@ -16,22 +17,33 @@ APickup::APickup()
 	StaticMeshComponent->SetupAttachment(SceneComponent, NAME_None);
 }
 
-
 void APickup::Tick(float DeltaSeconds)
 {
-	if(!bEnableUseMessagePickup && !bUseMessagePickup && !bUseRotatePickup){return;}
-	Super::Tick(DeltaSeconds);
-
 	if(bEnableUseMessagePickup)
 	{
 		MakeTextFacePlayer();
 	}
-
 	if(bUseRotatePickup)
 	{
 		RotatePickUp(DeltaSeconds);
 	}
 }
+
+
+bool APickup::ExecuteInterfaceOnHitInteraction(float DeltaSeconds)
+{
+	if(!bEnableUseMessagePickup && !bUseMessagePickup && !bUseRotatePickup)
+	{
+		return false;
+	}
+	
+	if(bEnableUseMessagePickup)
+	{
+		ShowMessagePickup();
+	}
+	return true;
+}
+
 
 void APickup::MakeTextFacePlayer()
 {
@@ -85,4 +97,15 @@ void APickup::BeginDestroy()
 	//}
 	Super::BeginDestroy();
 }
+
+bool APickup::ExecuteInteractInterface(ABuildingScapeCharacter* Character)
+{
+	if(!Character) {return false;}
+	if(!Character->InventoryComponent){return false;}
+	
+	Character->InventoryComponent->AddItem(PickupItem);
+	Destroy();
+	return true;
+}
+
 

@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UItem_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInteractInterface_NoRegister();
 // End Cross Module References
 	void APickup::StaticRegisterNativesAPickup()
 	{
@@ -66,6 +67,7 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PickupItem;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -149,6 +151,9 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_SceneComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_PickupItem,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_APickup_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UInteractInterface_NoRegister, (int32)VTABLE_OFFSET(APickup, IInteractInterface), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APickup_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APickup>::IsAbstract,
 	};
@@ -159,11 +164,11 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		DependentSingletons,
 		nullptr,
 		Z_Construct_UClass_APickup_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_APickup_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::Class_MetaDataParams))
 	};
@@ -176,7 +181,7 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APickup, 3446987476);
+	IMPLEMENT_CLASS(APickup, 1997756367);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<APickup>()
 	{
 		return APickup::StaticClass();

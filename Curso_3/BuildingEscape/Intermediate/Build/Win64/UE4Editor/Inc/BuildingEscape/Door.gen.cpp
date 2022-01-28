@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 	ENGINE_API UClass* Z_Construct_UClass_UTimelineComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCurveFloat_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInteractInterface_NoRegister();
 // End Cross Module References
 	static UEnum* EStateDoor_StaticEnum()
 	{
@@ -168,6 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DoorTimelineFloatCurve;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -253,6 +255,9 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_AudioComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineFloatCurve,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ADoor_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UInteractInterface_NoRegister, (int32)VTABLE_OFFSET(ADoor, IInteractInterface), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ADoor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ADoor>::IsAbstract,
 	};
@@ -263,11 +268,11 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		DependentSingletons,
 		FuncInfo,
 		Z_Construct_UClass_ADoor_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ADoor_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::Class_MetaDataParams))
 	};
@@ -280,7 +285,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoor, 3995874174);
+	IMPLEMENT_CLASS(ADoor, 781350674);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ADoor>()
 	{
 		return ADoor::StaticClass();
