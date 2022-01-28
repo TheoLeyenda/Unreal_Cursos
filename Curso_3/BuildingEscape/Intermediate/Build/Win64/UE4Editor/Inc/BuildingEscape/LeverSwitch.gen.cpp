@@ -21,8 +21,10 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitch() {}
 	ENGINE_API UClass* Z_Construct_UClass_UTimelineComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCurveFloat_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInteractInterface_NoRegister();
 // End Cross Module References
 	static UEnum* EPositiveShiwtch_StaticEnum()
@@ -156,6 +158,10 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitch() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MeshLever;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BoxComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BoxComponent;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Scene_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Scene;
@@ -168,6 +174,10 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitch() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AudioComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AudioComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SoundBase_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SoundBase;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -218,6 +228,14 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitch() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALeverSwitch_Statics::NewProp_MeshLever = { "MeshLever", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALeverSwitch, MeshLever), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_MeshLever_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_MeshLever_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALeverSwitch_Statics::NewProp_BoxComponent_MetaData[] = {
+		{ "Category", "LeverSwitch" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/LeverSwitch.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALeverSwitch_Statics::NewProp_BoxComponent = { "BoxComponent", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALeverSwitch, BoxComponent), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_BoxComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_BoxComponent_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALeverSwitch_Statics::NewProp_Scene_MetaData[] = {
 		{ "Category", "LeverSwitch" },
 		{ "EditInline", "true" },
@@ -235,20 +253,30 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitch() {}
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ALeverSwitch_Statics::NewProp_PositiveShiwtch = { "PositiveShiwtch", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALeverSwitch, PositiveShiwtch), Z_Construct_UEnum_BuildingEscape_EPositiveShiwtch, METADATA_PARAMS(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_PositiveShiwtch_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_PositiveShiwtch_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent_MetaData[] = {
+		{ "Category", "LeverSwitch" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/LeverSwitch.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent = { "AudioComponent", nullptr, (EPropertyFlags)0x0010000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALeverSwitch, AudioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent = { "AudioComponent", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALeverSwitch, AudioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALeverSwitch_Statics::NewProp_SoundBase_MetaData[] = {
+		{ "Category", "LeverSwitch" },
+		{ "ModuleRelativePath", "Public/LeverSwitch.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALeverSwitch_Statics::NewProp_SoundBase = { "SoundBase", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALeverSwitch, SoundBase), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_SoundBase_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_SoundBase_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ALeverSwitch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_TimelineComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_TimelineFloatCurve,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_MeshBase,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_MeshLever,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_BoxComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_Scene,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_PositiveShiwtch_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_PositiveShiwtch,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_SoundBase,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ALeverSwitch_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UInteractInterface_NoRegister, (int32)VTABLE_OFFSET(ALeverSwitch, IInteractInterface), false },
@@ -280,7 +308,7 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitch() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALeverSwitch, 724180662);
+	IMPLEMENT_CLASS(ALeverSwitch, 1910198537);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ALeverSwitch>()
 	{
 		return ALeverSwitch::StaticClass();

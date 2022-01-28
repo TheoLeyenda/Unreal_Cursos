@@ -7,6 +7,7 @@
 #include "Components/AudioComponent.h"
 #include "Components/SceneComponent.h"
 #include "InteractInterface.h"
+#include "Components/BoxComponent.h"
 #include "GameFramework/Actor.h"
 #include "LeverSwitch.generated.h"
 
@@ -29,7 +30,7 @@ public:
 
 	virtual void BeginPlay() override;
 	
-	bool SwitchOn;
+	bool bSwitchOn;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	UTimelineComponent* TimelineComp;
@@ -44,6 +45,9 @@ public:
 	UStaticMeshComponent* MeshLever;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	UBoxComponent* BoxComponent;
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	USceneComponent* Scene;
 	
 	void Switch();
@@ -56,7 +60,7 @@ public:
 	void UpSwitch();
 	void DownSwitch();
 	
-	UPROPERTY()
+	UPROPERTY(EditAnywhere)
 	UAudioComponent* AudioComponent = nullptr;
 	
 	void SwitchSound();
