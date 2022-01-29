@@ -20,6 +20,8 @@ class BUILDINGESCAPE_API AObjectSpawnLeverSwitch : public ALeverSwitch
 protected:
 	void SpawnObect();
 public:
+
+	virtual void BeginPlay() override;
 	
 	UPROPERTY(EditAnywhere)
 	bool bSpawnObjectToPositiveLeverSwitch = false;
@@ -28,4 +30,6 @@ public:
 	TArray<AObjectSpawner*> Spawners;
 	
 	virtual bool ExecuteInteractInterface(ABuildingScapeCharacter* Character) override;
+
+	void EnableSpawners();
 };

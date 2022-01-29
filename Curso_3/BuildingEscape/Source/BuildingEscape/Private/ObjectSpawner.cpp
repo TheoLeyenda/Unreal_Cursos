@@ -27,11 +27,15 @@ void AObjectSpawner::SendTimerSpawnObject()
 
 void AObjectSpawner::SpawnObjects()
 {
-	if(ObjectsSpawn.Num() <= 0){return;}
+	if(ObjectsSpawn.Num() <= 0 || !bEnableSpawnObject){return;}
 	
 	if(CurrentIndexSpawn <  ObjectsSpawn.Num())
 	{
-		ObjectSpawned.Add(World->SpawnActor<AActor>(ObjectsSpawn[CurrentIndexSpawn].ObjectBlueprint, GetActorLocation(), GetActorRotation()));
+		AActor* Actor = World->SpawnActor<AActor>(ObjectsSpawn[CurrentIndexSpawn].ObjectBlueprint, GetActorLocation(), GetActorRotation());
+        if(Actor)
+        {
+	        ObjectSpawned.Add(Actor);
+        }
 		CountObjectSpawn++;
 		GetWorld()->GetTimerManager().SetTimer(TimerSpawnObject,this, &AObjectSpawner::SpawnObjects, DelaySpawnObject, false);
 

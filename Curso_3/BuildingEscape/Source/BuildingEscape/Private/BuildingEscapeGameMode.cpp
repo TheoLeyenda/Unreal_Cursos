@@ -4,6 +4,8 @@
 #include "BuildingEscapeGameMode.h"
 #include "Kismet/GameplayStatics.h"
 #include "BuildingScapeCharacter.h"
+#include "InventoryComponent.h"
+
 void ABuildingEscapeGameMode::BeginPlay()
 {
 	Super::BeginPlay();
@@ -29,6 +31,13 @@ void ABuildingEscapeGameMode::Restart()
 		Spawner->DestroySpawnedObjects();
 		Spawner->SendTimerSpawnObject();
 	}
+
+	Character = Cast<ABuildingScapeCharacter>(GetWorld()->GetFirstPlayerController()->GetCharacter());
+	if(Character)
+	{
+		Character->Destroy();
+	}
+	RestartPlayer(GetWorld()->GetFirstPlayerController());
 }
 
 void ABuildingEscapeGameMode::FindSpawners()

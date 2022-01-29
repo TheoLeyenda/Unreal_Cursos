@@ -23,7 +23,8 @@ public:
 	bool AddItem(class UItem* Item);
 	bool RemoveItem(class UItem* Item);
 
-	UPROPERTY(EditAnywhere, Category="Inventory", meta = (ClampMin = 0.0))
+	void ClearInventory();
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventory", meta = (ClampMin = 0.0))
 	int32 Capacity = 20;
 
 	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category="Inventory")

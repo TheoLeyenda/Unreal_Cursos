@@ -21,11 +21,14 @@ UCLASS()
 class BUILDINGESCAPE_API AObjectSpawner : public AActor
 {
 	GENERATED_BODY()
-
+	
 	UWorld* World;
 
 	int CurrentIndexSpawn = 0;
 	int CountObjectSpawn = 0;
+
+protected:
+	void SpawnObjects();
 	
 public:
 	virtual void BeginPlay() override;
@@ -35,14 +38,15 @@ public:
 	UPROPERTY(EditAnywhere, Category="Objects Spawn")
 	TArray<FObjectSpawn> ObjectsSpawn;
 
+	UPROPERTY(EditAnywhere, Category= "Objects Spawn")
+	bool bEnableSpawnObject = true;
+	
 	FTimerHandle TimerSpawnObject;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category= "Objects Spawn")
 	float DelaySpawnObject = 0.5f;
 	void SendTimerSpawnObject();
 	
 	TArray<AActor*> ObjectSpawned;
-	
-	void SpawnObjects();
 
 	void DestroySpawnedObjects();
 };

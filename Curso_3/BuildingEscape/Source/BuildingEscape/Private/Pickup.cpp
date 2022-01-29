@@ -22,10 +22,16 @@ void APickup::BeginPlay()
 	Super::BeginPlay();
 	if(bAttachTextToMesh)
 	{
-		StaticMeshComponent->SetupAttachment(SceneComponent, NAME_None);
-		MyText->AttachToComponent(StaticMeshComponent, FAttachmentTransformRules::KeepRelativeTransform);
-		MyText->SetRelativeLocation(FVector(0.0f,0.0f,220.0f));
-		MyText->SetRelativeScale3D(FVector(5.0f,5.0f,5.0f));
+		if(StaticMeshComponent)
+		{
+			StaticMeshComponent->SetupAttachment(SceneComponent, NAME_None);
+			if(MyText)
+			{
+				MyText->AttachToComponent(StaticMeshComponent, FAttachmentTransformRules::KeepRelativeTransform);
+				MyText->SetRelativeLocation(FVector(0.0f,0.0f,220.0f));
+				MyText->SetRelativeScale3D(FVector(5.0f,5.0f,5.0f));
+			}
+		}
 	}
 }
 

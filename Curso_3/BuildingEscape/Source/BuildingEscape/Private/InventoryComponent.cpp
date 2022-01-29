@@ -23,8 +23,8 @@ bool UInventoryComponent::AddItem(UItem* Item)
 	Item->OwningInventory = this;
 	Item->World = GetWorld();
 	Items.Add(Item);
-	//UE_LOG(LogTemp, Warning, TEXT("Call me"));
 	OnInventoryUpdated.Broadcast();
+	//UE_LOG(LogTemp, Warning, TEXT("Call me"));
 
 	return true;
 }
@@ -35,12 +35,16 @@ bool UInventoryComponent::RemoveItem(UItem* Item)
 	{
 		return false;
 	}
-
 	Item->OwningInventory = nullptr;
 	Item->World = nullptr;
 	Items.RemoveSingle(Item);
 	OnInventoryUpdated.Broadcast();
-
 	return true;
+}
+
+void UInventoryComponent::ClearInventory()
+{
+	Items.Empty();
+	OnInventoryUpdated.Broadcast();
 }
 

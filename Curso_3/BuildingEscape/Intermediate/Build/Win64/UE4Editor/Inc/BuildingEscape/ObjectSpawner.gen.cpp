@@ -135,6 +135,11 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ObjectsSpawn;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bEnableSpawnObject_MetaData[];
+#endif
+		static void NewProp_bEnableSpawnObject_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bEnableSpawnObject;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DelaySpawnObject_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DelaySpawnObject;
@@ -161,8 +166,19 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn = { "ObjectsSpawn", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AObjectSpawner, ObjectsSpawn), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject_MetaData[] = {
+		{ "Category", "Objects Spawn" },
+		{ "ModuleRelativePath", "Public/ObjectSpawner.h" },
+	};
+#endif
+	void Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject_SetBit(void* Obj)
+	{
+		((AObjectSpawner*)Obj)->bEnableSpawnObject = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject = { "bEnableSpawnObject", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AObjectSpawner), &Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject_SetBit, METADATA_PARAMS(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObjectSpawner_Statics::NewProp_DelaySpawnObject_MetaData[] = {
-		{ "Category", "ObjectSpawner" },
+		{ "Category", "Objects Spawn" },
 		{ "ModuleRelativePath", "Public/ObjectSpawner.h" },
 	};
 #endif
@@ -170,6 +186,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AObjectSpawner_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_DelaySpawnObject,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AObjectSpawner_Statics::StaticCppClassTypeInfo = {
@@ -199,7 +216,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AObjectSpawner, 4045778006);
+	IMPLEMENT_CLASS(AObjectSpawner, 2532140530);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AObjectSpawner>()
 	{
 		return AObjectSpawner::StaticClass();

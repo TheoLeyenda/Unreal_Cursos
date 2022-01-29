@@ -69,7 +69,7 @@ void UInteractComponent::Interact(ABuildingScapeCharacter* Character)
 {
 	if(bEnableInteract)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("ENTRE AL INTERACT"));
+		//UE_LOG(LogTemp, Warning, TEXT("ENTRE AL INTERACT"));
 		InteractInterface->ExecuteInteractInterface(Character);
 	}
 }

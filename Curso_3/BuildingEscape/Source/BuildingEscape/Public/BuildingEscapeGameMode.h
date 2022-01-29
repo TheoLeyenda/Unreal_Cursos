@@ -6,6 +6,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "BuildingScapeCharacter.h"
 #include "ObjectSpawner.h"
 #include "GameFramework/PlayerStart.h"
 #include "BuildingEscapeGameMode.generated.h"
@@ -21,7 +22,8 @@ class BUILDINGESCAPE_API ABuildingEscapeGameMode : public AGameModeBase
 	virtual void BeginPlay() override;
 
 	APlayerStart* PlayerStart;
-
+	ABuildingScapeCharacter* Character;
+	
 	void FindSpawners();
 	void FindPlayerSpawn();
 
