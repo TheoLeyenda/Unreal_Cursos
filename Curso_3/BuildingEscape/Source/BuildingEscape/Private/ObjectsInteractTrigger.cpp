@@ -9,17 +9,45 @@ void AObjectsInteractTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp
                                              UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
-	UE_LOG(LogTemp, Warning, TEXT("ENTRE"));
-	bIsOverlapWithSomeSpecificObject = true;
+	CheckExecuteInteractInterface(OtherActor);
 }
 
 void AObjectsInteractTrigger::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	Super::OnOverlapEnd(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex);
-	UE_LOG(LogTemp, Warning, TEXT("SALI"));
-	bIsOverlapWithSomeSpecificObject = false;
+	CheckExecuteInteractInterface(OtherActor);
 }
+
+bool AObjectsInteractTrigger::ExecuteInteractInterface()
+{
+	BoxTriggerVolume->GetOverlappingActors(ActorsInOverlap);
+	
+	if(LastObjectRegister == ELastStateObjectOverlap::BeginOverlap)
+	{
+		bIsOverlapWithSomeSpecificObject = true;
+	}
+	else if(ActorsInOverlap.Num() <= 0)
+	{
+		bIsOverlapWithSomeSpecificObject = false;
+	}
+	return true;
+}
+
+void AObjectsInteractTrigger::CheckExecuteInteractInterface(AActor* OtherActor)
+{
+	for(TSubclassOf<AActor> Actor : ObjectsToOverlapCheck)
+	{
+		if(Actor)
+		{
+			if(OtherActor->GetClass() == Actor)
+			{
+				ExecuteInteractInterface();
+			}
+		}
+	}
+}
+
 
 bool AObjectsInteractTrigger::IsOverlapWithSomeSpecificObject()
 {

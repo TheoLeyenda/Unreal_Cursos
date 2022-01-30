@@ -20,6 +20,8 @@ protected:
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<AActor>> ObjectsToOverlapCheck;
 
+	TArray<AActor*> ActorsInOverlap;
+	
 	bool bIsOverlapWithSomeSpecificObject = false;
 	
 	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp
@@ -33,7 +35,10 @@ protected:
 		, AActor* OtherActor
 		, UPrimitiveComponent* OtherComp
 		, int32 OtherBodyIndex) override;
-	
+
+	virtual bool ExecuteInteractInterface() override;
+
+	void CheckExecuteInteractInterface(AActor* OtherActor);
 public:
 	bool IsOverlapWithSomeSpecificObject();
 };
