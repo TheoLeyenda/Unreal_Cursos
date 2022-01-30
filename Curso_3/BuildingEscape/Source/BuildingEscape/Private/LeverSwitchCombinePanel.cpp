@@ -3,6 +3,7 @@
 
 #include "LeverSwitchCombinePanel.h"
 
+
 ALeverSwitchCombinePanel::ALeverSwitchCombinePanel() : ACombinePanel()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -23,7 +24,9 @@ void ALeverSwitchCombinePanel::BeginPlay()
 {
 	Super::BeginPlay();
 
-	ResetLeverSwitchers();
+	BuildingEscapeGameMode = Cast<ABuildingEscapeGameMode>(GetWorld()->GetAuthGameMode());
+	
+	ResetCombinePanel(false);
 	
 	for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
 	{
@@ -43,7 +46,7 @@ void ALeverSwitchCombinePanel::BeginPlay()
 	
 }
 
-void ALeverSwitchCombinePanel::ResetLeverSwitchers()
+void ALeverSwitchCombinePanel::ResetCombinePanel(bool FailCombinePanel)
 {
 	for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
 	{
@@ -55,6 +58,11 @@ void ALeverSwitchCombinePanel::ResetLeverSwitchers()
 			}
 			LeverSwitchesInfo[i].CheckDone = false;
 		}
+	}
+	ABuildingScapeCharacter* Character = BuildingEscapeGameMode->GetCurrentCharacter();
+	if(Character && FailCombinePanel)
+	{
+		Character->SubstractLifes(LifeSubstractForFail);
 	}
 }
 
@@ -74,7 +82,8 @@ void ALeverSwitchCombinePanel::Tick(float DeltaSeconds)
 		UE_LOG(LogTemp, Warning, TEXT("LO LOGRE :D"));
 		for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
 		{
-			LeverSwitchesInfo[i].LeverSwitch->bEnableUseSwitch = false;
+			SetActorTickEnabled(false);
+			LeverSwitchesInfo[i].LeverSwitch->SetEnableSpawners(true);
 		}
 	}
 	
@@ -91,21 +100,7 @@ void ALeverSwitchCombinePanel::Tick(float DeltaSeconds)
 		{
 			CurrentSwitcher = 0;
 			CurrentAnswer.Empty();
-			ResetLeverSwitchers();
+			ResetCombinePanel(true);
 		}
-		
 	}
-}
-
-
-void ALeverSwitchCombinePanel::CheckCurrentAnswer()
-{
-	Super::CheckCurrentAnswer();
-	
-}
-
-void ALeverSwitchCombinePanel::InputCodeAnswer(int Code)
-{
-	Super::InputCodeAnswer(Code);
-	
 }

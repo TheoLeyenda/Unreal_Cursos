@@ -48,7 +48,10 @@ void ADoorInteractTriggerWithActors::OnOverlapEnd(UPrimitiveComponent* Overlappe
 
 bool ADoorInteractTriggerWithActors::ExecuteInteractInterface()
 {
-	if(Doors.Num() <= 0){ return false; }
+	if(Doors.Num() <= 0)
+	{
+		return false;
+	}
 
 	BoxTriggerVolume->GetOverlappingActors(ActorsInOverlap);
 	

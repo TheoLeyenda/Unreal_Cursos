@@ -27,12 +27,13 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Interact Trigger")
 	UBoxComponent* BoxTriggerVolume;
 
 	ELastStateObjectOverlap LastObjectRegister;
 	
+	UFUNCTION()
 	virtual void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp
 			, class AActor* OtherActor
 			, class UPrimitiveComponent* OtherComp
@@ -40,6 +41,7 @@ protected:
 			, bool bFromSweep
 			, const FHitResult& SweepResult);
 	
+	UFUNCTION()
 	virtual void OnOverlapEnd(class UPrimitiveComponent* OverlappedComp
 		, class AActor* OtherActor
 		, class UPrimitiveComponent* OtherComp

@@ -266,6 +266,10 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSpawnObjectInfo
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LeverSwitchesInfo_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_LeverSwitchesInfo;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LifeSubstractForFail_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_LifeSubstractForFail;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -296,11 +300,19 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSpawnObjectInfo
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_LeverSwitchesInfo = { "LeverSwitchesInfo", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALeverSwitchCombinePanel, LeverSwitchesInfo), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_LeverSwitchesInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_LeverSwitchesInfo_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_LifeSubstractForFail_MetaData[] = {
+		{ "Category", "LeverSwitchCombinePanel" },
+		{ "ModuleRelativePath", "Public/LeverSwitchCombinePanel.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_LifeSubstractForFail = { "LifeSubstractForFail", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALeverSwitchCombinePanel, LifeSubstractForFail), METADATA_PARAMS(Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_LifeSubstractForFail_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_LifeSubstractForFail_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_SpawnObjectsInfo_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_SpawnObjectsInfo,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_LeverSwitchesInfo_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_LeverSwitchesInfo,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::NewProp_LifeSubstractForFail,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ALeverSwitchCombinePanel_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ALeverSwitchCombinePanel>::IsAbstract,
@@ -329,7 +341,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSpawnObjectInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALeverSwitchCombinePanel, 2549891326);
+	IMPLEMENT_CLASS(ALeverSwitchCombinePanel, 3000957654);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ALeverSwitchCombinePanel>()
 	{
 		return ALeverSwitchCombinePanel::StaticClass();

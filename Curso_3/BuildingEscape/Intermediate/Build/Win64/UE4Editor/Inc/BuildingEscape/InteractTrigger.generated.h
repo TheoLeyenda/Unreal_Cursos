@@ -8,14 +8,27 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef BUILDINGESCAPE_InteractTrigger_generated_h
 #error "InteractTrigger.generated.h already included, missing '#pragma once' in InteractTrigger.h"
 #endif
 #define BUILDINGESCAPE_InteractTrigger_generated_h
 
 #define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnOverlapEnd); \
+	DECLARE_FUNCTION(execOnOverlapBegin);
+
+
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnOverlapEnd); \
+	DECLARE_FUNCTION(execOnOverlapBegin);
+
+
 #define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAInteractTrigger(); \

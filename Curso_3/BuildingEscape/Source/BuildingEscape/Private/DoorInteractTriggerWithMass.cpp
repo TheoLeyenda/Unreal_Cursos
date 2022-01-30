@@ -58,8 +58,10 @@ void ADoorInteractTriggerWithMass::CheckMassInOverlap()
 
 bool ADoorInteractTriggerWithMass::ExecuteInteractInterface()
 {
-	if(Doors.Num() <= 0) { return false;}
+	if(Doors.Num() <= 0)
+	{
+		return false;
+	}
 	CheckMassInOverlap();
-	
 	return true;
 }

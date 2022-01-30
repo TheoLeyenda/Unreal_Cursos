@@ -32,7 +32,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	bool bSwitchOn;
-
+	
 	bool bEnableUseSwitch = true;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)

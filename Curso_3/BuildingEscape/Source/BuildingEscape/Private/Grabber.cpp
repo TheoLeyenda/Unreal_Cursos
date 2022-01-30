@@ -13,7 +13,6 @@ void UGrabber::BeginPlay()
 	Super::BeginPlay();
 
 	FindPhysicsHandle();
-	SetupInputComponent();
 }
 
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
@@ -41,7 +40,7 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	
 }
 
-void UGrabber::GrabPressed()
+void UGrabber::Grab()
 {
 	FVector LineTraceEnd = GetPlayerReach();
 	
@@ -79,7 +78,7 @@ void UGrabber::GrabPressed()
 	}
 }
 
-void UGrabber::GrabRelease()
+void UGrabber::Release()
 {
 	if(PhysicsHandle)
 	{
@@ -95,20 +94,6 @@ void UGrabber::FindPhysicsHandle()
 	if(!PhysicsHandle)
 	{
 		UE_LOG(LogTemp, Error, TEXT("No physics handle found on %s"), *GetOwner()->GetName());
-	}
-}
-
-void UGrabber::SetupInputComponent()
-{
-	InputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
-	if(InputComponent)
-	{
-		InputComponent->BindAction("Grab", IE_Pressed, this, &UGrabber::GrabPressed);
-		InputComponent->BindAction("Grab", IE_Released, this, &UGrabber::GrabRelease);
-	}
-	else
-	{
-		UE_LOG(LogTemp, Error, TEXT("No Input Component found on %s"), *GetOwner()->GetName());
 	}
 }
 

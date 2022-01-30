@@ -22,8 +22,7 @@ protected:
 	float TimeToCloseDoor;
 	
 	FTimerHandle TimerCloseDoor;
-
-	UFUNCTION()
+	
 	virtual void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp
 		, class AActor* OtherActor
 		, class UPrimitiveComponent* OtherComp
@@ -31,7 +30,6 @@ protected:
 		, bool bFromSweep
 		, const FHitResult& SweepResult) override;
 
-	UFUNCTION()
 	virtual void OnOverlapEnd(class UPrimitiveComponent* OverlappedComp
 		, class AActor* OtherActor
 		, class UPrimitiveComponent* OtherComp

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "CombinePanel.h"
+#include "BuildingEscapeGameMode.h"
 #include "ObjectSpawnLeverSwitch.h"
 #include "LeverSwitchCombinePanel.generated.h"
 
@@ -42,21 +43,23 @@ class BUILDINGESCAPE_API ALeverSwitchCombinePanel : public ACombinePanel
 	GENERATED_BODY()
 
 	ALeverSwitchCombinePanel();
-
+	
 	UPROPERTY(EditAnywhere)
 	TArray<FSpawnObjectInfo> SpawnObjectsInfo;
 	UPROPERTY(EditAnywhere)
 	TArray<FSwitcherInfo> LeverSwitchesInfo;
 	int CurrentSwitcher = 0;
 protected:
+
+	UPROPERTY(EditAnywhere)
+	int LifeSubstractForFail = 1;
+	
+	ABuildingEscapeGameMode* BuildingEscapeGameMode;
+	
 	virtual void BeginPlay() override;
 
 	virtual void Tick(float DeltaSeconds) override;
-	
-	virtual void CheckCurrentAnswer();
 
-	virtual void InputCodeAnswer(int Code);
-
-	void ResetLeverSwitchers();
+	void ResetCombinePanel(bool FailCombinePanel);
 };
 

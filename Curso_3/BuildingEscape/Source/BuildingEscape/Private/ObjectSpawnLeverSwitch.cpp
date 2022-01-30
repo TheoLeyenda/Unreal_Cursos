@@ -43,13 +43,13 @@ void AObjectSpawnLeverSwitch::SpawnObect()
 	}
 }
 
-void AObjectSpawnLeverSwitch::EnableSpawners()
+void AObjectSpawnLeverSwitch::SetEnableSpawners(bool Value)
 {
 	for(AObjectSpawner* Spawner : Spawners)
 	{
 		if(Spawner)
 		{
-			Spawner->bEnableSpawnObject = true;
+			Spawner->bEnableSpawnObject = Value;
 		}
 	}
 }

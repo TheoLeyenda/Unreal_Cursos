@@ -29,5 +29,6 @@ public:
 	
 	virtual bool ExecuteInteractInterface(ABuildingScapeCharacter* Character) override;
 
-	void EnableSpawners();
+	void SetEnableSpawners(bool Value);
+	
 };

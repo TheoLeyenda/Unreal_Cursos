@@ -41,17 +41,14 @@ protected:
 	UPhysicsHandleComponent* PhysicsHandle = nullptr;
 	
 	void FindPhysicsHandle();
-
-	void SetupInputComponent();
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	
-	void GrabPressed();
-	void GrabRelease();
+	void Grab();
+	void Release();
+	
 private:
-	UInputComponent* InputComponent = nullptr;
-
 	UPROPERTY(EditAnywhere)
 	bool bShowLogsPlayerLocationAndRotation = false;
 

@@ -41,7 +41,8 @@ void ABuildingScapeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ABuildingScapeCharacter::Interact);
 	PlayerInputComponent->BindAction("Restart", IE_Pressed, this, &ABuildingScapeCharacter::RestartGamePressed);
-	
+	PlayerInputComponent->BindAction("Grab", IE_Pressed, this, &ABuildingScapeCharacter::GrabPressed);
+    PlayerInputComponent->BindAction("Grab", IE_Released, this, &ABuildingScapeCharacter::GrabRelease);
 	
 	PlayerInputComponent->BindAxis("MoveForward", this, &ABuildingScapeCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ABuildingScapeCharacter::MoveRight);
@@ -103,14 +104,46 @@ void ABuildingScapeCharacter::RestartGamePressed()
 	BuildingEscapeGameMode->Restart();
 }
 
-void ABuildingScapeCharacter::SetPlayerHealth(float Value)
+void ABuildingScapeCharacter::SetPlayerFatness(float Value)
 {
-	Health = Value;
+	Fatness = Value;
 }
 
-float ABuildingScapeCharacter::GetPlayerHealth()
+void ABuildingScapeCharacter::GrabPressed()
 {
-	return Health;
+	if(Grabber)
+	{
+		Grabber->Grab();
+	}
+}
+
+void ABuildingScapeCharacter::GrabRelease()
+{
+	if(Grabber)
+	{
+		Grabber->Release();
+	}
+}
+
+float ABuildingScapeCharacter::GetPlayerFatness()
+{
+	return Fatness;
+}
+
+int ABuildingScapeCharacter::GetPlayerLifes()
+{
+	return Lifes;
+}
+
+void ABuildingScapeCharacter::SubstractLifes(int Value)
+{
+	Lifes -= Value;
+	OnSubstractLife.Broadcast();
+}
+
+void ABuildingScapeCharacter::AddLifes(int Value)
+{
+	Lifes += Value;
 }
 
 void ABuildingScapeCharacter::UseItem(UItem* Item)

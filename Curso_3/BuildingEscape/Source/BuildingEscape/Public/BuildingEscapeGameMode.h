@@ -21,11 +21,13 @@ class BUILDINGESCAPE_API ABuildingEscapeGameMode : public AGameModeBase
 	virtual void BeginPlay() override;
 
 	APlayerStart* PlayerStart;
-	ABuildingScapeCharacter* Character;
+	ABuildingScapeCharacter* CurrentCharacter;
 	
 	void FindSpawners();
 	void FindPlayerSpawn();
 
+	void CheckPlayerDead();
+	
 	UPROPERTY(EditAnywhere, Category="Spawn Objects")
 	TSubclassOf<AObjectSpawner> SpawnerObjectClass;
 
@@ -34,9 +36,9 @@ public:
 	
 	UPROPERTY(VisibleAnywhere, Category="Spawn Objects")
 	TArray<AObjectSpawner*> SpawnersObjects;
-
-	
+	ABuildingScapeCharacter* FindCurrentCharacter();
 	
 	void Restart();
- 	
+
+	ABuildingScapeCharacter* GetCurrentCharacter();
 };
