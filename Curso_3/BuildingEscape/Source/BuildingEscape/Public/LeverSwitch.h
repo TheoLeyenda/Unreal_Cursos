@@ -29,9 +29,12 @@ public:
 	ALeverSwitch();
 
 	virtual void BeginPlay() override;
-	
+
+	UPROPERTY(VisibleAnywhere)
 	bool bSwitchOn;
 
+	bool bEnableUseSwitch = true;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	UTimelineComponent* TimelineComp;
 

@@ -60,7 +60,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACombinePanel); \
 
 #define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CountNumbersCode() { return STRUCT_OFFSET(ACombinePanel, CountNumbersCode); } \
-	FORCEINLINE static uint32 __PPO__CodeNumbers() { return STRUCT_OFFSET(ACombinePanel, CodeNumbers); }
+	FORCEINLINE static uint32 __PPO__CodeNumbers() { return STRUCT_OFFSET(ACombinePanel, CodeNumbers); } \
+	FORCEINLINE static uint32 __PPO__CurrentAnswer() { return STRUCT_OFFSET(ACombinePanel, CurrentAnswer); }
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_9_PROLOG

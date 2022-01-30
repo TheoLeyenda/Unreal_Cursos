@@ -54,12 +54,21 @@ void ALeverSwitch::BeginPlay()
 	if(Random == 0)
 	{
 		bSwitchOn = !bSwitchOn;
+		PositiveShiwtch = EPositiveShiwtch::Up;
+		DownSwitch();
 	}
-	Switch();
+	else
+	{
+		PositiveShiwtch = EPositiveShiwtch::Down;
+		UpSwitch();
+	}
+	//Switch();
 }
 
 void ALeverSwitch::Switch()
 {
+	if(!bEnableUseSwitch) { return; }
+	
 	bSwitchOn = !bSwitchOn;
 
 	if(bSwitchOn)

@@ -24,6 +24,7 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	TArray<int> CodeNumbers;
 	TArray<int> AuxCodeNumbers;
+	UPROPERTY(VisibleAnywhere)
 	TArray<int> CurrentAnswer;
 	
 	bool bCombinePanelComplete;

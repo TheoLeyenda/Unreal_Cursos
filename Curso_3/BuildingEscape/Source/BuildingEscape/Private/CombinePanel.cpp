@@ -49,6 +49,7 @@ void ACombinePanel::CheckCurrentAnswer()
 	if(CurrentAnswer.Num() != CodeNumbers.Num())
 	{
 		bCombinePanelComplete = false;
+		CurrentAnswer.Empty();
 		return;
 	}
 
@@ -57,6 +58,7 @@ void ACombinePanel::CheckCurrentAnswer()
 		if(CurrentAnswer[i] != CodeNumbers[i])
 		{
 			bCombinePanelComplete = false;
+			CurrentAnswer.Empty();
 			return;
 		}
 	}

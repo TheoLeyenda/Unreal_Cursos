@@ -16,7 +16,7 @@ struct FSpawnObjectInfo
 	GENERATED_BODY()
 public:
 	UPROPERTY(VisibleAnywhere)
-	int code;
+	int Code;
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> ObjectSpawn;
 };
@@ -29,9 +29,11 @@ public:
 	UPROPERTY(EditAnywhere)
 	AObjectSpawnLeverSwitch* LeverSwitch;
 	UPROPERTY(VisibleAnywhere)
-	int code;
+	int Code;
 	UPROPERTY(VisibleAnywhere)
 	TSubclassOf<AActor> ObjectSpawn;
+	UPROPERTY(VisibleAnywhere)
+	bool CheckDone = false;
 };
 
 UCLASS()
@@ -45,7 +47,7 @@ class BUILDINGESCAPE_API ALeverSwitchCombinePanel : public ACombinePanel
 	TArray<FSpawnObjectInfo> SpawnObjectsInfo;
 	UPROPERTY(EditAnywhere)
 	TArray<FSwitcherInfo> LeverSwitchesInfo;
-	int currentSwitcher = 0;
+	int CurrentSwitcher = 0;
 protected:
 	virtual void BeginPlay() override;
 
@@ -54,4 +56,7 @@ protected:
 	virtual void CheckCurrentAnswer();
 
 	virtual void InputCodeAnswer(int Code);
+
+	void ResetLeverSwitchers();
 };
+

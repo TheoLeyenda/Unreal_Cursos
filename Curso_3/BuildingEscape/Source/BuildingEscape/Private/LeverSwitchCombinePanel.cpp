@@ -15,13 +15,36 @@ ALeverSwitchCombinePanel::ALeverSwitchCombinePanel() : ACombinePanel()
 
 	for(int i = 0; i < SpawnObjectsInfo.Num(); i++)
 	{
-		SpawnObjectsInfo[i].code = i;
+		SpawnObjectsInfo[i].Code = i;
 	}
 }
 
 void ALeverSwitchCombinePanel::BeginPlay()
 {
 	Super::BeginPlay();
+
+	ResetLeverSwitchers();
+	
+	for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
+	{
+		LeverSwitchesInfo[i].Code = CodeNumbers[i];
+	}
+
+	for(int j = 0; j < CountNumbersCode; j++)
+	{
+		for(int i = 0; i < CountNumbersCode; i++)
+		{
+			if(SpawnObjectsInfo[i].Code == LeverSwitchesInfo[j].Code)
+			{
+				LeverSwitchesInfo[j].ObjectSpawn = SpawnObjectsInfo[i].ObjectSpawn;
+			}
+		}
+	}
+	
+}
+
+void ALeverSwitchCombinePanel::ResetLeverSwitchers()
+{
 	for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
 	{
 		if(LeverSwitchesInfo[i].LeverSwitch)
@@ -30,33 +53,47 @@ void ALeverSwitchCombinePanel::BeginPlay()
 			{
 				LeverSwitchesInfo[i].LeverSwitch->Switch();
 			}
+			LeverSwitchesInfo[i].CheckDone = false;
 		}
 	}
-
-	for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
-	{
-		LeverSwitchesInfo[i].code = CodeNumbers[i];
-	}
-
-	for(int j = 0; j < CountNumbersCode; j++)
-	{
-		for(int i = 0; i < CountNumbersCode; i++)
-		{
-			if(SpawnObjectsInfo[i].code == LeverSwitchesInfo[j].code)
-			{
-				UE_LOG(LogTemp, Warning, TEXT("SI"));
-				LeverSwitchesInfo[j].ObjectSpawn = SpawnObjectsInfo[i].ObjectSpawn;
-			}
-		}
-	}
-	
 }
+
 
 void ALeverSwitchCombinePanel::Tick(float DeltaSeconds)
 {
+	bCombinePanelComplete = true;
+	for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
+	{
+		if(!LeverSwitchesInfo[i].CheckDone)
+		{
+			bCombinePanelComplete = false;
+		}
+	}
 	if(IsCompleteCombinePanel())
 	{
-		PrimaryActorTick.bCanEverTick = false;
+		UE_LOG(LogTemp, Warning, TEXT("LO LOGRE :D"));
+		for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
+		{
+			LeverSwitchesInfo[i].LeverSwitch->bEnableUseSwitch = false;
+		}
+	}
+	
+	for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
+	{
+		if(LeverSwitchesInfo[i].LeverSwitch->bSwitchOn && CurrentSwitcher == LeverSwitchesInfo[i].Code && !LeverSwitchesInfo[i].CheckDone)
+		{
+			InputCodeAnswer(LeverSwitchesInfo[i].Code);
+			CurrentSwitcher++;
+			LeverSwitchesInfo[i].CheckDone = true;
+		}
+		else if((LeverSwitchesInfo[i].LeverSwitch->bSwitchOn && CurrentSwitcher != LeverSwitchesInfo[i].Code && !LeverSwitchesInfo[i].CheckDone)
+			|| (!LeverSwitchesInfo[i].LeverSwitch->bSwitchOn && LeverSwitchesInfo[i].CheckDone))
+		{
+			CurrentSwitcher = 0;
+			CurrentAnswer.Empty();
+			ResetLeverSwitchers();
+		}
+		
 	}
 }
 

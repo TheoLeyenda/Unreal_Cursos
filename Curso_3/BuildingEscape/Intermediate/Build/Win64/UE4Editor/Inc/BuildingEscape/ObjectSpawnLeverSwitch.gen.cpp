@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeObjectSpawnLeverSwitch() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AObjectSpawnLeverSwitch, 3350603076);
+	IMPLEMENT_CLASS(AObjectSpawnLeverSwitch, 1620542712);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AObjectSpawnLeverSwitch>()
 	{
 		return AObjectSpawnLeverSwitch::StaticClass();
