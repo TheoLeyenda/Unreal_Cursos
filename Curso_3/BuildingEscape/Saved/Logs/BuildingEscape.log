@@ -3421,3 +3421,1184 @@ Script Stack (0 frames):
 [2022.01.30-22.41.26:948][420]Cmd: EDIT PASTE
 [2022.01.30-22.41.42:506][304]LogEditorViewport: Clicking on Actor (LMB): BP_RefinateWoodCube_C (BP_RefinateWoodCube)
 [2022.01.30-22.42.21:103][560]LogEditorViewport: Clicking on Actor (LMB): BP_RefinateWoodCube_C (BP_RefinateWoodCube2)
+[2022.01.30-22.47.02:289][964]LogUObjectHash: Compacting FUObjectHashTables data took 197.33ms
+[2022.01.30-22.47.03:409][964]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_Auto8FBD881CD4CCF10BDC1CA0CA1715C072E.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Autosaves/Game/Maps/BuildingScape_Auto8.umap'
+[2022.01.30-22.47.03:487][964]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/BuildingScape' took 4.083
+[2022.01.30-22.47.03:488][964]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 4.083
+[2022.01.30-22.47.03:539][964]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/Objects/BP_RefinateWoodCube] ([1] browsable assets)...
+[2022.01.30-22.47.03:657][964]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/Objects/BP_RefinateWoodCube.BP_RefinateWoodCube]
+[2022.01.30-22.47.03:658][964]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Objects/BP_RefinateWoodCube]
+[2022.01.30-22.47.04:151][964]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_RefinateWoodCube_Auto833CCED5A4CC5681CD4F3D29A10C02255.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Autosaves/Game/Blueprints/Objects/BP_RefinateWoodCube_Auto8.uasset'
+[2022.01.30-22.47.04:162][964]LogFileHelpers: Auto-saving content packages took 0.670
+[2022.01.30-22.51.42:939][321]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\theof\Desktop\Shovel/Shovel.fbx)
+[2022.01.30-22.51.43:136][321]LogFbx: Loading FBX Scene from C:\Users\theof\Desktop\Shovel/Shovel.fbx
+[2022.01.30-22.51.43:214][321]LogFbx: FBX Scene Loaded Succesfully
+[2022.01.30-22.51.45:301][321]LogSlate: Window 'FBX Import Options' being destroyed
+[2022.01.30-22.51.45:691][321]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.51.46:047][321]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 12
+[2022.01.30-22.51.46:047][321]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 7
+[2022.01.30-22.51.46:047][321]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 2
+[2022.01.30-22.51.46:047][321]LogFbx: Display: Triangulating static mesh shovel
+[2022.01.30-22.51.46:711][321]LogStaticMesh: Building static mesh Shovel...
+[2022.01.30-22.51.46:795][321]LogStaticMesh: Built static mesh [0.09s] /Game/Art/Models/Shovel/Shovel.Shovel
+[2022.01.30-22.51.46:918][321]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2022.01.30-22.51.47:067][321]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Shovel/Shovel_Shovel_BaseColor.png)
+[2022.01.30-22.51.47:502][321]LogTexture: Display: Building textures: Shovel_Shovel_BaseColor (AutoDXT, 2048X2048)
+[2022.01.30-22.51.51:133][321]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Shovel/Shovel_Shovel_Normal.png)
+[2022.01.30-22.51.51:331][321]LogTexture: Display: Building textures: Shovel_Shovel_Normal (BC5, 2048X2048)
+[2022.01.30-22.51.52:150][321]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Shovel/Shovel_Shovel_OcclusionRoughnessMetallic.png)
+[2022.01.30-22.51.52:300][321]LogTexture: Display: Building textures: Shovel_Shovel_OcclusionRoughnessMetallic (AutoDXT, 2048X2048)
+[2022.01.30-22.51.54:955][321]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Shovel/textures/Shovel_Shovel_BaseColor.png)
+[2022.01.30-22.51.55:110][321]LogTexture: Display: Building textures: Shovel_Shovel_BaseColor (AutoDXT, 2048X2048)
+[2022.01.30-22.51.58:003][321]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Shovel/textures/Shovel_Shovel_Normal.png)
+[2022.01.30-22.51.58:106][321]LogTexture: Display: Building textures: Shovel_Shovel_Normal (BC5, 2048X2048)
+[2022.01.30-22.51.58:593][321]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Shovel/textures/Shovel_Shovel_OcclusionRoughnessMetallic.png)
+[2022.01.30-22.51.58:718][321]LogTexture: Display: Building textures: Shovel_Shovel_OcclusionRoughnessMetallic (AutoDXT, 2048X2048)
+[2022.01.30-22.52.09:574][618]LogSlate: Window 'Message Log' being destroyed
+[2022.01.30-22.52.09:579][618]LogSlate: Window 'Message Log' being destroyed
+[2022.01.30-22.52.25:939][543]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/Art/Models/Shovel/Shovel1.Shovel1
+[2022.01.30-22.52.25:972][543]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.52.26:874][543]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.52.26:924][543]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.30-22.52.26:924][543]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.30-22.52.26:924][543]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.30-22.52.26:938][543]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.52.26:992][543]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2022.01.30-22.52.31:289][690]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 13
+[2022.01.30-22.52.32:926][748]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 12
+[2022.01.30-22.52.34:628][810]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.52.34:705][811]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 13
+[2022.01.30-22.52.38:289][946]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 12
+[2022.01.30-22.52.38:597][958]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.30-22.52.38:635][958]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.52.38:711][959]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 10
+[2022.01.30-22.52.40:973][ 50]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.52.42:865][118]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.30-22.52.43:772][151]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.30-22.52.44:454][176]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.52.44:467][176]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-22.52.44:469][176]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.30-22.52.50:320][364]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.30-22.52.51:109][390]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2022.01.30-22.52.51:870][413]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.52.51:893][413]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.30-22.52.51:912][413]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.52.52:061][414]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 13
+[2022.01.30-22.52.55:164][525]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.52.55:194][525]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.30-22.52.56:162][562]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 13
+[2022.01.30-22.52.57:426][611]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 12
+[2022.01.30-22.52.57:447][612]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.30-22.53.02:592][803]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.30-22.53.04:970][889]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-22.53.05:626][912]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.30-22.53.08:753][ 23]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.53.10:151][ 76]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 13
+[2022.01.30-22.53.10:485][ 89]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 12
+[2022.01.30-22.53.12:929][185]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 11
+[2022.01.30-22.53.15:049][259]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.30-22.53.15:144][262]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.53.16:503][309]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.30-22.53.19:520][420]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-22.53.19:520][420]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 7
+[2022.01.30-22.53.21:013][470]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.53.23:442][552]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.30-22.53.23:902][568]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.53.24:020][570]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-22.53.26:052][644]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-22.53.31:767][852]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2022.01.30-22.53.32:981][896]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.53.32:994][896]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-22.53.33:003][896]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.53.33:179][902]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-22.53.37:199][ 48]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.30-22.53.39:259][123]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.53.40:724][176]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-22.53.41:329][199]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-22.53.43:561][288]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2022.01.30-22.53.47:108][426]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.53.47:131][426]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.53.48:102][463]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-22.53.48:959][493]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.30-22.53.49:124][499]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 7
+[2022.01.30-22.53.50:362][537]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.53.53:603][655]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-22.53.55:802][734]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.30-22.53.57:462][794]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.30-22.54.01:743][957]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.54.01:768][957]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.54.04:359][ 52]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-22.54.04:553][ 59]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.30-22.54.05:081][ 79]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2022.01.30-22.54.07:719][175]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.54.07:741][175]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.54.11:903][327]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.54.11:918][327]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.30-22.54.11:924][327]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.54.13:571][388]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-22.54.16:789][505]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-22.54.22:476][713]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2022.01.30-22.54.22:770][724]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.54.22:792][724]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.54.24:663][788]LogMaterialEditor: Saving and Compiling material Shovel1
+[2022.01.30-22.54.27:034][788]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-22.54.27:034][788]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-22.54.27:034][788]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2022.01.30-22.54.27:034][788]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 6
+[2022.01.30-22.54.27:034][788]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 5
+[2022.01.30-22.54.27:034][788]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 4
+[2022.01.30-22.54.27:072][788]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.54.27:210][788]LogMaterial: Display: Missing cached shader map for material Shovel1, compiling. 
+[2022.01.30-22.54.27:390][788]LogUObjectHash: Compacting FUObjectHashTables data took   7.06ms
+[2022.01.30-22.54.27:476][788]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-22.54.28:044][788]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 23
+[2022.01.30-22.54.28:600][788]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 22
+[2022.01.30-22.54.28:600][788]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 21
+[2022.01.30-22.54.29:153][788]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 20
+[2022.01.30-22.54.29:153][788]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 19
+[2022.01.30-22.54.29:153][788]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 18
+[2022.01.30-22.54.30:261][788]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 17
+[2022.01.30-22.54.30:261][788]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 16
+[2022.01.30-22.54.30:261][788]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 15
+[2022.01.30-22.54.31:370][788]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 14
+[2022.01.30-22.54.31:370][788]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 13
+[2022.01.30-22.54.31:370][788]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 12
+[2022.01.30-22.54.31:559][788]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
+[2022.01.30-22.54.31:560][788]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 4
+[2022.01.30-22.54.31:568][788]TextureStreamingBuild: Display: Compiling optional shaders took 4.103 seconds.
+[2022.01.30-22.54.31:624][788]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2022.01.30-22.54.33:945][788]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 2
+[2022.01.30-22.54.34:500][788]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 1
+[2022.01.30-22.54.35:336][788]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Models/Shovel/Shovel1" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Shovel/Shovel1.uasset" SILENT=true
+[2022.01.30-22.54.35:362][788]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Shovel1F52794FD413CF6FB8D57E3ACC861433C.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Shovel/Shovel1.uasset'
+[2022.01.30-22.54.35:594][788]AssetCheck: New page: Asset Save: Shovel1
+[2022.01.30-22.54.35:595][788]LogContentValidation: Display: Validating Material /Game/Art/Models/Shovel/Shovel1.Shovel1
+[2022.01.30-22.54.35:600][788]MaterialEditorStats: Base pass shader: 119 instructions
+[2022.01.30-22.54.35:600][788]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 193 instructions
+[2022.01.30-22.54.35:600][788]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.30-22.54.35:600][788]MaterialEditorStats: Texture samplers: 4/16
+[2022.01.30-22.54.35:600][788]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.30-22.54.35:601][788]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.30-22.56.05:308][533]LogSlate: Window 'Shovel1' being destroyed
+[2022.01.30-22.56.05:323][533]LogSlate: Window 'Shovel1' being destroyed
+[2022.01.30-22.56.05:410][533]LogWorld: UWorld::CleanupWorld for World_33, bSessionEnded=true, bCleanupResources=true
+[2022.01.30-22.56.05:420][533]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.30-22.56.08:022][624]LogActorFactory: Actor Factory created Shovel
+[2022.01.30-22.56.08:924][657]LogActorFactory: Actor Factory created Shovel
+[2022.01.30-22.56.21:642][327]Cmd: DELETE
+[2022.01.30-22.56.21:644][327]Cmd: ACTOR DELETE
+[2022.01.30-22.56.21:838][327]LogEditorActor: Deleted Actor: StaticMeshActor
+[2022.01.30-22.56.21:930][327]LogUObjectHash: Compacting FUObjectHashTables data took   6.99ms
+[2022.01.30-22.56.21:994][327]LogEditorActor: Deleted 1 Actors (0.286 secs)
+[2022.01.30-22.56.28:433][670]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2022.01.30-22.56.28:652][670]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScapeAD45D59847DB7B34E70B09B31F1FC824.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.01.30-22.56.29:494][670]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.01.30-22.56.29:733][670]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltData4CBC5EEA47F28F5EC3937EAF3B34194C.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.01.30-22.56.29:761][670]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.30-22.56.29:761][670]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.01.30-22.56.29:763][670]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.01.30-22.56.36:531][ 44]LogUObjectHash: Compacting FUObjectHashTables data took   8.30ms
+[2022.01.30-22.56.36:806][ 44]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScapeDA4CA1D3417344E82C1EEB8A0203FA0C.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.01.30-22.56.36:826][ 44]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.01.30-22.56.36:983][ 44]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltData4B9C010A4CB0155326F736AB77712B3C.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.01.30-22.56.36:999][ 44]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.30-22.56.36:999][ 44]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.01.30-22.56.36:999][ 44]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.01.30-22.56.51:432][880]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2022.01.30-22.56.51:612][880]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape130FB25D4774E440922C8886209F6925.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.01.30-22.56.51:634][880]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.01.30-22.56.51:795][880]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltData2F49ACF8495BBBD19A6806B8F85F4294.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.01.30-22.56.51:810][880]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.30-22.56.51:810][880]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.01.30-22.56.51:810][880]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.01.30-22.56.53:430][956]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Art/Models/Shovel/Shovel.Shovel
+[2022.01.30-22.56.58:173][998]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Models/Shovel/Shovel" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Shovel/Shovel.uasset" SILENT=true
+[2022.01.30-22.56.58:199][998]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/ShovelE75AAB8048822CDFFAADC38554CC88C1.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Shovel/Shovel.uasset'
+[2022.01.30-22.56.58:231][998]AssetCheck: New page: Asset Save: Shovel
+[2022.01.30-22.56.58:231][998]LogContentValidation: Display: Validating StaticMesh /Game/Art/Models/Shovel/Shovel.Shovel
+[2022.01.30-22.56.59:480][ 50]LogSlate: Window 'Shovel' being destroyed
+[2022.01.30-22.56.59:522][ 50]LogSlate: Window 'Shovel' being destroyed
+[2022.01.30-22.56.59:531][ 50]LogWorld: UWorld::CleanupWorld for World_34, bSessionEnded=true, bCleanupResources=true
+[2022.01.30-22.56.59:531][ 50]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.01.30-22.57.02:168][152]LogUObjectHash: Compacting FUObjectHashTables data took   3.01ms
+[2022.01.30-22.57.02:322][152]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_RefinateWoodCube1412044C4208F36F223C5AA6E22770E1.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/BP_RefinateWoodCube.uasset'
+[2022.01.30-22.57.03:003][152]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Shovel_Shovel_BaseColor4DCBA11B4CC70B61700737B75E56A6CC.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Shovel/Shovel_Shovel_BaseColor.uasset'
+[2022.01.30-22.57.03:396][152]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Shovel_Shovel_Normal149152E7408A3FC610B67CAEB6EDD741.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Shovel/Shovel_Shovel_Normal.uasset'
+[2022.01.30-22.57.04:229][152]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Shovel_Shovel_OcclusionRoughness00B442DF45B3C1EB8622CF9E978D377A.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Shovel/Shovel_Shovel_OcclusionRoughnessMetallic.uasset'
+[2022.01.30-22.57.05:035][152]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Shovel_Shovel_BaseColorDA24704B410D95703D2B589D9741F4C6.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Shovel/textures/Shovel_Shovel_BaseColor.uasset'
+[2022.01.30-22.57.05:607][152]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Shovel_Shovel_Normal516D4D7844CED8EC8626D7981DF26F9C.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Shovel/textures/Shovel_Shovel_Normal.uasset'
+[2022.01.30-22.57.06:433][152]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Shovel_Shovel_OcclusionRoughness43B381F64D91E8452F51A0B38153B8F3.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Models/Shovel/textures/Shovel_Shovel_OcclusionRoughnessMetallic.uasset'
+[2022.01.30-22.57.06:621][152]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.30-22.57.06:621][152]LogContentValidation: Display: Validating Texture2D /Game/Art/Models/Shovel/textures/Shovel_Shovel_OcclusionRoughnessMetallic.Shovel_Shovel_OcclusionRoughnessMetallic
+[2022.01.30-22.57.06:622][152]LogContentValidation: Display: Validating Texture2D /Game/Art/Models/Shovel/textures/Shovel_Shovel_Normal.Shovel_Shovel_Normal
+[2022.01.30-22.57.06:622][152]LogContentValidation: Display: Validating Texture2D /Game/Art/Models/Shovel/textures/Shovel_Shovel_BaseColor.Shovel_Shovel_BaseColor
+[2022.01.30-22.57.06:622][152]LogContentValidation: Display: Validating Texture2D /Game/Art/Models/Shovel/Shovel_Shovel_OcclusionRoughnessMetallic.Shovel_Shovel_OcclusionRoughnessMetallic
+[2022.01.30-22.57.06:623][152]LogContentValidation: Display: Validating Texture2D /Game/Art/Models/Shovel/Shovel_Shovel_Normal.Shovel_Shovel_Normal
+[2022.01.30-22.57.06:623][152]LogContentValidation: Display: Validating Texture2D /Game/Art/Models/Shovel/Shovel_Shovel_BaseColor.Shovel_Shovel_BaseColor
+[2022.01.30-22.57.06:624][152]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Objects/BP_RefinateWoodCube.BP_RefinateWoodCube
+[2022.01.30-23.10.49:382][673]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Polvora textura.jpg)
+[2022.01.30-23.10.49:652][673]LogTexture: Display: Building textures: Polvora_textura (AutoDXT, 500X500)
+[2022.01.30-23.11.01:834][102]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Textures/Polvora_textura" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Textures/Polvora_textura.uasset" SILENT=true
+[2022.01.30-23.11.01:916][102]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Polvora_textura1664EA15479B8C08288430BD83BB5E93.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Textures/Polvora_textura.uasset'
+[2022.01.30-23.11.02:281][102]LogUObjectHash: Compacting FUObjectHashTables data took  21.89ms
+[2022.01.30-23.11.02:427][102]LogUObjectHash: Compacting FUObjectHashTables data took   5.32ms
+[2022.01.30-23.11.02:466][102]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2022.01.30-23.11.02:927][102]AssetCheck: New page: Asset Save: Polvora_textura
+[2022.01.30-23.11.02:930][102]LogContentValidation: Display: Validating Texture2D /Game/Art/Textures/Polvora_textura.Polvora_textura
+[2022.01.30-23.11.08:478][305]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2022.01.30-23.11.08:727][305]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScapeD4B6325D4FECC35C373F1E97202A1821.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.01.30-23.11.08:771][305]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.01.30-23.11.08:959][305]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltData70906945476F14FD73DCFE9E2A618CBE.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.01.30-23.11.08:990][305]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.30-23.11.08:990][305]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.01.30-23.11.08:990][305]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.01.30-23.12.39:151][804]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Sand Texture/Sand_Beach_vd3lecfs_surface_Preview.png)
+[2022.01.30-23.12.39:303][804]LogTexture: Display: Building textures: Sand_Beach_vd3lecfs_surface_Preview (AutoDXT, 720X720)
+[2022.01.30-23.12.40:019][804]LogFactory: FactoryCreateFile: DataTable with ReimportDataTableFactory (0 1 C:\Users\theof\Desktop\Sand Texture/vd3lecfs.json)
+[2022.01.30-23.12.48:748][804]LogSlate: Window 'DataTable Options' being destroyed
+[2022.01.30-23.12.48:789][804]LogAssetTools: The import task was canceled.
+[2022.01.30-23.13.02:938][481]LogUObjectHash: Compacting FUObjectHashTables data took   2.04ms
+[2022.01.30-23.13.04:328][481]LogSlate: Window 'Delete Assets' being destroyed
+[2022.01.30-23.13.04:534][481]LogUObjectHash: Compacting FUObjectHashTables data took   2.38ms
+[2022.01.30-23.13.20:626][582]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Sand Texture\vd3lecfs_2K_Albedo.jpg)
+[2022.01.30-23.13.20:845][582]LogTexture: Display: Building textures: vd3lecfs_2K_Albedo (AutoDXT, 2048X2048)
+[2022.01.30-23.13.26:370][582]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Sand Texture\vd3lecfs_2K_AO.jpg)
+[2022.01.30-23.13.26:543][582]LogTexture: Display: Building textures: vd3lecfs_2K_AO (AutoDXT, 2048X2048)
+[2022.01.30-23.13.28:454][582]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Sand Texture\vd3lecfs_2K_Displacement.jpg)
+[2022.01.30-23.13.28:511][582]LogTexture: Display: Building textures: vd3lecfs_2K_Displacement (AutoDXT, 2048X2048)
+[2022.01.30-23.13.29:367][582]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Sand Texture\vd3lecfs_2K_Normal.jpg)
+[2022.01.30-23.13.29:483][582]LogTexture: Display: Building textures: vd3lecfs_2K_Normal (BC5, 2048X2048)
+[2022.01.30-23.13.30:256][582]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Sand Texture\vd3lecfs_2K_Roughness.jpg)
+[2022.01.30-23.13.30:365][582]LogTexture: Display: Building textures: vd3lecfs_2K_Roughness (AutoDXT, 2048X2048)
+[2022.01.30-23.13.33:862][582]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\theof\Desktop\Sand Texture\Sand_Beach_vd3lecfs_surface_Preview.png)
+[2022.01.30-23.13.33:912][582]LogTexture: Display: Building textures: Sand_Beach_vd3lecfs_surface_Preview (AutoDXT, 720X720)
+[2022.01.30-23.14.03:969][608]LogMaterial: Display: Missing cached shader map for material M_Stone_2, compiling. 
+[2022.01.30-23.14.04:251][608]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 21
+[2022.01.30-23.14.04:251][608]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.30-23.14.04:252][608]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 5
+[2022.01.30-23.14.11:838][872]LogContentBrowser: Attempting asset rename: M_Stone_2 -> M_Sand
+[2022.01.30-23.14.19:217][872]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/M_Sand" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset" SILENT=true
+[2022.01.30-23.14.19:250][872]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/M_SandE5F0616A4BF8EDFE456D8AB5C16A8304.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset'
+[2022.01.30-23.14.19:409][872]LogUObjectHash: Compacting FUObjectHashTables data took   3.86ms
+[2022.01.30-23.14.19:452][872]LogUObjectHash: Compacting FUObjectHashTables data took   2.79ms
+[2022.01.30-23.14.19:501][872]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2022.01.30-23.14.19:572][872]AssetCheck: New page: Asset Save: M_Sand
+[2022.01.30-23.14.19:572][872]LogContentValidation: Display: Validating Material /Game/Art/Materials/M_Sand.M_Sand
+[2022.01.30-23.14.25:909][ 51]LogContentBrowser: Deferred new asset file creation: M_Sand_Inst
+[2022.01.30-23.14.26:169][ 51]LogContentBrowser: Creating deferred item: M_Sand_Inst
+[2022.01.30-23.14.30:359][168]LogContentBrowser: Attempting asset rename: M_Sand_Inst -> MI_Sand
+[2022.01.30-23.14.30:371][168]LogContentBrowser: End creating deferred item M_Sand_Inst
+[2022.01.30-23.15.00:835][111]LogContentBrowser: Attempting asset rename: MI_Sand -> MI_Sand
+[2022.01.30-23.15.17:951][616]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/Art/Materials/M_Sand.M_Sand
+[2022.01.30-23.15.18:003][616]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.15.19:885][616]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.15.19:943][616]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.15.19:944][616]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.15.19:944][616]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.15.19:959][616]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.15.20:028][616]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.30-23.15.35:387][893]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 15
+[2022.01.30-23.15.39:355][971]LogSlate: Window 'M_Sand' being destroyed
+[2022.01.30-23.15.40:651][ 15]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 14
+[2022.01.30-23.15.40:836][ 22]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 13
+[2022.01.30-23.15.48:331][237]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 12
+[2022.01.30-23.15.48:331][237]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 11
+[2022.01.30-23.15.48:342][237]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.30-23.16.04:424][803]LogContentBrowser: Attempting asset rename: vd3lecfs_2K_Albedo -> Sand_Albedo
+[2022.01.30-23.16.05:863][803]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Sand_Albedo4B96514B440154A95BAD2484FFB9473E.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Textures/Sand_Texture/Sand_Albedo.uasset'
+[2022.01.30-23.16.06:521][803]LogUObjectHash: Compacting FUObjectHashTables data took   5.44ms
+[2022.01.30-23.16.06:949][803]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.16.06:949][803]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.30-23.16.06:949][803]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 7
+[2022.01.30-23.16.07:025][803]LogUObjectHash: Compacting FUObjectHashTables data took   2.92ms
+[2022.01.30-23.16.07:268][803]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2022.01.30-23.16.07:449][803]AssetCheck: New page: Asset Save: Sand_Albedo
+[2022.01.30-23.16.07:449][803]LogContentValidation: Display: Validating Texture2D /Game/Art/Textures/Sand_Texture/Sand_Albedo.Sand_Albedo
+[2022.01.30-23.16.14:867][ 43]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 6
+[2022.01.30-23.16.14:893][ 43]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 5
+[2022.01.30-23.16.14:893][ 43]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 4
+[2022.01.30-23.16.19:063][215]LogContentBrowser: Attempting asset rename: vd3lecfs_2K_AO -> Sand_AO
+[2022.01.30-23.16.19:875][215]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Sand_AO4E74E0114071165AB9613F86970BE501.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Textures/Sand_Texture/Sand_AO.uasset'
+[2022.01.30-23.16.20:094][215]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
+[2022.01.30-23.16.20:166][215]LogUObjectHash: Compacting FUObjectHashTables data took   3.10ms
+[2022.01.30-23.16.20:217][215]LogUObjectHash: Compacting FUObjectHashTables data took   0.80ms
+[2022.01.30-23.16.20:343][215]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 3
+[2022.01.30-23.16.20:343][215]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 2
+[2022.01.30-23.16.20:343][215]AssetCheck: New page: Asset Save: Sand_AO
+[2022.01.30-23.16.20:343][215]LogContentValidation: Display: Validating Texture2D /Game/Art/Textures/Sand_Texture/Sand_AO.Sand_AO
+[2022.01.30-23.16.24:278][336]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 1
+[2022.01.30-23.16.24:394][338]MaterialEditorStats: Base pass shader: 119 instructions
+[2022.01.30-23.16.24:394][338]MaterialEditorStats: Base pass shader with Surface Lightmap: 146 instructions
+[2022.01.30-23.16.24:394][338]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 193 instructions
+[2022.01.30-23.16.24:395][338]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.30-23.16.24:395][338]MaterialEditorStats: Texture samplers: 3/16
+[2022.01.30-23.16.24:395][338]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.30-23.16.24:395][338]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.30-23.16.34:797][758]LogContentBrowser: Attempting asset rename: vd3lecfs_2K_Displacement -> Sand_Displacement
+[2022.01.30-23.16.35:350][758]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Sand_DisplacementFDB38F3E4D82492FAF12F09E0EB8E7E8.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Textures/Sand_Texture/Sand_Displacement.uasset'
+[2022.01.30-23.16.35:554][758]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2022.01.30-23.16.35:603][758]LogUObjectHash: Compacting FUObjectHashTables data took   3.41ms
+[2022.01.30-23.16.35:640][758]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2022.01.30-23.16.35:740][758]AssetCheck: New page: Asset Save: Sand_Displacement
+[2022.01.30-23.16.35:740][758]LogContentValidation: Display: Validating Texture2D /Game/Art/Textures/Sand_Texture/Sand_Displacement.Sand_Displacement
+[2022.01.30-23.16.40:426][907]LogContentBrowser: Deferred new asset file creation: vd3lecfs_2K_Normal1
+[2022.01.30-23.16.40:461][907]LogContentBrowser: Creating deferred item: vd3lecfs_2K_Normal1
+[2022.01.30-23.16.42:547][  0]LogContentBrowser: Attempting asset rename: vd3lecfs_2K_Normal1 -> vd3lecfs_2K_Normal1
+[2022.01.30-23.16.42:657][  0]LogContentBrowser: End creating deferred item vd3lecfs_2K_Normal1
+[2022.01.30-23.16.46:618][134]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2022.01.30-23.16.47:784][134]LogSlate: Window 'Delete Assets' being destroyed
+[2022.01.30-23.16.47:983][134]LogUObjectHash: Compacting FUObjectHashTables data took   8.96ms
+[2022.01.30-23.16.55:597][445]LogContentBrowser: Attempting asset rename: vd3lecfs_2K_Normal -> Sand_Normal
+[2022.01.30-23.16.56:474][445]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Sand_NormalD434FEE249F84D328CF9E99B0D0832AF.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Textures/Sand_Texture/Sand_Normal.uasset'
+[2022.01.30-23.16.56:633][445]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2022.01.30-23.16.56:669][445]LogUObjectHash: Compacting FUObjectHashTables data took   1.41ms
+[2022.01.30-23.16.56:703][445]LogUObjectHash: Compacting FUObjectHashTables data took   0.80ms
+[2022.01.30-23.16.56:795][445]AssetCheck: New page: Asset Save: Sand_Normal
+[2022.01.30-23.16.56:795][445]LogContentValidation: Display: Validating Texture2D /Game/Art/Textures/Sand_Texture/Sand_Normal.Sand_Normal
+[2022.01.30-23.17.04:621][753]LogContentBrowser: Attempting asset rename: vd3lecfs_2K_Roughness -> Sand_Roughness
+[2022.01.30-23.17.05:217][753]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Sand_RoughnessE2CF13C149EBD897F776B782ACC081A9.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Textures/Sand_Texture/Sand_Roughness.uasset'
+[2022.01.30-23.17.05:345][753]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
+[2022.01.30-23.17.05:381][753]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2022.01.30-23.17.05:408][753]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2022.01.30-23.17.05:475][753]AssetCheck: New page: Asset Save: Sand_Roughness
+[2022.01.30-23.17.05:475][753]LogContentValidation: Display: Validating Texture2D /Game/Art/Textures/Sand_Texture/Sand_Roughness.Sand_Roughness
+[2022.01.30-23.17.14:177][ 34]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.17.14:192][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.17.14:192][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.17.14:192][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.17.14:192][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2022.01.30-23.17.14:214][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.30-23.17.14:223][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2022.01.30-23.17.14:263][ 34]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.17.14:284][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2022.01.30-23.17.14:323][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.30-23.17.14:332][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2022.01.30-23.17.14:345][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2022.01.30-23.17.14:474][ 34]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.17.14:520][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_3, compiling. 
+[2022.01.30-23.17.14:550][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.30-23.17.14:557][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2022.01.30-23.17.14:566][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2022.01.30-23.17.14:575][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_3, compiling. 
+[2022.01.30-23.17.14:602][ 34]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.17.14:624][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
+[2022.01.30-23.17.14:837][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.30-23.17.14:847][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2022.01.30-23.17.14:860][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2022.01.30-23.17.14:868][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_3, compiling. 
+[2022.01.30-23.17.14:878][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
+[2022.01.30-23.17.14:908][ 34]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.17.14:929][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2022.01.30-23.17.14:962][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.30-23.17.14:971][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2022.01.30-23.17.14:982][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2022.01.30-23.17.14:992][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_3, compiling. 
+[2022.01.30-23.17.15:001][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
+[2022.01.30-23.17.15:011][ 34]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2022.01.30-23.17.19:515][187]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.17.22:465][293]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 35
+[2022.01.30-23.17.25:114][396]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 34
+[2022.01.30-23.17.25:669][416]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 33
+[2022.01.30-23.17.32:599][681]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 32
+[2022.01.30-23.17.33:094][699]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.17.37:724][877]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.17.37:766][877]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2022.01.30-23.17.37:892][882]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 31
+[2022.01.30-23.17.37:919][883]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 30
+[2022.01.30-23.17.42:061][ 43]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.17.42:105][ 43]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2022.01.30-23.17.42:731][ 66]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 31
+[2022.01.30-23.17.45:528][176]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 30
+[2022.01.30-23.17.48:028][279]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 29
+[2022.01.30-23.17.51:973][439]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 28
+[2022.01.30-23.17.55:058][544]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.17.55:082][544]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2022.01.30-23.17.59:190][704]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 27
+[2022.01.30-23.18.02:692][844]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 26
+[2022.01.30-23.18.03:252][867]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 25
+[2022.01.30-23.18.08:501][ 81]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 24
+[2022.01.30-23.18.14:112][297]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 23
+[2022.01.30-23.18.17:283][421]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 22
+[2022.01.30-23.18.19:388][500]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.18.19:442][500]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2022.01.30-23.18.19:548][502]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 25
+[2022.01.30-23.18.24:955][685]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 24
+[2022.01.30-23.18.29:353][858]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 23
+[2022.01.30-23.18.35:391][ 82]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.30-23.18.35:392][ 82]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.18.35:428][ 82]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
+[2022.01.30-23.18.38:788][212]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 25
+[2022.01.30-23.18.42:476][360]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 24
+[2022.01.30-23.18.51:557][720]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 23
+[2022.01.30-23.18.54:291][830]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 22
+[2022.01.30-23.18.54:434][835]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 21
+[2022.01.30-23.19.03:330][201]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 20
+[2022.01.30-23.19.05:713][293]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.19.09:131][432]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 19
+[2022.01.30-23.19.10:410][483]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 18
+[2022.01.30-23.19.14:442][640]LogMaterialEditor: Saving and Compiling material M_Sand
+[2022.01.30-23.19.16:480][640]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 17
+[2022.01.30-23.19.16:480][640]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 16
+[2022.01.30-23.19.16:480][640]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 15
+[2022.01.30-23.19.16:480][640]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 14
+[2022.01.30-23.19.16:480][640]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.30-23.19.16:511][640]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 1
+[2022.01.30-23.19.16:511][640]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.19.16:831][640]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.19.17:063][640]LogUObjectHash: Compacting FUObjectHashTables data took   3.13ms
+[2022.01.30-23.19.17:155][640]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.19.17:731][640]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 34
+[2022.01.30-23.19.17:731][640]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 33
+[2022.01.30-23.19.17:731][640]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 32
+[2022.01.30-23.19.18:847][640]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 31
+[2022.01.30-23.19.18:847][640]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 30
+[2022.01.30-23.19.18:847][640]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 29
+[2022.01.30-23.19.19:964][640]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 28
+[2022.01.30-23.19.20:522][640]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 27
+[2022.01.30-23.19.20:522][640]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 26
+[2022.01.30-23.19.21:080][640]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 25
+[2022.01.30-23.19.21:080][640]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 24
+[2022.01.30-23.19.21:638][640]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 23
+[2022.01.30-23.19.22:196][640]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 22
+[2022.01.30-23.19.22:196][640]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 21
+[2022.01.30-23.19.22:196][640]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 13
+[2022.01.30-23.19.22:451][640]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.30-23.19.22:457][640]TextureStreamingBuild: Display: Compiling optional shaders took 5.316 seconds.
+[2022.01.30-23.19.26:480][640]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 5
+[2022.01.30-23.19.27:505][640]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2022.01.30-23.19.30:458][640]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 3
+[2022.01.30-23.19.31:008][640]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 1
+[2022.01.30-23.19.34:812][640]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/M_Sand" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset" SILENT=true
+[2022.01.30-23.19.34:824][640]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/M_Sand407771DE46C33A55D97E58B4C7F740EA.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset'
+[2022.01.30-23.19.34:871][640]AssetCheck: New page: Asset Save: M_Sand
+[2022.01.30-23.19.34:871][640]LogContentValidation: Display: Validating Material /Game/Art/Materials/M_Sand.M_Sand
+[2022.01.30-23.19.34:874][640]MaterialEditorStats: Base pass shader: 128 instructions
+[2022.01.30-23.19.34:874][640]MaterialEditorStats: Base pass shader with Surface Lightmap: 159 instructions
+[2022.01.30-23.19.34:874][640]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 206 instructions
+[2022.01.30-23.19.34:874][640]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.30-23.19.34:874][640]MaterialEditorStats: Texture samplers: 7/16
+[2022.01.30-23.19.34:874][640]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(4)
+[2022.01.30-23.19.34:874][640]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.30-23.20.18:187][107]LogMaterialEditor: Saving and Compiling material M_Sand
+[2022.01.30-23.20.19:000][107]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.20.19:070][107]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.20.19:070][107]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.20.19:070][107]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.20.19:101][107]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.20.19:227][107]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2022.01.30-23.20.19:273][107]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.20.20:944][107]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 31
+[2022.01.30-23.20.20:944][107]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 30
+[2022.01.30-23.20.20:944][107]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 29
+[2022.01.30-23.20.21:499][107]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 28
+[2022.01.30-23.20.22:602][107]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 27
+[2022.01.30-23.20.22:602][107]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 26
+[2022.01.30-23.20.23:161][107]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 25
+[2022.01.30-23.20.23:161][107]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 24
+[2022.01.30-23.20.24:278][107]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 23
+[2022.01.30-23.20.24:278][107]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 22
+[2022.01.30-23.20.24:496][107]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 21
+[2022.01.30-23.20.24:496][107]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.30-23.20.24:496][107]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-23.20.24:505][107]TextureStreamingBuild: Display: Compiling optional shaders took 5.243 seconds.
+[2022.01.30-23.20.24:559][107]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2022.01.30-23.20.27:388][107]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 5
+[2022.01.30-23.20.29:044][107]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 3
+[2022.01.30-23.20.29:596][107]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
+[2022.01.30-23.20.31:780][107]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/M_Sand" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset" SILENT=true
+[2022.01.30-23.20.31:788][107]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/M_Sand713068DA4C54B3F024359A8CB1639AAF.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset'
+[2022.01.30-23.20.31:841][107]AssetCheck: New page: Asset Save: M_Sand
+[2022.01.30-23.20.31:841][107]LogContentValidation: Display: Validating Material /Game/Art/Materials/M_Sand.M_Sand
+[2022.01.30-23.20.40:090][385]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.20.40:163][386]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.20.40:163][386]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.20.40:163][386]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.20.44:159][541]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.20.54:823][998]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.20.55:217][ 14]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.30-23.20.56:885][ 85]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-23.20.56:910][ 85]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.20.56:941][ 85]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.21.10:156][634]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 11
+[2022.01.30-23.21.11:756][702]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.21.11:788][702]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.21.11:804][702]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.21.12:522][734]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.30-23.21.13:577][776]LogMaterialEditor: Saving and Compiling material M_Sand
+[2022.01.30-23.21.14:744][776]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.21.14:854][776]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.21.14:991][776]LogUObjectHash: Compacting FUObjectHashTables data took   2.92ms
+[2022.01.30-23.21.15:033][776]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.21.15:597][776]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 34
+[2022.01.30-23.21.15:597][776]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 33
+[2022.01.30-23.21.15:597][776]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 32
+[2022.01.30-23.21.16:701][776]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 31
+[2022.01.30-23.21.16:701][776]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 30
+[2022.01.30-23.21.16:701][776]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 29
+[2022.01.30-23.21.17:247][776]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 28
+[2022.01.30-23.21.18:345][776]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 27
+[2022.01.30-23.21.18:345][776]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 26
+[2022.01.30-23.21.18:896][776]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 25
+[2022.01.30-23.21.18:896][776]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 24
+[2022.01.30-23.21.19:448][776]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 23
+[2022.01.30-23.21.19:448][776]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 22
+[2022.01.30-23.21.19:448][776]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 21
+[2022.01.30-23.21.19:756][776]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.30-23.21.19:756][776]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.30-23.21.19:762][776]TextureStreamingBuild: Display: Compiling optional shaders took 4.739 seconds.
+[2022.01.30-23.21.19:806][776]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2022.01.30-23.21.22:669][776]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 5
+[2022.01.30-23.21.24:331][776]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 3
+[2022.01.30-23.21.24:885][776]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
+[2022.01.30-23.21.26:759][776]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/M_Sand" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset" SILENT=true
+[2022.01.30-23.21.26:777][776]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/M_SandCEBC1C194191DEA7C96663BC34256B05.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset'
+[2022.01.30-23.21.26:842][776]AssetCheck: New page: Asset Save: M_Sand
+[2022.01.30-23.21.26:842][776]LogContentValidation: Display: Validating Material /Game/Art/Materials/M_Sand.M_Sand
+[2022.01.30-23.21.26:845][776]MaterialEditorStats: Base pass shader: 128 instructions
+[2022.01.30-23.21.26:848][776]MaterialEditorStats: Base pass shader with Surface Lightmap: 159 instructions
+[2022.01.30-23.21.26:848][776]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 206 instructions
+[2022.01.30-23.21.26:848][776]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.30-23.21.26:848][776]MaterialEditorStats: Texture samplers: 7/16
+[2022.01.30-23.21.26:848][776]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(4)
+[2022.01.30-23.21.26:848][776]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.30-23.21.30:048][899]LogUObjectHash: Compacting FUObjectHashTables data took   0.45ms
+[2022.01.30-23.21.30:072][899]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/BuildingScape' took 0.065
+[2022.01.30-23.21.30:084][899]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Art/Textures/Sand_Texture/Sand_Beach_vd3lecfs_surface_Preview] ([1] browsable assets)...
+[2022.01.30-23.21.30:096][899]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Art/Textures/Sand_Texture/Sand_Beach_vd3lecfs_surface_Preview.Sand_Beach_vd3lecfs_surface_Preview]
+[2022.01.30-23.21.30:096][899]OBJ SavePackage: Finished generating thumbnails for package [/Game/Art/Textures/Sand_Texture/Sand_Beach_vd3lecfs_surface_Preview]
+[2022.01.30-23.21.30:112][899]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Sand_Beach_vd3lecfs_surface_Prev1687586C4D82A4BE1DEDF8A0CCC336B9.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Autosaves/Game/Art/Textures/Sand_Texture/Sand_Beach_vd3lecfs_surface_Preview_Auto9.uasset'
+[2022.01.30-23.21.30:114][899]LogFileHelpers: Auto-saving content packages took 0.040
+[2022.01.30-23.21.41:708][326]LogActorFactory: Actor Factory created Sphere
+[2022.01.30-23.21.42:919][374]LogActorFactory: Actor Factory created Sphere
+[2022.01.30-23.23.11:717][738]LogUObjectHash: Compacting FUObjectHashTables data took   2.04ms
+[2022.01.30-23.23.12:038][738]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape053314F244E10D7FC0C79C9A7E2E6110.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.01.30-23.23.12:064][738]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.01.30-23.23.12:287][738]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltData435B95A54E25633433D2BF9DBF79A7AA.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.01.30-23.23.12:316][738]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.30-23.23.12:316][738]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.01.30-23.23.12:316][738]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.01.30-23.23.41:370][927]Cmd: EDIT COPY
+[2022.01.30-23.23.41:661][930]Cmd: EDIT PASTE
+[2022.01.30-23.24.36:824][ 84]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Sphere)
+[2022.01.30-23.24.46:285][475]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.24.46:318][476]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.24.46:318][476]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.24.46:318][476]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.24.47:162][509]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.24.48:167][551]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.25.04:164][191]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.30-23.25.07:495][323]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 10
+[2022.01.30-23.25.19:099][786]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-23.25.22:286][909]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-23.25.23:870][968]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2022.01.30-23.25.37:119][485]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 6
+[2022.01.30-23.25.37:517][499]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 5
+[2022.01.30-23.25.43:736][730]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.25.45:818][811]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.25.47:876][891]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.25.47:911][891]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2022.01.30-23.25.51:122][ 23]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.25.51:151][ 23]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.25.52:274][ 69]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.25.52:313][ 69]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.25.52:884][ 92]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 15
+[2022.01.30-23.25.54:294][145]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.25.54:960][171]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 14
+[2022.01.30-23.25.57:704][275]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.25.57:738][275]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2022.01.30-23.25.59:786][357]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.02:030][443]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.02:079][443]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
+[2022.01.30-23.26.02:429][457]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 21
+[2022.01.30-23.26.03:156][486]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 20
+[2022.01.30-23.26.04:784][551]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.04:814][551]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
+[2022.01.30-23.26.06:547][618]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 19
+[2022.01.30-23.26.06:628][618]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.06:835][618]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2022.01.30-23.26.07:193][627]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 19
+[2022.01.30-23.26.09:987][727]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.10:020][727]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_5, compiling. 
+[2022.01.30-23.26.10:455][744]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 18
+[2022.01.30-23.26.12:318][811]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.12:912][811]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_4, compiling. 
+[2022.01.30-23.26.13:023][815]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 19
+[2022.01.30-23.26.13:027][815]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 18
+[2022.01.30-23.26.13:027][815]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 17
+[2022.01.30-23.26.14:950][890]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.14:979][890]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_2, compiling. 
+[2022.01.30-23.26.20:202][101]LogMaterialEditor: Saving and Compiling material M_Sand
+[2022.01.30-23.26.21:392][101]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 20
+[2022.01.30-23.26.21:392][101]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 19
+[2022.01.30-23.26.21:392][101]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 18
+[2022.01.30-23.26.21:417][101]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.21:539][101]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.21:709][101]LogUObjectHash: Compacting FUObjectHashTables data took   4.03ms
+[2022.01.30-23.26.21:738][101]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.26.22:298][101]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 40
+[2022.01.30-23.26.22:298][101]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 39
+[2022.01.30-23.26.22:298][101]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 38
+[2022.01.30-23.26.22:852][101]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 37
+[2022.01.30-23.26.23:411][101]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 36
+[2022.01.30-23.26.23:411][101]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 35
+[2022.01.30-23.26.23:971][101]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 34
+[2022.01.30-23.26.23:971][101]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 33
+[2022.01.30-23.26.23:971][101]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 32
+[2022.01.30-23.26.25:079][101]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 31
+[2022.01.30-23.26.25:079][101]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 30
+[2022.01.30-23.26.25:079][101]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 29
+[2022.01.30-23.26.25:630][101]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 28
+[2022.01.30-23.26.26:729][101]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 27
+[2022.01.30-23.26.26:729][101]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 26
+[2022.01.30-23.26.27:280][101]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 25
+[2022.01.30-23.26.27:280][101]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 24
+[2022.01.30-23.26.27:833][101]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 23
+[2022.01.30-23.26.27:833][101]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 22
+[2022.01.30-23.26.27:833][101]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 21
+[2022.01.30-23.26.28:302][101]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 13
+[2022.01.30-23.26.28:302][101]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.30-23.26.28:307][101]TextureStreamingBuild: Display: Compiling optional shaders took 6.579 seconds.
+[2022.01.30-23.26.28:369][101]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2022.01.30-23.26.31:200][101]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 5
+[2022.01.30-23.26.32:861][101]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 3
+[2022.01.30-23.26.33:414][101]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 1
+[2022.01.30-23.26.35:391][101]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/M_Sand" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset" SILENT=true
+[2022.01.30-23.26.35:408][101]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/M_Sand76381DF34B86AFF5C8597FB96E4D16BE.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset'
+[2022.01.30-23.26.35:451][101]AssetCheck: New page: Asset Save: M_Sand
+[2022.01.30-23.26.35:451][101]LogContentValidation: Display: Validating Material /Game/Art/Materials/M_Sand.M_Sand
+[2022.01.30-23.26.35:451][101]MaterialEditorStats: Base pass shader: 129 instructions
+[2022.01.30-23.26.35:452][101]MaterialEditorStats: Base pass shader with Surface Lightmap: 160 instructions
+[2022.01.30-23.26.35:452][101]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 207 instructions
+[2022.01.30-23.26.35:452][101]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.30-23.26.35:452][101]MaterialEditorStats: Texture samplers: 7/16
+[2022.01.30-23.26.35:452][101]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(4)
+[2022.01.30-23.26.35:452][101]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.30-23.26.41:694][349]LogUObjectHash: Compacting FUObjectHashTables data took   0.46ms
+[2022.01.30-23.26.41:915][349]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape1A68A1514A986D132139B395FEA02FA1.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.01.30-23.26.41:938][349]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.01.30-23.26.42:093][349]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltData839B4FF74F27332B20F9FCA6A6E52FCA.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.01.30-23.26.42:112][349]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.30-23.26.42:112][349]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.01.30-23.26.42:112][349]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.01.30-23.26.55:156][876]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.55:183][876]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.55:200][876]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.26.55:200][876]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.26.55:200][876]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.26.57:457][959]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.57:487][959]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.26.58:940][ 17]LogMaterialEditor: Saving and Compiling material M_Sand
+[2022.01.30-23.27.00:130][ 17]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.27.00:237][ 17]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.27.00:364][ 17]LogUObjectHash: Compacting FUObjectHashTables data took   3.11ms
+[2022.01.30-23.27.00:391][ 17]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 32
+[2022.01.30-23.27.00:401][ 17]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.27.00:966][ 17]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 33
+[2022.01.30-23.27.00:966][ 17]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 32
+[2022.01.30-23.27.02:070][ 17]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 31
+[2022.01.30-23.27.02:070][ 17]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 30
+[2022.01.30-23.27.02:070][ 17]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 29
+[2022.01.30-23.27.02:621][ 17]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 28
+[2022.01.30-23.27.03:723][ 17]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 27
+[2022.01.30-23.27.03:723][ 17]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 26
+[2022.01.30-23.27.03:723][ 17]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 25
+[2022.01.30-23.27.04:274][ 17]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 24
+[2022.01.30-23.27.04:822][ 17]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 23
+[2022.01.30-23.27.04:822][ 17]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 22
+[2022.01.30-23.27.04:822][ 17]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 21
+[2022.01.30-23.27.05:291][ 17]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.30-23.27.05:291][ 17]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-23.27.05:295][ 17]TextureStreamingBuild: Display: Compiling optional shaders took 4.902 seconds.
+[2022.01.30-23.27.05:351][ 17]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2022.01.30-23.27.08:192][ 17]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 5
+[2022.01.30-23.27.09:842][ 17]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 3
+[2022.01.30-23.27.10:942][ 17]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
+[2022.01.30-23.27.12:474][ 17]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/M_Sand" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset" SILENT=true
+[2022.01.30-23.27.12:481][ 17]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/M_Sand2B0826734A987726429610B2F5121109.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset'
+[2022.01.30-23.27.12:548][ 17]AssetCheck: New page: Asset Save: M_Sand
+[2022.01.30-23.27.12:548][ 17]LogContentValidation: Display: Validating Material /Game/Art/Materials/M_Sand.M_Sand
+[2022.01.30-23.27.12:549][ 17]MaterialEditorStats: Base pass shader: 129 instructions
+[2022.01.30-23.27.12:549][ 17]MaterialEditorStats: Base pass shader with Surface Lightmap: 160 instructions
+[2022.01.30-23.27.12:549][ 17]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 207 instructions
+[2022.01.30-23.27.12:550][ 17]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.30-23.27.12:550][ 17]MaterialEditorStats: Texture samplers: 7/16
+[2022.01.30-23.27.12:550][ 17]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(4)
+[2022.01.30-23.27.12:550][ 17]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.30-23.27.14:529][ 92]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Sphere)
+[2022.01.30-23.27.16:887][191]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2022.01.30-23.27.19:458][291]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Sphere)
+[2022.01.30-23.27.34:084][832]LogActorFactory: Actor Factory created Sphere
+[2022.01.30-23.27.35:301][871]LogActorFactory: Actor Factory created Sphere
+[2022.01.30-23.27.36:186][892]Cmd: DELETE
+[2022.01.30-23.27.36:188][892]Cmd: ACTOR DELETE
+[2022.01.30-23.27.36:273][892]LogEditorActor: Deleted Actor: StaticMeshActor
+[2022.01.30-23.27.36:314][892]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2022.01.30-23.27.36:324][892]LogEditorActor: Deleted 1 Actors (0.128 secs)
+[2022.01.30-23.27.36:758][903]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Sphere)
+[2022.01.30-23.27.37:627][933]Cmd: EDIT COPY
+[2022.01.30-23.27.37:893][943]Cmd: EDIT PASTE
+[2022.01.30-23.27.41:219][ 48]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Sphere2)
+[2022.01.30-23.27.49:960][367]Cmd: DELETE
+[2022.01.30-23.27.49:960][367]Cmd: ACTOR DELETE
+[2022.01.30-23.27.49:993][367]LogEditorActor: Deleted Actor: StaticMeshActor
+[2022.01.30-23.27.50:224][367]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2022.01.30-23.27.50:227][367]LogEditorActor: Deleted 1 Actors (0.267 secs)
+[2022.01.30-23.27.51:085][404]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Sphere3)
+[2022.01.30-23.27.51:340][410]Cmd: DELETE
+[2022.01.30-23.27.51:340][410]Cmd: ACTOR DELETE
+[2022.01.30-23.27.51:388][410]LogEditorActor: Deleted Actor: StaticMeshActor
+[2022.01.30-23.27.51:421][410]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2022.01.30-23.27.51:422][410]LogEditorActor: Deleted 1 Actors (0.081 secs)
+[2022.01.30-23.28.00:507][800]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Sphere)
+[2022.01.30-23.28.04:083][947]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.28.04:099][947]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.28.04:125][948]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.28.04:125][948]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.28.04:125][948]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.28.04:749][974]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.28.04:786][974]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.28.06:190][ 28]LogMaterialEditor: Saving and Compiling material M_Sand
+[2022.01.30-23.28.07:380][ 28]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.28.07:489][ 28]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.28.07:608][ 28]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
+[2022.01.30-23.28.07:629][ 28]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.28.08:198][ 28]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 34
+[2022.01.30-23.28.08:198][ 28]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 33
+[2022.01.30-23.28.09:296][ 28]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 32
+[2022.01.30-23.28.09:296][ 28]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 31
+[2022.01.30-23.28.09:297][ 28]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 30
+[2022.01.30-23.28.10:404][ 28]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 29
+[2022.01.30-23.28.10:404][ 28]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 28
+[2022.01.30-23.28.10:958][ 28]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 27
+[2022.01.30-23.28.11:511][ 28]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 26
+[2022.01.30-23.28.11:511][ 28]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 25
+[2022.01.30-23.28.11:511][ 28]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 24
+[2022.01.30-23.28.12:616][ 28]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 23
+[2022.01.30-23.28.12:616][ 28]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 22
+[2022.01.30-23.28.12:616][ 28]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 21
+[2022.01.30-23.28.12:845][ 28]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 13
+[2022.01.30-23.28.12:847][ 28]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.30-23.28.12:850][ 28]TextureStreamingBuild: Display: Compiling optional shaders took 5.230 seconds.
+[2022.01.30-23.28.12:895][ 28]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2022.01.30-23.28.15:721][ 28]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 5
+[2022.01.30-23.28.17:373][ 28]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 3
+[2022.01.30-23.28.18:475][ 28]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 1
+[2022.01.30-23.28.19:992][ 28]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/M_Sand" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset" SILENT=true
+[2022.01.30-23.28.20:004][ 28]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/M_SandB194277F4E93C759ECB1F4BC20FD5DDD.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Sand.uasset'
+[2022.01.30-23.28.20:061][ 28]AssetCheck: New page: Asset Save: M_Sand
+[2022.01.30-23.28.20:061][ 28]LogContentValidation: Display: Validating Material /Game/Art/Materials/M_Sand.M_Sand
+[2022.01.30-23.28.20:064][ 28]MaterialEditorStats: Base pass shader: 128 instructions
+[2022.01.30-23.28.20:069][ 28]MaterialEditorStats: Base pass shader with Surface Lightmap: 159 instructions
+[2022.01.30-23.28.20:069][ 28]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 206 instructions
+[2022.01.30-23.28.20:069][ 28]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.30-23.28.20:069][ 28]MaterialEditorStats: Texture samplers: 7/16
+[2022.01.30-23.28.20:069][ 28]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(4)
+[2022.01.30-23.28.20:069][ 28]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.30-23.28.43:588][ 15]Cmd: EDIT COPY
+[2022.01.30-23.28.43:794][ 24]Cmd: EDIT PASTE
+[2022.01.30-23.29.09:968][ 21]LogContentBrowser: Deferred new asset file creation: NewMaterial
+[2022.01.30-23.29.10:045][ 21]LogContentBrowser: Creating deferred item: NewMaterial
+[2022.01.30-23.29.13:890][162]LogContentBrowser: Attempting asset rename: NewMaterial -> M
+[2022.01.30-23.29.13:895][162]LogContentBrowser: End creating deferred item NewMaterial
+[2022.01.30-23.29.18:491][294]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2022.01.30-23.29.19:596][294]LogSlate: Window 'Delete Assets' being destroyed
+[2022.01.30-23.29.19:891][294]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2022.01.30-23.29.27:622][526]LogMaterial: Display: Missing cached shader map for material M_Wood_2, compiling. 
+[2022.01.30-23.29.27:673][526]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 21
+[2022.01.30-23.29.27:673][526]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.30-23.29.27:674][526]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 5
+[2022.01.30-23.29.35:876][780]LogContentBrowser: Attempting asset rename: M_Wood_2 -> M_Polvora
+[2022.01.30-23.29.48:867][780]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/M_Polvora" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Polvora.uasset" SILENT=true
+[2022.01.30-23.29.48:890][780]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/M_PolvoraF965929E4714901B085C4FA8D3F15C9A.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Polvora.uasset'
+[2022.01.30-23.29.49:070][780]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2022.01.30-23.29.49:142][780]LogUObjectHash: Compacting FUObjectHashTables data took   3.10ms
+[2022.01.30-23.29.49:194][780]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2022.01.30-23.29.49:281][780]AssetCheck: New page: Asset Save: M_Polvora
+[2022.01.30-23.29.49:281][780]LogContentValidation: Display: Validating Material /Game/Art/Materials/M_Polvora.M_Polvora
+[2022.01.30-23.30.29:967][147]LogContentBrowser: Deferred new asset file creation: M_Polvora_Inst
+[2022.01.30-23.30.30:012][147]LogContentBrowser: Creating deferred item: M_Polvora_Inst
+[2022.01.30-23.30.35:520][431]LogContentBrowser: Attempting asset rename: M_Polvora_Inst -> MI_Polvora
+[2022.01.30-23.30.35:527][431]LogContentBrowser: End creating deferred item M_Polvora_Inst
+[2022.01.30-23.30.40:487][628]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/Art/Materials/M_Polvora.M_Polvora
+[2022.01.30-23.30.40:499][628]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.30.41:162][628]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.30.41:179][628]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.30.41:179][628]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.30.41:179][628]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.30.41:185][628]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.30.41:221][628]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.30-23.30.56:143][272]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 15
+[2022.01.30-23.30.56:854][291]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 14
+[2022.01.30-23.30.56:854][291]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 13
+[2022.01.30-23.30.58:505][370]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.30.58:549][370]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2022.01.30-23.30.58:566][370]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.31.01:938][516]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 15
+[2022.01.30-23.31.02:295][536]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 14
+[2022.01.30-23.31.03:630][606]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.30-23.31.06:809][775]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 12
+[2022.01.30-23.31.08:898][879]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.31.08:898][879]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.31.10:036][934]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.31.12:877][ 79]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.31.12:898][ 79]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2022.01.30-23.31.13:208][ 85]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 15
+[2022.01.30-23.31.14:903][178]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 14
+[2022.01.30-23.31.15:680][221]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.31.16:763][273]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 15
+[2022.01.30-23.31.18:906][394]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.31.19:815][445]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 14
+[2022.01.30-23.31.20:158][465]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.30-23.31.20:193][467]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 12
+[2022.01.30-23.31.23:200][643]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.30-23.31.24:204][702]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 10
+[2022.01.30-23.31.24:325][709]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-23.31.26:000][795]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.31.29:036][957]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.30-23.31.29:175][965]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.31.30:073][ 16]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.30-23.31.35:170][297]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-23.31.35:230][299]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 7
+[2022.01.30-23.31.35:555][317]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 6
+[2022.01.30-23.31.37:737][434]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.31.38:418][471]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.30-23.31.40:972][618]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 10
+[2022.01.30-23.31.42:116][684]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-23.31.45:051][840]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-23.31.45:121][843]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.31.46:643][912]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 11
+[2022.01.30-23.31.46:715][913]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 10
+[2022.01.30-23.31.47:494][952]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.31.48:298][994]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.31.51:455][149]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.30-23.31.51:461][149]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 10
+[2022.01.30-23.31.51:805][168]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-23.31.56:202][426]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.30-23.31.56:423][439]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 7
+[2022.01.30-23.31.57:110][479]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.31.57:127][479]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.30-23.31.57:134][479]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.31.59:229][599]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.32.00:919][690]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.00:958][690]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.02:446][770]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 11
+[2022.01.30-23.32.03:355][820]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.05:109][896]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.30-23.32.05:241][904]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 10
+[2022.01.30-23.32.05:299][907]LogMaterialEditor: Saving and Compiling material M_Polvora
+[2022.01.30-23.32.06:670][907]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-23.32.06:695][907]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.06:837][907]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.07:072][907]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 32
+[2022.01.30-23.32.07:072][907]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 31
+[2022.01.30-23.32.07:081][907]LogUObjectHash: Compacting FUObjectHashTables data took   3.83ms
+[2022.01.30-23.32.07:125][907]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.32.07:693][907]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 32
+[2022.01.30-23.32.08:252][907]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 31
+[2022.01.30-23.32.08:810][907]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 30
+[2022.01.30-23.32.08:810][907]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 29
+[2022.01.30-23.32.09:368][907]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 28
+[2022.01.30-23.32.09:926][907]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 27
+[2022.01.30-23.32.09:926][907]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 26
+[2022.01.30-23.32.10:484][907]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 25
+[2022.01.30-23.32.10:484][907]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 24
+[2022.01.30-23.32.11:042][907]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 23
+[2022.01.30-23.32.11:042][907]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 22
+[2022.01.30-23.32.11:430][907]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 21
+[2022.01.30-23.32.11:430][907]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 13
+[2022.01.30-23.32.11:430][907]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.30-23.32.11:435][907]TextureStreamingBuild: Display: Compiling optional shaders took 4.320 seconds.
+[2022.01.30-23.32.11:483][907]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2022.01.30-23.32.14:348][907]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 5
+[2022.01.30-23.32.15:464][907]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 3
+[2022.01.30-23.32.16:022][907]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
+[2022.01.30-23.32.17:826][907]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/M_Polvora" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Polvora.uasset" SILENT=true
+[2022.01.30-23.32.17:850][907]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/M_Polvora1EECDA8E4A97F911A213FCB5368E30EB.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Polvora.uasset'
+[2022.01.30-23.32.18:145][907]AssetCheck: New page: Asset Save: M_Polvora
+[2022.01.30-23.32.18:145][907]LogContentValidation: Display: Validating Material /Game/Art/Materials/M_Polvora.M_Polvora
+[2022.01.30-23.32.18:146][907]MaterialEditorStats: Base pass shader: 119 instructions
+[2022.01.30-23.32.18:146][907]MaterialEditorStats: Base pass shader with Surface Lightmap: 146 instructions
+[2022.01.30-23.32.18:146][907]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 193 instructions
+[2022.01.30-23.32.18:146][907]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.30-23.32.18:147][907]MaterialEditorStats: Texture samplers: 4/16
+[2022.01.30-23.32.18:147][907]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.30-23.32.18:147][907]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.30-23.32.26:051][362]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.26:065][362]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.26:084][363]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.32.26:084][363]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.32.26:084][363]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.32.30:250][603]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-23.32.30:750][632]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.30:774][632]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.31:084][650]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 11
+[2022.01.30-23.32.31:475][673]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 10
+[2022.01.30-23.32.33:362][780]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.32.36:757][973]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.30-23.32.37:082][991]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2022.01.30-23.32.37:804][ 31]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.37:829][ 31]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.38:203][ 51]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 11
+[2022.01.30-23.32.40:418][177]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.32.44:066][384]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.44:097][384]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.44:406][401]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.32.45:433][458]LogMaterialEditor: Saving and Compiling material M_Polvora
+[2022.01.30-23.32.46:601][458]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.30-23.32.46:601][458]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 9
+[2022.01.30-23.32.46:634][458]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.46:750][458]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.32.46:877][458]LogUObjectHash: Compacting FUObjectHashTables data took   3.33ms
+[2022.01.30-23.32.46:910][458]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.32.47:471][458]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 34
+[2022.01.30-23.32.47:471][458]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 33
+[2022.01.30-23.32.48:023][458]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 32
+[2022.01.30-23.32.48:574][458]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 31
+[2022.01.30-23.32.48:574][458]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 30
+[2022.01.30-23.32.49:130][458]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 29
+[2022.01.30-23.32.49:130][458]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 28
+[2022.01.30-23.32.50:231][458]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 27
+[2022.01.30-23.32.50:231][458]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 26
+[2022.01.30-23.32.50:782][458]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 25
+[2022.01.30-23.32.50:782][458]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 24
+[2022.01.30-23.32.51:331][458]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 23
+[2022.01.30-23.32.51:331][458]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 22
+[2022.01.30-23.32.51:331][458]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 21
+[2022.01.30-23.32.51:886][458]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 13
+[2022.01.30-23.32.51:934][458]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2022.01.30-23.32.51:937][458]TextureStreamingBuild: Display: Compiling optional shaders took 5.038 seconds.
+[2022.01.30-23.32.51:981][458]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2022.01.30-23.32.54:822][458]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 5
+[2022.01.30-23.32.55:929][458]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 3
+[2022.01.30-23.32.57:030][458]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 1
+[2022.01.30-23.32.59:230][458]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/M_Polvora" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Polvora.uasset" SILENT=true
+[2022.01.30-23.32.59:243][458]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/M_Polvora3155C75646F639B85992988023DB6639.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/M_Polvora.uasset'
+[2022.01.30-23.32.59:300][458]AssetCheck: New page: Asset Save: M_Polvora
+[2022.01.30-23.32.59:300][458]LogContentValidation: Display: Validating Material /Game/Art/Materials/M_Polvora.M_Polvora
+[2022.01.30-23.32.59:301][458]MaterialEditorStats: Base pass shader: 119 instructions
+[2022.01.30-23.32.59:301][458]MaterialEditorStats: Base pass shader with Surface Lightmap: 146 instructions
+[2022.01.30-23.32.59:301][458]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 193 instructions
+[2022.01.30-23.32.59:301][458]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.30-23.32.59:301][458]MaterialEditorStats: Texture samplers: 4/16
+[2022.01.30-23.32.59:301][458]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.30-23.32.59:301][458]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.30-23.33.22:512][643]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Sphere2)
+[2022.01.30-23.33.25:642][814]Cmd: TRANSACTION UNDO
+[2022.01.30-23.33.25:643][814]LogEditorTransaction: Undo Move Actors
+[2022.01.30-23.33.25:681][814]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2022.01.30-23.33.25:732][814]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 11
+[2022.01.30-23.33.25:732][814]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2022.01.30-23.33.25:732][814]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
+[2022.01.30-23.33.25:736][814]LogMaterial: Display: Missing cached shader map for material M_Polvora, compiling. 
+[2022.01.30-23.33.59:141][849]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 19
+[2022.01.30-23.34.02:140][959]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 18
+[2022.01.30-23.34.02:315][966]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 17
+[2022.01.30-23.34.07:867][141]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 16
+[2022.01.30-23.34.10:999][243]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 15
+[2022.01.30-23.34.12:363][282]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 14
+[2022.01.30-23.34.15:779][374]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 13
+[2022.01.30-23.34.18:076][449]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 12
+[2022.01.30-23.34.24:744][663]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 11
+[2022.01.30-23.34.26:639][733]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.30-23.34.29:011][821]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.30-23.34.29:079][823]MaterialEditorStats: Base pass shader: 128 instructions
+[2022.01.30-23.34.29:079][823]MaterialEditorStats: Base pass shader with Surface Lightmap: 159 instructions
+[2022.01.30-23.34.29:079][823]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 206 instructions
+[2022.01.30-23.34.29:079][823]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.30-23.34.29:079][823]MaterialEditorStats: Texture samplers: 6/16
+[2022.01.30-23.34.29:079][823]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(4)
+[2022.01.30-23.34.29:079][823]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.30-23.34.43:188][315]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2022.01.30-23.34.47:381][466]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2022.01.30-23.34.48:316][500]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 6
+[2022.01.30-23.34.55:432][759]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 5
+[2022.01.30-23.35.02:967][ 41]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 4
+[2022.01.30-23.35.03:981][ 73]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 3
+[2022.01.30-23.35.08:230][198]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 2
+[2022.01.30-23.35.09:180][219]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 1
+[2022.01.30-23.35.21:996][677]MaterialEditorStats: Base pass shader: 119 instructions
+[2022.01.30-23.35.21:996][677]MaterialEditorStats: Base pass shader with Surface Lightmap: 146 instructions
+[2022.01.30-23.35.21:996][677]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 193 instructions
+[2022.01.30-23.35.21:996][677]MaterialEditorStats: Base pass vertex shader: 46 instructions
+[2022.01.30-23.35.21:997][677]MaterialEditorStats: Texture samplers: 3/16
+[2022.01.30-23.35.21:997][677]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2022.01.30-23.35.21:997][677]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2022.01.30-23.36.34:257][302]LogUObjectHash: Compacting FUObjectHashTables data took   2.88ms
+[2022.01.30-23.36.34:374][302]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2022.01.30-23.36.34:722][302]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape55D4FAC04D23813D0BC2E4A87AE9A524.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.01.30-23.36.34:766][302]LogFileHelpers: Saving map 'BuildingScape' took 0.436
+[2022.01.30-23.36.35:035][302]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Sand_Beach_vd3lecfs_surface_Prev54C020484E159C9E5A2F7A95C9FB08BB.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Textures/Sand_Texture/Sand_Beach_vd3lecfs_surface_Preview.uasset'
+[2022.01.30-23.36.35:098][302]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/MI_Sand" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/MI_Sand.uasset" SILENT=true
+[2022.01.30-23.36.35:111][302]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/MI_SandB9A34C9E49550BE9271EA191D69F8259.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/MI_Sand.uasset'
+[2022.01.30-23.36.35:135][302]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Materials/MI_Polvora" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/MI_Polvora.uasset" SILENT=true
+[2022.01.30-23.36.35:143][302]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/MI_PolvoraFFFE29A5432072D7D42D6EAA95B3D5BC.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Materials/MI_Polvora.uasset'
+[2022.01.30-23.36.35:196][302]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.30-23.36.35:196][302]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.01.30-23.36.35:196][302]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Art/Materials/MI_Polvora.MI_Polvora
+[2022.01.30-23.36.35:196][302]LogContentValidation: Display: Validating Texture2D /Game/Art/Textures/Sand_Texture/Sand_Beach_vd3lecfs_surface_Preview.Sand_Beach_vd3lecfs_surface_Preview
+[2022.01.30-23.36.35:196][302]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Art/Materials/MI_Sand.MI_Sand
+[2022.01.30-23.37.21:196][ 34]MapCheck: New page: Map Check
+[2022.01.30-23.37.21:291][ 34]Cmd: MAP REBUILD ALLVISIBLE
+[2022.01.30-23.37.21:300][ 34]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2022.01.30-23.37.24:511][ 34]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=false
+[2022.01.30-23.37.25:224][ 34]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2022.01.30-23.37.25:224][ 34]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2022.01.30-23.37.25:224][ 34]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2022.01.30-23.37.25:297][ 34]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2022.01.30-23.37.25:323][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.37.25:329][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.37.25:339][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 2
+[2022.01.30-23.37.25:339][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
+[2022.01.30-23.37.25:339][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.37.25:442][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 4
+[2022.01.30-23.37.25:443][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. Is special engine material.
+[2022.01.30-23.37.26:197][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.37.26:202][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.37.26:215][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.37.26:219][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.37.26:223][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.37.26:252][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.37.26:259][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.37.26:264][ 34]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 67
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 66
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 65
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 64
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 63
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 62
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 61
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 60
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 59
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 58
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 57
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 56
+[2022.01.30-23.37.42:101][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 55
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 54
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 53
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 52
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 51
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 50
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 49
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 48
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 47
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 46
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 45
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 44
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 43
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 42
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 41
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 40
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 39
+[2022.01.30-23.37.42:102][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 38
+[2022.01.30-23.37.42:103][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 37
+[2022.01.30-23.37.42:103][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 36
+[2022.01.30-23.37.42:103][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 35
+[2022.01.30-23.37.42:103][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 34
+[2022.01.30-23.37.42:103][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 33
+[2022.01.30-23.37.42:103][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 32
+[2022.01.30-23.37.42:103][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 31
+[2022.01.30-23.37.42:103][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 30
+[2022.01.30-23.37.42:103][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 29
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 28
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 27
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 26
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 25
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 24
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 23
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 22
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 21
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 20
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 19
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 18
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 17
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 16
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 15
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 14
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 13
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 12
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 11
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 10
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 8
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 7
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 6
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 5
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 4
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 3
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 2
+[2022.01.30-23.37.42:104][ 34]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
+[2022.01.30-23.37.42:104][ 34]TextureStreamingBuild: Display: Compiling optional shaders took 16.778 seconds.
+[2022.01.30-23.37.42:928][ 34]LogLevel: Display: Export Material TexCoord Scales took 0.821 seconds.
+[2022.01.30-23.37.42:947][ 34]TextureStreamingBuild: Display: Build Texture Streaming took 0.019 seconds.
+[2022.01.30-23.37.42:972][ 34]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2022.01.30-23.37.43:051][ 34]LightingResults: New page: Lighting Build - 30 ene. 2022 17:37:43
+[2022.01.30-23.37.43:252][ 34]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2022.01.30-23.37.43:280][ 34]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2022.01.30-23.37.43:296][ 34]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2022.01.30-23.37.43:373][ 34]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2022.01.30-23.37.43:373][ 34]LogSwarmInterface: [TryOpenConnection] Local Process ID is 9948
+[2022.01.30-23.37.48:127][ 34]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2022.01.30-23.37.48:135][ 34]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2022.01.30-23.37.48:135][ 34]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2022.01.30-23.37.48:135][ 34]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2022.01.30-23.37.48:135][ 34]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2022.01.30-23.37.48:135][ 34]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2022.01.30-23.37.48:676][ 34]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2022.01.30-23.37.48:679][ 34]MapCheck: New page: BuildingScape - 30 ene. 2022 17:37:48
+[2022.01.30-23.37.48:708][ 34]MapCheck: Error: WorldSettings_1 Maps need lighting rebuilt 
+[2022.01.30-23.37.48:720][ 34]MapCheck: Map check complete: 1 Error(s), 0 Warning(s), took 42,78ms to complete.
+[2022.01.30-23.37.48:725][ 34]LogEditorBuildUtils: Build time 0:27
+[2022.01.30-23.37.50:830][ 35]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer MI_Sand, compiling. 
+[2022.01.30-23.37.50:840][ 35]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 2
+[2022.01.30-23.37.50:840][ 35]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
+[2022.01.30-23.37.50:840][ 35]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer MI_Sand, compiling. 
+[2022.01.30-23.37.50:879][ 36]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 2
+[2022.01.30-23.37.50:879][ 36]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer MI_Polvora, compiling. 
+[2022.01.30-23.37.50:891][ 36]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer MI_Polvora, compiling. 
+[2022.01.30-23.37.52:975][ 41]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 5
+[2022.01.30-23.37.52:975][ 41]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 3
+[2022.01.30-23.37.52:975][ 41]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 1
+[2022.01.30-23.37.53:436][ 47]LogUObjectHash: Compacting FUObjectHashTables data took   5.55ms
+[2022.01.30-23.38.10:582][524]Job is a success!
+[2022.01.30-23.38.11:405][525]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.024s
+[2022.01.30-23.38.11:405][525]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
+[2022.01.30-23.38.11:406][525]LogVolumetricLightmapImport:      BrickData (all levels) 0.2Mb
+[2022.01.30-23.38.11:406][525]LogVolumetricLightmapImport:      Bricks at depth
+[2022.01.30-23.38.11:406][525]LogVolumetricLightmapImport:          0: 2.0% covering 100.0% of volume
+[2022.01.30-23.38.11:406][525]LogVolumetricLightmapImport:          1: 8.2% covering 6.2% of volume
+[2022.01.30-23.38.11:406][525]LogVolumetricLightmapImport:          2: 89.8% covering 1.1% of volume
+[2022.01.30-23.38.11:407][525]LogVolumetricLightmapImport:      Bricks in each level
+[2022.01.30-23.38.11:407][525]LogVolumetricLightmapImport:          BuildingScape 			 49 bricks 	 100.0% (Persistent Level)
+[2022.01.30-23.38.12:451][525]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 512X512)
+[2022.01.30-23.38.12:452][525]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 512X512)
+[2022.01.30-23.38.12:452][525]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 256X256)
+[2022.01.30-23.38.12:452][525]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 256X256)
+[2022.01.30-23.38.12:452][525]LogTexture: Display: Building textures: HQ_Lightmap1_3 (AutoDXT, 64X64)
+[2022.01.30-23.38.12:452][525]LogTexture: Display: Building textures: LQ_Lightmap_1_3 (DXT1, 64X64)
+[2022.01.30-23.38.12:543][525]LogTexture: Display: Building textures: ShadowMapTexture2D_11 (G8, 32X32)
+[2022.01.30-23.38.12:544][525]LogTexture: Display: Building textures: ShadowMapTexture2D_9 (BGRA8, 256X256)
+[2022.01.30-23.38.12:544][525]LogTexture: Display: Building textures: ShadowMapTexture2D_10 (BGRA8, 256X128)
+[2022.01.30-23.38.12:548][525]LogStaticLightingSystem: BuildingScape_BuiltData storing lightmap data for 12 meshes in 3 LightmapResourceClusters (4.0 Meshes per cluster).
+[2022.01.30-23.38.12:561][525]Lightmass on DESKTOP-BPV358H: 17.1 sec total, 2.04 sec importing, 103 ms setup, 1.04 sec photons, 13.7 sec processing, 0 ms extra exporting [644/644 mappings]. Threads: 54.8 sec total, 11.5 sec processing.
+[2022.01.30-23.38.12:681][525]LogUObjectHash: Compacting FUObjectHashTables data took  11.58ms
+[2022.01.30-23.38.12:905][525]LogStaticLightingSystem: Illumination: 29.7 sec (449 ms encoding lightmaps, 51 ms encoding shadowmaps)
+[2022.01.30-23.38.12:905][525]LogStaticLightingSystem: Lightmap texture memory:  0.6 MB (0.1 MB streaming, 0.5 MB non-streaming), 6 textures
+[2022.01.30-23.38.12:905][525]LogStaticLightingSystem: Shadowmap texture memory: 0.5 MB (0.2 MB streaming, 0.3 MB non-streaming), 3 textures
+[2022.01.30-23.38.13:641][525]DumpUnbuiltLightIteractions
+[2022.01.30-23.38.13:641][525]Lights with unbuilt interactions: 0
+[2022.01.30-23.38.13:641][525]
+[2022.01.30-23.38.13:641][525]Primitives with unbuilt interactions: 0
+[2022.01.30-23.38.13:926][525]LogTexture: Display: Building textures: NewReflectionComponentTextureEB9CBE3C423008B5E8E130901E171C89 (BGRA8, 128X128)
+[2022.01.30-23.38.14:087][526]Cmd: MAP CHECK NOTIFYRESULTS
+[2022.01.30-23.38.14:087][526]MapCheck: New page: BuildingScape - 30 ene. 2022 17:38:14
+[2022.01.30-23.38.14:089][526]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 1,949ms to complete.
+[2022.01.30-23.40.31:977][989]LogSlate: Window 'Message Log' being destroyed
+[2022.01.30-23.40.32:003][989]LogSlate: Window 'Message Log' being destroyed
+[2022.01.30-23.41.04:259][396]LogUObjectHash: Compacting FUObjectHashTables data took   4.02ms
+[2022.01.30-23.41.04:545][396]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape08166C6B48C661E2003D54B7ED1E777E.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.01.30-23.41.04:593][396]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.01.30-23.41.04:688][396]LogSavePackage: Moving '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltDataAB9F20914A4D7412B13085962967444F.tmp' to '../../../../../../Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.01.30-23.41.04:749][396]AssetCheck: New page: Asset Save: multiple assets
+[2022.01.30-23.41.04:749][396]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.01.30-23.41.04:749][396]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.01.30-23.47.03:111][666]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
