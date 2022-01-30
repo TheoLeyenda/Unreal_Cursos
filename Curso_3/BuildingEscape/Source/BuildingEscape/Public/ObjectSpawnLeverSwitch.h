@@ -20,8 +20,6 @@ class BUILDINGESCAPE_API AObjectSpawnLeverSwitch : public ALeverSwitch
 protected:
 	void SpawnObect();
 public:
-
-	virtual void BeginPlay() override;
 	
 	UPROPERTY(EditAnywhere)
 	bool bSpawnObjectToPositiveLeverSwitch = false;

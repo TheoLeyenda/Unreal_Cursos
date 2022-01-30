@@ -22,8 +22,7 @@ public:
 	
 	bool AddItem(class UItem* Item);
 	bool RemoveItem(class UItem* Item);
-
-	void ClearInventory();
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventory", meta = (ClampMin = 0.0))
 	int32 Capacity = 20;
 

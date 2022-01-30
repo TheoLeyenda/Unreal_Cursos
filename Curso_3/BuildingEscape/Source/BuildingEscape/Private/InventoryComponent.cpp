@@ -42,9 +42,3 @@ bool UInventoryComponent::RemoveItem(UItem* Item)
 	return true;
 }
 
-void UInventoryComponent::ClearInventory()
-{
-	Items.Empty();
-	OnInventoryUpdated.Broadcast();
-}
-

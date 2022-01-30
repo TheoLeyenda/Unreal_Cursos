@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include <Actor.h>
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"

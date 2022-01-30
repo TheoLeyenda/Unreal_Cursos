@@ -4,7 +4,6 @@
 #include "BuildingEscapeGameMode.h"
 #include "Kismet/GameplayStatics.h"
 #include "BuildingScapeCharacter.h"
-#include "InventoryComponent.h"
 
 void ABuildingEscapeGameMode::BeginPlay()
 {

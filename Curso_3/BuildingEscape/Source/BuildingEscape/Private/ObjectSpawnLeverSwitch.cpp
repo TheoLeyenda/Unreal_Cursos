@@ -43,13 +43,6 @@ void AObjectSpawnLeverSwitch::SpawnObect()
 	}
 }
 
-void AObjectSpawnLeverSwitch::BeginPlay()
-{
-	Super::BeginPlay();
-
-	EnableSpawners();
-}
-
 void AObjectSpawnLeverSwitch::EnableSpawners()
 {
 	for(AObjectSpawner* Spawner : Spawners)
