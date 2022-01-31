@@ -4602,3 +4602,138 @@ Script Stack (0 frames):
 [2022.01.30-23.41.04:749][396]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
 [2022.01.30-23.41.04:749][396]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
 [2022.01.30-23.47.03:111][666]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2022.01.30-23.47.14:445][ 85]LogUObjectHash: Compacting FUObjectHashTables data took   0.80ms
+[2022.01.30-23.48.06:204][351]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (MesaDeCrafteo)
+[2022.01.30-23.48.36:323][936]LogSlate: Window 'Create Blueprint From Selection' being destroyed
+[2022.01.30-23.51.04:143][271]Running C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/BuildingEscape.uproject" -game -rocket -progress
+[2022.01.30-23.51.05:267][271]Discovering modules, targets and source code for project...
+[2022.01.30-23.51.21:161][271]Binding IntelliSense data...
+[2022.01.30-23.51.35:195][271]Binding IntelliSense data... 50%
+[2022.01.30-23.51.35:195][271]Binding IntelliSense data... 100%
+[2022.01.30-23.51.35:196][271]Writing project files...
+[2022.01.30-23.51.51:696][271]Writing project files... 67%
+[2022.01.30-23.51.51:697][271]Writing project files... 100%
+[2022.01.30-23.51.52:649][271]Candidate modules for hot reload:
+[2022.01.30-23.51.52:650][271]  BuildingEscape
+[2022.01.30-23.51.52:653][271]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=BuildingEscape,2526 BuildingEscapeEditor Win64 Development -Project="C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/BuildingEscape.uproject" "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/BuildingEscape.uproject"  -IgnoreJunk]
+[2022.01.30-23.53.14:364][271]CompilerResultsLog: New page: Compilation - 30 ene. 2022 17:53:14
+[2022.01.30-23.53.14:366][271]CompilerResultsLog: Creating makefile for BuildingEscapeEditor (no existing makefile)
+[2022.01.30-23.53.14:367][271]CompilerResultsLog: Parsing headers for BuildingEscapeEditor
+[2022.01.30-23.53.14:367][271]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\theof\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\BuildingEscape.uproject" "C:\Users\theof\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\Intermediate\Build\Win64\BuildingEscapeEditor\Development\BuildingEscapeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\theof\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.01.30-23.53.14:367][271]CompilerResultsLog: Reflection code generated for BuildingEscapeEditor in 41,3286014 seconds
+[2022.01.30-23.53.14:367][271]CompilerResultsLog: Building BuildingEscapeEditor...
+[2022.01.30-23.53.14:367][271]CompilerResultsLog: Using Visual Studio 2019 14.29.30136 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.01.30-23.53.14:367][271]CompilerResultsLog: Building 6 actions with 4 processes...
+[2022.01.30-23.53.14:367][271]CompilerResultsLog:   [1/6] BuildingEscape.init.gen.cpp
+[2022.01.30-23.53.14:367][271]CompilerResultsLog:   [2/6] CraftingTable.cpp
+[2022.01.30-23.53.14:367][271]CompilerResultsLog:   [3/6] CraftingTable.gen.cpp
+[2022.01.30-23.53.14:367][271]CompilerResultsLog:   [4/6] UE4Editor-BuildingEscape-2526.lib
+[2022.01.30-23.53.14:367][271]CompilerResultsLog:      Creando biblioteca C:\Users\theof\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2526.lib y objeto C:\Users\theof\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2526.exp
+[2022.01.30-23.53.14:367][271]CompilerResultsLog:   [5/6] UE4Editor-BuildingEscape-2526.dll
+[2022.01.30-23.53.14:367][271]CompilerResultsLog:      Creando biblioteca C:\Users\theof\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2526.suppressed.lib y objeto C:\Users\theof\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2526.suppressed.exp
+[2022.01.30-23.53.14:367][271]CompilerResultsLog:   [6/6] BuildingEscapeEditor.target
+[2022.01.30-23.53.14:367][271]CompilerResultsLog: Total time in Parallel executor: 33,41 seconds
+[2022.01.30-23.53.14:367][271]CompilerResultsLog: Total execution time: 81,56 seconds
+[2022.01.30-23.53.14:376][271]LogMainFrame: MainFrame: Module compiling took 81.877 seconds
+[2022.01.30-23.53.15:200][271]LogClass: Could not find existing class CraftingTable in package /Script/BuildingEscape for HotReload, assuming new class
+[2022.01.30-23.53.15:285][271]LogClass: EStateDoor HotReload.
+[2022.01.30-23.53.15:285][271]LogClass: ETypeGrabbel HotReload.
+[2022.01.30-23.53.15:285][271]LogClass: ELastStateObjectOverlap HotReload.
+[2022.01.30-23.53.15:285][271]LogClass: EPositiveShiwtch HotReload.
+[2022.01.30-23.53.15:285][271]LogClass: SwitcherInfo HotReload.
+[2022.01.30-23.53.15:285][271]LogClass: SpawnObjectInfo HotReload.
+[2022.01.30-23.53.15:285][271]LogClass: ObjectSpawn HotReload.
+[2022.01.30-23.53.15:492][271]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BuildingEscape' in 0.0004 seconds. Added 24 classes and 4 folders.
+[2022.01.30-23.53.15:501][271]Display: HotReload successful (6 functions remapped  3 scriptstructs remapped)
+[2022.01.30-23.53.18:037][271]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.1587 seconds. Added 3625 classes and 863 folders.
+[2022.01.30-23.53.18:043][271]Display: HotReload took 85.5s.
+[2022.01.30-23.53.18:060][271]Warning: HotReload operation took 85.6s.
+[2022.01.30-23.53.18:509][271]LogSlate: Window 'Add C++ Class' being destroyed
+[2022.01.30-23.53.23:445][271]LogHotReload: New module detected: UE4Editor-BuildingEscape-2526.dll
+[2022.01.30-23.53.23:782][272]LogHotReload: Starting Hot-Reload from IDE
+[2022.01.30-23.53.23:854][272]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BuildingEscape' in 0.0005 seconds. Added 24 classes and 4 folders.
+[2022.01.30-23.53.23:860][272]Display: HotReload successful (0 functions remapped  3 scriptstructs remapped)
+[2022.01.30-23.53.23:900][272]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0335 seconds. Added 3625 classes and 863 folders.
+[2022.01.30-23.53.23:908][272]Display: HotReload took  0.1s.
+[2022.01.30-23.58.00:616][ 81]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.01.27:096][695]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.05.23:264][384]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.05.54:389][471]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.06.10:731][510]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.06.32:237][570]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.07.25:340][709]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.08.55:985][959]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.09.16:833][ 13]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.10.03:795][143]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.11.06:906][329]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.11.37:876][416]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.23.53:749][782]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.24.21:945][864]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.24.46:481][924]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.25.07:529][982]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.25.56:669][125]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.26.18:581][185]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.26.40:020][243]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.26.59:506][299]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.27.30:344][391]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.27.48:708][443]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.28.11:463][506]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.28.43:953][598]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.28.54:791][630]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.29.31:479][739]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.29.42:104][769]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.30.03:225][831]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.57.53:420][817]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.58.10:563][867]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.58.35:882][940]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-00.59.33:056][106]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.01.35:715][447]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.02.02:001][524]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.02.16:466][566]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.02.31:523][609]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.02.42:323][640]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.03.21:669][748]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.04.21:086][915]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.04.33:783][948]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.04.54:061][  5]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.05.09:081][ 43]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.05.40:226][126]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.06.16:886][232]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.06.35:634][288]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.07.06:003][374]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.09.47:795][855]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.10.00:326][891]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.10.37:023][997]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.10.47:093][ 23]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.11.28:484][145]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.29.52:778][441]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.30.27:697][545]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.30.40:546][582]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.31.00:085][639]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.31.21:715][696]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.31.33:798][731]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.32.02:454][813]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.32.19:955][856]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.32.42:034][915]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.32.56:453][953]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.33.26:792][ 39]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.34.11:894][171]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.35.05:586][330]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.35.25:443][389]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.35.45:409][444]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.36.19:763][537]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.36.44:981][607]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.37.32:544][749]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.38.55:129][989]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.39.25:138][ 73]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.39.45:858][129]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.40.20:709][212]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.40.55:455][311]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.41.22:097][390]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.42.16:833][548]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.42.47:267][635]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.43.00:621][672]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.43.36:067][769]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.43.46:025][798]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.44.00:888][836]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2022.01.31-01.44.19:673][890]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
