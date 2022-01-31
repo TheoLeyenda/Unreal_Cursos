@@ -17,8 +17,9 @@ void EmptyLinkFunctionForGeneratedCodeCraftingTable() {}
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
-	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FActorsPlaceInfo();
+	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FActorsRequired();
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FMatrixActorsPlace();
+	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FActorsPlaceInfo();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AInteractTrigger_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ACraftingTable_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ACraftingTable();
@@ -81,7 +82,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFCraftingInfo
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FCraftingInfo_Statics::NewProp_CraftingActorSpawn = { "CraftingActorSpawn", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCraftingInfo, CraftingActorSpawn), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FCraftingInfo_Statics::NewProp_CraftingActorSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCraftingInfo_Statics::NewProp_CraftingActorSpawn_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCraftingInfo_Statics::NewProp_ActorsRequired_Inner = { "ActorsRequired", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FActorsPlaceInfo, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FCraftingInfo_Statics::NewProp_ActorsRequired_Inner = { "ActorsRequired", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FActorsRequired, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCraftingInfo_Statics::NewProp_ActorsRequired_MetaData[] = {
 		{ "Category", "CraftingInfo" },
@@ -122,7 +123,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFCraftingInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCraftingInfo_Hash() { return 3083822199U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCraftingInfo_Hash() { return 4084154673U; }
 class UScriptStruct* FMatrixActorsPlace::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -313,6 +314,101 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsPlaceInfo
 		return ReturnStruct;
 	}
 	uint32 Get_Z_Construct_UScriptStruct_FActorsPlaceInfo_Hash() { return 1940102262U; }
+class UScriptStruct* FActorsRequired::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern BUILDINGESCAPE_API uint32 Get_Z_Construct_UScriptStruct_FActorsRequired_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FActorsRequired, Z_Construct_UPackage__Script_BuildingEscape(), TEXT("ActorsRequired"), sizeof(FActorsRequired), Get_Z_Construct_UScriptStruct_FActorsRequired_Hash());
+	}
+	return Singleton;
+}
+template<> BUILDINGESCAPE_API UScriptStruct* StaticStruct<FActorsRequired>()
+{
+	return FActorsRequired::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FActorsRequired(FActorsRequired::StaticStruct, TEXT("/Script/BuildingEscape"), TEXT("ActorsRequired"), false, nullptr, nullptr);
+static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsRequired
+{
+	FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsRequired()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("ActorsRequired")),new UScriptStruct::TCppStructOps<FActorsRequired>);
+	}
+} ScriptStruct_BuildingEscape_StaticRegisterNativesFActorsRequired;
+	struct Z_Construct_UScriptStruct_FActorsRequired_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ActorPlaceRequired_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ActorPlaceRequired;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_indexPlace_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_indexPlace;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FActorsRequired_Statics::Struct_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/CraftingTable.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FActorsRequired_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FActorsRequired>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FActorsRequired_Statics::NewProp_ActorPlaceRequired_MetaData[] = {
+		{ "Category", "ActorsRequired" },
+		{ "ModuleRelativePath", "Public/CraftingTable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FActorsRequired_Statics::NewProp_ActorPlaceRequired = { "ActorPlaceRequired", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FActorsRequired, ActorPlaceRequired), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FActorsRequired_Statics::NewProp_ActorPlaceRequired_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActorsRequired_Statics::NewProp_ActorPlaceRequired_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FActorsRequired_Statics::NewProp_indexPlace_MetaData[] = {
+		{ "Category", "ActorsRequired" },
+		{ "ModuleRelativePath", "Public/CraftingTable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FActorsRequired_Statics::NewProp_indexPlace = { "indexPlace", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FActorsRequired, indexPlace), METADATA_PARAMS(Z_Construct_UScriptStruct_FActorsRequired_Statics::NewProp_indexPlace_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActorsRequired_Statics::NewProp_indexPlace_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FActorsRequired_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FActorsRequired_Statics::NewProp_ActorPlaceRequired,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FActorsRequired_Statics::NewProp_indexPlace,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FActorsRequired_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
+		nullptr,
+		&NewStructOps,
+		"ActorsRequired",
+		sizeof(FActorsRequired),
+		alignof(FActorsRequired),
+		Z_Construct_UScriptStruct_FActorsRequired_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActorsRequired_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FActorsRequired_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActorsRequired_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FActorsRequired()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FActorsRequired_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_BuildingEscape();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ActorsRequired"), sizeof(FActorsRequired), Get_Z_Construct_UScriptStruct_FActorsRequired_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FActorsRequired_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FActorsRequired_Hash() { return 3805156416U; }
 	void ACraftingTable::StaticRegisterNativesACraftingTable()
 	{
 	}

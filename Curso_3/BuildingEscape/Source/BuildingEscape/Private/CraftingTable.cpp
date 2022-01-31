@@ -65,7 +65,7 @@ void ACraftingTable::CheckCrafting()
 				for(int k = 0; k < ComparePlaceActorsInfo.Num(); k++)
 				{
 					if(ComparePlaceActorsInfo[k].indexPlace != CraftingInfo[i].ActorsRequired[k].indexPlace
-						|| ComparePlaceActorsInfo[k].CurrentActorPlace != CraftingInfo[i].ActorsRequired[k].CurrentActorPlace)
+						|| ComparePlaceActorsInfo[k].CurrentActorPlace->GetClass() != CraftingInfo[i].ActorsRequired[k].ActorPlaceRequired)
 					{
 						bCraftingDone = false;
 					}

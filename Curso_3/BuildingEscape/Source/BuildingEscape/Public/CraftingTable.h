@@ -9,6 +9,18 @@
 #include "CraftingTable.generated.h"
 
 USTRUCT()
+struct FActorsRequired
+{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AActor> ActorPlaceRequired;
+	UPROPERTY(EditAnywhere)
+	int indexPlace;
+};
+
+USTRUCT()
 struct FActorsPlaceInfo
 {
 	GENERATED_BODY()
@@ -61,7 +73,7 @@ public:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> CraftingActorSpawn;
 	UPROPERTY(EditAnywhere)
-	TArray<FActorsPlaceInfo> ActorsRequired;
+	TArray<FActorsRequired> ActorsRequired;
 };
 
 UCLASS()
