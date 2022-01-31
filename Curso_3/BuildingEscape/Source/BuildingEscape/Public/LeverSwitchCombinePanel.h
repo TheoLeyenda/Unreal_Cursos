@@ -34,7 +34,10 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	TSubclassOf<AActor> ObjectSpawn;
 	UPROPERTY(VisibleAnywhere)
-	bool CheckDone = false;
+	bool bCheckDone = false;
+	UPROPERTY(VisibleAnywhere)
+	bool bAssignedObjectSpawn = false;
+	
 };
 
 UCLASS()

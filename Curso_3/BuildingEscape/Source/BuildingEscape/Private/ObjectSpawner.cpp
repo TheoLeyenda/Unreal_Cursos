@@ -27,22 +27,25 @@ void AObjectSpawner::SendTimerSpawnObject()
 
 void AObjectSpawner::SpawnObjects()
 {
-	if(ObjectsSpawn.Num() <= 0 || !bEnableSpawnObject){return;}
+	if(ObjectsSpawn.Num() <= 0 || !bEnableSpawnObject || !World){return;}
 	
-	if(CurrentIndexSpawn <  ObjectsSpawn.Num())
+	if(CurrentIndexSpawn <  ObjectsSpawn.Num() && CurrentIndexSpawn >= 0)
 	{
-		AActor* Actor = World->SpawnActor<AActor>(ObjectsSpawn[CurrentIndexSpawn].ObjectBlueprint, GetActorLocation(), GetActorRotation());
-        if(Actor)
-        {
-	        ObjectSpawned.Add(Actor);
-        }
-		CountObjectSpawn++;
-		GetWorld()->GetTimerManager().SetTimer(TimerSpawnObject,this, &AObjectSpawner::SpawnObjects, DelaySpawnObject, false);
-
-		if(CountObjectSpawn >= ObjectsSpawn[CurrentIndexSpawn].CountObjectsSpawn)
+		if(ObjectsSpawn[CurrentIndexSpawn].ObjectBlueprint)
 		{
-			CountObjectSpawn = 0;
-			CurrentIndexSpawn++;
+			AActor* Actor = World->SpawnActor<AActor>(ObjectsSpawn[CurrentIndexSpawn].ObjectBlueprint, GetActorLocation(), GetActorRotation());
+			if(Actor)
+			{
+				ObjectSpawned.Add(Actor);
+			}
+			CountObjectSpawn++;
+			GetWorld()->GetTimerManager().SetTimer(TimerSpawnObject,this, &AObjectSpawner::SpawnObjects, DelaySpawnObject, false);
+
+			if(CountObjectSpawn >= ObjectsSpawn[CurrentIndexSpawn].CountObjectsSpawn)
+			{
+				CountObjectSpawn = 0;
+				CurrentIndexSpawn++;
+			}
 		}
 	}
 	

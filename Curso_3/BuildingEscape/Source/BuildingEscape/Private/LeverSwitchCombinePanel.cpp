@@ -32,18 +32,29 @@ void ALeverSwitchCombinePanel::BeginPlay()
 	{
 		LeverSwitchesInfo[i].Code = CodeNumbers[i];
 	}
-
-	for(int j = 0; j < CountNumbersCode; j++)
+	for(int i = 0; i < CountNumbersCode; i++)
 	{
-		for(int i = 0; i < CountNumbersCode; i++)
+		for(int j = 0; j < CountNumbersCode; j++)
 		{
-			if(SpawnObjectsInfo[i].Code == LeverSwitchesInfo[j].Code)
+			if(LeverSwitchesInfo[i].Code == SpawnObjectsInfo[j].Code && !LeverSwitchesInfo[i].bAssignedObjectSpawn)
 			{
-				LeverSwitchesInfo[j].ObjectSpawn = SpawnObjectsInfo[i].ObjectSpawn;
+				UE_LOG(LogTemp, Warning, TEXT("CAMBIE PANEL"));
+				LeverSwitchesInfo[i].ObjectSpawn = SpawnObjectsInfo[j].ObjectSpawn;
+				LeverSwitchesInfo[i].bAssignedObjectSpawn = true;
 			}
 		}
 	}
 	
+	for(int i = 0; i < CountNumbersCode; i++)
+	{
+		for(int j = 0; j < LeverSwitchesInfo[i].LeverSwitch->Spawners.Num(); j++)
+		{
+			LeverSwitchesInfo[i].LeverSwitch->Spawners[j]->ObjectsSpawn.Add(FObjectSpawn());
+			int Index = LeverSwitchesInfo[i].LeverSwitch->Spawners[j]->ObjectsSpawn.Num()-1;
+			LeverSwitchesInfo[i].LeverSwitch->Spawners[j]->ObjectsSpawn[Index].ObjectBlueprint = LeverSwitchesInfo[i].ObjectSpawn;
+			LeverSwitchesInfo[i].LeverSwitch->Spawners[j]->ObjectsSpawn[Index].CountObjectsSpawn = 1;
+		}
+	}
 }
 
 void ALeverSwitchCombinePanel::ResetCombinePanel(bool FailCombinePanel)
@@ -56,7 +67,8 @@ void ALeverSwitchCombinePanel::ResetCombinePanel(bool FailCombinePanel)
 			{
 				LeverSwitchesInfo[i].LeverSwitch->Switch();
 			}
-			LeverSwitchesInfo[i].CheckDone = false;
+			LeverSwitchesInfo[i].bCheckDone = false;
+			LeverSwitchesInfo[i].bAssignedObjectSpawn = false;
 		}
 	}
 	ABuildingScapeCharacter* Character = BuildingEscapeGameMode->GetCurrentCharacter();
@@ -72,7 +84,7 @@ void ALeverSwitchCombinePanel::Tick(float DeltaSeconds)
 	bCombinePanelComplete = true;
 	for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
 	{
-		if(!LeverSwitchesInfo[i].CheckDone)
+		if(!LeverSwitchesInfo[i].bCheckDone)
 		{
 			bCombinePanelComplete = false;
 		}
@@ -89,14 +101,14 @@ void ALeverSwitchCombinePanel::Tick(float DeltaSeconds)
 	
 	for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
 	{
-		if(LeverSwitchesInfo[i].LeverSwitch->bSwitchOn && CurrentSwitcher == LeverSwitchesInfo[i].Code && !LeverSwitchesInfo[i].CheckDone)
+		if(LeverSwitchesInfo[i].LeverSwitch->bSwitchOn && CurrentSwitcher == LeverSwitchesInfo[i].Code && !LeverSwitchesInfo[i].bCheckDone)
 		{
 			InputCodeAnswer(LeverSwitchesInfo[i].Code);
 			CurrentSwitcher++;
-			LeverSwitchesInfo[i].CheckDone = true;
+			LeverSwitchesInfo[i].bCheckDone = true;
 		}
-		else if((LeverSwitchesInfo[i].LeverSwitch->bSwitchOn && CurrentSwitcher != LeverSwitchesInfo[i].Code && !LeverSwitchesInfo[i].CheckDone)
-			|| (!LeverSwitchesInfo[i].LeverSwitch->bSwitchOn && LeverSwitchesInfo[i].CheckDone))
+		else if((LeverSwitchesInfo[i].LeverSwitch->bSwitchOn && CurrentSwitcher != LeverSwitchesInfo[i].Code && !LeverSwitchesInfo[i].bCheckDone)
+			|| (!LeverSwitchesInfo[i].LeverSwitch->bSwitchOn && LeverSwitchesInfo[i].bCheckDone))
 		{
 			CurrentSwitcher = 0;
 			CurrentAnswer.Empty();

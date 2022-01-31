@@ -3,7 +3,6 @@
 
 #include "BuildingEscapeGameMode.h"
 #include "Kismet/GameplayStatics.h"
-#include "BuildingScapeCharacter.h"
 
 void ABuildingEscapeGameMode::BeginPlay()
 {
@@ -52,10 +51,11 @@ void ABuildingEscapeGameMode::Restart()
 	CurrentCharacter = FindCurrentCharacter();
 	if(CurrentCharacter)
 	{
+		CurrentCharacter->OnSubstractLife.Clear();
 		CurrentCharacter->Destroy();
 	}
 	RestartPlayer(GetWorld()->GetFirstPlayerController());
-
+	
 	CurrentCharacter = FindCurrentCharacter();
 	if(CurrentCharacter)
 	{

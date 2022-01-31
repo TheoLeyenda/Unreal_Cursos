@@ -64,10 +64,15 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSwitcherInfo
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ObjectSpawn;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CheckDone_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCheckDone_MetaData[];
 #endif
-		static void NewProp_CheckDone_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_CheckDone;
+		static void NewProp_bCheckDone_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCheckDone;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bAssignedObjectSpawn_MetaData[];
+#endif
+		static void NewProp_bAssignedObjectSpawn_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bAssignedObjectSpawn;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -102,21 +107,33 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSwitcherInfo
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_ObjectSpawn = { "ObjectSpawn", nullptr, (EPropertyFlags)0x0014000000020001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSwitcherInfo, ObjectSpawn), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_ObjectSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_ObjectSpawn_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_CheckDone_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bCheckDone_MetaData[] = {
 		{ "Category", "SwitcherInfo" },
 		{ "ModuleRelativePath", "Public/LeverSwitchCombinePanel.h" },
 	};
 #endif
-	void Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_CheckDone_SetBit(void* Obj)
+	void Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bCheckDone_SetBit(void* Obj)
 	{
-		((FSwitcherInfo*)Obj)->CheckDone = 1;
+		((FSwitcherInfo*)Obj)->bCheckDone = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_CheckDone = { "CheckDone", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FSwitcherInfo), &Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_CheckDone_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_CheckDone_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_CheckDone_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bCheckDone = { "bCheckDone", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FSwitcherInfo), &Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bCheckDone_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bCheckDone_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bCheckDone_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bAssignedObjectSpawn_MetaData[] = {
+		{ "Category", "SwitcherInfo" },
+		{ "ModuleRelativePath", "Public/LeverSwitchCombinePanel.h" },
+	};
+#endif
+	void Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bAssignedObjectSpawn_SetBit(void* Obj)
+	{
+		((FSwitcherInfo*)Obj)->bAssignedObjectSpawn = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bAssignedObjectSpawn = { "bAssignedObjectSpawn", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FSwitcherInfo), &Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bAssignedObjectSpawn_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bAssignedObjectSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bAssignedObjectSpawn_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSwitcherInfo_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_LeverSwitch,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_Code,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_ObjectSpawn,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_CheckDone,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bCheckDone,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bAssignedObjectSpawn,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FSwitcherInfo_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
@@ -146,7 +163,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSwitcherInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSwitcherInfo_Hash() { return 3502780180U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSwitcherInfo_Hash() { return 2085876829U; }
 class UScriptStruct* FSpawnObjectInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;

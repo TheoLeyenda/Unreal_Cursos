@@ -20,8 +20,42 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AObjectSpawner_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ABuildingEscapeGameMode::execCheckPlayerDead)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->CheckPlayerDead();
+		P_NATIVE_END;
+	}
 	void ABuildingEscapeGameMode::StaticRegisterNativesABuildingEscapeGameMode()
 	{
+		UClass* Class = ABuildingEscapeGameMode::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "CheckPlayerDead", &ABuildingEscapeGameMode::execCheckPlayerDead },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABuildingEscapeGameMode_CheckPlayerDead_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABuildingEscapeGameMode_CheckPlayerDead_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BuildingEscapeGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABuildingEscapeGameMode_CheckPlayerDead_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABuildingEscapeGameMode, nullptr, "CheckPlayerDead", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABuildingEscapeGameMode_CheckPlayerDead_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABuildingEscapeGameMode_CheckPlayerDead_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABuildingEscapeGameMode_CheckPlayerDead()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABuildingEscapeGameMode_CheckPlayerDead_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ABuildingEscapeGameMode_NoRegister()
 	{
@@ -30,6 +64,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 	struct Z_Construct_UClass_ABuildingEscapeGameMode_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -49,6 +84,9 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 	UObject* (*const Z_Construct_UClass_ABuildingEscapeGameMode_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_AGameModeBase,
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ABuildingEscapeGameMode_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABuildingEscapeGameMode_CheckPlayerDead, "CheckPlayerDead" }, // 3466382800
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingEscapeGameMode_Statics::Class_MetaDataParams[] = {
@@ -87,11 +125,11 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ABuildingEscapeGameMode_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::PropPointers),
 		0,
 		0x009002ACu,
@@ -106,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingEscapeGameMode, 3532938476);
+	IMPLEMENT_CLASS(ABuildingEscapeGameMode, 4062943398);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABuildingEscapeGameMode>()
 	{
 		return ABuildingEscapeGameMode::StaticClass();

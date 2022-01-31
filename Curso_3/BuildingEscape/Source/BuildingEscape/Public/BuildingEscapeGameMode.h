@@ -25,7 +25,8 @@ class BUILDINGESCAPE_API ABuildingEscapeGameMode : public AGameModeBase
 	
 	void FindSpawners();
 	void FindPlayerSpawn();
-
+	
+	UFUNCTION()
 	void CheckPlayerDead();
 	
 	UPROPERTY(EditAnywhere, Category="Spawn Objects")

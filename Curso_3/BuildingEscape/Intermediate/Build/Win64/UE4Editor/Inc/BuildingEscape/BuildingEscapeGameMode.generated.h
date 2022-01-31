@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define BUILDINGESCAPE_BuildingEscapeGameMode_generated_h
 
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingEscapeGameMode_h_19_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_BuildingEscapeGameMode_h_19_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_BuildingEscapeGameMode_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Public_BuildingEscapeGameMode_h_19_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execCheckPlayerDead);
+
+
+#define BuildingEscape_Source_BuildingEscape_Public_BuildingEscapeGameMode_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execCheckPlayerDead);
+
+
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingEscapeGameMode_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABuildingEscapeGameMode(); \

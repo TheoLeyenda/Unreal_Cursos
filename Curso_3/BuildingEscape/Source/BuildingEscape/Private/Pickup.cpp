@@ -12,9 +12,10 @@ APickup::APickup()
 	SceneComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Scene"));
 	MyText = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Message PickUp"));
 	StaticMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh Pickup"));
-	
-	MyText->SetupAttachment(SceneComponent, NAME_None);
-	StaticMeshComponent->SetupAttachment(SceneComponent, NAME_None);
+
+	SceneComponent->SetupAttachment(RootComponent);
+	MyText->SetupAttachment(SceneComponent);
+	StaticMeshComponent->SetupAttachment(SceneComponent);
 }
 
 void APickup::BeginPlay()
@@ -24,7 +25,7 @@ void APickup::BeginPlay()
 	{
 		if(StaticMeshComponent)
 		{
-			StaticMeshComponent->SetupAttachment(SceneComponent, NAME_None);
+			StaticMeshComponent->SetupAttachment(SceneComponent);
 			if(MyText)
 			{
 				MyText->AttachToComponent(StaticMeshComponent, FAttachmentTransformRules::KeepRelativeTransform);
