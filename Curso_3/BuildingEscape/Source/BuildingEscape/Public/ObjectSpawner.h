@@ -35,14 +35,20 @@ public:
 	// Sets default values for this actor's properties
 	AObjectSpawner();	
 
-	UPROPERTY(EditAnywhere, Category="Objects Spawn")
+	UPROPERTY(EditAnywhere, meta = (ClampMin = 0))
+	float RangeGeneratorX;
+
+	UPROPERTY(EditAnywhere, meta = (ClampMin = 0))
+	float RangeGeneratorY;
+	
+	UPROPERTY(EditAnywhere)
 	TArray<FObjectSpawn> ObjectsSpawn;
 
-	UPROPERTY(EditAnywhere, Category= "Objects Spawn")
+	UPROPERTY(EditAnywhere)
 	bool bEnableSpawnObject = true;
 	
 	FTimerHandle TimerSpawnObject;
-	UPROPERTY(EditAnywhere, Category= "Objects Spawn")
+	UPROPERTY(EditAnywhere)
 	float DelaySpawnObject = 0.5f;
 	void SendTimerSpawnObject();
 	

@@ -14,6 +14,7 @@ class BUILDINGESCAPE_API AObjectsInteractTrigger : public AInteractTrigger
 {
 	GENERATED_BODY()
 	
+public:
 	AObjectsInteractTrigger();
 protected:
 

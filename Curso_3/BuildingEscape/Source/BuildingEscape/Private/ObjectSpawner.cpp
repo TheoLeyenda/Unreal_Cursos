@@ -33,7 +33,12 @@ void AObjectSpawner::SpawnObjects()
 	{
 		if(ObjectsSpawn[CurrentIndexSpawn].ObjectBlueprint)
 		{
-			AActor* Actor = World->SpawnActor<AActor>(ObjectsSpawn[CurrentIndexSpawn].ObjectBlueprint, GetActorLocation(), GetActorRotation());
+			float X = FMath::RandRange(-RangeGeneratorX, RangeGeneratorX) + GetActorLocation().X;
+			float Y = FMath::RandRange(-RangeGeneratorY, RangeGeneratorY) + GetActorLocation().Y;
+			float Z = GetActorLocation().Z;
+			FVector NewLocation = FVector(X,Y,Z);
+			
+			AActor* Actor = World->SpawnActor<AActor>(ObjectsSpawn[CurrentIndexSpawn].ObjectBlueprint, NewLocation, GetActorRotation());
 			if(Actor)
 			{
 				ObjectSpawned.Add(Actor);

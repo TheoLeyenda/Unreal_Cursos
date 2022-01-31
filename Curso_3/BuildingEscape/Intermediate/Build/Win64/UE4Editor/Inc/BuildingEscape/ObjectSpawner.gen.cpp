@@ -129,6 +129,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RangeGeneratorX_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_RangeGeneratorX;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RangeGeneratorY_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_RangeGeneratorY;
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ObjectsSpawn_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ObjectsSpawn_MetaData[];
@@ -157,17 +165,33 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 		{ "ModuleRelativePath", "Public/ObjectSpawner.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObjectSpawner_Statics::NewProp_RangeGeneratorX_MetaData[] = {
+		{ "Category", "ObjectSpawner" },
+		{ "ClampMin", "0" },
+		{ "ModuleRelativePath", "Public/ObjectSpawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AObjectSpawner_Statics::NewProp_RangeGeneratorX = { "RangeGeneratorX", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AObjectSpawner, RangeGeneratorX), METADATA_PARAMS(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_RangeGeneratorX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_RangeGeneratorX_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObjectSpawner_Statics::NewProp_RangeGeneratorY_MetaData[] = {
+		{ "Category", "ObjectSpawner" },
+		{ "ClampMin", "0" },
+		{ "ModuleRelativePath", "Public/ObjectSpawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AObjectSpawner_Statics::NewProp_RangeGeneratorY = { "RangeGeneratorY", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AObjectSpawner, RangeGeneratorY), METADATA_PARAMS(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_RangeGeneratorY_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_RangeGeneratorY_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn_Inner = { "ObjectsSpawn", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FObjectSpawn, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn_MetaData[] = {
-		{ "Category", "Objects Spawn" },
+		{ "Category", "ObjectSpawner" },
 		{ "ModuleRelativePath", "Public/ObjectSpawner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn = { "ObjectsSpawn", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AObjectSpawner, ObjectsSpawn), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject_MetaData[] = {
-		{ "Category", "Objects Spawn" },
+		{ "Category", "ObjectSpawner" },
 		{ "ModuleRelativePath", "Public/ObjectSpawner.h" },
 	};
 #endif
@@ -178,12 +202,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject = { "bEnableSpawnObject", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AObjectSpawner), &Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject_SetBit, METADATA_PARAMS(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObjectSpawner_Statics::NewProp_DelaySpawnObject_MetaData[] = {
-		{ "Category", "Objects Spawn" },
+		{ "Category", "ObjectSpawner" },
 		{ "ModuleRelativePath", "Public/ObjectSpawner.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AObjectSpawner_Statics::NewProp_DelaySpawnObject = { "DelaySpawnObject", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AObjectSpawner, DelaySpawnObject), METADATA_PARAMS(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_DelaySpawnObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AObjectSpawner_Statics::NewProp_DelaySpawnObject_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AObjectSpawner_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_RangeGeneratorX,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_RangeGeneratorY,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_ObjectsSpawn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObjectSpawner_Statics::NewProp_bEnableSpawnObject,
@@ -216,7 +242,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AObjectSpawner, 2532140530);
+	IMPLEMENT_CLASS(AObjectSpawner, 2708012078);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AObjectSpawner>()
 	{
 		return AObjectSpawner::StaticClass();
