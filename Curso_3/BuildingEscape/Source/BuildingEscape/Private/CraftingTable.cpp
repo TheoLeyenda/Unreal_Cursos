@@ -2,11 +2,7 @@
 
 
 #include "CraftingTable.h"
-
-#include <Actor.h>
-
 #include "Algo/Compare.h"
-#include "Algo/Count.h"
 
 // Sets default values
 ACraftingTable::ACraftingTable()
@@ -49,8 +45,8 @@ void ACraftingTable::CheckCrafting()
 	}
 	// HACER UNA PALANCA QUE LLAME A ESTA FUNCION PARA PROBAR EL OBJETO.
 	bool bCraftingDone = true;
-	
-	int indexCraftingInfoSpawnObject;
+	bool bFindCrafting = false;
+	int indexCraftingInfoSpawnObject = 0;
 
 	if(ComparePlaceActorsInfo.Num() <= 0)
 	{
@@ -72,6 +68,7 @@ void ACraftingTable::CheckCrafting()
 				}
 				if(bCraftingDone)
 				{
+					bFindCrafting = true;
 					UE_LOG(LogTemp, Warning, TEXT("CRAFTIE ALGO"));
 					indexCraftingInfoSpawnObject = i;
 					i = CraftingInfo.Num();
@@ -81,9 +78,14 @@ void ACraftingTable::CheckCrafting()
 	}
 
 	
-	if(bCraftingDone)
+	if(bCraftingDone && ObjectSpawner && bFindCrafting)
 	{
-		//ACA SPAWNEO EL OBJETO CON EL INDICE CONSEGUIDO.	
+		ObjectSpawner->ObjectsSpawn.Empty();
+		ObjectSpawner->ObjectsSpawn.Add(FObjectSpawn());
+		int Index = ObjectSpawner->ObjectsSpawn.Num()-1;
+		ObjectSpawner->ObjectsSpawn[Index].ObjectBlueprint = CraftingInfo[indexCraftingInfoSpawnObject].CraftingActorSpawn;
+		ObjectSpawner->ObjectsSpawn[Index].CountObjectsSpawn = CraftingInfo[indexCraftingInfoSpawnObject].CountActorsSpawns;
+		ObjectSpawner->SendTimerSpawnObject();
 	}
 }
 

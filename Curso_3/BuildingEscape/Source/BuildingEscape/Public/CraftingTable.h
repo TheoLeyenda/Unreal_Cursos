@@ -73,7 +73,10 @@ public:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> CraftingActorSpawn;
 	UPROPERTY(EditAnywhere)
+	int CountActorsSpawns;
+	UPROPERTY(EditAnywhere)
 	TArray<FActorsRequired> ActorsRequired;
+
 };
 
 UCLASS()

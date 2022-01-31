@@ -41,10 +41,10 @@ template<> BUILDINGESCAPE_API UScriptStruct* StaticStruct<struct FActorsPlaceInf
 
 template<> BUILDINGESCAPE_API UScriptStruct* StaticStruct<struct FActorsRequired>();
 
-#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_RPC_WRAPPERS_NO_PURE_DECLS
-#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_INCLASS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_SPARSE_DATA
+#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_RPC_WRAPPERS
+#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACraftingTable(); \
 	friend struct Z_Construct_UClass_ACraftingTable_Statics; \
@@ -53,7 +53,7 @@ public: \
 	DECLARE_SERIALIZER(ACraftingTable)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_INCLASS \
+#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_INCLASS \
 private: \
 	static void StaticRegisterNativesACraftingTable(); \
 	friend struct Z_Construct_UClass_ACraftingTable_Statics; \
@@ -62,7 +62,7 @@ public: \
 	DECLARE_SERIALIZER(ACraftingTable)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_STANDARD_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACraftingTable(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACraftingTable) \
@@ -75,7 +75,7 @@ private: \
 public:
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_ENHANCED_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ACraftingTable(ACraftingTable&&); \
@@ -86,7 +86,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACraftingTable); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACraftingTable)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_PRIVATE_PROPERTY_OFFSET \
+#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CountSlots() { return STRUCT_OFFSET(ACraftingTable, CountSlots); } \
 	FORCEINLINE static uint32 __PPO__MatrixActorsPlaceInfo() { return STRUCT_OFFSET(ACraftingTable, MatrixActorsPlaceInfo); } \
 	FORCEINLINE static uint32 __PPO__ComparePlaceActorsInfo() { return STRUCT_OFFSET(ACraftingTable, ComparePlaceActorsInfo); } \
@@ -94,27 +94,27 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACraftingTable); \
 	FORCEINLINE static uint32 __PPO__ObjectSpawner() { return STRUCT_OFFSET(ACraftingTable, ObjectSpawner); }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_79_PROLOG
-#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_GENERATED_BODY_LEGACY \
+#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_PROLOG
+#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_RPC_WRAPPERS \
-	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_INCLASS \
-	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_STANDARD_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_RPC_WRAPPERS \
+	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_INCLASS \
+	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_GENERATED_BODY \
+#define BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_RPC_WRAPPERS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_INCLASS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_82_ENHANCED_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_RPC_WRAPPERS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_INCLASS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_CraftingTable_h_85_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
