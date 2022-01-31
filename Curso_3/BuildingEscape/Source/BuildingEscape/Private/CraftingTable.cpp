@@ -86,6 +86,11 @@ void ACraftingTable::CheckCrafting()
 		ObjectSpawner->ObjectsSpawn[Index].ObjectBlueprint = CraftingInfo[indexCraftingInfoSpawnObject].CraftingActorSpawn;
 		ObjectSpawner->ObjectsSpawn[Index].CountObjectsSpawn = CraftingInfo[indexCraftingInfoSpawnObject].CountActorsSpawns;
 		ObjectSpawner->SendTimerSpawnObject();
+
+		for(int i = 0; i < ComparePlaceActorsInfo.Num(); i++)
+		{
+			ComparePlaceActorsInfo[i].CurrentActorPlace->Destroy();
+		}
 	}
 }
 
