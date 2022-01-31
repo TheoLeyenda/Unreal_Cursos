@@ -73,10 +73,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AInteractTrigger); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AInteractTrigger)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__BoxTriggerVolume() { return STRUCT_OFFSET(AInteractTrigger, BoxTriggerVolume); }
-
-
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_PRIVATE_PROPERTY_OFFSET
 #define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_18_PROLOG
 #define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

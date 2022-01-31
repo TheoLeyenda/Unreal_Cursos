@@ -18,6 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeCraftingTable() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FActorsPlaceInfo();
+	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FMatrixActorsPlace();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AInteractTrigger_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ACraftingTable_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ACraftingTable();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
@@ -121,6 +123,101 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFCraftingInfo
 		return ReturnStruct;
 	}
 	uint32 Get_Z_Construct_UScriptStruct_FCraftingInfo_Hash() { return 3083822199U; }
+class UScriptStruct* FMatrixActorsPlace::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern BUILDINGESCAPE_API uint32 Get_Z_Construct_UScriptStruct_FMatrixActorsPlace_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FMatrixActorsPlace, Z_Construct_UPackage__Script_BuildingEscape(), TEXT("MatrixActorsPlace"), sizeof(FMatrixActorsPlace), Get_Z_Construct_UScriptStruct_FMatrixActorsPlace_Hash());
+	}
+	return Singleton;
+}
+template<> BUILDINGESCAPE_API UScriptStruct* StaticStruct<FMatrixActorsPlace>()
+{
+	return FMatrixActorsPlace::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FMatrixActorsPlace(FMatrixActorsPlace::StaticStruct, TEXT("/Script/BuildingEscape"), TEXT("MatrixActorsPlace"), false, nullptr, nullptr);
+static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFMatrixActorsPlace
+{
+	FScriptStruct_BuildingEscape_StaticRegisterNativesFMatrixActorsPlace()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("MatrixActorsPlace")),new UScriptStruct::TCppStructOps<FMatrixActorsPlace>);
+	}
+} ScriptStruct_BuildingEscape_StaticRegisterNativesFMatrixActorsPlace;
+	struct Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ActorsPlace_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ActorsPlace;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractTrigger_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InteractTrigger;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::Struct_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/CraftingTable.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FMatrixActorsPlace>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::NewProp_ActorsPlace_MetaData[] = {
+		{ "Category", "MatrixActorsPlace" },
+		{ "ModuleRelativePath", "Public/CraftingTable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::NewProp_ActorsPlace = { "ActorsPlace", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMatrixActorsPlace, ActorsPlace), Z_Construct_UScriptStruct_FActorsPlaceInfo, METADATA_PARAMS(Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::NewProp_ActorsPlace_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::NewProp_ActorsPlace_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::NewProp_InteractTrigger_MetaData[] = {
+		{ "Category", "MatrixActorsPlace" },
+		{ "ModuleRelativePath", "Public/CraftingTable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::NewProp_InteractTrigger = { "InteractTrigger", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FMatrixActorsPlace, InteractTrigger), Z_Construct_UClass_AInteractTrigger_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::NewProp_InteractTrigger_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::NewProp_InteractTrigger_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::NewProp_ActorsPlace,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::NewProp_InteractTrigger,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
+		nullptr,
+		&NewStructOps,
+		"MatrixActorsPlace",
+		sizeof(FMatrixActorsPlace),
+		alignof(FMatrixActorsPlace),
+		Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FMatrixActorsPlace()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FMatrixActorsPlace_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_BuildingEscape();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("MatrixActorsPlace"), sizeof(FMatrixActorsPlace), Get_Z_Construct_UScriptStruct_FMatrixActorsPlace_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FMatrixActorsPlace_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FMatrixActorsPlace_Hash() { return 51748029U; }
 class UScriptStruct* FActorsPlaceInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -175,14 +272,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsPlaceInfo
 		{ "ModuleRelativePath", "Public/CraftingTable.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_CurrentActorPlace = { "CurrentActorPlace", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FActorsPlaceInfo, CurrentActorPlace), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_CurrentActorPlace_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_CurrentActorPlace_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_CurrentActorPlace = { "CurrentActorPlace", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FActorsPlaceInfo, CurrentActorPlace), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_CurrentActorPlace_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_CurrentActorPlace_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_indexPlace_MetaData[] = {
 		{ "Category", "ActorsPlaceInfo" },
 		{ "ModuleRelativePath", "Public/CraftingTable.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_indexPlace = { "indexPlace", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FActorsPlaceInfo, indexPlace), METADATA_PARAMS(Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_indexPlace_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_indexPlace_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_indexPlace = { "indexPlace", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FActorsPlaceInfo, indexPlace), METADATA_PARAMS(Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_indexPlace_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_indexPlace_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_CurrentActorPlace,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FActorsPlaceInfo_Statics::NewProp_indexPlace,
@@ -215,7 +312,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsPlaceInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FActorsPlaceInfo_Hash() { return 239297148U; }
+	uint32 Get_Z_Construct_UScriptStruct_FActorsPlaceInfo_Hash() { return 1940102262U; }
 	void ACraftingTable::StaticRegisterNativesACraftingTable()
 	{
 	}
@@ -230,14 +327,19 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsPlaceInfo
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CountSlotsCraftingTable_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CountSlots_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_CountSlotsCraftingTable;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ActorsPlaceInfo_Inner;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_CountSlots;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_MatrixActorsPlaceInfo_Inner;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ActorsPlaceInfo_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MatrixActorsPlaceInfo_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ActorsPlaceInfo;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_MatrixActorsPlaceInfo;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ComparePlaceActorsInfo_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ComparePlaceActorsInfo_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ComparePlaceActorsInfo;
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_CraftingInfo_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CraftingInfo_MetaData[];
@@ -262,28 +364,36 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsPlaceInfo
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACraftingTable_Statics::NewProp_CountSlotsCraftingTable_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACraftingTable_Statics::NewProp_CountSlots_MetaData[] = {
 		{ "Category", "CraftingTable" },
 		{ "ModuleRelativePath", "Public/CraftingTable.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_CountSlotsCraftingTable = { "CountSlotsCraftingTable", nullptr, (EPropertyFlags)0x0020080000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACraftingTable, CountSlotsCraftingTable), METADATA_PARAMS(Z_Construct_UClass_ACraftingTable_Statics::NewProp_CountSlotsCraftingTable_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACraftingTable_Statics::NewProp_CountSlotsCraftingTable_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_ActorsPlaceInfo_Inner = { "ActorsPlaceInfo", nullptr, (EPropertyFlags)0x0000000000020000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FActorsPlaceInfo, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_CountSlots = { "CountSlots", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACraftingTable, CountSlots), METADATA_PARAMS(Z_Construct_UClass_ACraftingTable_Statics::NewProp_CountSlots_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACraftingTable_Statics::NewProp_CountSlots_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_MatrixActorsPlaceInfo_Inner = { "MatrixActorsPlaceInfo", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FMatrixActorsPlace, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACraftingTable_Statics::NewProp_ActorsPlaceInfo_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACraftingTable_Statics::NewProp_MatrixActorsPlaceInfo_MetaData[] = {
 		{ "Category", "CraftingTable" },
 		{ "ModuleRelativePath", "Public/CraftingTable.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_ActorsPlaceInfo = { "ActorsPlaceInfo", nullptr, (EPropertyFlags)0x0020080000020001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACraftingTable, ActorsPlaceInfo), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ACraftingTable_Statics::NewProp_ActorsPlaceInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACraftingTable_Statics::NewProp_ActorsPlaceInfo_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_CraftingInfo_Inner = { "CraftingInfo", nullptr, (EPropertyFlags)0x0000000000020000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FCraftingInfo, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_MatrixActorsPlaceInfo = { "MatrixActorsPlaceInfo", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACraftingTable, MatrixActorsPlaceInfo), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ACraftingTable_Statics::NewProp_MatrixActorsPlaceInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACraftingTable_Statics::NewProp_MatrixActorsPlaceInfo_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_ComparePlaceActorsInfo_Inner = { "ComparePlaceActorsInfo", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FActorsPlaceInfo, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACraftingTable_Statics::NewProp_ComparePlaceActorsInfo_MetaData[] = {
+		{ "Category", "CraftingTable" },
+		{ "ModuleRelativePath", "Public/CraftingTable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_ComparePlaceActorsInfo = { "ComparePlaceActorsInfo", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACraftingTable, ComparePlaceActorsInfo), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ACraftingTable_Statics::NewProp_ComparePlaceActorsInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACraftingTable_Statics::NewProp_ComparePlaceActorsInfo_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_CraftingInfo_Inner = { "CraftingInfo", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FCraftingInfo, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACraftingTable_Statics::NewProp_CraftingInfo_MetaData[] = {
 		{ "Category", "CraftingTable" },
 		{ "ModuleRelativePath", "Public/CraftingTable.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_CraftingInfo = { "CraftingInfo", nullptr, (EPropertyFlags)0x0020080000020001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACraftingTable, CraftingInfo), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ACraftingTable_Statics::NewProp_CraftingInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACraftingTable_Statics::NewProp_CraftingInfo_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_CraftingInfo = { "CraftingInfo", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACraftingTable, CraftingInfo), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ACraftingTable_Statics::NewProp_CraftingInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACraftingTable_Statics::NewProp_CraftingInfo_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACraftingTable_Statics::NewProp_ObjectSpawner_MetaData[] = {
 		{ "Category", "CraftingTable" },
@@ -292,9 +402,11 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsPlaceInfo
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACraftingTable_Statics::NewProp_ObjectSpawner = { "ObjectSpawner", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACraftingTable, ObjectSpawner), Z_Construct_UClass_AObjectSpawner_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACraftingTable_Statics::NewProp_ObjectSpawner_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACraftingTable_Statics::NewProp_ObjectSpawner_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACraftingTable_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACraftingTable_Statics::NewProp_CountSlotsCraftingTable,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACraftingTable_Statics::NewProp_ActorsPlaceInfo_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACraftingTable_Statics::NewProp_ActorsPlaceInfo,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACraftingTable_Statics::NewProp_CountSlots,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACraftingTable_Statics::NewProp_MatrixActorsPlaceInfo_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACraftingTable_Statics::NewProp_MatrixActorsPlaceInfo,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACraftingTable_Statics::NewProp_ComparePlaceActorsInfo_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACraftingTable_Statics::NewProp_ComparePlaceActorsInfo,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACraftingTable_Statics::NewProp_CraftingInfo_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACraftingTable_Statics::NewProp_CraftingInfo,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACraftingTable_Statics::NewProp_ObjectSpawner,
@@ -326,7 +438,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsPlaceInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACraftingTable, 4125119826);
+	IMPLEMENT_CLASS(ACraftingTable, 3648226550);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ACraftingTable>()
 	{
 		return ACraftingTable::StaticClass();

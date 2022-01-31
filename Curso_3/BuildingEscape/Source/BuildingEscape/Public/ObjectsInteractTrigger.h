@@ -19,7 +19,7 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<AActor>> ObjectsToOverlapCheck;
-
+	
 	TArray<AActor*> ActorsInOverlap;
 	
 	bool bIsOverlapWithSomeSpecificObject = false;

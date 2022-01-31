@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "ObjectSpawner.h"
+#include "ObjectsInteractTrigger.h"
 #include "GameFramework/Actor.h"
 #include "CraftingTable.generated.h"
 
@@ -12,17 +13,51 @@ struct FActorsPlaceInfo
 {
 	GENERATED_BODY()
 public:
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(EditAnywhere)
 	AActor* CurrentActorPlace;
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(EditAnywhere)
 	int indexPlace;
+};
+
+USTRUCT()
+struct FMatrixActorsPlace
+{
+	GENERATED_BODY()
+public:
+
+	UPROPERTY(EditAnywhere)
+	FActorsPlaceInfo ActorsPlace;
+	
+	UPROPERTY(EditAnywhere)
+	AInteractTrigger* InteractTrigger;
+	
+	void CheckCurrentActorPlace()
+	{
+		if(!InteractTrigger)
+		{
+			ActorsPlace.CurrentActorPlace = nullptr;
+			return;
+		}
+		TArray<AActor*> Actors;
+		
+		InteractTrigger->BoxTriggerVolume->GetOverlappingActors(Actors);
+
+		if(Actors.Num() > 0)
+		{
+			ActorsPlace.CurrentActorPlace = Actors[Actors.Num()-1];
+		}
+		else
+		{
+			ActorsPlace.CurrentActorPlace = nullptr;
+		}
+	}
 };
 
 USTRUCT()
 struct FCraftingInfo
 {
 	GENERATED_BODY()
-
+public:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> CraftingActorSpawn;
 	UPROPERTY(EditAnywhere)
@@ -39,11 +74,19 @@ public:
 	ACraftingTable();
 
 protected:
-	UPROPERTY(VisibleAnywhere)
-	int CountSlotsCraftingTable = 9;
-	UPROPERTY(VisibleAnywhere)
-	TArray<FActorsPlaceInfo> ActorsPlaceInfo;
-	UPROPERTY(VisibleAnywhere)
+
+	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere)
+	int CountSlots = 9;
+	
+	UPROPERTY(EditAnywhere)
+	TArray<FMatrixActorsPlace> MatrixActorsPlaceInfo;
+	
+	UPROPERTY(EditAnywhere)
+	TArray<FActorsPlaceInfo> ComparePlaceActorsInfo;
+	
+	UPROPERTY(EditAnywhere)
 	TArray<FCraftingInfo> CraftingInfo;
 
 	UPROPERTY(EditAnywhere)
