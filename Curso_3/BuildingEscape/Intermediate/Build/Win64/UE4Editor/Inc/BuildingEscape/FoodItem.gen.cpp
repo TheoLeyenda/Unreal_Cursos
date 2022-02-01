@@ -76,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFoodItem() {}
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_UFoodItem_Statics::PropPointers),
 		0,
-		0x00B010A0u,
+		0x003010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UFoodItem_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UFoodItem_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UFoodItem()
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFoodItem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFoodItem, 3801907576);
+	IMPLEMENT_CLASS(UFoodItem, 3163273949);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UFoodItem>()
 	{
 		return UFoodItem::StaticClass();

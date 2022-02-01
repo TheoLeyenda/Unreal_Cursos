@@ -18,10 +18,9 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABuildingScapeCharacter_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABuildingScapeCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UItem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UGrabber_NoRegister();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInventory_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInteractComponent_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_BuildingEscape_OnSubstractLife__DelegateSignature_Statics
@@ -46,61 +45,8 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		}
 		return ReturnFunction;
 	}
-	DEFINE_FUNCTION(ABuildingScapeCharacter::execUseItem)
-	{
-		P_GET_OBJECT(UItem,Z_Param_Item);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->UseItem(Z_Param_Item);
-		P_NATIVE_END;
-	}
 	void ABuildingScapeCharacter::StaticRegisterNativesABuildingScapeCharacter()
 	{
-		UClass* Class = ABuildingScapeCharacter::StaticClass();
-		static const FNameNativePtrPair Funcs[] = {
-			{ "UseItem", &ABuildingScapeCharacter::execUseItem },
-		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics
-	{
-		struct BuildingScapeCharacter_eventUseItem_Parms
-		{
-			UItem* Item;
-		};
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Item_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Item;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::NewProp_Item_MetaData[] = {
-		{ "EditInline", "true" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BuildingScapeCharacter_eventUseItem_Parms, Item), Z_Construct_UClass_UItem_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::NewProp_Item_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::NewProp_Item_MetaData)) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::NewProp_Item,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABuildingScapeCharacter, nullptr, "UseItem", nullptr, nullptr, sizeof(BuildingScapeCharacter_eventUseItem_Parms), Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ABuildingScapeCharacter_UseItem()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABuildingScapeCharacter_UseItem_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ABuildingScapeCharacter_NoRegister()
 	{
@@ -109,7 +55,6 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	struct Z_Construct_UClass_ABuildingScapeCharacter_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
-		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -147,9 +92,9 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Grabber;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InventoryComponent_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerInventoryComponent_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InventoryComponent;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlayerInventoryComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractComponent_MetaData[];
 #endif
@@ -161,9 +106,6 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	UObject* (*const Z_Construct_UClass_ABuildingScapeCharacter_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
-	};
-	const FClassFunctionLinkInfo Z_Construct_UClass_ABuildingScapeCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ABuildingScapeCharacter_UseItem, "UseItem" }, // 2139418709
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::Class_MetaDataParams[] = {
@@ -239,13 +181,15 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber = { "Grabber", nullptr, (EPropertyFlags)0x001000000009000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, Grabber), Z_Construct_UClass_UGrabber_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_PlayerInventoryComponent_MetaData[] = {
 		{ "Category", "BuildingScapeCharacter Settings" },
+		{ "Comment", "//UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= \"BuildingScapeCharacter Settings\")\n//class UInventoryComponent* InventoryComponent;\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
+		{ "ToolTip", "UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= \"BuildingScapeCharacter Settings\")\nclass UInventoryComponent* InventoryComponent;" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent = { "InventoryComponent", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, InventoryComponent), Z_Construct_UClass_UInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_PlayerInventoryComponent = { "PlayerInventoryComponent", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, PlayerInventoryComponent), Z_Construct_UClass_UInventory_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_PlayerInventoryComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_PlayerInventoryComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InteractComponent_MetaData[] = {
 		{ "Category", "BuildingScapeCharacter Settings" },
@@ -263,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_OnSubstractLife,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InventoryComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_PlayerInventoryComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_InteractComponent,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABuildingScapeCharacter_Statics::StaticCppClassTypeInfo = {
@@ -274,11 +218,11 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		FuncInfo,
+		nullptr,
 		Z_Construct_UClass_ABuildingScapeCharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		UE_ARRAY_COUNT(FuncInfo),
+		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -293,7 +237,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingScapeCharacter, 3938712563);
+	IMPLEMENT_CLASS(ABuildingScapeCharacter, 322343191);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABuildingScapeCharacter>()
 	{
 		return ABuildingScapeCharacter::StaticClass();

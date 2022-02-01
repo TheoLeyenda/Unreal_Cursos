@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "BuildingScapeCharacter.h"
-#include "InventoryComponent.h"
 #include "UObject/NoExportTypes.h"
 #include "Item.generated.h"
 
@@ -48,12 +47,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item", meta = (ClampMin = 0.0))
 	float Weight;
 
-	/**The Inventory that owns this item**/
-	UPROPERTY()
-	UInventoryComponent* OwningInventory;
-
 	virtual void Use(ABuildingScapeCharacter* Character);
 
+	virtual void Use();
 	UFUNCTION(BlueprintImplementableEvent)
 	void OnUse(ABuildingScapeCharacter* Character);
 };

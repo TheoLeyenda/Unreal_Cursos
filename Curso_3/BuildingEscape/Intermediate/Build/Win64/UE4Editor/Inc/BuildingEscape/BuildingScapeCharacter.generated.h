@@ -8,7 +8,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UItem;
 #ifdef BUILDINGESCAPE_BuildingScapeCharacter_generated_h
 #error "BuildingScapeCharacter.generated.h already included, missing '#pragma once' in BuildingScapeCharacter.h"
 #endif
@@ -22,16 +21,8 @@ static inline void FOnSubstractLife_DelegateWrapper(const FMulticastScriptDelega
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS \
- \
-	DECLARE_FUNCTION(execUseItem);
-
-
-#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execUseItem);
-
-
+#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS
+#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABuildingScapeCharacter(); \

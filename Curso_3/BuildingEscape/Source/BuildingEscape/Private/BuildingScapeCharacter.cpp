@@ -4,10 +4,9 @@
 #include "BuildingScapeCharacter.h"
 
 #include "BuildingEscapeGameMode.h"
-#include "InventoryComponent.h"
 #include "Grabber.h"
+#include "Inventory.h"
 #include "InteractComponent.h"
-#include "Item.h"
 #include "Components/CapsuleComponent.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -27,8 +26,12 @@ ABuildingScapeCharacter::ABuildingScapeCharacter()
 	Grabber = CreateDefaultSubobject<UGrabber>(TEXT("Grabber"));
 	
 	// Inventory System //
-	InventoryComponent = CreateDefaultSubobject<UInventoryComponent>(TEXT("Inventory"));
+	//InventoryComponent = CreateDefaultSubobject<UInventoryComponent>(TEXT("Inventory"));
 
+	PlayerInventoryComponent = CreateDefaultSubobject<UInventory>(TEXT("PlayerInventoryComponent"));
+
+	PlayerInventoryComponent->BuildingScapeCharacter = this;
+	
 	InteractComponent = CreateDefaultSubobject<UInteractComponent>(TEXT("InteractComponent"));
 }
 
@@ -144,13 +147,4 @@ void ABuildingScapeCharacter::SubstractLifes(int Value)
 void ABuildingScapeCharacter::AddLifes(int Value)
 {
 	Lifes += Value;
-}
-
-void ABuildingScapeCharacter::UseItem(UItem* Item)
-{
-	if(Item)
-	{
-		Item->Use(this);
-		Item->OnUse(this); //bp->Event.
-	}
 }

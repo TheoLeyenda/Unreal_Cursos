@@ -14,18 +14,18 @@ class ABuildingScapeCharacter;
 #endif
 #define BUILDINGESCAPE_Item_generated_h
 
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_RPC_WRAPPERS_NO_PURE_DECLS
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_EVENT_PARMS \
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_SPARSE_DATA
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_RPC_WRAPPERS
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_EVENT_PARMS \
 	struct Item_eventOnUse_Parms \
 	{ \
 		ABuildingScapeCharacter* Character; \
 	};
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_CALLBACK_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_INCLASS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_CALLBACK_WRAPPERS
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUItem(); \
 	friend struct Z_Construct_UClass_UItem_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UItem)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_INCLASS \
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesUItem(); \
 	friend struct Z_Construct_UClass_UItem_Statics; \
@@ -43,7 +43,7 @@ public: \
 	DECLARE_SERIALIZER(UItem)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_STANDARD_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UItem(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UItem) \
@@ -56,7 +56,7 @@ private: \
 public:
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_ENHANCED_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UItem(UItem&&); \
@@ -67,33 +67,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UItem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UItem)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_PRIVATE_PROPERTY_OFFSET
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_14_PROLOG \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_EVENT_PARMS
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_PRIVATE_PROPERTY_OFFSET
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_13_PROLOG \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_EVENT_PARMS
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_GENERATED_BODY_LEGACY \
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_RPC_WRAPPERS \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_CALLBACK_WRAPPERS \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_INCLASS \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_STANDARD_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_RPC_WRAPPERS \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_CALLBACK_WRAPPERS \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_INCLASS \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Item_h_17_GENERATED_BODY \
+#define BuildingEscape_Source_BuildingEscape_Public_Item_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_CALLBACK_WRAPPERS \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_INCLASS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_Item_h_17_ENHANCED_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_CALLBACK_WRAPPERS \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_INCLASS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_Item_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

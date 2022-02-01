@@ -9,7 +9,6 @@ UItem::UItem()
 	UseActionText = FText::FromString("Use");
 }
 
-void UItem::Use(ABuildingScapeCharacter* Character)
-{
-	
-}
+void UItem::Use(ABuildingScapeCharacter* Character){}
+
+void UItem::Use(){}

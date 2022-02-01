@@ -22,16 +22,11 @@ protected:
 public:	
 	// Sets default values for this actor's properties
 	APickup();
-
-	void BeginPlay() override;
 	
 	void Tick(float DeltaSeconds) override;
 	
 	UPROPERTY(EditAnywhere, Category= "Pickup")
 	bool bEnableUseMessagePickup = true;
-	
-	UPROPERTY(EditDefaultsOnly, Category="Pickup")
-	bool bAttachTextToMesh = false;
 	
 	bool bUseMessagePickup = false;
 	

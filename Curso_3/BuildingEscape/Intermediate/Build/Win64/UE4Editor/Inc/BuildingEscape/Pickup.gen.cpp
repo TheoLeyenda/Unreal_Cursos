@@ -42,11 +42,6 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		static void NewProp_bEnableUseMessagePickup_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bEnableUseMessagePickup;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bAttachTextToMesh_MetaData[];
-#endif
-		static void NewProp_bAttachTextToMesh_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bAttachTextToMesh;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUseRotatePickup_MetaData[];
 #endif
 		static void NewProp_bUseRotatePickup_SetBit(void* Obj);
@@ -97,17 +92,6 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		((APickup*)Obj)->bEnableUseMessagePickup = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APickup_Statics::NewProp_bEnableUseMessagePickup = { "bEnableUseMessagePickup", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(APickup), &Z_Construct_UClass_APickup_Statics::NewProp_bEnableUseMessagePickup_SetBit, METADATA_PARAMS(Z_Construct_UClass_APickup_Statics::NewProp_bEnableUseMessagePickup_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::NewProp_bEnableUseMessagePickup_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickup_Statics::NewProp_bAttachTextToMesh_MetaData[] = {
-		{ "Category", "Pickup" },
-		{ "ModuleRelativePath", "Public/Pickup.h" },
-	};
-#endif
-	void Z_Construct_UClass_APickup_Statics::NewProp_bAttachTextToMesh_SetBit(void* Obj)
-	{
-		((APickup*)Obj)->bAttachTextToMesh = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APickup_Statics::NewProp_bAttachTextToMesh = { "bAttachTextToMesh", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(APickup), &Z_Construct_UClass_APickup_Statics::NewProp_bAttachTextToMesh_SetBit, METADATA_PARAMS(Z_Construct_UClass_APickup_Statics::NewProp_bAttachTextToMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::NewProp_bAttachTextToMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickup_Statics::NewProp_bUseRotatePickup_MetaData[] = {
 		{ "Category", "Pickup" },
@@ -160,7 +144,6 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APickup_Statics::NewProp_PickupItem = { "PickupItem", nullptr, (EPropertyFlags)0x0012000000090009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APickup, PickupItem), Z_Construct_UClass_UItem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APickup_Statics::NewProp_PickupItem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::NewProp_PickupItem_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APickup_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_bEnableUseMessagePickup,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_bAttachTextToMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_bUseRotatePickup,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_SpeedRotatePickup,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp_MyText,
@@ -198,7 +181,7 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APickup, 1069502244);
+	IMPLEMENT_CLASS(APickup, 1997756367);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<APickup>()
 	{
 		return APickup::StaticClass();

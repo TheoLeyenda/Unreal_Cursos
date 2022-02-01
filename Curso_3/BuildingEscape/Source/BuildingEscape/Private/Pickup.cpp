@@ -3,6 +3,7 @@
 
 #include "Pickup.h"
 #include "BuildingScapeCharacter.h"
+#include "Inventory.h"
 
 #include "Kismet/GameplayStatics.h"
 // Sets default values
@@ -16,24 +17,6 @@ APickup::APickup()
 	SceneComponent->SetupAttachment(RootComponent);
 	MyText->SetupAttachment(SceneComponent);
 	StaticMeshComponent->SetupAttachment(SceneComponent);
-}
-
-void APickup::BeginPlay()
-{
-	Super::BeginPlay();
-	if(bAttachTextToMesh)
-	{
-		if(StaticMeshComponent)
-		{
-			StaticMeshComponent->SetupAttachment(SceneComponent);
-			if(MyText)
-			{
-				MyText->AttachToComponent(StaticMeshComponent, FAttachmentTransformRules::KeepRelativeTransform);
-				MyText->SetRelativeLocation(FVector(0.0f,0.0f,220.0f));
-				MyText->SetRelativeScale3D(FVector(5.0f,5.0f,5.0f));
-			}
-		}
-	}
 }
 
 void APickup::Tick(float DeltaSeconds)
@@ -120,9 +103,9 @@ void APickup::BeginDestroy()
 bool APickup::ExecuteInteractInterface(ABuildingScapeCharacter* Character)
 {
 	if(!Character) {return false;}
-	if(!Character->InventoryComponent){return false;}
+	if(!Character->PlayerInventoryComponent){return false;}
 	
-	Character->InventoryComponent->AddItem(PickupItem);
+	Character->PlayerInventoryComponent->AddItem(PickupItem);
 	Destroy();
 	return true;
 }

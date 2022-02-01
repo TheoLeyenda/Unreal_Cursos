@@ -73,15 +73,15 @@ public:
 	
 	void RestartGamePressed();
 	
-	UFUNCTION(BlueprintCallable)
-    void UseItem(class UItem* Item);
-	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category= "BuildingScapeCharacter Settings")
 	class UGrabber* Grabber;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "BuildingScapeCharacter Settings")
-	class UInventoryComponent* InventoryComponent;
+	//UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "BuildingScapeCharacter Settings")
+	//class UInventoryComponent* InventoryComponent;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "BuildingScapeCharacter Settings")
+	class UInventory* PlayerInventoryComponent;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "BuildingScapeCharacter Settings")
 	class UInteractComponent* InteractComponent;
 };
