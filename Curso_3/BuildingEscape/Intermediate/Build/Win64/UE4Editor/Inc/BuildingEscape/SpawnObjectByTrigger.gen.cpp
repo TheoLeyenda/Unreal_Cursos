@@ -37,10 +37,11 @@ void EmptyLinkFunctionForGeneratedCodeSpawnObjectByTrigger() {}
 #endif
 		static void NewProp_bDestroymeInTrigger_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bDestroymeInTrigger;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Spawners_Inner;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ObjectSpawner_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Spawners_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ObjectSpawner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Spawners;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -67,16 +68,18 @@ void EmptyLinkFunctionForGeneratedCodeSpawnObjectByTrigger() {}
 		((ASpawnObjectByTrigger*)Obj)->bDestroymeInTrigger = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_bDestroymeInTrigger = { "bDestroymeInTrigger", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ASpawnObjectByTrigger), &Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_bDestroymeInTrigger_SetBit, METADATA_PARAMS(Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_bDestroymeInTrigger_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_bDestroymeInTrigger_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_Spawners_Inner = { "Spawners", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AObjectSpawner_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_ObjectSpawner_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_Spawners_MetaData[] = {
 		{ "Category", "SpawnObjectByTrigger" },
 		{ "ModuleRelativePath", "Public/SpawnObjectByTrigger.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_ObjectSpawner = { "ObjectSpawner", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpawnObjectByTrigger, ObjectSpawner), Z_Construct_UClass_AObjectSpawner_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_ObjectSpawner_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_ObjectSpawner_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_Spawners = { "Spawners", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpawnObjectByTrigger, Spawners), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_Spawners_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_Spawners_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpawnObjectByTrigger_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_bDestroymeInTrigger,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_ObjectSpawner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_Spawners_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawnObjectByTrigger_Statics::NewProp_Spawners,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASpawnObjectByTrigger_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASpawnObjectByTrigger>::IsAbstract,
@@ -105,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeSpawnObjectByTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASpawnObjectByTrigger, 1871557095);
+	IMPLEMENT_CLASS(ASpawnObjectByTrigger, 1668317030);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ASpawnObjectByTrigger>()
 	{
 		return ASpawnObjectByTrigger::StaticClass();

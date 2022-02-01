@@ -9,9 +9,16 @@ bool ASpawnObjectByTrigger::ExecuteInteractInterface()
 {
 	//ACA HACER QUE SE SPAWNEEN LOS OBJETOS SI SE ENCUENTRA EL SPAWNER.
 
-	if(!ObjectSpawner){return false;}
+	if(Spawners.Num()<= 0){return false;}
 
-	ObjectSpawner->SendTimerSpawnObject();
+	for(int i = 0; i < Spawners.Num(); i++)
+	{
+		if(Spawners[i])
+		{
+			Spawners[i]->bEnableSpawnObject = true;
+			Spawners[i]->SendTimerSpawnObject();
+		}
+	}
 	
 	if(bDestroymeInTrigger)
 	{

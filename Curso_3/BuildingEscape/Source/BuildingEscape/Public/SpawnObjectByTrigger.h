@@ -21,7 +21,7 @@ public:
 	bool bDestroymeInTrigger = true;
 	
 	UPROPERTY(EditAnywhere)
-	AObjectSpawner* ObjectSpawner;
+	TArray<AObjectSpawner*> Spawners;
 
 	virtual bool ExecuteInteractInterface() override;
 };

@@ -2,6 +2,9 @@
 
 
 #include "CraftingTable.h"
+
+#include <string>
+
 #include "Algo/Compare.h"
 
 // Sets default values
@@ -56,13 +59,20 @@ void ACraftingTable::CheckCrafting()
 	{
 		for(int i = 0; i < CraftingInfo.Num(); i++)
 		{
+			bCraftingDone = true;
 			if(ComparePlaceActorsInfo.Num() == CraftingInfo[i].ActorsRequired.Num())
 			{
 				for(int k = 0; k < ComparePlaceActorsInfo.Num(); k++)
 				{
+					UE_LOG(LogTemp, Warning, TEXT("%d == %d"), ComparePlaceActorsInfo[k].indexPlace, CraftingInfo[i].ActorsRequired[k].indexPlace);
+					if(ComparePlaceActorsInfo[k].CurrentActorPlace->GetClass() != CraftingInfo[i].ActorsRequired[k].ActorPlaceRequired)
+					{
+						UE_LOG(LogTemp, Warning, TEXT("Las Clases son distintas"));
+					}
 					if(ComparePlaceActorsInfo[k].indexPlace != CraftingInfo[i].ActorsRequired[k].indexPlace
 						|| ComparePlaceActorsInfo[k].CurrentActorPlace->GetClass() != CraftingInfo[i].ActorsRequired[k].ActorPlaceRequired)
 					{
+						UE_LOG(LogTemp, Warning, TEXT("ENTRE al bCraftingDone = false"));
 						bCraftingDone = false;
 					}
 				}
@@ -73,7 +83,9 @@ void ACraftingTable::CheckCrafting()
 					indexCraftingInfoSpawnObject = i;
 					i = CraftingInfo.Num();
 				}
+				UE_LOG(LogTemp, Warning, TEXT("-------"));
 			}
+			
 		}
 	}
 

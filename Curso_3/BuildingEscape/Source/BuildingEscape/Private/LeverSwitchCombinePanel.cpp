@@ -38,7 +38,7 @@ void ALeverSwitchCombinePanel::BeginPlay()
 		{
 			if(LeverSwitchesInfo[i].Code == SpawnObjectsInfo[j].Code && !LeverSwitchesInfo[i].bAssignedObjectSpawn)
 			{
-				UE_LOG(LogTemp, Warning, TEXT("CAMBIE PANEL"));
+				//UE_LOG(LogTemp, Warning, TEXT("CAMBIE PANEL"));
 				LeverSwitchesInfo[i].ObjectSpawn = SpawnObjectsInfo[j].ObjectSpawn;
 				LeverSwitchesInfo[i].bAssignedObjectSpawn = true;
 			}
