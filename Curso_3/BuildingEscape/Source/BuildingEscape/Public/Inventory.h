@@ -23,6 +23,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = 0.0))
 	int32 Capacity = 20;
 
+	UPROPERTY(VisibleAnywhere)
+	UItem* CurrentItemSelected;
+	
 	UPROPERTY(BlueprintAssignable, BlueprintCallable)
 	FOnPlayerInventoryUpdated OnPlayerInventoryUpdated;
 	
@@ -37,5 +40,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void UseItem(UItem* Item);
-		
+
+	UFUNCTION(BlueprintCallable)
+	void RemoveCurrentItemSelected();
 };

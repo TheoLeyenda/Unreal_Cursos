@@ -47,9 +47,28 @@ void UInventory::UseItem(UItem* Item)
 	}
 	if(EnableUseItem)
 	{
-		Item->Use(BuildingScapeCharacter);
-		RemoveItem(Item);
-		OnPlayerInventoryUpdated.Broadcast();
+		if(Item->bSelectedItem)
+		{
+			if(!CurrentItemSelected)
+			{
+				CurrentItemSelected = Item;
+			}
+		}
+		else
+		{
+			Item->Use(BuildingScapeCharacter);
+			RemoveItem(Item);
+			OnPlayerInventoryUpdated.Broadcast();
+		}
+	}
+}
+
+void UInventory::RemoveCurrentItemSelected()
+{
+	if(CurrentItemSelected)
+	{
+		RemoveItem(CurrentItemSelected);
+		CurrentItemSelected = nullptr;
 	}
 }
 

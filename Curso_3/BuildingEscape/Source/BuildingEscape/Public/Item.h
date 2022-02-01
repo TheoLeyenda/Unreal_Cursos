@@ -18,10 +18,8 @@ class BUILDINGESCAPE_API UItem : public UObject
 public:
 	UItem();
 
-	virtual UWorld* GetWorld() const { return World;}
-	
-	UPROPERTY(Transient)
-	UWorld* World;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")
+	bool bSelectedItem = false;
 	
 	/** The Text for using the item. (Equip, Eat, etc)**/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")
