@@ -38,7 +38,7 @@ protected:
 		, int32 OtherBodyIndex) override;
 
 	virtual bool ExecuteInteractInterface() override;
-
+	
 	void CheckExecuteInteractInterface(AActor* OtherActor);
 public:
 	bool IsOverlapWithSomeSpecificObject();

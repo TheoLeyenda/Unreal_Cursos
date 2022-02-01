@@ -30,8 +30,6 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	
-	
 
 	ELastStateObjectOverlap LastObjectRegister;
 	
@@ -50,5 +48,4 @@ protected:
 		, int32 OtherBodyIndex);
 
 	virtual bool ExecuteInteractInterface() override;
-
 };

@@ -19,6 +19,26 @@ void AObjectsInteractTrigger::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, 
 	CheckExecuteInteractInterface(OtherActor);
 }
 
+void AObjectsInteractTrigger::CheckExecuteInteractInterface(AActor* OtherActor)
+{
+	for(TSubclassOf<AActor> Actor : ObjectsToOverlapCheck)
+	{
+		if(Actor)
+		{
+			if(OtherActor->GetClass() == Actor)
+			{
+				ExecuteInteractInterface();
+			}
+		}
+	}
+	
+}
+
+bool AObjectsInteractTrigger::IsOverlapWithSomeSpecificObject()
+{
+	return bIsOverlapWithSomeSpecificObject;
+}
+
 bool AObjectsInteractTrigger::ExecuteInteractInterface()
 {
 	BoxTriggerVolume->GetOverlappingActors(ActorsInOverlap);
@@ -34,22 +54,3 @@ bool AObjectsInteractTrigger::ExecuteInteractInterface()
 	return true;
 }
 
-void AObjectsInteractTrigger::CheckExecuteInteractInterface(AActor* OtherActor)
-{
-	for(TSubclassOf<AActor> Actor : ObjectsToOverlapCheck)
-	{
-		if(Actor)
-		{
-			if(OtherActor->GetClass() == Actor)
-			{
-				ExecuteInteractInterface();
-			}
-		}
-	}
-}
-
-
-bool AObjectsInteractTrigger::IsOverlapWithSomeSpecificObject()
-{
-	return bIsOverlapWithSomeSpecificObject;
-}

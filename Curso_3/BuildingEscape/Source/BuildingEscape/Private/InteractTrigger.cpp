@@ -41,6 +41,6 @@ void AInteractTrigger::OnOverlapEnd(UPrimitiveComponent* OverlappedComp
 
 bool AInteractTrigger::ExecuteInteractInterface()
 {
-	return false;
+	return true;
 }
 

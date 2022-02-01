@@ -64,15 +64,9 @@ void ACraftingTable::CheckCrafting()
 			{
 				for(int k = 0; k < ComparePlaceActorsInfo.Num(); k++)
 				{
-					UE_LOG(LogTemp, Warning, TEXT("%d == %d"), ComparePlaceActorsInfo[k].indexPlace, CraftingInfo[i].ActorsRequired[k].indexPlace);
-					if(ComparePlaceActorsInfo[k].CurrentActorPlace->GetClass() != CraftingInfo[i].ActorsRequired[k].ActorPlaceRequired)
-					{
-						UE_LOG(LogTemp, Warning, TEXT("Las Clases son distintas"));
-					}
 					if(ComparePlaceActorsInfo[k].indexPlace != CraftingInfo[i].ActorsRequired[k].indexPlace
 						|| ComparePlaceActorsInfo[k].CurrentActorPlace->GetClass() != CraftingInfo[i].ActorsRequired[k].ActorPlaceRequired)
 					{
-						UE_LOG(LogTemp, Warning, TEXT("ENTRE al bCraftingDone = false"));
 						bCraftingDone = false;
 					}
 				}
@@ -83,7 +77,6 @@ void ACraftingTable::CheckCrafting()
 					indexCraftingInfoSpawnObject = i;
 					i = CraftingInfo.Num();
 				}
-				UE_LOG(LogTemp, Warning, TEXT("-------"));
 			}
 			
 		}
