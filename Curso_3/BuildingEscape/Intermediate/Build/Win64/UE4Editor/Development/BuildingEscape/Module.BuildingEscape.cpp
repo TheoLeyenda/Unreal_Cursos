@@ -19,6 +19,7 @@
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/LeverSwitch.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/LeverSwitchCombinePanel.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/LeverSwitchToCraft.cpp"
+#include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/LockedDoor.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/ObjectsInteractTrigger.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/ObjectSpawner.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/ObjectSpawnLeverSwitch.cpp"

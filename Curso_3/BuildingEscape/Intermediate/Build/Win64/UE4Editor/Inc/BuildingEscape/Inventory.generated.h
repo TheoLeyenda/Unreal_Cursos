@@ -24,6 +24,7 @@ static inline void FOnPlayerInventoryUpdated_DelegateWrapper(const FMulticastScr
 #define BuildingEscape_Source_BuildingEscape_Public_Inventory_h_15_SPARSE_DATA
 #define BuildingEscape_Source_BuildingEscape_Public_Inventory_h_15_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execRemoveCurrentItemSelected); \
 	DECLARE_FUNCTION(execUseItem); \
 	DECLARE_FUNCTION(execRemoveItem); \
 	DECLARE_FUNCTION(execAddItem);
@@ -31,6 +32,7 @@ static inline void FOnPlayerInventoryUpdated_DelegateWrapper(const FMulticastScr
 
 #define BuildingEscape_Source_BuildingEscape_Public_Inventory_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execRemoveCurrentItemSelected); \
 	DECLARE_FUNCTION(execUseItem); \
 	DECLARE_FUNCTION(execRemoveItem); \
 	DECLARE_FUNCTION(execAddItem);

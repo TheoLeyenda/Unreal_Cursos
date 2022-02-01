@@ -19,6 +19,7 @@
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/LeverSwitch.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/LeverSwitchCombinePanel.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/LeverSwitchToCraft.gen.cpp"
+#include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/LockedDoor.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/ObjectsInteractTrigger.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/ObjectSpawner.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/ObjectSpawnLeverSwitch.gen.cpp"

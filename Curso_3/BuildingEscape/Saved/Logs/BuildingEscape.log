@@ -925,3 +925,88 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.02.01-20.33.11:198][891]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_Auto150D6254A4B377701FD0C4189E1DC58E7.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Autosaves/Game/Maps/BuildingScape_Auto1.umap'
 [2022.02.01-20.33.11:199][891]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/BuildingScape' took 0.131
 [2022.02.01-20.33.11:199][891]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.131
+[2022.02.01-20.40.38:086][216]LogEditorViewport: Clicking on Actor (LMB): BP_Door_C (BP_Door5)
+[2022.02.01-20.41.31:552][149]LogSlate: Took 0.000176 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.02.01-20.42.11:119][749]Running D:/Unreal/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/BuildingEscape.uproject" -game -rocket -progress
+[2022.02.01-20.42.11:422][749]Discovering modules, targets and source code for project...
+[2022.02.01-20.42.12:830][749]Binding IntelliSense data...
+[2022.02.01-20.42.14:444][749]Binding IntelliSense data... 100%
+[2022.02.01-20.42.14:444][749]Writing project files...
+[2022.02.01-20.42.16:963][749]Writing project files... 100%
+[2022.02.01-20.42.17:074][749]Candidate modules for hot reload:
+[2022.02.01-20.42.17:074][749]  BuildingEscape
+[2022.02.01-20.42.17:074][749]Launching UnrealBuildTool... [D:/Unreal/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=BuildingEscape,2731 BuildingEscapeEditor Win64 Development -Project="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/BuildingEscape.uproject" "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/BuildingEscape.uproject"  -IgnoreJunk]
+[2022.02.01-20.42.24:344][749]CompilerResultsLog: New page: Compilation - Feb 1, 2022, 2:42:24 PM
+[2022.02.01-20.42.24:344][749]CompilerResultsLog: Creating makefile for BuildingEscapeEditor (no existing makefile)
+[2022.02.01-20.42.24:344][749]CompilerResultsLog: Parsing headers for BuildingEscapeEditor
+[2022.02.01-20.42.24:344][749]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Theo\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\BuildingEscape.uproject" "C:\Users\Theo\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\Intermediate\Build\Win64\BuildingEscapeEditor\Development\BuildingEscapeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Theo\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.02.01-20.42.24:344][749]CompilerResultsLog: Reflection code generated for BuildingEscapeEditor in 3.0184922 seconds
+[2022.02.01-20.42.24:344][749]CompilerResultsLog: Building BuildingEscapeEditor...
+[2022.02.01-20.42.24:344][749]CompilerResultsLog: Using Visual Studio 2019 14.29.30138 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.02.01-20.42.24:344][749]CompilerResultsLog: Building 5 actions with 12 processes...
+[2022.02.01-20.42.24:344][749]CompilerResultsLog:   [1/5] Module.BuildingEscape.gen.cpp
+[2022.02.01-20.42.24:344][749]CompilerResultsLog:   [2/5] Module.BuildingEscape.cpp
+[2022.02.01-20.42.24:344][749]CompilerResultsLog:   [3/5] UE4Editor-BuildingEscape-2731.lib
+[2022.02.01-20.42.24:344][749]CompilerResultsLog:      Creating library C:\Users\Theo\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2731.lib and object C:\Users\Theo\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2731.exp
+[2022.02.01-20.42.24:344][749]CompilerResultsLog:   [4/5] UE4Editor-BuildingEscape-2731.dll
+[2022.02.01-20.42.24:344][749]CompilerResultsLog:      Creating library C:\Users\Theo\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2731.suppressed.lib and object C:\Users\Theo\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2731.suppressed.exp
+[2022.02.01-20.42.24:344][749]CompilerResultsLog:   [5/5] BuildingEscapeEditor.target
+[2022.02.01-20.42.24:344][749]CompilerResultsLog: Total time in Parallel executor: 2.57 seconds
+[2022.02.01-20.42.24:344][749]CompilerResultsLog: Total execution time: 7.20 seconds
+[2022.02.01-20.42.24:344][749]LogMainFrame: MainFrame: Module compiling took 7.280 seconds
+[2022.02.01-20.42.24:351][749]LogClass: Could not find existing class FoodItem in package /Script/BuildingEscape for HotReload, assuming new class
+[2022.02.01-20.42.24:351][749]LogClass: Could not find existing class Item in package /Script/BuildingEscape for HotReload, assuming new class
+[2022.02.01-20.42.24:352][749]LogClass: Could not find existing class Inventory in package /Script/BuildingEscape for HotReload, assuming new class
+[2022.02.01-20.42.24:352][749]LogClass: Function AddItem is new.
+[2022.02.01-20.42.24:352][749]LogClass: Function RemoveCurrentItemSelected is new.
+[2022.02.01-20.42.24:352][749]LogClass: Function RemoveItem is new.
+[2022.02.01-20.42.24:352][749]LogClass: Function UseItem is new.
+[2022.02.01-20.42.24:353][749]LogClass: Could not find existing class LockedDoor in package /Script/BuildingEscape for HotReload, assuming new class
+[2022.02.01-20.42.24:356][749]LogClass: EStateDoor HotReload.
+[2022.02.01-20.42.24:357][749]LogClass: ETypeGrabbel HotReload.
+[2022.02.01-20.42.24:357][749]LogClass: ELastStateObjectOverlap HotReload.
+[2022.02.01-20.42.24:357][749]LogClass: EPositiveShiwtch HotReload.
+[2022.02.01-20.42.24:357][749]LogClass: CraftingInfo HotReload.
+[2022.02.01-20.42.24:357][749]LogClass: MatrixActorsPlace HotReload.
+[2022.02.01-20.42.24:357][749]LogClass: ActorsPlaceInfo HotReload.
+[2022.02.01-20.42.24:357][749]LogClass: ActorsRequired HotReload.
+[2022.02.01-20.42.24:357][749]LogClass: SwitcherInfo HotReload.
+[2022.02.01-20.42.24:357][749]LogClass: SpawnObjectInfo HotReload.
+[2022.02.01-20.42.24:357][749]LogClass: ObjectSpawn HotReload.
+[2022.02.01-20.42.24:361][749]LogHotReload: Re-instancing BuildingScapeCharacter after hot-reload.
+[2022.02.01-20.42.24:367][749]LogProperty: Warning: Serialized Class /Script/BuildingEscape.Inventory for a property of Class /Engine/Transient.HOTRELOADED_Inventory_1. Reference will be nullptred.
+    Property = ObjectProperty /Script/BuildingEscape.BuildingScapeCharacter:PlayerInventoryComponent
+    Item = Inventory /Game/Blueprints/Character/BP_BuildingScapeCharacter.Default__BP_BuildingScapeCharacter_C:PlayerInventoryComponent
+[2022.02.01-20.42.24:368][749]LogProperty: Warning: Serialized Class /Script/BuildingEscape.Inventory for a property of Class /Engine/Transient.HOTRELOADED_Inventory_1. Reference will be nullptred.
+    Property = ObjectProperty /Script/BuildingEscape.BuildingScapeCharacter:PlayerInventoryComponent
+    Item = Inventory /Game/Blueprints/Character/BP_BuildingScapeCharacter.Default__SKEL_BP_BuildingScapeCharacter_C:PlayerInventoryComponent
+[2022.02.01-20.42.24:378][749]LogHotReload: Re-instancing FoodItem after hot-reload.
+[2022.02.01-20.42.24:379][749]LogProperty: Warning: Serialized BlueprintGeneratedClass /Game/Blueprints/Inventory/Items/BP_Bread.BP_Bread_C for a property of Class /Engine/Transient.HOTRELOADED_Item_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/BuildingEscape.Pickup:PickupItem
+    Item = BP_Bread_C /Game/Blueprints/Objects/PickUps/BP_BreadPhysicActor.Default__BP_BreadPhysicActor_C:BP_Bread_C_0
+[2022.02.01-20.42.24:379][749]LogProperty: Warning: Serialized BlueprintGeneratedClass /Game/Blueprints/Inventory/Items/BP_Carrot.BP_Carrot_C for a property of Class /Engine/Transient.HOTRELOADED_Item_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/BuildingEscape.Pickup:PickupItem
+    Item = BP_Carrot_C /Game/Blueprints/Objects/PickUps/BP_CarrotPhysicActor.Default__BP_CarrotPhysicActor_C:BP_Carrot_C_0
+[2022.02.01-20.42.24:379][749]LogProperty: Warning: Serialized BlueprintGeneratedClass /Game/Blueprints/Inventory/Items/BP_Chicken.BP_Chicken_C for a property of Class /Engine/Transient.HOTRELOADED_Item_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/BuildingEscape.Pickup:PickupItem
+    Item = BP_Chicken_C /Game/Blueprints/Objects/PickUps/BP_ChickenPhysicActor.Default__BP_ChickenPhysicActor_C:BP_Chicken_C_0
+[2022.02.01-20.42.24:379][749]LogProperty: Warning: Serialized BlueprintGeneratedClass /Game/Blueprints/Inventory/Items/BP_Cookie.BP_Cookie_C for a property of Class /Engine/Transient.HOTRELOADED_Item_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/BuildingEscape.Pickup:PickupItem
+    Item = BP_Cookie_C /Game/Blueprints/Objects/PickUps/BP_CookiePhysicActor.Default__BP_CookiePhysicActor_C:BP_Cookie_C_0
+[2022.02.01-20.42.24:379][749]LogProperty: Warning: Serialized BlueprintGeneratedClass /Game/Blueprints/Inventory/Items/BP_PorkChop.BP_PorkChop_C for a property of Class /Engine/Transient.HOTRELOADED_Item_2. Reference will be nullptred.
+    Property = ObjectProperty /Script/BuildingEscape.Pickup:PickupItem
+    Item = BP_PorkChop_C /Game/Blueprints/Objects/PickUps/BP_PorkChopPhysicActor.Default__BP_PorkChopPhysicActor_C:BP_PorkChop_C_0
+[2022.02.01-20.42.24:386][749]LogHotReload: Re-instancing Inventory after hot-reload.
+[2022.02.01-20.42.24:392][749]LogHotReload: Re-instancing Item after hot-reload.
+[2022.02.01-20.42.24:403][749]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BuildingEscape' in 0.0002 seconds. Added 32 classes and 4 folders.
+[2022.02.01-20.42.24:404][749]Display: HotReload successful (7 functions remapped  7 scriptstructs remapped)
+[2022.02.01-20.42.24:441][749]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0072 seconds. Added 3633 classes and 863 folders.
+[2022.02.01-20.42.24:441][749]Display: HotReload took  7.4s.
+[2022.02.01-20.42.24:457][749]Warning: HotReload operation took  7.4s.
+[2022.02.01-20.42.24:488][749]LogSlate: Window 'Add C++ Class' being destroyed
+[2022.02.01-20.42.24:562][750]LogHotReload: New module detected: UE4Editor-BuildingEscape-2731.dll
+[2022.02.01-20.42.24:621][751]LogHotReload: Starting Hot-Reload from IDE
+[2022.02.01-20.42.24:844][751]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BuildingEscape' in 0.0003 seconds. Added 32 classes and 4 folders.
+[2022.02.01-20.42.24:845][751]Display: HotReload successful (0 functions remapped  7 scriptstructs remapped)
+[2022.02.01-20.42.24:859][751]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0098 seconds. Added 3633 classes and 863 folders.
+[2022.02.01-20.42.24:862][751]Display: HotReload took  0.2s.
