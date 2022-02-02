@@ -27,6 +27,8 @@ public:
 	ADoor();
 
 protected:
+	
+	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
  
@@ -60,7 +62,7 @@ protected:
 	virtual bool ExecuteInteractInterface(ABuildingScapeCharacter* Character) override;
 	
 public:	
-
+	
 	void SetStateDoor(EStateDoor Value);
 	void CheckDoor();
 
@@ -69,12 +71,9 @@ public:
 	UCurveFloat* DoorTimelineFloatCurve;
 
 	void FindAuidioComponent();
-	
 private:
-	//Float Track Signature to handle our update track event
 	FOnTimelineFloat UpdateFunctionFloat;
-
-	//Function which updates our Door's relative location with the timeline graph
+	
 	UFUNCTION()
 	void UpdateTimelineComp(float Output);
 };

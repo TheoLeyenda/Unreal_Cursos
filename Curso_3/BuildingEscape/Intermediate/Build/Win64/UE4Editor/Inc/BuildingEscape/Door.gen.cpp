@@ -112,9 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADoor_UpdateTimelineComp_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "//Function which updates our Door's relative location with the timeline graph\n" },
 		{ "ModuleRelativePath", "Public/Door.h" },
-		{ "ToolTip", "Function which updates our Door's relative location with the timeline graph" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADoor_UpdateTimelineComp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADoor, nullptr, "UpdateTimelineComp", nullptr, nullptr, sizeof(Door_eventUpdateTimelineComp_Parms), Z_Construct_UFunction_ADoor_UpdateTimelineComp_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ADoor_UpdateTimelineComp_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADoor_UpdateTimelineComp_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADoor_UpdateTimelineComp_Statics::Function_MetaDataParams)) };
@@ -178,7 +176,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ADoor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ADoor_UpdateTimelineComp, "UpdateTimelineComp" }, // 1887595344
+		{ &Z_Construct_UFunction_ADoor_UpdateTimelineComp, "UpdateTimelineComp" }, // 2412903836
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::Class_MetaDataParams[] = {
@@ -285,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoor, 781350674);
+	IMPLEMENT_CLASS(ADoor, 3942836902);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ADoor>()
 	{
 		return ADoor::StaticClass();

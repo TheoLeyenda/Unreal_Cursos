@@ -33,14 +33,44 @@ bool AObjectSpawnLeverSwitch::ExecuteInteractInterface(ABuildingScapeCharacter* 
 
 void AObjectSpawnLeverSwitch::SpawnObect()
 {
-	for(AObjectSpawner* Spawner : Spawners)
+	if(bFlagSpawnerUse)
 	{
-		if(Spawner)
+		for(AObjectSpawner* Spawner : Spawners)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("ENTRE AL INTERACT"));
-			Spawner->SendTimerSpawnObject();
+			if(Spawner)
+			{
+				//UE_LOG(LogTemp, Warning, TEXT("ENTRE AL INTERACT"));
+				Spawner->SendTimerSpawnObject();
+			}
 		}
 	}
+	
+	if(bSpawnerOnceUse)
+	{
+		bFlagSpawnerUse = false;
+	}
+}
+
+void AObjectSpawnLeverSwitch::EnableSpawners()
+{
+	if(bEnableSpawnersInBeginPlay)
+	{
+		for(AObjectSpawner* Spawner : Spawners)
+		{
+			if(Spawner)
+			{
+				Spawner->bEnableSpawnObject = true;
+			}
+		}
+	}
+}
+
+void AObjectSpawnLeverSwitch::BeginPlay()
+{
+	Super::BeginPlay();
+
+	GetWorld()->GetTimerManager().SetTimer(TimerEnableSpawn,this, &AObjectSpawnLeverSwitch::EnableSpawners, DelayTimerEnableSpawn, false);
+	
 }
 
 void AObjectSpawnLeverSwitch::SetEnableSpawners(bool Value)

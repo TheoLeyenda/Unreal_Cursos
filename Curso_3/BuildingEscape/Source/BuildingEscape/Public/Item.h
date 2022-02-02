@@ -25,10 +25,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")
 	FText UseActionText;
 
-	/**The mesh to display for this items pickup**/
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")
-	UStaticMesh* PickupMesh;
-
 	/**The thumbnail for this item**/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")
 	UTexture2D* Thumbnail;

@@ -4,8 +4,8 @@
 #include "Pickup.h"
 #include "BuildingScapeCharacter.h"
 #include "Inventory.h"
-
 #include "Kismet/GameplayStatics.h"
+
 // Sets default values
 APickup::APickup()
 {

@@ -18,12 +18,30 @@ class BUILDINGESCAPE_API AObjectSpawnLeverSwitch : public ALeverSwitch
 	AObjectSpawnLeverSwitch();
 	
 protected:
+	UFUNCTION()
 	void SpawnObect();
+
+	UFUNCTION()
+	void EnableSpawners();
 public:
+
+	virtual void BeginPlay() override;
 	
 	UPROPERTY(EditAnywhere)
 	bool bSpawnObjectToPositiveLeverSwitch = false;
+	
+	FTimerHandle TimerEnableSpawn;
 
+	float DelayTimerEnableSpawn = 0.2f;
+	
+	UPROPERTY(EditAnywhere)
+	bool bEnableSpawnersInBeginPlay = false;
+
+	UPROPERTY(EditAnywhere)
+	bool bSpawnerOnceUse = false;
+
+	bool bFlagSpawnerUse = true;
+	
 	UPROPERTY(EditAnywhere)
 	TArray<AObjectSpawner*> Spawners;
 	

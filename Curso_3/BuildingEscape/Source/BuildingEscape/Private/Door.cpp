@@ -80,6 +80,7 @@ void ADoor::SetStateDoor(EStateDoor Value)
 
 void ADoor::UpdateTimelineComp(float Output)
 {
+	UE_LOG(LogTemp, Warning, TEXT("ENTRE HOLIS UWU 4"));
 	// Create and set our Door's new relative location based on the output from our Timeline Curve
 	FRotator DoorNewRotation = FRotator(0.0f, Output, 0.f);
 	Door->SetRelativeRotation(DoorNewRotation);
