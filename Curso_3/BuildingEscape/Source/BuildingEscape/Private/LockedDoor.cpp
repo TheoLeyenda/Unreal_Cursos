@@ -27,9 +27,13 @@ bool ALockedDoor::ExecuteInteractInterface(ABuildingScapeCharacter* Character)
 	if(Character->PlayerInventoryComponent->CurrentItemSelected->GetClass() == ItemToOpenDoor->GetClass())
 	{
 		UE_LOG(LogTemp, Warning, TEXT("ENTRE HOLIS UWU 3"));
+		if(StateDoor == EStateDoor::Closed)
+		{
+			Character->PlayerInventoryComponent->RemoveCurrentItemSelected();
+		}
 		SetStateDoor(EStateDoor::Opened);
 		CheckDoor();
-		Character->PlayerInventoryComponent->RemoveCurrentItemSelected();
+		
 	}
 	return true;
 }
