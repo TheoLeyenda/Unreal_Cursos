@@ -62,7 +62,10 @@ void AObjectSpawner::DestroySpawnedObjects()
 	
 	for(AActor* Actor : ObjectSpawned)
 	{
-		Actor->Destroy();
+		if(Actor)
+		{
+			Actor->Destroy();
+		}
 	}
 	ObjectSpawned.Empty();
 }

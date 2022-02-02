@@ -18,3 +18,8 @@ bool IInteractInterface::ExecuteInteractInterface(ABuildingScapeCharacter* Chara
 {
 	return false;
 }
+
+bool IInteractInterface::ExecuteInteractInterface(AActor* Actor)
+{
+	return false;
+}

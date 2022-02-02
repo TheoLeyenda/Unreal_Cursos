@@ -26,5 +26,6 @@ public:
 	virtual bool ExecuteInterfaceOnHitInteraction(float DeltaSeconds);
 	
 	virtual bool ExecuteInteractInterface(ABuildingScapeCharacter* Character);
-	
+
+	virtual bool ExecuteInteractInterface(AActor* Actor);
 };
