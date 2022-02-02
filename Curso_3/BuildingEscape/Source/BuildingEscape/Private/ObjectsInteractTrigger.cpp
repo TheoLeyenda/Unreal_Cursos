@@ -27,7 +27,7 @@ void AObjectsInteractTrigger::CheckExecuteInteractInterface(AActor* OtherActor)
 		{
 			if(OtherActor->GetClass() == Actor)
 			{
-				ExecuteInteractInterface();
+				ExecuteInteractInterface(OtherActor);
 			}
 		}
 	}
@@ -39,7 +39,7 @@ bool AObjectsInteractTrigger::IsOverlapWithSomeSpecificObject()
 	return bIsOverlapWithSomeSpecificObject;
 }
 
-bool AObjectsInteractTrigger::ExecuteInteractInterface()
+bool AObjectsInteractTrigger::ExecuteInteractInterface(AActor* Actor)
 {
 	BoxTriggerVolume->GetOverlappingActors(ActorsInOverlap);
 	

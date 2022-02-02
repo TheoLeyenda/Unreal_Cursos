@@ -18,7 +18,7 @@ public:
 
 	float TotalMassActors();
 protected:
-
+	float TotalMass = 0.0f;
 	virtual void OnOverlapBegin(UPrimitiveComponent* OverlappedComp
 		, AActor* OtherActor
 		, UPrimitiveComponent* OtherComp

@@ -18,10 +18,13 @@ public:
 	ASpawnObjectByTrigger();
 
 	UPROPERTY(EditAnywhere)
+	bool bDestroyOtherObjectInTrigger = false;
+	
+	UPROPERTY(EditAnywhere)
 	bool bDestroymeInTrigger = true;
 	
 	UPROPERTY(EditAnywhere)
 	TArray<AObjectSpawner*> Spawners;
-
-	virtual bool ExecuteInteractInterface() override;
+	
+	virtual bool ExecuteInteractInterface(AActor* Actor) override;
 };

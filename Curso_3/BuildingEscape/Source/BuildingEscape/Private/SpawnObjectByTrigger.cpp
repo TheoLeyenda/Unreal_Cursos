@@ -5,7 +5,7 @@
 
 ASpawnObjectByTrigger::ASpawnObjectByTrigger() : AObjectsInteractTrigger(){}
 
-bool ASpawnObjectByTrigger::ExecuteInteractInterface()
+bool ASpawnObjectByTrigger::ExecuteInteractInterface(AActor* Actor)
 {
 	//ACA HACER QUE SE SPAWNEEN LOS OBJETOS SI SE ENCUENTRA EL SPAWNER.
 
@@ -19,7 +19,10 @@ bool ASpawnObjectByTrigger::ExecuteInteractInterface()
 			Spawners[i]->SendTimerSpawnObject();
 		}
 	}
-	
+	if(Actor && bDestroyOtherObjectInTrigger)
+	{
+		Actor->Destroy();
+	}
 	if(bDestroymeInTrigger)
 	{
 		Destroy();
