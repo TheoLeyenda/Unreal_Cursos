@@ -14,8 +14,24 @@ void ADestroyObjectsByTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedCom
 bool ADestroyObjectsByTrigger::ExecuteInteractInterface(AActor* Actor)
 {
 	if(!Actor){return false;}
-	
-	Actor->Destroy();
+
+	if(bDestroyOtherActor)
+	{
+		Actor->Destroy();
+	}
+
+	if(ActorsDestroy.Num() > 0)
+	{
+		for(AActor* ActorDestroy : ActorsDestroy)
+		{
+			if(ActorDestroy)
+			{
+				ActorDestroy->Destroy();
+			}
+		}
+
+		ActorsDestroy.Empty();
+	}
 
 	return true;
 }

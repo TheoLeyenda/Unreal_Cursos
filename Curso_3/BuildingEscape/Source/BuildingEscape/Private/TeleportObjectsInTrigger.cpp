@@ -3,3 +3,14 @@
 
 #include "TeleportObjectsInTrigger.h"
 
+bool ATeleportObjectsInTrigger::ExecuteInteractInterface(AActor* Actor)
+{
+	if(!Actor)
+	{
+		return false;
+	}
+	int Index = FMath::RandRange(0, PointsToTeleport.Num());
+	Actor->SetActorLocation(PointsToTeleport[Index]->GetActorLocation());
+	
+	return true;
+}

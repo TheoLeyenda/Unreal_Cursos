@@ -60,7 +60,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADestroyObjectsByTrigger); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADestroyObjectsByTrigger)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_DestroyObjectsByTrigger_h_15_PRIVATE_PROPERTY_OFFSET
+#define BuildingEscape_Source_BuildingEscape_Public_DestroyObjectsByTrigger_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__ActorsDestroy() { return STRUCT_OFFSET(ADestroyObjectsByTrigger, ActorsDestroy); } \
+	FORCEINLINE static uint32 __PPO__bDestroyOtherActor() { return STRUCT_OFFSET(ADestroyObjectsByTrigger, bDestroyOtherActor); }
+
+
 #define BuildingEscape_Source_BuildingEscape_Public_DestroyObjectsByTrigger_h_12_PROLOG
 #define BuildingEscape_Source_BuildingEscape_Public_DestroyObjectsByTrigger_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
