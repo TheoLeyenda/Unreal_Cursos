@@ -39,6 +39,9 @@ protected:
 	ETypeGrabbel TypeGrabbel;
 	
 	UPhysicsHandleComponent* PhysicsHandle = nullptr;
+
+	UPROPERTY(EditAnywhere)
+	float ThrowForce = 100;
 	
 	void FindPhysicsHandle();
 public:	
@@ -47,7 +50,8 @@ public:
 	
 	void Grab();
 	void Release();
-	
+
+	void Throw(FVector Direction);
 private:
 	UPROPERTY(EditAnywhere)
 	bool bShowLogsPlayerLocationAndRotation = false;
@@ -67,4 +71,5 @@ private:
 	FVector PlayerViewPointLocation;
 	FRotator PlayerViewPointRotation;
 	FVector GetPlayerReach();
+	
 };

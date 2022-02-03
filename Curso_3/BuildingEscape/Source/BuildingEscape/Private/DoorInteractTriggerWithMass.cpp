@@ -7,7 +7,11 @@ ADoorInteractTriggerWithMass::ADoorInteractTriggerWithMass() : ADoorInteractTrig
 
 float ADoorInteractTriggerWithMass::TotalMassActors()
 {
-	if(!BoxTriggerVolume){return 0.0f;}
+	if(!BoxTriggerVolume)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("BoxTriggerVolume: NULL"));
+		return 0.0f;
+	}
 	
 	TArray<AActor*> OverlapingActors;
 	
@@ -45,7 +49,7 @@ void ADoorInteractTriggerWithMass::OnOverlapEnd(UPrimitiveComponent* OverlappedC
 
 void ADoorInteractTriggerWithMass::CheckMassInOverlap()
 {
-	if(TotalMass >= MassToOpenDoor)
+	if(TotalMass >= MassToOpenDoor && LastObjectRegister == ELastStateObjectOverlap::BeginOverlap)
 	{
 		OpenDoors();
 	}
@@ -62,7 +66,9 @@ bool ADoorInteractTriggerWithMass::ExecuteInteractInterface()
 		return false;
 	}
 	TotalMass = 0;
+	
 	TotalMassActors();
+	UE_LOG(LogTemp, Warning, TEXT("TotalMass: %f"), TotalMass);
 	CheckMassInOverlap();
 	return true;
 }

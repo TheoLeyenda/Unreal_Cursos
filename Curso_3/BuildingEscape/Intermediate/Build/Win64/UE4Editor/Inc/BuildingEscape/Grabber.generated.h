@@ -61,6 +61,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UGrabber); \
 #define BuildingEscape_Source_BuildingEscape_Private_Grabber_h_23_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ColorDebugLine() { return STRUCT_OFFSET(UGrabber, ColorDebugLine); } \
 	FORCEINLINE static uint32 __PPO__TypeGrabbel() { return STRUCT_OFFSET(UGrabber, TypeGrabbel); } \
+	FORCEINLINE static uint32 __PPO__ThrowForce() { return STRUCT_OFFSET(UGrabber, ThrowForce); } \
 	FORCEINLINE static uint32 __PPO__bShowLogsPlayerLocationAndRotation() { return STRUCT_OFFSET(UGrabber, bShowLogsPlayerLocationAndRotation); } \
 	FORCEINLINE static uint32 __PPO__bShowDrawDebugLine() { return STRUCT_OFFSET(UGrabber, bShowDrawDebugLine); } \
 	FORCEINLINE static uint32 __PPO__bShowHitActorName() { return STRUCT_OFFSET(UGrabber, bShowHitActorName); }

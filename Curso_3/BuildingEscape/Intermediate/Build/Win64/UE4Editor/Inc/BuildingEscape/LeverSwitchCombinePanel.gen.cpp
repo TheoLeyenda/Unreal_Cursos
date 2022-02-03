@@ -16,9 +16,11 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitchCombinePanel() {}
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FSwitcherInfo();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AObjectSpawnLeverSwitch_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AModifiableStaticMesh_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FSpawnObjectInfo();
+	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ALeverSwitchCombinePanel_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ALeverSwitchCombinePanel();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ACombinePanel();
@@ -60,6 +62,10 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSwitcherInfo
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Code;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FeedbackLeverMesh_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FeedbackLeverMesh;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ObjectSpawn_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ObjectSpawn;
@@ -100,6 +106,13 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSwitcherInfo
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_Code = { "Code", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSwitcherInfo, Code), METADATA_PARAMS(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_Code_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_Code_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_FeedbackLeverMesh_MetaData[] = {
+		{ "Category", "SwitcherInfo" },
+		{ "ModuleRelativePath", "Public/LeverSwitchCombinePanel.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_FeedbackLeverMesh = { "FeedbackLeverMesh", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSwitcherInfo, FeedbackLeverMesh), Z_Construct_UClass_AModifiableStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_FeedbackLeverMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_FeedbackLeverMesh_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_ObjectSpawn_MetaData[] = {
 		{ "Category", "SwitcherInfo" },
 		{ "ModuleRelativePath", "Public/LeverSwitchCombinePanel.h" },
@@ -131,6 +144,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSwitcherInfo
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSwitcherInfo_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_LeverSwitch,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_Code,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_FeedbackLeverMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_ObjectSpawn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bCheckDone,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSwitcherInfo_Statics::NewProp_bAssignedObjectSpawn,
@@ -163,7 +177,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSwitcherInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSwitcherInfo_Hash() { return 2085876829U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSwitcherInfo_Hash() { return 167873278U; }
 class UScriptStruct* FSpawnObjectInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -200,6 +214,10 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSpawnObjectInfo
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ObjectSpawn_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ObjectSpawn;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Material_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Material;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -227,9 +245,17 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSpawnObjectInfo
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::NewProp_ObjectSpawn = { "ObjectSpawn", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSpawnObjectInfo, ObjectSpawn), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::NewProp_ObjectSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::NewProp_ObjectSpawn_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::NewProp_Material_MetaData[] = {
+		{ "Category", "SpawnObjectInfo" },
+		{ "ModuleRelativePath", "Public/LeverSwitchCombinePanel.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::NewProp_Material = { "Material", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSpawnObjectInfo, Material), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::NewProp_Material_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::NewProp_Material_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::NewProp_Code,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::NewProp_ObjectSpawn,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::NewProp_Material,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FSpawnObjectInfo_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
@@ -259,7 +285,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSpawnObjectInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSpawnObjectInfo_Hash() { return 3314526518U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSpawnObjectInfo_Hash() { return 3571213544U; }
 	void ALeverSwitchCombinePanel::StaticRegisterNativesALeverSwitchCombinePanel()
 	{
 	}

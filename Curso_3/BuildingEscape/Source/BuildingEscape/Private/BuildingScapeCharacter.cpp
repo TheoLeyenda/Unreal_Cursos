@@ -46,6 +46,7 @@ void ABuildingScapeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 	PlayerInputComponent->BindAction("Restart", IE_Pressed, this, &ABuildingScapeCharacter::RestartGamePressed);
 	PlayerInputComponent->BindAction("Grab", IE_Pressed, this, &ABuildingScapeCharacter::GrabPressed);
     PlayerInputComponent->BindAction("Grab", IE_Released, this, &ABuildingScapeCharacter::GrabRelease);
+	PlayerInputComponent->BindAction("Throw", IE_Pressed, this, &ABuildingScapeCharacter::ThrowObject);
 	
 	PlayerInputComponent->BindAxis("MoveForward", this, &ABuildingScapeCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ABuildingScapeCharacter::MoveRight);
@@ -53,6 +54,8 @@ void ABuildingScapeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 	PlayerInputComponent->BindAxis("Turn", this, &ABuildingScapeCharacter::Turn);
 
 	PlayerInputComponent->BindAxis("LookUp", this, &ABuildingScapeCharacter::LookUp);
+
+	
 
 }
 
@@ -63,6 +66,8 @@ void ABuildingScapeCharacter::Tick(float DeltaSeconds)
 	if(!InteractComponent){return;}
 	InteractComponent->CheckEnableInteract(DeltaSeconds);
 }
+
+
 
 void ABuildingScapeCharacter::MoveForward(float Value)
 {
@@ -97,6 +102,14 @@ void ABuildingScapeCharacter::LookUp(float Value)
 void ABuildingScapeCharacter::Interact()
 {
 	InteractComponent->Interact(this);
+}
+
+void ABuildingScapeCharacter::ThrowObject()
+{
+	if (Grabber)
+	{
+		Grabber->Throw(FirstPersonCameraComponent->GetForwardVector());
+	}
 }
 
 void ABuildingScapeCharacter::RestartGamePressed()

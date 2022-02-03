@@ -100,6 +100,10 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_TypeGrabbel;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ThrowForce_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ThrowForce;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bShowLogsPlayerLocationAndRotation_MetaData[];
 #endif
 		static void NewProp_bShowLogsPlayerLocationAndRotation_SetBit(void* Obj);
@@ -153,6 +157,13 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UGrabber_Statics::NewProp_TypeGrabbel = { "TypeGrabbel", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGrabber, TypeGrabbel), Z_Construct_UEnum_BuildingEscape_ETypeGrabbel, METADATA_PARAMS(Z_Construct_UClass_UGrabber_Statics::NewProp_TypeGrabbel_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrabber_Statics::NewProp_TypeGrabbel_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGrabber_Statics::NewProp_ThrowForce_MetaData[] = {
+		{ "Category", "Grabber" },
+		{ "ModuleRelativePath", "Private/Grabber.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGrabber_Statics::NewProp_ThrowForce = { "ThrowForce", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGrabber, ThrowForce), METADATA_PARAMS(Z_Construct_UClass_UGrabber_Statics::NewProp_ThrowForce_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGrabber_Statics::NewProp_ThrowForce_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGrabber_Statics::NewProp_bShowLogsPlayerLocationAndRotation_MetaData[] = {
 		{ "Category", "Grabber" },
 		{ "ModuleRelativePath", "Private/Grabber.h" },
@@ -190,6 +201,7 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_ColorDebugLine,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_TypeGrabbel_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_TypeGrabbel,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_ThrowForce,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_bShowLogsPlayerLocationAndRotation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_bShowDrawDebugLine,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGrabber_Statics::NewProp_bShowHitActorName,
@@ -221,7 +233,7 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGrabber, 2381152252);
+	IMPLEMENT_CLASS(UGrabber, 389963454);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UGrabber>()
 	{
 		return UGrabber::StaticClass();

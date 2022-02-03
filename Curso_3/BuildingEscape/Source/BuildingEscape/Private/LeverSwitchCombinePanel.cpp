@@ -38,9 +38,12 @@ void ALeverSwitchCombinePanel::BeginPlay()
 		{
 			if(LeverSwitchesInfo[i].Code == SpawnObjectsInfo[j].Code && !LeverSwitchesInfo[i].bAssignedObjectSpawn)
 			{
-				//UE_LOG(LogTemp, Warning, TEXT("CAMBIE PANEL"));
 				LeverSwitchesInfo[i].ObjectSpawn = SpawnObjectsInfo[j].ObjectSpawn;
 				LeverSwitchesInfo[i].bAssignedObjectSpawn = true;
+				if(LeverSwitchesInfo[i].FeedbackLeverMesh)
+				{
+					LeverSwitchesInfo[i].FeedbackLeverMesh->SetNewMaterial(0,SpawnObjectsInfo[j].Material);
+				}
 			}
 		}
 	}
@@ -91,7 +94,6 @@ void ALeverSwitchCombinePanel::Tick(float DeltaSeconds)
 	}
 	if(IsCompleteCombinePanel())
 	{
-		UE_LOG(LogTemp, Warning, TEXT("LO LOGRE :D"));
 		for(int i = 0; i < LeverSwitchesInfo.Num(); i++)
 		{
 			SetActorTickEnabled(false);

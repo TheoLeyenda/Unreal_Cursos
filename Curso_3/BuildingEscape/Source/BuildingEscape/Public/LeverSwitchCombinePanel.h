@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "CombinePanel.h"
+#include "ModifiableStaticMesh.h"
 #include "BuildingEscapeGameMode.h"
 #include "ObjectSpawnLeverSwitch.h"
 #include "LeverSwitchCombinePanel.generated.h"
@@ -20,6 +21,8 @@ public:
 	int Code;
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> ObjectSpawn;
+	UPROPERTY(EditAnywhere)
+	UMaterialInterface* Material;
 };
 
 USTRUCT()
@@ -31,6 +34,8 @@ public:
 	AObjectSpawnLeverSwitch* LeverSwitch;
 	UPROPERTY(VisibleAnywhere)
 	int Code;
+	UPROPERTY(EditAnywhere)
+	AModifiableStaticMesh* FeedbackLeverMesh;
 	UPROPERTY(VisibleAnywhere)
 	TSubclassOf<AActor> ObjectSpawn;
 	UPROPERTY(VisibleAnywhere)
@@ -64,5 +69,6 @@ protected:
 	virtual void Tick(float DeltaSeconds) override;
 
 	void ResetCombinePanel(bool FailCombinePanel);
+	
 };
 

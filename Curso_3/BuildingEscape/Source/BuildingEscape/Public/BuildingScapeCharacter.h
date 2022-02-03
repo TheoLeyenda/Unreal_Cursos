@@ -39,6 +39,8 @@ protected:
 	bool bEnableMovement = true;
 	
 	void Interact();
+
+	void ThrowObject();
 	
 public:
 

@@ -86,6 +86,18 @@ void UGrabber::Release()
 	}
 }
 
+void UGrabber::Throw(FVector Direction)
+{
+	if(PhysicsHandle && PhysicsHandle->GetGrabbedComponent())
+	{
+		UPrimitiveComponent* GrabbedComponent = PhysicsHandle->GrabbedComponent;
+		Release();
+		GrabbedComponent->WakeRigidBody();
+		GrabbedComponent->AddImpulse(Direction * ThrowForce, NAME_None, true);
+		GrabbedComponent=nullptr;
+	}
+}
+
 
 //Checking for physics handle component
 void UGrabber::FindPhysicsHandle()
