@@ -1448,3 +1448,1499 @@ Script Stack (0 frames):
 [2022.02.03-20.20.43:546][ 13]AssetCheck: New page: Asset Save: multiple assets
 [2022.02.03-20.20.43:546][ 13]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Character/BP_BuildingScapeCharacter.BP_BuildingScapeCharacter
 [2022.02.03-20.20.43:546][ 13]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/GameMode/BP_BuildingScapeGameMode.BP_BuildingScapeGameMode
+[2022.02.03-20.28.10:013][863]LogUObjectHash: Compacting FUObjectHashTables data took   2.59ms
+[2022.02.03-20.28.10:032][863]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Maps/MainMenu.MainMenu
+[2022.02.03-20.28.10:032][863]Cmd: MAP LOAD FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.02.03-20.28.10:032][863]LightingResults: New page: Lighting Build
+[2022.02.03-20.28.10:032][863]LoadErrors: New page: Loading map: MainMenu.umap
+[2022.02.03-20.28.10:034][863]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-20.28.10:035][863]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-20.28.10:035][863]MapCheck: New page: Map Check
+[2022.02.03-20.28.10:035][863]LightingResults: New page: Lighting Build
+[2022.02.03-20.28.10:068][863]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-20.28.10:073][863]LogUObjectHash: Compacting FUObjectHashTables data took   2.67ms
+[2022.02.03-20.28.10:075][863]LogAudio: Display: Audio Device (ID: 1) registered with world 'MainMenu'.
+[2022.02.03-20.28.10:132][863]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.02.03-20.28.10:132][863]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-20.28.10:165][863]LogUObjectHash: Compacting FUObjectHashTables data took   2.72ms
+[2022.02.03-20.28.10:170][863]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.02.03-20.28.10:170][863]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.103ms to complete.
+[2022.02.03-20.28.10:170][863]LogFileHelpers: Loading map 'MainMenu' took 0.139
+[2022.02.03-20.31.50:330][350]LogSlate: Warning: Slate: Had to block on waiting for a draw buffer
+[2022.02.03-20.31.57:674][350]LogSlate: Window 'Pick Parent Class' being destroyed
+[2022.02.03-20.32.47:833][684]LogSlate: Window 'BP_BuildingScapeCharacter' being destroyed
+[2022.02.03-20.32.48:773][779]LogSlate: Window 'HUDBuildingScape' being destroyed
+[2022.02.03-20.32.49:823][891]LogSlate: Window 'WBP_Inventory' being destroyed
+[2022.02.03-20.32.50:676][986]LogSlate: Window 'WBP_Inventory' being destroyed
+[2022.02.03-20.32.51:613][ 94]LogSlate: Window 'BP_BuildingScapeGameMode' being destroyed
+[2022.02.03-20.33.02:204][455]LogSlate: Window 'Pick Parent Class' being destroyed
+[2022.02.03-20.33.09:278][278]LogContentBrowser: Deferred new asset file creation: NewWidgetBlueprint
+[2022.02.03-20.33.09:287][278]LogContentBrowser: Creating deferred item: NewWidgetBlueprint
+[2022.02.03-20.33.14:390][891]LogContentBrowser: Attempting asset rename: NewWidgetBlueprint -> WBP_MainMenu+
+[2022.02.03-20.33.14:393][891]LogContentBrowser: End creating deferred item NewWidgetBlueprint
+[2022.02.03-20.33.19:116][441]LogContentBrowser: Attempting asset rename: WBP_MainMenu+ -> WBP_MainMenu
+[2022.02.03-20.33.19:138][441]LogMetaData: Removing '/Game/Blueprints/HUD/WBP_MainMenu.SKEL_WBP_MainMenu_C' ref from Metadata '/Game/Blueprints/HUD/WBP_MainMenu+.PackageMetaData'
+[2022.02.03-20.33.19:138][441]LogMetaData: Removing '/Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu_C' ref from Metadata '/Game/Blueprints/HUD/WBP_MainMenu+.PackageMetaData'
+[2022.02.03-20.33.19:138][441]LogMetaData: Removing '/Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/HUD/WBP_MainMenu+.PackageMetaData'
+[2022.02.03-20.33.19:138][441]LogMetaData: Removing '/Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/HUD/WBP_MainMenu+.PackageMetaData'
+[2022.02.03-20.33.19:138][441]LogMetaData: Removing '/Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Blueprints/HUD/WBP_MainMenu+.PackageMetaData'
+[2022.02.03-20.33.19:156][441]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-20.33.19:158][441]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu7D145AAD4A3C4D17394572AE7E4B5973.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-20.33.19:238][441]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2022.02.03-20.33.19:277][441]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2022.02.03-20.33.19:306][441]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2022.02.03-20.33.19:331][441]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-20.33.19:331][441]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-20.33.24:622][ 69]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/MainMenu.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.02.03-20.33.24:656][ 69]LogUObjectHash: Compacting FUObjectHashTables data took   3.13ms
+[2022.02.03-20.33.24:659][ 69]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/MainMenu0BD5E5AF43FB1C89D124A8A3033D9BAC.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/MainMenu.umap'
+[2022.02.03-20.33.24:675][ 69]AssetCheck: New page: Asset Save: MainMenu
+[2022.02.03-20.33.24:676][ 69]LogContentValidation: Display: Validating World /Game/Maps/MainMenu.MainMenu
+[2022.02.03-20.33.31:523][183]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-20.34.52:794][158]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-20.34.52:833][158]LogUObjectHash: Compacting FUObjectHashTables data took   3.71ms
+[2022.02.03-20.37.59:351][651]LogUObjectHash: Compacting FUObjectHashTables data took   3.40ms
+[2022.02.03-20.38.01:133][651]LogSlate: Window 'Save Content' being destroyed
+[2022.02.03-20.38.03:303][902]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2022.02.03-20.38.04:950][902]LogSlate: Window 'Save Content' being destroyed
+[2022.02.03-20.38.04:969][902]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-20.38.04:972][902]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu17AFF097414E04B2B5309BB5BB46C960.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-20.38.05:160][902]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Maps/BuildingScape.BuildingScape
+[2022.02.03-20.38.05:160][902]Cmd: MAP LOAD FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.02.03-20.38.05:160][902]LightingResults: New page: Lighting Build
+[2022.02.03-20.38.05:160][902]LoadErrors: New page: Loading map: BuildingScape.umap
+[2022.02.03-20.38.05:161][902]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-20.38.05:161][902]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-20.38.05:161][902]MapCheck: New page: Map Check
+[2022.02.03-20.38.05:161][902]LightingResults: New page: Lighting Build
+[2022.02.03-20.38.05:198][902]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-20.38.05:203][902]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
+[2022.02.03-20.38.05:204][902]LogAudio: Display: Audio Device (ID: 1) registered with world 'BuildingScape'.
+[2022.02.03-20.38.05:384][902]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.02.03-20.38.05:384][902]LogAIModule: Creating AISystem for world BuildingScape
+[2022.02.03-20.38.05:435][902]LogUObjectHash: Compacting FUObjectHashTables data took   2.86ms
+[2022.02.03-20.38.05:440][902]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.02.03-20.38.05:441][902]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.183ms to complete.
+[2022.02.03-20.38.05:441][902]LogFileHelpers: Loading map 'BuildingScape' took 0.281
+[2022.02.03-20.38.05:458][902]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-20.38.05:458][902]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-20.39.40:265][235]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2022.02.03-20.39.53:850][811]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2022.02.03-20.39.57:486][239]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2022.02.03-20.41.46:007][ 51]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Theo\Desktop\landscape-minecraft-shaders-river-wallpaper-preview.jpg)
+[2022.02.03-20.41.46:075][ 51]LogTexture: Display: Building textures: landscape-minecraft-shaders-river-wallpaper-preview (BGRA8, 728X410)
+[2022.02.03-20.41.54:115][957]LogContentBrowser: Attempting asset rename: landscape-minecraft-shaders-river-wallpaper-preview -> MenuFondo
+[2022.02.03-20.41.54:159][957]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Art/Textures/MenuFondo" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Textures/MenuFondo.uasset" SILENT=true
+[2022.02.03-20.41.54:180][957]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/MenuFondoB51DFFB946FB0F84FE788B82AD2B3F2D.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Art/Textures/MenuFondo.uasset'
+[2022.02.03-20.41.54:294][957]LogUObjectHash: Compacting FUObjectHashTables data took   3.09ms
+[2022.02.03-20.41.54:337][957]LogUObjectHash: Compacting FUObjectHashTables data took   2.41ms
+[2022.02.03-20.41.54:372][957]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2022.02.03-20.41.54:448][957]AssetCheck: New page: Asset Save: MenuFondo
+[2022.02.03-20.41.54:448][957]LogContentValidation: Display: Validating Texture2D /Game/Art/Textures/MenuFondo.MenuFondo
+[2022.02.03-20.42.08:922][633]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-20.42.08:958][633]LogUObjectHash: Compacting FUObjectHashTables data took   2.91ms
+[2022.02.03-20.42.09:376][674]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-20.42.09:379][674]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu1C24D62B4F2A1EC748278A9BED1AFF76.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-20.42.09:388][674]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-20.42.09:389][674]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-20.42.49:406][676]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.02.03-20.42.49:432][676]LogContentBrowser: Creating deferred item: NewFolder
+[2022.02.03-20.42.53:028][108]LogContentBrowser: Attempting asset rename: NewFolder -> NewFolder
+[2022.02.03-20.42.53:028][108]LogContentBrowser: End creating deferred item NewFolder
+[2022.02.03-20.43.12:851][373]LogSlate: Warning: Slate: Had to block on waiting for a draw buffer
+[2022.02.03-20.43.26:275][373]LogSlate: Window 'Pick Parent Class' being destroyed
+[2022.02.03-20.43.26:282][373]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2022.02.03-20.43.26:293][373]LogContentBrowser: Creating deferred item: NewBlueprint
+[2022.02.03-20.43.30:708][887]LogContentBrowser: Attempting asset rename: NewBlueprint -> HUDMainMenu
+[2022.02.03-20.43.30:711][887]LogContentBrowser: End creating deferred item NewBlueprint
+[2022.02.03-20.44.02:660][711]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-20.44.04:855][928]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDMainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset" SILENT=true
+[2022.02.03-20.44.04:858][928]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenu2B7C2BDB4DB4A00F5A6AEE85869C518B.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset'
+[2022.02.03-20.44.04:868][928]AssetCheck: New page: Asset Save: HUDMainMenu
+[2022.02.03-20.44.04:868][928]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-20.44.39:782][ 46]LogUObjectHash: Compacting FUObjectHashTables data took   3.32ms
+[2022.02.03-20.44.39:795][ 46]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Maps/MainMenu.MainMenu
+[2022.02.03-20.44.39:795][ 46]Cmd: MAP LOAD FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.02.03-20.44.39:795][ 46]LightingResults: New page: Lighting Build
+[2022.02.03-20.44.39:796][ 46]LoadErrors: New page: Loading map: MainMenu.umap
+[2022.02.03-20.44.39:827][ 46]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-20.44.39:827][ 46]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-20.44.39:828][ 46]MapCheck: New page: Map Check
+[2022.02.03-20.44.39:828][ 46]LightingResults: New page: Lighting Build
+[2022.02.03-20.44.39:868][ 46]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-20.44.39:874][ 46]LogUObjectHash: Compacting FUObjectHashTables data took   2.84ms
+[2022.02.03-20.44.39:875][ 46]LogAudio: Display: Audio Device (ID: 1) registered with world 'MainMenu'.
+[2022.02.03-20.44.39:932][ 46]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.02.03-20.44.39:932][ 46]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-20.44.39:968][ 46]LogUObjectHash: Compacting FUObjectHashTables data took   2.77ms
+[2022.02.03-20.44.39:973][ 46]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.02.03-20.44.39:973][ 46]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.1ms to complete.
+[2022.02.03-20.44.39:973][ 46]LogFileHelpers: Loading map 'MainMenu' took 0.178
+[2022.02.03-20.44.53:027][579]LogActor: Warning: BP_BreadPhysicActor_C /Engine/Transient.World_38:PersistentLevel.BP_BreadPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-20.44.53:041][580]LogActor: Warning: BP_CarrotPhysicActor_C /Engine/Transient.World_39:PersistentLevel.BP_CarrotPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-20.44.53:062][581]LogActor: Warning: BP_ChickenPhysicActor_C /Engine/Transient.World_40:PersistentLevel.BP_ChickenPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-20.44.53:080][582]LogActor: Warning: BP_CookiePhysicActor_C /Engine/Transient.World_41:PersistentLevel.BP_CookiePhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-20.45.09:582][495]LogSlate: Warning: Slate: Had to block on waiting for a draw buffer
+[2022.02.03-20.45.10:884][495]LogSlate: Window 'Pick Parent Class' being destroyed
+[2022.02.03-20.45.10:890][495]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2022.02.03-20.45.10:900][495]LogContentBrowser: Creating deferred item: NewBlueprint
+[2022.02.03-20.45.22:660][906]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_MainMenuGameMode
+[2022.02.03-20.45.22:663][906]LogContentBrowser: End creating deferred item NewBlueprint
+[2022.02.03-20.45.28:566][599]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/MainMenu.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.02.03-20.45.28:604][599]LogUObjectHash: Compacting FUObjectHashTables data took   2.48ms
+[2022.02.03-20.45.28:607][599]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/MainMenu0FA373C545637E535F16F1B1F22D73BD.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/MainMenu.umap'
+[2022.02.03-20.45.28:623][599]AssetCheck: New page: Asset Save: MainMenu
+[2022.02.03-20.45.28:623][599]LogContentValidation: Display: Validating World /Game/Maps/MainMenu.MainMenu
+[2022.02.03-20.45.29:818][740]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/GameMode/BP_MainMenuGameMode.BP_MainMenuGameMode
+[2022.02.03-20.45.31:297][876]BlueprintLog: New page: Compile BP_MainMenuGameMode
+[2022.02.03-20.45.31:352][876]LogUObjectHash: Compacting FUObjectHashTables data took   2.74ms
+[2022.02.03-20.45.31:918][933]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_MainMenuGameModeB56032DA4D8C63A5E5903A9EAEE00587.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/GameMode/BP_MainMenuGameMode.uasset'
+[2022.02.03-20.45.31:927][933]AssetCheck: New page: Asset Save: BP_MainMenuGameMode
+[2022.02.03-20.45.31:927][933]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/GameMode/BP_MainMenuGameMode.BP_MainMenuGameMode
+[2022.02.03-20.46.14:751][948]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.02.03-20.46.18:151][344]BlueprintLog: New page: Compile BP_MainMenuGameMode
+[2022.02.03-20.46.18:209][344]LogUObjectHash: Compacting FUObjectHashTables data took   3.74ms
+[2022.02.03-20.46.18:974][429]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_MainMenuGameModeD6EB87844C405513F2E218A70723A7DA.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/GameMode/BP_MainMenuGameMode.uasset'
+[2022.02.03-20.46.18:983][429]AssetCheck: New page: Asset Save: BP_MainMenuGameMode
+[2022.02.03-20.46.18:983][429]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/GameMode/BP_MainMenuGameMode.BP_MainMenuGameMode
+[2022.02.03-20.46.22:821][873]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.02.03-20.46.28:602][548]BlueprintLog: New page: Compile BP_MainMenuGameMode
+[2022.02.03-20.46.28:656][548]LogUObjectHash: Compacting FUObjectHashTables data took   3.59ms
+[2022.02.03-20.46.29:024][583]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_MainMenuGameMode109FEABD4E40F976DC07308316EAEFF0.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/GameMode/BP_MainMenuGameMode.uasset'
+[2022.02.03-20.46.29:034][583]AssetCheck: New page: Asset Save: BP_MainMenuGameMode
+[2022.02.03-20.46.29:034][583]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/GameMode/BP_MainMenuGameMode.BP_MainMenuGameMode
+[2022.02.03-20.46.32:903][ 38]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.02.03-20.47.27:061][356]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-20.47.27:066][356]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-20.47.27:066][356]PIE: New page: PIE session: MainMenu (Feb 3, 2022, 2:47:27 PM)
+[2022.02.03-20.47.27:090][356]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-20.47.27:090][356]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000575s)
+[2022.02.03-20.47.27:090][356]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-20.47.27:090][356]LogPlayLevel: PIE: World Init took: (0.000811s)
+[2022.02.03-20.47.27:090][356]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001532s)
+[2022.02.03-20.47.27:131][356]LogUObjectHash: Compacting FUObjectHashTables data took   3.50ms
+[2022.02.03-20.47.27:132][356]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2022.02.03-20.47.27:132][356]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-20.47.27:132][356]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-20.47.27:132][356]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-20.47.27:132][356]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-20.47.27:132][356]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-20.47.27:132][356]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-20.47.27:132][356]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-20.47.27:132][356]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-20.47.27:133][356]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.03-20.47.27:133][356]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-20.47.27:139][356]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-20.47.27:139][356]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-20.47.27:155][356]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-20.47.27:155][356]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-20.47.27:155][356]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-20.47.27:156][356]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-20.47.27:156][356]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-20.47.27:156][356]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-20.47.27:156][356]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.03-20.47.27:168][356]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-20.47.27:168][356]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-20.47.27:168][356]LogInit: FAudioDevice initialized.
+[2022.02.03-20.47.27:168][356]LogAudio: Display: Audio Device (ID: 6) registered with world 'MainMenu'.
+[2022.02.03-20.47.27:173][356]LogLoad: Game class is 'BP_MainMenuGameMode_C'
+[2022.02.03-20.47.27:174][356]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.03-17.47.27
+[2022.02.03-20.47.27:174][356]LogWorld: Bringing up level for play took: 0.000220
+[2022.02.03-20.47.27:174][356]LogOnline: OSS: Creating online subsystem instance for: :Context_43
+[2022.02.03-20.47.27:176][356]PIE: Server logged in
+[2022.02.03-20.47.27:177][356]PIE: Play in editor total start time 0.111 seconds.
+[2022.02.03-20.47.30:283][723]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-20.47.30:284][723]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-20.47.30:284][723]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-20.47.30:285][723]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-20.47.30:306][723]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-20.47.30:321][723]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-20.47.30:367][723]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-20.47.30:367][723]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-20.47.30:368][723]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-20.47.30:382][723]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-20.47.30:385][723]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2022.02.03-20.47.30:400][724]LogPlayLevel: Display: Destroying online subsystem :Context_43
+[2022.02.03-20.49.04:204][762]BlueprintLog: New page: Compile BP_MainMenuGameMode
+[2022.02.03-20.49.04:258][762]LogUObjectHash: Compacting FUObjectHashTables data took   4.02ms
+[2022.02.03-20.49.05:059][852]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_MainMenuGameMode6ADA3A144282262A35AC6F855D7FD8C2.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/GameMode/BP_MainMenuGameMode.uasset'
+[2022.02.03-20.49.05:071][852]AssetCheck: New page: Asset Save: BP_MainMenuGameMode
+[2022.02.03-20.49.05:071][852]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/GameMode/BP_MainMenuGameMode.BP_MainMenuGameMode
+[2022.02.03-20.49.13:941][884]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/MainMenu.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.02.03-20.49.13:978][884]LogUObjectHash: Compacting FUObjectHashTables data took   3.43ms
+[2022.02.03-20.49.13:980][884]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/MainMenu4D555F92429A257CACB77DBB63464F0D.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/MainMenu.umap'
+[2022.02.03-20.49.13:996][884]AssetCheck: New page: Asset Save: MainMenu
+[2022.02.03-20.49.13:996][884]LogContentValidation: Display: Validating World /Game/Maps/MainMenu.MainMenu
+[2022.02.03-20.49.28:758][594]BlueprintLog: New page: Compile HUDMainMenu
+[2022.02.03-20.49.28:812][594]LogUObjectHash: Compacting FUObjectHashTables data took   3.67ms
+[2022.02.03-20.49.29:261][639]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDMainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset" SILENT=true
+[2022.02.03-20.49.29:263][639]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenuB8845CE34E1838974B51A290C28F8FF3.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset'
+[2022.02.03-20.49.29:272][639]AssetCheck: New page: Asset Save: HUDMainMenu
+[2022.02.03-20.49.29:272][639]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-20.49.58:839][126]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.02.03-20.50.42:977][981]BlueprintLog: New page: Compile HUDMainMenu
+[2022.02.03-20.50.43:033][981]LogUObjectHash: Compacting FUObjectHashTables data took   3.64ms
+[2022.02.03-20.50.43:401][ 21]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDMainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset" SILENT=true
+[2022.02.03-20.50.43:405][ 21]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenu1D9F158242BAB6805BC70E920951CB5E.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset'
+[2022.02.03-20.50.43:415][ 21]AssetCheck: New page: Asset Save: HUDMainMenu
+[2022.02.03-20.50.43:415][ 21]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-20.50.47:800][306]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-20.50.47:805][306]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-20.50.47:806][306]PIE: New page: PIE session: MainMenu (Feb 3, 2022, 2:50:47 PM)
+[2022.02.03-20.50.47:837][306]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-20.50.47:837][306]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000572s)
+[2022.02.03-20.50.47:838][306]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-20.50.47:838][306]LogPlayLevel: PIE: World Init took: (0.000778s)
+[2022.02.03-20.50.47:838][306]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001503s)
+[2022.02.03-20.50.47:876][306]LogUObjectHash: Compacting FUObjectHashTables data took   3.20ms
+[2022.02.03-20.50.47:877][306]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2022.02.03-20.50.47:877][306]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-20.50.47:877][306]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-20.50.47:877][306]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-20.50.47:877][306]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-20.50.47:877][306]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-20.50.47:877][306]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-20.50.47:877][306]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-20.50.47:877][306]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-20.50.47:877][306]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.03-20.50.47:877][306]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-20.50.47:882][306]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-20.50.47:882][306]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-20.50.47:897][306]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-20.50.47:897][306]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-20.50.47:897][306]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-20.50.47:897][306]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-20.50.47:898][306]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-20.50.47:898][306]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-20.50.47:898][306]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.03-20.50.47:909][306]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-20.50.47:909][306]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-20.50.47:909][306]LogInit: FAudioDevice initialized.
+[2022.02.03-20.50.47:909][306]LogAudio: Display: Audio Device (ID: 7) registered with world 'MainMenu'.
+[2022.02.03-20.50.47:919][306]LogLoad: Game class is 'BP_MainMenuGameMode_C'
+[2022.02.03-20.50.47:920][306]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.03-17.50.47
+[2022.02.03-20.50.47:920][306]LogWorld: Bringing up level for play took: 0.000240
+[2022.02.03-20.50.47:920][306]LogOnline: OSS: Creating online subsystem instance for: :Context_44
+[2022.02.03-20.50.47:921][306]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-20.50.47:921][306]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.02.03-20.50.47:922][306]PIE: Server logged in
+[2022.02.03-20.50.47:922][306]PIE: Play in editor total start time 0.118 seconds.
+[2022.02.03-20.50.50:860][655]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-20.50.50:860][655]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-20.50.50:861][655]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-20.50.50:861][655]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-20.50.50:882][655]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-20.50.50:897][655]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-20.50.50:941][655]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-20.50.50:941][655]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-20.50.50:942][655]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-20.50.50:956][655]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-20.50.50:959][655]LogUObjectHash: Compacting FUObjectHashTables data took   2.48ms
+[2022.02.03-20.50.50:972][656]LogPlayLevel: Display: Destroying online subsystem :Context_44
+[2022.02.03-20.52.59:714][619]BlueprintLog: New page: Compile BP_MainMenuGameMode
+[2022.02.03-20.52.59:772][619]LogUObjectHash: Compacting FUObjectHashTables data took   3.24ms
+[2022.02.03-20.53.00:273][673]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_MainMenuGameModeF8E9A101499F72EDB79CD297F7766B69.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/GameMode/BP_MainMenuGameMode.uasset'
+[2022.02.03-20.53.00:284][673]AssetCheck: New page: Asset Save: BP_MainMenuGameMode
+[2022.02.03-20.53.00:284][673]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/GameMode/BP_MainMenuGameMode.BP_MainMenuGameMode
+[2022.02.03-20.53.01:622][826]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-20.53.01:628][826]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-20.53.01:628][826]PIE: New page: PIE session: MainMenu (Feb 3, 2022, 2:53:01 PM)
+[2022.02.03-20.53.01:654][826]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-20.53.01:655][826]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000729s)
+[2022.02.03-20.53.01:656][826]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-20.53.01:656][826]LogPlayLevel: PIE: World Init took: (0.001044s)
+[2022.02.03-20.53.01:656][826]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001973s)
+[2022.02.03-20.53.01:694][826]LogUObjectHash: Compacting FUObjectHashTables data took   3.33ms
+[2022.02.03-20.53.01:695][826]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2022.02.03-20.53.01:695][826]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-20.53.01:695][826]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-20.53.01:695][826]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-20.53.01:695][826]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-20.53.01:695][826]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-20.53.01:695][826]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-20.53.01:695][826]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-20.53.01:695][826]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-20.53.01:696][826]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.03-20.53.01:696][826]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-20.53.01:701][826]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-20.53.01:701][826]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-20.53.01:715][826]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-20.53.01:715][826]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-20.53.01:715][826]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-20.53.01:715][826]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-20.53.01:716][826]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-20.53.01:716][826]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-20.53.01:716][826]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.03-20.53.01:727][826]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-20.53.01:727][826]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-20.53.01:728][826]LogInit: FAudioDevice initialized.
+[2022.02.03-20.53.01:728][826]LogAudio: Display: Audio Device (ID: 8) registered with world 'MainMenu'.
+[2022.02.03-20.53.01:737][826]LogLoad: Game class is 'BP_MainMenuGameMode_C'
+[2022.02.03-20.53.01:738][826]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.03-17.53.01
+[2022.02.03-20.53.01:738][826]LogWorld: Bringing up level for play took: 0.000225
+[2022.02.03-20.53.01:738][826]LogOnline: OSS: Creating online subsystem instance for: :Context_45
+[2022.02.03-20.53.01:740][826]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-20.53.01:740][826]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.02.03-20.53.01:740][826]PIE: Server logged in
+[2022.02.03-20.53.01:740][826]PIE: Play in editor total start time 0.114 seconds.
+[2022.02.03-20.53.04:039][ 97]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-20.53.04:039][ 97]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-20.53.04:039][ 97]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-20.53.04:040][ 97]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-20.53.04:044][ 97]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-20.53.04:048][ 97]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-20.53.04:083][ 97]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-20.53.04:083][ 97]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-20.53.04:084][ 97]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-20.53.04:098][ 97]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-20.53.04:100][ 97]LogUObjectHash: Compacting FUObjectHashTables data took   2.50ms
+[2022.02.03-20.53.04:113][ 98]LogPlayLevel: Display: Destroying online subsystem :Context_45
+[2022.02.03-20.54.37:995][509]LogEditorTransaction: Undo Resize Widget
+[2022.02.03-20.55.36:593][445]LogSlate: Window 'Color Picker' being destroyed
+[2022.02.03-20.55.41:899][ 75]LogEditorTransaction: Warning: Canceling transaction partially is unsupported. Canceling Edit Specified Color entirely.
+[2022.02.03-20.55.57:801][656]LogEditorTransaction: Warning: Canceling transaction partially is unsupported. Canceling Edit Specified Color entirely.
+[2022.02.03-20.55.58:507][693]LogSlate: Window 'Color Picker' being destroyed
+[2022.02.03-20.56.02:261][119]LogSlate: Window 'Color Picker' being destroyed
+[2022.02.03-20.56.45:624][858]LogSlate: Window 'Color Picker' being destroyed
+[2022.02.03-20.57.07:948][508]LogEditorTransaction: Undo Edit Typeface
+[2022.02.03-20.57.08:307][517]LogEditorTransaction: Undo Edit Font Family
+[2022.02.03-20.57.08:518][523]LogEditorTransaction: Undo Edit Y
+[2022.02.03-20.57.08:794][551]LogEditorTransaction: Undo Edit X
+[2022.02.03-20.57.09:064][580]LogEditorTransaction: Undo Edit Shadow Color
+[2022.02.03-20.57.09:276][599]LogEditorTransaction: Undo Edit Draw As
+[2022.02.03-20.57.09:460][617]LogEditorTransaction: Undo Edit Draw As
+[2022.02.03-20.57.09:672][639]LogEditorTransaction: Undo Edit Image
+[2022.02.03-20.57.09:874][657]LogEditorTransaction: Undo Edit Image
+[2022.02.03-20.57.10:795][764]LogEditorTransaction: Undo Edit Image
+[2022.02.03-20.57.10:990][784]LogEditorTransaction: Undo Drag and Drop Widget
+[2022.02.03-20.57.11:187][801]LogEditorTransaction: Undo Edit Typeface
+[2022.02.03-20.57.11:444][827]LogEditorTransaction: Undo Edit Font Family
+[2022.02.03-20.57.11:744][859]LogEditorTransaction: Undo Drag and Drop Widget
+[2022.02.03-20.58.25:900][174]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.02.03-20.58.25:916][174]LogContentBrowser: Creating deferred item: NewFolder
+[2022.02.03-20.58.27:328][344]LogContentBrowser: Attempting asset rename: NewFolder -> Fonts
+[2022.02.03-20.58.27:328][344]LogContentBrowser: End creating deferred item NewFolder
+[2022.02.03-20.58.31:715][684]LogFactory: FactoryCreateFile: FontFace with FontFileImportFactory (0 0 C:\Users\Theo\Downloads\MINECRAFT PE.ttf)
+[2022.02.03-20.58.33:111][684]LogSlate: Window 'Font Face Import Options' being destroyed
+[2022.02.03-20.58.33:116][684]Message dialog closed, result: Yes, title: Font Face Import Options, text: Would you like to create a new Font asset using the imported Font Face as its default font?
+[2022.02.03-20.58.33:122][684]LogSlate: FontCache flush requested. Reason: UFontFace::PostEditChangeProperty
+[2022.02.03-20.58.33:123][684]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-20.58.33:125][684]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Theo\Downloads\MINECRAFT PE.png)
+[2022.02.03-20.58.33:129][684]LogTexture: Display: Building textures: MINECRAFT_PE_0 (BGRA8, 404X318)
+[2022.02.03-20.58.33:155][684]LogSlate: Took 0.000154 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.02.03-20.58.33:155][684]LogSlate: Took 0.000105 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.02.03-20.58.33:164][684]LogSlate: Took 0.000132 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2022.02.03-20.58.33:169][684]LogSlate: Took 0.000120 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2022.02.03-20.58.33:177][684]LogSlate: Took 0.000107 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.02.03-20.58.33:194][685]LogSlate: Last resort fallback font was requested. Font: '/Game/Fonts/MINECRAFT_PE.MINECRAFT_PE', Character: '_ (U+005f)'
+[2022.02.03-20.58.33:236][685]LogSlate: Took 0.041118 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
+[2022.02.03-20.58.35:633][950]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.02.03-20.58.35:653][950]LogContentBrowser: Creating deferred item: NewFolder
+[2022.02.03-20.58.40:315][510]LogContentBrowser: Attempting asset rename: NewFolder -> Minecraft
+[2022.02.03-20.58.40:316][510]LogContentBrowser: End creating deferred item NewFolder
+[2022.02.03-20.58.44:550][982]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Fonts/Minecraft/MINECRAFT_PE" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Fonts/Minecraft/MINECRAFT_PE.uasset" SILENT=true
+[2022.02.03-20.58.44:551][982]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/MINECRAFT_PEB2B083E248774A680471B9974C0EF1FC.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Fonts/Minecraft/MINECRAFT_PE.uasset'
+[2022.02.03-20.58.44:555][982]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Fonts/Minecraft/MINECRAFT_PE_0" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Fonts/Minecraft/MINECRAFT_PE_0.uasset" SILENT=true
+[2022.02.03-20.58.44:565][982]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/MINECRAFT_PE_07B4E60CF4B684C0E47651AAF2FE67E5D.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Fonts/Minecraft/MINECRAFT_PE_0.uasset'
+[2022.02.03-20.58.44:568][982]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Fonts/Minecraft/MINECRAFT_PE_Font" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Fonts/Minecraft/MINECRAFT_PE_Font.uasset" SILENT=true
+[2022.02.03-20.58.44:570][982]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/MINECRAFT_PE_Font97B8B3904A20BF4FACAFF98ACBC41BD4.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Fonts/Minecraft/MINECRAFT_PE_Font.uasset'
+[2022.02.03-20.58.44:689][982]LogUObjectHash: Compacting FUObjectHashTables data took   3.76ms
+[2022.02.03-20.58.44:725][982]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2022.02.03-20.58.44:768][982]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2022.02.03-20.58.44:805][982]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2022.02.03-20.58.44:836][982]AssetCheck: New page: Asset Save: multiple assets
+[2022.02.03-20.58.44:836][982]LogContentValidation: Display: Validating Texture2D /Game/Fonts/Minecraft/MINECRAFT_PE_0.MINECRAFT_PE_0
+[2022.02.03-20.58.44:836][982]LogContentValidation: Display: Validating Font /Game/Fonts/Minecraft/MINECRAFT_PE_Font.MINECRAFT_PE_Font
+[2022.02.03-20.58.44:836][982]LogContentValidation: Display: Validating FontFace /Game/Fonts/Minecraft/MINECRAFT_PE.MINECRAFT_PE
+[2022.02.03-20.59.29:733][293]LogSlate: Took 0.000145 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.02.03-20.59.29:736][293]LogSlate: Took 0.000168 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2022.02.03-20.59.47:969][434]LogSlate: Window 'Color Picker' being destroyed
+[2022.02.03-20.59.55:479][301]LogSlate: Window 'Color Picker' being destroyed
+[2022.02.03-21.00.00:337][881]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-21.00.00:380][881]LogUObjectHash: Compacting FUObjectHashTables data took   2.94ms
+[2022.02.03-21.00.00:807][920]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-21.00.00:810][920]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenuE6D63ADF4327420347ED79B5E2190D08.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-21.00.00:823][920]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-21.00.00:823][920]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-21.00.37:721][426]LogUObjectHash: Compacting FUObjectHashTables data took   3.34ms
+[2022.02.03-21.00.37:722][426]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/MainMenu' took 0.040
+[2022.02.03-21.00.37:722][426]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/HUD/HUDBuildingScape] ([1] browsable assets)...
+[2022.02.03-21.00.37:722][426]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/HUD/HUDBuildingScape]
+[2022.02.03-21.00.37:728][426]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDBuildingScape_Auto38AEB35EC486788D7B51310B898114EE5.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Autosaves/Game/Blueprints/HUD/HUDBuildingScape_Auto3.uasset'
+[2022.02.03-21.00.37:729][426]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/HUD/WBP_MainMenu] ([1] browsable assets)...
+[2022.02.03-21.00.37:729][426]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/HUD/WBP_MainMenu]
+[2022.02.03-21.00.37:732][426]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu_Auto3602365F246776D96E3ACFDA09220581E.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Autosaves/Game/Blueprints/HUD/WBP_MainMenu_Auto3.uasset'
+[2022.02.03-21.00.37:733][426]LogFileHelpers: Auto-saving content packages took 0.011
+[2022.02.03-21.03.44:679][535]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-21.03.44:724][535]LogUObjectHash: Compacting FUObjectHashTables data took   3.69ms
+[2022.02.03-21.03.45:274][588]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-21.03.45:278][588]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu7FDF7F5A4FBBDAB205CDC0BE8F7B4F75.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-21.03.45:288][588]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-21.03.45:288][588]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-21.03.54:572][689]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-21.03.54:629][689]LogUObjectHash: Compacting FUObjectHashTables data took   3.44ms
+[2022.02.03-21.03.55:192][747]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-21.03.55:196][747]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu2B44E22D46A6960CC287BDB07D0B3935.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-21.03.55:205][747]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-21.03.55:205][747]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-21.04.06:233][ 64]LogEditorTransaction: Undo Resize Widget
+[2022.02.03-21.04.59:376][262]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-21.04.59:431][262]LogUObjectHash: Compacting FUObjectHashTables data took   3.72ms
+[2022.02.03-21.04.59:813][295]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-21.04.59:816][295]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu2AB757F64DA77BF4C5F88DA0F0BA5008.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-21.04.59:825][295]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-21.04.59:825][295]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-21.06.08:015][437]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-21.06.08:072][437]LogUObjectHash: Compacting FUObjectHashTables data took   3.61ms
+[2022.02.03-21.06.31:805][187]LogSlate: Took 0.032206 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2022.02.03-21.06.49:032][205]LogEditorTransaction: Undo Move Widget
+[2022.02.03-21.06.49:477][214]LogEditorTransaction: Undo Move Widget
+[2022.02.03-21.06.49:650][225]LogEditorTransaction: Undo Move Widget
+[2022.02.03-21.06.49:805][239]LogEditorTransaction: Undo Move Widget
+[2022.02.03-21.06.49:984][256]LogEditorTransaction: Undo Move Widget
+[2022.02.03-21.06.50:299][289]LogEditorTransaction: Undo Edit Vertical Alignment
+[2022.02.03-21.07.02:269][704]LogEditorTransaction: Undo Changed Anchors
+[2022.02.03-21.07.02:589][713]Cmd: TRANSACTION UNDO
+[2022.02.03-21.07.02:589][713]LogEditorTransaction: Undo Changed Anchors
+[2022.02.03-21.07.02:777][718]Cmd: TRANSACTION UNDO
+[2022.02.03-21.07.02:777][718]LogEditorTransaction: Undo Changed Anchors
+[2022.02.03-21.07.02:906][728]Cmd: TRANSACTION UNDO
+[2022.02.03-21.07.02:906][728]LogEditorTransaction: Undo Edit Horizontal Alignment
+[2022.02.03-21.07.03:066][741]Cmd: TRANSACTION UNDO
+[2022.02.03-21.07.03:066][741]LogEditorTransaction: Undo Move Widget
+[2022.02.03-21.07.03:897][838]Cmd: TRANSACTION UNDO
+[2022.02.03-21.07.03:897][838]LogEditorTransaction: Undo Add Widget
+[2022.02.03-21.07.05:733][ 55]Cmd: TRANSACTION UNDO
+[2022.02.03-21.07.05:733][ 55]LogEditorTransaction: Undo Edit Top
+[2022.02.03-21.07.06:287][120]Cmd: TRANSACTION UNDO
+[2022.02.03-21.07.06:287][120]LogEditorTransaction: Undo Rename Widget
+[2022.02.03-21.07.30:887][995]LogEditorTransaction: Undo Edit Vertical Alignment
+[2022.02.03-21.07.31:224][  4]Cmd: TRANSACTION UNDO
+[2022.02.03-21.07.31:224][  4]LogEditorTransaction: Undo Edit Horizontal Alignment
+[2022.02.03-21.07.31:456][ 14]Cmd: TRANSACTION UNDO
+[2022.02.03-21.07.31:456][ 14]LogEditorTransaction: Undo Move Widget
+[2022.02.03-21.07.31:693][ 36]Cmd: TRANSACTION UNDO
+[2022.02.03-21.07.31:693][ 36]LogEditorTransaction: Undo Add Widget
+[2022.02.03-21.09.55:641][ 37]LogEditorTransaction: Undo Drag and Drop Widget
+[2022.02.03-21.09.56:152][ 49]LogEditorTransaction: Undo Edit Bottom
+[2022.02.03-21.11.42:118][488]LogSlate: Window 'Color Picker' being destroyed
+[2022.02.03-21.13.26:669][529]LogUObjectHash: Compacting FUObjectHashTables data took   3.73ms
+[2022.02.03-21.13.26:671][529]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/MainMenu' took 0.050
+[2022.02.03-21.13.26:671][529]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/HUD/WBP_MainMenu] ([2] browsable assets)...
+[2022.02.03-21.13.26:671][529]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/HUD/WBP_MainMenu]
+[2022.02.03-21.13.26:676][529]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu_Auto471F0F99F4E8EA103CBD38086DB24E3F8.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Autosaves/Game/Blueprints/HUD/WBP_MainMenu_Auto4.uasset'
+[2022.02.03-21.13.26:676][529]LogFileHelpers: Auto-saving content packages took 0.006
+[2022.02.03-21.17.23:775][594]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-21.17.23:822][594]LogUObjectHash: Compacting FUObjectHashTables data took   4.24ms
+[2022.02.03-21.17.24:230][637]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-21.17.24:235][637]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu33700FE34ECF85BC940DADBBFB8B6626.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-21.17.24:247][637]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-21.17.24:247][637]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-21.18.55:642][356]LogSlate: Took 0.000173 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2022.02.03-21.18.57:789][611]BlueprintLog: New page: Compile HUDBuildingScape
+[2022.02.03-21.18.57:855][611]LogUObjectHash: Compacting FUObjectHashTables data took   3.88ms
+[2022.02.03-21.18.58:434][675]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDBuildingScape" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDBuildingScape.uasset" SILENT=true
+[2022.02.03-21.18.58:439][675]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDBuildingScape59A641874C997A06AF730EA133FEDCF9.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDBuildingScape.uasset'
+[2022.02.03-21.18.58:449][675]AssetCheck: New page: Asset Save: HUDBuildingScape
+[2022.02.03-21.18.58:450][675]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDBuildingScape.HUDBuildingScape
+[2022.02.03-21.19.06:599][632]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-21.19.06:640][632]LogUObjectHash: Compacting FUObjectHashTables data took   4.01ms
+[2022.02.03-21.19.07:067][678]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-21.19.07:073][678]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu1815ADBF4F533EC7BA9504AA14266A80.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-21.19.07:085][678]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-21.19.07:085][678]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-21.20.43:806][122]LogSlate: Took 0.000177 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2022.02.03-21.20.52:054][ 78]BlueprintLog: New page: Compile HUDMainMenu
+[2022.02.03-21.20.52:114][ 78]LogUObjectHash: Compacting FUObjectHashTables data took   3.74ms
+[2022.02.03-21.20.52:606][130]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDMainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset" SILENT=true
+[2022.02.03-21.20.52:610][130]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenu5768979D467BDB58D6C8BC85D91124B1.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset'
+[2022.02.03-21.20.52:619][130]AssetCheck: New page: Asset Save: HUDMainMenu
+[2022.02.03-21.20.52:619][130]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-21.21.17:741][107]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-21.21.17:747][107]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenuD65D4CB3426BC51B8446408B718E68AB.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-21.21.17:758][107]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-21.21.17:758][107]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-21.22.54:617][816]LogContentBrowser: Deferred new asset file creation: NewWidgetBlueprint
+[2022.02.03-21.22.54:629][816]LogContentBrowser: Creating deferred item: NewWidgetBlueprint
+[2022.02.03-21.23.04:226][965]LogContentBrowser: Attempting asset rename: NewWidgetBlueprint -> WBP_Controls
+[2022.02.03-21.23.04:229][965]LogContentBrowser: End creating deferred item NewWidgetBlueprint
+[2022.02.03-21.23.10:533][683]LogContentBrowser: Deferred new asset file creation: NewWidgetBlueprint
+[2022.02.03-21.23.10:545][683]LogContentBrowser: Creating deferred item: NewWidgetBlueprint
+[2022.02.03-21.23.14:424][149]LogContentBrowser: Attempting asset rename: NewWidgetBlueprint -> WBP_Credits
+[2022.02.03-21.23.14:427][149]LogContentBrowser: End creating deferred item NewWidgetBlueprint
+[2022.02.03-21.23.17:074][434]LogUObjectHash: Compacting FUObjectHashTables data took   3.68ms
+[2022.02.03-21.23.17:096][434]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-21.23.17:103][434]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenuD20C864F4B9BDE1C20E033B8B975E5FB.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-21.23.17:104][434]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Controls" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset" SILENT=true
+[2022.02.03-21.23.17:106][434]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Controls8EDDC6FE47D0DB887F13AD91560E86A7.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset'
+[2022.02.03-21.23.17:107][434]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Credits" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset" SILENT=true
+[2022.02.03-21.23.17:109][434]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Credits559A66384A030C2F3D212F894FA3E845.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset'
+[2022.02.03-21.23.17:121][434]AssetCheck: New page: Asset Save: multiple assets
+[2022.02.03-21.23.17:121][434]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Credits.WBP_Credits
+[2022.02.03-21.23.17:121][434]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Controls.WBP_Controls
+[2022.02.03-21.23.17:122][434]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-21.23.23:150][134]LogWorld: UWorld::CleanupWorld for World_42, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-21.23.23:150][134]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-21.23.26:732][549]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2022.02.03-21.23.26:732][549]LogWorld: UWorld::CleanupWorld for World_31, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-21.23.26:732][549]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-21.25.03:657][ 26]BlueprintLog: New page: Compile HUDMainMenu
+[2022.02.03-21.25.03:720][ 26]LogUObjectHash: Compacting FUObjectHashTables data took   4.00ms
+[2022.02.03-21.25.04:070][ 60]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDMainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset" SILENT=true
+[2022.02.03-21.25.04:074][ 60]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenu40C9C8014D2C0F2444C6D1975B2FBD80.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset'
+[2022.02.03-21.25.04:085][ 60]AssetCheck: New page: Asset Save: HUDMainMenu
+[2022.02.03-21.25.04:085][ 60]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-21.27.05:105][121]BlueprintLog: New page: Compile HUDMainMenu
+[2022.02.03-21.27.05:161][121]LogUObjectHash: Compacting FUObjectHashTables data took   4.14ms
+[2022.02.03-21.27.05:577][164]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDMainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset" SILENT=true
+[2022.02.03-21.27.05:584][164]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenu77F649A145A167F1508AD8990D45FBB7.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset'
+[2022.02.03-21.27.05:598][164]AssetCheck: New page: Asset Save: HUDMainMenu
+[2022.02.03-21.27.05:598][164]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-21.28.23:367][304]LogUObjectHash: Compacting FUObjectHashTables data took   4.02ms
+[2022.02.03-21.28.23:369][304]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/MainMenu' took 0.037
+[2022.02.03-21.28.23:369][304]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/HUD/HUDMainMenu] ([1] browsable assets)...
+[2022.02.03-21.28.23:369][304]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/HUD/HUDMainMenu]
+[2022.02.03-21.28.23:378][304]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenu_Auto55D4DC99C4C15B0BDA77E9082BBB8FCCB.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Autosaves/Game/Blueprints/HUD/HUDMainMenu_Auto5.uasset'
+[2022.02.03-21.28.23:378][304]LogFileHelpers: Auto-saving content packages took 0.009
+[2022.02.03-21.28.33:434][495]BlueprintLog: New page: Compile HUDMainMenu
+[2022.02.03-21.28.33:488][495]LogUObjectHash: Compacting FUObjectHashTables data took   3.02ms
+[2022.02.03-21.28.33:830][531]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDMainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset" SILENT=true
+[2022.02.03-21.28.33:838][531]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenu6BF90E374A4862E7E4FF0BA007CBE60D.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset'
+[2022.02.03-21.28.33:851][531]AssetCheck: New page: Asset Save: HUDMainMenu
+[2022.02.03-21.28.33:851][531]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-21.30.49:518][486]LogEditorTransaction: Undo Delete current selection
+[2022.02.03-21.30.50:168][515]LogEditorTransaction: Undo Move Node
+[2022.02.03-21.30.50:509][554]LogEditorTransaction: Undo Function Dropped on Graph
+[2022.02.03-21.30.50:938][598]LogEditorTransaction: Undo Move Node
+[2022.02.03-21.30.51:364][648]LogEditorTransaction: Undo Move Node
+[2022.02.03-21.30.51:740][692]LogEditorTransaction: Undo Create Reroute Node
+[2022.02.03-21.30.52:197][746]LogEditorTransaction: Undo Move Node
+[2022.02.03-21.30.53:409][888]LogEditorTransaction: Undo Create Pin Link
+[2022.02.03-21.30.53:599][908]LogEditorTransaction: Undo Move Node
+[2022.02.03-21.30.53:782][928]LogEditorTransaction: Undo Add Node
+[2022.02.03-21.30.53:923][943]LogEditorTransaction: Undo Create Pin Link
+[2022.02.03-21.30.54:073][960]LogEditorTransaction: Undo Move Node
+[2022.02.03-21.30.54:216][972]LogEditorTransaction: Undo Add Node
+[2022.02.03-21.30.54:774][ 37]LogEditorTransaction: Undo Add Node
+[2022.02.03-21.30.54:981][ 61]LogEditorTransaction: Undo Rename Function
+[2022.02.03-21.30.56:817][275]LogEditorTransaction: Redo Rename Function
+[2022.02.03-21.30.57:004][295]LogEditorTransaction: Redo Add Node
+[2022.02.03-21.30.57:165][313]LogEditorTransaction: Redo Add Node
+[2022.02.03-21.30.57:321][331]LogEditorTransaction: Redo Move Node
+[2022.02.03-21.30.57:490][350]LogEditorTransaction: Redo Create Pin Link
+[2022.02.03-21.30.57:639][367]LogEditorTransaction: Redo Add Node
+[2022.02.03-21.30.57:799][385]LogEditorTransaction: Redo Move Node
+[2022.02.03-21.30.57:964][403]LogEditorTransaction: Redo Create Pin Link
+[2022.02.03-21.30.58:140][422]LogEditorTransaction: Redo Move Node
+[2022.02.03-21.30.58:306][441]LogEditorTransaction: Redo Create Reroute Node
+[2022.02.03-21.30.58:474][460]LogEditorTransaction: Redo Move Node
+[2022.02.03-21.30.58:631][478]LogEditorTransaction: Redo Move Node
+[2022.02.03-21.30.58:815][499]LogEditorTransaction: Redo Function Dropped on Graph
+[2022.02.03-21.30.58:981][517]LogEditorTransaction: Redo Move Node
+[2022.02.03-21.30.59:190][540]LogEditorTransaction: Redo Delete current selection
+[2022.02.03-21.31.45:870][971]BlueprintLog: New page: Compile HUDMainMenu
+[2022.02.03-21.31.45:931][971]LogUObjectHash: Compacting FUObjectHashTables data took   3.99ms
+[2022.02.03-21.31.46:307][  9]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDMainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset" SILENT=true
+[2022.02.03-21.31.46:318][  9]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenu400C4074442612B8B16B3787176240E6.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset'
+[2022.02.03-21.31.46:329][  9]AssetCheck: New page: Asset Save: HUDMainMenu
+[2022.02.03-21.31.46:329][  9]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-21.36.59:721][ 91]BlueprintLog: New page: Compile HUDMainMenu
+[2022.02.03-21.36.59:780][ 91]LogUObjectHash: Compacting FUObjectHashTables data took   4.31ms
+[2022.02.03-21.37.03:039][455]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDMainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset" SILENT=true
+[2022.02.03-21.37.03:052][455]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenu0209153945B098CDD8E373871F23042E.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset'
+[2022.02.03-21.37.03:064][455]AssetCheck: New page: Asset Save: HUDMainMenu
+[2022.02.03-21.37.03:064][455]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-21.37.03:205][470]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDMainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset" SILENT=true
+[2022.02.03-21.37.03:219][470]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenuE6195CC74E8C3013F0E490870D59FBCD.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset'
+[2022.02.03-21.37.03:229][470]AssetCheck: New page: Asset Save: HUDMainMenu
+[2022.02.03-21.37.03:229][470]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-21.37.54:055][417]LogEditorTransaction: Undo Move Node
+[2022.02.03-21.38.53:410][354]LogUObjectHash: Compacting FUObjectHashTables data took   4.05ms
+[2022.02.03-21.38.53:412][354]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/MainMenu' took 0.039
+[2022.02.03-21.38.53:413][354]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/HUD/WBP_MainMenu] ([2] browsable assets)...
+[2022.02.03-21.38.53:413][354]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/HUD/WBP_MainMenu]
+[2022.02.03-21.38.53:421][354]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu_Auto6622944E24620160312B6A281184BF49D.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Autosaves/Game/Blueprints/HUD/WBP_MainMenu_Auto6.uasset'
+[2022.02.03-21.38.53:422][354]LogFileHelpers: Auto-saving content packages took 0.009
+[2022.02.03-21.40.17:203][266]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-21.40.17:242][266]LogUObjectHash: Compacting FUObjectHashTables data took   3.74ms
+[2022.02.03-21.40.17:683][309]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-21.40.17:693][309]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu45828859434717DBDEAE42A51C52BC91.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-21.40.17:706][309]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-21.40.17:706][309]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-21.41.06:845][179]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-21.41.06:901][179]LogUObjectHash: Compacting FUObjectHashTables data took   4.03ms
+[2022.02.03-21.41.07:234][212]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-21.41.07:245][212]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu889AB6B049CA2FDFE2A87BB2C8310B3F.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-21.41.07:258][212]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-21.41.07:258][212]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-21.42.12:180][103]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/HUD/WBP_Credits.WBP_Credits
+[2022.02.03-21.45.28:537][441]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-21.45.28:600][441]LogUObjectHash: Compacting FUObjectHashTables data took   4.18ms
+[2022.02.03-21.45.29:198][503]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-21.45.29:208][503]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenuE6E2ED9D4A8460240BC9EC8BF7C73DC5.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-21.45.29:219][503]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-21.45.29:219][503]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-21.46.34:280][263]BlueprintLog: New page: Compile WBP_Credits
+[2022.02.03-21.46.34:327][263]LogUObjectHash: Compacting FUObjectHashTables data took   4.13ms
+[2022.02.03-21.46.34:968][330]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Credits" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset" SILENT=true
+[2022.02.03-21.46.34:971][330]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_CreditsE048733F4C6515C92B4D96AB82E1A3AF.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset'
+[2022.02.03-21.46.34:981][330]AssetCheck: New page: Asset Save: WBP_Credits
+[2022.02.03-21.46.34:981][330]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Credits.WBP_Credits
+[2022.02.03-21.50.45:085][832]BlueprintLog: New page: Compile WBP_Credits
+[2022.02.03-21.50.45:146][832]LogUObjectHash: Compacting FUObjectHashTables data took   4.01ms
+[2022.02.03-21.50.45:788][904]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Credits" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset" SILENT=true
+[2022.02.03-21.50.45:793][904]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Credits10912C474243597D9BADE0BCAFD9EE01.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset'
+[2022.02.03-21.50.45:805][904]AssetCheck: New page: Asset Save: WBP_Credits
+[2022.02.03-21.50.45:805][904]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Credits.WBP_Credits
+[2022.02.03-21.51.57:753][449]BlueprintLog: New page: Compile WBP_Credits
+[2022.02.03-21.51.57:810][449]LogUObjectHash: Compacting FUObjectHashTables data took   3.84ms
+[2022.02.03-21.51.58:204][490]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Credits" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset" SILENT=true
+[2022.02.03-21.51.58:210][490]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_CreditsB078C36E4248F8EF4DEACCBED8811F22.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset'
+[2022.02.03-21.51.58:222][490]AssetCheck: New page: Asset Save: WBP_Credits
+[2022.02.03-21.51.58:222][490]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Credits.WBP_Credits
+[2022.02.03-21.52.15:111][479]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/HUD/WBP_Controls.WBP_Controls
+[2022.02.03-21.52.52:353][800]BlueprintLog: New page: Compile WBP_Controls
+[2022.02.03-21.52.52:397][800]LogUObjectHash: Compacting FUObjectHashTables data took   3.52ms
+[2022.02.03-21.52.53:089][874]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Controls" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset" SILENT=true
+[2022.02.03-21.52.53:092][874]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Controls4B181D5349696F0949B933BB853EF314.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset'
+[2022.02.03-21.52.53:102][874]AssetCheck: New page: Asset Save: WBP_Controls
+[2022.02.03-21.52.53:102][874]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Controls.WBP_Controls
+[2022.02.03-21.53.10:728][663]BlueprintLog: New page: Compile WBP_Controls
+[2022.02.03-21.53.10:786][663]LogUObjectHash: Compacting FUObjectHashTables data took   3.55ms
+[2022.02.03-21.53.11:223][702]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Controls" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset" SILENT=true
+[2022.02.03-21.53.11:226][702]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Controls4F9AF4E54F920AB51CF2B6889479DD9A.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset'
+[2022.02.03-21.53.11:235][702]AssetCheck: New page: Asset Save: WBP_Controls
+[2022.02.03-21.53.11:235][702]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Controls.WBP_Controls
+[2022.02.03-21.53.21:316][697]LogEditorTransaction: Undo Drag and Drop Widget
+[2022.02.03-21.53.23:469][901]BlueprintLog: New page: Compile WBP_Controls
+[2022.02.03-21.53.23:529][901]LogUObjectHash: Compacting FUObjectHashTables data took   3.50ms
+[2022.02.03-21.53.23:907][934]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Controls" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset" SILENT=true
+[2022.02.03-21.53.23:910][934]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_ControlsCC60B0F942A3AD04037A4FA5C74C46D7.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset'
+[2022.02.03-21.53.23:920][934]AssetCheck: New page: Asset Save: WBP_Controls
+[2022.02.03-21.53.23:920][934]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Controls.WBP_Controls
+[2022.02.03-21.53.50:331][813]BlueprintLog: New page: Compile WBP_Credits
+[2022.02.03-21.53.50:376][813]LogUObjectHash: Compacting FUObjectHashTables data took   3.73ms
+[2022.02.03-21.53.50:791][848]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Credits" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset" SILENT=true
+[2022.02.03-21.53.50:797][848]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Credits5DB7C7244CD4632FC55226A424649C12.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset'
+[2022.02.03-21.53.50:806][848]AssetCheck: New page: Asset Save: WBP_Credits
+[2022.02.03-21.53.50:806][848]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Credits.WBP_Credits
+[2022.02.03-21.53.52:341][ 21]BlueprintLog: New page: Compile WBP_Controls
+[2022.02.03-21.53.52:385][ 21]LogUObjectHash: Compacting FUObjectHashTables data took   3.63ms
+[2022.02.03-21.53.52:856][ 60]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Controls" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset" SILENT=true
+[2022.02.03-21.53.52:859][ 60]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Controls9BFC808B487B9D72C28579A6585E5D15.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset'
+[2022.02.03-21.53.52:869][ 60]AssetCheck: New page: Asset Save: WBP_Controls
+[2022.02.03-21.53.52:869][ 60]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Controls.WBP_Controls
+[2022.02.03-21.54.27:463][167]BlueprintLog: New page: Compile WBP_Controls
+[2022.02.03-21.54.27:521][167]LogUObjectHash: Compacting FUObjectHashTables data took   3.61ms
+[2022.02.03-21.54.28:190][242]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Controls" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset" SILENT=true
+[2022.02.03-21.54.28:192][242]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Controls95528FD84050A0891E7CE485D899B115.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset'
+[2022.02.03-21.54.28:202][242]AssetCheck: New page: Asset Save: WBP_Controls
+[2022.02.03-21.54.28:202][242]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Controls.WBP_Controls
+[2022.02.03-21.55.11:421][318]BlueprintLog: New page: Compile WBP_Controls
+[2022.02.03-21.55.11:479][318]LogUObjectHash: Compacting FUObjectHashTables data took   3.65ms
+[2022.02.03-21.55.11:875][358]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Controls" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset" SILENT=true
+[2022.02.03-21.55.11:878][358]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Controls4F9F52A740F8AF0C5721A2B53E4B6E76.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset'
+[2022.02.03-21.55.11:888][358]AssetCheck: New page: Asset Save: WBP_Controls
+[2022.02.03-21.55.11:888][358]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Controls.WBP_Controls
+[2022.02.03-21.56.26:114][138]BlueprintLog: New page: Compile WBP_Controls
+[2022.02.03-21.56.26:174][138]LogUObjectHash: Compacting FUObjectHashTables data took   3.69ms
+[2022.02.03-21.56.26:792][205]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Controls" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset" SILENT=true
+[2022.02.03-21.56.26:798][205]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Controls607DB2D94B445C8AA07B9585152351C4.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset'
+[2022.02.03-21.56.26:809][205]AssetCheck: New page: Asset Save: WBP_Controls
+[2022.02.03-21.56.26:809][205]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Controls.WBP_Controls
+[2022.02.03-21.56.40:906][863]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-21.56.40:912][863]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-21.56.40:912][863]PIE: New page: PIE session: MainMenu (Feb 3, 2022, 3:56:40 PM)
+[2022.02.03-21.56.40:958][863]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-21.56.40:958][863]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000612s)
+[2022.02.03-21.56.40:959][863]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-21.56.40:959][863]LogPlayLevel: PIE: World Init took: (0.000948s)
+[2022.02.03-21.56.40:959][863]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001726s)
+[2022.02.03-21.56.41:002][863]LogUObjectHash: Compacting FUObjectHashTables data took   3.27ms
+[2022.02.03-21.56.41:002][863]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2022.02.03-21.56.41:002][863]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-21.56.41:002][863]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-21.56.41:002][863]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-21.56.41:002][863]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-21.56.41:003][863]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-21.56.41:003][863]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-21.56.41:003][863]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-21.56.41:003][863]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-21.56.41:003][863]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.03-21.56.41:003][863]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-21.56.41:010][863]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-21.56.41:010][863]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-21.56.41:025][863]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-21.56.41:026][863]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-21.56.41:026][863]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-21.56.41:026][863]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-21.56.41:026][863]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-21.56.41:026][863]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-21.56.41:026][863]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.03-21.56.41:038][863]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-21.56.41:038][863]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-21.56.41:038][863]LogInit: FAudioDevice initialized.
+[2022.02.03-21.56.41:038][863]LogAudio: Display: Audio Device (ID: 9) registered with world 'MainMenu'.
+[2022.02.03-21.56.41:045][863]LogLoad: Game class is 'BP_MainMenuGameMode_C'
+[2022.02.03-21.56.41:046][863]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.03-18.56.41
+[2022.02.03-21.56.41:046][863]LogWorld: Bringing up level for play took: 0.000228
+[2022.02.03-21.56.41:046][863]LogOnline: OSS: Creating online subsystem instance for: :Context_51
+[2022.02.03-21.56.41:048][863]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-21.56.41:048][863]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.02.03-21.56.41:048][863]PIE: Server logged in
+[2022.02.03-21.56.41:049][863]PIE: Play in editor total start time 0.137 seconds.
+[2022.02.03-21.56.42:610][ 50]LogScript: Warning: Accessed None trying to read property WidgetControls
+	HUDMainMenu_C /Game/Maps/UEDPIE_0_MainMenu.MainMenu:PersistentLevel.HUDMainMenu_C_0
+	Function /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu_C:OpenControls:002D
+[2022.02.03-21.56.42:617][ 50]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property WidgetControls". Blueprint:  HUDMainMenu Function:  Open Controls Graph:  OpenControls Node:  Add to Viewport
+[2022.02.03-21.56.43:440][149]LogScript: Warning: Accessed None trying to read property WidgetControls
+	HUDMainMenu_C /Game/Maps/UEDPIE_0_MainMenu.MainMenu:PersistentLevel.HUDMainMenu_C_0
+	Function /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu_C:OpenControls:002D
+[2022.02.03-21.56.43:440][149]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property WidgetControls". Blueprint:  HUDMainMenu Function:  Open Controls Graph:  OpenControls Node:  Add to Viewport
+[2022.02.03-21.56.43:807][193]LogScript: Warning: Accessed None trying to read property WidgetCredits
+	HUDMainMenu_C /Game/Maps/UEDPIE_0_MainMenu.MainMenu:PersistentLevel.HUDMainMenu_C_0
+	Function /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu_C:OpenCredits:002D
+[2022.02.03-21.56.43:807][193]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property WidgetCredits". Blueprint:  HUDMainMenu Function:  Open Credits Graph:  OpenCredits Node:  Add to Viewport
+[2022.02.03-21.56.44:191][235]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-21.56.44:195][235]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-21.56.44:218][235]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-21.56.44:219][235]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-21.56.44:234][235]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-21.56.44:239][235]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-21.56.44:275][235]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-21.56.44:275][235]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-21.56.44:276][235]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-21.56.44:290][235]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-21.56.44:293][235]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2022.02.03-21.56.44:396][236]LogPlayLevel: Display: Destroying online subsystem :Context_51
+[2022.02.03-21.56.44:534][240]LogEditorViewport: Clicking Background
+[2022.02.03-21.56.45:824][367]Cmd: SELECT NONE
+[2022.02.03-21.57.33:059][922]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/GameMode/BP_MainMenuGameMode.BP_MainMenuGameMode
+[2022.02.03-21.59.20:138][480]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.02.03-22.01.03:308][202]BlueprintLog: New page: Compile HUDMainMenu
+[2022.02.03-22.01.03:381][202]LogUObjectHash: Compacting FUObjectHashTables data took   3.33ms
+[2022.02.03-22.01.03:778][239]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/HUDMainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset" SILENT=true
+[2022.02.03-22.01.03:793][239]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/HUDMainMenuF5EBAF07428B851699D7BF9A02375A4A.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/HUDMainMenu.uasset'
+[2022.02.03-22.01.03:806][239]AssetCheck: New page: Asset Save: HUDMainMenu
+[2022.02.03-22.01.03:806][239]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/HUDMainMenu.HUDMainMenu
+[2022.02.03-22.01.04:562][324]LogSlate: Window 'Message Log' being destroyed
+[2022.02.03-22.01.04:566][324]LogSlate: Window 'Message Log' being destroyed
+[2022.02.03-22.01.07:008][589]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-22.01.07:014][589]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-22.01.07:014][589]PIE: New page: PIE session: MainMenu (Feb 3, 2022, 4:01:07 PM)
+[2022.02.03-22.01.07:035][589]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.01.07:036][589]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000739s)
+[2022.02.03-22.01.07:037][589]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-22.01.07:037][589]LogPlayLevel: PIE: World Init took: (0.001028s)
+[2022.02.03-22.01.07:037][589]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001964s)
+[2022.02.03-22.01.07:079][589]LogUObjectHash: Compacting FUObjectHashTables data took   3.80ms
+[2022.02.03-22.01.07:080][589]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2022.02.03-22.01.07:080][589]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-22.01.07:080][589]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-22.01.07:080][589]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-22.01.07:080][589]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-22.01.07:080][589]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-22.01.07:080][589]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-22.01.07:080][589]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-22.01.07:080][589]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-22.01.07:081][589]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.03-22.01.07:081][589]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-22.01.07:086][589]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-22.01.07:086][589]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-22.01.07:101][589]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-22.01.07:102][589]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-22.01.07:102][589]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-22.01.07:102][589]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-22.01.07:102][589]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-22.01.07:102][589]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-22.01.07:103][589]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.03-22.01.07:114][589]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-22.01.07:114][589]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-22.01.07:114][589]LogInit: FAudioDevice initialized.
+[2022.02.03-22.01.07:114][589]LogAudio: Display: Audio Device (ID: 10) registered with world 'MainMenu'.
+[2022.02.03-22.01.07:121][589]LogLoad: Game class is 'BP_MainMenuGameMode_C'
+[2022.02.03-22.01.07:122][589]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.03-19.01.07
+[2022.02.03-22.01.07:122][589]LogWorld: Bringing up level for play took: 0.000235
+[2022.02.03-22.01.07:122][589]LogOnline: OSS: Creating online subsystem instance for: :Context_53
+[2022.02.03-22.01.07:123][589]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-22.01.07:123][589]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.02.03-22.01.07:124][589]PIE: Server logged in
+[2022.02.03-22.01.07:124][589]PIE: Play in editor total start time 0.112 seconds.
+[2022.02.03-22.01.14:135][430]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.01.14:136][430]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.01.14:176][430]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.01.14:176][430]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.01.14:184][430]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-22.01.14:191][430]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.01.14:228][430]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-22.01.14:229][430]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.01.14:229][430]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.01.14:243][430]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.01.14:246][430]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2022.02.03-22.01.14:277][431]LogPlayLevel: Display: Destroying online subsystem :Context_53
+[2022.02.03-22.01.18:699][942]BlueprintLog: New page: Compile WBP_Controls
+[2022.02.03-22.01.18:743][942]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
+[2022.02.03-22.01.19:296][  2]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Controls" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset" SILENT=true
+[2022.02.03-22.01.19:301][  2]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_ControlsDF19FB8E4A53233A2DFDA1B209152AEA.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset'
+[2022.02.03-22.01.19:312][  2]AssetCheck: New page: Asset Save: WBP_Controls
+[2022.02.03-22.01.19:312][  2]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Controls.WBP_Controls
+[2022.02.03-22.02.15:268][599]BlueprintLog: New page: Compile WBP_Controls
+[2022.02.03-22.02.15:333][599]LogUObjectHash: Compacting FUObjectHashTables data took   3.92ms
+[2022.02.03-22.02.15:764][638]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Controls" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset" SILENT=true
+[2022.02.03-22.02.15:770][638]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Controls2889ABFA469A54CF0E16A6A7E0B3207C.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Controls.uasset'
+[2022.02.03-22.02.15:780][638]AssetCheck: New page: Asset Save: WBP_Controls
+[2022.02.03-22.02.15:780][638]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Controls.WBP_Controls
+[2022.02.03-22.02.17:300][804]LogUObjectHash: Compacting FUObjectHashTables data took   3.55ms
+[2022.02.03-22.02.17:311][804]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-22.02.17:322][804]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu898D342540CC55BC4D2EAC8A43F1A9CC.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-22.02.17:323][804]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Credits" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset" SILENT=true
+[2022.02.03-22.02.17:328][804]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Credits8B1AC43C4FE5F614BFDE4898F74379BF.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Credits.uasset'
+[2022.02.03-22.02.17:340][804]AssetCheck: New page: Asset Save: multiple assets
+[2022.02.03-22.02.17:340][804]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Credits.WBP_Credits
+[2022.02.03-22.02.17:340][804]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-22.02.50:878][813]LogUObjectHash: Compacting FUObjectHashTables data took   2.05ms
+[2022.02.03-22.02.55:577][357]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-22.02.55:582][357]BlueprintLog: New page: Pre-Play auto-recompile
+[2022.02.03-22.02.55:583][357]LogPlayLevel: [PlayLevel] Compiling WBP_MainMenu before play...
+[2022.02.03-22.02.55:641][357]LogPlayLevel: [PlayLevel] Compiling WBP_Credits before play...
+[2022.02.03-22.02.55:740][357]LogUObjectHash: Compacting FUObjectHashTables data took   4.24ms
+[2022.02.03-22.02.55:741][357]LogPlayLevel: PlayLevel: Blueprint regeneration took 158 ms (2 blueprints)
+[2022.02.03-22.02.55:741][357]PIE: New page: PIE session: MainMenu (Feb 3, 2022, 4:02:55 PM)
+[2022.02.03-22.02.55:741][357]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.02.55:742][357]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000861s)
+[2022.02.03-22.02.55:743][357]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-22.02.55:743][357]LogPlayLevel: PIE: World Init took: (0.000916s)
+[2022.02.03-22.02.55:743][357]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.002013s)
+[2022.02.03-22.02.55:782][357]LogUObjectHash: Compacting FUObjectHashTables data took   2.77ms
+[2022.02.03-22.02.55:783][357]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2022.02.03-22.02.55:783][357]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-22.02.55:783][357]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-22.02.55:783][357]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-22.02.55:783][357]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-22.02.55:783][357]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-22.02.55:783][357]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-22.02.55:783][357]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-22.02.55:783][357]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-22.02.55:783][357]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.03-22.02.55:783][357]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-22.02.55:789][357]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-22.02.55:789][357]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-22.02.55:804][357]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-22.02.55:804][357]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-22.02.55:804][357]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-22.02.55:804][357]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-22.02.55:805][357]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-22.02.55:805][357]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-22.02.55:805][357]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.03-22.02.55:817][357]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-22.02.55:817][357]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-22.02.55:817][357]LogInit: FAudioDevice initialized.
+[2022.02.03-22.02.55:817][357]LogAudio: Display: Audio Device (ID: 11) registered with world 'MainMenu'.
+[2022.02.03-22.02.55:827][357]LogLoad: Game class is 'BP_MainMenuGameMode_C'
+[2022.02.03-22.02.55:828][357]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.03-19.02.55
+[2022.02.03-22.02.55:828][357]LogWorld: Bringing up level for play took: 0.000336
+[2022.02.03-22.02.55:829][357]LogOnline: OSS: Creating online subsystem instance for: :Context_54
+[2022.02.03-22.02.55:830][357]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-22.02.55:830][357]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.02.03-22.02.55:831][357]PIE: Server logged in
+[2022.02.03-22.02.55:832][357]PIE: Play in editor total start time 0.25 seconds.
+[2022.02.03-22.03.01:506][ 35]LogNet: Browse: /Game/Maps/BuildingScape
+[2022.02.03-22.03.01:506][ 35]LogLoad: LoadMap: /Game/Maps/BuildingScape
+[2022.02.03-22.03.01:506][ 35]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.03.01:520][ 35]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.03.01:520][ 35]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.03.01:607][ 35]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-22.03.01:611][ 35]LogUObjectHash: Compacting FUObjectHashTables data took   2.63ms
+[2022.02.03-22.03.01:795][ 35]LogAudio: Display: Audio Device (ID: 11) registered with world 'BuildingScape'.
+[2022.02.03-22.03.01:796][ 35]LogAIModule: Creating AISystem for world BuildingScape
+[2022.02.03-22.03.01:796][ 35]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.02.03-22.03.01:822][ 35]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.02.03-19.03.01
+[2022.02.03-22.03.01:822][ 35]LogWorld: Bringing up level for play took: 0.025462
+[2022.02.03-22.03.01:824][ 35]LogLoad: Took 0.318749 seconds to LoadMap(/Game/Maps/BuildingScape)
+[2022.02.03-22.03.01:837][ 36]LogActor: Warning: BP_KeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_KeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.03.02:013][ 54]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.03.02:513][114]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.03.03:012][174]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.03.05:692][491]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.03.05:693][491]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.02.03-22.03.05:695][491]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.03.05:701][491]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.03.05:719][491]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-22.03.05:731][491]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.03.05:776][491]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-22.03.05:776][491]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.03.05:777][491]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.03.05:791][491]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.03.05:798][491]LogUObjectHash: Compacting FUObjectHashTables data took   2.90ms
+[2022.02.03-22.03.05:814][492]LogPlayLevel: Display: Destroying online subsystem :Context_54
+[2022.02.03-22.03.08:193][769]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-22.03.08:198][769]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-22.03.08:199][769]PIE: New page: PIE session: MainMenu (Feb 3, 2022, 4:03:08 PM)
+[2022.02.03-22.03.08:219][769]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.03.08:219][769]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000698s)
+[2022.02.03-22.03.08:220][769]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-22.03.08:220][769]LogPlayLevel: PIE: World Init took: (0.001033s)
+[2022.02.03-22.03.08:220][769]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001904s)
+[2022.02.03-22.03.08:260][769]LogUObjectHash: Compacting FUObjectHashTables data took   2.53ms
+[2022.02.03-22.03.08:261][769]LogAudio: Display: Creating Audio Device:                 Id: 12, Scope: Unique, Realtime: True
+[2022.02.03-22.03.08:261][769]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-22.03.08:261][769]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-22.03.08:261][769]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-22.03.08:261][769]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-22.03.08:261][769]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-22.03.08:261][769]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-22.03.08:261][769]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-22.03.08:261][769]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-22.03.08:262][769]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.03-22.03.08:262][769]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-22.03.08:267][769]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-22.03.08:267][769]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-22.03.08:282][769]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-22.03.08:282][769]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-22.03.08:282][769]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-22.03.08:282][769]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-22.03.08:282][769]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-22.03.08:282][769]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-22.03.08:282][769]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.03-22.03.08:294][769]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-22.03.08:294][769]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-22.03.08:294][769]LogInit: FAudioDevice initialized.
+[2022.02.03-22.03.08:294][769]LogAudio: Display: Audio Device (ID: 12) registered with world 'MainMenu'.
+[2022.02.03-22.03.08:314][769]LogLoad: Game class is 'BP_MainMenuGameMode_C'
+[2022.02.03-22.03.08:317][769]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.03-19.03.08
+[2022.02.03-22.03.08:318][769]LogWorld: Bringing up level for play took: 0.001043
+[2022.02.03-22.03.08:318][769]LogOnline: OSS: Creating online subsystem instance for: :Context_55
+[2022.02.03-22.03.08:323][769]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-22.03.08:323][769]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.02.03-22.03.08:324][769]PIE: Server logged in
+[2022.02.03-22.03.08:325][769]PIE: Play in editor total start time 0.128 seconds.
+[2022.02.03-22.03.09:694][932]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.03.09:695][932]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.03.09:719][932]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.03.09:719][932]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.03.09:725][932]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-22.03.09:731][932]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.03.09:771][932]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-22.03.09:771][932]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.03.09:772][932]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.03.09:785][932]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.03.09:789][932]LogUObjectHash: Compacting FUObjectHashTables data took   2.68ms
+[2022.02.03-22.03.09:816][933]LogPlayLevel: Display: Destroying online subsystem :Context_55
+[2022.02.03-22.03.15:068][553]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-22.03.15:073][553]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-22.03.15:073][553]PIE: New page: PIE session: MainMenu (Feb 3, 2022, 4:03:15 PM)
+[2022.02.03-22.03.15:109][553]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.03.15:111][553]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002190s)
+[2022.02.03-22.03.15:114][553]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-22.03.15:115][553]LogPlayLevel: PIE: World Init took: (0.003369s)
+[2022.02.03-22.03.15:115][553]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.006276s)
+[2022.02.03-22.03.15:157][553]LogUObjectHash: Compacting FUObjectHashTables data took   2.48ms
+[2022.02.03-22.03.15:157][553]LogAudio: Display: Creating Audio Device:                 Id: 13, Scope: Unique, Realtime: True
+[2022.02.03-22.03.15:158][553]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-22.03.15:158][553]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-22.03.15:158][553]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-22.03.15:158][553]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-22.03.15:158][553]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-22.03.15:158][553]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-22.03.15:158][553]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-22.03.15:158][553]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-22.03.15:158][553]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.03-22.03.15:158][553]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-22.03.15:163][553]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-22.03.15:163][553]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-22.03.15:178][553]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-22.03.15:178][553]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-22.03.15:178][553]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-22.03.15:178][553]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-22.03.15:179][553]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-22.03.15:179][553]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-22.03.15:179][553]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.03-22.03.15:190][553]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-22.03.15:191][553]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-22.03.15:191][553]LogInit: FAudioDevice initialized.
+[2022.02.03-22.03.15:191][553]LogAudio: Display: Audio Device (ID: 13) registered with world 'MainMenu'.
+[2022.02.03-22.03.15:195][553]LogLoad: Game class is 'BP_MainMenuGameMode_C'
+[2022.02.03-22.03.15:196][553]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.03-19.03.15
+[2022.02.03-22.03.15:196][553]LogWorld: Bringing up level for play took: 0.000229
+[2022.02.03-22.03.15:196][553]LogOnline: OSS: Creating online subsystem instance for: :Context_56
+[2022.02.03-22.03.15:197][553]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-22.03.15:197][553]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.02.03-22.03.15:198][553]PIE: Server logged in
+[2022.02.03-22.03.15:198][553]PIE: Play in editor total start time 0.126 seconds.
+[2022.02.03-22.03.16:046][653]LogNet: Browse: /Game/Maps/BuildingScape
+[2022.02.03-22.03.16:046][653]LogLoad: LoadMap: /Game/Maps/BuildingScape
+[2022.02.03-22.03.16:046][653]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.03.16:046][653]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.03.16:046][653]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.03.16:105][653]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-22.03.16:108][653]LogUObjectHash: Compacting FUObjectHashTables data took   2.53ms
+[2022.02.03-22.03.16:279][653]LogAudio: Display: Audio Device (ID: 13) registered with world 'BuildingScape'.
+[2022.02.03-22.03.16:280][653]LogAIModule: Creating AISystem for world BuildingScape
+[2022.02.03-22.03.16:280][653]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.02.03-22.03.16:306][653]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.02.03-19.03.16
+[2022.02.03-22.03.16:306][653]LogWorld: Bringing up level for play took: 0.025032
+[2022.02.03-22.03.16:308][653]LogLoad: Took 0.262452 seconds to LoadMap(/Game/Maps/BuildingScape)
+[2022.02.03-22.03.16:319][654]LogActor: Warning: BP_KeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_KeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.03.16:548][679]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.03.17:048][739]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.03.17:548][799]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.03.21:724][295]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.03.21:724][295]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.02.03-22.03.21:727][295]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.03.21:732][295]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.03.21:753][295]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-22.03.21:770][295]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.03.21:817][295]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.03.21:817][295]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.03.21:818][295]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.03.21:840][295]LogUObjectHash: Compacting FUObjectHashTables data took   2.57ms
+[2022.02.03-22.03.21:856][296]LogPlayLevel: Display: Destroying online subsystem :Context_56
+[2022.02.03-22.04.08:483][711]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2022.02.03-22.04.08:593][711]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.110 s
+[2022.02.03-22.04.08:593][711]LogOutputDevice: Error: === Handled ensure: ===
+[2022.02.03-22.04.08:593][711]LogOutputDevice: Error: 
+[2022.02.03-22.04.08:593][711]LogOutputDevice: Error: Ensure condition failed: !bGraphDataInvalid [File:D:/Build/++UE4/Sync/Engine/Source/Editor/GraphEditor/Private/SGraphPin.cpp] [Line: 821]
+[2022.02.03-22.04.08:593][711]LogOutputDevice: Error: The Graph Pin Object has been invalidate. Someone is keeping a hard ref on the SGraphPin. See InvalidateGraphData for more info
+[2022.02.03-22.04.08:593][711]LogOutputDevice: Error: Stack: 
+[2022.02.03-22.04.08:593][711]LogOutputDevice: Error: [Callstack] 0x00007ff897f1d149 UE4Editor-GraphEditor.dll!UnknownFunction []
+[2022.02.03-22.04.08:593][711]LogOutputDevice: Error: [Callstack] 0x00007ff897dc2141 UE4Editor-GraphEditor.dll!UnknownFunction []
+[2022.02.03-22.04.08:594][711]LogOutputDevice: Error: [Callstack] 0x00007ff897dc0db8 UE4Editor-GraphEditor.dll!UnknownFunction []
+[2022.02.03-22.04.08:594][711]LogOutputDevice: Error: [Callstack] 0x00007ff897dce88c UE4Editor-GraphEditor.dll!UnknownFunction []
+[2022.02.03-22.04.08:594][711]LogOutputDevice: Error: [Callstack] 0x00007ff897e46b8c UE4Editor-GraphEditor.dll!UnknownFunction []
+[2022.02.03-22.04.08:594][711]LogOutputDevice: Error: [Callstack] 0x00007ff897e44089 UE4Editor-GraphEditor.dll!UnknownFunction []
+[2022.02.03-22.04.08:594][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:594][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1044a55 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:594][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:594][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:594][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:594][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b162fc19 UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:594][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b162faa4 UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1044a55 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047748 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1044beb UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:595][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:596][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047748 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:596][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1631ec0 UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:596][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:596][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:596][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:596][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047748 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:596][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1631ec0 UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:596][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:596][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:596][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:596][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047748 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:597][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1631ec0 UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:597][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:597][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:597][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:597][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047748 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:597][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1631ec0 UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:597][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:597][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1044a55 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:597][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:597][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:598][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:598][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047748 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:598][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1044beb UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:598][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:598][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:598][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:598][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:598][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b162faa4 UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:598][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:598][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1044a55 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:598][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047748 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1044beb UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047748 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1631ec0 UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1044a55 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047748 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1044beb UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047748 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1044beb UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1044a55 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1043dc2 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1046d26 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047857 UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b0f7252a UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:599][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1047aec UE4Editor-SlateCore.dll!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b13f977e UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b142b93e UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b13fa0d7 UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1451e57 UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff8b1451659 UE4Editor-Slate.dll!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff7634cae49 UE4Editor.exe!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff7634e117c UE4Editor.exe!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff7634e125a UE4Editor.exe!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff7634f52bd UE4Editor.exe!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff7634f7fea UE4Editor.exe!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff935027034 KERNEL32.DLL!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: [Callstack] 0x00007ff9360e2651 ntdll.dll!UnknownFunction []
+[2022.02.03-22.04.08:600][711]LogOutputDevice: Error: 
+[2022.02.03-22.04.08:607][711]LogStats:                SubmitErrorReport -  0.000 s
+[2022.02.03-22.04.09:895][711]LogStats:                    SendNewReport -  1.288 s
+[2022.02.03-22.04.09:895][711]LogStats:             FDebug::EnsureFailed -  1.413 s
+[2022.02.03-22.04.09:900][712]LogAudioMixer: Resetting audio stream to device id 
+[2022.02.03-22.04.09:927][712]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-22.04.09:927][712]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-22.04.50:052][351]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-22.04.50:099][351]LogUObjectHash: Compacting FUObjectHashTables data took   3.34ms
+[2022.02.03-22.04.50:615][404]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-22.04.50:626][404]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenu1B8AE74A4C3B911AC534E69F4F646AEE.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-22.04.50:638][404]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-22.04.50:638][404]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-22.04.51:698][529]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-22.04.51:709][529]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenuF3896553433531FC7D58B4B3507C2F4F.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-22.04.51:721][529]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-22.04.51:721][529]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-22.04.53:174][692]LogUObjectHash: Compacting FUObjectHashTables data took   3.71ms
+[2022.02.03-22.05.14:887][203]BlueprintLog: New page: Compile WBP_MainMenu
+[2022.02.03-22.05.14:932][203]LogUObjectHash: Compacting FUObjectHashTables data took   3.34ms
+[2022.02.03-22.05.15:298][241]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_MainMenu" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset" SILENT=true
+[2022.02.03-22.05.15:309][241]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_MainMenuD36C1BF34CA0FD9BE6843C8ADEC53396.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_MainMenu.uasset'
+[2022.02.03-22.05.15:322][241]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2022.02.03-22.05.15:322][241]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_MainMenu.WBP_MainMenu
+[2022.02.03-22.05.17:431][483]LogUObjectHash: Compacting FUObjectHashTables data took   3.54ms
+[2022.02.03-22.05.18:746][625]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-22.05.18:751][625]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-22.05.18:751][625]PIE: New page: PIE session: MainMenu (Feb 3, 2022, 4:05:18 PM)
+[2022.02.03-22.05.18:782][625]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.05.18:782][625]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000758s)
+[2022.02.03-22.05.18:783][625]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-22.05.18:784][625]LogPlayLevel: PIE: World Init took: (0.001054s)
+[2022.02.03-22.05.18:784][625]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.002030s)
+[2022.02.03-22.05.18:824][625]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2022.02.03-22.05.18:824][625]LogAudio: Display: Creating Audio Device:                 Id: 14, Scope: Unique, Realtime: True
+[2022.02.03-22.05.18:824][625]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-22.05.18:824][625]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-22.05.18:824][625]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-22.05.18:824][625]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-22.05.18:824][625]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-22.05.18:824][625]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-22.05.18:824][625]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-22.05.18:824][625]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-22.05.18:825][625]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.03-22.05.18:825][625]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-22.05.18:830][625]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-22.05.18:830][625]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-22.05.18:845][625]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-22.05.18:845][625]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-22.05.18:845][625]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-22.05.18:845][625]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-22.05.18:846][625]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-22.05.18:846][625]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-22.05.18:846][625]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.03-22.05.18:858][625]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-22.05.18:858][625]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-22.05.18:858][625]LogInit: FAudioDevice initialized.
+[2022.02.03-22.05.18:858][625]LogAudio: Display: Audio Device (ID: 14) registered with world 'MainMenu'.
+[2022.02.03-22.05.18:867][625]LogLoad: Game class is 'BP_MainMenuGameMode_C'
+[2022.02.03-22.05.18:869][625]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.03-19.05.18
+[2022.02.03-22.05.18:869][625]LogWorld: Bringing up level for play took: 0.000234
+[2022.02.03-22.05.18:869][625]LogOnline: OSS: Creating online subsystem instance for: :Context_57
+[2022.02.03-22.05.18:870][625]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-22.05.18:870][625]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.02.03-22.05.18:871][625]PIE: Server logged in
+[2022.02.03-22.05.18:871][625]PIE: Play in editor total start time 0.121 seconds.
+[2022.02.03-22.05.23:267][146]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.05.23:267][146]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.05.23:293][146]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.23:294][146]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.23:311][146]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-22.05.23:327][146]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.23:377][146]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.05.23:377][146]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.05.23:378][146]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.05.23:394][146]LogUObjectHash: Compacting FUObjectHashTables data took   2.53ms
+[2022.02.03-22.05.23:424][147]LogPlayLevel: Display: Destroying online subsystem :Context_57
+[2022.02.03-22.05.24:112][229]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-22.05.24:118][229]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-22.05.24:118][229]PIE: New page: PIE session: MainMenu (Feb 3, 2022, 4:05:24 PM)
+[2022.02.03-22.05.24:142][229]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.05.24:143][229]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000722s)
+[2022.02.03-22.05.24:144][229]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.03-22.05.24:144][229]LogPlayLevel: PIE: World Init took: (0.001005s)
+[2022.02.03-22.05.24:144][229]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001917s)
+[2022.02.03-22.05.24:184][229]LogUObjectHash: Compacting FUObjectHashTables data took   2.67ms
+[2022.02.03-22.05.24:184][229]LogAudio: Display: Creating Audio Device:                 Id: 15, Scope: Unique, Realtime: True
+[2022.02.03-22.05.24:184][229]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-22.05.24:184][229]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-22.05.24:184][229]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-22.05.24:184][229]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-22.05.24:184][229]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-22.05.24:184][229]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-22.05.24:185][229]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-22.05.24:185][229]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-22.05.24:185][229]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.03-22.05.24:185][229]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-22.05.24:190][229]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-22.05.24:190][229]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-22.05.24:205][229]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-22.05.24:205][229]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-22.05.24:205][229]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-22.05.24:205][229]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-22.05.24:205][229]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-22.05.24:205][229]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-22.05.24:206][229]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.03-22.05.24:217][229]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-22.05.24:217][229]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-22.05.24:217][229]LogInit: FAudioDevice initialized.
+[2022.02.03-22.05.24:217][229]LogAudio: Display: Audio Device (ID: 15) registered with world 'MainMenu'.
+[2022.02.03-22.05.24:222][229]LogLoad: Game class is 'BP_MainMenuGameMode_C'
+[2022.02.03-22.05.24:223][229]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.03-19.05.24
+[2022.02.03-22.05.24:223][229]LogWorld: Bringing up level for play took: 0.000229
+[2022.02.03-22.05.24:223][229]LogOnline: OSS: Creating online subsystem instance for: :Context_58
+[2022.02.03-22.05.24:224][229]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-22.05.24:224][229]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.02.03-22.05.24:225][229]PIE: Server logged in
+[2022.02.03-22.05.24:225][229]PIE: Play in editor total start time 0.108 seconds.
+[2022.02.03-22.05.25:012][323]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.03-22.05.25:012][323]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2022.02.03-22.05.25:013][323]LogNet: Browse: /Game/Maps/BuildingScape
+[2022.02.03-22.05.25:013][323]LogLoad: LoadMap: /Game/Maps/BuildingScape
+[2022.02.03-22.05.25:013][323]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMenu
+[2022.02.03-22.05.25:013][323]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.25:014][323]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.25:090][323]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-22.05.25:093][323]LogUObjectHash: Compacting FUObjectHashTables data took   2.85ms
+[2022.02.03-22.05.25:258][323]LogAudio: Display: Audio Device (ID: 15) registered with world 'BuildingScape'.
+[2022.02.03-22.05.25:259][323]LogAIModule: Creating AISystem for world BuildingScape
+[2022.02.03-22.05.25:259][323]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.02.03-22.05.25:285][323]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.02.03-19.05.25
+[2022.02.03-22.05.25:286][323]LogWorld: Bringing up level for play took: 0.025657
+[2022.02.03-22.05.25:288][323]LogLoad: Took 0.273780 seconds to LoadMap(/Game/Maps/BuildingScape)
+[2022.02.03-22.05.25:301][324]LogActor: Warning: BP_KeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_KeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.05.25:518][347]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.05.26:018][407]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.05.26:518][467]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.03-22.05.27:059][532]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-22.05.27:059][532]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2022.02.03-22.05.27:059][532]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.03-22.05.27:577][594]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.03-22.05.27:577][594]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.03-22.05.27:910][634]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-22.05.27:910][634]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.03-22.05.28:834][745]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.03-22.05.28:834][745]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.03-22.05.29:211][790]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-22.05.29:211][790]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.03-22.05.29:552][831]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.03-22.05.29:552][831]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.03-22.05.29:843][866]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-22.05.29:843][866]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.03-22.05.30:069][893]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.03-22.05.30:069][893]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.03-22.05.30:569][953]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.03-22.05.30:569][953]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.03-22.05.30:877][990]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.03-22.05.30:877][990]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.03-22.05.31:570][ 73]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_8
+[2022.02.03-22.05.33:620][319]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_7
+[2022.02.03-22.05.34:386][411]LogTemp: Warning: ActorsInOverlap.Num = 1
+[2022.02.03-22.05.34:677][446]LogTemp: Warning: ActorsInOverlap.Num = -1
+[2022.02.03-22.05.38:384][888]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.05.38:384][888]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.02.03-22.05.38:384][888]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.38:386][888]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.38:391][888]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-22.05.38:397][888]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.38:437][888]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-22.05.38:437][888]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.05.38:438][888]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.05.38:457][888]LogUObjectHash: Compacting FUObjectHashTables data took   2.68ms
+[2022.02.03-22.05.38:474][889]LogPlayLevel: Display: Destroying online subsystem :Context_58
+[2022.02.03-22.05.42:626][359]LogUObjectHash: Compacting FUObjectHashTables data took   2.76ms
+[2022.02.03-22.05.44:001][509]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2022.02.03-22.05.44:043][509]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:043][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:089][509]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2022.02.03-22.05.44:089][509]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:089][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:270][509]LogWorld: UWorld::CleanupWorld for World_28, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:270][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:279][509]LogWorld: UWorld::CleanupWorld for World_27, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:279][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:328][509]LogWorld: UWorld::CleanupWorld for World_56, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:328][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:336][509]LogWorld: UWorld::CleanupWorld for World_55, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:336][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:372][509]LogWorld: UWorld::CleanupWorld for World_34, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:372][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:380][509]LogWorld: UWorld::CleanupWorld for World_33, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:380][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:415][509]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2022.02.03-22.05.44:415][509]LogWorld: UWorld::CleanupWorld for World_37, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:415][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:461][509]LogWorld: UWorld::CleanupWorld for World_62, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:461][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:470][509]LogWorld: UWorld::CleanupWorld for World_61, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:470][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:506][509]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2022.02.03-22.05.44:506][509]LogWorld: UWorld::CleanupWorld for World_72, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.44:506][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-22.05.44:552][509]LogSlate: Window 'BuildingEscape - Unreal Editor' being destroyed
+[2022.02.03-22.05.44:747][510]Cmd: QUIT_EDITOR
+[2022.02.03-22.05.44:747][510]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2022.02.03-22.05.44:751][510]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2022.02.03-22.05.45:225][510]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2022.02.03-22.05.45:225][510]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2022.02.03-22.05.45:225][510]LogAudio: Display: Audio Device unregistered from world 'MainMenu'.
+[2022.02.03-22.05.45:225][510]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.05.45:226][510]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-22.05.45:246][510]LogAudio: Display: Audio Device Manager Shutdown
+[2022.02.03-22.05.45:246][510]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2022.02.03-22.05.45:249][510]LogExit: Preparing to exit.
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [0000027282232200] Windows
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [0000027282232300] Default__DeviceProfile
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [00000272821BE200] WindowsNoEditor
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [0000027282231600] WindowsServer
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [00000272821BD400] WindowsClient
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [0000027282231D00] IOS
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [00000272821BE600] iPadAir
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [0000027282232500] iPadAir2
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728216E000] IPadPro
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728216E100] iPadAir3
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [00000272821BD200] iPadAir4
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728216F900] iPadMini2
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [00000272821BC500] iPadMini3
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728216D400] iPadMini4
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [00000272821BEA00] iPadMini5
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728217D900] iPhone6
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728217DA00] iPodTouch6
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728216FE00] iPhone7
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728216DF00] iPodTouch7
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728217F100] iPhone5S
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728216F100] iPhone6Plus
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728217D600] iPhone6S
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728216CE00] iPhone6SPlus
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728217C700] iPhone7Plus
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728216CA00] iPhoneSE
+[2022.02.03-22.05.46:101][510]LogDeviceProfile: Device profile begin destroy: [000002728217E900] iPhone8
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728216E800] iPhone8Plus
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728217C300] iPhoneX
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728216EF00] iPhoneXS
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728217E800] iPhoneXSMax
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728216FC00] iPhoneXR
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728217CD00] iPhone11
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728216E700] iPhone11Pro
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728217E700] iPhone11ProMax
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728216F600] iPhoneSE2
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728217E400] iPhone12Mini
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728216FA00] iPhone12
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728217E100] iPhone12Pro
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728216DE00] iPhone12ProMax
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [0000027282232700] iPadPro105
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728216ED00] iPadPro129
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [0000027282232D00] iPadPro97
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728216D000] iPadPro2_129
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [0000027282233200] iPad5
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728216D100] iPad6
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [0000027282232A00] iPad7
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [000002728216FF00] iPad8
+[2022.02.03-22.05.46:102][510]LogDeviceProfile: Device profile begin destroy: [0000027282232000] iPadPro11
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216D200] iPadPro2_11
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282230500] iPadPro3_129
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216EB00] iPadPro4_129
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282231100] AppleTV
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216DB00] AppleTV4K
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282230400] TVOS
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216C900] Mac
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282231800] MacClient
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216E400] MacNoEditor
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282230300] MacServer
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216D500] Linux
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282230C00] LinuxAArch64
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216C500] LinuxNoEditor
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282230900] LinuxAArch64NoEditor
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216D800] LinuxClient
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282230700] LinuxAArch64Client
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216F000] LinuxServer
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282232F00] LinuxAArch64Server
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216C600] Android
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282232E00] Android_Low
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216D300] Android_Mid
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282233600] Android_High
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216DD00] Android_Default
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282233100] Android_Adreno4xx
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216EC00] Android_Adreno5xx_Low
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282230200] Android_Adreno5xx
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216CC00] Android_Adreno6xx
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282232C00] Android_Adreno6xx_Vulkan
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216D900] Android_Mali_T6xx
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282231E00] Android_Mali_T7xx
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728216D700] Android_Mali_T8xx
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [0000027282230A00] Android_Mali_G71
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [00000272821BE700] Android_Mali_G72
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728217EC00] Android_Mali_G72_Vulkan
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [00000272821BED00] Android_Mali_G76
+[2022.02.03-22.05.46:103][510]LogDeviceProfile: Device profile begin destroy: [000002728217C400] Android_Mali_G76_Vulkan
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [00000272821BE300] Android_Mali_G77
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [000002728217C200] Android_Mali_G77_Vulkan
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [00000272821BCE00] Android_Vulkan_SM5
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [000002728217FD00] Android_PowerVR_G6xxx
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [00000272821BF200] Android_PowerVR_GT7xxx
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [000002728217D800] Android_PowerVR_GE8xxx
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [00000272821BF300] Android_PowerVR_GM9xxx
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [000002728217EF00] Android_PowerVR_GM9xxx_Vulkan
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [00000272821BFF00] Android_TegraK1
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [000002728217C800] Android_Unknown_Vulkan
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [00000272821BEF00] Lumin
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [000002728217C500] Lumin_Desktop
+[2022.02.03-22.05.46:104][510]LogDeviceProfile: Device profile begin destroy: [00000272821BE500] HoloLens
+[2022.02.03-22.05.46:113][510]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:117][510]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:122][510]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:126][510]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:131][510]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:136][510]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:140][510]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:145][510]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:149][510]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:154][510]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:159][510]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:165][510]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:169][510]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:174][510]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:178][510]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:183][510]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:187][510]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:191][510]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:196][510]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:200][510]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:205][510]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:209][510]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:213][510]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:218][510]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:222][510]LogWorld: UWorld::CleanupWorld for World_38, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:227][510]LogWorld: UWorld::CleanupWorld for World_39, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:231][510]LogWorld: UWorld::CleanupWorld for World_40, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:236][510]LogWorld: UWorld::CleanupWorld for World_41, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:240][510]LogWorld: UWorld::CleanupWorld for World_63, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:245][510]LogWorld: UWorld::CleanupWorld for World_26, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:325][510]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2022.02.03-22.05.46:342][510]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-22.05.46:347][510]LogExit: Editor shut down
+[2022.02.03-22.05.46:347][510]LogExit: Transaction tracking system shut down
