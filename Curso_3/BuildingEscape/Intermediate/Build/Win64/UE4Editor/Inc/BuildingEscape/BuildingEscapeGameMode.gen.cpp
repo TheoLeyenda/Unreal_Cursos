@@ -17,8 +17,6 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABuildingEscapeGameMode();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AObjectSpawner_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ABuildingEscapeGameMode::execCheckPlayerDead)
 	{
@@ -68,16 +66,6 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpawnerObjectClass_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_SpawnerObjectClass;
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SpawnersObjects_Inner;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpawnersObjects_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_SpawnersObjects;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -97,26 +85,6 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnerObjectClass_MetaData[] = {
-		{ "Category", "Spawn Objects" },
-		{ "ModuleRelativePath", "Public/BuildingEscapeGameMode.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnerObjectClass = { "SpawnerObjectClass", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingEscapeGameMode, SpawnerObjectClass), Z_Construct_UClass_AObjectSpawner_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnerObjectClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnerObjectClass_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnersObjects_Inner = { "SpawnersObjects", nullptr, (EPropertyFlags)0x0000000000020000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AObjectSpawner_NoRegister, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnersObjects_MetaData[] = {
-		{ "Category", "Spawn Objects" },
-		{ "ModuleRelativePath", "Public/BuildingEscapeGameMode.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnersObjects = { "SpawnersObjects", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingEscapeGameMode, SpawnersObjects), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnersObjects_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnersObjects_MetaData)) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABuildingEscapeGameMode_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnerObjectClass,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnersObjects_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_SpawnersObjects,
-	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABuildingEscapeGameMode_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABuildingEscapeGameMode>::IsAbstract,
 	};
@@ -126,11 +94,11 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		FuncInfo,
-		Z_Construct_UClass_ABuildingEscapeGameMode_Statics::PropPointers,
+		nullptr,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
-		UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::PropPointers),
+		0,
 		0,
 		0x009002ACu,
 		METADATA_PARAMS(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::Class_MetaDataParams))
@@ -144,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingEscapeGameMode, 4062943398);
+	IMPLEMENT_CLASS(ABuildingEscapeGameMode, 382532766);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABuildingEscapeGameMode>()
 	{
 		return ABuildingEscapeGameMode::StaticClass();

@@ -7,17 +7,6 @@
 void ABuildingEscapeGameMode::BeginPlay()
 {
 	Super::BeginPlay();
-
-	FindPlayerSpawn();
-
-	FindSpawners();
-
-	Restart();
-}
-
-void ABuildingEscapeGameMode::FindPlayerSpawn()
-{
-	PlayerStart = Cast<APlayerStart>(FindPlayerStart(GetWorld()->GetFirstPlayerController(),"Player Start"));
 }
 
 void ABuildingEscapeGameMode::CheckPlayerDead()
@@ -40,13 +29,14 @@ ABuildingScapeCharacter* ABuildingEscapeGameMode::FindCurrentCharacter()
 
 void ABuildingEscapeGameMode::Restart()
 {
+	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
+}
+
+
+/* EJEMPLO PARA USAR EL DELEGATE DE QUITARLE VIDA AL PLAYER
+void ABuildingEscapeGameMode::Restart()
+{
 	ABuildingScapeCharacter* BuildingEscapeGameMode = Cast<ABuildingScapeCharacter>(GetWorld()->GetFirstPlayerController()->GetCharacter());
-	BuildingEscapeGameMode->SetActorLocation(PlayerStart->GetActorLocation());
-	for(AObjectSpawner* Spawner : SpawnersObjects)
-	{
-		Spawner->DestroySpawnedObjects();
-		Spawner->SendTimerSpawnObject();
-	}
 
 	CurrentCharacter = FindCurrentCharacter();
 	if(CurrentCharacter)
@@ -62,23 +52,11 @@ void ABuildingEscapeGameMode::Restart()
 		CurrentCharacter->OnSubstractLife.AddDynamic(this, &ABuildingEscapeGameMode::CheckPlayerDead);
 	}
 }
+*/
 
 ABuildingScapeCharacter* ABuildingEscapeGameMode::GetCurrentCharacter()
 {
 	return CurrentCharacter;
-}
-
-
-void ABuildingEscapeGameMode::FindSpawners()
-{
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(),SpawnerObjectClass,AuxArrayActors);
-
-	SpawnersObjects.Empty();
-
-	for(AActor* Spawner : AuxArrayActors)
-	{
-		SpawnersObjects.Add(Cast<AObjectSpawner>(Spawner));
-	}
 }
 
 

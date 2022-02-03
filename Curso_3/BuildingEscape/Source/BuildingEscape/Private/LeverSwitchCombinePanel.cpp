@@ -23,8 +23,6 @@ ALeverSwitchCombinePanel::ALeverSwitchCombinePanel() : ACombinePanel()
 void ALeverSwitchCombinePanel::BeginPlay()
 {
 	Super::BeginPlay();
-
-	BuildingEscapeGameMode = Cast<ABuildingEscapeGameMode>(GetWorld()->GetAuthGameMode());
 	
 	ResetCombinePanel(false);
 	
@@ -73,11 +71,6 @@ void ALeverSwitchCombinePanel::ResetCombinePanel(bool FailCombinePanel)
 			LeverSwitchesInfo[i].bCheckDone = false;
 			LeverSwitchesInfo[i].bAssignedObjectSpawn = false;
 		}
-	}
-	ABuildingScapeCharacter* Character = BuildingEscapeGameMode->GetCurrentCharacter();
-	if(Character && FailCombinePanel)
-	{
-		Character->SubstractLifes(LifeSubstractForFail);
 	}
 }
 

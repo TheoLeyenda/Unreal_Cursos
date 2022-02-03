@@ -62,8 +62,6 @@ protected:
 	UPROPERTY(EditAnywhere)
 	int LifeSubstractForFail = 1;
 	
-	ABuildingEscapeGameMode* BuildingEscapeGameMode;
-	
 	virtual void BeginPlay() override;
 
 	virtual void Tick(float DeltaSeconds) override;

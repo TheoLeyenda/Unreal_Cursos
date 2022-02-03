@@ -14,7 +14,11 @@ void AObjectSpawner::BeginPlay()
 	Super::BeginPlay();
 
 	World = GetWorld();
-	
+
+	if(bEnableSpawnObject)
+	{
+		SendTimerSpawnObject();
+	}
 }
 
 void AObjectSpawner::SendTimerSpawnObject()
