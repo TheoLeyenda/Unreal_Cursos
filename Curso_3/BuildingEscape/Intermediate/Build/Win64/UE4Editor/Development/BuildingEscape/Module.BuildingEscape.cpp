@@ -32,6 +32,7 @@
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/RandomSpawnObject.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/SelfDestructionByTimeOver.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/SpawnObjectByTrigger.cpp"
+#include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/TeleportObjectsInTrigger.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/TimeEventOver.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/TimerInterface.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/TriggerResetGame.cpp"

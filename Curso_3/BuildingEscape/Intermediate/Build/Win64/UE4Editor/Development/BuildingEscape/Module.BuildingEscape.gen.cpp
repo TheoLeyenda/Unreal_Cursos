@@ -32,6 +32,7 @@
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/RandomSpawnObject.gen.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/SelfDestructionByTimeOver.gen.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/SpawnObjectByTrigger.gen.cpp"
+#include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TeleportObjectsInTrigger.gen.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TimeEventOver.gen.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TimerInterface.gen.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TriggerResetGame.gen.cpp"
