@@ -21,8 +21,16 @@ static inline void FOnSubstractLife_DelegateWrapper(const FMulticastScriptDelega
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execDisableMovement);
+
+
+#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execDisableMovement);
+
+
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABuildingScapeCharacter(); \
@@ -71,7 +79,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABuildingScapeCharacter); \
 	FORCEINLINE static uint32 __PPO__BaseLookUpRate() { return STRUCT_OFFSET(ABuildingScapeCharacter, BaseLookUpRate); } \
 	FORCEINLINE static uint32 __PPO__Fatness() { return STRUCT_OFFSET(ABuildingScapeCharacter, Fatness); } \
 	FORCEINLINE static uint32 __PPO__Lifes() { return STRUCT_OFFSET(ABuildingScapeCharacter, Lifes); } \
-	FORCEINLINE static uint32 __PPO__bEnableMovement() { return STRUCT_OFFSET(ABuildingScapeCharacter, bEnableMovement); }
+	FORCEINLINE static uint32 __PPO__bEnableMovement() { return STRUCT_OFFSET(ABuildingScapeCharacter, bEnableMovement); } \
+	FORCEINLINE static uint32 __PPO__BuildingEscapeGameMode() { return STRUCT_OFFSET(ABuildingScapeCharacter, BuildingEscapeGameMode); }
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_11_PROLOG

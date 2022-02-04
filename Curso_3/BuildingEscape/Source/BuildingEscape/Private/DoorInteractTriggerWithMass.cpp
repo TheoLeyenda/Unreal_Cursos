@@ -49,7 +49,7 @@ void ADoorInteractTriggerWithMass::OnOverlapEnd(UPrimitiveComponent* OverlappedC
 
 void ADoorInteractTriggerWithMass::CheckMassInOverlap()
 {
-	if(TotalMass >= MassToOpenDoor && LastObjectRegister == ELastStateObjectOverlap::BeginOverlap)
+	if(TotalMass >= MassToOpenDoor)
 	{
 		OpenDoors();
 	}
@@ -61,13 +61,15 @@ void ADoorInteractTriggerWithMass::CheckMassInOverlap()
 
 bool ADoorInteractTriggerWithMass::ExecuteInteractInterface()
 {
+
 	if(Doors.Num() <= 0)
 	{
 		return false;
 	}
-	TotalMass = 0;
-	
-	TotalMassActors();
+	if(TotalMass < MassToOpenDoor)
+	{
+		TotalMassActors();
+	}
 	UE_LOG(LogTemp, Warning, TEXT("TotalMass: %f"), TotalMass);
 	CheckMassInOverlap();
 	return true;

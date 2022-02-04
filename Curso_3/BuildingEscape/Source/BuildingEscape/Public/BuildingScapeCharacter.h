@@ -41,15 +41,23 @@ protected:
 	void Interact();
 
 	void ThrowObject();
+
+	UFUNCTION()
+	void DisableMovement();
+
+	UPROPERTY()
+	class ABuildingEscapeGameMode* BuildingEscapeGameMode;
 	
 public:
-
+	
 	UPROPERTY(BlueprintAssignable, BlueprintCallable)
 	FOnSubstractLife OnSubstractLife;
 	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	virtual void BeginPlay() override;
+	
 	virtual void Tick(float DeltaSeconds) override;
 	
 	void MoveForward(float Val);
@@ -87,3 +95,5 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "BuildingScapeCharacter Settings")
 	class UInteractComponent* InteractComponent;
 };
+
+

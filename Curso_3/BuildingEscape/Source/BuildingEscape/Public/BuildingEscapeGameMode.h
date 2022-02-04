@@ -5,14 +5,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "BuildingScapeCharacter.h"
-#include "ObjectSpawner.h"
-#include "GameFramework/PlayerStart.h"
 #include "BuildingEscapeGameMode.generated.h"
 
-/**
- * 
- */
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnGameOverActivate);
 UCLASS()
 class BUILDINGESCAPE_API ABuildingEscapeGameMode : public AGameModeBase
 {
@@ -20,7 +15,7 @@ class BUILDINGESCAPE_API ABuildingEscapeGameMode : public AGameModeBase
 
 	virtual void BeginPlay() override;
 
-	ABuildingScapeCharacter* CurrentCharacter = nullptr;
+	class ABuildingScapeCharacter* CurrentCharacter = nullptr;
 	
 	UFUNCTION()
 	void CheckPlayerDead();
@@ -28,8 +23,20 @@ class BUILDINGESCAPE_API ABuildingEscapeGameMode : public AGameModeBase
 public:
 	
 	ABuildingScapeCharacter* FindCurrentCharacter();
-	
+
+	UFUNCTION(BlueprintCallable)
 	void Restart();
 
 	ABuildingScapeCharacter* GetCurrentCharacter();
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	bool bGameOver = false;
+
+	UPROPERTY(BlueprintAssignable)
+	FOnGameOverActivate OnGameoverActivate;
+
+	UFUNCTION(BlueprintCallable)
+	void LoadMap(FString Name);
+	
+	void ActivateGameOver();
 };

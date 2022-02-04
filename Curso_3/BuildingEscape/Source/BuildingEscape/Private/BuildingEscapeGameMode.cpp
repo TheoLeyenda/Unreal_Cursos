@@ -2,6 +2,7 @@
 
 
 #include "BuildingEscapeGameMode.h"
+#include "BuildingScapeCharacter.h"
 #include "Kismet/GameplayStatics.h"
 
 void ABuildingEscapeGameMode::BeginPlay()
@@ -32,6 +33,10 @@ void ABuildingEscapeGameMode::Restart()
 	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
 }
 
+void ABuildingEscapeGameMode::LoadMap(FString Name)
+{
+	UGameplayStatics::OpenLevel(this, FName(Name), false);
+}
 
 /* EJEMPLO PARA USAR EL DELEGATE DE QUITARLE VIDA AL PLAYER
 void ABuildingEscapeGameMode::Restart()
@@ -57,6 +62,12 @@ void ABuildingEscapeGameMode::Restart()
 ABuildingScapeCharacter* ABuildingEscapeGameMode::GetCurrentCharacter()
 {
 	return CurrentCharacter;
+}
+
+void ABuildingEscapeGameMode::ActivateGameOver()
+{
+	bGameOver = true;
+	OnGameoverActivate.Broadcast();
 }
 
 

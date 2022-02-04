@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABuildingScapeCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABuildingEscapeGameMode_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UGrabber_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInventory_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInteractComponent_NoRegister();
@@ -45,8 +46,42 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(ABuildingScapeCharacter::execDisableMovement)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->DisableMovement();
+		P_NATIVE_END;
+	}
 	void ABuildingScapeCharacter::StaticRegisterNativesABuildingScapeCharacter()
 	{
+		UClass* Class = ABuildingScapeCharacter::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "DisableMovement", &ABuildingScapeCharacter::execDisableMovement },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABuildingScapeCharacter_DisableMovement_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABuildingScapeCharacter_DisableMovement_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABuildingScapeCharacter_DisableMovement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABuildingScapeCharacter, nullptr, "DisableMovement", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABuildingScapeCharacter_DisableMovement_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABuildingScapeCharacter_DisableMovement_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABuildingScapeCharacter_DisableMovement()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABuildingScapeCharacter_DisableMovement_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ABuildingScapeCharacter_NoRegister()
 	{
@@ -55,6 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	struct Z_Construct_UClass_ABuildingScapeCharacter_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -84,6 +120,10 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		static void NewProp_bEnableMovement_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bEnableMovement;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BuildingEscapeGameMode_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BuildingEscapeGameMode;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnSubstractLife_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnSubstractLife;
@@ -106,6 +146,9 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	UObject* (*const Z_Construct_UClass_ABuildingScapeCharacter_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ABuildingScapeCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABuildingScapeCharacter_DisableMovement, "DisableMovement" }, // 2168194615
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::Class_MetaDataParams[] = {
@@ -167,6 +210,12 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement = { "bEnableMovement", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ABuildingScapeCharacter), &Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BuildingEscapeGameMode_MetaData[] = {
+		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BuildingEscapeGameMode = { "BuildingEscapeGameMode", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, BuildingEscapeGameMode), Z_Construct_UClass_ABuildingEscapeGameMode_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BuildingEscapeGameMode_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BuildingEscapeGameMode_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_OnSubstractLife_MetaData[] = {
 		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
 	};
@@ -205,6 +254,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Fatness,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Lifes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BuildingEscapeGameMode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_OnSubstractLife,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Grabber,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_PlayerInventoryComponent,
@@ -218,11 +268,11 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ABuildingScapeCharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -237,7 +287,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingScapeCharacter, 322343191);
+	IMPLEMENT_CLASS(ABuildingScapeCharacter, 2733770922);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABuildingScapeCharacter>()
 	{
 		return ABuildingScapeCharacter::StaticClass();

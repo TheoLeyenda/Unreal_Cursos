@@ -2,7 +2,6 @@
 
 
 #include "BuildingScapeCharacter.h"
-
 #include "BuildingEscapeGameMode.h"
 #include "Grabber.h"
 #include "Inventory.h"
@@ -33,6 +32,18 @@ ABuildingScapeCharacter::ABuildingScapeCharacter()
 	PlayerInventoryComponent->BuildingScapeCharacter = this;
 	
 	InteractComponent = CreateDefaultSubobject<UInteractComponent>(TEXT("InteractComponent"));
+	
+}
+
+void ABuildingScapeCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+	BuildingEscapeGameMode = Cast<ABuildingEscapeGameMode>(GetWorld()->GetAuthGameMode());
+
+	if(BuildingEscapeGameMode)
+	{
+		BuildingEscapeGameMode->OnGameoverActivate.AddDynamic(this, &ABuildingScapeCharacter::DisableMovement);
+	}
 }
 
 // Called to bind functionality to input
@@ -114,7 +125,7 @@ void ABuildingScapeCharacter::ThrowObject()
 
 void ABuildingScapeCharacter::RestartGamePressed()
 {
-	ABuildingEscapeGameMode* BuildingEscapeGameMode = Cast<ABuildingEscapeGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+	BuildingEscapeGameMode = Cast<ABuildingEscapeGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
 	if(!BuildingEscapeGameMode){ return; }
 
 	BuildingEscapeGameMode->Restart();
@@ -160,4 +171,9 @@ void ABuildingScapeCharacter::SubstractLifes(int Value)
 void ABuildingScapeCharacter::AddLifes(int Value)
 {
 	Lifes += Value;
+}
+
+void ABuildingScapeCharacter::DisableMovement()
+{
+	bEnableMovement = false;
 }
