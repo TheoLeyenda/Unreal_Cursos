@@ -85,7 +85,7 @@ public: \
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_TrapInterface_h_10_PROLOG
-#define BuildingEscape_Source_BuildingEscape_Public_TrapInterface_h_21_GENERATED_BODY_LEGACY \
+#define BuildingEscape_Source_BuildingEscape_Public_TrapInterface_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	BuildingEscape_Source_BuildingEscape_Public_TrapInterface_h_13_SPARSE_DATA \
@@ -95,7 +95,7 @@ public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_TrapInterface_h_21_GENERATED_BODY \
+#define BuildingEscape_Source_BuildingEscape_Public_TrapInterface_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	BuildingEscape_Source_BuildingEscape_Public_TrapInterface_h_13_SPARSE_DATA \

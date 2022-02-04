@@ -37,16 +37,6 @@ void ADoorInteractTriggerWithMass::OnOverlapBegin(UPrimitiveComponent* Overlappe
 	ExecuteInteractInterface();
 }
 
-void ADoorInteractTriggerWithMass::OnOverlapEnd(UPrimitiveComponent* OverlappedComp
-	, AActor* OtherActor
-	, UPrimitiveComponent* OtherComp
-	, int32 OtherBodyIndex)
-{
-	Super::OnOverlapEnd(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex);
-
-	ExecuteInteractInterface();
-}
-
 void ADoorInteractTriggerWithMass::CheckMassInOverlap()
 {
 	if(TotalMass >= MassToOpenDoor)

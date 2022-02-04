@@ -13,28 +13,30 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define BUILDINGESCAPE_Trap_generated_h
 
-#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_INCLASS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_SPARSE_DATA
+#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_RPC_WRAPPERS
+#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATrap(); \
 	friend struct Z_Construct_UClass_ATrap_Statics; \
 public: \
 	DECLARE_CLASS(ATrap, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
-	DECLARE_SERIALIZER(ATrap)
+	DECLARE_SERIALIZER(ATrap) \
+	virtual UObject* _getUObject() const override { return const_cast<ATrap*>(this); }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_INCLASS \
+#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesATrap(); \
 	friend struct Z_Construct_UClass_ATrap_Statics; \
 public: \
 	DECLARE_CLASS(ATrap, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
-	DECLARE_SERIALIZER(ATrap)
+	DECLARE_SERIALIZER(ATrap) \
+	virtual UObject* _getUObject() const override { return const_cast<ATrap*>(this); }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_STANDARD_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATrap(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATrap) \
@@ -47,7 +49,7 @@ private: \
 public:
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_ENHANCED_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATrap(ATrap&&); \
@@ -58,28 +60,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATrap); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATrap)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_PRIVATE_PROPERTY_OFFSET
-#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_9_PROLOG
-#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_GENERATED_BODY_LEGACY \
+#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_PRIVATE_PROPERTY_OFFSET
+#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_10_PROLOG
+#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_RPC_WRAPPERS \
-	BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_INCLASS \
-	BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_STANDARD_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_RPC_WRAPPERS \
+	BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_INCLASS \
+	BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_GENERATED_BODY \
+#define BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_INCLASS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_Trap_h_12_ENHANCED_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_INCLASS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_Trap_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

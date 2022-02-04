@@ -22,7 +22,9 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ATrap_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInteractInterface_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UTrapInterface_NoRegister();
 // End Cross Module References
 	static UEnum* ELastStateObjectOverlap_StaticEnum()
 	{
@@ -266,6 +268,10 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BoxTriggerVolume_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BoxTriggerVolume;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Trap_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Trap;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -293,11 +299,20 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AInteractTrigger_Statics::NewProp_BoxTriggerVolume = { "BoxTriggerVolume", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AInteractTrigger, BoxTriggerVolume), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AInteractTrigger_Statics::NewProp_BoxTriggerVolume_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AInteractTrigger_Statics::NewProp_BoxTriggerVolume_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AInteractTrigger_Statics::NewProp_Trap_MetaData[] = {
+		{ "Category", "InteractTrigger" },
+		{ "ModuleRelativePath", "Public/InteractTrigger.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AInteractTrigger_Statics::NewProp_Trap = { "Trap", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AInteractTrigger, Trap), Z_Construct_UClass_ATrap_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AInteractTrigger_Statics::NewProp_Trap_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AInteractTrigger_Statics::NewProp_Trap_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AInteractTrigger_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AInteractTrigger_Statics::NewProp_BoxTriggerVolume,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AInteractTrigger_Statics::NewProp_Trap,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AInteractTrigger_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UInteractInterface_NoRegister, (int32)VTABLE_OFFSET(AInteractTrigger, IInteractInterface), false },
+			{ Z_Construct_UClass_UTrapInterface_NoRegister, (int32)VTABLE_OFFSET(AInteractTrigger, ITrapInterface), false },
 		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AInteractTrigger_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AInteractTrigger>::IsAbstract,
@@ -326,7 +341,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AInteractTrigger, 2631542314);
+	IMPLEMENT_CLASS(AInteractTrigger, 4279700309);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AInteractTrigger>()
 	{
 		return AInteractTrigger::StaticClass();

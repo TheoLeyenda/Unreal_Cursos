@@ -16,20 +16,20 @@ struct FHitResult;
 #endif
 #define BUILDINGESCAPE_InteractTrigger_generated_h
 
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_RPC_WRAPPERS \
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_SPARSE_DATA
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_INCLASS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAInteractTrigger(); \
 	friend struct Z_Construct_UClass_AInteractTrigger_Statics; \
@@ -39,7 +39,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AInteractTrigger*>(this); }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_INCLASS \
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_INCLASS \
 private: \
 	static void StaticRegisterNativesAInteractTrigger(); \
 	friend struct Z_Construct_UClass_AInteractTrigger_Statics; \
@@ -49,7 +49,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AInteractTrigger*>(this); }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_STANDARD_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AInteractTrigger(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AInteractTrigger) \
@@ -62,7 +62,7 @@ private: \
 public:
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_ENHANCED_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AInteractTrigger(AInteractTrigger&&); \
@@ -73,28 +73,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AInteractTrigger); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AInteractTrigger)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_PRIVATE_PROPERTY_OFFSET
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_18_PROLOG
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_GENERATED_BODY_LEGACY \
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__Trap() { return STRUCT_OFFSET(AInteractTrigger, Trap); }
+
+
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_19_PROLOG
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_RPC_WRAPPERS \
-	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_INCLASS \
-	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_STANDARD_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_RPC_WRAPPERS \
+	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_INCLASS \
+	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_GENERATED_BODY \
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_INCLASS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_21_ENHANCED_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_INCLASS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
