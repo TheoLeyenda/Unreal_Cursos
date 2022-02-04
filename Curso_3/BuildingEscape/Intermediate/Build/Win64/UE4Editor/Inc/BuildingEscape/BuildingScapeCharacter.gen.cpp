@@ -46,6 +46,14 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(ABuildingScapeCharacter::execSubstractLifes)
+	{
+		P_GET_PROPERTY(FIntProperty,Z_Param_Value);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SubstractLifes(Z_Param_Value);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABuildingScapeCharacter::execDisableMovement)
 	{
 		P_FINISH;
@@ -58,6 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		UClass* Class = ABuildingScapeCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "DisableMovement", &ABuildingScapeCharacter::execDisableMovement },
+			{ "SubstractLifes", &ABuildingScapeCharacter::execSubstractLifes },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -80,6 +89,38 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABuildingScapeCharacter_DisableMovement_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes_Statics
+	{
+		struct BuildingScapeCharacter_eventSubstractLifes_Parms
+		{
+			int32 Value;
+		};
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Value;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BuildingScapeCharacter_eventSubstractLifes_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes_Statics::NewProp_Value,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABuildingScapeCharacter, nullptr, "SubstractLifes", nullptr, nullptr, sizeof(BuildingScapeCharacter_eventSubstractLifes_Parms), Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -149,6 +190,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABuildingScapeCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABuildingScapeCharacter_DisableMovement, "DisableMovement" }, // 2168194615
+		{ &Z_Construct_UFunction_ABuildingScapeCharacter_SubstractLifes, "SubstractLifes" }, // 1661199142
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::Class_MetaDataParams[] = {
@@ -287,7 +329,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingScapeCharacter, 2733770922);
+	IMPLEMENT_CLASS(ABuildingScapeCharacter, 1646968096);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABuildingScapeCharacter>()
 	{
 		return ABuildingScapeCharacter::StaticClass();

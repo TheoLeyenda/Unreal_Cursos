@@ -23,11 +23,13 @@ static inline void FOnSubstractLife_DelegateWrapper(const FMulticastScriptDelega
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_SPARSE_DATA
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSubstractLifes); \
 	DECLARE_FUNCTION(execDisableMovement);
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execSubstractLifes); \
 	DECLARE_FUNCTION(execDisableMovement);
 
 

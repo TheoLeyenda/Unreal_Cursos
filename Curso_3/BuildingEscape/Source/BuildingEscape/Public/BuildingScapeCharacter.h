@@ -77,6 +77,7 @@ public:
 
 	int GetPlayerLifes();
 
+	UFUNCTION(BlueprintCallable)
 	void SubstractLifes(int Value);
 
 	void AddLifes(int Value);

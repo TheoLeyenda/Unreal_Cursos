@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/BoxComponent.h"
 #include "InteractInterface.h"
+#include "Trap.h"
 #include "GameFramework/Actor.h"
 #include "InteractTrigger.generated.h"
 
@@ -16,7 +17,7 @@ enum class ELastStateObjectOverlap
 };
 
 UCLASS()
-class BUILDINGESCAPE_API AInteractTrigger : public AActor, public IInteractInterface
+class BUILDINGESCAPE_API AInteractTrigger : public AActor, public IInteractInterface, public ITrapInterface
 {
 	GENERATED_BODY()
 	
@@ -32,6 +33,11 @@ protected:
 	virtual void BeginPlay() override;
 
 	ELastStateObjectOverlap LastObjectRegister;
+
+	UPROPERTY(EditAnywhere)
+	ATrap* Trap;
+
+	void ExecuteTrap();
 	
 	UFUNCTION()
 	virtual void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp

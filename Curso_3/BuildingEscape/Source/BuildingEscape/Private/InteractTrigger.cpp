@@ -20,13 +20,12 @@ void AInteractTrigger::BeginPlay()
 	BoxTriggerVolume->OnComponentEndOverlap.AddDynamic(this, &AInteractTrigger::OnOverlapEnd);
 }
 
-
 void AInteractTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp
-	, AActor* OtherActor
-	, UPrimitiveComponent* OtherComp
-	, int32 OtherBodyIndex
-	, bool bFromSweep
-	, const FHitResult& SweepResult)
+                                      , AActor* OtherActor
+                                      , UPrimitiveComponent* OtherComp
+                                      , int32 OtherBodyIndex
+                                      , bool bFromSweep
+                                      , const FHitResult& SweepResult)
 {
 	LastObjectRegister = ELastStateObjectOverlap::BeginOverlap;
 }
@@ -37,6 +36,14 @@ void AInteractTrigger::OnOverlapEnd(UPrimitiveComponent* OverlappedComp
 	, int32 OtherBodyIndex)
 {
 	LastObjectRegister = ELastStateObjectOverlap::EndOverlap;
+}
+
+void AInteractTrigger::ExecuteTrap()
+{
+	if(Trap)
+	{
+		Trap->ExecuteTrapInterface();
+	}
 }
 
 bool AInteractTrigger::ExecuteInteractInterface()
