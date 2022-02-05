@@ -13,16 +13,22 @@ void ADoorInteractTriggerWithActors::OnOverlapBegin(UPrimitiveComponent* Overlap
 	, const FHitResult& SweepResult)
 {
 	Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
-
+	bool ActivateTrap = true;
 	for(TSubclassOf<AActor> Actor : ActorsTriggerClass)
 	{
 		if(Actor)
 		{
 			if(OtherActor->GetClass() == Actor)
 			{
+				LastObjectRegister = ELastStateObjectOverlap::BeginOverlap;
 				ExecuteInteractInterface();
+				ActivateTrap = false;
 			}
 		}
+	}
+	if(ActivateTrap)
+	{
+		ExecuteTrap();
 	}
 	
 }
@@ -55,7 +61,7 @@ bool ADoorInteractTriggerWithActors::ExecuteInteractInterface()
 
 	BoxTriggerVolume->GetOverlappingActors(ActorsInOverlap);
 	
-	if(LastObjectRegister == ELastStateObjectOverlap::BeginOverlap)
+	if(LastObjectRegister == ELastStateObjectOverlap::BeginOverlap || ActorsInOverlap.Num() > 0)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("ActorsInOverlap.Num = %d"), ActorsInOverlap.Num());
 
