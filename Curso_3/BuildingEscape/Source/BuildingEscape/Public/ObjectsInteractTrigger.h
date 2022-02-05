@@ -36,7 +36,7 @@ protected:
 		, AActor* OtherActor
 		, UPrimitiveComponent* OtherComp
 		, int32 OtherBodyIndex) override;
-
+	
 	virtual bool ExecuteInteractInterface(AActor* OtherActor) override;
 	
 	void CheckExecuteInteractInterface(AActor* OtherActor);

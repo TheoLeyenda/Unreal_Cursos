@@ -16,5 +16,16 @@ public:
 	// Sets default values for this actor's properties
 	ATrap();
 
+	virtual void BeginPlay() override;
+	
+	UPROPERTY(EditAnywhere, meta = (ClampMin = 0.1f))
+	float DelayRestartTrap = 1.0f;
+	FTimerHandle TimerResetTrap;
+	bool bEnableUseTrap = true;
+
+	void SendDelayRestartTrap();
+	
+	virtual void ResetTrap();
+
 	virtual bool ExecuteTrapInterface() override;
 };

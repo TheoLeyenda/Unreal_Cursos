@@ -29,9 +29,12 @@ void AObjectsInteractTrigger::CheckExecuteInteractInterface(AActor* OtherActor)
 			{
 				ExecuteInteractInterface(OtherActor);
 			}
+			else if(LastObjectRegister == ELastStateObjectOverlap::BeginOverlap)
+			{
+				ExecuteTrap();
+			}
 		}
 	}
-	
 }
 
 bool AObjectsInteractTrigger::IsOverlapWithSomeSpecificObject()

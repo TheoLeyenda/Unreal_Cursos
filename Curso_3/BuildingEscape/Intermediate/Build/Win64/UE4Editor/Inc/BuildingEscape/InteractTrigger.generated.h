@@ -73,10 +73,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AInteractTrigger); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AInteractTrigger)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__Trap() { return STRUCT_OFFSET(AInteractTrigger, Trap); }
-
-
+#define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_PRIVATE_PROPERTY_OFFSET
 #define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_19_PROLOG
 #define BuildingEscape_Source_BuildingEscape_Public_InteractTrigger_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

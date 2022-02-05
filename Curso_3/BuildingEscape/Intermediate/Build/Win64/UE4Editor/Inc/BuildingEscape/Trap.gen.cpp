@@ -32,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeTrap() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DelayRestartTrap_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DelayRestartTrap;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -46,6 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeTrap() {}
 		{ "ModuleRelativePath", "Public/Trap.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATrap_Statics::NewProp_DelayRestartTrap_MetaData[] = {
+		{ "Category", "Trap" },
+		{ "ClampMin", "0.100000" },
+		{ "ModuleRelativePath", "Public/Trap.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATrap_Statics::NewProp_DelayRestartTrap = { "DelayRestartTrap", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATrap, DelayRestartTrap), METADATA_PARAMS(Z_Construct_UClass_ATrap_Statics::NewProp_DelayRestartTrap_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATrap_Statics::NewProp_DelayRestartTrap_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATrap_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATrap_Statics::NewProp_DelayRestartTrap,
+	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ATrap_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UTrapInterface_NoRegister, (int32)VTABLE_OFFSET(ATrap, ITrapInterface), false },
 		};
@@ -58,11 +74,11 @@ void EmptyLinkFunctionForGeneratedCodeTrap() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ATrap_Statics::PropPointers,
 		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ATrap_Statics::PropPointers),
 		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ATrap_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ATrap_Statics::Class_MetaDataParams))
@@ -76,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeTrap() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATrap, 2831014217);
+	IMPLEMENT_CLASS(ATrap, 3043696493);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ATrap>()
 	{
 		return ATrap::StaticClass();

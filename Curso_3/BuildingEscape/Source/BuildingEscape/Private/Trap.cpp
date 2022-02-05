@@ -10,9 +10,29 @@ ATrap::ATrap()
 	PrimaryActorTick.bCanEverTick = false;
 }
 
+void ATrap::BeginPlay()
+{
+	Super::BeginPlay();
+	bEnableUseTrap = true;
+}
+
+void ATrap::SendDelayRestartTrap()
+{
+	GetWorld()->GetTimerManager().SetTimer(TimerResetTrap,this, &ATrap::ResetTrap, DelayRestartTrap, false);
+}
+
+void ATrap::ResetTrap()
+{
+	bEnableUseTrap = true;
+}
+
 bool ATrap::ExecuteTrapInterface()
 {
-	return ITrapInterface::ExecuteTrapInterface();
+	if(!bEnableUseTrap){return false;}
+
+	SendDelayRestartTrap();
+	
+	return true;
 }
 
 

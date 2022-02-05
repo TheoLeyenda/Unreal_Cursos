@@ -161,6 +161,10 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerStartName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_PlayerStartName;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bGameOver_MetaData[];
 #endif
 		static void NewProp_bGameOver_SetBit(void* Obj);
@@ -191,6 +195,13 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_PlayerStartName_MetaData[] = {
+		{ "Category", "BuildingEscapeGameMode" },
+		{ "ModuleRelativePath", "Public/BuildingEscapeGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_PlayerStartName = { "PlayerStartName", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingEscapeGameMode, PlayerStartName), METADATA_PARAMS(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_PlayerStartName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_PlayerStartName_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_bGameOver_MetaData[] = {
 		{ "Category", "BuildingEscapeGameMode" },
 		{ "ModuleRelativePath", "Public/BuildingEscapeGameMode.h" },
@@ -208,6 +219,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_OnGameoverActivate = { "OnGameoverActivate", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingEscapeGameMode, OnGameoverActivate), Z_Construct_UDelegateFunction_BuildingEscape_OnGameOverActivate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_OnGameoverActivate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_OnGameoverActivate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABuildingEscapeGameMode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_PlayerStartName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_bGameOver,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingEscapeGameMode_Statics::NewProp_OnGameoverActivate,
 	};
@@ -238,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingEscapeGameMode, 556534850);
+	IMPLEMENT_CLASS(ABuildingEscapeGameMode, 4008691410);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABuildingEscapeGameMode>()
 	{
 		return ABuildingEscapeGameMode::StaticClass();

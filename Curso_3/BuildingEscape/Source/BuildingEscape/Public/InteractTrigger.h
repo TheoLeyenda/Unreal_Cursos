@@ -24,6 +24,9 @@ class BUILDINGESCAPE_API AInteractTrigger : public AActor, public IInteractInter
 public:	
 	// Sets default values for this actor's properties
 	AInteractTrigger();
+
+	UPROPERTY(EditAnywhere)
+	ATrap* Trap;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Interact Trigger")
 	UBoxComponent* BoxTriggerVolume;
@@ -31,11 +34,8 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
+	
 	ELastStateObjectOverlap LastObjectRegister;
-
-	UPROPERTY(EditAnywhere)
-	ATrap* Trap;
 
 	void ExecuteTrap();
 	

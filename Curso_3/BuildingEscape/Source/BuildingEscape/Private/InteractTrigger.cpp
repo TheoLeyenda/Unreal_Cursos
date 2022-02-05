@@ -20,6 +20,7 @@ void AInteractTrigger::BeginPlay()
 	BoxTriggerVolume->OnComponentEndOverlap.AddDynamic(this, &AInteractTrigger::OnOverlapEnd);
 }
 
+
 void AInteractTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp
                                       , AActor* OtherActor
                                       , UPrimitiveComponent* OtherComp

@@ -29,6 +29,10 @@ public:
 
 	ABuildingScapeCharacter* GetCurrentCharacter();
 
+	UPROPERTY(EditAnywhere)
+	FString PlayerStartName = "Player Start";
+	AActor* PlayerStart;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	bool bGameOver = false;
 

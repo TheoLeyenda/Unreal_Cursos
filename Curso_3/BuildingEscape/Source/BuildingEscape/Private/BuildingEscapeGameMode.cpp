@@ -13,6 +13,8 @@ void ABuildingEscapeGameMode::BeginPlay()
 	{
 		CurrentCharacter->OnSubstractLife.AddDynamic(this, &ABuildingEscapeGameMode::CheckPlayerDead);
 	}
+
+	PlayerStart = FindPlayerStart(GetWorld()->GetFirstPlayerController());
 }
 
 void ABuildingEscapeGameMode::CheckPlayerDead()
@@ -25,6 +27,18 @@ void ABuildingEscapeGameMode::CheckPlayerDead()
 	if(CurrentCharacter->GetPlayerLifes() <= 0)
 	{
 		Restart();
+	}
+	else
+	{
+		if(!CurrentCharacter)
+		{
+			CurrentCharacter = FindCurrentCharacter();	
+		}
+
+		if(CurrentCharacter)
+		{
+			CurrentCharacter->SetActorLocation(PlayerStart->GetActorLocation());
+		}
 	}
 }
 
