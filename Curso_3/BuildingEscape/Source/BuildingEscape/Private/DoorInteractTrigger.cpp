@@ -60,3 +60,8 @@ void ADoorInteractTrigger::BeginDestroy()
 	}
 	Super::BeginDestroy();
 }
+
+TArray<ADoor*> ADoorInteractTrigger::GetDoors()
+{
+	return Doors;
+}

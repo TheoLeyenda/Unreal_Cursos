@@ -14,7 +14,7 @@ void ABuildingEscapeGameMode::BeginPlay()
 	{
 		CurrentCharacter->OnSubstractLife.AddDynamic(this, &ABuildingEscapeGameMode::CheckPlayerDead);
 	}
-
+	
 	FindCurrentPlayerStart();
 }
 

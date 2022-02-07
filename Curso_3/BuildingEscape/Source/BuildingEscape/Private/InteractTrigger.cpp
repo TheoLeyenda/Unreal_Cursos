@@ -29,6 +29,7 @@ void AInteractTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp
                                       , const FHitResult& SweepResult)
 {
 	LastObjectRegister = ELastStateObjectOverlap::BeginOverlap;
+	OnBeginOverlapInteractTrigger.Broadcast();
 }
 
 void AInteractTrigger::OnOverlapEnd(UPrimitiveComponent* OverlappedComp
@@ -37,6 +38,7 @@ void AInteractTrigger::OnOverlapEnd(UPrimitiveComponent* OverlappedComp
 	, int32 OtherBodyIndex)
 {
 	LastObjectRegister = ELastStateObjectOverlap::EndOverlap;
+	OnEndOverlapInteractTrigger.Broadcast();
 }
 
 void AInteractTrigger::ExecuteTrap()

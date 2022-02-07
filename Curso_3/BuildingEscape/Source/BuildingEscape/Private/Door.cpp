@@ -78,6 +78,11 @@ void ADoor::SetStateDoor(EStateDoor Value)
 	StateDoor = Value;
 }
 
+EStateDoor ADoor::GetStateDoor()
+{
+	return StateDoor;
+}
+
 void ADoor::UpdateTimelineComp(float Output)
 {
 	//UE_LOG(LogTemp, Warning, TEXT("ENTRE HOLIS UWU 4"));

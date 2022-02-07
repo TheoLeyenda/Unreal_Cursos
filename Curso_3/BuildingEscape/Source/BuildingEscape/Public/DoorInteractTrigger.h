@@ -40,7 +40,8 @@ protected:
 	void CloseDoorByTimeToCloseDoor();
 
 	virtual void BeginDestroy() override;
-	
+public:
+	TArray<ADoor*> GetDoors();
 private:
 	bool bEnableClearTimer = false;
 };

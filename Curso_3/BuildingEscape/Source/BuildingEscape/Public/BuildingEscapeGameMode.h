@@ -37,7 +37,7 @@ public:
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	bool bGameOver = false;
-
+	
 	UPROPERTY(BlueprintAssignable)
 	FOnGameOverActivate OnGameoverActivate;
 

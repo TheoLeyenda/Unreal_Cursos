@@ -16,6 +16,9 @@ enum class ELastStateObjectOverlap
 	EndOverlap,
 };
 
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnBeginOverlapInteractTrigger);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnEndOverlapInteractTrigger);
 UCLASS()
 class BUILDINGESCAPE_API AInteractTrigger : public AActor, public IInteractInterface
 {
@@ -30,6 +33,9 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Interact Trigger")
 	UBoxComponent* BoxTriggerVolume;
+
+	FOnBeginOverlapInteractTrigger OnBeginOverlapInteractTrigger;
+	FOnEndOverlapInteractTrigger OnEndOverlapInteractTrigger;
 	
 protected:
 	// Called when the game starts or when spawned
