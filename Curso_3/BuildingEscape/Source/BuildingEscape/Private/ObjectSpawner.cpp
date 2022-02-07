@@ -2,6 +2,7 @@
 
 
 #include "ObjectSpawner.h"
+#include "BuildingScapeCharacter.h"
 
 // Sets default values
 AObjectSpawner::AObjectSpawner()
@@ -12,12 +13,19 @@ AObjectSpawner::AObjectSpawner()
 void AObjectSpawner::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
 	World = GetWorld();
 
 	if(bEnableSpawnObject)
 	{
 		SendTimerSpawnObject();
+	}
+
+	BuildingScapeCharacter = Cast<ABuildingScapeCharacter>(GetWorld()->GetFirstPlayerController()->GetCharacter());
+	if(BuildingScapeCharacter)
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("Cree al Character"));
+		BuildingScapeCharacter->OnSubstractLife.AddDynamic(this, &AObjectSpawner::SendTimerSpawnObject);
 	}
 }
 
@@ -55,6 +63,8 @@ void AObjectSpawner::SpawnObjects()
 				CountObjectSpawn = 0;
 				CurrentIndexSpawn++;
 			}
+
+			//UE_LOG(LogTemp, Warning, TEXT("Spawnie el objeto"));
 		}
 	}
 	

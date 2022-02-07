@@ -44,12 +44,16 @@ public:
 	UPROPERTY(EditAnywhere)
 	TArray<FObjectSpawn> ObjectsSpawn;
 
+	class ABuildingScapeCharacter* BuildingScapeCharacter;
+	
 	UPROPERTY(EditAnywhere)
 	bool bEnableSpawnObject = true;
 	
 	FTimerHandle TimerSpawnObject;
 	UPROPERTY(EditAnywhere)
 	float DelaySpawnObject = 0.5f;
+
+	UFUNCTION()
 	void SendTimerSpawnObject();
 	
 	TArray<AActor*> ObjectSpawned;

@@ -20,9 +20,10 @@ void ASubstractLifeTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, 
 {
 	Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
 	
-	if(LastActorCollision != OtherActor)
+	if(LastActorCollision != OtherActor && OtherActor->GetClass() == Player->GetClass())
 	{
 		LastActorCollision = OtherActor;
+		UE_LOG(LogTemp, Warning, TEXT("Name: %s"), *OtherActor->GetName());
 		ExecuteInteractInterface();
 	}
 }
@@ -51,9 +52,10 @@ bool ASubstractLifeTrigger::ExecuteInteractInterface()
 {
 	if(!Player || !bEnableSubstractLife){return false;}
 	
-	UE_LOG(LogTemp, Warning, TEXT("ENTRE"));
+	//UE_LOG(LogTemp, Warning, TEXT("ENTRE"));
 	Player->SubstractLifes(CountSubstractLifes);
 	bEnableSubstractLife = false;
 	SendTimerEnableSubstractLife();
+	UE_LOG(LogTemp, Warning, TEXT("Name: %s"), *GetName());
 	return true;
 }

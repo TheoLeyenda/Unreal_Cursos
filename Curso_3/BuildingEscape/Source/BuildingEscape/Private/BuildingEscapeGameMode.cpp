@@ -3,6 +3,7 @@
 
 #include "BuildingEscapeGameMode.h"
 #include "BuildingScapeCharacter.h"
+#include "Components/CapsuleComponent.h"
 #include "Kismet/GameplayStatics.h"
 
 void ABuildingEscapeGameMode::BeginPlay()
@@ -14,7 +15,7 @@ void ABuildingEscapeGameMode::BeginPlay()
 		CurrentCharacter->OnSubstractLife.AddDynamic(this, &ABuildingEscapeGameMode::CheckPlayerDead);
 	}
 
-	PlayerStart = FindPlayerStart(GetWorld()->GetFirstPlayerController());
+	FindCurrentPlayerStart();
 }
 
 void ABuildingEscapeGameMode::CheckPlayerDead()
@@ -45,6 +46,16 @@ void ABuildingEscapeGameMode::CheckPlayerDead()
 ABuildingScapeCharacter* ABuildingEscapeGameMode::FindCurrentCharacter()
 {
 	return Cast<ABuildingScapeCharacter>(GetWorld()->GetFirstPlayerController()->GetCharacter());;
+}
+
+void ABuildingEscapeGameMode::FindCurrentPlayerStart()
+{
+	PlayerStart = FindPlayerStart(GetWorld()->GetFirstPlayerController());
+}
+
+void ABuildingEscapeGameMode::ChangeMovilityPlayerState()
+{
+	PlayerStart->FindComponentByClass<UCapsuleComponent>()->Mobility = EComponentMobility::Movable;
 }
 
 void ABuildingEscapeGameMode::Restart()

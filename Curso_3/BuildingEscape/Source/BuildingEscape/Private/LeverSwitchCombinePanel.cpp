@@ -107,6 +107,7 @@ void ALeverSwitchCombinePanel::Tick(float DeltaSeconds)
 		{
 			CurrentSwitcher = 0;
 			CurrentAnswer.Empty();
+			ExecuteTrap();
 			ResetCombinePanel(true);
 		}
 	}

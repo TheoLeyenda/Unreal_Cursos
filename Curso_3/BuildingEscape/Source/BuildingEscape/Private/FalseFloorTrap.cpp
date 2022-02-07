@@ -2,6 +2,7 @@
 
 
 #include "FalseFloorTrap.h"
+#include "Components/StaticMeshComponent.h"
 
 void AFalseFloorTrap::ResetTrap()
 {
@@ -13,6 +14,11 @@ void AFalseFloorTrap::ResetTrap()
 		if(Actor)
 		{
 			Actor->SetActorEnableCollision(true);
+			StaticMesh = Actor->FindComponentByClass<UStaticMeshComponent>();
+			if(StaticMesh)
+			{
+				StaticMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+			}
 		}
 	}
 }
@@ -22,11 +28,17 @@ bool AFalseFloorTrap::ExecuteTrapInterface()
 	Super::ExecuteTrapInterface();
 	
 	if(ObjectsFloor.Num() <= 0){return false;}
+	
 	for(AActor* Actor : ObjectsFloor)
 	{
 		if(Actor)
 		{
 			Actor->SetActorEnableCollision(false);
+			StaticMesh = Actor->FindComponentByClass<UStaticMeshComponent>();
+			if(StaticMesh)
+			{
+				StaticMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+			}
 		}
 	}
 	return true;

@@ -116,8 +116,42 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 		return ReturnStruct;
 	}
 	uint32 Get_Z_Construct_UScriptStruct_FObjectSpawn_Hash() { return 1105846025U; }
+	DEFINE_FUNCTION(AObjectSpawner::execSendTimerSpawnObject)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SendTimerSpawnObject();
+		P_NATIVE_END;
+	}
 	void AObjectSpawner::StaticRegisterNativesAObjectSpawner()
 	{
+		UClass* Class = AObjectSpawner::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "SendTimerSpawnObject", &AObjectSpawner::execSendTimerSpawnObject },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AObjectSpawner_SendTimerSpawnObject_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AObjectSpawner_SendTimerSpawnObject_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/ObjectSpawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AObjectSpawner_SendTimerSpawnObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AObjectSpawner, nullptr, "SendTimerSpawnObject", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AObjectSpawner_SendTimerSpawnObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AObjectSpawner_SendTimerSpawnObject_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AObjectSpawner_SendTimerSpawnObject()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AObjectSpawner_SendTimerSpawnObject_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AObjectSpawner_NoRegister()
 	{
@@ -126,6 +160,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 	struct Z_Construct_UClass_AObjectSpawner_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -158,6 +193,9 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 	UObject* (*const Z_Construct_UClass_AObjectSpawner_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_AActor,
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AObjectSpawner_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AObjectSpawner_SendTimerSpawnObject, "SendTimerSpawnObject" }, // 233826131
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AObjectSpawner_Statics::Class_MetaDataParams[] = {
@@ -223,11 +261,11 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_AObjectSpawner_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AObjectSpawner_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -242,7 +280,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFObjectSpawn
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AObjectSpawner, 2708012078);
+	IMPLEMENT_CLASS(AObjectSpawner, 1490816836);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AObjectSpawner>()
 	{
 		return AObjectSpawner::StaticClass();

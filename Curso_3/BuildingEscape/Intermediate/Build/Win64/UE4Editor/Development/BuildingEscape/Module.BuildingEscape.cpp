@@ -3,6 +3,7 @@
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/BaseTNT.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/BuildingEscapeGameMode.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/BuildingScapeCharacter.cpp"
+#include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/CheckPointTrigger.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/CombinePanel.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/CraftingTable.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/DestroyObjectsByTrigger.cpp"

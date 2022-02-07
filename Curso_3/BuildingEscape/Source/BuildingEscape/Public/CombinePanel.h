@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Trap.h"
 #include "GameFramework/Actor.h"
 #include "CombinePanel.generated.h"
 
@@ -21,6 +22,9 @@ protected:
 	UPROPERTY(EditAnywhere)
 	int CountNumbersCode = 5;
 
+	UPROPERTY(EditAnywhere)
+	ATrap* Trap;
+	
 	UPROPERTY(VisibleAnywhere)
 	TArray<int> CodeNumbers;
 	TArray<int> AuxCodeNumbers;
@@ -34,5 +38,7 @@ protected:
 	virtual void CheckCurrentAnswer();
 
 	virtual void InputCodeAnswer(int Code);
+
+	void ExecuteTrap();
 	
 };

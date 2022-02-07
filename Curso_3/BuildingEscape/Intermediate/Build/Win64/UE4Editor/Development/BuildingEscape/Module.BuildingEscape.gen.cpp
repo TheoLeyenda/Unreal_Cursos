@@ -3,6 +3,7 @@
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/BuildingEscape.init.gen.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/BuildingEscapeGameMode.gen.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/BuildingScapeCharacter.gen.cpp"
+#include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/CheckPointTrigger.gen.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/CombinePanel.gen.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/CraftingTable.gen.cpp"
 #include "C:/Users/theof/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/DestroyObjectsByTrigger.gen.cpp"

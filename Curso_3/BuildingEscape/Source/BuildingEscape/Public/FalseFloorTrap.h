@@ -19,5 +19,7 @@ class BUILDINGESCAPE_API AFalseFloorTrap : public ATrap
 
 	virtual void ResetTrap() override;
 	
+	UStaticMeshComponent* StaticMesh;
+	
 	virtual bool ExecuteTrapInterface() override;
 };

@@ -24,6 +24,8 @@ public:
 	
 	ABuildingScapeCharacter* FindCurrentCharacter();
 
+	void FindCurrentPlayerStart();
+	void ChangeMovilityPlayerState();
 	UFUNCTION(BlueprintCallable)
 	void Restart();
 

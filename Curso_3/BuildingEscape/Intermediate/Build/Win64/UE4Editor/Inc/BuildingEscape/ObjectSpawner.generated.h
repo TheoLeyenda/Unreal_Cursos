@@ -21,8 +21,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> BUILDINGESCAPE_API UScriptStruct* StaticStruct<struct FObjectSpawn>();
 
 #define BuildingEscape_Source_BuildingEscape_Public_ObjectSpawner_h_23_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_ObjectSpawner_h_23_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_ObjectSpawner_h_23_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Public_ObjectSpawner_h_23_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSendTimerSpawnObject);
+
+
+#define BuildingEscape_Source_BuildingEscape_Public_ObjectSpawner_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSendTimerSpawnObject);
+
+
 #define BuildingEscape_Source_BuildingEscape_Public_ObjectSpawner_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAObjectSpawner(); \

@@ -17,7 +17,7 @@ enum class ELastStateObjectOverlap
 };
 
 UCLASS()
-class BUILDINGESCAPE_API AInteractTrigger : public AActor, public IInteractInterface, public ITrapInterface
+class BUILDINGESCAPE_API AInteractTrigger : public AActor, public IInteractInterface
 {
 	GENERATED_BODY()
 	

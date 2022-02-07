@@ -42,6 +42,14 @@ void ACombinePanel::InputCodeAnswer(int Code)
 	}
 }
 
+void ACombinePanel::ExecuteTrap()
+{
+	if(Trap)
+	{
+		Trap->ExecuteTrapInterface();
+	}
+}
+
 void ACombinePanel::CheckCurrentAnswer()
 {
 	bCombinePanelComplete = true;
@@ -50,6 +58,7 @@ void ACombinePanel::CheckCurrentAnswer()
 	{
 		bCombinePanelComplete = false;
 		CurrentAnswer.Empty();
+		ExecuteTrap();
 		return;
 	}
 

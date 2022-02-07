@@ -28,7 +28,10 @@ void ATrap::ResetTrap()
 
 bool ATrap::ExecuteTrapInterface()
 {
-	if(!bEnableUseTrap){return false;}
+	if(!bEnableUseTrap)
+	{
+		return false;
+	}
 
 	SendDelayRestartTrap();
 	

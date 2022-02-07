@@ -24,7 +24,6 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ATrap_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInteractInterface_NoRegister();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UTrapInterface_NoRegister();
 // End Cross Module References
 	static UEnum* ELastStateObjectOverlap_StaticEnum()
 	{
@@ -312,7 +311,6 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AInteractTrigger_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UInteractInterface_NoRegister, (int32)VTABLE_OFFSET(AInteractTrigger, IInteractInterface), false },
-			{ Z_Construct_UClass_UTrapInterface_NoRegister, (int32)VTABLE_OFFSET(AInteractTrigger, ITrapInterface), false },
 		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AInteractTrigger_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AInteractTrigger>::IsAbstract,
@@ -341,7 +339,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AInteractTrigger, 1886232025);
+	IMPLEMENT_CLASS(AInteractTrigger, 3488402533);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AInteractTrigger>()
 	{
 		return AInteractTrigger::StaticClass();

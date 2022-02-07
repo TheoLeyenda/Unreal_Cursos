@@ -384,7 +384,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFSpawnObjectInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALeverSwitchCombinePanel, 3000957654);
+	IMPLEMENT_CLASS(ALeverSwitchCombinePanel, 4184024754);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ALeverSwitchCombinePanel>()
 	{
 		return ALeverSwitchCombinePanel::StaticClass();

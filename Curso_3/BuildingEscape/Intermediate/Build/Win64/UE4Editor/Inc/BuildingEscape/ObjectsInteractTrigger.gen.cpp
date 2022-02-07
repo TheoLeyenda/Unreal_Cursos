@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeObjectsInteractTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AObjectsInteractTrigger, 3650616075);
+	IMPLEMENT_CLASS(AObjectsInteractTrigger, 1885010776);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AObjectsInteractTrigger>()
 	{
 		return AObjectsInteractTrigger::StaticClass();
