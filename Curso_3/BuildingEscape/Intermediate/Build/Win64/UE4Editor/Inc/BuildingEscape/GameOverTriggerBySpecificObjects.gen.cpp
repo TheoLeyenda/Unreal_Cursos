@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeGameOverTriggerBySpecificObjects() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGameOverTriggerBySpecificObjects, 926123800);
+	IMPLEMENT_CLASS(AGameOverTriggerBySpecificObjects, 3210368192);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AGameOverTriggerBySpecificObjects>()
 	{
 		return AGameOverTriggerBySpecificObjects::StaticClass();

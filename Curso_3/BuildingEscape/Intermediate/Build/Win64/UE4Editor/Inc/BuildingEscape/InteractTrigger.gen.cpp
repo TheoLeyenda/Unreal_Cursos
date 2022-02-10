@@ -13,12 +13,13 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 // Cross Module References
+	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AInteractTrigger();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AInteractTrigger_NoRegister();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnEndOverlapInteractTrigger__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnBeginOverlapInteractTrigger__DelegateSignature();
 	BUILDINGESCAPE_API UEnum* Z_Construct_UEnum_BuildingEscape_ELastStateObjectOverlap();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AInteractTrigger_NoRegister();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AInteractTrigger();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
@@ -27,6 +28,38 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInteractInterface_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature_Statics
+	{
+		struct InteractTrigger_eventOnCompleteInteractTrigger_Parms
+		{
+			AInteractTrigger* InteractTrigger;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InteractTrigger;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature_Statics::NewProp_InteractTrigger = { "InteractTrigger", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(InteractTrigger_eventOnCompleteInteractTrigger_Parms, InteractTrigger), Z_Construct_UClass_AInteractTrigger_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature_Statics::NewProp_InteractTrigger,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/InteractTrigger.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AInteractTrigger, nullptr, "OnCompleteInteractTrigger__DelegateSignature", nullptr, nullptr, sizeof(InteractTrigger_eventOnCompleteInteractTrigger_Parms), Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UDelegateFunction_BuildingEscape_OnEndOverlapInteractTrigger__DelegateSignature_Statics
 	{
 #if WITH_METADATA
@@ -327,6 +360,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AInteractTrigger_Statics::FuncInfo[] = {
+		{ &Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature, "OnCompleteInteractTrigger__DelegateSignature" }, // 1173563564
 		{ &Z_Construct_UFunction_AInteractTrigger_OnOverlapBegin, "OnOverlapBegin" }, // 778153609
 		{ &Z_Construct_UFunction_AInteractTrigger_OnOverlapEnd, "OnOverlapEnd" }, // 3804547146
 	};
@@ -385,7 +419,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AInteractTrigger, 3488402533);
+	IMPLEMENT_CLASS(AInteractTrigger, 1582321973);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AInteractTrigger>()
 	{
 		return AInteractTrigger::StaticClass();

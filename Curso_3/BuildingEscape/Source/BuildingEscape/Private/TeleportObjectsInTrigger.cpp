@@ -11,6 +11,6 @@ bool ATeleportObjectsInTrigger::ExecuteInteractInterface(AActor* Actor)
 	}
 	int Index = FMath::RandRange(0, PointsToTeleport.Num()-1);
 	Actor->SetActorLocation(PointsToTeleport[Index]->GetActorLocation());
-	
+	OnCompleteInteractTrigger.Broadcast(this);
 	return true;
 }

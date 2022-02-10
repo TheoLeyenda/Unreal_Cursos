@@ -12,7 +12,7 @@ void ADoorInteractTriggerWithActors::OnOverlapBegin(UPrimitiveComponent* Overlap
 	, bool bFromSweep
 	, const FHitResult& SweepResult)
 {
-	Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
+	
 	bool ActivateTrap = true;
 	for(TSubclassOf<AActor> Actor : ActorsTriggerClass)
 	{
@@ -20,7 +20,7 @@ void ADoorInteractTriggerWithActors::OnOverlapBegin(UPrimitiveComponent* Overlap
 		{
 			if(OtherActor->GetClass() == Actor)
 			{
-				LastObjectRegister = ELastStateObjectOverlap::BeginOverlap;
+				Super::OnOverlapBegin(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
 				ExecuteInteractInterface();
 				ActivateTrap = false;
 			}
@@ -38,14 +38,13 @@ void ADoorInteractTriggerWithActors::OnOverlapEnd(UPrimitiveComponent* Overlappe
 	, UPrimitiveComponent* OtherComp
 	, int32 OtherBodyIndex)
 {
-	Super::OnOverlapEnd(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex);
-
 	for(TSubclassOf<AActor> Actor : ActorsTriggerClass)
 	{
 		if(Actor)
 		{
 			if(OtherActor->GetClass() == Actor)
 			{
+				Super::OnOverlapEnd(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex);
 				ExecuteInteractInterface();
 			}
 		}
@@ -64,7 +63,7 @@ bool ADoorInteractTriggerWithActors::ExecuteInteractInterface()
 	if(LastObjectRegister == ELastStateObjectOverlap::BeginOverlap || ActorsInOverlap.Num() > 0)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("ActorsInOverlap.Num = %d"), ActorsInOverlap.Num());
-
+		OnCompleteInteractTrigger.Broadcast(this);
 		OpenDoors();
 	}
 	else if(ActorsInOverlap.Num() <= 0)

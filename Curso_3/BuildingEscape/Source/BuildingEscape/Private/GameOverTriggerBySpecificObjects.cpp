@@ -20,6 +20,6 @@ bool AGameOverTriggerBySpecificObjects::ExecuteInteractInterface(AActor* Actor)
 	}
 
 	GameMode->ActivateGameOver();
-	
+	OnCompleteInteractTrigger.Broadcast(this);
 	return true;
 }

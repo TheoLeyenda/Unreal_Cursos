@@ -57,5 +57,6 @@ bool ASubstractLifeTrigger::ExecuteInteractInterface()
 	bEnableSubstractLife = false;
 	SendTimerEnableSubstractLife();
 	UE_LOG(LogTemp, Warning, TEXT("Name: %s"), *GetName());
+	OnCompleteInteractTrigger.Broadcast(this);
 	return true;
 }

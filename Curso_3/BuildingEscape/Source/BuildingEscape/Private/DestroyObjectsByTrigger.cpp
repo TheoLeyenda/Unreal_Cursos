@@ -33,5 +33,7 @@ bool ADestroyObjectsByTrigger::ExecuteInteractInterface(AActor* Actor)
 		ActorsDestroy.Empty();
 	}
 
+	OnCompleteInteractTrigger.Broadcast(this);
+	
 	return true;
 }

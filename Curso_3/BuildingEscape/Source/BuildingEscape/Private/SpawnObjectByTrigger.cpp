@@ -28,5 +28,7 @@ bool ASpawnObjectByTrigger::ExecuteInteractInterface(AActor* Actor)
 		Destroy();
 	}
 	
+	OnCompleteInteractTrigger.Broadcast(this);
+	
 	return true;
 }

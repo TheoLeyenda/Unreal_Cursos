@@ -19,10 +19,13 @@ enum class ELastStateObjectOverlap
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnBeginOverlapInteractTrigger);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnEndOverlapInteractTrigger);
+
 UCLASS()
 class BUILDINGESCAPE_API AInteractTrigger : public AActor, public IInteractInterface
 {
 	GENERATED_BODY()
+	
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCompleteInteractTrigger, AInteractTrigger*, InteractTrigger);
 	
 public:	
 	// Sets default values for this actor's properties
@@ -36,6 +39,7 @@ public:
 
 	FOnBeginOverlapInteractTrigger OnBeginOverlapInteractTrigger;
 	FOnEndOverlapInteractTrigger OnEndOverlapInteractTrigger;
+	FOnCompleteInteractTrigger OnCompleteInteractTrigger;
 	
 protected:
 	// Called when the game starts or when spawned
@@ -61,3 +65,4 @@ protected:
 
 	virtual bool ExecuteInteractInterface() override;
 };
+
