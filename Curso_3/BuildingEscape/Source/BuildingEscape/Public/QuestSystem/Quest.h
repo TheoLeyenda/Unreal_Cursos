@@ -21,38 +21,27 @@ USTRUCT(BlueprintType)
 struct FActionQuest
 {
 	GENERATED_BODY()
-
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FString Description;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	UPROPERTY(VisibleAnywhere)
 	bool bDoneAccion = false;
-
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int ID;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FDataPlayer RequiredDataPlayer;
-
+	
 	void CheckObjetiveComplete(FDataPlayer CompareData)
 	{
-		bDoneAccion = true;
-		if(RequiredDataPlayer.Fatness != CompareData.Fatness
-			|| RequiredDataPlayer.Lifes != CompareData.Lifes)
+		if(CompareData.Fatness >= RequiredDataPlayer.Fatness
+			&& CompareData.Lifes >= RequiredDataPlayer.Lifes
+			&& CompareData.InteractActorsActivateData.Actor == RequiredDataPlayer.InteractActorsActivateData.Actor 
+			&& CompareData.InteractActorsActivateData.ActorBlueprint == RequiredDataPlayer.InteractActorsActivateData.ActorBlueprint)
 		{
-			bDoneAccion = false;
-		}
-
-		for(FInteractActorActivateData RequiredInteractActorActivateData : RequiredDataPlayer.InteractActorsActivateData)
-		{
-			for(FInteractActorActivateData CompareInteractActorActivateData : CompareData.InteractActorsActivateData)
-			{
-				if(RequiredInteractActorActivateData.Actor != CompareInteractActorActivateData.Actor
-					|| RequiredInteractActorActivateData.ActorBlueprint != CompareInteractActorActivateData.ActorBlueprint)
-				{
-					bDoneAccion = false;
-				}
-			}
+			bDoneAccion = true;
 		}
 	}
 	
@@ -69,10 +58,12 @@ public:
 	// Sets default values for this actor's properties
 	AQuest();
 
+	virtual void BeginPlay() override;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int ID;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FString Description;
+	FString Name;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	EQuestState QuestState = EQuestState::Available;

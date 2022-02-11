@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeQuestEvaluatorComponent() {}
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FDataPlayer();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABuildingEscapeGameMode_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABuildingScapeCharacter_NoRegister();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ATask_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UBaseTask_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature_Statics
 	{
@@ -134,6 +134,9 @@ void EmptyLinkFunctionForGeneratedCodeQuestEvaluatorComponent() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DataPlayer_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_DataPlayer;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Tasks_Inner_MetaData[];
+#endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Tasks_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Tasks_MetaData[];
@@ -180,14 +183,22 @@ void EmptyLinkFunctionForGeneratedCodeQuestEvaluatorComponent() {}
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_DataPlayer = { "DataPlayer", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UQuestEvaluatorComponent, DataPlayer), Z_Construct_UScriptStruct_FDataPlayer, METADATA_PARAMS(Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_DataPlayer_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_DataPlayer_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks_Inner = { "Tasks", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_ATask_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks_Inner_MetaData[] = {
 		{ "Category", "QuestEvaluatorComponent" },
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/QuestSystem/QuestEvaluatorComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks = { "Tasks", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UQuestEvaluatorComponent, Tasks), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks_Inner = { "Tasks", nullptr, (EPropertyFlags)0x0002000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UBaseTask_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks_Inner_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks_Inner_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks_MetaData[] = {
+		{ "Category", "QuestEvaluatorComponent" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/QuestSystem/QuestEvaluatorComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks = { "Tasks", nullptr, (EPropertyFlags)0x0010008000000009, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UQuestEvaluatorComponent, Tasks), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_Tasks_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UQuestEvaluatorComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_BuildingEscapeGameMode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UQuestEvaluatorComponent_Statics::NewProp_BuildingScapeCharacter,
@@ -222,7 +233,7 @@ void EmptyLinkFunctionForGeneratedCodeQuestEvaluatorComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UQuestEvaluatorComponent, 119842633);
+	IMPLEMENT_CLASS(UQuestEvaluatorComponent, 3819217046);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UQuestEvaluatorComponent>()
 	{
 		return UQuestEvaluatorComponent::StaticClass();

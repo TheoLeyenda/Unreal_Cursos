@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeDestroyObjectsByTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADestroyObjectsByTrigger, 2437700931);
+	IMPLEMENT_CLASS(ADestroyObjectsByTrigger, 1573516212);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ADestroyObjectsByTrigger>()
 	{
 		return ADestroyObjectsByTrigger::StaticClass();

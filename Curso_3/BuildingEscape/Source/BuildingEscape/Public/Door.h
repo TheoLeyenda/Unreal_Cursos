@@ -40,9 +40,6 @@ protected:
 	UPROPERTY(EditAnywhere, Category= "Door Settings")
 	bool bUseInitCheckDoor;
 	
-	void OpenDoor();
-	void CloseDoor();
-	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	UStaticMeshComponent* DoorFrame;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
@@ -66,7 +63,8 @@ public:
 	void SetStateDoor(EStateDoor Value);
 	EStateDoor GetStateDoor();
 	void CheckDoor();
-
+	void OpenDoor();
+	void CloseDoor();
 	// Variable to hold the Curve asset
 	UPROPERTY(EditAnywhere, Category= "Door Settings")
 	UCurveFloat* DoorTimelineFloatCurve;

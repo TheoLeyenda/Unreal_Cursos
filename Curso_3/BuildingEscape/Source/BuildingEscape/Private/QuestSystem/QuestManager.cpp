@@ -27,17 +27,20 @@ void AQuestManager::FindQuestEvaluatorComponents()
 
 	QuestEvaluatorComponents.Empty();
 	
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(), UQuestEvaluatorComponent::StaticClass(),Actors);
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ABuildingScapeCharacter::StaticClass(),Actors);
 
 	if(Actors.Num() > 0)
 	{
 		for(AActor* Actor : Actors)
 		{
-			UQuestEvaluatorComponent* QuestEvaluatorComponent = Cast<UQuestEvaluatorComponent>(Actor);
-			if(QuestEvaluatorComponent)
+			if(Actor)
 			{
-				QuestEvaluatorComponent->OnQuestEvaluatorDataUpdate.AddDynamic(this, &AQuestManager::CheckQuests);
-				QuestEvaluatorComponents.Add(QuestEvaluatorComponent);
+				UQuestEvaluatorComponent* QuestEvaluatorComponent = Cast<UQuestEvaluatorComponent>(Actor->GetComponentByClass(UQuestEvaluatorComponent::StaticClass()));
+				if(QuestEvaluatorComponent)
+				{
+					QuestEvaluatorComponent->OnQuestEvaluatorDataUpdate.AddDynamic(this, &AQuestManager::CheckQuests);
+					QuestEvaluatorComponents.Add(QuestEvaluatorComponent);
+				}
 			}
 		}
 	}
@@ -54,10 +57,13 @@ void AQuestManager::ChangeStateQuest(AQuest* Quest, EQuestState NewQuestState)
 {
 	for(AQuest* AuxQuest : Quests)
 	{
-		if(AuxQuest == Quest)
+		if(AuxQuest && Quest)
 		{
-			AuxQuest->QuestState = NewQuestState;
-			break;
+			if(AuxQuest == Quest)
+			{
+				AuxQuest->QuestState = NewQuestState;
+				break;
+			}
 		}
 	}
 }
@@ -83,12 +89,15 @@ void AQuestManager::CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponen
 	
 	if(bSendEventFinishAllQuest)
 	{
+		
 		SendEventFinishAllQuest();
 	}
 }
 
 void AQuestManager::SendEventFinishAllQuest()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Todos las Quest completadas"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Todos las Quest completadas"));
 	OnFinishAllQuest.Broadcast();
 }
 

@@ -29,8 +29,8 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	FDataPlayer DataPlayer;
 
-	UPROPERTY(EditAnywhere)
-	TArray<class ATask*> Tasks;
+	UPROPERTY(Instanced, EditAnywhere)
+	TArray<class UBaseTask*> Tasks;
 
 	virtual void BeginPlay() override;
 

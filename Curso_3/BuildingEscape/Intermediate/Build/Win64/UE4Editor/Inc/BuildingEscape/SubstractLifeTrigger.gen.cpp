@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeSubstractLifeTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASubstractLifeTrigger, 4008031988);
+	IMPLEMENT_CLASS(ASubstractLifeTrigger, 1964797530);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ASubstractLifeTrigger>()
 	{
 		return ASubstractLifeTrigger::StaticClass();

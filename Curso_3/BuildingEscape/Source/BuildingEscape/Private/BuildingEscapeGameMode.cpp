@@ -45,7 +45,7 @@ void ABuildingEscapeGameMode::CheckPlayerDead()
 
 ABuildingScapeCharacter* ABuildingEscapeGameMode::FindCurrentCharacter()
 {
-	return Cast<ABuildingScapeCharacter>(GetWorld()->GetFirstPlayerController()->GetCharacter());;
+	return Cast<ABuildingScapeCharacter>(GetWorld()->GetFirstPlayerController()->GetCharacter());
 }
 
 void ABuildingEscapeGameMode::FindCurrentPlayerStart()

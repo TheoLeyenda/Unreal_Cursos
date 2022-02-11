@@ -26,7 +26,7 @@ void ADoorInteractTrigger::OpenDoors()
 	for(ADoor* Door : Doors)
 	{
 		Door->SetStateDoor(EStateDoor::Opened);
-		Door->CheckDoor();
+		Door->OpenDoor();
 	}
 }
 
@@ -35,7 +35,7 @@ void ADoorInteractTrigger::CloseDoors()
 	for(ADoor* Door : Doors)
 	{
 		Door->SetStateDoor(EStateDoor::Closed);
-		Door->CheckDoor();
+		Door->CloseDoor();
 	}
 }
 

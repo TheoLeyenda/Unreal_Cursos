@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeCheckPointTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACheckPointTrigger, 1199974224);
+	IMPLEMENT_CLASS(ACheckPointTrigger, 711161846);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ACheckPointTrigger>()
 	{
 		return ACheckPointTrigger::StaticClass();

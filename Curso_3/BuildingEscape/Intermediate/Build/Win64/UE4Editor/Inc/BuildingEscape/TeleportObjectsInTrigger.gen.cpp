@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeTeleportObjectsInTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATeleportObjectsInTrigger, 1191355445);
+	IMPLEMENT_CLASS(ATeleportObjectsInTrigger, 2012052215);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ATeleportObjectsInTrigger>()
 	{
 		return ATeleportObjectsInTrigger::StaticClass();

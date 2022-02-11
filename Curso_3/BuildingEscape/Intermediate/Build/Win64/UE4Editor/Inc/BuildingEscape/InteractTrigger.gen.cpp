@@ -347,6 +347,11 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Trap;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bDestroyMeOnTrigger_MetaData[];
+#endif
+		static void NewProp_bDestroyMeOnTrigger_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bDestroyMeOnTrigger;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BoxTriggerVolume_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BoxTriggerVolume;
@@ -378,8 +383,19 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AInteractTrigger_Statics::NewProp_Trap = { "Trap", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AInteractTrigger, Trap), Z_Construct_UClass_ATrap_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AInteractTrigger_Statics::NewProp_Trap_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AInteractTrigger_Statics::NewProp_Trap_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AInteractTrigger_Statics::NewProp_bDestroyMeOnTrigger_MetaData[] = {
+		{ "Category", "InteractTrigger" },
+		{ "ModuleRelativePath", "Public/InteractTrigger.h" },
+	};
+#endif
+	void Z_Construct_UClass_AInteractTrigger_Statics::NewProp_bDestroyMeOnTrigger_SetBit(void* Obj)
+	{
+		((AInteractTrigger*)Obj)->bDestroyMeOnTrigger = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AInteractTrigger_Statics::NewProp_bDestroyMeOnTrigger = { "bDestroyMeOnTrigger", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AInteractTrigger), &Z_Construct_UClass_AInteractTrigger_Statics::NewProp_bDestroyMeOnTrigger_SetBit, METADATA_PARAMS(Z_Construct_UClass_AInteractTrigger_Statics::NewProp_bDestroyMeOnTrigger_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AInteractTrigger_Statics::NewProp_bDestroyMeOnTrigger_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AInteractTrigger_Statics::NewProp_BoxTriggerVolume_MetaData[] = {
-		{ "Category", "Interact Trigger" },
+		{ "Category", "InteractTrigger" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/InteractTrigger.h" },
 	};
@@ -387,6 +403,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AInteractTrigger_Statics::NewProp_BoxTriggerVolume = { "BoxTriggerVolume", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AInteractTrigger, BoxTriggerVolume), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AInteractTrigger_Statics::NewProp_BoxTriggerVolume_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AInteractTrigger_Statics::NewProp_BoxTriggerVolume_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AInteractTrigger_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AInteractTrigger_Statics::NewProp_Trap,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AInteractTrigger_Statics::NewProp_bDestroyMeOnTrigger,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AInteractTrigger_Statics::NewProp_BoxTriggerVolume,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AInteractTrigger_Statics::InterfaceParams[] = {
@@ -419,7 +436,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AInteractTrigger, 1582321973);
+	IMPLEMENT_CLASS(AInteractTrigger, 841699891);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AInteractTrigger>()
 	{
 		return AInteractTrigger::StaticClass();

@@ -38,9 +38,9 @@ struct FDataPlayer
 	UPROPERTY(EditAnywhere)
 	float Fatness;
 	UPROPERTY(EditAnywhere)
-	float Lifes;
+	int Lifes;
 	UPROPERTY(EditAnywhere)
-	TArray<FInteractActorActivateData> InteractActorsActivateData;
+	FInteractActorActivateData InteractActorsActivateData;
 	//DATA QUE RECIVO DE LAS TASK PARA MANDAR AL QuestManager.
 };
 

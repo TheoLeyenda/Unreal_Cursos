@@ -4,7 +4,7 @@
 #include "QuestSystem/QuestEvaluatorComponent.h"
 
 #include "BuildingEscapeGameMode.h"
-#include "QuestSystem/Task.h"
+#include "QuestSystem/BaseTask.h"
 
 // Sets default values for this component's properties
 UQuestEvaluatorComponent::UQuestEvaluatorComponent()
@@ -26,10 +26,21 @@ void UQuestEvaluatorComponent::BeginPlay()
 	}
 	if(BuildingScapeCharacter)
 	{
-		for(ATask* Task : Tasks)
+		if(Tasks.Num() > 0)
 		{
-			Task->BuildingScapeCharacter = BuildingScapeCharacter;
-			Task->OnUpdateTask.AddDynamic(this, &UQuestEvaluatorComponent::SettingDataPlayer);
+			for(UBaseTask* Task : Tasks)
+			{
+				if(Task)
+				{
+					Task->FindInformation();
+					Task->BuildingScapeCharacter = BuildingScapeCharacter;
+					Task->OnUpdateTask.AddDynamic(this, &UQuestEvaluatorComponent::SettingDataPlayer);
+				}
+			}
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("No hay tasks en el QuestEvaluatorComponent"));
 		}
 	}
 	else
@@ -40,17 +51,14 @@ void UQuestEvaluatorComponent::BeginPlay()
 
 void UQuestEvaluatorComponent::SettingDataPlayer(FDataPlayer NewData)
 {
+	UE_LOG(LogTemp, Warning, TEXT("ENTRE A LA ENVIADA DE DATA"));
+	
 	DataPlayer.Fatness = NewData.Fatness;
 	DataPlayer.Lifes = NewData.Lifes;
 
-	for(int i = 0; i < NewData.InteractActorsActivateData.Num(); i++)
-	{
-		DataPlayer.InteractActorsActivateData.Add(
-			FInteractActorActivateData(
-				NewData.InteractActorsActivateData[i].ActorBlueprint
-				, NewData.InteractActorsActivateData[i].Actor)
-			);
-	}
-
+	DataPlayer.InteractActorsActivateData.Actor = NewData.InteractActorsActivateData.Actor;
+	DataPlayer.InteractActorsActivateData.ActorBlueprint = NewData.InteractActorsActivateData.ActorBlueprint;
+	
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT(""));
 	OnQuestEvaluatorDataUpdate.Broadcast(this);
 }

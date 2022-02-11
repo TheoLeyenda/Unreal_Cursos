@@ -5,11 +5,11 @@
 
 #include "Kismet/GameplayStatics.h"
 
-
-void ATaskActivateInteractTrigger::FindInformation()
+void UTaskActivateInteractTrigger::FindInformation()
 {
+	
 	Super::FindInformation();
-
+	
 	TArray<AActor*> Actors;
 
 	InteractTriggers.Empty();
@@ -23,21 +23,24 @@ void ATaskActivateInteractTrigger::FindInformation()
 			AInteractTrigger* InteractTrigger = Cast<AInteractTrigger>(Actor);
 			if(InteractTrigger)
 			{
-				InteractTrigger->OnCompleteInteractTrigger.AddDynamic(this, &ATaskActivateInteractTrigger::SettingDataTask);
+				InteractTrigger->OnCompleteInteractTrigger.AddDynamic(this, &UTaskActivateInteractTrigger::SettingDataTask);
 				InteractTriggers.Add(InteractTrigger);
 			}
 		}
 	}
 }
 
-void ATaskActivateInteractTrigger::SettingDataTask(AInteractTrigger* InteractTrigger)
+void UTaskActivateInteractTrigger::SettingDataTask(AInteractTrigger* InteractTrigger)
 {
-	SendDataPlayer.InteractActorsActivateData.Empty();
 
+	if(!BuildingScapeCharacter){return;}
+	
 	SendDataPlayer.Fatness = BuildingScapeCharacter->GetPlayerFatness();
 	SendDataPlayer.Lifes = BuildingScapeCharacter->GetPlayerLifes();
-	
-	SendDataPlayer.InteractActorsActivateData.Add(FInteractActorActivateData(InteractTrigger->GetClass(), InteractTrigger));
 
+	SendDataPlayer.InteractActorsActivateData.ActorBlueprint = InteractTrigger->GetClass();
+	SendDataPlayer.InteractActorsActivateData.Actor = InteractTrigger;
+	
 	SendEventUpdateTask();
+	
 }

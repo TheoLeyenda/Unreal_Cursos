@@ -10,13 +10,18 @@ AQuest::AQuest()
 
 }
 
+void AQuest::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
 void AQuest::CheckCompleteQuest()
 {
 	if(QuestState != EQuestState::InProgress){return;}
 	
 	bool bCompleteQuest = true;
 	
-	for(FActionQuest ActionQuest : ActionsQuest)
+	for(FActionQuest &ActionQuest : ActionsQuest)
 	{
 		if(!ActionQuest.bDoneAccion)
 		{
@@ -27,6 +32,8 @@ void AQuest::CheckCompleteQuest()
 
 	if(bCompleteQuest)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Quest Completada"));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Quest Completada"));
 		QuestState = EQuestState::Completed;
 		OnFinishQuest.Broadcast(this);
 	}
@@ -36,7 +43,7 @@ void AQuest::ObjetiveComplete(int Id)
 {
 	if(QuestState != EQuestState::InProgress){return;}
 	
-	for(FActionQuest ActionQuest : ActionsQuest)
+	for(FActionQuest &ActionQuest : ActionsQuest)
 	{
 		if(ActionQuest.ID == Id)
 		{
@@ -45,12 +52,17 @@ void AQuest::ObjetiveComplete(int Id)
 	}
 }
 
+
 void AQuest::CheckStatus(FDataPlayer DataPlayer)
 {
 	if(QuestState != EQuestState::InProgress){return;}
-	for(FActionQuest ActionQuest : ActionsQuest)
+	for(FActionQuest &ActionQuest : ActionsQuest)
 	{
+		//UE_LOG(LogTemp, Warning, TEXT("%s"), *DataPlayer.InteractActorsActivateData.Actor->GetName());
+		//UE_LOG(LogTemp, Warning, TEXT("%s"), *DataPlayer.InteractActorsActivateData.ActorBlueprint->GetName());
+		
 		ActionQuest.CheckObjetiveComplete(DataPlayer);
+		UE_LOG(LogTemp, Warning, TEXT("Objetivo Completado: %s"), ActionQuest.bDoneAccion? TEXT("True") : TEXT("False"));
 	}
 	CheckCompleteQuest();
 }

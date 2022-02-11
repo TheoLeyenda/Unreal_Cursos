@@ -60,7 +60,7 @@ bool ADoorInteractTriggerWithActors::ExecuteInteractInterface()
 
 	BoxTriggerVolume->GetOverlappingActors(ActorsInOverlap);
 	
-	if(LastObjectRegister == ELastStateObjectOverlap::BeginOverlap || ActorsInOverlap.Num() > 0)
+	if(ActorsInOverlap.Num() > 0)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("ActorsInOverlap.Num = %d"), ActorsInOverlap.Num());
 		OnCompleteInteractTrigger.Broadcast(this);

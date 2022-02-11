@@ -33,8 +33,11 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	ATrap* Trap;
+
+	UPROPERTY(EditAnywhere)
+	bool bDestroyMeOnTrigger = false;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Interact Trigger")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UBoxComponent* BoxTriggerVolume;
 
 	FOnBeginOverlapInteractTrigger OnBeginOverlapInteractTrigger;

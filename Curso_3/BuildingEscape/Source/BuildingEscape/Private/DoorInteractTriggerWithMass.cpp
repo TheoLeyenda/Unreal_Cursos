@@ -41,8 +41,8 @@ void ADoorInteractTriggerWithMass::CheckMassInOverlap()
 {
 	if(TotalMass >= MassToOpenDoor)
 	{
-		OpenDoors();
 		OnCompleteInteractTrigger.Broadcast(this);
+		OpenDoors();
 	}
 	else
 	{
