@@ -58,11 +58,11 @@ void AQuest::CheckStatus(FDataPlayer DataPlayer)
 	if(QuestState != EQuestState::InProgress){return;}
 	for(FActionQuest &ActionQuest : ActionsQuest)
 	{
-		//UE_LOG(LogTemp, Warning, TEXT("%s"), *DataPlayer.InteractActorsActivateData.Actor->GetName());
-		//UE_LOG(LogTemp, Warning, TEXT("%s"), *DataPlayer.InteractActorsActivateData.ActorBlueprint->GetName());
-		
-		ActionQuest.CheckObjetiveComplete(DataPlayer);
-		UE_LOG(LogTemp, Warning, TEXT("Objetivo Completado: %s"), ActionQuest.bDoneAccion? TEXT("True") : TEXT("False"));
+		if(!ActionQuest.bDoneAccion)
+		{
+			ActionQuest.CheckObjetiveComplete(DataPlayer);
+			UE_LOG(LogTemp, Warning, TEXT("Objetivo Completado: %s"), ActionQuest.bDoneAccion? TEXT("True") : TEXT("False"));
+		}
 	}
 	CheckCompleteQuest();
 }
