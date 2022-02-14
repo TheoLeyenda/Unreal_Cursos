@@ -15,6 +15,7 @@ class BUILDINGESCAPE_API UInventory : public UActorComponent
 	GENERATED_BODY()
 
 public:	
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnPlayerInventorySpecificUpdate, UInventory*, Inventory);
 	// Sets default values for this component's properties
 	UInventory();
 	
@@ -28,6 +29,9 @@ public:
 	
 	UPROPERTY(BlueprintAssignable, BlueprintCallable)
 	FOnPlayerInventoryUpdated OnPlayerInventoryUpdated;
+
+	UPROPERTY(BlueprintAssignable, BlueprintCallable)
+	FOnPlayerInventorySpecificUpdate OnPlayerInventorySpecificUpdate;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	TArray<UItem*> Items;
@@ -38,6 +42,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void RemoveItem(UItem* Item);
 
+	UFUNCTION()
+	bool CheckHaveItem(TSubclassOf<UItem> ItemClass);
+	
 	UFUNCTION(BlueprintCallable)
 	void UseItem(UItem* Item);
 

@@ -2,8 +2,6 @@
 
 
 #include "QuestSystem/QuestManager.h"
-
-#include "../../../../Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/format.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -48,40 +46,54 @@ void AQuestManager::FindQuestEvaluatorComponents()
 
 void AQuestManager::ChangeStateQuest(int indexQuest, EQuestState NewQuestState)
 {
-	if(indexQuest >= Quests.Num() || indexQuest < 0){return;}
+	if(indexQuest >= QuestsInfo.Num() || indexQuest < 0){return;}
 
-	Quests[indexQuest]->QuestState = NewQuestState;
+	QuestsInfo[indexQuest].Quest->QuestState = NewQuestState;
 }
 
 void AQuestManager::ChangeStateQuest(AQuest* Quest, EQuestState NewQuestState)
 {
-	for(AQuest* AuxQuest : Quests)
+	for(FQuestInfo &AuxQuestInfo : QuestsInfo)
 	{
-		if(AuxQuest && Quest)
+		if(Quest)
 		{
-			if(AuxQuest == Quest)
+			if(AuxQuestInfo.Quest == Quest)
 			{
-				AuxQuest->QuestState = NewQuestState;
+				AuxQuestInfo.Quest->QuestState = NewQuestState;
 				break;
 			}
 		}
 	}
 }
 
+void AQuestManager::ChangeStateQuests(TArray<int> indexQuests, EQuestState NewQuestState)
+{
+	if(indexQuests.Num() < 0 || indexQuests.Num() >= QuestsInfo.Num()) {return;}
+	for(int i = 0; i < indexQuests.Num(); i++)
+	{
+		QuestsInfo[indexQuests[i]].Quest->QuestState = NewQuestState;
+	}
+}
+
 void AQuestManager::CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponent)
 {
-	for(AQuest* AuxQuest : Quests)
+	for(FQuestInfo &AuxQuestInfo : QuestsInfo)
 	{
-		if(AuxQuest->QuestState == EQuestState::InProgress)
+		if(AuxQuestInfo.Quest->QuestState == EQuestState::InProgress)
 		{
-			AuxQuest->CheckStatus(QuestEvaluatorComponent->DataPlayer);
+			AuxQuestInfo.Quest->CheckStatus(QuestEvaluatorComponent->DataPlayer);
+			if(AuxQuestInfo.Quest->QuestState == EQuestState::Completed && !AuxQuestInfo.bCheckedDone)
+			{
+				ChangeStateQuests(AuxQuestInfo.QuetsActivatedIDs, EQuestState::InProgress);
+				AuxQuestInfo.bCheckedDone = true;
+			}
 		}
 	}
 
 	bool bSendEventFinishAllQuest = true;
-	for(AQuest* AuxQuest : Quests)
+	for(FQuestInfo &AuxQuestInfo : QuestsInfo)
 	{
-		if(AuxQuest->QuestState != EQuestState::Completed)
+		if(AuxQuestInfo.Quest->QuestState != EQuestState::Completed)
 		{
 			bSendEventFinishAllQuest = false;
 		}

@@ -35,4 +35,7 @@ public:
 
 	UFUNCTION()
 	virtual void FindInformation();
+
+	UFUNCTION()
+	void SettingDataBaseTask(bool SendEvent);
 };

@@ -32,15 +32,14 @@ void UTaskActivateInteractTrigger::FindInformation()
 
 void UTaskActivateInteractTrigger::SettingDataTask(AInteractTrigger* InteractTrigger)
 {
-
 	if(!BuildingScapeCharacter){return;}
-	
-	SendDataPlayer.Fatness = BuildingScapeCharacter->GetPlayerFatness();
-	SendDataPlayer.Lifes = BuildingScapeCharacter->GetPlayerLifes();
 
+	if(!BuildingScapeCharacter->PlayerInventoryComponent){return;}
+	
+	SettingDataBaseTask(false);
+	
 	SendDataPlayer.InteractActorsActivateData.ActorBlueprint = InteractTrigger->GetClass();
 	SendDataPlayer.InteractActorsActivateData.Actor = InteractTrigger;
 	
 	SendEventUpdateTask();
-	
 }

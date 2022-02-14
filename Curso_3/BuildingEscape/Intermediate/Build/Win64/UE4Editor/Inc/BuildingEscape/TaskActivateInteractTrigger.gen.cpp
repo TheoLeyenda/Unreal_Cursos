@@ -128,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskActivateInteractTrigger() {}
 		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_UTaskActivateInteractTrigger_Statics::PropPointers),
 		0,
-		0x003010A0u,
+		0x00B010A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UTaskActivateInteractTrigger_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UTaskActivateInteractTrigger_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UTaskActivateInteractTrigger()
@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskActivateInteractTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTaskActivateInteractTrigger, 490598625);
+	IMPLEMENT_CLASS(UTaskActivateInteractTrigger, 3817350094);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UTaskActivateInteractTrigger>()
 	{
 		return UTaskActivateInteractTrigger::StaticClass();

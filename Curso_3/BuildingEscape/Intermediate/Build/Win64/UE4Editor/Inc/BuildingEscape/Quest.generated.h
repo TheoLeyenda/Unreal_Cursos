@@ -15,14 +15,14 @@ struct FDataPlayer;
 #endif
 #define BUILDINGESCAPE_Quest_generated_h
 
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_26_GENERATED_BODY \
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_27_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FActionQuest_Statics; \
 	BUILDINGESCAPE_API static class UScriptStruct* StaticStruct();
 
 
 template<> BUILDINGESCAPE_API UScriptStruct* StaticStruct<struct FActionQuest>();
 
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_59_DELEGATE \
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_74_DELEGATE \
 struct Quest_eventOnFinishQuest_Parms \
 { \
 	AQuest* Quest; \
@@ -35,27 +35,27 @@ static inline void FOnFinishQuest_DelegateWrapper(const FMulticastScriptDelegate
 }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_20_DELEGATE \
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_21_DELEGATE \
 static inline void FOnUpdateQuest_DelegateWrapper(const FMulticastScriptDelegate& OnUpdateQuest) \
 { \
 	OnUpdateQuest.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_RPC_WRAPPERS \
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_SPARSE_DATA
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execCheckStatus); \
 	DECLARE_FUNCTION(execCheckCompleteQuest);
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_RPC_WRAPPERS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execCheckStatus); \
 	DECLARE_FUNCTION(execCheckCompleteQuest);
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_INCLASS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAQuest(); \
 	friend struct Z_Construct_UClass_AQuest_Statics; \
@@ -64,7 +64,7 @@ public: \
 	DECLARE_SERIALIZER(AQuest)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_INCLASS \
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_INCLASS \
 private: \
 	static void StaticRegisterNativesAQuest(); \
 	friend struct Z_Construct_UClass_AQuest_Statics; \
@@ -73,7 +73,7 @@ public: \
 	DECLARE_SERIALIZER(AQuest)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_STANDARD_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AQuest(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AQuest) \
@@ -86,7 +86,7 @@ private: \
 public:
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_ENHANCED_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AQuest(AQuest&&); \
@@ -97,28 +97,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AQuest); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AQuest)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_PRIVATE_PROPERTY_OFFSET
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_55_PROLOG
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_GENERATED_BODY_LEGACY \
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_PRIVATE_PROPERTY_OFFSET
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_70_PROLOG
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_RPC_WRAPPERS \
-	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_INCLASS \
-	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_STANDARD_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_RPC_WRAPPERS \
+	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_INCLASS \
+	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_GENERATED_BODY \
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_RPC_WRAPPERS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_INCLASS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_58_ENHANCED_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_INCLASS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Quest_h_73_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

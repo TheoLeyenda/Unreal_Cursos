@@ -16,6 +16,7 @@ void UInventory::AddItem(UItem* Item)
 	{
 		Items.Add(Item);
 		OnPlayerInventoryUpdated.Broadcast();
+		OnPlayerInventorySpecificUpdate.Broadcast(this);
 	}
 }
 
@@ -25,7 +26,23 @@ void UInventory::RemoveItem(UItem* Item)
 	{
 		Items.RemoveSingle(Item);
 		OnPlayerInventoryUpdated.Broadcast();
+		OnPlayerInventorySpecificUpdate.Broadcast(this);
 	}
+}
+
+bool UInventory::CheckHaveItem(TSubclassOf<UItem> ItemClass)
+{
+	bool FindItem = false;
+
+	for(int i = 0; i < Items.Num(); i++)
+	{
+		if(ItemClass == Items[i]->GetClass())
+		{
+			FindItem = true;
+		}
+	}
+	
+	return FindItem;
 }
 
 void UInventory::UseItem(UItem* Item)
@@ -59,6 +76,7 @@ void UInventory::UseItem(UItem* Item)
 			Item->Use(BuildingScapeCharacter);
 			RemoveItem(Item);
 			OnPlayerInventoryUpdated.Broadcast();
+			OnPlayerInventorySpecificUpdate.Broadcast(this);
 		}
 	}
 }

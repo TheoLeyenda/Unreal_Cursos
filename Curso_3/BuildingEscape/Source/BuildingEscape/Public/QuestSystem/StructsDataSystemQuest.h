@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Inventory.h"
 #include "UObject/NoExportTypes.h"
 #include "StructsDataSystemQuest.generated.h"
 
@@ -35,6 +36,12 @@ struct FDataPlayer
 {
 	GENERATED_BODY()
 
+	UPROPERTY(Instanced, EditAnywhere)
+	TArray<UItem*> NeedItems;
+
+	UPROPERTY(VisibleAnywhere)
+	UInventory* InventoryComponent;
+	
 	UPROPERTY(EditAnywhere)
 	float Fatness;
 	UPROPERTY(EditAnywhere)

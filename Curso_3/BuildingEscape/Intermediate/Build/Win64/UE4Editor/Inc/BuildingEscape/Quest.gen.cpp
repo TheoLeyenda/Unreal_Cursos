@@ -226,7 +226,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActionQuest
 		{ "ModuleRelativePath", "Public/QuestSystem/Quest.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_RequiredDataPlayer = { "RequiredDataPlayer", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FActionQuest, RequiredDataPlayer), Z_Construct_UScriptStruct_FDataPlayer, METADATA_PARAMS(Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_RequiredDataPlayer_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_RequiredDataPlayer_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_RequiredDataPlayer = { "RequiredDataPlayer", nullptr, (EPropertyFlags)0x0010008000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FActionQuest, RequiredDataPlayer), Z_Construct_UScriptStruct_FDataPlayer, METADATA_PARAMS(Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_RequiredDataPlayer_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_RequiredDataPlayer_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FActionQuest_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_Description,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_bDoneAccion,
@@ -243,7 +243,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActionQuest
 		Z_Construct_UScriptStruct_FActionQuest_Statics::PropPointers,
 		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActionQuest_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000005),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FActionQuest_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActionQuest_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FActionQuest()
@@ -261,7 +261,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActionQuest
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FActionQuest_Hash() { return 1405219239U; }
+	uint32 Get_Z_Construct_UScriptStruct_FActionQuest_Hash() { return 1866511409U; }
 	DEFINE_FUNCTION(AQuest::execCheckStatus)
 	{
 		P_GET_STRUCT(FDataPlayer,Z_Param_DataPlayer);
@@ -321,7 +321,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActionQuest
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AQuest_CheckStatus_Statics::NewProp_DataPlayer = { "DataPlayer", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Quest_eventCheckStatus_Parms, DataPlayer), Z_Construct_UScriptStruct_FDataPlayer, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AQuest_CheckStatus_Statics::NewProp_DataPlayer = { "DataPlayer", nullptr, (EPropertyFlags)0x0010008000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Quest_eventCheckStatus_Parms, DataPlayer), Z_Construct_UScriptStruct_FDataPlayer, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AQuest_CheckStatus_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AQuest_CheckStatus_Statics::NewProp_DataPlayer,
 	};
@@ -382,7 +382,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActionQuest
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AQuest_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AQuest_CheckCompleteQuest, "CheckCompleteQuest" }, // 600717434
-		{ &Z_Construct_UFunction_AQuest_CheckStatus, "CheckStatus" }, // 2030043444
+		{ &Z_Construct_UFunction_AQuest_CheckStatus, "CheckStatus" }, // 3166950434
 		{ &Z_Construct_UDelegateFunction_AQuest_OnFinishQuest__DelegateSignature, "OnFinishQuest__DelegateSignature" }, // 4119361782
 	};
 #if WITH_METADATA
@@ -418,14 +418,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActionQuest
 	};
 #endif
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AQuest_Statics::NewProp_QuestState = { "QuestState", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AQuest, QuestState), Z_Construct_UEnum_BuildingEscape_EQuestState, METADATA_PARAMS(Z_Construct_UClass_AQuest_Statics::NewProp_QuestState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AQuest_Statics::NewProp_QuestState_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AQuest_Statics::NewProp_ActionsQuest_Inner = { "ActionsQuest", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FActionQuest, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AQuest_Statics::NewProp_ActionsQuest_Inner = { "ActionsQuest", nullptr, (EPropertyFlags)0x0000008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FActionQuest, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AQuest_Statics::NewProp_ActionsQuest_MetaData[] = {
 		{ "Category", "Quest" },
 		{ "ModuleRelativePath", "Public/QuestSystem/Quest.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AQuest_Statics::NewProp_ActionsQuest = { "ActionsQuest", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AQuest, ActionsQuest), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AQuest_Statics::NewProp_ActionsQuest_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AQuest_Statics::NewProp_ActionsQuest_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AQuest_Statics::NewProp_ActionsQuest = { "ActionsQuest", nullptr, (EPropertyFlags)0x0010008000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AQuest, ActionsQuest), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AQuest_Statics::NewProp_ActionsQuest_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AQuest_Statics::NewProp_ActionsQuest_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AQuest_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AQuest_Statics::NewProp_OnUpdateQuest,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AQuest_Statics::NewProp_ID,
@@ -461,7 +461,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActionQuest
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AQuest, 1521316430);
+	IMPLEMENT_CLASS(AQuest, 3628493624);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AQuest>()
 	{
 		return AQuest::StaticClass();

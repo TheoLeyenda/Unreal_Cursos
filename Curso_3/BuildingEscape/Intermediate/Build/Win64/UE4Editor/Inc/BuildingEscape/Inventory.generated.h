@@ -8,11 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UInventory;
 class UItem;
 #ifdef BUILDINGESCAPE_Inventory_generated_h
 #error "Inventory.generated.h already included, missing '#pragma once' in Inventory.h"
 #endif
 #define BUILDINGESCAPE_Inventory_generated_h
+
+#define BuildingEscape_Source_BuildingEscape_Public_Inventory_h_18_DELEGATE \
+struct Inventory_eventOnPlayerInventorySpecificUpdate_Parms \
+{ \
+	UInventory* Inventory; \
+}; \
+static inline void FOnPlayerInventorySpecificUpdate_DelegateWrapper(const FMulticastScriptDelegate& OnPlayerInventorySpecificUpdate, UInventory* Inventory) \
+{ \
+	Inventory_eventOnPlayerInventorySpecificUpdate_Parms Parms; \
+	Parms.Inventory=Inventory; \
+	OnPlayerInventorySpecificUpdate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
 
 #define BuildingEscape_Source_BuildingEscape_Public_Inventory_h_10_DELEGATE \
 static inline void FOnPlayerInventoryUpdated_DelegateWrapper(const FMulticastScriptDelegate& OnPlayerInventoryUpdated) \
@@ -26,6 +40,7 @@ static inline void FOnPlayerInventoryUpdated_DelegateWrapper(const FMulticastScr
  \
 	DECLARE_FUNCTION(execRemoveCurrentItemSelected); \
 	DECLARE_FUNCTION(execUseItem); \
+	DECLARE_FUNCTION(execCheckHaveItem); \
 	DECLARE_FUNCTION(execRemoveItem); \
 	DECLARE_FUNCTION(execAddItem);
 
@@ -34,6 +49,7 @@ static inline void FOnPlayerInventoryUpdated_DelegateWrapper(const FMulticastScr
  \
 	DECLARE_FUNCTION(execRemoveCurrentItemSelected); \
 	DECLARE_FUNCTION(execUseItem); \
+	DECLARE_FUNCTION(execCheckHaveItem); \
 	DECLARE_FUNCTION(execRemoveItem); \
 	DECLARE_FUNCTION(execAddItem);
 

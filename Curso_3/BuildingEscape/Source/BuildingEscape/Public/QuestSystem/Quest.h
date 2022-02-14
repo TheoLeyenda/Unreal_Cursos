@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "QuestEvaluatorComponent.h"
+#include "Algo/Compare.h"
 #include "GameFramework/Actor.h"
 #include "Quest.generated.h"
 
@@ -39,10 +40,24 @@ struct FActionQuest
 	
 	void CheckObjetiveComplete(FDataPlayer CompareData)
 	{
+
+		bool bInventoryCondition = true;
+		//UE_LOG(LogTemp, Warning, TEXT("Cantidad de items: %d"), RequiredDataPlayer.NeedItems.Num());
+		//UE_LOG(LogTemp, Warning, TEXT("InventoryComponent es %s"), CompareData.InventoryComponent ? TEXT("TRUE") : TEXT("FALSE"));
+		if(RequiredDataPlayer.NeedItems.Num() > 0 && CompareData.InventoryComponent)
+		{
+			for(int i = 0; i < RequiredDataPlayer.NeedItems.Num(); i++)
+			{
+				bInventoryCondition = CompareData.InventoryComponent->CheckHaveItem(RequiredDataPlayer.NeedItems[i]->GetClass());
+				//UE_LOG(LogTemp, Warning, TEXT("bInventoryCondition es %s"), bInventoryCondition ? TEXT("TRUE") : TEXT("FALSE"));
+			}
+		}
+		
 		if(CompareData.Fatness >= RequiredDataPlayer.Fatness
 			&& CompareData.Lifes >= RequiredDataPlayer.Lifes
 			&& CompareData.InteractActorsActivateData.Actor == RequiredDataPlayer.InteractActorsActivateData.Actor 
-			&& CompareData.InteractActorsActivateData.ActorBlueprint == RequiredDataPlayer.InteractActorsActivateData.ActorBlueprint)
+			&& CompareData.InteractActorsActivateData.ActorBlueprint == RequiredDataPlayer.InteractActorsActivateData.ActorBlueprint
+			&& bInventoryCondition)
 		{
 			bDoneAccion = true;
 		}

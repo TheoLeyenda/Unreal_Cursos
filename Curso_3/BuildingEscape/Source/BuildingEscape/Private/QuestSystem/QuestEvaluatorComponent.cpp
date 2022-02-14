@@ -51,13 +51,26 @@ void UQuestEvaluatorComponent::BeginPlay()
 
 void UQuestEvaluatorComponent::SettingDataPlayer(FDataPlayer NewData)
 {
-	UE_LOG(LogTemp, Warning, TEXT("ENTRE A LA ENVIADA DE DATA"));
+	//UE_LOG(LogTemp, Warning, TEXT("ENTRE A LA ENVIADA DE DATA"));
+
+	if(!BuildingScapeCharacter)
+	{
+		return;
+	}
+
+	if(!BuildingScapeCharacter->PlayerInventoryComponent)
+	{
+		return;
+	}
 	
 	DataPlayer.Fatness = NewData.Fatness;
 	DataPlayer.Lifes = NewData.Lifes;
 
 	DataPlayer.InteractActorsActivateData.Actor = NewData.InteractActorsActivateData.Actor;
 	DataPlayer.InteractActorsActivateData.ActorBlueprint = NewData.InteractActorsActivateData.ActorBlueprint;
+	
+	DataPlayer.InventoryComponent = NewData.InventoryComponent;
+	DataPlayer.NeedItems = NewData.InventoryComponent->Items;
 	
 	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT(""));
 	OnQuestEvaluatorDataUpdate.Broadcast(this);

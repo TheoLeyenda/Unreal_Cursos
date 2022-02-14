@@ -20,4 +20,26 @@ void UBaseTask::FindInformation()
 	{
 		UE_LOG(LogTemp, Error, TEXT("NO SE ENCONTRO AL BUILDING CHARACTER"))
 	}
+	
+}
+
+void UBaseTask::SettingDataBaseTask(bool SendEvent)
+{
+	if(!BuildingScapeCharacter){return;}
+
+	if(!BuildingScapeCharacter->PlayerInventoryComponent){return;}
+	
+	SendDataPlayer.Fatness = BuildingScapeCharacter->GetPlayerFatness();
+	SendDataPlayer.Lifes = BuildingScapeCharacter->GetPlayerLifes();
+
+	SendDataPlayer.InventoryComponent = BuildingScapeCharacter->PlayerInventoryComponent;
+	SendDataPlayer.NeedItems = BuildingScapeCharacter->PlayerInventoryComponent->Items;
+	
+	SendDataPlayer.InteractActorsActivateData.ActorBlueprint = nullptr;
+	SendDataPlayer.InteractActorsActivateData.Actor = nullptr;
+
+	if(SendEvent)
+	{
+		SendEventUpdateTask();
+	}
 }

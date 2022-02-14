@@ -9,6 +9,18 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnFinishAllQuest);
 
+USTRUCT(BlueprintType)
+struct FQuestInfo
+{
+	GENERATED_BODY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	AQuest* Quest;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<int32> QuetsActivatedIDs;
+	UPROPERTY(VisibleAnywhere)
+	bool bCheckedDone = false;
+};
+
 UCLASS()
 class BUILDINGESCAPE_API AQuestManager : public AActor
 {
@@ -24,7 +36,7 @@ protected:
 
 public:	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<AQuest*> Quests;
+	TArray<FQuestInfo> QuestsInfo;
 
 	UPROPERTY(VisibleAnywhere)
 	TArray<UQuestEvaluatorComponent*> QuestEvaluatorComponents;
@@ -39,6 +51,8 @@ public:
 	void ChangeStateQuest(int indexQuest, EQuestState NewQuestState);
 	
 	void ChangeStateQuest(AQuest* Quest, EQuestState NewQuestState);
+
+	void ChangeStateQuests(TArray<int> indexQuests, EQuestState NewQuestState);
 	
 	UFUNCTION()
 	void CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponent);

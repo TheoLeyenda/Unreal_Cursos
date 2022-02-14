@@ -30,12 +30,14 @@ static inline void FOnUpdateTask_DelegateWrapper(const FMulticastScriptDelegate&
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_BaseTask_h_19_SPARSE_DATA
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_BaseTask_h_19_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSettingDataBaseTask); \
 	DECLARE_FUNCTION(execFindInformation); \
 	DECLARE_FUNCTION(execSendEventUpdateTask);
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_BaseTask_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execSettingDataBaseTask); \
 	DECLARE_FUNCTION(execFindInformation); \
 	DECLARE_FUNCTION(execSendEventUpdateTask);
 
