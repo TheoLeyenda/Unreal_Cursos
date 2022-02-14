@@ -112,11 +112,10 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFChangeStateQues
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TypeSetStateQuest_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_TypeSetStateQuest;
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_NewQuestState_Underlying;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NewQuestState_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_NewQuestState;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_NewQuestState;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_QuestID_MetaData[];
 #endif
@@ -145,14 +144,13 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFChangeStateQues
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_TypeSetStateQuest = { "TypeSetStateQuest", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FChangeStateQuestInfo, TypeSetStateQuest), Z_Construct_UEnum_BuildingEscape_ETypeSetStateQuest, METADATA_PARAMS(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_TypeSetStateQuest_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_TypeSetStateQuest_MetaData)) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_NewQuestState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_NewQuestState_MetaData[] = {
 		{ "Category", "ChangeStateQuestInfo" },
 		{ "ModuleRelativePath", "Public/ChangeStateQuestTrigger.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_NewQuestState = { "NewQuestState", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FChangeStateQuestInfo, NewQuestState), Z_Construct_UEnum_BuildingEscape_EQuestState, METADATA_PARAMS(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_NewQuestState_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_NewQuestState_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_NewQuestState = { "NewQuestState", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FChangeStateQuestInfo, NewQuestState), Z_Construct_UEnum_BuildingEscape_EQuestState, METADATA_PARAMS(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_NewQuestState_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_NewQuestState_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_QuestID_MetaData[] = {
 		{ "Category", "ChangeStateQuestInfo" },
@@ -170,7 +168,6 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFChangeStateQues
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_TypeSetStateQuest_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_TypeSetStateQuest,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_NewQuestState_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_NewQuestState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_QuestID,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_Quest,
@@ -203,7 +200,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFChangeStateQues
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FChangeStateQuestInfo_Hash() { return 3657313440U; }
+	uint32 Get_Z_Construct_UScriptStruct_FChangeStateQuestInfo_Hash() { return 3317360237U; }
 	void AChangeStateQuestTrigger::StaticRegisterNativesAChangeStateQuestTrigger()
 	{
 	}

@@ -14,6 +14,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnGameOverActivate__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnSubstractLife__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature();
+	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateQuest__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_AQuest_OnFinishQuest__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnFinishAllQuest__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnBeginOverlapInteractTrigger__DelegateSignature();
@@ -30,6 +31,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnGameOverActivate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnSubstractLife__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateQuest__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_AQuest_OnFinishQuest__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnFinishAllQuest__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnBeginOverlapInteractTrigger__DelegateSignature,
@@ -43,8 +45,8 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xAAB7D7C8,
-				0x3E67AAED,
+				0xC52D870A,
+				0x5CCCE23C,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

@@ -9,7 +9,6 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UQuestEvaluatorComponent;
-enum class EQuestState : int32;
 #ifdef BUILDINGESCAPE_QuestManager_generated_h
 #error "QuestManager.generated.h already included, missing '#pragma once' in QuestManager.h"
 #endif

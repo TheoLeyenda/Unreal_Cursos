@@ -7,8 +7,8 @@
 #include "GameFramework/Actor.h"
 #include "Quest.generated.h"
 
-UENUM()
-enum class EQuestState
+UENUM(BlueprintType)
+enum EQuestState
 {
 	Available,
 	InProgress,
@@ -16,6 +16,9 @@ enum class EQuestState
 	Completed,
 	Failed,
 };
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUpdateQuest);
+
 
 USTRUCT(BlueprintType)
 struct FActionQuest
@@ -25,7 +28,7 @@ struct FActionQuest
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FString Description;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	bool bDoneAccion = false;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -59,6 +62,9 @@ public:
 	AQuest();
 
 	virtual void BeginPlay() override;
+
+	UPROPERTY(BlueprintAssignable, BlueprintCallable)
+	FOnUpdateQuest OnUpdateQuest;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int ID;
@@ -66,7 +72,7 @@ public:
 	FString Name;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	EQuestState QuestState = EQuestState::Available;
+	TEnumAsByte<EQuestState> QuestState = EQuestState::Available;
 
 	FOnFinishQuest OnFinishQuest;
 	

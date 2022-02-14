@@ -23,7 +23,7 @@ protected:
 	virtual void BeginPlay() override;
 
 public:	
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<AQuest*> Quests;
 
 	UPROPERTY(VisibleAnywhere)

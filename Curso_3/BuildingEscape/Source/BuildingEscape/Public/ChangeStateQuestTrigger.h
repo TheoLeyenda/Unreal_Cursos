@@ -27,7 +27,7 @@ struct FChangeStateQuestInfo
 	ETypeSetStateQuest TypeSetStateQuest;
 	
 	UPROPERTY(EditAnywhere)
-	EQuestState NewQuestState;
+	TEnumAsByte<EQuestState> NewQuestState;
 
 	UPROPERTY(EditAnywhere)
 	int QuestID;

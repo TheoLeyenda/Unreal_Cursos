@@ -61,6 +61,10 @@ void AQuest::CheckStatus(FDataPlayer DataPlayer)
 		if(!ActionQuest.bDoneAccion)
 		{
 			ActionQuest.CheckObjetiveComplete(DataPlayer);
+			if(ActionQuest.bDoneAccion)
+			{
+				OnUpdateQuest.Broadcast();
+			}
 			UE_LOG(LogTemp, Warning, TEXT("Objetivo Completado: %s"), ActionQuest.bDoneAccion? TEXT("True") : TEXT("False"));
 		}
 	}
