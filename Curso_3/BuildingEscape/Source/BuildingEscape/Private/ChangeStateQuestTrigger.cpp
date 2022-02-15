@@ -7,14 +7,7 @@ void AChangeStateQuestTrigger::ChangeStateQuest()
 {
 	for(FChangeStateQuestInfo ChangeStateQuestInfo : ChangeStateQuestsInfo)
 	{
-		if(ChangeStateQuestInfo.TypeSetStateQuest == ETypeSetStateQuest::QuestID)
-		{
-			QuestManager->ChangeStateQuest(ChangeStateQuestInfo.QuestID, ChangeStateQuestInfo.NewQuestState);
-		}
-		else if(ChangeStateQuestInfo.TypeSetStateQuest == ETypeSetStateQuest::QuestPointer)
-		{
-			QuestManager->ChangeStateQuest(ChangeStateQuestInfo.Quest, ChangeStateQuestInfo.NewQuestState);
-		}
+		QuestManager->ChangeStateQuest(ChangeStateQuestInfo.QuestID, ChangeStateQuestInfo.NewQuestState);
 	}
 }
 

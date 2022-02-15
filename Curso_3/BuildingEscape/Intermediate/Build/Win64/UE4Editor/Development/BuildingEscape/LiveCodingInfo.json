@@ -37,8 +37,8 @@
 			"PickupPhysicActor.cpp.obj",
 			"PuzzleChecker.cpp.obj",
 			"PuzzleFoodLeverChecker.cpp.obj",
+			"BaseQuest.cpp.obj",
 			"BaseTask.cpp.obj",
-			"Quest.cpp.obj",
 			"QuestActorComponentID.cpp.obj",
 			"QuestEvaluatorComponent.cpp.obj",
 			"QuestManager.cpp.obj",
@@ -57,6 +57,7 @@
 			"TriggerResetGame.cpp.obj"
 		],
 		"Module.BuildingEscape.gen.cpp.obj": [
+			"BaseQuest.gen.cpp.obj",
 			"BaseTask.gen.cpp.obj",
 			"BaseTNT.gen.cpp.obj",
 			"BuildingEscape.init.gen.cpp.obj",
@@ -93,7 +94,6 @@
 			"PickupPhysicActor.gen.cpp.obj",
 			"PuzzleChecker.gen.cpp.obj",
 			"PuzzleFoodLeverChecker.gen.cpp.obj",
-			"Quest.gen.cpp.obj",
 			"QuestActorComponentID.gen.cpp.obj",
 			"QuestEvaluatorComponent.gen.cpp.obj",
 			"QuestManager.gen.cpp.obj",

@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Quest.h"
+#include "BaseQuest.h"
 #include "GameFramework/Actor.h"
 #include "QuestManager.generated.h"
 
@@ -14,7 +14,7 @@ struct FQuestInfo
 {
 	GENERATED_BODY()
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	AQuest* Quest;
+	UBaseQuest* Quest;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<int32> QuetsActivatedIDs;
 	UPROPERTY(VisibleAnywhere)
@@ -50,7 +50,7 @@ public:
 	UFUNCTION()
 	void ChangeStateQuest(int indexQuest, EQuestState NewQuestState);
 	
-	void ChangeStateQuest(AQuest* Quest, EQuestState NewQuestState);
+	void ChangeStateQuest(UBaseQuest* Quest, EQuestState NewQuestState);
 
 	void ChangeStateQuests(TArray<int> indexQuests, EQuestState NewQuestState);
 	

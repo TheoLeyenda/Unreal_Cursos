@@ -11,20 +11,11 @@
  * 
  */
 
-UENUM()
-enum class ETypeSetStateQuest
-{
-	QuestID,
-	QuestPointer,
-};
 
 USTRUCT()
 struct FChangeStateQuestInfo
 {
 	GENERATED_BODY()
-	
-	UPROPERTY(EditAnywhere)
-	ETypeSetStateQuest TypeSetStateQuest;
 	
 	UPROPERTY(EditAnywhere)
 	TEnumAsByte<EQuestState> NewQuestState;
@@ -33,7 +24,7 @@ struct FChangeStateQuestInfo
 	int QuestID;
 
 	UPROPERTY(EditAnywhere)
-	AQuest* Quest;
+	UBaseQuest* Quest;
 };
 
 UCLASS()

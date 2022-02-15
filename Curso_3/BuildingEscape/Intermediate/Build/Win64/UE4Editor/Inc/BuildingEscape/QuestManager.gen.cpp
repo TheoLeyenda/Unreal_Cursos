@@ -16,7 +16,7 @@ void EmptyLinkFunctionForGeneratedCodeQuestManager() {}
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnFinishAllQuest__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FQuestInfo();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AQuest_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UBaseQuest_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AQuestManager_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AQuestManager();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
@@ -103,10 +103,11 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FQuestInfo_Statics::NewProp_Quest_MetaData[] = {
 		{ "Category", "QuestInfo" },
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/QuestSystem/QuestManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FQuestInfo_Statics::NewProp_Quest = { "Quest", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FQuestInfo, Quest), Z_Construct_UClass_AQuest_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FQuestInfo_Statics::NewProp_Quest_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FQuestInfo_Statics::NewProp_Quest_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FQuestInfo_Statics::NewProp_Quest = { "Quest", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FQuestInfo, Quest), Z_Construct_UClass_UBaseQuest_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FQuestInfo_Statics::NewProp_Quest_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FQuestInfo_Statics::NewProp_Quest_MetaData)) };
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FQuestInfo_Statics::NewProp_QuetsActivatedIDs_Inner = { "QuetsActivatedIDs", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FQuestInfo_Statics::NewProp_QuetsActivatedIDs_MetaData[] = {
@@ -142,7 +143,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 		Z_Construct_UScriptStruct_FQuestInfo_Statics::PropPointers,
 		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FQuestInfo_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
+		EStructFlags(0x00000005),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FQuestInfo_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FQuestInfo_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FQuestInfo()
@@ -160,7 +161,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FQuestInfo_Hash() { return 923864705U; }
+	uint32 Get_Z_Construct_UScriptStruct_FQuestInfo_Hash() { return 1180462073U; }
 	DEFINE_FUNCTION(AQuestManager::execSendEventFinishAllQuest)
 	{
 		P_FINISH;
@@ -364,14 +365,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 		{ "ModuleRelativePath", "Public/QuestSystem/QuestManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AQuestManager_Statics::NewProp_QuestsInfo_Inner = { "QuestsInfo", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FQuestInfo, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AQuestManager_Statics::NewProp_QuestsInfo_Inner = { "QuestsInfo", nullptr, (EPropertyFlags)0x0000008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FQuestInfo, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AQuestManager_Statics::NewProp_QuestsInfo_MetaData[] = {
 		{ "Category", "QuestManager" },
 		{ "ModuleRelativePath", "Public/QuestSystem/QuestManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AQuestManager_Statics::NewProp_QuestsInfo = { "QuestsInfo", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AQuestManager, QuestsInfo), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AQuestManager_Statics::NewProp_QuestsInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AQuestManager_Statics::NewProp_QuestsInfo_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AQuestManager_Statics::NewProp_QuestsInfo = { "QuestsInfo", nullptr, (EPropertyFlags)0x0010008000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AQuestManager, QuestsInfo), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AQuestManager_Statics::NewProp_QuestsInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AQuestManager_Statics::NewProp_QuestsInfo_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AQuestManager_Statics::NewProp_QuestEvaluatorComponents_Inner = { "QuestEvaluatorComponents", nullptr, (EPropertyFlags)0x00000000000a0008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UQuestEvaluatorComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AQuestManager_Statics::NewProp_QuestEvaluatorComponents_MetaData[] = {
@@ -414,7 +415,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AQuestManager, 3374402026);
+	IMPLEMENT_CLASS(AQuestManager, 3664613549);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AQuestManager>()
 	{
 		return AQuestManager::StaticClass();

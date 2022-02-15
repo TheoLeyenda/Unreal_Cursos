@@ -51,7 +51,7 @@ void AQuestManager::ChangeStateQuest(int indexQuest, EQuestState NewQuestState)
 	QuestsInfo[indexQuest].Quest->QuestState = NewQuestState;
 }
 
-void AQuestManager::ChangeStateQuest(AQuest* Quest, EQuestState NewQuestState)
+void AQuestManager::ChangeStateQuest(UBaseQuest* Quest, EQuestState NewQuestState)
 {
 	for(FQuestInfo &AuxQuestInfo : QuestsInfo)
 	{
