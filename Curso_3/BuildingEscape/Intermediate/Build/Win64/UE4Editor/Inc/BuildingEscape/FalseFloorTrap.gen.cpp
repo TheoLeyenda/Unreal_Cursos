@@ -91,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFalseFloorTrap() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFalseFloorTrap, 1159238316);
+	IMPLEMENT_CLASS(AFalseFloorTrap, 249442613);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AFalseFloorTrap>()
 	{
 		return AFalseFloorTrap::StaticClass();

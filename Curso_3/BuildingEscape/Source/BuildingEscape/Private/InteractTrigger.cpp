@@ -9,6 +9,7 @@ AInteractTrigger::AInteractTrigger()
 	PrimaryActorTick.bCanEverTick = false;
 
 	BoxTriggerVolume = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxTriggerVolume"));
+	QuestActorComponentID = CreateDefaultSubobject<UQuestActorComponentID>(TEXT("QuestActorComponentID"));
 }
 
 // Called when the game starts or when spawned

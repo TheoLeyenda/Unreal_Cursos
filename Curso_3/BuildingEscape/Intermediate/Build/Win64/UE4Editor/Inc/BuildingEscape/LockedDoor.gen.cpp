@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeLockedDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALockedDoor, 3484667536);
+	IMPLEMENT_CLASS(ALockedDoor, 4113872905);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ALockedDoor>()
 	{
 		return ALockedDoor::StaticClass();

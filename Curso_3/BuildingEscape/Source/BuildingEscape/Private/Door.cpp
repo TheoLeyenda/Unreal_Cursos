@@ -17,6 +17,7 @@ ADoor::ADoor()
 	DoorFrame->SetupAttachment(RootComponent);
 	Door->AttachToComponent(DoorFrame,FAttachmentTransformRules::KeepRelativeTransform);
 	
+	QuestActorComponentID = CreateDefaultSubobject<UQuestActorComponentID>(TEXT("QuestActorComponentID"));
 }
 
 // Called when the game starts or when spawned

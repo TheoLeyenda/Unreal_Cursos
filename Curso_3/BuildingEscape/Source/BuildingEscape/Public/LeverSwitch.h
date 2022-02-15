@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/TimelineComponent.h"
 #include "Components/AudioComponent.h"
-#include "Components/SceneComponent.h"
+#include "QuestSystem/QuestActorComponentID.h"
 #include "InteractInterface.h"
 #include "Components/BoxComponent.h"
 #include "GameFramework/Actor.h"
@@ -77,5 +77,7 @@ private:
 	UFUNCTION()
 	void UpdateTimelineComp(float Output);
 	
+	UPROPERTY(EditAnywhere)
+	UQuestActorComponentID* QuestActorComponentID;
 	
 };

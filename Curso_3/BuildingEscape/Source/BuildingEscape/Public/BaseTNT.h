@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/BoxComponent.h"
 #include "GameFramework/Actor.h"
+#include "QuestSystem/QuestActorComponentID.h"
 #include "BaseTNT.generated.h"
 
 UCLASS()
@@ -16,6 +17,9 @@ public:
 	// Sets default values for this actor's properties
 	ABaseTNT();
 
+	UPROPERTY(EditAnywhere)
+	UQuestActorComponentID* QuestActorComponentID;
+	
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<AActor>> ActorsToDestroy;
 	

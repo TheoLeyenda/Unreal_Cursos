@@ -31,7 +31,8 @@ ALeverSwitch::ALeverSwitch()
 	MeshLever->SetRelativeLocation(FVector(0.0f, 140.0f, 0.0f));
 	MeshLever->SetRelativeRotation(FRotator(90.0f, 0.0f, 0.0f));
 	MeshLever->SetRelativeScale3D(FVector(0.5f, 1.125f, 1.25f));
-	
+
+	QuestActorComponentID = CreateDefaultSubobject<UQuestActorComponentID>("QuestActorComponentID");
 }
 
 void ALeverSwitch::BeginPlay()

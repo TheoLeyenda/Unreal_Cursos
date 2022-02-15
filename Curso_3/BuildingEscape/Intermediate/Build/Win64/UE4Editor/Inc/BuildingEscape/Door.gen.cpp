@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ADoor_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ADoor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UQuestActorComponentID_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UTimelineComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
@@ -136,6 +137,10 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_QuestActorComponentID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_QuestActorComponentID;
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_StateDoor_Underlying;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StateDoor_MetaData[];
@@ -184,6 +189,14 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		{ "ModuleRelativePath", "Public/Door.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::NewProp_QuestActorComponentID_MetaData[] = {
+		{ "Category", "Door" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Door.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoor_Statics::NewProp_QuestActorComponentID = { "QuestActorComponentID", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoor, QuestActorComponentID), Z_Construct_UClass_UQuestActorComponentID_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoor_Statics::NewProp_QuestActorComponentID_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::NewProp_QuestActorComponentID_MetaData)) };
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ADoor_Statics::NewProp_StateDoor_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::NewProp_StateDoor_MetaData[] = {
@@ -244,6 +257,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineFloatCurve = { "DoorTimelineFloatCurve", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoor, DoorTimelineFloatCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineFloatCurve_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::NewProp_DoorTimelineFloatCurve_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADoor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_QuestActorComponentID,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_StateDoor_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_StateDoor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_bUseInitCheckDoor,
@@ -283,7 +297,7 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoor, 3942836902);
+	IMPLEMENT_CLASS(ADoor, 1755675579);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ADoor>()
 	{
 		return ADoor::StaticClass();

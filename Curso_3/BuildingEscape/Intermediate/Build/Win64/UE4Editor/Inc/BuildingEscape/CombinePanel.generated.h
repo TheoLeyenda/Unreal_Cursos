@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define BUILDINGESCAPE_CombinePanel_generated_h
 
-#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_INCLASS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_SPARSE_DATA
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_RPC_WRAPPERS
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACombinePanel(); \
 	friend struct Z_Construct_UClass_ACombinePanel_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ACombinePanel)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_INCLASS \
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesACombinePanel(); \
 	friend struct Z_Construct_UClass_ACombinePanel_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ACombinePanel)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_STANDARD_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACombinePanel(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACombinePanel) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_ENHANCED_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ACombinePanel(ACombinePanel&&); \
@@ -58,34 +58,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACombinePanel); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACombinePanel)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_PRIVATE_PROPERTY_OFFSET \
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__QuestActorComponentID() { return STRUCT_OFFSET(ACombinePanel, QuestActorComponentID); } \
 	FORCEINLINE static uint32 __PPO__CountNumbersCode() { return STRUCT_OFFSET(ACombinePanel, CountNumbersCode); } \
 	FORCEINLINE static uint32 __PPO__Trap() { return STRUCT_OFFSET(ACombinePanel, Trap); } \
 	FORCEINLINE static uint32 __PPO__CodeNumbers() { return STRUCT_OFFSET(ACombinePanel, CodeNumbers); } \
 	FORCEINLINE static uint32 __PPO__CurrentAnswer() { return STRUCT_OFFSET(ACombinePanel, CurrentAnswer); }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_10_PROLOG
-#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_GENERATED_BODY_LEGACY \
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_11_PROLOG
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_RPC_WRAPPERS \
-	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_INCLASS \
-	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_STANDARD_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_RPC_WRAPPERS \
+	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_INCLASS \
+	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_GENERATED_BODY \
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_INCLASS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_13_ENHANCED_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_INCLASS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

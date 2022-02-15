@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorInteractTriggerWithActors() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoorInteractTriggerWithActors, 2983711043);
+	IMPLEMENT_CLASS(ADoorInteractTriggerWithActors, 641846410);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ADoorInteractTriggerWithActors>()
 	{
 		return ADoorInteractTriggerWithActors::StaticClass();

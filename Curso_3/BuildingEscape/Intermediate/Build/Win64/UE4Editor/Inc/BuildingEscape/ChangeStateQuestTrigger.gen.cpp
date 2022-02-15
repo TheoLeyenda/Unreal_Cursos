@@ -284,7 +284,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFChangeStateQues
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChangeStateQuestTrigger, 485247284);
+	IMPLEMENT_CLASS(AChangeStateQuestTrigger, 2749086944);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AChangeStateQuestTrigger>()
 	{
 		return AChangeStateQuestTrigger::StaticClass();

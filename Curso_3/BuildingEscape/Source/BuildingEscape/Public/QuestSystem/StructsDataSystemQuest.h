@@ -9,26 +9,24 @@
 
 
 USTRUCT()
-struct FInteractActorActivateData
+struct FLastInteractActorInfo
 {
 
 	GENERATED_BODY()
 
-	FInteractActorActivateData()
+	FLastInteractActorInfo()
 	{
 		ActorBlueprint = nullptr;
-		Actor = nullptr;
 	}
-	FInteractActorActivateData(TSubclassOf<AActor> ValueBlueprint, AActor* ValueActor)
+	FLastInteractActorInfo(TSubclassOf<AActor> ValueBlueprint)
 	{
 		ActorBlueprint = ValueBlueprint;
-		Actor = ValueActor;
 	}
 	
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> ActorBlueprint; // Clase del objeto activado.
 	UPROPERTY(EditAnywhere)
-	AActor* Actor; // Referencia al objeto en el mundo.
+	int32 ID;
 };
 
 USTRUCT(BlueprintType)
@@ -47,7 +45,7 @@ struct FDataPlayer
 	UPROPERTY(EditAnywhere)
 	int Lifes;
 	UPROPERTY(EditAnywhere)
-	FInteractActorActivateData InteractActorsActivateData;
+	FLastInteractActorInfo LastInteractActorInfo;
 	//DATA QUE RECIVO DE LAS TASK PARA MANDAR AL QuestManager.
 };
 

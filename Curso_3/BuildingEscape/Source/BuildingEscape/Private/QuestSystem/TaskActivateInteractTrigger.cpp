@@ -2,8 +2,8 @@
 
 
 #include "QuestSystem/TaskActivateInteractTrigger.h"
-
 #include "Kismet/GameplayStatics.h"
+#include "QuestSystem/QuestActorComponentID.h"
 
 void UTaskActivateInteractTrigger::FindInformation()
 {
@@ -38,8 +38,10 @@ void UTaskActivateInteractTrigger::SettingDataTask(AInteractTrigger* InteractTri
 	
 	SettingDataBaseTask(false);
 	
-	SendDataPlayer.InteractActorsActivateData.ActorBlueprint = InteractTrigger->GetClass();
-	SendDataPlayer.InteractActorsActivateData.Actor = InteractTrigger;
+	SendDataPlayer.LastInteractActorInfo.ActorBlueprint = InteractTrigger->GetClass();
+
+	UQuestActorComponentID* QuestActorComponentID = Cast<UQuestActorComponentID>(InteractTrigger->GetComponentByClass(UQuestActorComponentID::StaticClass()));
+	SendDataPlayer.LastInteractActorInfo.ID = QuestActorComponentID->ID;
 	
 	SendEventUpdateTask();
 }

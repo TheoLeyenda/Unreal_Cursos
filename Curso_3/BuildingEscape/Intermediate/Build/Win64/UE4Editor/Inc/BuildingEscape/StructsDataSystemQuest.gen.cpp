@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeStructsDataSystemQuest() {}
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UItem_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInventory_NoRegister();
-	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FInteractActorActivateData();
+	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FLastInteractActorInfo();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UStructsDataSystemQuest_NoRegister();
@@ -73,9 +73,9 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFDataPlayer
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Lifes;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractActorsActivateData_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LastInteractActorInfo_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_InteractActorsActivateData;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_LastInteractActorInfo;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -128,19 +128,19 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFDataPlayer
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes = { "Lifes", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, Lifes), METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_InteractActorsActivateData_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_LastInteractActorInfo_MetaData[] = {
 		{ "Category", "DataPlayer" },
 		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_InteractActorsActivateData = { "InteractActorsActivateData", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, InteractActorsActivateData), Z_Construct_UScriptStruct_FInteractActorActivateData, METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_InteractActorsActivateData_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_InteractActorsActivateData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_LastInteractActorInfo = { "LastInteractActorInfo", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, LastInteractActorInfo), Z_Construct_UScriptStruct_FLastInteractActorInfo, METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_LastInteractActorInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_LastInteractActorInfo_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FDataPlayer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_InventoryComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Fatness,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_InteractActorsActivateData,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_LastInteractActorInfo,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FDataPlayer_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
@@ -170,30 +170,30 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFDataPlayer
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDataPlayer_Hash() { return 1957074455U; }
-class UScriptStruct* FInteractActorActivateData::StaticStruct()
+	uint32 Get_Z_Construct_UScriptStruct_FDataPlayer_Hash() { return 4286478967U; }
+class UScriptStruct* FLastInteractActorInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern BUILDINGESCAPE_API uint32 Get_Z_Construct_UScriptStruct_FInteractActorActivateData_Hash();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FInteractActorActivateData, Z_Construct_UPackage__Script_BuildingEscape(), TEXT("InteractActorActivateData"), sizeof(FInteractActorActivateData), Get_Z_Construct_UScriptStruct_FInteractActorActivateData_Hash());
+		extern BUILDINGESCAPE_API uint32 Get_Z_Construct_UScriptStruct_FLastInteractActorInfo_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FLastInteractActorInfo, Z_Construct_UPackage__Script_BuildingEscape(), TEXT("LastInteractActorInfo"), sizeof(FLastInteractActorInfo), Get_Z_Construct_UScriptStruct_FLastInteractActorInfo_Hash());
 	}
 	return Singleton;
 }
-template<> BUILDINGESCAPE_API UScriptStruct* StaticStruct<FInteractActorActivateData>()
+template<> BUILDINGESCAPE_API UScriptStruct* StaticStruct<FLastInteractActorInfo>()
 {
-	return FInteractActorActivateData::StaticStruct();
+	return FLastInteractActorInfo::StaticStruct();
 }
-static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FInteractActorActivateData(FInteractActorActivateData::StaticStruct, TEXT("/Script/BuildingEscape"), TEXT("InteractActorActivateData"), false, nullptr, nullptr);
-static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFInteractActorActivateData
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FLastInteractActorInfo(FLastInteractActorInfo::StaticStruct, TEXT("/Script/BuildingEscape"), TEXT("LastInteractActorInfo"), false, nullptr, nullptr);
+static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFLastInteractActorInfo
 {
-	FScriptStruct_BuildingEscape_StaticRegisterNativesFInteractActorActivateData()
+	FScriptStruct_BuildingEscape_StaticRegisterNativesFLastInteractActorInfo()
 	{
-		UScriptStruct::DeferCppStructOps(FName(TEXT("InteractActorActivateData")),new UScriptStruct::TCppStructOps<FInteractActorActivateData>);
+		UScriptStruct::DeferCppStructOps(FName(TEXT("LastInteractActorInfo")),new UScriptStruct::TCppStructOps<FLastInteractActorInfo>);
 	}
-} ScriptStruct_BuildingEscape_StaticRegisterNativesFInteractActorActivateData;
-	struct Z_Construct_UScriptStruct_FInteractActorActivateData_Statics
+} ScriptStruct_BuildingEscape_StaticRegisterNativesFLastInteractActorInfo;
+	struct Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics
 	{
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
@@ -204,70 +204,70 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFInteractActorAc
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ActorBlueprint;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Actor_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ID_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Actor;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ID;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::Struct_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::Struct_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
 	};
 #endif
-	void* Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::NewStructOps()
+	void* Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::NewStructOps()
 	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FInteractActorActivateData>();
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FLastInteractActorInfo>();
 	}
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::NewProp_ActorBlueprint_MetaData[] = {
-		{ "Category", "InteractActorActivateData" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::NewProp_ActorBlueprint_MetaData[] = {
+		{ "Category", "LastInteractActorInfo" },
 		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::NewProp_ActorBlueprint = { "ActorBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FInteractActorActivateData, ActorBlueprint), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::NewProp_ActorBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::NewProp_ActorBlueprint_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::NewProp_ActorBlueprint = { "ActorBlueprint", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FLastInteractActorInfo, ActorBlueprint), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::NewProp_ActorBlueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::NewProp_ActorBlueprint_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::NewProp_Actor_MetaData[] = {
-		{ "Category", "InteractActorActivateData" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::NewProp_ID_MetaData[] = {
+		{ "Category", "LastInteractActorInfo" },
 		{ "Comment", "// Clase del objeto activado.\n" },
 		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
 		{ "ToolTip", "Clase del objeto activado." },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FInteractActorActivateData, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::NewProp_Actor_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::NewProp_Actor_MetaData)) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::NewProp_ActorBlueprint,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::NewProp_Actor,
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::NewProp_ID = { "ID", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FLastInteractActorInfo, ID), METADATA_PARAMS(Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::NewProp_ID_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::NewProp_ID_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::NewProp_ActorBlueprint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::NewProp_ID,
 	};
-	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::ReturnStructParams = {
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 		nullptr,
 		&NewStructOps,
-		"InteractActorActivateData",
-		sizeof(FInteractActorActivateData),
-		alignof(FInteractActorActivateData),
-		Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::PropPointers,
-		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::PropPointers),
+		"LastInteractActorInfo",
+		sizeof(FLastInteractActorInfo),
+		alignof(FLastInteractActorInfo),
+		Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::Struct_MetaDataParams))
 	};
-	UScriptStruct* Z_Construct_UScriptStruct_FInteractActorActivateData()
+	UScriptStruct* Z_Construct_UScriptStruct_FLastInteractActorInfo()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FInteractActorActivateData_Hash();
+		extern uint32 Get_Z_Construct_UScriptStruct_FLastInteractActorInfo_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_BuildingEscape();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("InteractActorActivateData"), sizeof(FInteractActorActivateData), Get_Z_Construct_UScriptStruct_FInteractActorActivateData_Hash(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("LastInteractActorInfo"), sizeof(FLastInteractActorInfo), Get_Z_Construct_UScriptStruct_FLastInteractActorInfo_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
 		if (!ReturnStruct)
 		{
-			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FInteractActorActivateData_Statics::ReturnStructParams);
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FLastInteractActorInfo_Statics::ReturnStructParams);
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FInteractActorActivateData_Hash() { return 3568883044U; }
+	uint32 Get_Z_Construct_UScriptStruct_FLastInteractActorInfo_Hash() { return 1127010302U; }
 	void UStructsDataSystemQuest::StaticRegisterNativesUStructsDataSystemQuest()
 	{
 	}

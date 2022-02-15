@@ -68,7 +68,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ALeverSwitch); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ALeverSwitch)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_LeverSwitch_h_24_PRIVATE_PROPERTY_OFFSET
+#define BuildingEscape_Source_BuildingEscape_Public_LeverSwitch_h_24_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__QuestActorComponentID() { return STRUCT_OFFSET(ALeverSwitch, QuestActorComponentID); }
+
+
 #define BuildingEscape_Source_BuildingEscape_Public_LeverSwitch_h_21_PROLOG
 #define BuildingEscape_Source_BuildingEscape_Public_LeverSwitch_h_24_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

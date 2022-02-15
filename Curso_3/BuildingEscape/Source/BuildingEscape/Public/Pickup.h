@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/TextRenderComponent.h"
+#include "QuestSystem/QuestActorComponentID.h"
 #include "InteractInterface.h"
 #include "Item.h"
 #include "GameFramework/Actor.h"
@@ -23,6 +24,9 @@ public:
 	// Sets default values for this actor's properties
 	APickup();
 	
+	UPROPERTY(EditAnywhere)
+	UQuestActorComponentID* QuestActorComponentID;	
+
 	void Tick(float DeltaSeconds) override;
 	
 	UPROPERTY(EditAnywhere, Category= "Pickup")

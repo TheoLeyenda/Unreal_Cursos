@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeSpawnObjectByTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASpawnObjectByTrigger, 436219088);
+	IMPLEMENT_CLASS(ASpawnObjectByTrigger, 1705803803);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ASpawnObjectByTrigger>()
 	{
 		return ASpawnObjectByTrigger::StaticClass();

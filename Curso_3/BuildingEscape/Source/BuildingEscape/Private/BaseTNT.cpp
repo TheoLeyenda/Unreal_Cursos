@@ -15,6 +15,8 @@ ABaseTNT::ABaseTNT()
 	SceneComponent->SetupAttachment(RootComponent);
 	StaticMeshComponent->SetupAttachment(SceneComponent);
 	BoxComponent->SetupAttachment(StaticMeshComponent);
+
+	QuestActorComponentID = CreateDefaultSubobject<UQuestActorComponentID>(TEXT("QuestActorComponentID"));
 }
 
 // Called when the game starts or when spawned

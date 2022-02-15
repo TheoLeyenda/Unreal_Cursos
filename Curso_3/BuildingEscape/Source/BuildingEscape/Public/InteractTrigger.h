@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/BoxComponent.h"
+#include "QuestSystem/QuestActorComponentID.h"
 #include "InteractInterface.h"
 #include "Trap.h"
 #include "GameFramework/Actor.h"
@@ -50,6 +51,9 @@ protected:
 	
 	ELastStateObjectOverlap LastObjectRegister;
 
+	UPROPERTY(EditAnywhere)
+	UQuestActorComponentID* QuestActorComponentID;
+	
 	void ExecuteTrap();
 	
 	UFUNCTION()

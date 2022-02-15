@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodePickupPhysicActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APickupPhysicActor, 1557503805);
+	IMPLEMENT_CLASS(APickupPhysicActor, 263933210);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<APickupPhysicActor>()
 	{
 		return APickupPhysicActor::StaticClass();

@@ -17,6 +17,7 @@ APickup::APickup()
 	SceneComponent->SetupAttachment(RootComponent);
 	MyText->SetupAttachment(SceneComponent);
 	StaticMeshComponent->SetupAttachment(SceneComponent);
+	QuestActorComponentID = CreateDefaultSubobject<UQuestActorComponentID>(TEXT("QuestActorComponentID"));
 }
 
 void APickup::Tick(float DeltaSeconds)

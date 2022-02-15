@@ -24,6 +24,7 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitch() {}
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UQuestActorComponentID_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInteractInterface_NoRegister();
 // End Cross Module References
 	static UEnum* EPositiveShiwtch_StaticEnum()
@@ -178,6 +179,10 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitch() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AudioComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AudioComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_QuestActorComponentID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_QuestActorComponentID;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -270,6 +275,14 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitch() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent = { "AudioComponent", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALeverSwitch, AudioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALeverSwitch_Statics::NewProp_QuestActorComponentID_MetaData[] = {
+		{ "Category", "LeverSwitch" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/LeverSwitch.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALeverSwitch_Statics::NewProp_QuestActorComponentID = { "QuestActorComponentID", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALeverSwitch, QuestActorComponentID), Z_Construct_UClass_UQuestActorComponentID_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_QuestActorComponentID_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALeverSwitch_Statics::NewProp_QuestActorComponentID_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ALeverSwitch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_bSwitchOn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_TimelineComp,
@@ -281,6 +294,7 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitch() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_PositiveShiwtch_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_PositiveShiwtch,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_AudioComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALeverSwitch_Statics::NewProp_QuestActorComponentID,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ALeverSwitch_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UInteractInterface_NoRegister, (int32)VTABLE_OFFSET(ALeverSwitch, IInteractInterface), false },
@@ -312,7 +326,7 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitch() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALeverSwitch, 1882063717);
+	IMPLEMENT_CLASS(ALeverSwitch, 3356989029);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ALeverSwitch>()
 	{
 		return ALeverSwitch::StaticClass();

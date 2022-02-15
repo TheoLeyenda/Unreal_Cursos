@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeLeverSwitchToCraft() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALeverSwitchToCraft, 3856387859);
+	IMPLEMENT_CLASS(ALeverSwitchToCraft, 3092597486);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ALeverSwitchToCraft>()
 	{
 		return ALeverSwitchToCraft::StaticClass();

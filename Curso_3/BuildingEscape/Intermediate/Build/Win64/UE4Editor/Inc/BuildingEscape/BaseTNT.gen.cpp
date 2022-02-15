@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseTNT() {}
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UQuestActorComponentID_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
@@ -138,6 +139,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseTNT() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_QuestActorComponentID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_QuestActorComponentID;
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ActorsToDestroy_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ActorsToDestroy_MetaData[];
@@ -176,6 +181,14 @@ void EmptyLinkFunctionForGeneratedCodeBaseTNT() {}
 		{ "ModuleRelativePath", "Public/BaseTNT.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseTNT_Statics::NewProp_QuestActorComponentID_MetaData[] = {
+		{ "Category", "BaseTNT" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/BaseTNT.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseTNT_Statics::NewProp_QuestActorComponentID = { "QuestActorComponentID", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseTNT, QuestActorComponentID), Z_Construct_UClass_UQuestActorComponentID_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseTNT_Statics::NewProp_QuestActorComponentID_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseTNT_Statics::NewProp_QuestActorComponentID_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseTNT_Statics::NewProp_ActorsToDestroy_Inner = { "ActorsToDestroy", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseTNT_Statics::NewProp_ActorsToDestroy_MetaData[] = {
@@ -216,6 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseTNT() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseTNT_Statics::NewProp_BoxComponent = { "BoxComponent", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseTNT, BoxComponent), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseTNT_Statics::NewProp_BoxComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABaseTNT_Statics::NewProp_BoxComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseTNT_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseTNT_Statics::NewProp_QuestActorComponentID,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseTNT_Statics::NewProp_ActorsToDestroy_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseTNT_Statics::NewProp_ActorsToDestroy,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseTNT_Statics::NewProp_ParticleBlueprint,
@@ -250,7 +264,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseTNT() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseTNT, 1656771632);
+	IMPLEMENT_CLASS(ABaseTNT, 3366870588);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABaseTNT>()
 	{
 		return ABaseTNT::StaticClass();

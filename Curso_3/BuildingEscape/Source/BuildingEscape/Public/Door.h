@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "InteractInterface.h"
+#include "QuestSystem/QuestActorComponentID.h"
 #include "Components/TimelineComponent.h"
 #include "Components/AudioComponent.h"
 #include "Door.generated.h"
@@ -28,7 +29,8 @@ public:
 
 protected:
 	
-	
+	UPROPERTY(EditAnywhere)
+	UQuestActorComponentID* QuestActorComponentID;
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
  

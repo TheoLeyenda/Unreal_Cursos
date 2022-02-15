@@ -31,6 +31,9 @@ struct FActionQuest
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	bool bDoneAccion = false;
+
+	UPROPERTY(EditAnywhere)
+	bool bUseIdentificationObject = true;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int ID;
@@ -52,11 +55,14 @@ struct FActionQuest
 				//UE_LOG(LogTemp, Warning, TEXT("bInventoryCondition es %s"), bInventoryCondition ? TEXT("TRUE") : TEXT("FALSE"));
 			}
 		}
+
+		bool bIdentificationObject = (CompareData.LastInteractActorInfo.ID == RequiredDataPlayer.LastInteractActorInfo.ID 
+			&& CompareData.LastInteractActorInfo.ActorBlueprint == RequiredDataPlayer.LastInteractActorInfo.ActorBlueprint) || !bUseIdentificationObject;
+
 		
 		if(CompareData.Fatness >= RequiredDataPlayer.Fatness
 			&& CompareData.Lifes >= RequiredDataPlayer.Lifes
-			&& CompareData.InteractActorsActivateData.Actor == RequiredDataPlayer.InteractActorsActivateData.Actor 
-			&& CompareData.InteractActorsActivateData.ActorBlueprint == RequiredDataPlayer.InteractActorsActivateData.ActorBlueprint
+			&& bIdentificationObject
 			&& bInventoryCondition)
 		{
 			bDoneAccion = true;

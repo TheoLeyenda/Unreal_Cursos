@@ -66,8 +66,8 @@ void UQuestEvaluatorComponent::SettingDataPlayer(FDataPlayer NewData)
 	DataPlayer.Fatness = NewData.Fatness;
 	DataPlayer.Lifes = NewData.Lifes;
 
-	DataPlayer.InteractActorsActivateData.Actor = NewData.InteractActorsActivateData.Actor;
-	DataPlayer.InteractActorsActivateData.ActorBlueprint = NewData.InteractActorsActivateData.ActorBlueprint;
+	DataPlayer.LastInteractActorInfo.ID = NewData.LastInteractActorInfo.ID;
+	DataPlayer.LastInteractActorInfo.ActorBlueprint = NewData.LastInteractActorInfo.ActorBlueprint;
 	
 	DataPlayer.InventoryComponent = NewData.InventoryComponent;
 	DataPlayer.NeedItems = NewData.InventoryComponent->Items;

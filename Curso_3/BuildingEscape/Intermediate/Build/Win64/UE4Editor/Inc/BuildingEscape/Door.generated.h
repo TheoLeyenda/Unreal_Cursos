@@ -13,18 +13,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define BUILDINGESCAPE_Door_generated_h
 
-#define BuildingEscape_Source_BuildingEscape_Public_Door_h_23_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_Door_h_23_RPC_WRAPPERS \
+#define BuildingEscape_Source_BuildingEscape_Public_Door_h_24_SPARSE_DATA
+#define BuildingEscape_Source_BuildingEscape_Public_Door_h_24_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execUpdateTimelineComp);
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Door_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_Public_Door_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execUpdateTimelineComp);
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Door_h_23_INCLASS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_Public_Door_h_24_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADoor(); \
 	friend struct Z_Construct_UClass_ADoor_Statics; \
@@ -34,7 +34,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<ADoor*>(this); }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Door_h_23_INCLASS \
+#define BuildingEscape_Source_BuildingEscape_Public_Door_h_24_INCLASS \
 private: \
 	static void StaticRegisterNativesADoor(); \
 	friend struct Z_Construct_UClass_ADoor_Statics; \
@@ -44,7 +44,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<ADoor*>(this); }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Door_h_23_STANDARD_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_Door_h_24_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ADoor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ADoor) \
@@ -57,7 +57,7 @@ private: \
 public:
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Door_h_23_ENHANCED_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_Door_h_24_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ADoor(ADoor&&); \
@@ -68,7 +68,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADoor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADoor)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Door_h_23_PRIVATE_PROPERTY_OFFSET \
+#define BuildingEscape_Source_BuildingEscape_Public_Door_h_24_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__QuestActorComponentID() { return STRUCT_OFFSET(ADoor, QuestActorComponentID); } \
 	FORCEINLINE static uint32 __PPO__StateDoor() { return STRUCT_OFFSET(ADoor, StateDoor); } \
 	FORCEINLINE static uint32 __PPO__bUseInitCheckDoor() { return STRUCT_OFFSET(ADoor, bUseInitCheckDoor); } \
 	FORCEINLINE static uint32 __PPO__DoorFrame() { return STRUCT_OFFSET(ADoor, DoorFrame); } \
@@ -77,27 +78,27 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADoor); \
 	FORCEINLINE static uint32 __PPO__AudioComponent() { return STRUCT_OFFSET(ADoor, AudioComponent); }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Door_h_20_PROLOG
-#define BuildingEscape_Source_BuildingEscape_Public_Door_h_23_GENERATED_BODY_LEGACY \
+#define BuildingEscape_Source_BuildingEscape_Public_Door_h_21_PROLOG
+#define BuildingEscape_Source_BuildingEscape_Public_Door_h_24_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_Door_h_23_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_Door_h_23_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_Door_h_23_RPC_WRAPPERS \
-	BuildingEscape_Source_BuildingEscape_Public_Door_h_23_INCLASS \
-	BuildingEscape_Source_BuildingEscape_Public_Door_h_23_STANDARD_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_Door_h_24_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_Door_h_24_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_Door_h_24_RPC_WRAPPERS \
+	BuildingEscape_Source_BuildingEscape_Public_Door_h_24_INCLASS \
+	BuildingEscape_Source_BuildingEscape_Public_Door_h_24_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_Door_h_23_GENERATED_BODY \
+#define BuildingEscape_Source_BuildingEscape_Public_Door_h_24_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_Door_h_23_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_Door_h_23_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_Door_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_Door_h_23_INCLASS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_Door_h_23_ENHANCED_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_Door_h_24_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_Door_h_24_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_Door_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_Door_h_24_INCLASS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_Door_h_24_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

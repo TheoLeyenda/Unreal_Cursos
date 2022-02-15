@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeCombinePanel() {}
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ACombinePanel();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UQuestActorComponentID_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ATrap_NoRegister();
 // End Cross Module References
 	void ACombinePanel::StaticRegisterNativesACombinePanel()
@@ -32,6 +33,10 @@ void EmptyLinkFunctionForGeneratedCodeCombinePanel() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_QuestActorComponentID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_QuestActorComponentID;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CountNumbersCode_MetaData[];
 #endif
@@ -65,6 +70,14 @@ void EmptyLinkFunctionForGeneratedCodeCombinePanel() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACombinePanel_Statics::NewProp_QuestActorComponentID_MetaData[] = {
+		{ "Category", "CombinePanel" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/CombinePanel.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACombinePanel_Statics::NewProp_QuestActorComponentID = { "QuestActorComponentID", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACombinePanel, QuestActorComponentID), Z_Construct_UClass_UQuestActorComponentID_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACombinePanel_Statics::NewProp_QuestActorComponentID_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACombinePanel_Statics::NewProp_QuestActorComponentID_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACombinePanel_Statics::NewProp_CountNumbersCode_MetaData[] = {
 		{ "Category", "CombinePanel" },
 		{ "ModuleRelativePath", "Public/CombinePanel.h" },
@@ -95,6 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeCombinePanel() {}
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ACombinePanel_Statics::NewProp_CurrentAnswer = { "CurrentAnswer", nullptr, (EPropertyFlags)0x0020080000020001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACombinePanel, CurrentAnswer), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_ACombinePanel_Statics::NewProp_CurrentAnswer_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACombinePanel_Statics::NewProp_CurrentAnswer_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACombinePanel_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACombinePanel_Statics::NewProp_QuestActorComponentID,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACombinePanel_Statics::NewProp_CountNumbersCode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACombinePanel_Statics::NewProp_Trap,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACombinePanel_Statics::NewProp_CodeNumbers_Inner,
@@ -129,7 +143,7 @@ void EmptyLinkFunctionForGeneratedCodeCombinePanel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACombinePanel, 3538577770);
+	IMPLEMENT_CLASS(ACombinePanel, 3274318124);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ACombinePanel>()
 	{
 		return ACombinePanel::StaticClass();

@@ -36,6 +36,7 @@
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/PuzzleFoodLeverChecker.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/BaseTask.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/Quest.cpp"
+#include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/QuestActorComponentID.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/QuestEvaluatorComponent.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/QuestManager.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/StructsDataSystemQuest.cpp"

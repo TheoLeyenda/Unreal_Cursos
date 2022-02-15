@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Trap.h"
 #include "GameFramework/Actor.h"
+#include "QuestSystem/QuestActorComponentID.h"
 #include "CombinePanel.generated.h"
 
 UCLASS()
@@ -19,6 +20,9 @@ public:
 	bool IsCompleteCombinePanel();
 protected:
 
+	UPROPERTY(EditAnywhere)
+	UQuestActorComponentID* QuestActorComponentID;
+	
 	UPROPERTY(EditAnywhere)
 	int CountNumbersCode = 5;
 

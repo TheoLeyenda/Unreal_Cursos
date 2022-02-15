@@ -16,6 +16,9 @@ public:
 	// Sets default values for this actor's properties
 	ATrap();
 
+	UPROPERTY(EditAnywhere)
+	UQuestActorComponentID* QuestActorComponentID;
+	
 	virtual void BeginPlay() override;
 	
 	UPROPERTY(EditAnywhere, meta = (ClampMin = 0.1f))
