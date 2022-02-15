@@ -70,7 +70,7 @@ void UQuestEvaluatorComponent::SettingDataPlayer(FDataPlayer NewData)
 	DataPlayer.LastInteractActorInfo.ActorBlueprint = NewData.LastInteractActorInfo.ActorBlueprint;
 	
 	DataPlayer.InventoryComponent = NewData.InventoryComponent;
-	DataPlayer.NeedItems = NewData.InventoryComponent->Items;
+	DataPlayer.NeedItems = NewData.NeedItems;
 	
 	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT(""));
 	OnQuestEvaluatorDataUpdate.Broadcast(this);

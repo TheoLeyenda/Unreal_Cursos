@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "QuestEvaluatorComponent.h"
+#include "Engine/DataTable.h"
 #include "UObject/Object.h"
 #include "BaseQuest.generated.h"
 
@@ -47,14 +48,13 @@ struct FActionQuest
 		{
 			for(int i = 0; i < RequiredDataPlayer.NeedItems.Num(); i++)
 			{
-				bInventoryCondition = CompareData.InventoryComponent->CheckHaveItem(RequiredDataPlayer.NeedItems[i]->GetClass());
+				bInventoryCondition = CompareData.InventoryComponent->CheckHaveItem(RequiredDataPlayer.NeedItems[i]);
 				//UE_LOG(LogTemp, Warning, TEXT("bInventoryCondition es %s"), bInventoryCondition ? TEXT("TRUE") : TEXT("FALSE"));
 			}
 		}
 
 		bool bIdentificationObject = (CompareData.LastInteractActorInfo.ID == RequiredDataPlayer.LastInteractActorInfo.ID 
 			&& CompareData.LastInteractActorInfo.ActorBlueprint == RequiredDataPlayer.LastInteractActorInfo.ActorBlueprint) || !bUseIdentificationObject;
-
 		
 		if(CompareData.Fatness >= RequiredDataPlayer.Fatness
 			&& CompareData.Lifes >= RequiredDataPlayer.Lifes
@@ -65,6 +65,24 @@ struct FActionQuest
 		}
 	}
 	
+};
+
+USTRUCT(BlueprintType)
+struct FQuestStructInfo : public FTableRowBase
+{
+	GENERATED_BODY()
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int ID;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString Name;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	TEnumAsByte<EQuestState> QuestState = EQuestState::Available;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FActionQuest> ActionsQuest;
 };
 
 UCLASS(DefaultToInstanced, EditInlineNew, BlueprintType, Blueprintable)
@@ -81,20 +99,11 @@ public:
 	UPROPERTY(BlueprintAssignable, BlueprintCallable)
 	FOnUpdateQuest OnUpdateQuest;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int ID;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FString Name;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	TEnumAsByte<EQuestState> QuestState = EQuestState::Available;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<FActionQuest> ActionsQuest;
-
 	void CheckCompleteQuest();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FQuestStructInfo QuestStructInfo;
+	
 	UFUNCTION()
 	virtual void CheckStatus(FDataPlayer DataPlayer);
 };

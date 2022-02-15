@@ -5,11 +5,11 @@
 
 void UBaseQuest::CheckCompleteQuest()
 {
-	if(QuestState != EQuestState::InProgress){return;}
+	if(QuestStructInfo.QuestState != EQuestState::InProgress){return;}
 	
 	bool bCompleteQuest = true;
 	
-	for(FActionQuest &ActionQuest : ActionsQuest)
+	for(FActionQuest &ActionQuest : QuestStructInfo.ActionsQuest)
 	{
 		if(!ActionQuest.bDoneAccion)
 		{
@@ -22,15 +22,15 @@ void UBaseQuest::CheckCompleteQuest()
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Quest Completada"));
 		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Quest Completada"));
-		QuestState = EQuestState::Completed;
+		QuestStructInfo.QuestState = EQuestState::Completed;
 		OnFinishQuest.Broadcast(this);
 	}
 }
 
 void UBaseQuest::CheckStatus(FDataPlayer DataPlayer)
 {
-	if(QuestState != EQuestState::InProgress){return;}
-	for(FActionQuest &ActionQuest : ActionsQuest)
+	if(QuestStructInfo.QuestState != EQuestState::InProgress){return;}
+	for(FActionQuest &ActionQuest : QuestStructInfo.ActionsQuest)
 	{
 		if(!ActionQuest.bDoneAccion)
 		{

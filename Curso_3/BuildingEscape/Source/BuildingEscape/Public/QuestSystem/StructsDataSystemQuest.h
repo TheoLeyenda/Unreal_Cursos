@@ -34,8 +34,8 @@ struct FDataPlayer
 {
 	GENERATED_BODY()
 
-	UPROPERTY(Instanced, EditAnywhere)
-	TArray<UItem*> NeedItems;
+	UPROPERTY(EditAnywhere)
+	TArray<TSubclassOf<UItem>> NeedItems;
 
 	UPROPERTY(VisibleAnywhere)
 	UInventory* InventoryComponent;

@@ -15,10 +15,10 @@ void EmptyLinkFunctionForGeneratedCodeStructsDataSystemQuest() {}
 // Cross Module References
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FDataPlayer();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UItem_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInventory_NoRegister();
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FLastInteractActorInfo();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UStructsDataSystemQuest_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UStructsDataSystemQuest();
@@ -52,10 +52,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFDataPlayer
 		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
 #endif
 		static void* NewStructOps();
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NeedItems_Inner_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_NeedItems_Inner;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_NeedItems_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NeedItems_MetaData[];
 #endif
@@ -89,22 +86,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFDataPlayer
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FDataPlayer>();
 	}
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_Inner_MetaData[] = {
-		{ "Category", "DataPlayer" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_Inner = { "NeedItems", nullptr, (EPropertyFlags)0x0002000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UItem_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_Inner_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_Inner_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_Inner = { "NeedItems", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UItem_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_MetaData[] = {
 		{ "Category", "DataPlayer" },
-		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems = { "NeedItems", nullptr, (EPropertyFlags)0x0010008000000009, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, NeedItems), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems = { "NeedItems", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, NeedItems), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_InventoryComponent_MetaData[] = {
 		{ "Category", "DataPlayer" },
@@ -170,7 +159,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFDataPlayer
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDataPlayer_Hash() { return 4286478967U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDataPlayer_Hash() { return 1996790497U; }
 class UScriptStruct* FLastInteractActorInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;

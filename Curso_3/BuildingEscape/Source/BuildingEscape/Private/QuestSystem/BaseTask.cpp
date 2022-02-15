@@ -33,7 +33,12 @@ void UBaseTask::SettingDataBaseTask(bool SendEvent)
 	SendDataPlayer.Lifes = BuildingScapeCharacter->GetPlayerLifes();
 
 	SendDataPlayer.InventoryComponent = BuildingScapeCharacter->PlayerInventoryComponent;
-	SendDataPlayer.NeedItems = BuildingScapeCharacter->PlayerInventoryComponent->Items;
+
+	SendDataPlayer.NeedItems.Empty();
+	for(UItem* Item : BuildingScapeCharacter->PlayerInventoryComponent->Items)
+	{
+		SendDataPlayer.NeedItems.Add(Item->GetClass());
+	}
 	
 	SendDataPlayer.LastInteractActorInfo.ActorBlueprint = nullptr;
 	SendDataPlayer.LastInteractActorInfo.ID = -1;

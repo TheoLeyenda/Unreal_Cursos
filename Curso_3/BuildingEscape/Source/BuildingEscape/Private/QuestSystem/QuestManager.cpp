@@ -17,8 +17,19 @@ void AQuestManager::BeginPlay()
 {
 	Super::BeginPlay();
 	FindQuestEvaluatorComponents();
+
+	LoadQuestsInfoDataTable();
 }
 
+void AQuestManager::LoadQuestsInfoDataTable()
+{
+	for(FQuestInfo &QuestInfo : QuestsInfo)
+	{
+		FString Context = "Power Rager Verde";
+		FActionQuest* CurrentActionQuest = DataTable->FindRow<FActionQuest>(FName(QuestInfo.NameRowReadDataQuest),Context);
+		//Asignar toda la data conseguida en CurrentActionQuest a QuestInfo
+	}	
+}
 void AQuestManager::FindQuestEvaluatorComponents()
 {
 	TArray<AActor*> Actors;
@@ -48,7 +59,7 @@ void AQuestManager::ChangeStateQuest(int indexQuest, EQuestState NewQuestState)
 {
 	if(indexQuest >= QuestsInfo.Num() || indexQuest < 0){return;}
 
-	QuestsInfo[indexQuest].Quest->QuestState = NewQuestState;
+	QuestsInfo[indexQuest].Quest->QuestStructInfo.QuestState = NewQuestState;
 }
 
 void AQuestManager::ChangeStateQuest(UBaseQuest* Quest, EQuestState NewQuestState)
@@ -59,7 +70,7 @@ void AQuestManager::ChangeStateQuest(UBaseQuest* Quest, EQuestState NewQuestStat
 		{
 			if(AuxQuestInfo.Quest == Quest)
 			{
-				AuxQuestInfo.Quest->QuestState = NewQuestState;
+				AuxQuestInfo.Quest->QuestStructInfo.QuestState = NewQuestState;
 				break;
 			}
 		}
@@ -71,7 +82,7 @@ void AQuestManager::ChangeStateQuests(TArray<int> indexQuests, EQuestState NewQu
 	if(indexQuests.Num() < 0 || indexQuests.Num() >= QuestsInfo.Num()) {return;}
 	for(int i = 0; i < indexQuests.Num(); i++)
 	{
-		QuestsInfo[indexQuests[i]].Quest->QuestState = NewQuestState;
+		QuestsInfo[indexQuests[i]].Quest->QuestStructInfo.QuestState = NewQuestState;
 	}
 }
 
@@ -79,10 +90,10 @@ void AQuestManager::CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponen
 {
 	for(FQuestInfo &AuxQuestInfo : QuestsInfo)
 	{
-		if(AuxQuestInfo.Quest->QuestState == EQuestState::InProgress)
+		if(AuxQuestInfo.Quest->QuestStructInfo.QuestState == EQuestState::InProgress)
 		{
 			AuxQuestInfo.Quest->CheckStatus(QuestEvaluatorComponent->DataPlayer);
-			if(AuxQuestInfo.Quest->QuestState == EQuestState::Completed && !AuxQuestInfo.bCheckedDone)
+			if(AuxQuestInfo.Quest->QuestStructInfo.QuestState == EQuestState::Completed && !AuxQuestInfo.bCheckedDone)
 			{
 				ChangeStateQuests(AuxQuestInfo.QuetsActivatedIDs, EQuestState::InProgress);
 				AuxQuestInfo.bCheckedDone = true;
@@ -91,9 +102,10 @@ void AQuestManager::CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponen
 	}
 
 	bool bSendEventFinishAllQuest = true;
+	
 	for(FQuestInfo &AuxQuestInfo : QuestsInfo)
 	{
-		if(AuxQuestInfo.Quest->QuestState != EQuestState::Completed)
+		if(AuxQuestInfo.Quest->QuestStructInfo.QuestState != EQuestState::Completed)
 		{
 			bSendEventFinishAllQuest = false;
 		}
@@ -101,7 +113,6 @@ void AQuestManager::CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponen
 	
 	if(bSendEventFinishAllQuest)
 	{
-		
 		SendEventFinishAllQuest();
 	}
 }
