@@ -1093,3 +1093,332 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.02.16-13.18.02:982][ 16]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
 [2022.02.16-13.18.03:002][ 16]LogUObjectHash: Compacting FUObjectHashTables data took   2.05ms
 [2022.02.16-13.18.03:026][ 17]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2022.02.16-13.19.27:773][125]BlueprintLog: New page: Compile WBP_AllQuest
+[2022.02.16-13.19.27:803][125]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2022.02.16-13.19.28:610][216]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_AllQuest" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_AllQuest.uasset" SILENT=true
+[2022.02.16-13.19.28:628][216]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_AllQuestC272A1614C8C729DB70EF3A96C54C6C2.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_AllQuest.uasset'
+[2022.02.16-13.19.28:639][216]AssetCheck: New page: Asset Save: WBP_AllQuest
+[2022.02.16-13.19.28:639][216]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_AllQuest.WBP_AllQuest
+[2022.02.16-13.19.29:941][361]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.16-13.19.29:946][361]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.16-13.19.29:946][361]PIE: New page: PIE session: BuildingScape (Feb 16, 2022, 7:19:29 AM)
+[2022.02.16-13.19.29:971][361]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.02.16-13.19.30:123][361]LogPlayLevel: PIE: StaticDuplicateObject took: (0.152083s)
+[2022.02.16-13.19.30:123][361]LogAIModule: Creating AISystem for world BuildingScape
+[2022.02.16-13.19.30:124][361]LogPlayLevel: PIE: World Init took: (0.000960s)
+[2022.02.16-13.19.30:124][361]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.153264s)
+[2022.02.16-13.19.30:147][361]LogUObjectHash: Compacting FUObjectHashTables data took   2.89ms
+[2022.02.16-13.19.30:148][361]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2022.02.16-13.19.30:148][361]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.16-13.19.30:148][361]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.16-13.19.30:148][361]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.16-13.19.30:148][361]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.16-13.19.30:148][361]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.16-13.19.30:148][361]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.16-13.19.30:148][361]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.16-13.19.30:148][361]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.16-13.19.30:149][361]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.16-13.19.30:149][361]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.16-13.19.30:153][361]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.16-13.19.30:153][361]LogAudioMixer: Display: 1: FrontRight
+[2022.02.16-13.19.30:168][361]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.16-13.19.30:169][361]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.16-13.19.30:169][361]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.16-13.19.30:169][361]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.16-13.19.30:169][361]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.16-13.19.30:169][361]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.16-13.19.30:169][361]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.16-13.19.30:181][361]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.16-13.19.30:181][361]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.16-13.19.30:181][361]LogInit: FAudioDevice initialized.
+[2022.02.16-13.19.30:181][361]LogAudio: Display: Audio Device (ID: 5) registered with world 'BuildingScape'.
+[2022.02.16-13.19.30:186][361]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.02.16-13.19.30:199][361]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.02.16-10.19.30
+[2022.02.16-13.19.30:199][361]LogWorld: Bringing up level for play took: 0.012228
+[2022.02.16-13.19.30:199][361]LogOnline: OSS: Creating online subsystem instance for: :Context_7
+[2022.02.16-13.19.30:203][361]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2022.02.16-13.19.30:203][361]PIE: Server logged in
+[2022.02.16-13.19.30:204][361]PIE: Play in editor total start time 0.258 seconds.
+[2022.02.16-13.19.30:215][362]LogActor: Warning: BP_KeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_KeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.19.30:348][376]LogTemp: Warning: ME DESTRUI
+[2022.02.16-13.19.30:348][376]LogTemp: Warning: ME DESTRUI
+[2022.02.16-13.19.30:449][388]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.19.30:948][448]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.19.30:948][448]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.19.30:949][448]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.19.31:448][508]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.19.31:506][515]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.19.31:507][515]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.19.32:233][602]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_7
+[2022.02.16-13.19.33:074][703]LogTemp: Warning: ActorsInOverlap.Num = 1
+[2022.02.16-13.19.33:074][703]LogTemp: Warning: Objetivo Completado: True
+[2022.02.16-13.19.33:074][703]LogTemp: Warning: Objetivo Completado: False
+[2022.02.16-13.19.34:531][878]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.19.34:531][878]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.19.34:865][918]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.19.34:865][918]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.19.35:857][ 37]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_8
+[2022.02.16-13.19.37:582][244]LogTemp: Warning: TotalMass: 50.000000
+[2022.02.16-13.19.39:150][432]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_4
+[2022.02.16-13.19.40:582][604]LogTemp: Warning: TotalMass: 150.000000
+[2022.02.16-13.19.40:582][604]LogTemp: Warning: Objetivo Completado: True
+[2022.02.16-13.19.40:582][604]LogTemp: Warning: Quest Completada
+[2022.02.16-13.19.40:582][604]LogTemp: Warning: Objetivo Completado: False
+[2022.02.16-13.19.40:865][638]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.19.40:865][638]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.19.41:299][690]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.19.41:299][690]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.19.42:591][845]LogTemp: Warning: Line trace has hit: BP_ObjectSpawnLeverSwitcher6_2
+[2022.02.16-13.19.42:690][857]LogActor: Warning: BP_KeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_KeyPhysicActor_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.19.44:066][ 22]LogTemp: Warning: Objetivo Completado: True
+[2022.02.16-13.19.44:066][ 22]LogTemp: Warning: Quest Completada
+[2022.02.16-13.19.44:066][ 22]LogTemp: Warning: Todos las Quest completadas
+[2022.02.16-13.19.44:291][ 49]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.19.44:291][ 49]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.19.44:582][ 84]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.19.44:582][ 84]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.19.45:151][149]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.16-13.19.45:151][149]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.02.16-13.19.45:152][149]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.02.16-13.19.45:153][149]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.16-13.19.45:164][149]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.16-13.19.45:173][149]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.16-13.19.45:191][149]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.16-13.19.45:194][149]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.16-13.19.45:195][149]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.16-13.19.45:208][149]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.16-13.19.45:214][149]LogUObjectHash: Compacting FUObjectHashTables data took   1.97ms
+[2022.02.16-13.19.45:239][150]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2022.02.16-13.19.46:116][251]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.16-13.19.46:121][251]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.16-13.19.46:121][251]PIE: New page: PIE session: BuildingScape (Feb 16, 2022, 7:19:46 AM)
+[2022.02.16-13.19.46:150][251]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.02.16-13.19.46:301][251]LogPlayLevel: PIE: StaticDuplicateObject took: (0.150309s)
+[2022.02.16-13.19.46:301][251]LogAIModule: Creating AISystem for world BuildingScape
+[2022.02.16-13.19.46:301][251]LogPlayLevel: PIE: World Init took: (0.000906s)
+[2022.02.16-13.19.46:302][251]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.151434s)
+[2022.02.16-13.19.46:322][251]LogUObjectHash: Compacting FUObjectHashTables data took   2.07ms
+[2022.02.16-13.19.46:323][251]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2022.02.16-13.19.46:323][251]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.16-13.19.46:323][251]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.16-13.19.46:323][251]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.16-13.19.46:323][251]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.16-13.19.46:323][251]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.16-13.19.46:323][251]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.16-13.19.46:323][251]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.16-13.19.46:323][251]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.16-13.19.46:324][251]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.16-13.19.46:324][251]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.16-13.19.46:329][251]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.16-13.19.46:329][251]LogAudioMixer: Display: 1: FrontRight
+[2022.02.16-13.19.46:344][251]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.16-13.19.46:344][251]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.16-13.19.46:344][251]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.16-13.19.46:344][251]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.16-13.19.46:344][251]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.16-13.19.46:344][251]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.16-13.19.46:344][251]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.16-13.19.46:356][251]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.16-13.19.46:356][251]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.16-13.19.46:356][251]LogInit: FAudioDevice initialized.
+[2022.02.16-13.19.46:356][251]LogAudio: Display: Audio Device (ID: 6) registered with world 'BuildingScape'.
+[2022.02.16-13.19.46:361][251]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.02.16-13.19.46:375][251]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.02.16-10.19.46
+[2022.02.16-13.19.46:376][251]LogWorld: Bringing up level for play took: 0.013513
+[2022.02.16-13.19.46:376][251]LogOnline: OSS: Creating online subsystem instance for: :Context_8
+[2022.02.16-13.19.46:379][251]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2022.02.16-13.19.46:379][251]PIE: Server logged in
+[2022.02.16-13.19.46:380][251]PIE: Play in editor total start time 0.259 seconds.
+[2022.02.16-13.19.46:391][252]LogActor: Warning: BP_KeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_KeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.19.46:525][266]LogTemp: Warning: ME DESTRUI
+[2022.02.16-13.19.46:525][266]LogTemp: Warning: ME DESTRUI
+[2022.02.16-13.19.46:624][278]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.19.47:124][338]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.19.47:625][398]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.19.47:901][431]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_4
+[2022.02.16-13.19.49:578][630]LogTemp: Warning: ActorsInOverlap.Num = 1
+[2022.02.16-13.19.49:578][630]LogTemp: Warning: Objetivo Completado: True
+[2022.02.16-13.19.49:578][630]LogTemp: Warning: Objetivo Completado: False
+[2022.02.16-13.19.50:861][784]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.19.50:861][784]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.19.50:985][799]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.19.50:985][799]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.19.51:319][839]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.19.51:319][839]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.19.51:701][885]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.19.51:701][885]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.19.52:169][941]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_4
+[2022.02.16-13.19.52:444][974]LogTemp: Warning: ActorsInOverlap.Num = -1
+[2022.02.16-13.19.54:735][249]LogTemp: Warning: TotalMass: 50.000000
+[2022.02.16-13.19.55:719][367]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_8
+[2022.02.16-13.19.57:177][542]LogTemp: Warning: TotalMass: 150.000000
+[2022.02.16-13.19.57:177][542]LogTemp: Warning: Objetivo Completado: True
+[2022.02.16-13.19.57:177][542]LogTemp: Warning: Quest Completada
+[2022.02.16-13.19.57:177][542]LogTemp: Warning: Objetivo Completado: False
+[2022.02.16-13.19.57:702][605]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.19.57:702][605]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.19.58:369][685]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.19.58:369][685]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.19.59:537][825]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_8
+[2022.02.16-13.20.00:194][904]LogTemp: Warning: TotalMass: 150.000000
+[2022.02.16-13.20.00:194][904]LogTemp: Warning: Objetivo Completado: False
+[2022.02.16-13.20.02:619][195]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.20.02:619][195]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.20.03:002][241]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.20.03:002][241]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.20.03:719][327]LogTemp: Warning: Line trace has hit: BP_ObjectSpawnLeverSwitcher6_2
+[2022.02.16-13.20.03:819][339]LogActor: Warning: BP_KeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_KeyPhysicActor_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.20.05:119][495]LogTemp: Warning: Objetivo Completado: True
+[2022.02.16-13.20.05:119][495]LogTemp: Warning: Quest Completada
+[2022.02.16-13.20.05:119][495]LogTemp: Warning: Todos las Quest completadas
+[2022.02.16-13.20.05:377][526]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.20.05:377][526]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.20.05:660][560]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.20.05:660][560]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.20.06:191][619]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.16-13.20.06:191][619]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.02.16-13.20.06:192][619]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.02.16-13.20.06:193][619]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.16-13.20.06:199][619]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.16-13.20.06:208][619]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.16-13.20.06:229][619]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.16-13.20.06:229][619]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.16-13.20.06:230][619]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.16-13.20.06:249][619]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
+[2022.02.16-13.20.06:274][620]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2022.02.16-13.25.35:755][793]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Character/BP_BuildingScapeCharacter.BP_BuildingScapeCharacter
+[2022.02.16-13.26.51:248][814]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2022.02.16-13.26.51:249][814]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/BuildingScape' took 0.028
+[2022.02.16-13.26.51:250][814]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Character/BP_BuildingScapeCharacter] ([1] browsable assets)...
+[2022.02.16-13.26.51:250][814]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Character/BP_BuildingScapeCharacter]
+[2022.02.16-13.26.51:270][814]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_BuildingScapeCharacter_Auto1F0D0BB034F2C7655BE2054AD0C5ABA32.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/Autosaves/Game/Blueprints/Character/BP_BuildingScapeCharacter_Auto1.uasset'
+[2022.02.16-13.26.51:271][814]LogFileHelpers: Auto-saving content packages took 0.021
+[2022.02.16-13.46.49:282][ 11]BlueprintLog: New page: Compile BP_BuildingScapeCharacter
+[2022.02.16-13.46.49:333][ 11]LogUObjectHash: Compacting FUObjectHashTables data took   2.34ms
+[2022.02.16-13.46.49:681][ 44]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_BuildingScapeCharacter05E2E0D342C033F2B304D7857F73BE58.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Character/BP_BuildingScapeCharacter.uasset'
+[2022.02.16-13.46.49:692][ 44]AssetCheck: New page: Asset Save: BP_BuildingScapeCharacter
+[2022.02.16-13.46.49:692][ 44]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Character/BP_BuildingScapeCharacter.BP_BuildingScapeCharacter
+[2022.02.16-13.46.54:590][614]LogActor: Warning: BP_RockDoor_C /Engine/Transient.World_14:PersistentLevel.BP_RockDoor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.46.54:650][618]LogActor: Warning: BP_ModifiableFeedbackLeverSwitch_C /Engine/Transient.World_18:PersistentLevel.BP_ModifiableFeedbackLeverSwitch_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.46.54:666][619]LogActor: Warning: BP_LookedDoor_C /Engine/Transient.World_19:PersistentLevel.BP_LookedDoor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.46.54:699][621]LogActor: Warning: BP_Door_C /Engine/Transient.World_21:PersistentLevel.BP_Door_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.46.54:802][628]LogActor: Warning: BP_BaseTNT_C /Engine/Transient.World_28:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.47.04:929][775]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/HUD/WBP_Inventory.WBP_Inventory
+[2022.02.16-13.48.30:224][786]BlueprintLog: New page: Compile WBP_Inventory
+[2022.02.16-13.48.30:259][786]LogUObjectHash: Compacting FUObjectHashTables data took   3.02ms
+[2022.02.16-13.48.30:727][836]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Inventory" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Inventory.uasset" SILENT=true
+[2022.02.16-13.48.30:744][836]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Inventory9BC2D7174C490F30A40E0F9C1A91FB11.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Inventory.uasset'
+[2022.02.16-13.48.30:755][836]AssetCheck: New page: Asset Save: WBP_Inventory
+[2022.02.16-13.48.30:755][836]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Inventory.WBP_Inventory
+[2022.02.16-13.49.12:305][728]BlueprintLog: New page: Compile BP_BuildingScapeCharacter
+[2022.02.16-13.49.12:311][728]LogBlueprint: Error: [AssetLog] C:\Users\Theo\Desktop\Unreal_Cursos\Curso_3\BuildingEscape\Content\Blueprints\Character\BP_BuildingScapeCharacter.uasset: [Compiler] This blueprint (self) is not a BP_HUDBuildingScape_C, therefore ' Target ' must have a connection.
+[2022.02.16-13.49.12:357][728]LogUObjectHash: Compacting FUObjectHashTables data took   3.04ms
+[2022.02.16-13.49.12:710][761]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_BuildingScapeCharacter7189F2D740798CEA2FB1CCB1D7CF2F7E.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Character/BP_BuildingScapeCharacter.uasset'
+[2022.02.16-13.49.12:721][761]AssetCheck: New page: Asset Save: BP_BuildingScapeCharacter
+[2022.02.16-13.49.12:721][761]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Character/BP_BuildingScapeCharacter.BP_BuildingScapeCharacter
+[2022.02.16-13.49.16:389][198]LogEditorTransaction: Undo Move Nodes
+[2022.02.16-13.49.17:098][238]LogEditorTransaction: Undo Delete current selection
+[2022.02.16-13.49.23:547][  0]BlueprintLog: New page: Compile BP_BuildingScapeCharacter
+[2022.02.16-13.49.23:597][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.93ms
+[2022.02.16-13.49.24:112][ 51]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_BuildingScapeCharacter56C655F441AFAEEFA50FB0887349C0F4.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Character/BP_BuildingScapeCharacter.uasset'
+[2022.02.16-13.49.24:122][ 51]AssetCheck: New page: Asset Save: BP_BuildingScapeCharacter
+[2022.02.16-13.49.24:122][ 51]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Character/BP_BuildingScapeCharacter.BP_BuildingScapeCharacter
+[2022.02.16-13.49.36:324][436]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/HUD/BP_HUDBuildingScape.BP_HUDBuildingScape
+[2022.02.16-13.50.28:213][513]BlueprintLog: New page: Compile BP_HUDBuildingScape
+[2022.02.16-13.50.28:273][513]LogUObjectHash: Compacting FUObjectHashTables data took   2.96ms
+[2022.02.16-13.50.28:874][577]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/BP_HUDBuildingScape" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/BP_HUDBuildingScape.uasset" SILENT=true
+[2022.02.16-13.50.28:923][577]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BP_HUDBuildingScape544FC9084C3C094EC0FF6A97CF9C0CDD.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/BP_HUDBuildingScape.uasset'
+[2022.02.16-13.50.28:934][577]AssetCheck: New page: Asset Save: BP_HUDBuildingScape
+[2022.02.16-13.50.28:934][577]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HUD/BP_HUDBuildingScape.BP_HUDBuildingScape
+[2022.02.16-13.50.30:463][740]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.16-13.50.30:468][740]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.16-13.50.30:468][740]PIE: New page: PIE session: BuildingScape (Feb 16, 2022, 7:50:30 AM)
+[2022.02.16-13.50.30:498][740]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.02.16-13.50.30:649][740]LogPlayLevel: PIE: StaticDuplicateObject took: (0.151477s)
+[2022.02.16-13.50.30:650][740]LogAIModule: Creating AISystem for world BuildingScape
+[2022.02.16-13.50.30:650][740]LogPlayLevel: PIE: World Init took: (0.000985s)
+[2022.02.16-13.50.30:650][740]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.152667s)
+[2022.02.16-13.50.30:680][740]LogUObjectHash: Compacting FUObjectHashTables data took   3.04ms
+[2022.02.16-13.50.30:681][740]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2022.02.16-13.50.30:681][740]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.16-13.50.30:681][740]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.16-13.50.30:681][740]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.16-13.50.30:681][740]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.16-13.50.30:681][740]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.16-13.50.30:681][740]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.16-13.50.30:681][740]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.16-13.50.30:681][740]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.16-13.50.30:681][740]LogAudio: Display: Using built-in audio occlusion.
+[2022.02.16-13.50.30:681][740]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.16-13.50.30:687][740]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.16-13.50.30:687][740]LogAudioMixer: Display: 1: FrontRight
+[2022.02.16-13.50.30:703][740]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.16-13.50.30:703][740]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.16-13.50.30:703][740]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.16-13.50.30:703][740]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.16-13.50.30:703][740]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.16-13.50.30:703][740]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.16-13.50.30:703][740]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.16-13.50.30:704][740]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.16-13.50.30:704][740]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.16-13.50.30:704][740]LogInit: FAudioDevice initialized.
+[2022.02.16-13.50.30:704][740]LogAudio: Display: Audio Device (ID: 7) registered with world 'BuildingScape'.
+[2022.02.16-13.50.30:719][740]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.02.16-13.50.30:731][740]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.02.16-10.50.30
+[2022.02.16-13.50.30:732][740]LogWorld: Bringing up level for play took: 0.012193
+[2022.02.16-13.50.30:732][740]LogOnline: OSS: Creating online subsystem instance for: :Context_34
+[2022.02.16-13.50.30:735][740]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2022.02.16-13.50.30:735][740]PIE: Server logged in
+[2022.02.16-13.50.30:736][740]PIE: Play in editor total start time 0.269 seconds.
+[2022.02.16-13.50.30:748][741]LogActor: Warning: BP_KeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_KeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.50.30:874][754]LogTemp: Warning: ME DESTRUI
+[2022.02.16-13.50.30:874][754]LogTemp: Warning: ME DESTRUI
+[2022.02.16-13.50.30:966][765]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.50.31:374][814]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.50.31:374][814]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.50.31:467][825]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.50.31:966][885]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.02.16-13.50.32:232][917]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.50.32:232][917]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.50.32:566][957]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.50.32:566][957]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.50.33:157][ 28]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.50.33:157][ 28]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.50.33:675][ 90]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.50.33:675][ 90]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.50.35:032][253]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.50.35:032][253]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.50.36:925][480]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.50.36:925][480]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.50.37:816][587]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.50.37:816][587]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.50.41:350][ 11]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.50.41:350][ 11]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.50.45:100][461]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.50.45:100][461]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.50.45:359][492]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.50.45:359][492]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.50.46:157][588]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.50.46:157][588]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.50.47:192][712]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.16-13.50.47:192][712]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.02.16-13.50.47:466][745]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.02.16-13.50.47:466][745]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.02.16-13.50.48:158][825]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.16-13.50.48:159][825]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.02.16-13.50.48:159][825]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.02.16-13.50.48:161][825]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.16-13.50.48:169][825]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.16-13.50.48:178][825]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.16-13.50.48:206][825]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.16-13.50.48:208][825]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.16-13.50.48:209][825]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.16-13.50.48:222][825]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.16-13.50.48:228][825]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2022.02.16-13.50.48:254][826]LogPlayLevel: Display: Destroying online subsystem :Context_34
+[2022.02.16-13.50.50:803][109]BlueprintLog: New page: Compile WBP_Inventory
+[2022.02.16-13.50.50:841][109]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2022.02.16-13.50.51:372][168]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD/WBP_Inventory" FILE="C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Inventory.uasset" SILENT=true
+[2022.02.16-13.50.51:390][168]LogSavePackage: Moving 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Saved/WBP_Inventory453390BB46213A7CFCDD08B46BCB6B20.tmp' to 'C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/HUD/WBP_Inventory.uasset'
+[2022.02.16-13.50.51:399][168]AssetCheck: New page: Asset Save: WBP_Inventory
+[2022.02.16-13.50.51:399][168]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/HUD/WBP_Inventory.WBP_Inventory
