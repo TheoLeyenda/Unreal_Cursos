@@ -2,6 +2,9 @@
 
 
 #include "QuestSystem/QuestManager.h"
+
+#include <xutility>
+
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -23,12 +26,34 @@ void AQuestManager::BeginPlay()
 
 void AQuestManager::LoadQuestsInfoDataTable()
 {
+	for(int i = 0; i < DataTable->GetRowNames().Num(); i++)
+	{
+		QuestsInfo[i].NameRowReadDataQuest = DataTable->GetRowNames()[i].ToString();
+	}
+	
 	for(FQuestInfo &QuestInfo : QuestsInfo)
 	{
 		FString Context = "Power Rager Verde";
-		FActionQuest* CurrentActionQuest = DataTable->FindRow<FActionQuest>(FName(QuestInfo.NameRowReadDataQuest),Context);
-		//Asignar toda la data conseguida en CurrentActionQuest a QuestInfo
-	}	
+		
+		FQuestStructInfo* CurrentQuestStructInfo = DataTable->FindRow<FQuestStructInfo>(FName(QuestInfo.NameRowReadDataQuest),Context);
+
+		QuestInfo.Quest = NewObject<UBaseQuest>();
+
+		if(QuestInfo.Quest != nullptr)
+		{
+			QuestInfo.Quest->QuestStructInfo.Name = CurrentQuestStructInfo->Name;
+
+			QuestInfo.Quest->QuestStructInfo.ActionsQuest.Empty();
+			for(FActionQuest ActionQuest : CurrentQuestStructInfo->ActionsQuest)
+			{
+				QuestInfo.Quest->QuestStructInfo.ActionsQuest.Add(ActionQuest);
+			}
+
+			QuestInfo.Quest->QuestStructInfo.ID = CurrentQuestStructInfo->ID;
+			QuestInfo.Quest->QuestStructInfo.QuestState = CurrentQuestStructInfo->QuestState;
+			QuestInfo.Quest->QuestStructInfo.QuetsActivatedToCompleteIDs = CurrentQuestStructInfo->QuetsActivatedToCompleteIDs;
+		}
+	}
 }
 void AQuestManager::FindQuestEvaluatorComponents()
 {
@@ -79,10 +104,14 @@ void AQuestManager::ChangeStateQuest(UBaseQuest* Quest, EQuestState NewQuestStat
 
 void AQuestManager::ChangeStateQuests(TArray<int> indexQuests, EQuestState NewQuestState)
 {
-	if(indexQuests.Num() < 0 || indexQuests.Num() >= QuestsInfo.Num()) {return;}
+	//UE_LOG(LogTemp, Warning, TEXT("ENTRE UwU %d"), indexQuests.Num());
 	for(int i = 0; i < indexQuests.Num(); i++)
 	{
-		QuestsInfo[indexQuests[i]].Quest->QuestStructInfo.QuestState = NewQuestState;
+		if(indexQuests[i] < QuestsInfo.Num() && indexQuests[i] >= 0)
+		{
+			//UE_LOG(LogTemp, Warning, TEXT("CAMBIE DE ESTADO UwU"));
+			QuestsInfo[indexQuests[i]].Quest->QuestStructInfo.QuestState = NewQuestState;
+		}
 	}
 }
 
@@ -95,7 +124,7 @@ void AQuestManager::CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponen
 			AuxQuestInfo.Quest->CheckStatus(QuestEvaluatorComponent->DataPlayer);
 			if(AuxQuestInfo.Quest->QuestStructInfo.QuestState == EQuestState::Completed && !AuxQuestInfo.bCheckedDone)
 			{
-				ChangeStateQuests(AuxQuestInfo.QuetsActivatedIDs, EQuestState::InProgress);
+				ChangeStateQuests(AuxQuestInfo.Quest->QuestStructInfo.QuetsActivatedToCompleteIDs, EQuestState::InProgress);
 				AuxQuestInfo.bCheckedDone = true;
 			}
 		}

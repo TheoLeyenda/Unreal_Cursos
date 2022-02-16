@@ -195,6 +195,11 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestStructInfo
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ActionsQuest_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ActionsQuest;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_QuetsActivatedToCompleteIDs_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_QuetsActivatedToCompleteIDs_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_QuetsActivatedToCompleteIDs;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -237,12 +242,22 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestStructInfo
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_ActionsQuest = { "ActionsQuest", nullptr, (EPropertyFlags)0x0010008000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FQuestStructInfo, ActionsQuest), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_ActionsQuest_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_ActionsQuest_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_QuetsActivatedToCompleteIDs_Inner = { "QuetsActivatedToCompleteIDs", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_QuetsActivatedToCompleteIDs_MetaData[] = {
+		{ "Category", "QuestStructInfo" },
+		{ "ModuleRelativePath", "Public/QuestSystem/BaseQuest.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_QuetsActivatedToCompleteIDs = { "QuetsActivatedToCompleteIDs", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FQuestStructInfo, QuetsActivatedToCompleteIDs), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_QuetsActivatedToCompleteIDs_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_QuetsActivatedToCompleteIDs_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FQuestStructInfo_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_ID,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_Name,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_QuestState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_ActionsQuest_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_ActionsQuest,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_QuetsActivatedToCompleteIDs_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_QuetsActivatedToCompleteIDs,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FQuestStructInfo_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
@@ -272,7 +287,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestStructInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FQuestStructInfo_Hash() { return 2653471703U; }
+	uint32 Get_Z_Construct_UScriptStruct_FQuestStructInfo_Hash() { return 1803598026U; }
 class UScriptStruct* FActionQuest::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;

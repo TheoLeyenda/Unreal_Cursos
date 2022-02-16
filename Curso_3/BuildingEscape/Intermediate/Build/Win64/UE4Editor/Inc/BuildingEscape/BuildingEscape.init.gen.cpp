@@ -47,7 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x2CB43363,
+				0xF11D2A73,
 				0x20EDCFD6,
 				METADATA_PARAMS(nullptr, 0)
 			};

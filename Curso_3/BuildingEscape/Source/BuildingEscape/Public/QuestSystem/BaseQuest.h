@@ -83,6 +83,9 @@ struct FQuestStructInfo : public FTableRowBase
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FActionQuest> ActionsQuest;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<int32> QuetsActivatedToCompleteIDs;
 };
 
 UCLASS(DefaultToInstanced, EditInlineNew, BlueprintType, Blueprintable)

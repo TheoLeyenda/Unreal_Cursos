@@ -31,6 +31,7 @@ static inline void FOnFinishAllQuest_DelegateWrapper(const FMulticastScriptDeleg
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_QuestManager_h_27_SPARSE_DATA
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_QuestManager_h_27_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execLoadQuestsInfoDataTable); \
 	DECLARE_FUNCTION(execSendEventFinishAllQuest); \
 	DECLARE_FUNCTION(execCheckQuests); \
 	DECLARE_FUNCTION(execChangeStateQuest); \
@@ -39,6 +40,7 @@ static inline void FOnFinishAllQuest_DelegateWrapper(const FMulticastScriptDeleg
 
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_QuestManager_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execLoadQuestsInfoDataTable); \
 	DECLARE_FUNCTION(execSendEventFinishAllQuest); \
 	DECLARE_FUNCTION(execCheckQuests); \
 	DECLARE_FUNCTION(execChangeStateQuest); \

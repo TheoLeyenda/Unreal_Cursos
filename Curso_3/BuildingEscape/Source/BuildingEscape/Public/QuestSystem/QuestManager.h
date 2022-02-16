@@ -13,12 +13,10 @@ USTRUCT(BlueprintType)
 struct FQuestInfo
 {
 	GENERATED_BODY()
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	UBaseQuest* Quest;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	FString NameRowReadDataQuest;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<int32> QuetsActivatedIDs;
 	UPROPERTY(VisibleAnywhere)
 	bool bCheckedDone = false;
 };
@@ -37,7 +35,7 @@ protected:
 	virtual void BeginPlay() override;
 
 public:	
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FQuestInfo> QuestsInfo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
