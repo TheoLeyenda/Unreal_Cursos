@@ -2,9 +2,6 @@
 
 
 #include "QuestSystem/QuestManager.h"
-
-#include <xutility>
-
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -26,8 +23,10 @@ void AQuestManager::BeginPlay()
 
 void AQuestManager::LoadQuestsInfoDataTable()
 {
+	QuestsInfo.Empty();
 	for(int i = 0; i < DataTable->GetRowNames().Num(); i++)
 	{
+		QuestsInfo.Add(FQuestInfo());
 		QuestsInfo[i].NameRowReadDataQuest = DataTable->GetRowNames()[i].ToString();
 	}
 	
@@ -102,15 +101,16 @@ void AQuestManager::ChangeStateQuest(UBaseQuest* Quest, EQuestState NewQuestStat
 	}
 }
 
-void AQuestManager::ChangeStateQuests(TArray<int> indexQuests, EQuestState NewQuestState)
+void AQuestManager::ChangeStateQuests(TArray<int> IdsQuest, EQuestState NewQuestState)
 {
-	//UE_LOG(LogTemp, Warning, TEXT("ENTRE UwU %d"), indexQuests.Num());
-	for(int i = 0; i < indexQuests.Num(); i++)
+	for(int i = 0; i < IdsQuest.Num(); i++)
 	{
-		if(indexQuests[i] < QuestsInfo.Num() && indexQuests[i] >= 0)
+		for(FQuestInfo &QuestInfo : QuestsInfo)
 		{
-			//UE_LOG(LogTemp, Warning, TEXT("CAMBIE DE ESTADO UwU"));
-			QuestsInfo[indexQuests[i]].Quest->QuestStructInfo.QuestState = NewQuestState;
+			if(QuestInfo.Quest->QuestStructInfo.ID == IdsQuest[i])
+			{
+				QuestInfo.Quest->QuestStructInfo.QuestState = NewQuestState;
+			}
 		}
 	}
 }

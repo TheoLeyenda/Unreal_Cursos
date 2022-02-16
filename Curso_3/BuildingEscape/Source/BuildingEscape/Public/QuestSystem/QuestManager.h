@@ -34,7 +34,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FQuestInfo> QuestsInfo;
 
@@ -55,7 +56,7 @@ public:
 	
 	void ChangeStateQuest(UBaseQuest* Quest, EQuestState NewQuestState);
 
-	void ChangeStateQuests(TArray<int> indexQuests, EQuestState NewQuestState);
+	void ChangeStateQuests(TArray<int> IdsQuest, EQuestState NewQuestState);
 	
 	UFUNCTION()
 	void CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponent);
