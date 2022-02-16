@@ -379,9 +379,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActionQuest
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_RequiredDataPlayer_MetaData[] = {
 		{ "Category", "ActionQuest" },
-		{ "Comment", "//UPROPERTY(EditAnywhere, BlueprintReadWrite)\n//int ID;\n" },
 		{ "ModuleRelativePath", "Public/QuestSystem/BaseQuest.h" },
-		{ "ToolTip", "UPROPERTY(EditAnywhere, BlueprintReadWrite)\nint ID;" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_RequiredDataPlayer = { "RequiredDataPlayer", nullptr, (EPropertyFlags)0x0010008000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FActionQuest, RequiredDataPlayer), Z_Construct_UScriptStruct_FDataPlayer, METADATA_PARAMS(Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_RequiredDataPlayer_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FActionQuest_Statics::NewProp_RequiredDataPlayer_MetaData)) };
@@ -419,7 +417,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActionQuest
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FActionQuest_Hash() { return 762241136U; }
+	uint32 Get_Z_Construct_UScriptStruct_FActionQuest_Hash() { return 2543701375U; }
 	DEFINE_FUNCTION(UBaseQuest::execCheckStatus)
 	{
 		P_GET_STRUCT(FDataPlayer,Z_Param_DataPlayer);

@@ -39,14 +39,27 @@ struct FDataPlayer
 
 	UPROPERTY(VisibleAnywhere)
 	UInventory* InventoryComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool bUseFatnessText;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Fatness;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	FString TextProgressFatness;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool bUseLifesText;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int Lifes;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	FString TextProgressLifes;
 	
 	UPROPERTY(EditAnywhere)
-	float Fatness;
-	UPROPERTY(EditAnywhere)
-	int Lifes;
-	UPROPERTY(EditAnywhere)
 	FLastInteractActorInfo LastInteractActorInfo;
-	//DATA QUE RECIVO DE LAS TASK PARA MANDAR AL QuestManager.
 };
 
 UCLASS()

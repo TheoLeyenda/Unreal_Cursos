@@ -32,24 +32,38 @@ struct FActionQuest
 	UPROPERTY(EditAnywhere)
 	bool bUseIdentificationObject = true;
 	
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	//int ID;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FDataPlayer RequiredDataPlayer;
 	
 	void CheckObjetiveComplete(FDataPlayer CompareData)
 	{
-
 		bool bInventoryCondition = true;
-		//UE_LOG(LogTemp, Warning, TEXT("Cantidad de items: %d"), RequiredDataPlayer.NeedItems.Num());
-		//UE_LOG(LogTemp, Warning, TEXT("InventoryComponent es %s"), CompareData.InventoryComponent ? TEXT("TRUE") : TEXT("FALSE"));
+		
+		//FString Toto = FString::SanitizeFloat(0.5f) + FString("321");
+		/*
+		FString A = FString("");
+		FString B = FString("");
+		A.Append(B);
+		A = A + B;
+		 */
+
+		FString StringCompareData = FString("(") + FString::SanitizeFloat(CompareData.Fatness);
+		FString StringRequiredDataPlayer =  FString::SanitizeFloat(RequiredDataPlayer.Fatness) + FString(")");
+		
+		RequiredDataPlayer.TextProgressFatness =  StringCompareData + FString("/") + StringRequiredDataPlayer;
+		
+		StringCompareData = FString("(") + FString::SanitizeFloat(CompareData.Lifes);
+		StringRequiredDataPlayer =  FString::SanitizeFloat(RequiredDataPlayer.Lifes) + FString(")");
+
+		RequiredDataPlayer.TextProgressLifes = StringCompareData + FString("/") + StringRequiredDataPlayer;
+
+		//UE_LOG(LogTemp, Warning, TEXT("%s"), *RequiredDataPlayer.TextProgressFatness);
+		
 		if(RequiredDataPlayer.NeedItems.Num() > 0 && CompareData.InventoryComponent)
 		{
 			for(int i = 0; i < RequiredDataPlayer.NeedItems.Num(); i++)
 			{
 				bInventoryCondition = CompareData.InventoryComponent->CheckHaveItem(RequiredDataPlayer.NeedItems[i]);
-				//UE_LOG(LogTemp, Warning, TEXT("bInventoryCondition es %s"), bInventoryCondition ? TEXT("TRUE") : TEXT("FALSE"));
 			}
 		}
 

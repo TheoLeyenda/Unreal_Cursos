@@ -62,13 +62,31 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFDataPlayer
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InventoryComponent;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUseFatnessText_MetaData[];
+#endif
+		static void NewProp_bUseFatnessText_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseFatnessText;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Fatness_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Fatness;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TextProgressFatness_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_TextProgressFatness;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUseLifesText_MetaData[];
+#endif
+		static void NewProp_bUseLifesText_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseLifesText;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Lifes_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Lifes;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TextProgressLifes_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_TextProgressLifes;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LastInteractActorInfo_MetaData[];
 #endif
@@ -103,19 +121,55 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFDataPlayer
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_InventoryComponent = { "InventoryComponent", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, InventoryComponent), Z_Construct_UClass_UInventory_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_InventoryComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_InventoryComponent_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseFatnessText_MetaData[] = {
+		{ "Category", "DataPlayer" },
+		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
+	};
+#endif
+	void Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseFatnessText_SetBit(void* Obj)
+	{
+		((FDataPlayer*)Obj)->bUseFatnessText = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseFatnessText = { "bUseFatnessText", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FDataPlayer), &Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseFatnessText_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseFatnessText_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseFatnessText_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Fatness_MetaData[] = {
 		{ "Category", "DataPlayer" },
 		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Fatness = { "Fatness", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, Fatness), METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Fatness_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Fatness_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Fatness = { "Fatness", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, Fatness), METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Fatness_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Fatness_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_TextProgressFatness_MetaData[] = {
+		{ "Category", "DataPlayer" },
+		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_TextProgressFatness = { "TextProgressFatness", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, TextProgressFatness), METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_TextProgressFatness_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_TextProgressFatness_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseLifesText_MetaData[] = {
+		{ "Category", "DataPlayer" },
+		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
+	};
+#endif
+	void Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseLifesText_SetBit(void* Obj)
+	{
+		((FDataPlayer*)Obj)->bUseLifesText = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseLifesText = { "bUseLifesText", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FDataPlayer), &Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseLifesText_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseLifesText_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseLifesText_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes_MetaData[] = {
 		{ "Category", "DataPlayer" },
 		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes = { "Lifes", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, Lifes), METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes = { "Lifes", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, Lifes), METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_TextProgressLifes_MetaData[] = {
+		{ "Category", "DataPlayer" },
+		{ "ModuleRelativePath", "Public/QuestSystem/StructsDataSystemQuest.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_TextProgressLifes = { "TextProgressLifes", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FDataPlayer, TextProgressLifes), METADATA_PARAMS(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_TextProgressLifes_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_TextProgressLifes_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_LastInteractActorInfo_MetaData[] = {
 		{ "Category", "DataPlayer" },
@@ -127,8 +181,12 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFDataPlayer
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_NeedItems,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_InventoryComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseFatnessText,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Fatness,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_TextProgressFatness,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_bUseLifesText,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_Lifes,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_TextProgressLifes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FDataPlayer_Statics::NewProp_LastInteractActorInfo,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FDataPlayer_Statics::ReturnStructParams = {
@@ -159,7 +217,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFDataPlayer
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FDataPlayer_Hash() { return 1996790497U; }
+	uint32 Get_Z_Construct_UScriptStruct_FDataPlayer_Hash() { return 3206524762U; }
 class UScriptStruct* FLastInteractActorInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
