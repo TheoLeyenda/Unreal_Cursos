@@ -7,6 +7,8 @@
 #include "InteractInterface.h"
 #include "InteractComponent.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnInteract, UInteractComponent*, InteractComponent);
+
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class BUILDINGESCAPE_API UInteractComponent : public UActorComponent
 {
@@ -30,7 +32,14 @@ protected:
 	float Reach = 200.0f;
 	bool bEnableInteract = false;
 public:
+
+	UPROPERTY(BlueprintReadWrite)
+	FOnInteract OnInteract;
+
+	UPROPERTY(VisibleAnywhere)
+	AActor* ActorHit;
 	
+	UFUNCTION()
 	void Interact(class ABuildingScapeCharacter* Character);
 	void CheckEnableInteract(float DeltaSeconds);
 };

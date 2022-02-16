@@ -32,11 +32,11 @@ FHitResult UInteractComponent::GetFirstPhysicsBodyInReach()
 		TraceParams
 	);
 
-	AActor* ActorHit = Hit.GetActor();
-/*	if(ActorHit)
+/*	AActor* ActorHit2 = Hit.GetActor();
+	if(ActorHit2)
 	{
 		//Logging out to test
-		UE_LOG(LogTemp, Warning, TEXT("Line trace has hit: %s"), *ActorHit->GetName());
+		UE_LOG(LogTemp, Warning, TEXT("Line trace has hit: %s"), *ActorHit2->GetName());
 	}
 */
 	return Hit;
@@ -46,7 +46,7 @@ void UInteractComponent::CheckEnableInteract(float DeltaSeconds)
 {
 	FHitResult HitResult = GetFirstPhysicsBodyInReach();
 
-	AActor* ActorHit = HitResult.GetActor();
+	ActorHit = HitResult.GetActor();
 	//ActorHit->Implements<IInteractInterface>();
 	if(!InteractInterface)
 	{
@@ -69,6 +69,10 @@ void UInteractComponent::Interact(ABuildingScapeCharacter* Character)
 {
 	if(bEnableInteract)
 	{
+		if(ActorHit != nullptr)
+		{
+			OnInteract.Broadcast(this);
+		}
 		InteractInterface->ExecuteInteractInterface(Character);
 	}
 }
