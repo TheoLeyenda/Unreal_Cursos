@@ -52,7 +52,7 @@ public:
 	void FindQuestEvaluatorComponents();
 
 	UFUNCTION()
-	void ChangeStateQuest(int indexQuest, EQuestState NewQuestState);
+	void ChangeStateQuest(int IdQuest, EQuestState NewQuestState);
 	
 	void ChangeStateQuest(UBaseQuest* Quest, EQuestState NewQuestState);
 

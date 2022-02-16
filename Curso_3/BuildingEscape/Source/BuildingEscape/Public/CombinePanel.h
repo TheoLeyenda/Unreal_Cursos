@@ -18,6 +18,10 @@ public:
 	ACombinePanel();
 
 	bool IsCompleteCombinePanel();
+
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCompleteCombinePanel, ACombinePanel*, CombinePanel);
+
+	FOnCompleteCombinePanel OnCompleteCombinePanel;
 protected:
 
 	UPROPERTY(EditAnywhere)
@@ -32,6 +36,7 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	TArray<int> CodeNumbers;
 	TArray<int> AuxCodeNumbers;
+	
 	UPROPERTY(VisibleAnywhere)
 	TArray<int> CurrentAnswer;
 	

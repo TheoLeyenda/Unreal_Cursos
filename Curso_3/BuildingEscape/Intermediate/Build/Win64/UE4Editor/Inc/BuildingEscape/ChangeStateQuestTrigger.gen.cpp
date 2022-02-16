@@ -16,7 +16,6 @@ void EmptyLinkFunctionForGeneratedCodeChangeStateQuestTrigger() {}
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FChangeStateQuestInfo();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	BUILDINGESCAPE_API UEnum* Z_Construct_UEnum_BuildingEscape_EQuestState();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UBaseQuest_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AChangeStateQuestTrigger_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AChangeStateQuestTrigger();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AObjectsInteractTrigger();
@@ -58,10 +57,6 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFChangeStateQues
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_QuestID_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_QuestID;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Quest_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Quest;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -89,18 +84,9 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFChangeStateQues
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_QuestID = { "QuestID", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FChangeStateQuestInfo, QuestID), METADATA_PARAMS(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_QuestID_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_QuestID_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_Quest_MetaData[] = {
-		{ "Category", "ChangeStateQuestInfo" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/ChangeStateQuestTrigger.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_Quest = { "Quest", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FChangeStateQuestInfo, Quest), Z_Construct_UClass_UBaseQuest_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_Quest_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_Quest_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_NewQuestState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_QuestID,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::NewProp_Quest,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
@@ -112,7 +98,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFChangeStateQues
 		Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::PropPointers,
 		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000005),
+		EStructFlags(0x00000001),
 		METADATA_PARAMS(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FChangeStateQuestInfo_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FChangeStateQuestInfo()
@@ -130,7 +116,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFChangeStateQues
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FChangeStateQuestInfo_Hash() { return 899458881U; }
+	uint32 Get_Z_Construct_UScriptStruct_FChangeStateQuestInfo_Hash() { return 673375044U; }
 	void AChangeStateQuestTrigger::StaticRegisterNativesAChangeStateQuestTrigger()
 	{
 	}
@@ -174,14 +160,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFChangeStateQues
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_QuestManager = { "QuestManager", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChangeStateQuestTrigger, QuestManager), Z_Construct_UClass_AQuestManager_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_QuestManager_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_QuestManager_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_ChangeStateQuestsInfo_Inner = { "ChangeStateQuestsInfo", nullptr, (EPropertyFlags)0x0000008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FChangeStateQuestInfo, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_ChangeStateQuestsInfo_Inner = { "ChangeStateQuestsInfo", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FChangeStateQuestInfo, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_ChangeStateQuestsInfo_MetaData[] = {
 		{ "Category", "ChangeStateQuestTrigger" },
 		{ "ModuleRelativePath", "Public/ChangeStateQuestTrigger.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_ChangeStateQuestsInfo = { "ChangeStateQuestsInfo", nullptr, (EPropertyFlags)0x0020088000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChangeStateQuestTrigger, ChangeStateQuestsInfo), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_ChangeStateQuestsInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_ChangeStateQuestsInfo_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_ChangeStateQuestsInfo = { "ChangeStateQuestsInfo", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AChangeStateQuestTrigger, ChangeStateQuestsInfo), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_ChangeStateQuestsInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_ChangeStateQuestsInfo_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AChangeStateQuestTrigger_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_QuestManager,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChangeStateQuestTrigger_Statics::NewProp_ChangeStateQuestsInfo_Inner,
@@ -214,7 +200,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFChangeStateQues
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AChangeStateQuestTrigger, 2432548003);
+	IMPLEMENT_CLASS(AChangeStateQuestTrigger, 2749086944);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AChangeStateQuestTrigger>()
 	{
 		return AChangeStateQuestTrigger::StaticClass();

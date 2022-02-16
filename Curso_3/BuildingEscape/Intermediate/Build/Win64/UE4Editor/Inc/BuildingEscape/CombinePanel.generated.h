@@ -8,10 +8,24 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ACombinePanel;
 #ifdef BUILDINGESCAPE_CombinePanel_generated_h
 #error "CombinePanel.generated.h already included, missing '#pragma once' in CombinePanel.h"
 #endif
 #define BUILDINGESCAPE_CombinePanel_generated_h
+
+#define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_22_DELEGATE \
+struct CombinePanel_eventOnCompleteCombinePanel_Parms \
+{ \
+	ACombinePanel* CombinePanel; \
+}; \
+static inline void FOnCompleteCombinePanel_DelegateWrapper(const FMulticastScriptDelegate& OnCompleteCombinePanel, ACombinePanel* CombinePanel) \
+{ \
+	CombinePanel_eventOnCompleteCombinePanel_Parms Parms; \
+	Parms.CombinePanel=CombinePanel; \
+	OnCompleteCombinePanel.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
 
 #define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_SPARSE_DATA
 #define BuildingEscape_Source_BuildingEscape_Public_CombinePanel_h_14_RPC_WRAPPERS

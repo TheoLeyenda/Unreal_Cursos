@@ -184,11 +184,11 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 	}
 	DEFINE_FUNCTION(AQuestManager::execChangeStateQuest)
 	{
-		P_GET_PROPERTY(FIntProperty,Z_Param_indexQuest);
+		P_GET_PROPERTY(FIntProperty,Z_Param_IdQuest);
 		P_GET_PROPERTY(FByteProperty,Z_Param_NewQuestState);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->ChangeStateQuest(Z_Param_indexQuest,EQuestState(Z_Param_NewQuestState));
+		P_THIS->ChangeStateQuest(Z_Param_IdQuest,EQuestState(Z_Param_NewQuestState));
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AQuestManager::execFindQuestEvaluatorComponents)
@@ -214,10 +214,10 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 	{
 		struct QuestManager_eventChangeStateQuest_Parms
 		{
-			int32 indexQuest;
+			int32 IdQuest;
 			TEnumAsByte<EQuestState> NewQuestState;
 		};
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_indexQuest;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_IdQuest;
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_NewQuestState;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -225,10 +225,10 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AQuestManager_ChangeStateQuest_Statics::NewProp_indexQuest = { "indexQuest", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(QuestManager_eventChangeStateQuest_Parms, indexQuest), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AQuestManager_ChangeStateQuest_Statics::NewProp_IdQuest = { "IdQuest", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(QuestManager_eventChangeStateQuest_Parms, IdQuest), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AQuestManager_ChangeStateQuest_Statics::NewProp_NewQuestState = { "NewQuestState", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(QuestManager_eventChangeStateQuest_Parms, NewQuestState), Z_Construct_UEnum_BuildingEscape_EQuestState, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AQuestManager_ChangeStateQuest_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AQuestManager_ChangeStateQuest_Statics::NewProp_indexQuest,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AQuestManager_ChangeStateQuest_Statics::NewProp_IdQuest,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AQuestManager_ChangeStateQuest_Statics::NewProp_NewQuestState,
 	};
 #if WITH_METADATA
@@ -386,7 +386,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AQuestManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AQuestManager_ChangeStateQuest, "ChangeStateQuest" }, // 3860857611
+		{ &Z_Construct_UFunction_AQuestManager_ChangeStateQuest, "ChangeStateQuest" }, // 1207587609
 		{ &Z_Construct_UFunction_AQuestManager_CheckQuests, "CheckQuests" }, // 1827095961
 		{ &Z_Construct_UFunction_AQuestManager_FindQuestEvaluatorComponents, "FindQuestEvaluatorComponents" }, // 1346233233
 		{ &Z_Construct_UFunction_AQuestManager_LoadQuestsInfoDataTable, "LoadQuestsInfoDataTable" }, // 2266640779
@@ -456,7 +456,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AQuestManager, 1927370199);
+	IMPLEMENT_CLASS(AQuestManager, 3996735842);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AQuestManager>()
 	{
 		return AQuestManager::StaticClass();

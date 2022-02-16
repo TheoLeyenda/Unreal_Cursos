@@ -92,6 +92,7 @@ void ALeverSwitchCombinePanel::Tick(float DeltaSeconds)
 			SetActorTickEnabled(false);
 			LeverSwitchesInfo[i].LeverSwitch->SetEnableSpawners(true);
 		}
+		OnCompleteCombinePanel.Broadcast(this);
 	}
 	
 	for(int i = 0; i < LeverSwitchesInfo.Num(); i++)

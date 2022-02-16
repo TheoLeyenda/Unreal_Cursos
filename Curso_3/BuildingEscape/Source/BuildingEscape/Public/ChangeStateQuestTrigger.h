@@ -22,9 +22,6 @@ struct FChangeStateQuestInfo
 
 	UPROPERTY(EditAnywhere)
 	int QuestID;
-
-	UPROPERTY(EditAnywhere)
-	UBaseQuest* Quest;
 };
 
 UCLASS()

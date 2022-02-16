@@ -48,6 +48,7 @@ bool AObjectsInteractTrigger::ExecuteInteractInterface(AActor* Actor)
 	
 	if(LastObjectRegister == ELastStateObjectOverlap::BeginOverlap)
 	{
+		OnCompleteInteractTrigger.Broadcast(this);
 		bIsOverlapWithSomeSpecificObject = true;
 	}
 	else if(ActorsInOverlap.Num() <= 0)

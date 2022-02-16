@@ -79,11 +79,15 @@ void AQuestManager::FindQuestEvaluatorComponents()
 	}
 }
 
-void AQuestManager::ChangeStateQuest(int indexQuest, EQuestState NewQuestState)
+void AQuestManager::ChangeStateQuest(int IdQuest, EQuestState NewQuestState)
 {
-	if(indexQuest >= QuestsInfo.Num() || indexQuest < 0){return;}
-
-	QuestsInfo[indexQuest].Quest->QuestStructInfo.QuestState = NewQuestState;
+	for(FQuestInfo &QuestInfo : QuestsInfo)
+	{
+		if(QuestInfo.Quest->QuestStructInfo.ID == IdQuest)
+		{
+			QuestInfo.Quest->QuestStructInfo.QuestState = NewQuestState;
+		}
+	}
 }
 
 void AQuestManager::ChangeStateQuest(UBaseQuest* Quest, EQuestState NewQuestState)
@@ -105,13 +109,7 @@ void AQuestManager::ChangeStateQuests(TArray<int> IdsQuest, EQuestState NewQuest
 {
 	for(int i = 0; i < IdsQuest.Num(); i++)
 	{
-		for(FQuestInfo &QuestInfo : QuestsInfo)
-		{
-			if(QuestInfo.Quest->QuestStructInfo.ID == IdsQuest[i])
-			{
-				QuestInfo.Quest->QuestStructInfo.QuestState = NewQuestState;
-			}
-		}
+		ChangeStateQuest(IdsQuest[i], NewQuestState);
 	}
 }
 
