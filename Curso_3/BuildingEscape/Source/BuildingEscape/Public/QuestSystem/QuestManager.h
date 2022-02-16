@@ -36,7 +36,7 @@ protected:
 
 public:
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	TArray<FQuestInfo> QuestsInfo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
