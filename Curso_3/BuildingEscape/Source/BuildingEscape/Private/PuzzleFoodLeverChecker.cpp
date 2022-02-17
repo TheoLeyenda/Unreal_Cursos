@@ -59,7 +59,7 @@ bool APuzzleFoodLeverChecker::CheckTargetFoodValue()
 		return false;
 	}
 
-	if(BuildingScapeCharacter->GetPlayerFatness() == TargetFoodValue)
+	if(BuildingScapeCharacter->GetPlayerFatness() >= TargetFoodValue)
 	{
 		return true;
 	}
