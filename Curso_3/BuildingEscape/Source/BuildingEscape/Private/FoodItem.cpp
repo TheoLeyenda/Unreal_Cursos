@@ -8,6 +8,6 @@ void UFoodItem::Use(ABuildingScapeCharacter* Character)
 	Super::Use(Character);
 	if(Character)
 	{
-		Character->SetPlayerFatness(Character->GetPlayerFatness() + HealthToHeal);
+		Character->AddPlayerFatness(AddFatness);
 	}
 }

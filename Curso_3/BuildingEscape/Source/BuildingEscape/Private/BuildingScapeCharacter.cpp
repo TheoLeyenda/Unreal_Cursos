@@ -131,11 +131,6 @@ void ABuildingScapeCharacter::RestartGamePressed()
 	BuildingEscapeGameMode->Restart();
 }
 
-void ABuildingScapeCharacter::SetPlayerFatness(float Value)
-{
-	Fatness = Value;
-}
-
 void ABuildingScapeCharacter::GrabPressed()
 {
 	if(Grabber)
@@ -152,9 +147,32 @@ void ABuildingScapeCharacter::GrabRelease()
 	}
 }
 
+void ABuildingScapeCharacter::SetPlayerFatness(float Value)
+{
+	OnUpdatePlayerStats.Broadcast(this);
+	Fatness = Value;
+}
 float ABuildingScapeCharacter::GetPlayerFatness()
 {
 	return Fatness;
+}
+
+void ABuildingScapeCharacter::AddPlayerFatness(float Value)
+{
+	OnUpdatePlayerStats.Broadcast(this);
+	Fatness+= Value;
+}
+
+void ABuildingScapeCharacter::SubstractPlayerFatness(float Value)
+{
+	OnUpdatePlayerStats.Broadcast(this);
+	Fatness-= Value;
+}
+
+void ABuildingScapeCharacter::SetPlayerLifes(int Value)
+{
+	OnUpdatePlayerStats.Broadcast(this);
+	Lifes = Value;
 }
 
 int ABuildingScapeCharacter::GetPlayerLifes()
@@ -164,12 +182,14 @@ int ABuildingScapeCharacter::GetPlayerLifes()
 
 void ABuildingScapeCharacter::SubstractLifes(int Value)
 {
-	Lifes -= Value;
+	OnUpdatePlayerStats.Broadcast(this);
 	OnSubstractLife.Broadcast();
+	Lifes -= Value;
 }
 
 void ABuildingScapeCharacter::AddLifes(int Value)
 {
+	OnUpdatePlayerStats.Broadcast(this);
 	Lifes += Value;
 }
 

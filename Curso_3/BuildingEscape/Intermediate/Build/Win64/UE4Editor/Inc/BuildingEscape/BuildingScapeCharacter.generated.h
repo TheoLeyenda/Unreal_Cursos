@@ -8,10 +8,24 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ABuildingScapeCharacter;
 #ifdef BUILDINGESCAPE_BuildingScapeCharacter_generated_h
 #error "BuildingScapeCharacter.generated.h already included, missing '#pragma once' in BuildingScapeCharacter.h"
 #endif
 #define BUILDINGESCAPE_BuildingScapeCharacter_generated_h
+
+#define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_23_DELEGATE \
+struct BuildingScapeCharacter_eventOnUpdatePlayerStats_Parms \
+{ \
+	ABuildingScapeCharacter* BuildingScapeCharacter; \
+}; \
+static inline void FOnUpdatePlayerStats_DelegateWrapper(const FMulticastScriptDelegate& OnUpdatePlayerStats, ABuildingScapeCharacter* BuildingScapeCharacter) \
+{ \
+	BuildingScapeCharacter_eventOnUpdatePlayerStats_Parms Parms; \
+	Parms.BuildingScapeCharacter=BuildingScapeCharacter; \
+	OnUpdatePlayerStats.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
 
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_10_DELEGATE \
 static inline void FOnSubstractLife_DelegateWrapper(const FMulticastScriptDelegate& OnSubstractLife) \
@@ -23,13 +37,27 @@ static inline void FOnSubstractLife_DelegateWrapper(const FMulticastScriptDelega
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_SPARSE_DATA
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAddLifes); \
 	DECLARE_FUNCTION(execSubstractLifes); \
+	DECLARE_FUNCTION(execGetPlayerLifes); \
+	DECLARE_FUNCTION(execSetPlayerLifes); \
+	DECLARE_FUNCTION(execSubstractPlayerFatness); \
+	DECLARE_FUNCTION(execAddPlayerFatness); \
+	DECLARE_FUNCTION(execGetPlayerFatness); \
+	DECLARE_FUNCTION(execSetPlayerFatness); \
 	DECLARE_FUNCTION(execDisableMovement);
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_BuildingScapeCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execAddLifes); \
 	DECLARE_FUNCTION(execSubstractLifes); \
+	DECLARE_FUNCTION(execGetPlayerLifes); \
+	DECLARE_FUNCTION(execSetPlayerLifes); \
+	DECLARE_FUNCTION(execSubstractPlayerFatness); \
+	DECLARE_FUNCTION(execAddPlayerFatness); \
+	DECLARE_FUNCTION(execGetPlayerFatness); \
+	DECLARE_FUNCTION(execSetPlayerFatness); \
 	DECLARE_FUNCTION(execDisableMovement);
 
 

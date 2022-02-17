@@ -13,6 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnGameOverActivate__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnSubstractLife__DelegateSignature();
+	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_ABuildingScapeCharacter_OnUpdatePlayerStats__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnPlayerInventoryUpdated__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_UInventory_OnPlayerInventorySpecificUpdate__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature();
@@ -33,6 +34,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 			static UObject* (*const SingletonFuncArray[])() = {
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnGameOverActivate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnSubstractLife__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_ABuildingScapeCharacter_OnUpdatePlayerStats__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnPlayerInventoryUpdated__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_UInventory_OnPlayerInventorySpecificUpdate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature,
@@ -51,8 +53,8 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x6CDB502D,
-				0x4BAA2904,
+				0x0D1BDAE0,
+				0x71F1DCC8,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

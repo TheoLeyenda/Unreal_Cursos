@@ -61,7 +61,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFoodItem); \
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_FoodItem_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__HealthToHeal() { return STRUCT_OFFSET(UFoodItem, HealthToHeal); }
+	FORCEINLINE static uint32 __PPO__AddFatness() { return STRUCT_OFFSET(UFoodItem, AddFatness); }
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_FoodItem_h_12_PROLOG

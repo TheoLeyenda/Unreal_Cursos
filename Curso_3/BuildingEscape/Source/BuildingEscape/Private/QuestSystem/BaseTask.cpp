@@ -20,7 +20,6 @@ void UBaseTask::FindInformation()
 	{
 		UE_LOG(LogTemp, Error, TEXT("NO SE ENCONTRO AL BUILDING CHARACTER"))
 	}
-	
 }
 
 void UBaseTask::SettingDataBaseTask(bool SendEvent)

@@ -18,5 +18,5 @@ protected:
 	virtual void Use(ABuildingScapeCharacter* Character) override;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category= "Item", meta = (ClampMin = 0.0))
-	float HealthToHeal = 10.0f;
+	float AddFatness = 10.0f;
 };

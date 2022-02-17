@@ -19,7 +19,12 @@ class BUILDINGESCAPE_API ABuildingScapeCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	ABuildingScapeCharacter();
+	
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnUpdatePlayerStats, ABuildingScapeCharacter*, BuildingScapeCharacter);
 
+	UPROPERTY(BlueprintAssignable, BlueprintCallable)
+	FOnUpdatePlayerStats OnUpdatePlayerStats;
+	
 protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Camera)
@@ -67,19 +72,26 @@ public:
 	void Turn(float Value);
 
 	void LookUp(float Value);
-	
-	void SetPlayerFatness(float Value);
 
+	UFUNCTION(BlueprintCallable)
+	void SetPlayerFatness(float Value);
+	UFUNCTION(BlueprintCallable)
+	float GetPlayerFatness();
+	UFUNCTION(BlueprintCallable)
+	void AddPlayerFatness(float Value);
+	UFUNCTION(BlueprintCallable)
+	void SubstractPlayerFatness(float Value);
+	
 	void GrabPressed();
 	void GrabRelease();
 	
-	float GetPlayerFatness();
-
+	UFUNCTION(BlueprintCallable)
+	void SetPlayerLifes(int Value);
+	UFUNCTION(BlueprintCallable)
 	int GetPlayerLifes();
-
 	UFUNCTION(BlueprintCallable)
 	void SubstractLifes(int Value);
-
+	UFUNCTION(BlueprintCallable)
 	void AddLifes(int Value);
 	
 	void RestartGamePressed();

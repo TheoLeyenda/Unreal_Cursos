@@ -32,9 +32,9 @@ void EmptyLinkFunctionForGeneratedCodeFoodItem() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealthToHeal_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AddFatness_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_HealthToHeal;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AddFatness;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -51,15 +51,15 @@ void EmptyLinkFunctionForGeneratedCodeFoodItem() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFoodItem_Statics::NewProp_HealthToHeal_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFoodItem_Statics::NewProp_AddFatness_MetaData[] = {
 		{ "Category", "Item" },
 		{ "ClampMin", "0.000000" },
 		{ "ModuleRelativePath", "Public/FoodItem.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFoodItem_Statics::NewProp_HealthToHeal = { "HealthToHeal", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFoodItem, HealthToHeal), METADATA_PARAMS(Z_Construct_UClass_UFoodItem_Statics::NewProp_HealthToHeal_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UFoodItem_Statics::NewProp_HealthToHeal_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFoodItem_Statics::NewProp_AddFatness = { "AddFatness", nullptr, (EPropertyFlags)0x0020080000010005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFoodItem, AddFatness), METADATA_PARAMS(Z_Construct_UClass_UFoodItem_Statics::NewProp_AddFatness_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UFoodItem_Statics::NewProp_AddFatness_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFoodItem_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFoodItem_Statics::NewProp_HealthToHeal,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFoodItem_Statics::NewProp_AddFatness,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFoodItem_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UFoodItem>::IsAbstract,
@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFoodItem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFoodItem, 255670687);
+	IMPLEMENT_CLASS(UFoodItem, 2009439058);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UFoodItem>()
 	{
 		return UFoodItem::StaticClass();

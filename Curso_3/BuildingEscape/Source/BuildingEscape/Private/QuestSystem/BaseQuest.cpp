@@ -43,4 +43,5 @@ void UBaseQuest::CheckStatus(FDataPlayer DataPlayer)
 		}
 	}
 	CheckCompleteQuest();
+	OnUpdateQuest.Broadcast();
 }

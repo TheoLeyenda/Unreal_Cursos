@@ -46,7 +46,9 @@ struct FActionQuest
 		A.Append(B);
 		A = A + B;
 		 */
-
+		
+		UE_LOG(LogTemp, Warning, TEXT("ACTUALICE ALIMENTO"));
+		
 		FString StringCompareData = FString("(") + FString::SanitizeFloat(CompareData.Fatness);
 		FString StringRequiredDataPlayer =  FString::SanitizeFloat(RequiredDataPlayer.Fatness) + FString(")");
 		
@@ -56,8 +58,6 @@ struct FActionQuest
 		StringRequiredDataPlayer =  FString::SanitizeFloat(RequiredDataPlayer.Lifes) + FString(")");
 
 		RequiredDataPlayer.TextProgressLifes = StringCompareData + FString("/") + StringRequiredDataPlayer;
-
-		//UE_LOG(LogTemp, Warning, TEXT("%s"), *RequiredDataPlayer.TextProgressFatness);
 		
 		if(RequiredDataPlayer.NeedItems.Num() > 0 && CompareData.InventoryComponent)
 		{
@@ -108,6 +108,7 @@ class BUILDINGESCAPE_API UBaseQuest : public UObject
 	GENERATED_BODY()
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnFinishQuest, UBaseQuest*, Quest);
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUpdateQuest);
+	//DECLARE_DYNAMIC_MULTICAST_DELEGATE()
 public:
 	
 	UPROPERTY(BlueprintAssignable, BlueprintCallable)

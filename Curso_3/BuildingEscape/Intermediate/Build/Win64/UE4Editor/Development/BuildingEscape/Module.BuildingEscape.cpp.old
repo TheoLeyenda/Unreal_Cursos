@@ -40,6 +40,7 @@
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/QuestEvaluatorComponent.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/QuestManager.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/StructsDataSystemQuest.cpp"
+#include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/TaskActivateCombinePanel.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/TaskActivateInteractTrigger.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/TaskActiveInteractComponent.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/TaskInventory.cpp"
