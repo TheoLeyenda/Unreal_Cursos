@@ -46,6 +46,7 @@
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/SubstractLifeTrigger.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TaskActivateCombinePanel.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TaskActivateInteractTrigger.gen.cpp"
+#include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TaskActivatePlayerStatsUpdate.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TaskActiveInteractComponent.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TaskInventory.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TeleportObjectsInTrigger.gen.cpp"

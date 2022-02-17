@@ -90,6 +90,8 @@ bool APickup::ExecuteInteractInterface(ABuildingScapeCharacter* Character)
 {
 	if(!Character) {return false;}
 	if(!Character->PlayerInventoryComponent){return false;}
+
+	if(!PickupItem){return false;}
 	
 	Character->PlayerInventoryComponent->AddItem(PickupItem);
 	Destroy();

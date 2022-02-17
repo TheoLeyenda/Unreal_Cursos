@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractComponent() {}
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UInteractComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABuildingScapeCharacter_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UPickupComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_BuildingEscape_OnInteract__DelegateSignature_Statics
@@ -129,6 +130,10 @@ void EmptyLinkFunctionForGeneratedCodeInteractComponent() {}
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnInteract;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PickupComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PickupComponent;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ActorHit_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ActorHit;
@@ -166,6 +171,14 @@ void EmptyLinkFunctionForGeneratedCodeInteractComponent() {}
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UInteractComponent_Statics::NewProp_OnInteract = { "OnInteract", nullptr, (EPropertyFlags)0x0010000000080004, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInteractComponent, OnInteract), Z_Construct_UDelegateFunction_BuildingEscape_OnInteract__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UInteractComponent_Statics::NewProp_OnInteract_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInteractComponent_Statics::NewProp_OnInteract_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInteractComponent_Statics::NewProp_PickupComponent_MetaData[] = {
+		{ "Category", "Current PickUpComponent" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/InteractComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInteractComponent_Statics::NewProp_PickupComponent = { "PickupComponent", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInteractComponent, PickupComponent), Z_Construct_UClass_UPickupComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UInteractComponent_Statics::NewProp_PickupComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInteractComponent_Statics::NewProp_PickupComponent_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInteractComponent_Statics::NewProp_ActorHit_MetaData[] = {
 		{ "Category", "InteractComponent" },
 		{ "ModuleRelativePath", "Public/InteractComponent.h" },
@@ -175,6 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractComponent() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UInteractComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractComponent_Statics::NewProp_Reach,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractComponent_Statics::NewProp_OnInteract,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractComponent_Statics::NewProp_PickupComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractComponent_Statics::NewProp_ActorHit,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UInteractComponent_Statics::StaticCppClassTypeInfo = {
@@ -204,7 +218,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInteractComponent, 1236733271);
+	IMPLEMENT_CLASS(UInteractComponent, 2086513289);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UInteractComponent>()
 	{
 		return UInteractComponent::StaticClass();

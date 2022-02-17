@@ -31,6 +31,7 @@
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/ObjectSpawner.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/ObjectSpawnLeverSwitch.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/Pickup.cpp"
+#include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/PickupComponent.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/PickupPhysicActor.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/PuzzleChecker.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/PuzzleFoodLeverChecker.cpp"

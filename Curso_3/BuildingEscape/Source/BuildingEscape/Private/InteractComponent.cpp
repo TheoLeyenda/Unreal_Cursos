@@ -37,22 +37,38 @@ FHitResult UInteractComponent::GetFirstPhysicsBodyInReach()
 void UInteractComponent::CheckEnableInteract(float DeltaSeconds)
 {
 	FHitResult HitResult = GetFirstPhysicsBodyInReach();
-
+	
 	ActorHit = HitResult.GetActor();
-
+	
 	if(!InteractInterface)
 	{
 		InteractInterface = Cast<IInteractInterface>(ActorHit);
 	}
+
+	if(!PickupComponent && ActorHit)
+	{
+		PickupComponent = Cast<UPickupComponent>(ActorHit->GetComponentByClass(UPickupComponent::StaticClass()));
+		if(PickupComponent)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("%s"), *ActorHit->GetName());
+		}
+	}
+	else if(!ActorHit)
+	{
+		PickupComponent = nullptr;
+	}
 	
-	if(!ActorHit || !InteractInterface)
+	if((!ActorHit || !InteractInterface) && !PickupComponent)
 	{
 		bEnableInteract = false;
 		InteractInterface = nullptr;
 	}
 	else
 	{
-		InteractInterface->ExecuteInterfaceOnHitInteraction(DeltaSeconds);
+		if(InteractInterface)
+		{
+			InteractInterface->ExecuteInterfaceOnHitInteraction(DeltaSeconds);
+		}
 		bEnableInteract = true;
 	}
 }
@@ -61,12 +77,22 @@ void UInteractComponent::Interact(ABuildingScapeCharacter* Character)
 {
 	if(bEnableInteract)
 	{
-		bool bInterfaceDone = InteractInterface->ExecuteInteractInterface(Character);
-		if(ActorHit != nullptr && bInterfaceDone)
+		bool bInterfaceDone = false;
+		if(InteractInterface)
+		{
+			bInterfaceDone = InteractInterface->ExecuteInteractInterface(Character);
+		}
+			if(ActorHit != nullptr && bInterfaceDone)
 		{
 			OnInteract.Broadcast(this);
 		}
-		
+		else if(ActorHit && PickupComponent)
+		{
+			PickupComponent->ExecuteInteractInterface(Character);
+			PickupComponent = nullptr;
+			InteractInterface = nullptr;
+			bEnableInteract = false;
+		}
 	}
 }
 

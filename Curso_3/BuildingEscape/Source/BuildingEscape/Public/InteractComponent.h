@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "InteractInterface.h"
+#include "PickupComponent.h"
 #include "InteractComponent.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnInteract, UInteractComponent*, InteractComponent);
@@ -25,7 +26,7 @@ protected:
 
 	FVector GetPlayerReach();
 	FHitResult GetFirstPhysicsBodyInReach();
-
+	
 	IInteractInterface* InteractInterface;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Interact Component")
@@ -36,6 +37,9 @@ public:
 	UPROPERTY(BlueprintReadWrite)
 	FOnInteract OnInteract;
 
+	UPROPERTY(VisibleAnywhere, Category= "Current PickUpComponent")
+	UPickupComponent* PickupComponent;
+	
 	UPROPERTY(VisibleAnywhere)
 	AActor* ActorHit;
 	
