@@ -64,7 +64,7 @@ public:
 	
 	void SetStateDoor(EStateDoor Value);
 	EStateDoor GetStateDoor();
-	void CheckDoor();
+	bool CheckDoor();
 	void OpenDoor();
 	void CloseDoor();
 	// Variable to hold the Curve asset

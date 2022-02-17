@@ -69,11 +69,12 @@ void UInteractComponent::Interact(ABuildingScapeCharacter* Character)
 {
 	if(bEnableInteract)
 	{
-		if(ActorHit != nullptr)
+		bool bInterfaceDone = InteractInterface->ExecuteInteractInterface(Character);
+		if(ActorHit != nullptr && bInterfaceDone)
 		{
 			OnInteract.Broadcast(this);
 		}
-		InteractInterface->ExecuteInteractInterface(Character);
+		
 	}
 }
 

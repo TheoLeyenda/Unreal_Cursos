@@ -52,11 +52,13 @@ void ADoor::CloseDoor()
 	CheckCloseDoorSound();
 }
 
-void ADoor::CheckDoor()
+bool ADoor::CheckDoor()
 {
+	bool bOpenDoor = true;
 	switch (StateDoor)
 	{
 		case EStateDoor::Opened:
+			bOpenDoor = true;
 			if(OpenOrClose == EStateDoor::Opened)
 			{
 				CloseDoor();
@@ -69,9 +71,12 @@ void ADoor::CheckDoor()
 			}
 			break;
 		case EStateDoor::Closed:
+			bOpenDoor = false;
 			CloseDoor();
 			break;
 	}
+
+	return bOpenDoor;
 }
 
 void ADoor::SetStateDoor(EStateDoor Value)
@@ -116,8 +121,7 @@ void ADoor::CheckOpenDoorSound()
 
 bool ADoor::ExecuteInteractInterface(ABuildingScapeCharacter* Character)
 {
-	CheckDoor();
-	return true;
+	return CheckDoor();
 }
 
 void ADoor::CheckCloseDoorSound()

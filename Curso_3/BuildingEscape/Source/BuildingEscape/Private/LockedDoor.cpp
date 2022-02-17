@@ -17,16 +17,12 @@ void ALockedDoor::BeginPlay()
 
 bool ALockedDoor::ExecuteInteractInterface(ABuildingScapeCharacter* Character)
 {
-	//UE_LOG(LogTemp, Warning, TEXT("ENTRE HOLIS UWU"));
 	if(!Character) {return false;}
 	if(!Character->PlayerInventoryComponent){return false;}
 	if(!Character->PlayerInventoryComponent->CurrentItemSelected){return false;}
-
-
-	//UE_LOG(LogTemp, Warning, TEXT("ENTRE HOLIS UWU 2"));
+	
 	if(Character->PlayerInventoryComponent->CurrentItemSelected->GetClass() == ItemToOpenDoor->GetClass())
 	{
-		//UE_LOG(LogTemp, Warning, TEXT("ENTRE HOLIS UWU 3"));
 		if(StateDoor == EStateDoor::Closed)
 		{
 			Character->PlayerInventoryComponent->RemoveCurrentItemSelected();
