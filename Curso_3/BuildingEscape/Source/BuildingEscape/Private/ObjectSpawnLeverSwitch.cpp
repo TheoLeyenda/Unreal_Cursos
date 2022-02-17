@@ -39,7 +39,6 @@ void AObjectSpawnLeverSwitch::SpawnObect()
 		{
 			if(Spawner)
 			{
-				//UE_LOG(LogTemp, Warning, TEXT("ENTRE AL INTERACT"));
 				Spawner->SendTimerSpawnObject();
 			}
 		}

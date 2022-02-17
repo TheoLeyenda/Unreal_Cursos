@@ -21,7 +21,6 @@ void UBaseQuest::CheckCompleteQuest()
 	if(bCompleteQuest)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Quest Completada"));
-		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Quest Completada"));
 		QuestStructInfo.QuestState = EQuestState::Completed;
 		OnFinishQuest.Broadcast(this);
 	}

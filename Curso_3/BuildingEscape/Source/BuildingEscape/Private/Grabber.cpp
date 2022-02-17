@@ -98,8 +98,6 @@ void UGrabber::Throw(FVector Direction)
 	}
 }
 
-
-//Checking for physics handle component
 void UGrabber::FindPhysicsHandle()
 {
 	PhysicsHandle = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>();
@@ -159,7 +157,6 @@ void UGrabber::ShowLineTraceHitActor(FHitResult Hit)
 	AActor* ActorHit = Hit.GetActor();
 	if(ActorHit)
 	{
-		//Logging out to test
 		UE_LOG(LogTemp, Warning, TEXT("Line trace has hit: %s"), *ActorHit->GetName());
 	}
 }

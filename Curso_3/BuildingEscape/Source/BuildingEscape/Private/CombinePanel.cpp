@@ -1,12 +1,9 @@
 // Copyright Theo Leyenda 2022
 
-
 #include "CombinePanel.h"
 
-// Sets default values
 ACombinePanel::ACombinePanel()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 	QuestActorComponentID = CreateDefaultSubobject<UQuestActorComponentID>(TEXT("QuestActorComponentID"));
 }
@@ -16,7 +13,6 @@ bool ACombinePanel::IsCompleteCombinePanel()
 	return bCombinePanelComplete;
 }
 
-// Called when the game starts or when spawned
 void ACombinePanel::BeginPlay()
 {
 	Super::BeginPlay();

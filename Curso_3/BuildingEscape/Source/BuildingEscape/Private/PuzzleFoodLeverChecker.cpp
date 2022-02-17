@@ -30,8 +30,7 @@ void APuzzleFoodLeverChecker::Tick(float DeltaSeconds)
 	Super::Tick(DeltaSeconds);
 
 	CheckPuzzleResult();
-
-	//UE_LOG(LogTemp, Warning, TEXT("Estoy ejecutando tick"))
+	
 }
 
 void APuzzleFoodLeverChecker::CheckPuzzleResult()

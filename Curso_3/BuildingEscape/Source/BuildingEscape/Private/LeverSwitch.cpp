@@ -3,10 +3,8 @@
 
 #include "LeverSwitch.h"
 
-// Sets default values
 ALeverSwitch::ALeverSwitch()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	MeshBase = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshBase"));
 	Scene = CreateDefaultSubobject<USceneComponent>(TEXT("Scene"));
@@ -40,8 +38,7 @@ void ALeverSwitch::BeginPlay()
 	Super::BeginPlay();
 
 	bFlagInitSound = true;
-	
-	//FindAuidioComponent();
+
 	UpdateFunctionFloat.BindDynamic(this, &ALeverSwitch::UpdateTimelineComp);
 	
 	if (TimelineFloatCurve)
@@ -63,7 +60,6 @@ void ALeverSwitch::BeginPlay()
 		PositiveShiwtch = EPositiveShiwtch::Down;
 		UpSwitch();
 	}
-	//Switch();
 }
 
 void ALeverSwitch::Switch()
@@ -136,7 +132,6 @@ void ALeverSwitch::FindAuidioComponent()
 
 void ALeverSwitch::UpdateTimelineComp(float Output)
 {
-	// Create and set our Door's new relative location based on the output from our Timeline Curve
 	FRotator DoorNewRotation = FRotator(0, 0, Output);
 	Scene->SetRelativeRotation(DoorNewRotation);
 }

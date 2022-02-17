@@ -4,7 +4,6 @@
 #include "InteractComponent.h"
 #include "BuildingScapeCharacter.h"
 
-// Sets default values for this component's properties
 UInteractComponent::UInteractComponent()
 {
 	PrimaryComponentTick.bCanEverTick = false;
@@ -31,14 +30,7 @@ FHitResult UInteractComponent::GetFirstPhysicsBodyInReach()
 		FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody),
 		TraceParams
 	);
-
-/*	AActor* ActorHit2 = Hit.GetActor();
-	if(ActorHit2)
-	{
-		//Logging out to test
-		UE_LOG(LogTemp, Warning, TEXT("Line trace has hit: %s"), *ActorHit2->GetName());
-	}
-*/
+	
 	return Hit;
 }
 
@@ -47,7 +39,7 @@ void UInteractComponent::CheckEnableInteract(float DeltaSeconds)
 	FHitResult HitResult = GetFirstPhysicsBodyInReach();
 
 	ActorHit = HitResult.GetActor();
-	//ActorHit->Implements<IInteractInterface>();
+
 	if(!InteractInterface)
 	{
 		InteractInterface = Cast<IInteractInterface>(ActorHit);

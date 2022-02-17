@@ -1,6 +1,5 @@
 // Copyright Theo Leyenda 2022
 
-
 #include "DestroyObjectsByTrigger.h"
 
 void ADestroyObjectsByTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,

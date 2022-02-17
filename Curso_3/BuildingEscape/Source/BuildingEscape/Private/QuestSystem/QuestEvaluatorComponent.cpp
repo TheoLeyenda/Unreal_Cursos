@@ -1,12 +1,10 @@
 // Copyright Theo Leyenda 2022
 
-
 #include "QuestSystem/QuestEvaluatorComponent.h"
 
 #include "BuildingEscapeGameMode.h"
 #include "QuestSystem/BaseTask.h"
 
-// Sets default values for this component's properties
 UQuestEvaluatorComponent::UQuestEvaluatorComponent()
 {
 	PrimaryComponentTick.bCanEverTick = false;
@@ -51,7 +49,6 @@ void UQuestEvaluatorComponent::BeginPlay()
 
 void UQuestEvaluatorComponent::SettingDataPlayer(FDataPlayer NewData)
 {
-	//UE_LOG(LogTemp, Warning, TEXT("ENTRE A LA ENVIADA DE DATA"));
 
 	if(!BuildingScapeCharacter)
 	{
@@ -72,6 +69,5 @@ void UQuestEvaluatorComponent::SettingDataPlayer(FDataPlayer NewData)
 	DataPlayer.InventoryComponent = NewData.InventoryComponent;
 	DataPlayer.NeedItems = NewData.NeedItems;
 	
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT(""));
 	OnQuestEvaluatorDataUpdate.Broadcast(this);
 }

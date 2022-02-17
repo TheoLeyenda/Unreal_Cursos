@@ -5,7 +5,6 @@
 
 int UQuestActorComponentID::CountQuestCreated; 
 
-// Sets default values for this component's properties
 UQuestActorComponentID::UQuestActorComponentID()
 {
 	PrimaryComponentTick.bCanEverTick = false;

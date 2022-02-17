@@ -4,15 +4,12 @@
 #include "QuestSystem/QuestManager.h"
 #include "Kismet/GameplayStatics.h"
 
-// Sets default values
 AQuestManager::AQuestManager()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 
 }
 
-// Called when the game starts or when spawned
 void AQuestManager::BeginPlay()
 {
 	Super::BeginPlay();
@@ -147,7 +144,6 @@ void AQuestManager::CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponen
 void AQuestManager::SendEventFinishAllQuest()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Todos las Quest completadas"));
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Todos las Quest completadas"));
 	OnFinishAllQuest.Broadcast();
 }
 

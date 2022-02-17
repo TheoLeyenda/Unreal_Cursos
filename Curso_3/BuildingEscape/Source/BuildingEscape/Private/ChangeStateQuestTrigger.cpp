@@ -1,6 +1,5 @@
 // Copyright Theo Leyenda 2022
 
-
 #include "ChangeStateQuestTrigger.h"
 
 void AChangeStateQuestTrigger::ChangeStateQuest()

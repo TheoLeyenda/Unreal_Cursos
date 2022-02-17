@@ -52,7 +52,6 @@ bool ASubstractLifeTrigger::ExecuteInteractInterface()
 {
 	if(!Player || !bEnableSubstractLife){return false;}
 	
-	//UE_LOG(LogTemp, Warning, TEXT("ENTRE"));
 	Player->SubstractLifes(CountSubstractLifes);
 	bEnableSubstractLife = false;
 	SendTimerEnableSubstractLife();

@@ -50,10 +50,6 @@ bool APickup::ExecuteInterfaceOnHitInteraction(float DeltaSeconds)
 
 void APickup::MakeTextFacePlayer()
 {
-	//ACharacter* Character = UGameplayStatics::GetPlayerCharacter(this,0);
-
-	//FRotator NewRotator = Character->GetActorRotation();
-	
 	ABuildingScapeCharacter* BuildingScapeCharacter = Cast<ABuildingScapeCharacter>(UGameplayStatics::GetPlayerCharacter(this,0));
 
 	FRotator NewRotator = BuildingScapeCharacter->GetActorRotation();
@@ -88,17 +84,6 @@ void APickup::HideMessagePickup()
 		MyText->SetHiddenInGame(true);
 	}
 	
-}
-
-void APickup::BeginDestroy()
-{
-	//Si descomento esto se muere Unreal.
-	
-	//if(bEnableDestroyTimer)
-	//{
-	//	GetWorld()->GetTimerManager().ClearTimer(TimerToCheckHideMessage);
-	//}
-	Super::BeginDestroy();
 }
 
 bool APickup::ExecuteInteractInterface(ABuildingScapeCharacter* Character)

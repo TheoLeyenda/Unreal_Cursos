@@ -1,9 +1,7 @@
 // Copyright Theo Leyenda 2022
 
-
 #include "InteractTrigger.h"
 
-// Sets default values
 AInteractTrigger::AInteractTrigger()
 {
 	PrimaryActorTick.bCanEverTick = false;
@@ -12,11 +10,9 @@ AInteractTrigger::AInteractTrigger()
 	QuestActorComponentID = CreateDefaultSubobject<UQuestActorComponentID>(TEXT("QuestActorComponentID"));
 }
 
-// Called when the game starts or when spawned
 void AInteractTrigger::BeginPlay()
 {
 	Super::BeginPlay();
-	//Binding our Proximity Box Component to our Overlap Functions
 	BoxTriggerVolume->OnComponentBeginOverlap.AddDynamic(this, &AInteractTrigger::OnOverlapBegin);
 	BoxTriggerVolume->OnComponentEndOverlap.AddDynamic(this, &AInteractTrigger::OnOverlapEnd);
 }

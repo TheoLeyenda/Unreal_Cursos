@@ -3,7 +3,6 @@
 
 #include "ModifiableStaticMesh.h"
 
-// Sets default values
 AModifiableStaticMesh::AModifiableStaticMesh()
 {
 	PrimaryActorTick.bCanEverTick = false;

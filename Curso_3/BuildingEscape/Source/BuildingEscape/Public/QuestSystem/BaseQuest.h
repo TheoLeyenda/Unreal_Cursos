@@ -108,7 +108,6 @@ class BUILDINGESCAPE_API UBaseQuest : public UObject
 	GENERATED_BODY()
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnFinishQuest, UBaseQuest*, Quest);
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUpdateQuest);
-	//DECLARE_DYNAMIC_MULTICAST_DELEGATE()
 public:
 	
 	UPROPERTY(BlueprintAssignable, BlueprintCallable)

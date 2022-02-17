@@ -1,6 +1,5 @@
 // Copyright Theo Leyenda 2022
 
-
 #include "CheckPointTrigger.h"
 
 void ACheckPointTrigger::BeginPlay()
@@ -30,7 +29,6 @@ void ACheckPointTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 			}
 			if(PlayerStart)
 			{
-				//UE_LOG(LogTemp, Warning, TEXT("ENTRE"));
 				PlayerStart->SetActorLocation(PointToCurrentRespawn->GetActorLocation());
 				OnCompleteInteractTrigger.Broadcast(this);
 				Destroy();

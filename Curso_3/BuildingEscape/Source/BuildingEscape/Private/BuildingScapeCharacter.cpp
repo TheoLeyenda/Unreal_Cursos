@@ -9,7 +9,6 @@
 #include "Components/CapsuleComponent.h"
 #include "Kismet/GameplayStatics.h"
 
-// Sets default values
 ABuildingScapeCharacter::ABuildingScapeCharacter()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -23,9 +22,6 @@ ABuildingScapeCharacter::ABuildingScapeCharacter()
 	FirstPersonCameraComponent->bUsePawnControlRotation = true;
 
 	Grabber = CreateDefaultSubobject<UGrabber>(TEXT("Grabber"));
-	
-	// Inventory System //
-	//InventoryComponent = CreateDefaultSubobject<UInventoryComponent>(TEXT("Inventory"));
 
 	PlayerInventoryComponent = CreateDefaultSubobject<UInventory>(TEXT("PlayerInventoryComponent"));
 
@@ -46,7 +42,6 @@ void ABuildingScapeCharacter::BeginPlay()
 	}
 }
 
-// Called to bind functionality to input
 void ABuildingScapeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);

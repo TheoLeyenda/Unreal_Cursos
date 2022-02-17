@@ -3,14 +3,11 @@
 
 #include "TimeEventOver.h"
 
-// Sets default values for this component's properties
 UTimeEventOver::UTimeEventOver()
 {
 	PrimaryComponentTick.bCanEverTick = true;
 }
 
-
-// Called when the game starts
 void UTimeEventOver::BeginPlay()
 {
 	Super::BeginPlay();

@@ -48,8 +48,6 @@ public:
 	
 	void MakeTextFacePlayer();
 
-	virtual void BeginDestroy() override;
-
 	virtual bool ExecuteInteractInterface(ABuildingScapeCharacter* Character) override;
 	
 	virtual bool ExecuteInterfaceOnHitInteraction(float DeltaSeconds) override;

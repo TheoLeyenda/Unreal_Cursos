@@ -7,10 +7,8 @@
 
 #include "Algo/Compare.h"
 
-// Sets default values
 ACraftingTable::ACraftingTable()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
 	for(int i = 0; i < CountSlots; i++)
@@ -46,7 +44,6 @@ void ACraftingTable::CheckCrafting()
 			ComparePlaceActorsInfo[ComparePlaceActorsInfo.Num() - 1].CurrentActorPlace = MatrixActorsPlaceInfo[i].ActorsPlace.CurrentActorPlace;
 		}
 	}
-	// HACER UNA PALANCA QUE LLAME A ESTA FUNCION PARA PROBAR EL OBJETO.
 	bool bCraftingDone = true;
 	bool bFindCrafting = false;
 	int indexCraftingInfoSpawnObject = 0;
