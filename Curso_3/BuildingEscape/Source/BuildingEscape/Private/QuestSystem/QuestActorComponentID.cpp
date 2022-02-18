@@ -3,17 +3,11 @@
 
 #include "QuestSystem/QuestActorComponentID.h"
 
-int UQuestActorComponentID::CountQuestCreated; 
-
 UQuestActorComponentID::UQuestActorComponentID()
 {
 	PrimaryComponentTick.bCanEverTick = false;
 	ID = -1;
 	BlueprintClass = nullptr;
-
-	CountQuestCreated++;
-
-	ID = CountQuestCreated;
 }
 
 void UQuestActorComponentID::BeginPlay()

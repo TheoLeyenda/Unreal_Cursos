@@ -38,7 +38,10 @@ public:
 	FOnInteract OnInteract;
 
 	UPROPERTY(VisibleAnywhere, Category= "Current PickUpComponent")
-	UPickupComponent* PickupComponent;
+	UPickupComponent* PickupComponent = nullptr;
+
+	UPROPERTY(VisibleAnywhere, Category= "Current PickUpComponent")
+	UPickupComponent* LastPickupComponent = nullptr;
 	
 	UPROPERTY(VisibleAnywhere)
 	AActor* ActorHit;
@@ -46,4 +49,5 @@ public:
 	UFUNCTION()
 	void Interact(class ABuildingScapeCharacter* Character);
 	void CheckEnableInteract(float DeltaSeconds);
+	
 };

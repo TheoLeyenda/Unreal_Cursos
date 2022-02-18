@@ -18,11 +18,8 @@ public:
 	UQuestActorComponentID();
 
 	virtual void BeginPlay() override;
-private:
-	static int32 CountQuestCreated;
-
-public:
-	UPROPERTY(VisibleAnywhere)
+	
+	UPROPERTY(EditAnywhere)
 	int ID;
 	UPROPERTY(VisibleAnywhere)
 	TSubclassOf<AActor> BlueprintClass;

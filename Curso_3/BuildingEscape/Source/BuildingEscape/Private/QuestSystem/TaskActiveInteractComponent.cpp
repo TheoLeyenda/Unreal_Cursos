@@ -38,6 +38,10 @@ void UTaskActiveInteractComponent::SettingDataTask(UInteractComponent* InteractC
 
 	if(!BuildingScapeCharacter->PlayerInventoryComponent){return;}
 
+	if(!InteractComponent) {return;}
+
+	if(!InteractComponent->ActorHit){return;}
+	
 	UActorComponent* ActorComponent = InteractComponent->ActorHit->GetComponentByClass(UQuestActorComponentID::StaticClass());
 	
 	if(ActorComponent == nullptr){return;}

@@ -63,7 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeQuestActorComponentID() {}
 		{ "ModuleRelativePath", "Public/QuestSystem/QuestActorComponentID.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UQuestActorComponentID_Statics::NewProp_ID = { "ID", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UQuestActorComponentID, ID), METADATA_PARAMS(Z_Construct_UClass_UQuestActorComponentID_Statics::NewProp_ID_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UQuestActorComponentID_Statics::NewProp_ID_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UQuestActorComponentID_Statics::NewProp_ID = { "ID", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UQuestActorComponentID, ID), METADATA_PARAMS(Z_Construct_UClass_UQuestActorComponentID_Statics::NewProp_ID_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UQuestActorComponentID_Statics::NewProp_ID_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UQuestActorComponentID_Statics::NewProp_BlueprintClass_MetaData[] = {
 		{ "Category", "QuestActorComponentID" },
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeQuestActorComponentID() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UQuestActorComponentID, 3736996009);
+	IMPLEMENT_CLASS(UQuestActorComponentID, 714600888);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UQuestActorComponentID>()
 	{
 		return UQuestActorComponentID::StaticClass();

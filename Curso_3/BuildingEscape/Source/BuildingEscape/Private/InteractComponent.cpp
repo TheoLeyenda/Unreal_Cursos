@@ -45,20 +45,12 @@ void UInteractComponent::CheckEnableInteract(float DeltaSeconds)
 		InteractInterface = Cast<IInteractInterface>(ActorHit);
 	}
 
-	if(!PickupComponent && ActorHit)
+	if(ActorHit)
 	{
 		PickupComponent = Cast<UPickupComponent>(ActorHit->GetComponentByClass(UPickupComponent::StaticClass()));
-		if(PickupComponent)
-		{
-			UE_LOG(LogTemp, Warning, TEXT("%s"), *ActorHit->GetName());
-		}
-	}
-	else if(!ActorHit)
-	{
-		PickupComponent = nullptr;
 	}
 	
-	if((!ActorHit || !InteractInterface) && !PickupComponent)
+	if(!ActorHit || !InteractInterface)
 	{
 		bEnableInteract = false;
 		InteractInterface = nullptr;
@@ -77,22 +69,18 @@ void UInteractComponent::Interact(ABuildingScapeCharacter* Character)
 {
 	if(bEnableInteract)
 	{
-		bool bInterfaceDone = false;
-		if(InteractInterface)
-		{
-			bInterfaceDone = InteractInterface->ExecuteInteractInterface(Character);
-		}
-			if(ActorHit != nullptr && bInterfaceDone)
+		bool bInterfaceDone = InteractInterface->ExecuteInteractInterface(Character);
+		if(ActorHit != nullptr && bInterfaceDone)
 		{
 			OnInteract.Broadcast(this);
 		}
-		else if(ActorHit && PickupComponent)
-		{
-			PickupComponent->ExecuteInteractInterface(Character);
-			PickupComponent = nullptr;
-			InteractInterface = nullptr;
-			bEnableInteract = false;
-		}
+	}
+	
+	if(LastPickupComponent != PickupComponent)
+	{
+		PickupComponent->ExecuteInteractInterface(Character);
+		PickupComponent = nullptr;
+		OnInteract.Broadcast(this);
 	}
 }
 
