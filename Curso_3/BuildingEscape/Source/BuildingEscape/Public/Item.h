@@ -20,6 +20,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")
 	bool bSelectedItem = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")
+	TSubclassOf<AActor> BlueprintActorItem;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")
+	bool bUseItemFuncionality = true;
 	
 	/** The Text for using the item. (Equip, Eat, etc)**/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")

@@ -123,12 +123,21 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 		P_THIS->AddItem(Z_Param_Item);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UInventory::execDropItem)
+	{
+		P_GET_OBJECT(UItem,Z_Param_Item);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->DropItem(Z_Param_Item);
+		P_NATIVE_END;
+	}
 	void UInventory::StaticRegisterNativesUInventory()
 	{
 		UClass* Class = UInventory::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AddItem", &UInventory::execAddItem },
 			{ "CheckHaveItem", &UInventory::execCheckHaveItem },
+			{ "DropItem", &UInventory::execDropItem },
 			{ "RemoveCurrentItemSelected", &UInventory::execRemoveCurrentItemSelected },
 			{ "RemoveItem", &UInventory::execRemoveItem },
 			{ "UseItem", &UInventory::execUseItem },
@@ -213,6 +222,46 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInventory_CheckHaveItem_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UInventory_DropItem_Statics
+	{
+		struct Inventory_eventDropItem_Parms
+		{
+			UItem* Item;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Item_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Item;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInventory_DropItem_Statics::NewProp_Item_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UInventory_DropItem_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Inventory_eventDropItem_Parms, Item), Z_Construct_UClass_UItem_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UInventory_DropItem_Statics::NewProp_Item_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UInventory_DropItem_Statics::NewProp_Item_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UInventory_DropItem_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UInventory_DropItem_Statics::NewProp_Item,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInventory_DropItem_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Inventory.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInventory_DropItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInventory, nullptr, "DropItem", nullptr, nullptr, sizeof(Inventory_eventDropItem_Parms), Z_Construct_UFunction_UInventory_DropItem_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UInventory_DropItem_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInventory_DropItem_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInventory_DropItem_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UInventory_DropItem()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInventory_DropItem_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -330,13 +379,13 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Capacity_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_Capacity;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentItemSelected_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentItemSelected;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DropItemOffset_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DropItemOffset;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnPlayerInventoryUpdated_MetaData[];
 #endif
@@ -361,6 +410,7 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UInventory_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UInventory_AddItem, "AddItem" }, // 3594561541
 		{ &Z_Construct_UFunction_UInventory_CheckHaveItem, "CheckHaveItem" }, // 3126187359
+		{ &Z_Construct_UFunction_UInventory_DropItem, "DropItem" }, // 256764447
 		{ &Z_Construct_UDelegateFunction_UInventory_OnPlayerInventorySpecificUpdate__DelegateSignature, "OnPlayerInventorySpecificUpdate__DelegateSignature" }, // 4282125552
 		{ &Z_Construct_UFunction_UInventory_RemoveCurrentItemSelected, "RemoveCurrentItemSelected" }, // 2182317432
 		{ &Z_Construct_UFunction_UInventory_RemoveItem, "RemoveItem" }, // 2820186233
@@ -375,14 +425,6 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventory_Statics::NewProp_Capacity_MetaData[] = {
-		{ "Category", "Inventory" },
-		{ "ClampMin", "0.000000" },
-		{ "ModuleRelativePath", "Public/Inventory.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UInventory_Statics::NewProp_Capacity = { "Capacity", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventory, Capacity), METADATA_PARAMS(Z_Construct_UClass_UInventory_Statics::NewProp_Capacity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventory_Statics::NewProp_Capacity_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventory_Statics::NewProp_CurrentItemSelected_MetaData[] = {
 		{ "Category", "Inventory" },
 		{ "EditInline", "true" },
@@ -390,6 +432,13 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventory_Statics::NewProp_CurrentItemSelected = { "CurrentItemSelected", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventory, CurrentItemSelected), Z_Construct_UClass_UItem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UInventory_Statics::NewProp_CurrentItemSelected_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventory_Statics::NewProp_CurrentItemSelected_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventory_Statics::NewProp_DropItemOffset_MetaData[] = {
+		{ "Category", "Inventory" },
+		{ "ModuleRelativePath", "Public/Inventory.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UInventory_Statics::NewProp_DropItemOffset = { "DropItemOffset", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventory, DropItemOffset), METADATA_PARAMS(Z_Construct_UClass_UInventory_Statics::NewProp_DropItemOffset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventory_Statics::NewProp_DropItemOffset_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInventory_Statics::NewProp_OnPlayerInventoryUpdated_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Inventory.h" },
@@ -412,8 +461,8 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UInventory_Statics::NewProp_Items = { "Items", nullptr, (EPropertyFlags)0x001000800002001d, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInventory, Items), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UInventory_Statics::NewProp_Items_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInventory_Statics::NewProp_Items_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UInventory_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventory_Statics::NewProp_Capacity,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventory_Statics::NewProp_CurrentItemSelected,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventory_Statics::NewProp_DropItemOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventory_Statics::NewProp_OnPlayerInventoryUpdated,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventory_Statics::NewProp_OnPlayerInventorySpecificUpdate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventory_Statics::NewProp_Items_Inner,
@@ -446,7 +495,7 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInventory, 2718994101);
+	IMPLEMENT_CLASS(UInventory, 3220867650);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UInventory>()
 	{
 		return UInventory::StaticClass();

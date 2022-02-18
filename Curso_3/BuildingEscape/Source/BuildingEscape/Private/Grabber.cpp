@@ -169,3 +169,11 @@ FVector UGrabber::GetPlayerReach()
 	return LineTraceEnd;
 }
 
+FVector UGrabber::GetPlayerViewLocation()
+{
+	GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(OUT PlayerViewPointLocation,OUT PlayerViewPointRotation);
+	FVector PlayerViewLocation = PlayerViewPointLocation + PlayerViewPointRotation.Vector();
+
+	return PlayerViewLocation;
+}
+

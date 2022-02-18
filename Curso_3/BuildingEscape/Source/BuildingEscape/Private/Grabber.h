@@ -47,7 +47,10 @@ public:
 	
 	void Grab();
 	void Release();
-
+	UFUNCTION(BlueprintCallable)
+	FVector GetPlayerReach();
+	UFUNCTION(BlueprintCallable)
+	FVector GetPlayerViewLocation();
 	void Throw(FVector Direction);
 private:
 	UPROPERTY(EditAnywhere)
@@ -67,6 +70,5 @@ private:
 
 	FVector PlayerViewPointLocation;
 	FRotator PlayerViewPointRotation;
-	FVector GetPlayerReach();
 	
 };

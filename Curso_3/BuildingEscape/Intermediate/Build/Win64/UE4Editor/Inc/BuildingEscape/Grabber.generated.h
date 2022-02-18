@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FVector;
 #ifdef BUILDINGESCAPE_Grabber_generated_h
 #error "Grabber.generated.h already included, missing '#pragma once' in Grabber.h"
 #endif
 #define BUILDINGESCAPE_Grabber_generated_h
 
 #define BuildingEscape_Source_BuildingEscape_Private_Grabber_h_23_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Private_Grabber_h_23_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Private_Grabber_h_23_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Private_Grabber_h_23_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetPlayerViewLocation); \
+	DECLARE_FUNCTION(execGetPlayerReach);
+
+
+#define BuildingEscape_Source_BuildingEscape_Private_Grabber_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetPlayerViewLocation); \
+	DECLARE_FUNCTION(execGetPlayerReach);
+
+
 #define BuildingEscape_Source_BuildingEscape_Private_Grabber_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUGrabber(); \

@@ -3,20 +3,41 @@
 
 #include "Inventory.h"
 #include "BuildingScapeCharacter.h"
+#include "Grabber.h"
 
 UInventory::UInventory()
 {
 	PrimaryComponentTick.bCanEverTick = false;
 }
 
+void UInventory::DropItem(UItem* Item)
+{
+	if(!BuildingScapeCharacter)
+	{
+		BuildingScapeCharacter = Cast<ABuildingScapeCharacter>(GetWorld()->GetFirstPlayerController()->GetCharacter());
+	}
+	if(Item && BuildingScapeCharacter)
+	{
+		if(Item->BlueprintActorItem != nullptr)
+		{
+			if(BuildingScapeCharacter->Grabber)
+			{
+				GetWorld()->SpawnActor<AActor>(Item->BlueprintActorItem, BuildingScapeCharacter->Grabber->GetPlayerViewLocation() + (BuildingScapeCharacter->GetActorForwardVector() * DropItemOffset), FRotator::ZeroRotator);
+			}
+			else
+			{
+				GetWorld()->SpawnActor<AActor>(Item->BlueprintActorItem, BuildingScapeCharacter->GetActorLocation() + (BuildingScapeCharacter->GetActorForwardVector() * DropItemOffset), FRotator::ZeroRotator);
+			}
+			RemoveItem(Item);
+		}
+	}
+}
+
 void UInventory::AddItem(UItem* Item)
 {
-	if(Items.Num() < Capacity)
-	{
-		Items.Add(Item);
-		OnPlayerInventoryUpdated.Broadcast();
-		OnPlayerInventorySpecificUpdate.Broadcast(this);
-	}
+	Items.Add(Item);
+	OnPlayerInventoryUpdated.Broadcast();
+	OnPlayerInventorySpecificUpdate.Broadcast(this);
 }
 
 void UInventory::RemoveItem(UItem* Item)
@@ -46,6 +67,11 @@ bool UInventory::CheckHaveItem(TSubclassOf<UItem> ItemClass)
 
 void UInventory::UseItem(UItem* Item)
 {
+	if(!Item->bUseItemFuncionality)
+	{
+		return;
+	}
+	
 	bool EnableUseItem = false;
 	for(UItem* AuxItem : Items)
 	{

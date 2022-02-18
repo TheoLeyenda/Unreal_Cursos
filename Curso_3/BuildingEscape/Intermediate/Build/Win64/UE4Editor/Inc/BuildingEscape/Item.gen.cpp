@@ -18,6 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeItem() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABuildingScapeCharacter_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 // End Cross Module References
 	static FName NAME_UItem_OnUse = FName(TEXT("OnUse"));
@@ -75,6 +77,15 @@ void EmptyLinkFunctionForGeneratedCodeItem() {}
 		static void NewProp_bSelectedItem_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bSelectedItem;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BlueprintActorItem_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_BlueprintActorItem;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUseItemFuncionality_MetaData[];
+#endif
+		static void NewProp_bUseItemFuncionality_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseItemFuncionality;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UseActionText_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FTextPropertyParams NewProp_UseActionText;
@@ -126,6 +137,24 @@ void EmptyLinkFunctionForGeneratedCodeItem() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UItem_Statics::NewProp_bSelectedItem = { "bSelectedItem", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UItem), &Z_Construct_UClass_UItem_Statics::NewProp_bSelectedItem_SetBit, METADATA_PARAMS(Z_Construct_UClass_UItem_Statics::NewProp_bSelectedItem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UItem_Statics::NewProp_bSelectedItem_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UItem_Statics::NewProp_BlueprintActorItem_MetaData[] = {
+		{ "Category", "Item" },
+		{ "ModuleRelativePath", "Public/Item.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UItem_Statics::NewProp_BlueprintActorItem = { "BlueprintActorItem", nullptr, (EPropertyFlags)0x0014000000000005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UItem, BlueprintActorItem), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UItem_Statics::NewProp_BlueprintActorItem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UItem_Statics::NewProp_BlueprintActorItem_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UItem_Statics::NewProp_bUseItemFuncionality_MetaData[] = {
+		{ "Category", "Item" },
+		{ "ModuleRelativePath", "Public/Item.h" },
+	};
+#endif
+	void Z_Construct_UClass_UItem_Statics::NewProp_bUseItemFuncionality_SetBit(void* Obj)
+	{
+		((UItem*)Obj)->bUseItemFuncionality = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UItem_Statics::NewProp_bUseItemFuncionality = { "bUseItemFuncionality", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UItem), &Z_Construct_UClass_UItem_Statics::NewProp_bUseItemFuncionality_SetBit, METADATA_PARAMS(Z_Construct_UClass_UItem_Statics::NewProp_bUseItemFuncionality_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UItem_Statics::NewProp_bUseItemFuncionality_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UItem_Statics::NewProp_UseActionText_MetaData[] = {
 		{ "Category", "Item" },
 		{ "Comment", "/** The Text for using the item. (Equip, Eat, etc)**/" },
@@ -174,6 +203,8 @@ void EmptyLinkFunctionForGeneratedCodeItem() {}
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UItem_Statics::NewProp_Weight = { "Weight", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UItem, Weight), METADATA_PARAMS(Z_Construct_UClass_UItem_Statics::NewProp_Weight_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UItem_Statics::NewProp_Weight_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UItem_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItem_Statics::NewProp_bSelectedItem,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItem_Statics::NewProp_BlueprintActorItem,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItem_Statics::NewProp_bUseItemFuncionality,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItem_Statics::NewProp_UseActionText,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItem_Statics::NewProp_Thumbnail,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItem_Statics::NewProp_ItemDisplayName,
@@ -207,7 +238,7 @@ void EmptyLinkFunctionForGeneratedCodeItem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UItem, 2949182062);
+	IMPLEMENT_CLASS(UItem, 2391077729);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UItem>()
 	{
 		return UItem::StaticClass();

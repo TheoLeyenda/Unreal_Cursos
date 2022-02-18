@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UGrabber_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UGrabber();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
 // End Cross Module References
 	static UEnum* ETypeGrabbel_StaticEnum()
@@ -73,8 +74,92 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		}
 		return ReturnEnum;
 	}
+	DEFINE_FUNCTION(UGrabber::execGetPlayerViewLocation)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FVector*)Z_Param__Result=P_THIS->GetPlayerViewLocation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UGrabber::execGetPlayerReach)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FVector*)Z_Param__Result=P_THIS->GetPlayerReach();
+		P_NATIVE_END;
+	}
 	void UGrabber::StaticRegisterNativesUGrabber()
 	{
+		UClass* Class = UGrabber::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "GetPlayerReach", &UGrabber::execGetPlayerReach },
+			{ "GetPlayerViewLocation", &UGrabber::execGetPlayerViewLocation },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UGrabber_GetPlayerReach_Statics
+	{
+		struct Grabber_eventGetPlayerReach_Parms
+		{
+			FVector ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGrabber_GetPlayerReach_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Grabber_eventGetPlayerReach_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGrabber_GetPlayerReach_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGrabber_GetPlayerReach_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGrabber_GetPlayerReach_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Private/Grabber.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UGrabber_GetPlayerReach_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGrabber, nullptr, "GetPlayerReach", nullptr, nullptr, sizeof(Grabber_eventGetPlayerReach_Parms), Z_Construct_UFunction_UGrabber_GetPlayerReach_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGrabber_GetPlayerReach_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGrabber_GetPlayerReach_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGrabber_GetPlayerReach_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UGrabber_GetPlayerReach()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UGrabber_GetPlayerReach_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UGrabber_GetPlayerViewLocation_Statics
+	{
+		struct Grabber_eventGetPlayerViewLocation_Parms
+		{
+			FVector ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGrabber_GetPlayerViewLocation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Grabber_eventGetPlayerViewLocation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGrabber_GetPlayerViewLocation_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGrabber_GetPlayerViewLocation_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGrabber_GetPlayerViewLocation_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Private/Grabber.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UGrabber_GetPlayerViewLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGrabber, nullptr, "GetPlayerViewLocation", nullptr, nullptr, sizeof(Grabber_eventGetPlayerViewLocation_Parms), Z_Construct_UFunction_UGrabber_GetPlayerViewLocation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGrabber_GetPlayerViewLocation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGrabber_GetPlayerViewLocation_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGrabber_GetPlayerViewLocation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UGrabber_GetPlayerViewLocation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UGrabber_GetPlayerViewLocation_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_UGrabber_NoRegister()
 	{
@@ -83,6 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 	struct Z_Construct_UClass_UGrabber_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -125,6 +211,10 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 	UObject* (*const Z_Construct_UClass_UGrabber_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_UActorComponent,
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UGrabber_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UGrabber_GetPlayerReach, "GetPlayerReach" }, // 2470110512
+		{ &Z_Construct_UFunction_UGrabber_GetPlayerViewLocation, "GetPlayerViewLocation" }, // 2470700582
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGrabber_Statics::Class_MetaDataParams[] = {
@@ -214,11 +304,11 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_UGrabber_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_UGrabber_Statics::PropPointers),
 		0,
 		0x00B000A4u,
@@ -233,7 +323,7 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGrabber, 389963454);
+	IMPLEMENT_CLASS(UGrabber, 4195894403);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UGrabber>()
 	{
 		return UGrabber::StaticClass();

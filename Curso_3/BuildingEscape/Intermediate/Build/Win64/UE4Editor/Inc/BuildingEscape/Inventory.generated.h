@@ -42,7 +42,8 @@ static inline void FOnPlayerInventoryUpdated_DelegateWrapper(const FMulticastScr
 	DECLARE_FUNCTION(execUseItem); \
 	DECLARE_FUNCTION(execCheckHaveItem); \
 	DECLARE_FUNCTION(execRemoveItem); \
-	DECLARE_FUNCTION(execAddItem);
+	DECLARE_FUNCTION(execAddItem); \
+	DECLARE_FUNCTION(execDropItem);
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_Inventory_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
@@ -51,7 +52,8 @@ static inline void FOnPlayerInventoryUpdated_DelegateWrapper(const FMulticastScr
 	DECLARE_FUNCTION(execUseItem); \
 	DECLARE_FUNCTION(execCheckHaveItem); \
 	DECLARE_FUNCTION(execRemoveItem); \
-	DECLARE_FUNCTION(execAddItem);
+	DECLARE_FUNCTION(execAddItem); \
+	DECLARE_FUNCTION(execDropItem);
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_Inventory_h_15_INCLASS_NO_PURE_DECLS \

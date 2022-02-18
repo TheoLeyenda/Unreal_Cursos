@@ -21,11 +21,14 @@ public:
 	
 	class ABuildingScapeCharacter* BuildingScapeCharacter;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = 0.0))
-	int32 Capacity = 20;
-
 	UPROPERTY(VisibleAnywhere)
 	UItem* CurrentItemSelected;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float DropItemOffset = 200.0f;
+
+	UFUNCTION(BlueprintCallable)
+	void DropItem(UItem* Item);
 	
 	UPROPERTY(BlueprintAssignable, BlueprintCallable)
 	FOnPlayerInventoryUpdated OnPlayerInventoryUpdated;
