@@ -1,8 +1,9 @@
 // Copyright Theo Leyenda 2022
+#include "PickupComponent.h"
 
 #include "BuildingScapeCharacter.h"
 #include "Inventory.h"
-#include "PickupComponent.h"
+
 
 
 UPickupComponent::UPickupComponent()

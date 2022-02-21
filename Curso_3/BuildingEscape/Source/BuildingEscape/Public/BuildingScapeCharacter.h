@@ -11,10 +11,10 @@ USTRUCT(BlueprintType)
 struct FPlayerStats
 {
 	GENERATED_BODY()
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "BuildingScapeCharacter Settings")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, SaveGame, Category= "BuildingScapeCharacter Settings")
 	float Fatness = 0.0f;
 
-	UPROPERTY(EditAnywhere, Category= "BuildingScapeCharacter Settings")
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, SaveGame, Category= "BuildingScapeCharacter Settings")
 	int Lifes = 3;
 };
 

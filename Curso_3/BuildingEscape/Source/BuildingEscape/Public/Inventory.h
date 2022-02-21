@@ -36,7 +36,7 @@ public:
 	UPROPERTY(BlueprintAssignable, BlueprintCallable)
 	FOnPlayerInventorySpecificUpdate OnPlayerInventorySpecificUpdate;
 	
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, SaveGame)
 	TArray<UItem*> Items;
 
 	UFUNCTION(BlueprintCallable)

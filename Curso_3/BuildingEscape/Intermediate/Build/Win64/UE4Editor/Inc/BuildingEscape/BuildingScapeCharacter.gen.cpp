@@ -135,14 +135,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFPlayerStats
 		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness = { "Fatness", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, Fatness), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness = { "Fatness", nullptr, (EPropertyFlags)0x0010000001000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, Fatness), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes_MetaData[] = {
 		{ "Category", "BuildingScapeCharacter Settings" },
 		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes = { "Lifes", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, Lifes), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes = { "Lifes", nullptr, (EPropertyFlags)0x0010000001000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, Lifes), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FPlayerStats_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes,
@@ -175,7 +175,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFPlayerStats
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPlayerStats_Hash() { return 3626958925U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPlayerStats_Hash() { return 2169163180U; }
 	DEFINE_FUNCTION(ABuildingScapeCharacter::execAddLifes)
 	{
 		P_GET_PROPERTY(FIntProperty,Z_Param_Value);
