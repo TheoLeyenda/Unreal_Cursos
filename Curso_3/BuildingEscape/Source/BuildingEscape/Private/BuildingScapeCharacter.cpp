@@ -145,47 +145,47 @@ void ABuildingScapeCharacter::GrabRelease()
 void ABuildingScapeCharacter::SetPlayerFatness(float Value)
 {
 	OnUpdatePlayerStats.Broadcast(this);
-	Fatness = Value;
+	PlayerStats.Fatness = Value;
 }
 float ABuildingScapeCharacter::GetPlayerFatness()
 {
-	return Fatness;
+	return PlayerStats.Fatness;
 }
 
 void ABuildingScapeCharacter::AddPlayerFatness(float Value)
 {
 	OnUpdatePlayerStats.Broadcast(this);
-	Fatness+= Value;
+	PlayerStats.Fatness+= Value;
 }
 
 void ABuildingScapeCharacter::SubstractPlayerFatness(float Value)
 {
 	OnUpdatePlayerStats.Broadcast(this);
-	Fatness-= Value;
+	PlayerStats.Fatness-= Value;
 }
 
 void ABuildingScapeCharacter::SetPlayerLifes(int Value)
 {
 	OnUpdatePlayerStats.Broadcast(this);
-	Lifes = Value;
+	PlayerStats.Lifes = Value;
 }
 
 int ABuildingScapeCharacter::GetPlayerLifes()
 {
-	return Lifes;
+	return PlayerStats.Lifes;
 }
 
 void ABuildingScapeCharacter::SubstractLifes(int Value)
 {
 	OnUpdatePlayerStats.Broadcast(this);
 	OnSubstractLife.Broadcast();
-	Lifes -= Value;
+	PlayerStats.Lifes -= Value;
 }
 
 void ABuildingScapeCharacter::AddLifes(int Value)
 {
 	OnUpdatePlayerStats.Broadcast(this);
-	Lifes += Value;
+	PlayerStats.Lifes += Value;
 }
 
 void ABuildingScapeCharacter::DisableMovement()

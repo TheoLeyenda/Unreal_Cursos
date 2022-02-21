@@ -31,6 +31,8 @@ void ACheckPointTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 			{
 				PlayerStart->SetActorLocation(PointToCurrentRespawn->GetActorLocation());
 				OnCompleteInteractTrigger.Broadcast(this);
+				OnCheckPointTrigger.Broadcast(this);
+				
 				Destroy();
 			}
 		}

@@ -14,6 +14,7 @@
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/DoorInteractTrigger.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/DoorInteractTriggerWithActors.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/DoorInteractTriggerWithMass.gen.cpp"
+#include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/DropItem.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/FalseFloorTrap.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/FoodItem.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/GameOverTriggerBySpecificObjects.gen.cpp"

@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnBeginOverlapInteractTrigger__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnEndOverlapInteractTrigger__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature();
+	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_ACheckPointTrigger_OnCheckPointTrigger__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_ACombinePanel_OnCompleteCombinePanel__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnInteract__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature();
@@ -44,6 +45,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnBeginOverlapInteractTrigger__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnEndOverlapInteractTrigger__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_ACheckPointTrigger_OnCheckPointTrigger__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ACombinePanel_OnCompleteCombinePanel__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnInteract__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature,
@@ -53,8 +55,8 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x34A91DBB,
-				0xB7191D8B,
+				0x8CF38369,
+				0x5B28C786,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

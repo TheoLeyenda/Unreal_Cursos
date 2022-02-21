@@ -11,10 +11,15 @@
 /**
  * 
  */
+
 UCLASS()
 class BUILDINGESCAPE_API ACheckPointTrigger : public AInteractTrigger
 {
 	GENERATED_BODY()
+public:
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCheckPointTrigger, ACheckPointTrigger*, CheckPointTrigger);
+	FOnCheckPointTrigger OnCheckPointTrigger;
+	
 protected:
 
 	virtual void BeginPlay() override;

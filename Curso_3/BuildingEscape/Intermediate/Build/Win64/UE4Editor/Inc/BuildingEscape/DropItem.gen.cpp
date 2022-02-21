@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeDropItem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UDropItem, 744699776);
+	IMPLEMENT_CLASS(UDropItem, 1915745371);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UDropItem>()
 	{
 		return UDropItem::StaticClass();

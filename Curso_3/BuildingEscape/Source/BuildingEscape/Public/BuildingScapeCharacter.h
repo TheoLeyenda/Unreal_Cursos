@@ -7,6 +7,17 @@
 #include "GameFramework/Character.h"
 #include "BuildingScapeCharacter.generated.h"
 
+USTRUCT(BlueprintType)
+struct FPlayerStats
+{
+	GENERATED_BODY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "BuildingScapeCharacter Settings")
+	float Fatness = 0.0f;
+
+	UPROPERTY(EditAnywhere, Category= "BuildingScapeCharacter Settings")
+	int Lifes = 3;
+};
+
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnSubstractLife);
 UCLASS()
 class BUILDINGESCAPE_API ABuildingScapeCharacter : public ACharacter
@@ -34,11 +45,7 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Camera)
 	float BaseLookUpRate;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "BuildingScapeCharacter Settings")
-	float Fatness = 0.0f;
-
-	UPROPERTY(EditAnywhere, Category= "BuildingScapeCharacter Settings")
-	int Lifes = 3;
+	FPlayerStats PlayerStats;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "BuildingScapeCharacter Settings")
 	bool bEnableMovement = true;

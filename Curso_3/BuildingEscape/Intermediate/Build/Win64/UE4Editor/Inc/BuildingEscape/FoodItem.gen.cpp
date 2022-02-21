@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeFoodItem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFoodItem, 194385955);
+	IMPLEMENT_CLASS(UFoodItem, 2726080773);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UFoodItem>()
 	{
 		return UFoodItem::StaticClass();

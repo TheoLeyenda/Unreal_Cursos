@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeKeyItem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UKeyItem, 2890329494);
+	IMPLEMENT_CLASS(UKeyItem, 2138784670);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UKeyItem>()
 	{
 		return UKeyItem::StaticClass();

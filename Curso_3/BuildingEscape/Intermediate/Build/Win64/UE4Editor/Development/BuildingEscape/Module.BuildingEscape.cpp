@@ -49,6 +49,7 @@
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/TaskActiveInteractComponent.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/TaskInventory.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/RandomSpawnObject.cpp"
+#include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/SaveSystem/SaveDataManager.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/SelfDestructionByTimeOver.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/SpawnObjectByTrigger.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/SubstractLifeTrigger.cpp"

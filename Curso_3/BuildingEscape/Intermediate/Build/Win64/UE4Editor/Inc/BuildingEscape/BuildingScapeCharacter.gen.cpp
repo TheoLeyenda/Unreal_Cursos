@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABuildingScapeCharacter_NoRegister();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnSubstractLife__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
+	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FPlayerStats();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABuildingEscapeGameMode_NoRegister();
@@ -79,6 +80,102 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		}
 		return ReturnFunction;
 	}
+class UScriptStruct* FPlayerStats::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern BUILDINGESCAPE_API uint32 Get_Z_Construct_UScriptStruct_FPlayerStats_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPlayerStats, Z_Construct_UPackage__Script_BuildingEscape(), TEXT("PlayerStats"), sizeof(FPlayerStats), Get_Z_Construct_UScriptStruct_FPlayerStats_Hash());
+	}
+	return Singleton;
+}
+template<> BUILDINGESCAPE_API UScriptStruct* StaticStruct<FPlayerStats>()
+{
+	return FPlayerStats::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FPlayerStats(FPlayerStats::StaticStruct, TEXT("/Script/BuildingEscape"), TEXT("PlayerStats"), false, nullptr, nullptr);
+static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFPlayerStats
+{
+	FScriptStruct_BuildingEscape_StaticRegisterNativesFPlayerStats()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("PlayerStats")),new UScriptStruct::TCppStructOps<FPlayerStats>);
+	}
+} ScriptStruct_BuildingEscape_StaticRegisterNativesFPlayerStats;
+	struct Z_Construct_UScriptStruct_FPlayerStats_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Fatness_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Fatness;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Lifes_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Lifes;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerStats_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FPlayerStats_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FPlayerStats>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness_MetaData[] = {
+		{ "Category", "BuildingScapeCharacter Settings" },
+		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness = { "Fatness", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, Fatness), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes_MetaData[] = {
+		{ "Category", "BuildingScapeCharacter Settings" },
+		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes = { "Lifes", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, Lifes), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FPlayerStats_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Fatness,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_Lifes,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FPlayerStats_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
+		nullptr,
+		&NewStructOps,
+		"PlayerStats",
+		sizeof(FPlayerStats),
+		alignof(FPlayerStats),
+		Z_Construct_UScriptStruct_FPlayerStats_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FPlayerStats()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FPlayerStats_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_BuildingEscape();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PlayerStats"), sizeof(FPlayerStats), Get_Z_Construct_UScriptStruct_FPlayerStats_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FPlayerStats_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FPlayerStats_Hash() { return 3626958925U; }
 	DEFINE_FUNCTION(ABuildingScapeCharacter::execAddLifes)
 	{
 		P_GET_PROPERTY(FIntProperty,Z_Param_Value);
@@ -470,14 +567,6 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseLookUpRate;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Fatness_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Fatness;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Lifes_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Lifes;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bEnableMovement_MetaData[];
 #endif
 		static void NewProp_bEnableMovement_SetBit(void* Obj);
@@ -563,20 +652,6 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BaseLookUpRate = { "BaseLookUpRate", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, BaseLookUpRate), METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BaseLookUpRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BaseLookUpRate_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Fatness_MetaData[] = {
-		{ "Category", "BuildingScapeCharacter Settings" },
-		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Fatness = { "Fatness", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, Fatness), METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Fatness_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Fatness_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Lifes_MetaData[] = {
-		{ "Category", "BuildingScapeCharacter Settings" },
-		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Lifes = { "Lifes", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABuildingScapeCharacter, Lifes), METADATA_PARAMS(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Lifes_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Lifes_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement_MetaData[] = {
 		{ "Category", "BuildingScapeCharacter Settings" },
 		{ "ModuleRelativePath", "Public/BuildingScapeCharacter.h" },
@@ -630,8 +705,6 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_OnUpdatePlayerStats,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BaseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BaseLookUpRate,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Fatness,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_Lifes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_bEnableMovement,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_BuildingEscapeGameMode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABuildingScapeCharacter_Statics::NewProp_OnSubstractLife,
@@ -666,7 +739,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingScapeCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingScapeCharacter, 601926173);
+	IMPLEMENT_CLASS(ABuildingScapeCharacter, 449788208);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABuildingScapeCharacter>()
 	{
 		return ABuildingScapeCharacter::StaticClass();

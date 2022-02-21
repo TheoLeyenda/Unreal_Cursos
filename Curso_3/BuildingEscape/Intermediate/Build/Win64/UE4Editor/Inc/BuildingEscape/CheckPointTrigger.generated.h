@@ -8,15 +8,29 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ACheckPointTrigger;
 #ifdef BUILDINGESCAPE_CheckPointTrigger_generated_h
 #error "CheckPointTrigger.generated.h already included, missing '#pragma once' in CheckPointTrigger.h"
 #endif
 #define BUILDINGESCAPE_CheckPointTrigger_generated_h
 
-#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_RPC_WRAPPERS_NO_PURE_DECLS
-#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_INCLASS_NO_PURE_DECLS \
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_20_DELEGATE \
+struct CheckPointTrigger_eventOnCheckPointTrigger_Parms \
+{ \
+	ACheckPointTrigger* CheckPointTrigger; \
+}; \
+static inline void FOnCheckPointTrigger_DelegateWrapper(const FMulticastScriptDelegate& OnCheckPointTrigger, ACheckPointTrigger* CheckPointTrigger) \
+{ \
+	CheckPointTrigger_eventOnCheckPointTrigger_Parms Parms; \
+	Parms.CheckPointTrigger=CheckPointTrigger; \
+	OnCheckPointTrigger.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_SPARSE_DATA
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_RPC_WRAPPERS
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACheckPointTrigger(); \
 	friend struct Z_Construct_UClass_ACheckPointTrigger_Statics; \
@@ -25,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(ACheckPointTrigger)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_INCLASS \
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesACheckPointTrigger(); \
 	friend struct Z_Construct_UClass_ACheckPointTrigger_Statics; \
@@ -34,7 +48,7 @@ public: \
 	DECLARE_SERIALIZER(ACheckPointTrigger)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_STANDARD_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACheckPointTrigger(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACheckPointTrigger) \
@@ -47,7 +61,7 @@ private: \
 public:
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_ENHANCED_CONSTRUCTORS \
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACheckPointTrigger() { }; \
 private: \
@@ -60,32 +74,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACheckPointTrigger); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACheckPointTrigger)
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_PRIVATE_PROPERTY_OFFSET \
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__PointToCurrentRespawn() { return STRUCT_OFFSET(ACheckPointTrigger, PointToCurrentRespawn); } \
 	FORCEINLINE static uint32 __PPO__PlayerStart() { return STRUCT_OFFSET(ACheckPointTrigger, PlayerStart); }
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_14_PROLOG
-#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_GENERATED_BODY_LEGACY \
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_15_PROLOG
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_RPC_WRAPPERS \
-	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_INCLASS \
-	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_STANDARD_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_RPC_WRAPPERS \
+	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_INCLASS \
+	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_GENERATED_BODY \
+#define BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_PRIVATE_PROPERTY_OFFSET \
-	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_SPARSE_DATA \
-	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_INCLASS_NO_PURE_DECLS \
-	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_17_ENHANCED_CONSTRUCTORS \
+	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_PRIVATE_PROPERTY_OFFSET \
+	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_SPARSE_DATA \
+	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_INCLASS_NO_PURE_DECLS \
+	BuildingEscape_Source_BuildingEscape_Public_CheckPointTrigger_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -19,6 +19,9 @@ public:
 	UItem();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")
+	int32 ID;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")
 	bool bSelectedItem = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Item")

@@ -43,6 +43,7 @@
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/QuestEvaluatorComponent.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/QuestManager.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/RandomSpawnObject.gen.cpp"
+#include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/SaveDataManager.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/SelfDestructionByTimeOver.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/SpawnObjectByTrigger.gen.cpp"
 #include "C:/Users/Theo/Desktop/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/StructsDataSystemQuest.gen.cpp"
