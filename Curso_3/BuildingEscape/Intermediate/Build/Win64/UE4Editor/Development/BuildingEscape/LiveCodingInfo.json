@@ -42,6 +42,10 @@
 			"BaseQuest.cpp.obj",
 			"BaseTask.cpp.obj",
 			"Objetive.cpp.obj",
+			"FatnessObjetive.cpp.obj",
+			"LastInteractActorObjetive.cpp.obj",
+			"LifesObjetive.cpp.obj",
+			"NeedItemObjetive.cpp.obj",
 			"QuestActorComponentID.cpp.obj",
 			"QuestActorGeneratorID.cpp.obj",
 			"QuestEvaluatorComponent.cpp.obj",
@@ -65,7 +69,7 @@
 			"TrapInterface.cpp.obj",
 			"TriggerResetGame.cpp.obj"
 		],
-		"Module.BuildingEscape.gen.cpp.obj": [
+		"Module.BuildingEscape.gen.1_of_2.cpp.obj": [
 			"BaseQuest.gen.cpp.obj",
 			"BaseTask.gen.cpp.obj",
 			"BaseTNT.gen.cpp.obj",
@@ -83,6 +87,7 @@
 			"DoorInteractTriggerWithMass.gen.cpp.obj",
 			"DropItem.gen.cpp.obj",
 			"FalseFloorTrap.gen.cpp.obj",
+			"FatnessObjetive.gen.cpp.obj",
 			"FoodItem.gen.cpp.obj",
 			"GameOverTriggerBySpecificObjects.gen.cpp.obj",
 			"Grabber.gen.cpp.obj",
@@ -90,13 +95,18 @@
 			"InteractInterface.gen.cpp.obj",
 			"InteractTrigger.gen.cpp.obj",
 			"Inventory.gen.cpp.obj",
-			"Item.gen.cpp.obj",
+			"Item.gen.cpp.obj"
+		],
+		"Module.BuildingEscape.gen.2_of_2.cpp.obj": [
 			"KeyItem.gen.cpp.obj",
+			"LastInteractActorObjetive.gen.cpp.obj",
 			"LeverSwitch.gen.cpp.obj",
 			"LeverSwitchCombinePanel.gen.cpp.obj",
 			"LeverSwitchToCraft.gen.cpp.obj",
+			"LifesObjetive.gen.cpp.obj",
 			"LockedDoor.gen.cpp.obj",
 			"ModifiableStaticMesh.gen.cpp.obj",
+			"NeedItemObjetive.gen.cpp.obj",
 			"ObjectsInteractTrigger.gen.cpp.obj",
 			"ObjectSpawner.gen.cpp.obj",
 			"ObjectSpawnLeverSwitch.gen.cpp.obj",

@@ -26,10 +26,14 @@ public:
 	bool bUseIdentificationObject = true;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FDataPlayer RequiredDataPlayer;
+	TArray<UObjetive*> StepsToCompleteObjective;
 	
+	UFUNCTION()
 	void CheckObjetiveComplete(FDataPlayer CompareData);
 
 	UFUNCTION()
-	void ResetData();
+	virtual bool CheckStepComplete(FDataPlayer CompareData);
+	
+	UFUNCTION()
+	virtual void ResetData();
 };

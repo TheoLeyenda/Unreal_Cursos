@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FDataPlayer;
 #ifdef BUILDINGESCAPE_Objetive_generated_h
 #error "Objetive.generated.h already included, missing '#pragma once' in Objetive.h"
 #endif
@@ -16,12 +17,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Objetive_h_16_SPARSE_DATA
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Objetive_h_16_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execResetData);
+	DECLARE_FUNCTION(execResetData); \
+	DECLARE_FUNCTION(execCheckStepComplete); \
+	DECLARE_FUNCTION(execCheckObjetiveComplete);
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Objetive_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execResetData);
+	DECLARE_FUNCTION(execResetData); \
+	DECLARE_FUNCTION(execCheckStepComplete); \
+	DECLARE_FUNCTION(execCheckObjetiveComplete);
 
 
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Objetive_h_16_INCLASS_NO_PURE_DECLS \
