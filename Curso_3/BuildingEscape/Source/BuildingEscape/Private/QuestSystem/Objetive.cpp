@@ -46,3 +46,10 @@ void UObjetive::CheckObjetiveComplete(FDataPlayer CompareData)
 		bDoneAccion = true;
 	}
 }
+
+void UObjetive::ResetData()
+{
+	bDoneAccion = false;
+	RequiredDataPlayer.Fatness = 0;
+	RequiredDataPlayer.Lifes = 0;
+}

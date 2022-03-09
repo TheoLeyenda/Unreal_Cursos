@@ -29,4 +29,7 @@ public:
 	FDataPlayer RequiredDataPlayer;
 	
 	void CheckObjetiveComplete(FDataPlayer CompareData);
+
+	UFUNCTION()
+	void ResetData();
 };

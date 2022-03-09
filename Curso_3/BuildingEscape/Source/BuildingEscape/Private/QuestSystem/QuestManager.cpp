@@ -44,7 +44,7 @@ void AQuestManager::LoadQuestsInfoDataTable()
 			{
 				if(Objetive)
 				{
-					Objetive->bDoneAccion = false;
+					Objetive->ResetData();
 					QuestInfo.Quest->QuestStructInfo.Objetives.Add(Objetive);
 				}
 			}

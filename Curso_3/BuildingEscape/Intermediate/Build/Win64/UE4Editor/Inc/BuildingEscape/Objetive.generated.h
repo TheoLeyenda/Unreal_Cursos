@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define BUILDINGESCAPE_Objetive_generated_h
 
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Objetive_h_16_SPARSE_DATA
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Objetive_h_16_RPC_WRAPPERS
-#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Objetive_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Objetive_h_16_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execResetData);
+
+
+#define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Objetive_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execResetData);
+
+
 #define BuildingEscape_Source_BuildingEscape_Public_QuestSystem_Objetive_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUObjetive(); \

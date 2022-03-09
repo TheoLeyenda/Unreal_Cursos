@@ -19,8 +19,42 @@ void EmptyLinkFunctionForGeneratedCodeObjetive() {}
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FDataPlayer();
 // End Cross Module References
+	DEFINE_FUNCTION(UObjetive::execResetData)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ResetData();
+		P_NATIVE_END;
+	}
 	void UObjetive::StaticRegisterNativesUObjetive()
 	{
+		UClass* Class = UObjetive::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "ResetData", &UObjetive::execResetData },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UObjetive_ResetData_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UObjetive_ResetData_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/QuestSystem/Objetive.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UObjetive_ResetData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UObjetive, nullptr, "ResetData", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UObjetive_ResetData_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UObjetive_ResetData_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UObjetive_ResetData()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UObjetive_ResetData_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_UObjetive_NoRegister()
 	{
@@ -29,6 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeObjetive() {}
 	struct Z_Construct_UClass_UObjetive_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -57,6 +92,9 @@ void EmptyLinkFunctionForGeneratedCodeObjetive() {}
 	UObject* (*const Z_Construct_UClass_UObjetive_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_UDataAsset,
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UObjetive_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UObjetive_ResetData, "ResetData" }, // 3410911308
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UObjetive_Statics::Class_MetaDataParams[] = {
@@ -117,11 +155,11 @@ void EmptyLinkFunctionForGeneratedCodeObjetive() {}
 		nullptr,
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_UObjetive_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_UObjetive_Statics::PropPointers),
 		0,
 		0x009000A0u,
@@ -136,7 +174,7 @@ void EmptyLinkFunctionForGeneratedCodeObjetive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UObjetive, 2434667282);
+	IMPLEMENT_CLASS(UObjetive, 550968028);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UObjetive>()
 	{
 		return UObjetive::StaticClass();
