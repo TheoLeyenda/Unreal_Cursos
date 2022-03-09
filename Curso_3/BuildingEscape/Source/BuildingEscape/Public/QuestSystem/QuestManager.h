@@ -66,4 +66,5 @@ public:
 
 	UFUNCTION()
 	void LoadQuestsInfoDataTable();
+
 };

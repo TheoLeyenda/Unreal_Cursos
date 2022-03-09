@@ -39,10 +39,14 @@ void AQuestManager::LoadQuestsInfoDataTable()
 		{
 			QuestInfo.Quest->QuestStructInfo.Name = CurrentQuestStructInfo->Name;
 
-			QuestInfo.Quest->QuestStructInfo.ActionsQuest.Empty();
-			for(FActionQuest ActionQuest : CurrentQuestStructInfo->ActionsQuest)
+			QuestInfo.Quest->QuestStructInfo.Objetives.Empty();
+			for(UObjetive* Objetive : CurrentQuestStructInfo->Objetives)
 			{
-				QuestInfo.Quest->QuestStructInfo.ActionsQuest.Add(ActionQuest);
+				if(Objetive)
+				{
+					Objetive->bDoneAccion = false;
+					QuestInfo.Quest->QuestStructInfo.Objetives.Add(Objetive);
+				}
 			}
 
 			QuestInfo.Quest->QuestStructInfo.ID = CurrentQuestStructInfo->ID;
@@ -51,6 +55,7 @@ void AQuestManager::LoadQuestsInfoDataTable()
 		}
 	}
 }
+
 void AQuestManager::FindQuestEvaluatorComponents()
 {
 	TArray<AActor*> Actors;

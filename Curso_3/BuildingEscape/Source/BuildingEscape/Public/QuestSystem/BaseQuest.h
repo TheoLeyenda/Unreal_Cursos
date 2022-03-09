@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "QuestEvaluatorComponent.h"
+#include "Objetive.h"
 #include "Engine/DataTable.h"
 #include "UObject/Object.h"
 #include "BaseQuest.generated.h"
@@ -18,7 +18,7 @@ enum EQuestState
 	Failed,
 };
 
-USTRUCT(BlueprintType)
+/*USTRUCT(BlueprintType)
 struct FActionQuest
 {
 	GENERATED_BODY()
@@ -40,12 +40,12 @@ struct FActionQuest
 		bool bInventoryCondition = true;
 		
 		//FString Toto = FString::SanitizeFloat(0.5f) + FString("321");
-		/*
-		FString A = FString("");
-		FString B = FString("");
-		A.Append(B);
-		A = A + B;
-		 */
+		
+		//FString A = FString("");
+		//FString B = FString("");
+		//A.Append(B);
+		//A = A + B;
+		 
 		
 		UE_LOG(LogTemp, Warning, TEXT("ACTUALICE ALIMENTO"));
 		
@@ -79,7 +79,7 @@ struct FActionQuest
 		}
 	}
 	
-};
+};*/
 
 USTRUCT(BlueprintType)
 struct FQuestStructInfo : public FTableRowBase
@@ -95,9 +95,12 @@ struct FQuestStructInfo : public FTableRowBase
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	TEnumAsByte<EQuestState> QuestState = EQuestState::Available;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<FActionQuest> ActionsQuest;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//TArray<FActionQuest> ActionsQuest;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<UObjetive*> Objetives;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<int32> QuetsActivatedToCompleteIDs;
 };

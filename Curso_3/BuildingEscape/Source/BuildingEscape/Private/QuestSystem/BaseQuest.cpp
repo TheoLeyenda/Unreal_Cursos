@@ -9,12 +9,15 @@ void UBaseQuest::CheckCompleteQuest()
 	
 	bool bCompleteQuest = true;
 	
-	for(FActionQuest &ActionQuest : QuestStructInfo.ActionsQuest)
+	for(UObjetive* Objetive : QuestStructInfo.Objetives)
 	{
-		if(!ActionQuest.bDoneAccion)
+		if(Objetive)
 		{
-			bCompleteQuest = false;
-			break;
+			if(!Objetive->bDoneAccion)
+			{
+				bCompleteQuest = false;
+				break;
+			}
 		}
 	}
 
@@ -29,16 +32,19 @@ void UBaseQuest::CheckCompleteQuest()
 void UBaseQuest::CheckStatus(FDataPlayer DataPlayer)
 {
 	if(QuestStructInfo.QuestState != EQuestState::InProgress){return;}
-	for(FActionQuest &ActionQuest : QuestStructInfo.ActionsQuest)
+	for(UObjetive* Objetive : QuestStructInfo.Objetives)
 	{
-		if(!ActionQuest.bDoneAccion)
+		if(Objetive)
 		{
-			ActionQuest.CheckObjetiveComplete(DataPlayer);
-			if(ActionQuest.bDoneAccion)
+			if(!Objetive->bDoneAccion)
 			{
-				OnUpdateQuest.Broadcast();
+				Objetive->CheckObjetiveComplete(DataPlayer);
+				if(Objetive->bDoneAccion)
+				{
+					OnUpdateQuest.Broadcast();
+				}
+				UE_LOG(LogTemp, Warning, TEXT("Objetivo Completado: %s"), Objetive->bDoneAccion? TEXT("True") : TEXT("False"));
 			}
-			UE_LOG(LogTemp, Warning, TEXT("Objetivo Completado: %s"), ActionQuest.bDoneAccion? TEXT("True") : TEXT("False"));
 		}
 	}
 	CheckCompleteQuest();
