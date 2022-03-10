@@ -4328,3 +4328,2016 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.03.10-20.23.19:536][920]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
 [2022.03.10-20.23.19:536][920]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
 [2022.03.10-20.23.22:213][217]LogUObjectHash: Compacting FUObjectHashTables data took   0.44ms
+[2022.03.10-20.27.10:292][928]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.10-20.27.10:298][928]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.10-20.27.10:299][928]PIE: New page: PIE session: BuildingScape (Mar 10, 2022, 2:27:10 PM)
+[2022.03.10-20.27.10:320][928]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.27.10:470][928]LogPlayLevel: PIE: StaticDuplicateObject took: (0.150044s)
+[2022.03.10-20.27.10:471][928]LogAIModule: Creating AISystem for world BuildingScape
+[2022.03.10-20.27.10:471][928]LogPlayLevel: PIE: World Init took: (0.001079s)
+[2022.03.10-20.27.10:471][928]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.151405s)
+[2022.03.10-20.27.10:489][928]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2022.03.10-20.27.10:491][928]LogAudio: Display: Creating Audio Device:                 Id: 15, Scope: Unique, Realtime: True
+[2022.03.10-20.27.10:492][928]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.10-20.27.10:492][928]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.10-20.27.10:492][928]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.10-20.27.10:492][928]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.10-20.27.10:492][928]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.10-20.27.10:492][928]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.10-20.27.10:492][928]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.10-20.27.10:492][928]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.10-20.27.10:492][928]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.10-20.27.10:492][928]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.10-20.27.10:499][928]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.10-20.27.10:499][928]LogAudioMixer: Display: 1: FrontRight
+[2022.03.10-20.27.10:516][928]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.03.10-20.27.10:516][928]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.10-20.27.10:516][928]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.10-20.27.10:516][928]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.10-20.27.10:516][928]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.10-20.27.10:516][928]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.10-20.27.10:516][928]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.10-20.27.10:528][928]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.10-20.27.10:528][928]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.10-20.27.10:528][928]LogInit: FAudioDevice initialized.
+[2022.03.10-20.27.10:528][928]LogAudio: Display: Audio Device (ID: 15) registered with world 'BuildingScape'.
+[2022.03.10-20.27.10:534][928]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.03.10-20.27.10:546][928]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.03.10-17.27.10
+[2022.03.10-20.27.10:546][928]LogWorld: Bringing up level for play took: 0.012615
+[2022.03.10-20.27.10:546][928]LogOnline: OSS: Creating online subsystem instance for: :Context_75
+[2022.03.10-20.27.10:587][928]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:588][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.10:589][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:590][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.10:591][928]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2022.03.10-20.27.10:591][928]PIE: Server logged in
+[2022.03.10-20.27.10:592][928]PIE: Play in editor total start time 0.296 seconds.
+[2022.03.10-20.27.10:604][929]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.27.10:800][951]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.27.11:300][ 11]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.27.11:800][ 71]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.27.12:151][108]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.27.12:151][108]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.27.12:152][108]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.03.10-20.27.12:153][108]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.27.12:158][108]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.10-20.27.12:175][108]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.27.12:191][108]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.27.12:192][108]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.27.12:193][108]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.27.12:212][108]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
+[2022.03.10-20.27.12:239][109]LogPlayLevel: Display: Destroying online subsystem :Context_75
+[2022.03.10-20.27.16:172][554]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
+[2022.03.10-20.27.19:992][969]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.21:142][105]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.25:342][557]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.27:330][794]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.28:624][927]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.31:531][258]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.34:308][564]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.37:209][885]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.39:740][161]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.41:265][343]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.46:165][915]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.48:281][155]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2022.03.10-20.27.48:695][155]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape1827AA3C4E18C2CD33F24CA3E1860172.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.03.10-20.27.48:704][155]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.03.10-20.27.48:789][155]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltData2EB0C5D240699838166D38B67095A1BD.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.03.10-20.27.48:799][155]AssetCheck: New page: Asset Save: multiple assets
+[2022.03.10-20.27.48:799][155]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.03.10-20.27.48:799][155]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.03.10-20.27.52:120][538]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2022.03.10-20.27.53:447][685]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2022.03.10-20.27.53:854][685]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape825448DB469E44EA8748B3820FD3EB96.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape.umap'
+[2022.03.10-20.27.53:863][685]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/BuildingScape_BuiltData" FILE="../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset" SILENT=true
+[2022.03.10-20.27.53:947][685]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/BuildingScape_BuiltData8F8FCADF4668D9EC3A5FC78A8D54CE4A.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Maps/BuildingScape_BuiltData.uasset'
+[2022.03.10-20.27.53:957][685]AssetCheck: New page: Asset Save: multiple assets
+[2022.03.10-20.27.53:957][685]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/BuildingScape_BuiltData.BuildingScape_BuiltData
+[2022.03.10-20.27.53:957][685]LogContentValidation: Display: Validating World /Game/Maps/BuildingScape.BuildingScape
+[2022.03.10-20.27.54:580][759]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.10-20.27.54:585][759]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.10-20.27.54:585][759]PIE: New page: PIE session: BuildingScape (Mar 10, 2022, 2:27:54 PM)
+[2022.03.10-20.27.54:616][759]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.27.54:765][759]LogPlayLevel: PIE: StaticDuplicateObject took: (0.148615s)
+[2022.03.10-20.27.54:765][759]LogAIModule: Creating AISystem for world BuildingScape
+[2022.03.10-20.27.54:766][759]LogPlayLevel: PIE: World Init took: (0.000994s)
+[2022.03.10-20.27.54:766][759]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.149870s)
+[2022.03.10-20.27.54:783][759]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2022.03.10-20.27.54:784][759]LogAudio: Display: Creating Audio Device:                 Id: 16, Scope: Unique, Realtime: True
+[2022.03.10-20.27.54:784][759]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.10-20.27.54:784][759]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.10-20.27.54:784][759]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.10-20.27.54:784][759]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.10-20.27.54:784][759]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.10-20.27.54:784][759]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.10-20.27.54:784][759]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.10-20.27.54:784][759]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.10-20.27.54:784][759]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.10-20.27.54:784][759]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.10-20.27.54:790][759]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.10-20.27.54:790][759]LogAudioMixer: Display: 1: FrontRight
+[2022.03.10-20.27.54:805][759]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.03.10-20.27.54:806][759]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.10-20.27.54:806][759]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.10-20.27.54:806][759]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.10-20.27.54:806][759]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.10-20.27.54:806][759]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.10-20.27.54:806][759]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.10-20.27.54:818][759]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.10-20.27.54:818][759]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.10-20.27.54:818][759]LogInit: FAudioDevice initialized.
+[2022.03.10-20.27.54:818][759]LogAudio: Display: Audio Device (ID: 16) registered with world 'BuildingScape'.
+[2022.03.10-20.27.54:827][759]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.03.10-20.27.54:840][759]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.03.10-17.27.54
+[2022.03.10-20.27.54:841][759]LogWorld: Bringing up level for play took: 0.012053
+[2022.03.10-20.27.54:841][759]LogOnline: OSS: Creating online subsystem instance for: :Context_76
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:883][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:884][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.54:885][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:886][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.54:887][759]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2022.03.10-20.27.54:887][759]PIE: Server logged in
+[2022.03.10-20.27.54:888][759]PIE: Play in editor total start time 0.303 seconds.
+[2022.03.10-20.27.54:899][760]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.27.54:932][762]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.54:932][762]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.27.54:932][762]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.27.55:082][780]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.27.55:582][840]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.27.56:083][900]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.27.56:841][991]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_7
+[2022.03.10-20.27.58:307][167]LogTemp: Warning: ActorsInOverlap.Num = 1
+[2022.03.10-20.27.58:307][167]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.58:307][167]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.58:307][167]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.58:307][167]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.58:766][222]LogTemp: Warning: ActorsInOverlap.Num = -1
+[2022.03.10-20.27.59:075][259]LogTemp: Warning: ActorsInOverlap.Num = 1
+[2022.03.10-20.27.59:075][259]LogTemp: Warning: Envie la task
+[2022.03.10-20.27.59:075][259]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.59:075][259]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.27.59:075][259]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.28.00:417][420]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.28.00:417][420]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.28.03:091][731]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.28.03:091][731]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.28.17:702][421]LogAssetEditorSubsystem: Opening Asset editor for Objetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor1/DT_Puzzle1_OpenDoor1.DT_Puzzle1_OpenDoor1
+[2022.03.10-20.28.19:418][616]LogAssetEditorSubsystem: Opening Asset editor for LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor1/Steps/DT_Puzzle1_OpenDoor1_Step1.DT_Puzzle1_OpenDoor1_Step1
+[2022.03.10-20.28.24:369][195]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2022.03.10-20.28.24:373][195]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle1_OpenDoor1_Step1011F4D9349BA3FCB9436ADA234F4B36F.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor1/Steps/DT_Puzzle1_OpenDoor1_Step1.uasset'
+[2022.03.10-20.28.24:377][195]AssetCheck: New page: Asset Save: DT_Puzzle1_OpenDoor1_Step1
+[2022.03.10-20.28.24:377][195]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor1/Steps/DT_Puzzle1_OpenDoor1_Step1.DT_Puzzle1_OpenDoor1_Step1
+[2022.03.10-20.28.44:814][547]LogAssetEditorSubsystem: Opening Asset editor for LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor2/Steps/DT_Puzzle1_OpenDoor2_Step1.DT_Puzzle1_OpenDoor2_Step1
+[2022.03.10-20.28.48:820][ 24]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle1_OpenDoor2_Step1C1BFE0E545CC993A4A23D6947D1C2197.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor2/Steps/DT_Puzzle1_OpenDoor2_Step1.uasset'
+[2022.03.10-20.28.48:824][ 24]AssetCheck: New page: Asset Save: DT_Puzzle1_OpenDoor2_Step1
+[2022.03.10-20.28.48:824][ 24]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor2/Steps/DT_Puzzle1_OpenDoor2_Step1.DT_Puzzle1_OpenDoor2_Step1
+[2022.03.10-20.28.52:704][460]LogAssetEditorSubsystem: Opening Asset editor for Objetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor3/DT_Puzzle1_OpenDoor3.DT_Puzzle1_OpenDoor3
+[2022.03.10-20.28.54:604][676]LogAssetEditorSubsystem: Opening Asset editor for LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor3/Steps/DT_Puzzle1_OpenDoor3_Step1.DT_Puzzle1_OpenDoor3_Step1
+[2022.03.10-20.28.58:254][109]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle1_OpenDoor3_Step10D74CB544250373C5CF627A9F1CC39F9.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor3/Steps/DT_Puzzle1_OpenDoor3_Step1.uasset'
+[2022.03.10-20.28.58:258][109]AssetCheck: New page: Asset Save: DT_Puzzle1_OpenDoor3_Step1
+[2022.03.10-20.28.58:258][109]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor3/Steps/DT_Puzzle1_OpenDoor3_Step1.DT_Puzzle1_OpenDoor3_Step1
+[2022.03.10-20.29.02:408][557]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.29.02:408][557]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.29.02:408][557]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.03.10-20.29.02:409][557]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.29.02:418][557]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.10-20.29.02:429][557]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.29.02:446][557]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.29.02:448][557]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.29.02:448][557]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.29.02:466][557]LogUObjectHash: Compacting FUObjectHashTables data took   1.59ms
+[2022.03.10-20.29.02:498][558]LogPlayLevel: Display: Destroying online subsystem :Context_76
+[2022.03.10-20.29.02:889][601]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.10-20.29.02:894][601]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.10-20.29.02:894][601]PIE: New page: PIE session: BuildingScape (Mar 10, 2022, 2:29:02 PM)
+[2022.03.10-20.29.02:895][601]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.29.03:043][601]LogPlayLevel: PIE: StaticDuplicateObject took: (0.149032s)
+[2022.03.10-20.29.03:044][601]LogAIModule: Creating AISystem for world BuildingScape
+[2022.03.10-20.29.03:044][601]LogPlayLevel: PIE: World Init took: (0.000921s)
+[2022.03.10-20.29.03:044][601]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.150176s)
+[2022.03.10-20.29.03:061][601]LogUObjectHash: Compacting FUObjectHashTables data took   1.52ms
+[2022.03.10-20.29.03:062][601]LogAudio: Display: Creating Audio Device:                 Id: 17, Scope: Unique, Realtime: True
+[2022.03.10-20.29.03:062][601]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.10-20.29.03:062][601]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.10-20.29.03:062][601]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.10-20.29.03:062][601]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.10-20.29.03:062][601]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.10-20.29.03:063][601]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.10-20.29.03:063][601]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.10-20.29.03:063][601]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.10-20.29.03:063][601]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.10-20.29.03:063][601]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.10-20.29.03:068][601]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.10-20.29.03:068][601]LogAudioMixer: Display: 1: FrontRight
+[2022.03.10-20.29.03:083][601]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.03.10-20.29.03:083][601]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.10-20.29.03:083][601]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.10-20.29.03:083][601]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.10-20.29.03:084][601]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.10-20.29.03:084][601]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.10-20.29.03:084][601]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.10-20.29.03:096][601]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.10-20.29.03:096][601]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.10-20.29.03:096][601]LogInit: FAudioDevice initialized.
+[2022.03.10-20.29.03:096][601]LogAudio: Display: Audio Device (ID: 17) registered with world 'BuildingScape'.
+[2022.03.10-20.29.03:104][601]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.03.10-20.29.03:116][601]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.03.10-17.29.03
+[2022.03.10-20.29.03:117][601]LogWorld: Bringing up level for play took: 0.011350
+[2022.03.10-20.29.03:117][601]LogOnline: OSS: Creating online subsystem instance for: :Context_77
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:158][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:159][601]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:160][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.03:161][601]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2022.03.10-20.29.03:161][601]PIE: Server logged in
+[2022.03.10-20.29.03:162][601]PIE: Play in editor total start time 0.269 seconds.
+[2022.03.10-20.29.03:174][602]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.03:246][609]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.03:246][609]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.29.03:246][609]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.29.03:396][627]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.03:897][687]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.04:022][702]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.29.04:022][702]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.29.04:398][747]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.04:447][753]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.29.04:447][753]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.29.04:857][802]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_7
+[2022.03.10-20.29.05:806][916]LogTemp: Warning: ActorsInOverlap.Num = 1
+[2022.03.10-20.29.05:806][916]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.05:807][916]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.29.05:807][916]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.05:807][916]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.06:131][955]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.29.06:131][955]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.29.06:498][999]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.29.06:498][999]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.29.08:715][265]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_8
+[2022.03.10-20.29.10:057][426]LogTemp: Warning: TotalMass: 50.000000
+[2022.03.10-20.29.11:166][557]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_9
+[2022.03.10-20.29.12:174][678]LogTemp: Warning: TotalMass: 150.000000
+[2022.03.10-20.29.12:174][678]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.12:174][678]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.29.12:174][678]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.12:840][758]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.29.12:840][758]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.29.13:524][840]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.29.13:524][840]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.29.14:117][911]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_9
+[2022.03.10-20.29.14:741][986]LogTemp: Warning: TotalMass: 150.000000
+[2022.03.10-20.29.14:741][986]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.14:741][986]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.16:083][147]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.16:083][147]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.16:183][159]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.17:300][293]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.17:300][293]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.17:300][293]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.17:300][293]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.17:909][366]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.29.17:909][366]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.29.18:283][411]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.29.18:283][411]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.29.19:893][604]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.29.19:893][604]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.29.21:234][765]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.21:234][765]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.21:235][765]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.21:235][765]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.22:330][892]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.29.22:330][892]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.29.22:331][892]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.03.10-20.29.22:332][892]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.29.22:339][892]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.10-20.29.22:351][892]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.29.22:368][892]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.29.22:369][892]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.29.22:370][892]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.29.22:390][892]LogUObjectHash: Compacting FUObjectHashTables data took   1.53ms
+[2022.03.10-20.29.22:408][893]LogPlayLevel: Display: Destroying online subsystem :Context_77
+[2022.03.10-20.29.24:704][165]LogEditorViewport: Clicking on Actor (LMB): BP_LookedDoor_C (BP_LookedDoor)
+[2022.03.10-20.29.29:826][726]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.10-20.29.29:831][726]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.10-20.29.29:831][726]PIE: New page: PIE session: BuildingScape (Mar 10, 2022, 2:29:29 PM)
+[2022.03.10-20.29.29:831][726]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.29.29:980][726]LogPlayLevel: PIE: StaticDuplicateObject took: (0.148797s)
+[2022.03.10-20.29.29:980][726]LogAIModule: Creating AISystem for world BuildingScape
+[2022.03.10-20.29.29:981][726]LogPlayLevel: PIE: World Init took: (0.000966s)
+[2022.03.10-20.29.29:981][726]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.149998s)
+[2022.03.10-20.29.29:998][726]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2022.03.10-20.29.30:000][726]LogAudio: Display: Creating Audio Device:                 Id: 18, Scope: Unique, Realtime: True
+[2022.03.10-20.29.30:000][726]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.10-20.29.30:000][726]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.10-20.29.30:001][726]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.10-20.29.30:001][726]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.10-20.29.30:001][726]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.10-20.29.30:001][726]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.10-20.29.30:001][726]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.10-20.29.30:001][726]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.10-20.29.30:001][726]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.10-20.29.30:001][726]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.10-20.29.30:006][726]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.10-20.29.30:006][726]LogAudioMixer: Display: 1: FrontRight
+[2022.03.10-20.29.30:022][726]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.03.10-20.29.30:022][726]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.10-20.29.30:022][726]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.10-20.29.30:022][726]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.10-20.29.30:023][726]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.10-20.29.30:023][726]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.10-20.29.30:023][726]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.10-20.29.30:034][726]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.10-20.29.30:034][726]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.10-20.29.30:034][726]LogInit: FAudioDevice initialized.
+[2022.03.10-20.29.30:034][726]LogAudio: Display: Audio Device (ID: 18) registered with world 'BuildingScape'.
+[2022.03.10-20.29.30:044][726]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.03.10-20.29.30:058][726]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.03.10-17.29.30
+[2022.03.10-20.29.30:058][726]LogWorld: Bringing up level for play took: 0.013040
+[2022.03.10-20.29.30:058][726]LogOnline: OSS: Creating online subsystem instance for: :Context_78
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:100][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.30:101][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:102][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.30:103][726]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2022.03.10-20.29.30:103][726]PIE: Server logged in
+[2022.03.10-20.29.30:104][726]PIE: Play in editor total start time 0.274 seconds.
+[2022.03.10-20.29.30:115][727]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.30:181][733]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.30:181][733]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.29.30:181][733]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.29.30:331][751]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.30:832][811]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.31:331][871]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.35:600][359]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2022.03.10-20.29.36:628][455]LogEditorViewport: Clicking on Actor (LMB): BP_LookedDoor_C (BP_LookedDoor)
+[2022.03.10-20.29.44:110][306]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle1_OpenDoor3_Step1EF12AD4444B0C9969FC71C9942B3E24C.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor3/Steps/DT_Puzzle1_OpenDoor3_Step1.uasset'
+[2022.03.10-20.29.44:115][306]AssetCheck: New page: Asset Save: DT_Puzzle1_OpenDoor3_Step1
+[2022.03.10-20.29.44:115][306]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor3/Steps/DT_Puzzle1_OpenDoor3_Step1.DT_Puzzle1_OpenDoor3_Step1
+[2022.03.10-20.29.46:814][603]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.29.46:814][603]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.29.46:815][603]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.03.10-20.29.46:816][603]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.29.46:821][603]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.10-20.29.46:843][603]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.29.46:860][603]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.29.46:861][603]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.29.46:862][603]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.29.46:880][603]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2022.03.10-20.29.46:905][604]LogPlayLevel: Display: Destroying online subsystem :Context_78
+[2022.03.10-20.29.50:447][ 10]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle1_OpenDoor3_Step18345B730433CE2CF1D4053B657979946.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor3/Steps/DT_Puzzle1_OpenDoor3_Step1.uasset'
+[2022.03.10-20.29.50:454][ 10]AssetCheck: New page: Asset Save: DT_Puzzle1_OpenDoor3_Step1
+[2022.03.10-20.29.50:454][ 10]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_1/OpenDoor3/Steps/DT_Puzzle1_OpenDoor3_Step1.DT_Puzzle1_OpenDoor3_Step1
+[2022.03.10-20.29.54:070][413]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.10-20.29.54:075][413]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.10-20.29.54:075][413]PIE: New page: PIE session: BuildingScape (Mar 10, 2022, 2:29:54 PM)
+[2022.03.10-20.29.54:075][413]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.29.54:225][413]LogPlayLevel: PIE: StaticDuplicateObject took: (0.150605s)
+[2022.03.10-20.29.54:226][413]LogAIModule: Creating AISystem for world BuildingScape
+[2022.03.10-20.29.54:226][413]LogPlayLevel: PIE: World Init took: (0.000927s)
+[2022.03.10-20.29.54:227][413]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.151815s)
+[2022.03.10-20.29.54:244][413]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2022.03.10-20.29.54:245][413]LogAudio: Display: Creating Audio Device:                 Id: 19, Scope: Unique, Realtime: True
+[2022.03.10-20.29.54:246][413]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.10-20.29.54:246][413]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.10-20.29.54:246][413]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.10-20.29.54:246][413]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.10-20.29.54:246][413]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.10-20.29.54:246][413]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.10-20.29.54:246][413]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.10-20.29.54:246][413]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.10-20.29.54:246][413]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.10-20.29.54:246][413]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.10-20.29.54:251][413]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.10-20.29.54:251][413]LogAudioMixer: Display: 1: FrontRight
+[2022.03.10-20.29.54:266][413]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.03.10-20.29.54:267][413]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.10-20.29.54:267][413]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.10-20.29.54:267][413]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.10-20.29.54:267][413]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.10-20.29.54:267][413]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.10-20.29.54:267][413]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.10-20.29.54:279][413]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.10-20.29.54:279][413]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.10-20.29.54:279][413]LogInit: FAudioDevice initialized.
+[2022.03.10-20.29.54:279][413]LogAudio: Display: Audio Device (ID: 19) registered with world 'BuildingScape'.
+[2022.03.10-20.29.54:288][413]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.03.10-20.29.54:302][413]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.03.10-17.29.54
+[2022.03.10-20.29.54:302][413]LogWorld: Bringing up level for play took: 0.012356
+[2022.03.10-20.29.54:302][413]LogOnline: OSS: Creating online subsystem instance for: :Context_79
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:344][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:345][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:346][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.54:347][413]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2022.03.10-20.29.54:347][413]PIE: Server logged in
+[2022.03.10-20.29.54:348][413]PIE: Play in editor total start time 0.273 seconds.
+[2022.03.10-20.29.54:359][414]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.54:421][419]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.54:421][419]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.29.54:421][419]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.29.54:572][437]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.55:071][497]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.55:571][557]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.29.55:730][576]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_7
+[2022.03.10-20.29.56:656][687]LogTemp: Warning: ActorsInOverlap.Num = 1
+[2022.03.10-20.29.56:656][687]LogTemp: Warning: Envie la task
+[2022.03.10-20.29.56:656][687]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.29.56:656][687]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.56:656][687]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.29.57:197][752]LogTemp: Warning: ActorsInOverlap.Num = -1
+[2022.03.10-20.29.59:640][ 45]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_8
+[2022.03.10-20.30.00:914][198]LogTemp: Warning: TotalMass: 50.000000
+[2022.03.10-20.30.02:506][389]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_8
+[2022.03.10-20.30.02:898][436]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_8
+[2022.03.10-20.30.03:631][524]LogTemp: Warning: TotalMass: 100.000000
+[2022.03.10-20.30.03:631][524]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.03:631][524]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.30.03:631][524]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.06:190][831]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.06:190][831]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.06:290][843]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.30.07:507][989]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.07:507][989]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.07:507][989]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.07:507][989]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.08:666][128]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.30.08:666][128]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.30.09:082][178]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.30.09:082][178]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.30.10:116][302]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.30.10:116][302]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.30.11:291][443]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.11:291][443]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.11:292][443]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.11:292][443]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.30.11:292][443]LogTemp: Warning: Quest Completada
+[2022.03.10-20.30.12:077][533]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.30.12:077][533]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.30.12:078][533]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.03.10-20.30.12:079][533]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.30.12:087][533]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.10-20.30.12:109][533]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.30.12:126][533]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.30.12:127][533]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.30.12:128][533]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.30.12:147][533]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2022.03.10-20.30.12:172][534]LogPlayLevel: Display: Destroying online subsystem :Context_79
+[2022.03.10-20.30.20:698][541]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.10-20.30.20:703][541]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.10-20.30.20:703][541]PIE: New page: PIE session: BuildingScape (Mar 10, 2022, 2:30:20 PM)
+[2022.03.10-20.30.20:728][541]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.30.20:876][541]LogPlayLevel: PIE: StaticDuplicateObject took: (0.148367s)
+[2022.03.10-20.30.20:877][541]LogAIModule: Creating AISystem for world BuildingScape
+[2022.03.10-20.30.20:877][541]LogPlayLevel: PIE: World Init took: (0.000925s)
+[2022.03.10-20.30.20:877][541]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.149545s)
+[2022.03.10-20.30.20:894][541]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2022.03.10-20.30.20:897][541]LogAudio: Display: Creating Audio Device:                 Id: 20, Scope: Unique, Realtime: True
+[2022.03.10-20.30.20:897][541]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.10-20.30.20:897][541]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.10-20.30.20:897][541]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.10-20.30.20:897][541]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.10-20.30.20:897][541]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.10-20.30.20:897][541]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.10-20.30.20:897][541]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.10-20.30.20:897][541]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.10-20.30.20:897][541]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.10-20.30.20:897][541]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.10-20.30.20:902][541]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.10-20.30.20:903][541]LogAudioMixer: Display: 1: FrontRight
+[2022.03.10-20.30.20:919][541]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.03.10-20.30.20:919][541]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.10-20.30.20:919][541]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.10-20.30.20:919][541]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.10-20.30.20:919][541]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.10-20.30.20:919][541]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.10-20.30.20:919][541]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.10-20.30.20:931][541]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.10-20.30.20:931][541]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.10-20.30.20:931][541]LogInit: FAudioDevice initialized.
+[2022.03.10-20.30.20:931][541]LogAudio: Display: Audio Device (ID: 20) registered with world 'BuildingScape'.
+[2022.03.10-20.30.20:936][541]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.03.10-20.30.20:948][541]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.03.10-17.30.20
+[2022.03.10-20.30.20:949][541]LogWorld: Bringing up level for play took: 0.012097
+[2022.03.10-20.30.20:949][541]LogOnline: OSS: Creating online subsystem instance for: :Context_80
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:990][541]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:991][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:992][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.30.20:993][541]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2022.03.10-20.30.20:994][541]PIE: Server logged in
+[2022.03.10-20.30.20:994][541]PIE: Play in editor total start time 0.291 seconds.
+[2022.03.10-20.30.21:006][542]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.30.21:054][546]LogTemp: Warning: Envie la task
+[2022.03.10-20.30.21:054][546]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.30.21:054][546]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.30.21:205][564]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.30.21:704][624]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.30.22:204][684]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.31.06:380][883]LogAssetEditorSubsystem: Opening Asset editor for Objetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_2/PressurePlate/DT_Puzzle2_PressurePlate.DT_Puzzle2_PressurePlate
+[2022.03.10-20.31.07:755][ 40]LogAssetEditorSubsystem: Opening Asset editor for LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_2/PressurePlate/Steps/DT_Puzzle2_PressurePlate_Step1.DT_Puzzle2_PressurePlate_Step1
+[2022.03.10-20.31.10:081][315]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle2_PressurePlate_Step17F476D4F41CAA5C22591D8A2EFCF759A.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_2/PressurePlate/Steps/DT_Puzzle2_PressurePlate_Step1.uasset'
+[2022.03.10-20.31.10:086][315]AssetCheck: New page: Asset Save: DT_Puzzle2_PressurePlate_Step1
+[2022.03.10-20.31.10:086][315]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_2/PressurePlate/Steps/DT_Puzzle2_PressurePlate_Step1.DT_Puzzle2_PressurePlate_Step1
+[2022.03.10-20.31.19:433][370]LogAssetEditorSubsystem: Opening Asset editor for Objetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_2/CombineLevelSwitch/DT_Puzzle2_CombineLeverSwitch.DT_Puzzle2_CombineLeverSwitch
+[2022.03.10-20.31.20:831][525]LogAssetEditorSubsystem: Opening Asset editor for LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_2/CombineLevelSwitch/Steps/DT_Puzzle2_CombineLeverSwitch_Step1.DT_Puzzle2_CombineLeverSwitch_Step1
+[2022.03.10-20.31.23:273][814]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle2_CombineLeverSwitch_St58AB85B948EC47FCF7D66B9A61F98FD4.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_2/CombineLevelSwitch/Steps/DT_Puzzle2_CombineLeverSwitch_Step1.uasset'
+[2022.03.10-20.31.23:277][814]AssetCheck: New page: Asset Save: DT_Puzzle2_CombineLeverSwitch_Step1
+[2022.03.10-20.31.23:277][814]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_2/CombineLevelSwitch/Steps/DT_Puzzle2_CombineLeverSwitch_Step1.DT_Puzzle2_CombineLeverSwitch_Step1
+[2022.03.10-20.31.36:740][374]LogEditorViewport: Clicking on Actor (LMB): BP_CraftingTable_C (BP_CraftingTable)
+[2022.03.10-20.31.44:292][248]LogAssetEditorSubsystem: Opening Asset editor for LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/CraftTheShovel/Steps/DT_Puzzle3_CraftTheShovel_Step1.DT_Puzzle3_CraftTheShovel_Step1
+[2022.03.10-20.31.46:762][535]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle3_CraftTheShovel_Step1D6F12143450C6CA898C1FBA45D08F68E.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/CraftTheShovel/Steps/DT_Puzzle3_CraftTheShovel_Step1.uasset'
+[2022.03.10-20.31.46:766][535]AssetCheck: New page: Asset Save: DT_Puzzle3_CraftTheShovel_Step1
+[2022.03.10-20.31.46:766][535]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/CraftTheShovel/Steps/DT_Puzzle3_CraftTheShovel_Step1.DT_Puzzle3_CraftTheShovel_Step1
+[2022.03.10-20.31.51:169][ 31]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle3_CraftTheShovel_Step121D1E69D44F677FC47E8D18106F107AE.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/CraftTheShovel/Steps/DT_Puzzle3_CraftTheShovel_Step1.uasset'
+[2022.03.10-20.31.51:173][ 31]AssetCheck: New page: Asset Save: DT_Puzzle3_CraftTheShovel_Step1
+[2022.03.10-20.31.51:173][ 31]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/CraftTheShovel/Steps/DT_Puzzle3_CraftTheShovel_Step1.DT_Puzzle3_CraftTheShovel_Step1
+[2022.03.10-20.31.56:563][661]LogAssetEditorSubsystem: Opening Asset editor for LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/CraftTheTNT/Steps/DT_Puzzle3_CraftTheTNT_Step1.DT_Puzzle3_CraftTheTNT_Step1
+[2022.03.10-20.31.59:094][962]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle3_CraftTheTNT_Step13513EDBF4D84E8DA6C6A1BBC767AFC08.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/CraftTheTNT/Steps/DT_Puzzle3_CraftTheTNT_Step1.uasset'
+[2022.03.10-20.31.59:098][962]AssetCheck: New page: Asset Save: DT_Puzzle3_CraftTheTNT_Step1
+[2022.03.10-20.31.59:098][962]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/CraftTheTNT/Steps/DT_Puzzle3_CraftTheTNT_Step1.DT_Puzzle3_CraftTheTNT_Step1
+[2022.03.10-20.32.10:661][289]LogEditorViewport: Clicking on Actor (LMB): BP_RockDoor_C (BP_RockDoor)
+[2022.03.10-20.32.42:626][ 62]LogAssetEditorSubsystem: Opening Asset editor for Objetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/OpenFortressDoor/DT_Puzzle3_OpenFortressDoor.DT_Puzzle3_OpenFortressDoor
+[2022.03.10-20.32.43:858][182]LogAssetEditorSubsystem: Opening Asset editor for LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/OpenFortressDoor/Steps/DT_Puzzle3_OpenFortressDoor_Step1.DT_Puzzle3_OpenFortressDoor_Step1
+[2022.03.10-20.32.46:008][434]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle3_OpenFortressDoor_Step034C499C407F07ABF75225A059E83256.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/OpenFortressDoor/Steps/DT_Puzzle3_OpenFortressDoor_Step1.uasset'
+[2022.03.10-20.32.46:011][434]AssetCheck: New page: Asset Save: DT_Puzzle3_OpenFortressDoor_Step1
+[2022.03.10-20.32.46:011][434]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_3/OpenFortressDoor/Steps/DT_Puzzle3_OpenFortressDoor_Step1.DT_Puzzle3_OpenFortressDoor_Step1
+[2022.03.10-20.32.48:110][653]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.32.48:110][653]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.32.48:111][653]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.03.10-20.32.48:112][653]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.32.48:118][653]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.10-20.32.48:140][653]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.32.48:157][653]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.32.48:158][653]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.32.48:159][653]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.32.48:178][653]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2022.03.10-20.32.48:215][654]LogPlayLevel: Display: Destroying online subsystem :Context_80
+[2022.03.10-20.32.57:908][751]LogWorld: UWorld::CleanupWorld for World_60, bSessionEnded=true, bCleanupResources=true
+[2022.03.10-20.32.57:908][751]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.33.00:419][ 37]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.10-20.33.00:424][ 37]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.10-20.33.00:425][ 37]PIE: New page: PIE session: BuildingScape (Mar 10, 2022, 2:33:00 PM)
+[2022.03.10-20.33.00:425][ 37]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.33.00:574][ 37]LogPlayLevel: PIE: StaticDuplicateObject took: (0.149961s)
+[2022.03.10-20.33.00:575][ 37]LogAIModule: Creating AISystem for world BuildingScape
+[2022.03.10-20.33.00:575][ 37]LogPlayLevel: PIE: World Init took: (0.000970s)
+[2022.03.10-20.33.00:576][ 37]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.151203s)
+[2022.03.10-20.33.00:593][ 37]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2022.03.10-20.33.00:597][ 37]LogAudio: Display: Creating Audio Device:                 Id: 21, Scope: Unique, Realtime: True
+[2022.03.10-20.33.00:597][ 37]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.10-20.33.00:597][ 37]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.10-20.33.00:597][ 37]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.10-20.33.00:597][ 37]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.10-20.33.00:597][ 37]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.10-20.33.00:597][ 37]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.10-20.33.00:597][ 37]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.10-20.33.00:597][ 37]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.10-20.33.00:597][ 37]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.10-20.33.00:597][ 37]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.10-20.33.00:603][ 37]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.10-20.33.00:603][ 37]LogAudioMixer: Display: 1: FrontRight
+[2022.03.10-20.33.00:619][ 37]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.03.10-20.33.00:619][ 37]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.10-20.33.00:619][ 37]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.10-20.33.00:619][ 37]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.10-20.33.00:620][ 37]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.10-20.33.00:620][ 37]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.10-20.33.00:620][ 37]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.10-20.33.00:632][ 37]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.10-20.33.00:632][ 37]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.10-20.33.00:632][ 37]LogInit: FAudioDevice initialized.
+[2022.03.10-20.33.00:632][ 37]LogAudio: Display: Audio Device (ID: 21) registered with world 'BuildingScape'.
+[2022.03.10-20.33.00:638][ 37]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.03.10-20.33.00:650][ 37]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.03.10-17.33.00
+[2022.03.10-20.33.00:651][ 37]LogWorld: Bringing up level for play took: 0.011711
+[2022.03.10-20.33.00:651][ 37]LogOnline: OSS: Creating online subsystem instance for: :Context_81
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:692][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:693][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:694][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.00:695][ 37]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2022.03.10-20.33.00:695][ 37]PIE: Server logged in
+[2022.03.10-20.33.00:696][ 37]PIE: Play in editor total start time 0.272 seconds.
+[2022.03.10-20.33.00:706][ 38]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.33.00:773][ 44]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.00:773][ 44]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.33.00:773][ 44]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.33.00:923][ 62]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.33.01:424][122]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.33.01:925][182]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.33.02:474][248]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_7
+[2022.03.10-20.33.04:350][473]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_9
+[2022.03.10-20.33.05:091][562]LogTemp: Warning: ActorsInOverlap.Num = 1
+[2022.03.10-20.33.05:091][562]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.05:091][562]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.33.05:091][562]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.05:091][562]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.06:042][676]LogTemp: Warning: ActorsInOverlap.Num = -1
+[2022.03.10-20.33.06:717][757]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_7
+[2022.03.10-20.33.06:891][778]LogTemp: Warning: ActorsInOverlap.Num = 1
+[2022.03.10-20.33.06:891][778]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.06:891][778]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.06:891][778]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.06:941][784]LogTemp: Warning: ActorsInOverlap.Num = 2
+[2022.03.10-20.33.06:942][784]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.06:942][784]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.06:942][784]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.06:975][788]LogTemp: Warning: ActorsInOverlap.Num = 1
+[2022.03.10-20.33.06:975][788]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.06:975][788]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.06:975][788]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.09:208][ 56]LogTemp: Warning: TotalMass: 50.000000
+[2022.03.10-20.33.09:708][116]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.33.09:708][116]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.33.10:117][165]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.33.10:117][165]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.33.11:485][329]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_4
+[2022.03.10-20.33.12:567][459]LogTemp: Warning: TotalMass: 150.000000
+[2022.03.10-20.33.12:567][459]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.12:567][459]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.33.12:568][459]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.13:251][541]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.33.13:251][541]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.33.13:576][580]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.33.13:576][580]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.33.14:685][713]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.14:685][713]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.14:785][725]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.33.15:969][867]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.15:969][867]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.15:969][867]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.15:969][867]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.17:619][ 65]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.33.17:619][ 65]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.33.18:752][201]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.18:752][201]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.18:752][201]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.18:753][201]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.33.18:753][201]LogTemp: Warning: Quest Completada
+[2022.03.10-20.33.19:019][233]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.33.19:019][233]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.33.22:862][694]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.33.22:862][694]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.33.23:128][726]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.33.23:128][726]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.33.27:037][195]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.27:037][195]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.33.32:455][845]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.33:022][913]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.33:022][913]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.33:022][913]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.33.33:022][913]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.33.34:464][ 86]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.33.34:464][ 86]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.33.35:674][231]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.35:674][231]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.35:674][231]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.35:674][231]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.35:899][258]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.35:899][258]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.35:900][258]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.33.35:900][258]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.36:441][323]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.33.36:441][323]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.33.36:958][385]LogTemp: Warning: Line trace has hit: BP_RefinateWoodCube_C_10
+[2022.03.10-20.33.37:883][496]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.33.37:883][496]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.33.38:427][561]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.33.38:427][561]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.33.40:535][814]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.40:535][814]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.40:535][814]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.43:711][195]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.43:711][195]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.43:711][195]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.44:768][320]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.44:768][320]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.44:768][320]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.46:368][512]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.46:368][512]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.46:368][512]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.47:485][646]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.47:485][646]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.47:485][646]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.47:493][647]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.47:494][647]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.33.47:494][647]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.47:986][706]LogActor: Warning: BP_ChickenPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_ChickenPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.33.48:244][737]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.33.48:244][737]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.33.49:222][854]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.33.49:222][854]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.33.50:014][949]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.50:014][949]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.50:515][  9]LogActor: Warning: BP_ChickenPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_ChickenPhysicActor_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.33.50:590][ 18]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.50:590][ 18]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.51:090][ 78]LogActor: Warning: BP_PorkChopPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_PorkChopPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.33.51:264][ 99]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.51:264][ 99]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.51:765][159]LogActor: Warning: BP_ChickenPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_ChickenPhysicActor_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.33.53:314][345]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.33.53:314][345]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.33.53:725][394]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.33.53:725][394]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.33.53:959][422]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.53:959][422]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.53:959][422]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.53:959][422]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.54:559][494]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.54:559][494]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.54:560][494]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.54:560][494]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.55:542][612]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.55:542][612]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.55:543][612]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.55:543][612]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.56:101][679]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.56:101][679]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.56:101][679]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.56:101][679]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.56:935][779]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.33.56:935][779]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.33.57:304][823]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.33.57:304][823]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.33.57:755][877]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.57:755][877]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.57:755][877]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.57:755][877]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.58:089][917]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.33.58:089][917]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.33.59:148][ 40]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:149][ 40]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:149][ 40]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:150][ 40]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:150][ 40]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:150][ 40]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:150][ 40]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:154][ 40]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:154][ 40]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:156][ 40]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:156][ 40]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:495][ 81]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:495][ 81]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:496][ 81]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:496][ 81]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:496][ 81]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:497][ 81]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:497][ 81]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:501][ 81]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:501][ 81]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:502][ 81]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:502][ 81]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:657][100]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:657][100]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:658][100]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:658][100]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:658][100]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:659][100]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:659][100]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:663][100]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:663][100]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:664][100]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:664][100]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:827][120]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:828][120]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:829][120]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:829][120]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:829][120]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:829][120]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:829][120]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.33.59:833][120]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:834][120]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.33.59:834][120]LogTemp: Warning: Quest Completada
+[2022.03.10-20.33.59:834][120]LogTemp: Warning: Envie la task
+[2022.03.10-20.33.59:835][120]LogTemp: Warning: Puzzle Completado: Ya NO ejecuto tick
+[2022.03.10-20.33.59:999][140]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.00:001][140]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.00:001][140]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.00:001][140]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.00:001][140]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.00:001][140]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.00:005][140]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.00:005][140]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.01:435][312]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.34.01:435][312]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.34.02:985][498]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.02:985][498]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.04:036][624]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.04:036][624]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.34.04:036][624]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.34.05:812][837]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.34.05:812][837]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.34.06:757][950]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.34.06:757][950]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.34.09:616][293]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.09:616][293]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.09:616][293]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.09:616][293]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.09:616][293]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.10:508][400]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.10:508][400]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.10:508][400]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.10:508][400]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.10:508][400]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.13:267][731]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.34.13:267][731]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.34.14:340][859]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.14:340][859]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.14:340][859]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.14:340][859]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.14:413][868]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.34.14:413][868]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.34.15:031][942]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.34.15:031][942]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.34.15:719][ 24]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.15:719][ 24]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.15:719][ 24]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.15:719][ 24]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.15:803][ 34]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.34.15:803][ 34]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.34.17:311][215]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.17:311][215]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.17:311][215]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.17:312][215]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.17:312][215]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.19:345][459]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.34.19:345][459]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.34.19:849][519]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.34.19:849][519]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.34.20:700][621]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.34.20:700][621]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.34.21:588][727]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.21:589][727]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.21:589][727]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.21:589][727]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.21:663][736]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.34.21:663][736]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.34.22:680][858]LogTemp: Warning: CRAFTIE ALGO
+[2022.03.10-20.34.22:680][858]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.22:680][858]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.22:680][858]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.22:680][858]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.22:681][858]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.22:681][858]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.22:681][858]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.22:681][858]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.25:131][152]LogTemp: Warning: Line trace has hit: BP_Stick_C_1
+[2022.03.10-20.34.26:915][366]LogTemp: Warning: Line trace has hit: BP_Stick_C_1
+[2022.03.10-20.34.29:307][653]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.29:307][653]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.29:307][653]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.29:307][653]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.29:308][653]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.29:856][719]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.29:856][719]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.29:856][719]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.29:856][719]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.29:857][719]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.31:092][867]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.34.31:092][867]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.34.32:380][ 21]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.32:380][ 21]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.32:380][ 21]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.32:380][ 21]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.32:455][ 30]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.34.32:455][ 30]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.34.34:856][318]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.34.34:856][318]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.34.35:786][429]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.35:786][429]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.35:786][429]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.35:786][429]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.35:787][429]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.37:003][575]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.34.37:003][575]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.34.38:536][759]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.34.38:536][759]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.34.39:608][887]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.39:608][887]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.39:608][887]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.39:608][887]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.39:666][894]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.34.39:667][894]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.34.42:118][188]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.34.42:118][188]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.34.42:922][284]LogTemp: Warning: CRAFTIE ALGO
+[2022.03.10-20.34.42:922][284]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.42:923][284]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.34.42:923][284]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.42:923][284]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.42:924][284]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.42:924][284]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.42:924][284]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.43:697][377]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.34.43:697][377]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.34.44:956][525]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.44:956][525]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.44:956][525]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.44:956][525]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.48:766][982]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.34.48:766][982]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.34.49:962][125]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.49:962][125]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.49:962][125]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.50:053][136]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.34.50:053][136]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.34.50:279][163]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.50:279][163]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.50:279][163]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.50:280][163]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.50:280][163]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.50:280][163]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.51:737][338]LogTemp: Warning: Line trace has hit: BP_Shovel_C_1
+[2022.03.10-20.34.52:979][487]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.52:979][487]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.52:979][487]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.52:979][487]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.52:979][487]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.52:979][487]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.54:804][706]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.54:805][706]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.54:805][706]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.54:805][706]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.55:255][760]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.55:255][760]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.55:255][760]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.55:255][760]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.55:671][810]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.55:671][810]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.55:671][810]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.55:672][810]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.56:188][872]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.56:188][872]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.56:188][872]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.56:189][872]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.56:822][948]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.56:822][948]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.56:822][948]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.56:823][948]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.57:580][ 39]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.57:580][ 39]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.57:580][ 39]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.57:581][ 39]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.58:089][100]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.58:089][100]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.58:089][100]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.58:089][100]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.58:489][148]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.58:489][148]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.58:489][148]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.58:489][148]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.59:389][256]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.59:389][256]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.59:389][256]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.59:390][256]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.34.59:962][320]LogTemp: Warning: Envie la task
+[2022.03.10-20.34.59:962][320]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.59:962][320]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.34.59:962][320]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.35.04:305][841]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.04:305][841]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.05:613][989]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.05:613][989]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.05:613][989]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.05:670][996]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.05:670][996]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.07:313][193]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.07:313][193]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.08:103][287]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.08:103][287]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.08:103][287]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.08:143][292]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.08:143][292]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.09:396][442]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.09:396][442]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.10:402][562]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.10:402][562]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.10:402][562]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.10:567][582]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.10:567][582]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.12:487][812]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.12:487][812]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.13:567][941]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.13:567][941]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.13:567][941]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.13:607][946]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.13:607][946]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.15:259][144]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.15:259][144]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.16:215][258]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.16:215][258]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.16:215][258]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.16:264][264]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.16:264][264]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.19:916][702]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.19:916][702]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.20:864][815]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.20:864][815]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.20:864][815]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.20:896][819]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.20:896][819]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.23:073][ 80]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.23:073][ 80]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.23:762][162]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.23:762][162]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.23:762][162]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.24:003][191]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.24:003][191]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.27:196][574]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.27:196][574]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.28:077][679]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.28:077][679]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.28:077][679]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.28:151][688]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.28:151][688]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.30:635][986]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.30:635][986]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.31:557][ 96]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.31:557][ 96]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.31:557][ 96]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.31:807][126]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.31:807][126]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.35:057][516]LogTemp: Warning: CRAFTIE ALGO
+[2022.03.10-20.35.35:057][516]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.35:058][516]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.35.35:058][516]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.35:059][516]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.35:059][516]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.35.35:557][576]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.35.36:108][642]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.36:108][642]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.37:063][756]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.37:063][756]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.38:081][878]LogTemp: Warning: Line trace has hit: BP_BaseTNT_C_3
+[2022.03.10-20.35.42:256][379]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.42:257][379]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.35.42:257][379]LogTemp: Warning: Quest Completada
+[2022.03.10-20.35.42:548][414]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.42:548][414]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.43:269][500]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.43:269][500]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.45:174][728]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.45:198][731]LogTemp: Warning: Envie la task
+[2022.03.10-20.35.45:198][731]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.35.45:198][731]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.35.45:641][784]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.45:641][784]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.35.47:964][ 62]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.35.47:964][ 62]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.35.56:834][126]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.35.56:834][126]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.36.02:127][753]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.36.02:127][753]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.36.10:970][814]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.10:970][814]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.10:970][814]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.11:471][874]LogActor: Warning: BP_CarrotPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_CarrotPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.36.12:745][ 27]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.12:745][ 27]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.12:745][ 27]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.12:746][ 27]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.12:746][ 27]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.12:746][ 27]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.20:190][920]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.36.20:190][920]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.36.21:212][ 42]LogActor: Warning: BP_CarrotPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_CarrotPhysicActor_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.36.21:213][ 42]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.21:213][ 42]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.21:213][ 42]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.21:329][ 56]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.36.21:329][ 56]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.36.21:822][115]LogTemp: Warning: Line trace has hit: BP_CarrotPhysicActor_C_1
+[2022.03.10-20.36.22:571][205]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.22:571][205]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.22:571][205]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.22:572][205]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.22:572][205]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.22:572][205]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.24:638][453]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.24:638][453]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.24:638][453]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.24:639][453]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.36.28:956][971]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.36.28:956][971]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.36.30:720][180]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.36.30:720][180]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.36.32:914][443]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.36.32:914][443]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.36.34:047][578]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.34:047][578]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.34:047][578]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.34:155][591]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.36.34:155][591]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.36.34:773][665]LogTemp: Warning: Line trace has hit: BP_Send_C_9
+[2022.03.10-20.36.36:397][860]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.36:397][860]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.36:397][860]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.36:398][860]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.36:398][860]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.36:398][860]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.36:498][872]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.36.37:790][ 27]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.37:790][ 27]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.37:790][ 27]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.37:791][ 27]LogTemp: Warning: LO LOGRE
+[2022.03.10-20.36.37:791][ 27]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.37:791][ 27]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.37:791][ 27]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.45:630][967]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.36.45:630][967]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.36.46:585][ 81]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.36.46:586][ 81]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.46:586][ 81]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.46:586][ 81]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.46:711][ 96]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.36.46:711][ 96]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.36.47:487][189]LogTemp: Warning: Line trace has hit: BP_BaseTNT_C_5
+[2022.03.10-20.36.48:862][354]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.48:862][354]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.48:862][354]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.51:221][637]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.36.51:221][637]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.36.56:253][240]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.36.56:253][240]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.36.57:305][366]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.36.57:305][366]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.36.58:558][510]LogTemp: Warning: Envie la task
+[2022.03.10-20.36.58:558][510]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.58:558][510]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.36.58:683][525]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.36.58:683][525]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.36.59:159][582]LogTemp: Warning: Line trace has hit: BP_Cobelstone_C_1
+[2022.03.10-20.37.00:500][743]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.00:500][743]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.00:500][743]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.00:501][743]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.00:501][743]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.00:501][743]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.02:382][965]LogTemp: Warning: Line trace has hit: BP_Dirt_C_1
+[2022.03.10-20.37.19:418][  9]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.19:418][  9]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.19:418][  9]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.19:418][  9]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.19:418][  9]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.19:418][  9]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.19:518][ 21]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.37.20:185][101]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.37.20:185][101]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.37.22:567][386]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.37.22:567][386]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.37.23:834][538]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.23:835][538]LogTemp: Warning: Objetivo Completado: True
+[2022.03.10-20.37.23:835][538]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.23:836][538]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.23:836][538]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.24:152][576]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.37.24:152][576]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.37.25:349][719]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.37.25:349][719]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.37.27:025][920]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.37.27:025][920]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.37.30:945][389]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.30:945][389]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.30:945][389]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.30:945][389]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.31:836][496]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.37.31:837][496]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.37.32:612][589]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.37.32:612][589]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.37.35:194][898]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.37.35:194][898]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.37.42:179][736]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.37.42:179][736]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.37.43:302][870]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.37.43:302][870]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.37.43:942][943]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.37.43:942][943]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.37.43:943][943]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.03.10-20.37.43:944][943]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.37.43:950][943]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.10-20.37.43:973][943]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.37.43:988][943]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.37.43:989][943]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.37.43:990][943]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.37.44:015][943]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2022.03.10-20.37.44:050][944]LogPlayLevel: Display: Destroying online subsystem :Context_81
+[2022.03.10-20.37.45:850][154]LogEditorViewport: Clicking on Actor (LMB): BP_LookedDoor_C (BP_LookedDoor2)
+[2022.03.10-20.37.48:209][427]LogAssetEditorSubsystem: Opening Asset editor for Objetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_4/OpenTheDoor/DT_Puzzle4_OpenTheDoor.DT_Puzzle4_OpenTheDoor
+[2022.03.10-20.37.49:373][559]LogAssetEditorSubsystem: Opening Asset editor for LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_4/OpenTheDoor/Steps/DT_Puzzle4_OpenTheDoor_Step1.DT_Puzzle4_OpenTheDoor_Step1
+[2022.03.10-20.37.58:231][564]LogTemp: Repeating last play command: Selected Viewport
+[2022.03.10-20.37.58:236][564]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.10-20.37.58:236][564]PIE: New page: PIE session: BuildingScape (Mar 10, 2022, 2:37:58 PM)
+[2022.03.10-20.37.58:274][564]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.37.58:425][564]LogPlayLevel: PIE: StaticDuplicateObject took: (0.151209s)
+[2022.03.10-20.37.58:425][564]LogAIModule: Creating AISystem for world BuildingScape
+[2022.03.10-20.37.58:426][564]LogPlayLevel: PIE: World Init took: (0.001136s)
+[2022.03.10-20.37.58:426][564]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/BuildingScape.BuildingScape to /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape (0.152640s)
+[2022.03.10-20.37.58:442][564]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2022.03.10-20.37.58:445][564]LogAudio: Display: Creating Audio Device:                 Id: 22, Scope: Unique, Realtime: True
+[2022.03.10-20.37.58:445][564]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.10-20.37.58:445][564]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.10-20.37.58:445][564]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.10-20.37.58:445][564]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.10-20.37.58:445][564]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.10-20.37.58:445][564]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.10-20.37.58:445][564]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.10-20.37.58:445][564]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.10-20.37.58:446][564]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.10-20.37.58:446][564]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.10-20.37.58:451][564]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.10-20.37.58:451][564]LogAudioMixer: Display: 1: FrontRight
+[2022.03.10-20.37.58:467][564]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.03.10-20.37.58:467][564]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.10-20.37.58:467][564]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.10-20.37.58:467][564]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.10-20.37.58:468][564]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.10-20.37.58:468][564]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.10-20.37.58:468][564]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.10-20.37.58:479][564]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.10-20.37.58:479][564]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.10-20.37.58:480][564]LogInit: FAudioDevice initialized.
+[2022.03.10-20.37.58:480][564]LogAudio: Display: Audio Device (ID: 22) registered with world 'BuildingScape'.
+[2022.03.10-20.37.58:485][564]LogLoad: Game class is 'BP_BuildingScapeGameMode_C'
+[2022.03.10-20.37.58:498][564]LogWorld: Bringing World /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape up for play (max tick rate 0) at 2022.03.10-17.37.58
+[2022.03.10-20.37.58:498][564]LogWorld: Bringing up level for play took: 0.011854
+[2022.03.10-20.37.58:498][564]LogOnline: OSS: Creating online subsystem instance for: :Context_82
+[2022.03.10-20.37.58:538][564]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:539][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.58:540][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.58:541][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:542][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:542][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:542][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:542][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:542][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:542][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:542][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:542][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:542][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:542][564]LogTemp: Warning: Objetivo Completado: False
+[2022.03.10-20.37.58:542][564]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2022.03.10-20.37.58:542][564]PIE: Server logged in
+[2022.03.10-20.37.58:543][564]PIE: Play in editor total start time 0.307 seconds.
+[2022.03.10-20.37.58:555][565]LogActor: Warning: BP_BaseKeyPhysicActor_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseKeyPhysicActor_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.37.58:586][567]LogTemp: Warning: Envie la task
+[2022.03.10-20.37.58:586][567]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.37.58:586][567]LogTemp: Warning: ME DESTRUI
+[2022.03.10-20.37.58:736][585]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.37.59:236][645]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.37.59:619][691]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.03.10-20.37.59:619][691]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2022.03.10-20.37.59:736][705]LogActor: Warning: BP_BaseTNT_C /Game/Maps/UEDPIE_0_BuildingScape.BuildingScape:PersistentLevel.BP_BaseTNT_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2022.03.10-20.38.01:187][879]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.03.10-20.38.01:187][879]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringMouseDown -> CapturePermanently
+[2022.03.10-20.38.06:471][449]LogEditorViewport: Clicking on Actor (LMB): BP_LookedDoor_C (BP_LookedDoor2)
+[2022.03.10-20.38.15:571][507]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle4_OpenTheDoor_Step1AB3E38DC49FFD26D4920B4841367B798.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_4/OpenTheDoor/Steps/DT_Puzzle4_OpenTheDoor_Step1.uasset'
+[2022.03.10-20.38.15:575][507]AssetCheck: New page: Asset Save: DT_Puzzle4_OpenTheDoor_Step1
+[2022.03.10-20.38.15:575][507]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_4/OpenTheDoor/Steps/DT_Puzzle4_OpenTheDoor_Step1.DT_Puzzle4_OpenTheDoor_Step1
+[2022.03.10-20.38.15:746][528]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle4_OpenTheDoor_Step1424ED3814DA9C5FF60BC819C2060A526.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_4/OpenTheDoor/Steps/DT_Puzzle4_OpenTheDoor_Step1.uasset'
+[2022.03.10-20.38.15:750][528]AssetCheck: New page: Asset Save: DT_Puzzle4_OpenTheDoor_Step1
+[2022.03.10-20.38.15:750][528]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_4/OpenTheDoor/Steps/DT_Puzzle4_OpenTheDoor_Step1.DT_Puzzle4_OpenTheDoor_Step1
+[2022.03.10-20.38.15:921][549]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle4_OpenTheDoor_Step124F6AA0F45E89F1F007D47941EDCB8D5.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_4/OpenTheDoor/Steps/DT_Puzzle4_OpenTheDoor_Step1.uasset'
+[2022.03.10-20.38.15:925][549]AssetCheck: New page: Asset Save: DT_Puzzle4_OpenTheDoor_Step1
+[2022.03.10-20.38.15:925][549]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_4/OpenTheDoor/Steps/DT_Puzzle4_OpenTheDoor_Step1.DT_Puzzle4_OpenTheDoor_Step1
+[2022.03.10-20.38.16:104][571]LogSavePackage: Moving '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Saved/DT_Puzzle4_OpenTheDoor_Step1D30986E344F8036B587DB593E6894A6E.tmp' to '../../../../../NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Content/Blueprints/Objects/QuestSystem/Objetives/Puzzle_4/OpenTheDoor/Steps/DT_Puzzle4_OpenTheDoor_Step1.uasset'
+[2022.03.10-20.38.16:109][571]AssetCheck: New page: Asset Save: DT_Puzzle4_OpenTheDoor_Step1
+[2022.03.10-20.38.16:109][571]LogContentValidation: Display: Validating LastInteractActorObjetive /Game/Blueprints/Objects/QuestSystem/Objetives/Puzzle_4/OpenTheDoor/Steps/DT_Puzzle4_OpenTheDoor_Step1.DT_Puzzle4_OpenTheDoor_Step1
+[2022.03.10-20.38.18:598][856]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.38.18:598][856]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_BuildingScape
+[2022.03.10-20.38.18:599][856]LogWorld: UWorld::CleanupWorld for BuildingScape, bSessionEnded=true, bCleanupResources=true
+[2022.03.10-20.38.18:600][856]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.38.18:607][856]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.10-20.38.18:630][856]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.10-20.38.18:645][856]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.10-20.38.18:646][856]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.38.18:646][856]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.10-20.38.18:660][856]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.10-20.38.18:665][856]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
+[2022.03.10-20.38.18:703][857]LogPlayLevel: Display: Destroying online subsystem :Context_82
+[2022.03.10-20.38.37:854][102]LogUObjectHash: Compacting FUObjectHashTables data took   1.38ms
