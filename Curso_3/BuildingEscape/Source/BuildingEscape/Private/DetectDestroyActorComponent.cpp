@@ -20,7 +20,7 @@ void UDetectDestroyActorComponent::OnComponentDestroyed(bool bDestroyingHierarch
 	{
 		ID = QuestActorComponentID->ID;
 	}
-	UE_LOG(LogTemp, Warning, TEXT("HICE EL BRODCAST"));
+	//UE_LOG(LogTemp, Warning, TEXT("HICE EL BRODCAST"));
 	OnDestroyActor.Broadcast(GetOwner()->GetClass(), ID);
 	Super::OnComponentDestroyed(bDestroyingHierarchy);
 }

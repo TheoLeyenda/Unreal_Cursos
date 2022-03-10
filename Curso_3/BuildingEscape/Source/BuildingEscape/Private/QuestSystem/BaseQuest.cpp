@@ -32,9 +32,8 @@ void UBaseQuest::CheckCompleteQuest()
 void UBaseQuest::CheckStatus(FDataPlayer DataPlayer, bool bForceSendData)
 {
 	//UE_LOG(LogTemp, Warning, TEXT("Objetivo Completado: %s"), bForceSendData? TEXT("True") : TEXT("False"));
-	
 	if(QuestStructInfo.QuestState != EQuestState::InProgress && !bForceSendData){return;}
-	
+
 	for(UObjetive* Objetive : QuestStructInfo.Objetives)
 	{
 		if(Objetive)

@@ -9,6 +9,7 @@ void UObjetive::CheckObjetiveComplete(FDataPlayer CompareData)
 
 	for(UStep* Step : StepsToCompleteObjective)
 	{
+		//UE_LOG(LogTemp, Warning, TEXT("Tipo de step: %s"), *Step->GetClass()->GetName());
 		if(!Step->CheckStepComplete(CompareData))
 		{
 			bDoneAccion = false;

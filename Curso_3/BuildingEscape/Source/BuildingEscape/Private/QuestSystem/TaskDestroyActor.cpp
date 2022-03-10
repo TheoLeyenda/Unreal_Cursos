@@ -44,7 +44,7 @@ void UTaskDestroyActor::SettingDataTask(TSubclassOf<AActor> ActorDestroyed, int3
 	SendDataPlayer.LastInteractActorInfo.ActorBlueprint = ActorDestroyed;
 	
 	SendDataPlayer.LastInteractActorInfo.ID = ID;
-	UE_LOG(LogTemp, Warning, TEXT("%s"), *ActorDestroyed->GetName());
-	UE_LOG(LogTemp, Warning, TEXT("%d"), ID);
+	//UE_LOG(LogTemp, Warning, TEXT("%s"), *ActorDestroyed->GetName());
+	//UE_LOG(LogTemp, Warning, TEXT("%d"), ID);
 	SendEventUpdateTask(false);
 }

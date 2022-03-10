@@ -121,9 +121,11 @@ void AQuestManager::CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponen
 	{
 		if(AuxQuestInfo.Quest->QuestStructInfo.QuestState == EQuestState::InProgress || bForceSend)
 		{
+			//UE_LOG(LogTemp, Warning, TEXT("LLEGUE A CHECK STATUS"));
 			AuxQuestInfo.Quest->CheckStatus(QuestEvaluatorComponent->DataPlayer, bForceSend);
 			if(AuxQuestInfo.Quest->QuestStructInfo.QuestState == EQuestState::Completed && !AuxQuestInfo.bCheckedDone)
 			{
+				//UE_LOG(LogTemp, Warning, TEXT("LE HICE UN DONE A LA ACCION"));
 				ChangeStateQuests(AuxQuestInfo.Quest->QuestStructInfo.QuetsActivatedToCompleteIDs, EQuestState::InProgress);
 				AuxQuestInfo.bCheckedDone = true;
 			}

@@ -9,7 +9,7 @@ UBaseTask::UBaseTask(){}
 
 void UBaseTask::SendEventUpdateTask(bool bForceSend)
 {
-	//UE_LOG(LogTemp, Warning, TEXT("Envie la task"));
+	UE_LOG(LogTemp, Warning, TEXT("Envie la task"));
 	OnUpdateTask.Broadcast(SendDataPlayer, bForceSend);
 }
 
