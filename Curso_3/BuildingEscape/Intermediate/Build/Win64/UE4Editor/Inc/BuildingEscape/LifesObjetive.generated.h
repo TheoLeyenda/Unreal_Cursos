@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesULifesObjetive(); \
 	friend struct Z_Construct_UClass_ULifesObjetive_Statics; \
 public: \
-	DECLARE_CLASS(ULifesObjetive, UObjetive, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_CLASS(ULifesObjetive, UStep, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
 	DECLARE_SERIALIZER(ULifesObjetive)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesULifesObjetive(); \
 	friend struct Z_Construct_UClass_ULifesObjetive_Statics; \
 public: \
-	DECLARE_CLASS(ULifesObjetive, UObjetive, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_CLASS(ULifesObjetive, UStep, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
 	DECLARE_SERIALIZER(ULifesObjetive)
 
 

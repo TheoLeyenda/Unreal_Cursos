@@ -43,6 +43,7 @@
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/ObjetiveType/LastInteractActorObjetive.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/ObjetiveType/LifesObjetive.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/ObjetiveType/NeedItemObjetive.cpp"
+#include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/ObjetiveType/Step.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/QuestActorComponentID.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/QuestActorGeneratorID.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Source/BuildingEscape/Private/QuestSystem/QuestEvaluatorComponent.cpp"

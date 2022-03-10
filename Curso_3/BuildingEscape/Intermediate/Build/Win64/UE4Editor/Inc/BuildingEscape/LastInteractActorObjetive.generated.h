@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesULastInteractActorObjetive(); \
 	friend struct Z_Construct_UClass_ULastInteractActorObjetive_Statics; \
 public: \
-	DECLARE_CLASS(ULastInteractActorObjetive, UObjetive, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_CLASS(ULastInteractActorObjetive, UStep, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
 	DECLARE_SERIALIZER(ULastInteractActorObjetive)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesULastInteractActorObjetive(); \
 	friend struct Z_Construct_UClass_ULastInteractActorObjetive_Statics; \
 public: \
-	DECLARE_CLASS(ULastInteractActorObjetive, UObjetive, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_CLASS(ULastInteractActorObjetive, UStep, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
 	DECLARE_SERIALIZER(ULastInteractActorObjetive)
 
 

@@ -55,8 +55,8 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x1243EEDA,
-				0x063018E3,
+				0xB89E1D97,
+				0x233F82BD,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

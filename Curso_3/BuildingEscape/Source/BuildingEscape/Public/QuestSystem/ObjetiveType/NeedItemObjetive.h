@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "QuestSystem/Objetive.h"
+#include "QuestSystem/ObjetiveType/Step.h"
 #include "NeedItemObjetive.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class BUILDINGESCAPE_API UNeedItemObjetive : public UObjetive
+class BUILDINGESCAPE_API UNeedItemObjetive : public UStep
 {
 	GENERATED_BODY()
 protected:

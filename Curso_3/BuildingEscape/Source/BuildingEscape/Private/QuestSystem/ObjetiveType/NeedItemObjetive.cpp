@@ -10,7 +10,7 @@ bool UNeedItemObjetive::CheckStepComplete(FDataPlayer CompareData)
 		return false;
 	}
 
-	bDoneAccion = true;
+	bool bDoneAccion = true;
 	for(int i = 0; i < NeedItems.Num(); i++)
 	{
 		if(!CompareData.InventoryComponent->CheckHaveItem(NeedItems[i]))

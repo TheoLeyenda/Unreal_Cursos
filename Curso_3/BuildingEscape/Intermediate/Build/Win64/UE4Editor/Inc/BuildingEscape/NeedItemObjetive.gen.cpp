@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeNeedItemObjetive() {}
 // Cross Module References
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UNeedItemObjetive_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UNeedItemObjetive();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UObjetive();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UStep();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UItem_NoRegister();
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeNeedItemObjetive() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_UNeedItemObjetive_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UObjetive,
+		(UObject* (*)())Z_Construct_UClass_UStep,
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
 #if WITH_METADATA
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeNeedItemObjetive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UNeedItemObjetive, 2605292624);
+	IMPLEMENT_CLASS(UNeedItemObjetive, 1490833117);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UNeedItemObjetive>()
 	{
 		return UNeedItemObjetive::StaticClass();

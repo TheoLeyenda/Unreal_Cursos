@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "QuestSystem/Objetive.h"
+#include "QuestSystem/ObjetiveType/Step.h"
 #include "LastInteractActorObjetive.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class BUILDINGESCAPE_API ULastInteractActorObjetive : public UObjetive
+class BUILDINGESCAPE_API ULastInteractActorObjetive : public UStep
 {
 	GENERATED_BODY()
 

@@ -7,19 +7,14 @@ void UObjetive::CheckObjetiveComplete(FDataPlayer CompareData)
 {
 	bDoneAccion = true;
 
-	for(UObjetive* Step : StepsToCompleteObjective)
+	for(UStep* Step : StepsToCompleteObjective)
 	{
-		if(!CheckStepComplete(CompareData))
+		if(!Step->CheckStepComplete(CompareData))
 		{
 			bDoneAccion = false;
 			break;
 		}
 	}
-}
-
-bool UObjetive::CheckStepComplete(FDataPlayer CompareData)
-{
-	return false;
 }
 
 void UObjetive::ResetData()

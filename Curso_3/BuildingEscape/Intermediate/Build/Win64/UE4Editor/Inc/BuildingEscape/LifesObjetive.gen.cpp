@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeLifesObjetive() {}
 // Cross Module References
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ULifesObjetive_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ULifesObjetive();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UObjetive();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UStep();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 // End Cross Module References
 	void ULifesObjetive::StaticRegisterNativesULifesObjetive()
@@ -44,7 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeLifesObjetive() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_ULifesObjetive_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UObjetive,
+		(UObject* (*)())Z_Construct_UClass_UStep,
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
 #if WITH_METADATA
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeLifesObjetive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ULifesObjetive, 4129858967);
+	IMPLEMENT_CLASS(ULifesObjetive, 3182334939);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ULifesObjetive>()
 	{
 		return ULifesObjetive::StaticClass();

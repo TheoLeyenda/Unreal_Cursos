@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "QuestEvaluatorComponent.h"
+#include "ObjetiveType/Step.h"
 #include "Engine/DataAsset.h"
 #include "Objetive.generated.h"
 
@@ -26,13 +27,10 @@ public:
 	bool bUseIdentificationObject = true;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<UObjetive*> StepsToCompleteObjective;
+	TArray<UStep*> StepsToCompleteObjective;
 	
 	UFUNCTION()
 	void CheckObjetiveComplete(FDataPlayer CompareData);
-
-	UFUNCTION()
-	virtual bool CheckStepComplete(FDataPlayer CompareData);
 	
 	UFUNCTION()
 	virtual void ResetData();

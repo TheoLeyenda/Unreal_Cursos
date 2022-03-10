@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeLastInteractActorObjetive() {}
 // Cross Module References
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ULastInteractActorObjetive_NoRegister();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ULastInteractActorObjetive();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UObjetive();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UStep();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
@@ -46,7 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeLastInteractActorObjetive() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_ULastInteractActorObjetive_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UObjetive,
+		(UObject* (*)())Z_Construct_UClass_UStep,
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
 #if WITH_METADATA
@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeLastInteractActorObjetive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ULastInteractActorObjetive, 1791623687);
+	IMPLEMENT_CLASS(ULastInteractActorObjetive, 3220410275);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ULastInteractActorObjetive>()
 	{
 		return ULastInteractActorObjetive::StaticClass();

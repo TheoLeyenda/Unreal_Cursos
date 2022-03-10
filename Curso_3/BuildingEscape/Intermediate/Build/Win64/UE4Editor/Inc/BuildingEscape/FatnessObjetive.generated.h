@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesUFatnessObjetive(); \
 	friend struct Z_Construct_UClass_UFatnessObjetive_Statics; \
 public: \
-	DECLARE_CLASS(UFatnessObjetive, UObjetive, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_CLASS(UFatnessObjetive, UStep, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
 	DECLARE_SERIALIZER(UFatnessObjetive)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesUFatnessObjetive(); \
 	friend struct Z_Construct_UClass_UFatnessObjetive_Statics; \
 public: \
-	DECLARE_CLASS(UFatnessObjetive, UObjetive, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_CLASS(UFatnessObjetive, UStep, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
 	DECLARE_SERIALIZER(UFatnessObjetive)
 
 

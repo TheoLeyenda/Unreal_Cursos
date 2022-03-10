@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesUNeedItemObjetive(); \
 	friend struct Z_Construct_UClass_UNeedItemObjetive_Statics; \
 public: \
-	DECLARE_CLASS(UNeedItemObjetive, UObjetive, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_CLASS(UNeedItemObjetive, UStep, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
 	DECLARE_SERIALIZER(UNeedItemObjetive)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesUNeedItemObjetive(); \
 	friend struct Z_Construct_UClass_UNeedItemObjetive_Statics; \
 public: \
-	DECLARE_CLASS(UNeedItemObjetive, UObjetive, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_CLASS(UNeedItemObjetive, UStep, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
 	DECLARE_SERIALIZER(UNeedItemObjetive)
 
 

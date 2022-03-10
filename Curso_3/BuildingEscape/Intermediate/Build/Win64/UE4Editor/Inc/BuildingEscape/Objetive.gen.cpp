@@ -18,20 +18,13 @@ void EmptyLinkFunctionForGeneratedCodeObjetive() {}
 	ENGINE_API UClass* Z_Construct_UClass_UDataAsset();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FDataPlayer();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UStep_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(UObjetive::execResetData)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->ResetData();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(UObjetive::execCheckStepComplete)
-	{
-		P_GET_STRUCT(FDataPlayer,Z_Param_CompareData);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(bool*)Z_Param__Result=P_THIS->CheckStepComplete(Z_Param_CompareData);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UObjetive::execCheckObjetiveComplete)
@@ -47,7 +40,6 @@ void EmptyLinkFunctionForGeneratedCodeObjetive() {}
 		UClass* Class = UObjetive::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "CheckObjetiveComplete", &UObjetive::execCheckObjetiveComplete },
-			{ "CheckStepComplete", &UObjetive::execCheckStepComplete },
 			{ "ResetData", &UObjetive::execResetData },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -81,47 +73,6 @@ void EmptyLinkFunctionForGeneratedCodeObjetive() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UObjetive_CheckObjetiveComplete_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics
-	{
-		struct Objetive_eventCheckStepComplete_Parms
-		{
-			FDataPlayer CompareData;
-			bool ReturnValue;
-		};
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_CompareData;
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::NewProp_CompareData = { "CompareData", nullptr, (EPropertyFlags)0x0010008000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Objetive_eventCheckStepComplete_Parms, CompareData), Z_Construct_UScriptStruct_FDataPlayer, METADATA_PARAMS(nullptr, 0) };
-	void Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((Objetive_eventCheckStepComplete_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(Objetive_eventCheckStepComplete_Parms), &Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::NewProp_CompareData,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/QuestSystem/Objetive.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UObjetive, nullptr, "CheckStepComplete", nullptr, nullptr, sizeof(Objetive_eventCheckStepComplete_Parms), Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UObjetive_CheckStepComplete()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UObjetive_CheckStepComplete_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -187,7 +138,6 @@ void EmptyLinkFunctionForGeneratedCodeObjetive() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UObjetive_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UObjetive_CheckObjetiveComplete, "CheckObjetiveComplete" }, // 394743190
-		{ &Z_Construct_UFunction_UObjetive_CheckStepComplete, "CheckStepComplete" }, // 4077726317
 		{ &Z_Construct_UFunction_UObjetive_ResetData, "ResetData" }, // 3713290683
 	};
 #if WITH_METADATA
@@ -228,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeObjetive() {}
 		((UObjetive*)Obj)->bUseIdentificationObject = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UObjetive_Statics::NewProp_bUseIdentificationObject = { "bUseIdentificationObject", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UObjetive), &Z_Construct_UClass_UObjetive_Statics::NewProp_bUseIdentificationObject_SetBit, METADATA_PARAMS(Z_Construct_UClass_UObjetive_Statics::NewProp_bUseIdentificationObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UObjetive_Statics::NewProp_bUseIdentificationObject_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UObjetive_Statics::NewProp_StepsToCompleteObjective_Inner = { "StepsToCompleteObjective", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UObjetive_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UObjetive_Statics::NewProp_StepsToCompleteObjective_Inner = { "StepsToCompleteObjective", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UStep_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UObjetive_Statics::NewProp_StepsToCompleteObjective_MetaData[] = {
 		{ "Category", "Objetive" },
@@ -270,7 +220,7 @@ void EmptyLinkFunctionForGeneratedCodeObjetive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UObjetive, 4107036197);
+	IMPLEMENT_CLASS(UObjetive, 770654003);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UObjetive>()
 	{
 		return UObjetive::StaticClass();

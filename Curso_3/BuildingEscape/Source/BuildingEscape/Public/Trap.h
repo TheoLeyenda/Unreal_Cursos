@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "TrapInterface.h"
+#include "QuestSystem/QuestActorComponentID.h"
 #include "GameFramework/Actor.h"
 #include "Trap.generated.h"
 
