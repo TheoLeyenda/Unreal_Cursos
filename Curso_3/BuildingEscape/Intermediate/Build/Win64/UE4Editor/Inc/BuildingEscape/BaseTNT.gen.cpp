@@ -13,12 +13,13 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeBaseTNT() {}
 // Cross Module References
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABaseTNT_NoRegister();
+	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABaseTNT();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ABaseTNT_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_UQuestActorComponentID_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -26,6 +27,38 @@ void EmptyLinkFunctionForGeneratedCodeBaseTNT() {}
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature_Statics
+	{
+		struct BaseTNT_eventOnDestroyOtherObject_Parms
+		{
+			AActor* Actor;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Actor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseTNT_eventOnDestroyOtherObject_Parms, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature_Statics::NewProp_Actor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BaseTNT.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseTNT, nullptr, "OnDestroyOtherObject__DelegateSignature", nullptr, nullptr, sizeof(BaseTNT_eventOnDestroyOtherObject_Parms), Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	DEFINE_FUNCTION(ABaseTNT::execOnOverlapBegin)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp);
@@ -173,6 +206,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseTNT() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseTNT_Statics::FuncInfo[] = {
+		{ &Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature, "OnDestroyOtherObject__DelegateSignature" }, // 1341284436
 		{ &Z_Construct_UFunction_ABaseTNT_OnOverlapBegin, "OnOverlapBegin" }, // 2111642863
 	};
 #if WITH_METADATA
@@ -264,7 +298,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseTNT() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseTNT, 3366870588);
+	IMPLEMENT_CLASS(ABaseTNT, 3853540679);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABaseTNT>()
 	{
 		return ABaseTNT::StaticClass();

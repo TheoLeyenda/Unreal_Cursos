@@ -13,19 +13,56 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeCraftingTable() {}
 // Cross Module References
-	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FCraftingInfo();
-	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
+	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ACraftingTable();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ACraftingTable_NoRegister();
+	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FCraftingInfo();
+	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FActorsRequired();
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FMatrixActorsPlace();
 	BUILDINGESCAPE_API UScriptStruct* Z_Construct_UScriptStruct_FActorsPlaceInfo();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AInteractTrigger_NoRegister();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ACraftingTable_NoRegister();
-	BUILDINGESCAPE_API UClass* Z_Construct_UClass_ACraftingTable();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	BUILDINGESCAPE_API UClass* Z_Construct_UClass_AObjectSpawner_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics
+	{
+		struct CraftingTable_eventOnCraftingActor_Parms
+		{
+			TSubclassOf<AActor>  ActorCraftedClass;
+			ACraftingTable* CraftingTable;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ActorCraftedClass;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CraftingTable;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::NewProp_ActorCraftedClass = { "ActorCraftedClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(CraftingTable_eventOnCraftingActor_Parms, ActorCraftedClass), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::NewProp_CraftingTable = { "CraftingTable", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(CraftingTable_eventOnCraftingActor_Parms, CraftingTable), Z_Construct_UClass_ACraftingTable_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::NewProp_ActorCraftedClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::NewProp_CraftingTable,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/CraftingTable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACraftingTable, nullptr, "OnCraftingActor__DelegateSignature", nullptr, nullptr, sizeof(CraftingTable_eventOnCraftingActor_Parms), Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 class UScriptStruct* FCraftingInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -431,6 +468,9 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsRequired
 	struct Z_Construct_UClass_ACraftingTable_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+#if WITH_EDITOR
+		static const FClassFunctionLinkInfo FuncInfo[];
+#endif //WITH_EDITOR
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -465,6 +505,11 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsRequired
 		(UObject* (*)())Z_Construct_UClass_AActor,
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
+#if WITH_EDITOR
+	const FClassFunctionLinkInfo Z_Construct_UClass_ACraftingTable_Statics::FuncInfo[] = {
+		{ &Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature, "OnCraftingActor__DelegateSignature" }, // 4048661450
+	};
+#endif //WITH_EDITOR
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACraftingTable_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "CraftingTable.h" },
@@ -527,11 +572,11 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsRequired
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		IF_WITH_EDITOR(FuncInfo, nullptr),
 		Z_Construct_UClass_ACraftingTable_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		IF_WITH_EDITOR(UE_ARRAY_COUNT(FuncInfo), 0),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ACraftingTable_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -546,7 +591,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFActorsRequired
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACraftingTable, 3648226550);
+	IMPLEMENT_CLASS(ACraftingTable, 2268037827);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ACraftingTable>()
 	{
 		return ACraftingTable::StaticClass();

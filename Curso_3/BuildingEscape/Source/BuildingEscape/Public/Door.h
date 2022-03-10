@@ -22,7 +22,7 @@ UCLASS()
 class BUILDINGESCAPE_API ADoor : public AActor, public IInteractInterface
 {
 	GENERATED_BODY()
-	
+
 public:	
 	// Sets default values for this actor's properties
 	ADoor();
@@ -33,7 +33,7 @@ protected:
 	UQuestActorComponentID* QuestActorComponentID;
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
- 
+	
 	UPROPERTY(EditAnywhere, Category= "Door Settings")
 	EStateDoor StateDoor;
 
@@ -70,7 +70,7 @@ public:
 	// Variable to hold the Curve asset
 	UPROPERTY(EditAnywhere, Category= "Door Settings")
 	UCurveFloat* DoorTimelineFloatCurve;
-
+	
 	void FindAuidioComponent();
 private:
 	FOnTimelineFloat UpdateFunctionFloat;

@@ -35,8 +35,7 @@ void UTaskActivateInteractTrigger::SettingDataTask(AInteractTrigger* InteractTri
 	if(!BuildingScapeCharacter){return;}
 
 	if(!BuildingScapeCharacter->PlayerInventoryComponent){return;}
-
-	UE_LOG(LogTemp, Warning, TEXT("SI"));
+	
 	SettingDataBaseTask(false);
 	
 	SendDataPlayer.LastInteractActorInfo.ActorBlueprint = InteractTrigger->GetClass();

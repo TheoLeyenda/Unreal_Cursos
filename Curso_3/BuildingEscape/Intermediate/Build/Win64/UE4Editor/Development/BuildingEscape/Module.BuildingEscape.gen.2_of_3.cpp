@@ -34,6 +34,5 @@
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TaskActivateInteractTrigger.gen.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TaskActivatePlayerStatsUpdate.gen.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TaskActiveInteractComponent.gen.cpp"
-#include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TaskInventory.gen.cpp"
-#include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TeleportObjectsInTrigger.gen.cpp"
-#include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TimeEventOver.gen.cpp"
+#include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TaskCraftedActor.gen.cpp"
+#include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/TaskDestroyActor.gen.cpp"

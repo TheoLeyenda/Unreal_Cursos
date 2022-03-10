@@ -8,11 +8,12 @@
 #include "QuestSystem/QuestActorComponentID.h"
 #include "BaseTNT.generated.h"
 
+
 UCLASS()
 class BUILDINGESCAPE_API ABaseTNT : public AActor
 {
 	GENERATED_BODY()
-	
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDestroyOtherObject, AActor*, Actor);	
 public:	
 	// Sets default values for this actor's properties
 	ABaseTNT();
@@ -46,6 +47,6 @@ public:
 			, const FHitResult& SweepResult);
 
 	virtual void Explotion(AActor* Actor);
-
+	
 };
 

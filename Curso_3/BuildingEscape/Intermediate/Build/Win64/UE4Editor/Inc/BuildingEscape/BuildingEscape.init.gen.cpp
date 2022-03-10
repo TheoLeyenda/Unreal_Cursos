@@ -11,6 +11,7 @@
 #endif
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
+	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnGameOverActivate__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnSubstractLife__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_ABuildingScapeCharacter_OnUpdatePlayerStats__DelegateSignature();
@@ -25,6 +26,8 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_ACheckPointTrigger_OnCheckPointTrigger__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_ACombinePanel_OnCompleteCombinePanel__DelegateSignature();
+	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature();
+	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_UDetectDestroyActorComponent_OnDestroyActor__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnInteract__DelegateSignature();
 	BUILDINGESCAPE_API UFunction* Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape()
@@ -33,6 +36,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 		if (!ReturnPackage)
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
+				(UObject* (*)())Z_Construct_UDelegateFunction_ABaseTNT_OnDestroyOtherObject__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnGameOverActivate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnSubstractLife__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ABuildingScapeCharacter_OnUpdatePlayerStats__DelegateSignature,
@@ -47,6 +51,8 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_AInteractTrigger_OnCompleteInteractTrigger__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ACheckPointTrigger_OnCheckPointTrigger__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ACombinePanel_OnCompleteCombinePanel__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_ACraftingTable_OnCraftingActor__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_UDetectDestroyActorComponent_OnDestroyActor__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnInteract__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature,
 			};
@@ -55,8 +61,8 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscape_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x6D45AC22,
-				0x233F82BD,
+				0x1E6F0FE0,
+				0x2D1798A8,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

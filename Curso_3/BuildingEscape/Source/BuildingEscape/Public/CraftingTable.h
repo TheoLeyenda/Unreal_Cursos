@@ -79,11 +79,13 @@ public:
 
 };
 
+
+
 UCLASS()
 class BUILDINGESCAPE_API ACraftingTable : public AActor
 {
 	GENERATED_BODY()
-	
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnCraftingActor, TSubclassOf<AActor>, ActorCraftedClass, ACraftingTable*, CraftingTable);
 public:	
 	// Sets default values for this actor's properties
 	ACraftingTable();
@@ -108,4 +110,6 @@ protected:
 	AObjectSpawner* ObjectSpawner;
 public:
 	void CheckCrafting();
+
+	FOnCraftingActor OnCraftingActor;
 };
