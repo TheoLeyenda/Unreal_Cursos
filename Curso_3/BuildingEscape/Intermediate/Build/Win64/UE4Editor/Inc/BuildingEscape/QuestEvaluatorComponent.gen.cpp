@@ -28,11 +28,14 @@ void EmptyLinkFunctionForGeneratedCodeQuestEvaluatorComponent() {}
 		struct QuestEvaluatorComponent_eventOnSettingDataPlayer_Parms
 		{
 			UQuestEvaluatorComponent* QuestEvaluatorComponent;
+			bool bForceSend;
 		};
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_QuestEvaluatorComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_QuestEvaluatorComponent;
+		static void NewProp_bForceSend_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bForceSend;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -45,8 +48,14 @@ void EmptyLinkFunctionForGeneratedCodeQuestEvaluatorComponent() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature_Statics::NewProp_QuestEvaluatorComponent = { "QuestEvaluatorComponent", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(QuestEvaluatorComponent_eventOnSettingDataPlayer_Parms, QuestEvaluatorComponent), Z_Construct_UClass_UQuestEvaluatorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature_Statics::NewProp_QuestEvaluatorComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature_Statics::NewProp_QuestEvaluatorComponent_MetaData)) };
+	void Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature_Statics::NewProp_bForceSend_SetBit(void* Obj)
+	{
+		((QuestEvaluatorComponent_eventOnSettingDataPlayer_Parms*)Obj)->bForceSend = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature_Statics::NewProp_bForceSend = { "bForceSend", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(QuestEvaluatorComponent_eventOnSettingDataPlayer_Parms), &Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature_Statics::NewProp_bForceSend_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature_Statics::NewProp_QuestEvaluatorComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature_Statics::NewProp_bForceSend,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature_Statics::Function_MetaDataParams[] = {
@@ -66,9 +75,10 @@ void EmptyLinkFunctionForGeneratedCodeQuestEvaluatorComponent() {}
 	DEFINE_FUNCTION(UQuestEvaluatorComponent::execSettingDataPlayer)
 	{
 		P_GET_STRUCT(FDataPlayer,Z_Param_NewData);
+		P_GET_UBOOL(Z_Param_bForceSend);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->SettingDataPlayer(Z_Param_NewData);
+		P_THIS->SettingDataPlayer(Z_Param_NewData,Z_Param_bForceSend);
 		P_NATIVE_END;
 	}
 	void UQuestEvaluatorComponent::StaticRegisterNativesUQuestEvaluatorComponent()
@@ -84,8 +94,11 @@ void EmptyLinkFunctionForGeneratedCodeQuestEvaluatorComponent() {}
 		struct QuestEvaluatorComponent_eventSettingDataPlayer_Parms
 		{
 			FDataPlayer NewData;
+			bool bForceSend;
 		};
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_NewData;
+		static void NewProp_bForceSend_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bForceSend;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -93,8 +106,14 @@ void EmptyLinkFunctionForGeneratedCodeQuestEvaluatorComponent() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UQuestEvaluatorComponent_SettingDataPlayer_Statics::NewProp_NewData = { "NewData", nullptr, (EPropertyFlags)0x0010008000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(QuestEvaluatorComponent_eventSettingDataPlayer_Parms, NewData), Z_Construct_UScriptStruct_FDataPlayer, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UQuestEvaluatorComponent_SettingDataPlayer_Statics::NewProp_bForceSend_SetBit(void* Obj)
+	{
+		((QuestEvaluatorComponent_eventSettingDataPlayer_Parms*)Obj)->bForceSend = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UQuestEvaluatorComponent_SettingDataPlayer_Statics::NewProp_bForceSend = { "bForceSend", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(QuestEvaluatorComponent_eventSettingDataPlayer_Parms), &Z_Construct_UFunction_UQuestEvaluatorComponent_SettingDataPlayer_Statics::NewProp_bForceSend_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UQuestEvaluatorComponent_SettingDataPlayer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UQuestEvaluatorComponent_SettingDataPlayer_Statics::NewProp_NewData,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UQuestEvaluatorComponent_SettingDataPlayer_Statics::NewProp_bForceSend,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UQuestEvaluatorComponent_SettingDataPlayer_Statics::Function_MetaDataParams[] = {
@@ -151,8 +170,8 @@ void EmptyLinkFunctionForGeneratedCodeQuestEvaluatorComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UQuestEvaluatorComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature, "OnSettingDataPlayer__DelegateSignature" }, // 468904355
-		{ &Z_Construct_UFunction_UQuestEvaluatorComponent_SettingDataPlayer, "SettingDataPlayer" }, // 3486547411
+		{ &Z_Construct_UDelegateFunction_UQuestEvaluatorComponent_OnSettingDataPlayer__DelegateSignature, "OnSettingDataPlayer__DelegateSignature" }, // 3117700841
+		{ &Z_Construct_UFunction_UQuestEvaluatorComponent_SettingDataPlayer, "SettingDataPlayer" }, // 1281925768
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UQuestEvaluatorComponent_Statics::Class_MetaDataParams[] = {
@@ -233,7 +252,7 @@ void EmptyLinkFunctionForGeneratedCodeQuestEvaluatorComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UQuestEvaluatorComponent, 496749366);
+	IMPLEMENT_CLASS(UQuestEvaluatorComponent, 1024016041);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UQuestEvaluatorComponent>()
 	{
 		return UQuestEvaluatorComponent::StaticClass();

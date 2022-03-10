@@ -94,9 +94,6 @@ struct FQuestStructInfo : public FTableRowBase
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	TEnumAsByte<EQuestState> QuestState = EQuestState::Available;
-	
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	//TArray<FActionQuest> ActionsQuest;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<UObjetive*> Objetives;
@@ -125,5 +122,5 @@ public:
 	FQuestStructInfo QuestStructInfo;
 	
 	UFUNCTION()
-	virtual void CheckStatus(FDataPlayer DataPlayer);
+	virtual void CheckStatus(FDataPlayer DataPlayer, bool bForceSendData);
 };

@@ -99,8 +99,10 @@ void EmptyLinkFunctionForGeneratedCodeStep() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStep_Statics::Class_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
 		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "QuestSystem/ObjetiveType/Step.h" },
+		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/QuestSystem/ObjetiveType/Step.h" },
 	};
 #endif
@@ -131,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeStep() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UStep, 652307403);
+	IMPLEMENT_CLASS(UStep, 2676743753);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UStep>()
 	{
 		return UStep::StaticClass();

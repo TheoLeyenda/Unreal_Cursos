@@ -7,9 +7,10 @@
 
 UBaseTask::UBaseTask(){}
 
-void UBaseTask::SendEventUpdateTask()
+void UBaseTask::SendEventUpdateTask(bool bForceSend)
 {
-	OnUpdateTask.Broadcast(SendDataPlayer);
+	//UE_LOG(LogTemp, Warning, TEXT("Envie la task"));
+	OnUpdateTask.Broadcast(SendDataPlayer, bForceSend);
 }
 
 void UBaseTask::FindInformation()
@@ -44,6 +45,6 @@ void UBaseTask::SettingDataBaseTask(bool SendEvent)
 
 	if(SendEvent)
 	{
-		SendEventUpdateTask();
+		SendEventUpdateTask(SendEvent);
 	}
 }

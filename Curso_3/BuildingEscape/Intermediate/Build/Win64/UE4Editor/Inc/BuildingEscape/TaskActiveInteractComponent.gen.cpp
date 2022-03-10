@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskActiveInteractComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTaskActiveInteractComponent, 1139862998);
+	IMPLEMENT_CLASS(UTaskActiveInteractComponent, 1951331913);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UTaskActiveInteractComponent>()
 	{
 		return UTaskActiveInteractComponent::StaticClass();

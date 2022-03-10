@@ -26,8 +26,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseTask() {}
 		struct _Script_BuildingEscape_eventOnUpdateTask_Parms
 		{
 			FDataPlayer DataPlayer;
+			bool bForceSend;
 		};
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_DataPlayer;
+		static void NewProp_bForceSend_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bForceSend;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -35,8 +38,14 @@ void EmptyLinkFunctionForGeneratedCodeBaseTask() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature_Statics::NewProp_DataPlayer = { "DataPlayer", nullptr, (EPropertyFlags)0x0010008000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_BuildingEscape_eventOnUpdateTask_Parms, DataPlayer), Z_Construct_UScriptStruct_FDataPlayer, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature_Statics::NewProp_bForceSend_SetBit(void* Obj)
+	{
+		((_Script_BuildingEscape_eventOnUpdateTask_Parms*)Obj)->bForceSend = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature_Statics::NewProp_bForceSend = { "bForceSend", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(_Script_BuildingEscape_eventOnUpdateTask_Parms), &Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature_Statics::NewProp_bForceSend_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature_Statics::NewProp_DataPlayer,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature_Statics::NewProp_bForceSend,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_BuildingEscape_OnUpdateTask__DelegateSignature_Statics::Function_MetaDataParams[] = {
@@ -71,9 +80,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseTask() {}
 	}
 	DEFINE_FUNCTION(UBaseTask::execSendEventUpdateTask)
 	{
+		P_GET_UBOOL(Z_Param_bForceSend);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->SendEventUpdateTask();
+		P_THIS->SendEventUpdateTask(Z_Param_bForceSend);
 		P_NATIVE_END;
 	}
 	void UBaseTask::StaticRegisterNativesUBaseTask()
@@ -110,17 +120,32 @@ void EmptyLinkFunctionForGeneratedCodeBaseTask() {}
 	}
 	struct Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics
 	{
+		struct BaseTask_eventSendEventUpdateTask_Parms
+		{
+			bool bForceSend;
+		};
+		static void NewProp_bForceSend_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bForceSend;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::NewProp_bForceSend_SetBit(void* Obj)
+	{
+		((BaseTask_eventSendEventUpdateTask_Parms*)Obj)->bForceSend = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::NewProp_bForceSend = { "bForceSend", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(BaseTask_eventSendEventUpdateTask_Parms), &Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::NewProp_bForceSend_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::NewProp_bForceSend,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/QuestSystem/BaseTask.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UBaseTask, nullptr, "SendEventUpdateTask", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UBaseTask, nullptr, "SendEventUpdateTask", nullptr, nullptr, sizeof(BaseTask_eventSendEventUpdateTask_Parms), Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UBaseTask_SendEventUpdateTask_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UBaseTask_SendEventUpdateTask()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -196,7 +221,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseTask() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UBaseTask_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UBaseTask_FindInformation, "FindInformation" }, // 1024883878
-		{ &Z_Construct_UFunction_UBaseTask_SendEventUpdateTask, "SendEventUpdateTask" }, // 3308769597
+		{ &Z_Construct_UFunction_UBaseTask_SendEventUpdateTask, "SendEventUpdateTask" }, // 130796148
 		{ &Z_Construct_UFunction_UBaseTask_SettingDataBaseTask, "SettingDataBaseTask" }, // 1308136079
 	};
 #if WITH_METADATA
@@ -252,7 +277,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseTask() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UBaseTask, 1751698159);
+	IMPLEMENT_CLASS(UBaseTask, 4005682828);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UBaseTask>()
 	{
 		return UBaseTask::StaticClass();

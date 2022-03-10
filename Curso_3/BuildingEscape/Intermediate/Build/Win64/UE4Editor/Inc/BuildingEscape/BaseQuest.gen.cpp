@@ -240,9 +240,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestStructInfo
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_Objetives_MetaData[] = {
 		{ "Category", "QuestStructInfo" },
-		{ "Comment", "//UPROPERTY(EditAnywhere, BlueprintReadWrite)\n//TArray<FActionQuest> ActionsQuest;\n" },
 		{ "ModuleRelativePath", "Public/QuestSystem/BaseQuest.h" },
-		{ "ToolTip", "UPROPERTY(EditAnywhere, BlueprintReadWrite)\nTArray<FActionQuest> ActionsQuest;" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_Objetives = { "Objetives", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FQuestStructInfo, Objetives), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_Objetives_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FQuestStructInfo_Statics::NewProp_Objetives_MetaData)) };
@@ -291,13 +289,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestStructInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FQuestStructInfo_Hash() { return 3108625789U; }
+	uint32 Get_Z_Construct_UScriptStruct_FQuestStructInfo_Hash() { return 2554777448U; }
 	DEFINE_FUNCTION(UBaseQuest::execCheckStatus)
 	{
 		P_GET_STRUCT(FDataPlayer,Z_Param_DataPlayer);
+		P_GET_UBOOL(Z_Param_bForceSendData);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->CheckStatus(Z_Param_DataPlayer);
+		P_THIS->CheckStatus(Z_Param_DataPlayer,Z_Param_bForceSendData);
 		P_NATIVE_END;
 	}
 	void UBaseQuest::StaticRegisterNativesUBaseQuest()
@@ -313,8 +312,11 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestStructInfo
 		struct BaseQuest_eventCheckStatus_Parms
 		{
 			FDataPlayer DataPlayer;
+			bool bForceSendData;
 		};
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_DataPlayer;
+		static void NewProp_bForceSendData_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bForceSendData;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -322,8 +324,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestStructInfo
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UBaseQuest_CheckStatus_Statics::NewProp_DataPlayer = { "DataPlayer", nullptr, (EPropertyFlags)0x0010008000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseQuest_eventCheckStatus_Parms, DataPlayer), Z_Construct_UScriptStruct_FDataPlayer, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UBaseQuest_CheckStatus_Statics::NewProp_bForceSendData_SetBit(void* Obj)
+	{
+		((BaseQuest_eventCheckStatus_Parms*)Obj)->bForceSendData = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UBaseQuest_CheckStatus_Statics::NewProp_bForceSendData = { "bForceSendData", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(BaseQuest_eventCheckStatus_Parms), &Z_Construct_UFunction_UBaseQuest_CheckStatus_Statics::NewProp_bForceSendData_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBaseQuest_CheckStatus_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBaseQuest_CheckStatus_Statics::NewProp_DataPlayer,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBaseQuest_CheckStatus_Statics::NewProp_bForceSendData,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UBaseQuest_CheckStatus_Statics::Function_MetaDataParams[] = {
@@ -372,7 +380,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestStructInfo
 		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UBaseQuest_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UBaseQuest_CheckStatus, "CheckStatus" }, // 3300600368
+		{ &Z_Construct_UFunction_UBaseQuest_CheckStatus, "CheckStatus" }, // 1649584415
 		{ &Z_Construct_UDelegateFunction_UBaseQuest_OnFinishQuest__DelegateSignature, "OnFinishQuest__DelegateSignature" }, // 2472174788
 		{ &Z_Construct_UDelegateFunction_UBaseQuest_OnUpdateQuest__DelegateSignature, "OnUpdateQuest__DelegateSignature" }, // 2091616101
 	};
@@ -435,7 +443,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestStructInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UBaseQuest, 2951181648);
+	IMPLEMENT_CLASS(UBaseQuest, 2252918945);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UBaseQuest>()
 	{
 		return UBaseQuest::StaticClass();

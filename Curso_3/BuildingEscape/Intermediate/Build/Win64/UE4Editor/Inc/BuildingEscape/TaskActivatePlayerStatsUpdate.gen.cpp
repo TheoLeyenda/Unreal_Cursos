@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskActivatePlayerStatsUpdate() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTaskActivatePlayerStatsUpdate, 1893852663);
+	IMPLEMENT_CLASS(UTaskActivatePlayerStatsUpdate, 3434609354);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UTaskActivatePlayerStatsUpdate>()
 	{
 		return UTaskActivatePlayerStatsUpdate::StaticClass();

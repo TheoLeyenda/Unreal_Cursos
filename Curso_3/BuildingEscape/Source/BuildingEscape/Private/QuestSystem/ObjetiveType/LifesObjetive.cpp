@@ -5,9 +5,9 @@
 
 bool ULifesObjetive::CheckStepComplete(FDataPlayer CompareData)
 {
-	FString CurrentLifesText = FString::Printf(TEXT("%d"), CompareData.Lifes);
+	FString CurrentLifesText = FString("(") + FString::SanitizeFloat(CompareData.Lifes);
 	FString SpaceText = "/";
-	FString TargetLifesText = FString::Printf(TEXT("%d"), TargetLifes);
+	FString TargetLifesText =  FString::SanitizeFloat(TargetLifes) + FString(")");
 
 	TextProgressLifes = CurrentLifesText + SpaceText + TargetLifesText;
 	

@@ -44,5 +44,5 @@ void UTaskActivateInteractTrigger::SettingDataTask(AInteractTrigger* InteractTri
 	UQuestActorComponentID* QuestActorComponentID = Cast<UQuestActorComponentID>(InteractTrigger->GetComponentByClass(UQuestActorComponentID::StaticClass()));
 	SendDataPlayer.LastInteractActorInfo.ID = QuestActorComponentID->ID;
 	
-	SendEventUpdateTask();
+	SendEventUpdateTask(false);
 }

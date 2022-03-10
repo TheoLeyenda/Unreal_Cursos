@@ -115,13 +115,13 @@ void AQuestManager::ChangeStateQuests(TArray<int> IdsQuest, EQuestState NewQuest
 	}
 }
 
-void AQuestManager::CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponent)
+void AQuestManager::CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponent, bool bForceSend)
 {
 	for(FQuestInfo &AuxQuestInfo : QuestsInfo)
 	{
-		if(AuxQuestInfo.Quest->QuestStructInfo.QuestState == EQuestState::InProgress)
+		if(AuxQuestInfo.Quest->QuestStructInfo.QuestState == EQuestState::InProgress || bForceSend)
 		{
-			AuxQuestInfo.Quest->CheckStatus(QuestEvaluatorComponent->DataPlayer);
+			AuxQuestInfo.Quest->CheckStatus(QuestEvaluatorComponent->DataPlayer, bForceSend);
 			if(AuxQuestInfo.Quest->QuestStructInfo.QuestState == EQuestState::Completed && !AuxQuestInfo.bCheckedDone)
 			{
 				ChangeStateQuests(AuxQuestInfo.Quest->QuestStructInfo.QuetsActivatedToCompleteIDs, EQuestState::InProgress);
@@ -148,7 +148,7 @@ void AQuestManager::CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponen
 
 void AQuestManager::SendEventFinishAllQuest()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Todos las Quest completadas"));
+	//UE_LOG(LogTemp, Warning, TEXT("Todos las Quest completadas"));
 	OnFinishAllQuest.Broadcast();
 }
 

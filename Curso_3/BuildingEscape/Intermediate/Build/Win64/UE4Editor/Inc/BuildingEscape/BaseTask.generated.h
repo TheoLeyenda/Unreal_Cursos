@@ -18,11 +18,13 @@ struct FDataPlayer;
 struct _Script_BuildingEscape_eventOnUpdateTask_Parms \
 { \
 	FDataPlayer DataPlayer; \
+	bool bForceSend; \
 }; \
-static inline void FOnUpdateTask_DelegateWrapper(const FMulticastScriptDelegate& OnUpdateTask, FDataPlayer DataPlayer) \
+static inline void FOnUpdateTask_DelegateWrapper(const FMulticastScriptDelegate& OnUpdateTask, FDataPlayer DataPlayer, bool bForceSend) \
 { \
 	_Script_BuildingEscape_eventOnUpdateTask_Parms Parms; \
 	Parms.DataPlayer=DataPlayer; \
+	Parms.bForceSend=bForceSend ? true : false; \
 	OnUpdateTask.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 

@@ -41,5 +41,5 @@ void UTaskActivateCombinePanel::SettingDataTask(ACombinePanel* CombinePanel)
 	UQuestActorComponentID* QuestActorComponentID = Cast<UQuestActorComponentID>(CombinePanel->GetComponentByClass(UQuestActorComponentID::StaticClass()));
 	SendDataPlayer.LastInteractActorInfo.ID = QuestActorComponentID->ID;
 	
-	SendEventUpdateTask();
+	SendEventUpdateTask(false);
 }

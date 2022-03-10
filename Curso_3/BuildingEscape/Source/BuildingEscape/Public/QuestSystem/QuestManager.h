@@ -59,7 +59,7 @@ public:
 	void ChangeStateQuests(TArray<int> IdsQuest, EQuestState NewQuestState);
 	
 	UFUNCTION()
-	void CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponent);
+	void CheckQuests(UQuestEvaluatorComponent* QuestEvaluatorComponent, bool bForceSend);
 
 	UFUNCTION()
 	void SendEventFinishAllQuest();

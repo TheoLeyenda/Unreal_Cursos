@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeLifesObjetive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ULifesObjetive, 3182334939);
+	IMPLEMENT_CLASS(ULifesObjetive, 3702423660);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ULifesObjetive>()
 	{
 		return ULifesObjetive::StaticClass();

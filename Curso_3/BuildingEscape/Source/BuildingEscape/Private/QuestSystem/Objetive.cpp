@@ -12,7 +12,6 @@ void UObjetive::CheckObjetiveComplete(FDataPlayer CompareData)
 		if(!Step->CheckStepComplete(CompareData))
 		{
 			bDoneAccion = false;
-			break;
 		}
 	}
 }

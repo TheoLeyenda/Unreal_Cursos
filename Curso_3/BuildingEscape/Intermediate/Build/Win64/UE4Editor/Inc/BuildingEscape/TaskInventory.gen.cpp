@@ -149,7 +149,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskInventory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTaskInventory, 2875621089);
+	IMPLEMENT_CLASS(UTaskInventory, 2414737530);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UTaskInventory>()
 	{
 		return UTaskInventory::StaticClass();

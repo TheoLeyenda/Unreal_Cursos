@@ -33,6 +33,7 @@ void UQuestEvaluatorComponent::BeginPlay()
 					Task->FindInformation();
 					Task->BuildingScapeCharacter = BuildingScapeCharacter;
 					Task->OnUpdateTask.AddDynamic(this, &UQuestEvaluatorComponent::SettingDataPlayer);
+					Task->SettingDataBaseTask(true);
 				}
 			}
 		}
@@ -47,7 +48,7 @@ void UQuestEvaluatorComponent::BeginPlay()
 	}
 }
 
-void UQuestEvaluatorComponent::SettingDataPlayer(FDataPlayer NewData)
+void UQuestEvaluatorComponent::SettingDataPlayer(FDataPlayer NewData, bool bForceSend)
 {
 
 	if(!BuildingScapeCharacter)
@@ -68,6 +69,7 @@ void UQuestEvaluatorComponent::SettingDataPlayer(FDataPlayer NewData)
 	
 	DataPlayer.InventoryComponent = NewData.InventoryComponent;
 	DataPlayer.NeedItems = NewData.NeedItems;
-	
-	OnQuestEvaluatorDataUpdate.Broadcast(this);
+
+	//UE_LOG(LogTemp, Warning, TEXT("Envie el Update del OnQuestEvaluatorDataUpdate"));
+	OnQuestEvaluatorDataUpdate.Broadcast(this, bForceSend);
 }

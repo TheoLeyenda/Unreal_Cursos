@@ -19,11 +19,13 @@ struct FDataPlayer;
 struct QuestEvaluatorComponent_eventOnSettingDataPlayer_Parms \
 { \
 	UQuestEvaluatorComponent* QuestEvaluatorComponent; \
+	bool bForceSend; \
 }; \
-static inline void FOnSettingDataPlayer_DelegateWrapper(const FMulticastScriptDelegate& OnSettingDataPlayer, UQuestEvaluatorComponent* QuestEvaluatorComponent) \
+static inline void FOnSettingDataPlayer_DelegateWrapper(const FMulticastScriptDelegate& OnSettingDataPlayer, UQuestEvaluatorComponent* QuestEvaluatorComponent, bool bForceSend) \
 { \
 	QuestEvaluatorComponent_eventOnSettingDataPlayer_Parms Parms; \
 	Parms.QuestEvaluatorComponent=QuestEvaluatorComponent; \
+	Parms.bForceSend=bForceSend ? true : false; \
 	OnSettingDataPlayer.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 

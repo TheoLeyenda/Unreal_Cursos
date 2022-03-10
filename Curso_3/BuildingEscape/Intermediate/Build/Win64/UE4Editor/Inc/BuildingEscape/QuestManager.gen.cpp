@@ -177,9 +177,10 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 	DEFINE_FUNCTION(AQuestManager::execCheckQuests)
 	{
 		P_GET_OBJECT(UQuestEvaluatorComponent,Z_Param_QuestEvaluatorComponent);
+		P_GET_UBOOL(Z_Param_bForceSend);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->CheckQuests(Z_Param_QuestEvaluatorComponent);
+		P_THIS->CheckQuests(Z_Param_QuestEvaluatorComponent,Z_Param_bForceSend);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AQuestManager::execChangeStateQuest)
@@ -251,11 +252,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 		struct QuestManager_eventCheckQuests_Parms
 		{
 			UQuestEvaluatorComponent* QuestEvaluatorComponent;
+			bool bForceSend;
 		};
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_QuestEvaluatorComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_QuestEvaluatorComponent;
+		static void NewProp_bForceSend_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bForceSend;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -268,8 +272,14 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AQuestManager_CheckQuests_Statics::NewProp_QuestEvaluatorComponent = { "QuestEvaluatorComponent", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(QuestManager_eventCheckQuests_Parms, QuestEvaluatorComponent), Z_Construct_UClass_UQuestEvaluatorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AQuestManager_CheckQuests_Statics::NewProp_QuestEvaluatorComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AQuestManager_CheckQuests_Statics::NewProp_QuestEvaluatorComponent_MetaData)) };
+	void Z_Construct_UFunction_AQuestManager_CheckQuests_Statics::NewProp_bForceSend_SetBit(void* Obj)
+	{
+		((QuestManager_eventCheckQuests_Parms*)Obj)->bForceSend = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AQuestManager_CheckQuests_Statics::NewProp_bForceSend = { "bForceSend", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(QuestManager_eventCheckQuests_Parms), &Z_Construct_UFunction_AQuestManager_CheckQuests_Statics::NewProp_bForceSend_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AQuestManager_CheckQuests_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AQuestManager_CheckQuests_Statics::NewProp_QuestEvaluatorComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AQuestManager_CheckQuests_Statics::NewProp_bForceSend,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AQuestManager_CheckQuests_Statics::Function_MetaDataParams[] = {
@@ -387,7 +397,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AQuestManager_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AQuestManager_ChangeStateQuest, "ChangeStateQuest" }, // 1207587609
-		{ &Z_Construct_UFunction_AQuestManager_CheckQuests, "CheckQuests" }, // 1827095961
+		{ &Z_Construct_UFunction_AQuestManager_CheckQuests, "CheckQuests" }, // 1689454268
 		{ &Z_Construct_UFunction_AQuestManager_FindQuestEvaluatorComponents, "FindQuestEvaluatorComponents" }, // 1346233233
 		{ &Z_Construct_UFunction_AQuestManager_LoadQuestsInfoDataTable, "LoadQuestsInfoDataTable" }, // 2266640779
 		{ &Z_Construct_UFunction_AQuestManager_SendEventFinishAllQuest, "SendEventFinishAllQuest" }, // 1237057515
@@ -456,7 +466,7 @@ static struct FScriptStruct_BuildingEscape_StaticRegisterNativesFQuestInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AQuestManager, 3996735842);
+	IMPLEMENT_CLASS(AQuestManager, 526404037);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<AQuestManager>()
 	{
 		return AQuestManager::StaticClass();

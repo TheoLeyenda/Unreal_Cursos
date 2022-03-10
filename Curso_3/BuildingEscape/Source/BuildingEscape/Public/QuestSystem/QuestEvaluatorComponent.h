@@ -14,8 +14,8 @@ UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class BUILDINGESCAPE_API UQuestEvaluatorComponent : public UActorComponent
 {
 	GENERATED_BODY()
-
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnSettingDataPlayer, UQuestEvaluatorComponent*, QuestEvaluatorComponent);
+	
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnSettingDataPlayer, UQuestEvaluatorComponent*, QuestEvaluatorComponent, bool, bForceSend);
 public:	
 	// Sets default values for this component's properties
 	UQuestEvaluatorComponent();
@@ -37,6 +37,6 @@ public:
 	FOnSettingDataPlayer OnQuestEvaluatorDataUpdate;
 	
 	UFUNCTION()
-	void SettingDataPlayer(FDataPlayer NewData);
+	void SettingDataPlayer(FDataPlayer NewData, bool bForceSend);
 
 };

@@ -5,10 +5,9 @@
 
 bool UFatnessObjetive::CheckStepComplete(FDataPlayer CompareData)
 {
-
-	FString CurrentFatnessText = FString::Printf(TEXT("%f"), CompareData.Fatness);
+	FString CurrentFatnessText = FString("(") + FString::SanitizeFloat(CompareData.Fatness);
 	FString SpaceText = "/";
-	FString TargetFatnessText = FString::Printf(TEXT("%f"), TargetFatness);
+	FString TargetFatnessText = FString::SanitizeFloat(TargetFatness) + FString(")");
 
 	TextProgressFatness = CurrentFatnessText + SpaceText + TargetFatnessText;
 	

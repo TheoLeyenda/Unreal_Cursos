@@ -42,5 +42,5 @@ void UTaskInventory::SettingDataTask(UInventory* Inventory)
 	SendDataPlayer.InventoryComponent = Inventory;
 	SendDataPlayer.InventoryComponent->Items = Inventory->Items;
 	
-	SendEventUpdateTask();
+	SendEventUpdateTask(false);
 }

@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskActivateInteractTrigger() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTaskActivateInteractTrigger, 3817350094);
+	IMPLEMENT_CLASS(UTaskActivateInteractTrigger, 1337351236);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UTaskActivateInteractTrigger>()
 	{
 		return UTaskActivateInteractTrigger::StaticClass();

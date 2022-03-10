@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeNeedItemObjetive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UNeedItemObjetive, 1490833117);
+	IMPLEMENT_CLASS(UNeedItemObjetive, 4272357643);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UNeedItemObjetive>()
 	{
 		return UNeedItemObjetive::StaticClass();

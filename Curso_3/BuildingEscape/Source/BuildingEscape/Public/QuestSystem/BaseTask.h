@@ -11,7 +11,7 @@
  * 
  */
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnUpdateTask,FDataPlayer, DataPlayer);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnUpdateTask,FDataPlayer, DataPlayer, bool, bForceSend);
 
 UCLASS(DefaultToInstanced, EditInlineNew, BlueprintType, Blueprintable)
 class BUILDINGESCAPE_API UBaseTask : public UObject
@@ -31,7 +31,7 @@ public:
 	FOnUpdateTask OnUpdateTask;
 
 	UFUNCTION()
-	void SendEventUpdateTask();
+	void SendEventUpdateTask(bool bForceSend);
 
 	UFUNCTION()
 	virtual void FindInformation();

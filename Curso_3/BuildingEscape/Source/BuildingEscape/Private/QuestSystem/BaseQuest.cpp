@@ -29,9 +29,12 @@ void UBaseQuest::CheckCompleteQuest()
 	}
 }
 
-void UBaseQuest::CheckStatus(FDataPlayer DataPlayer)
+void UBaseQuest::CheckStatus(FDataPlayer DataPlayer, bool bForceSendData)
 {
-	if(QuestStructInfo.QuestState != EQuestState::InProgress){return;}
+	//UE_LOG(LogTemp, Warning, TEXT("Objetivo Completado: %s"), bForceSendData? TEXT("True") : TEXT("False"));
+	
+	if(QuestStructInfo.QuestState != EQuestState::InProgress && !bForceSendData){return;}
+	
 	for(UObjetive* Objetive : QuestStructInfo.Objetives)
 	{
 		if(Objetive)
@@ -48,5 +51,7 @@ void UBaseQuest::CheckStatus(FDataPlayer DataPlayer)
 		}
 	}
 	CheckCompleteQuest();
+	
+	//UE_LOG(LogTemp, Warning, TEXT("OnUpdateQuest"));
 	OnUpdateQuest.Broadcast();
 }

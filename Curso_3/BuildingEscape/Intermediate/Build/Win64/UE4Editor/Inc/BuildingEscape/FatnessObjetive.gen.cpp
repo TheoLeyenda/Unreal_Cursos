@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeFatnessObjetive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFatnessObjetive, 3019100720);
+	IMPLEMENT_CLASS(UFatnessObjetive, 2729632220);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UFatnessObjetive>()
 	{
 		return UFatnessObjetive::StaticClass();

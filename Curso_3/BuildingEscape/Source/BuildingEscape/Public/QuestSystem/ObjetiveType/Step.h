@@ -10,7 +10,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable)
 class BUILDINGESCAPE_API UStep : public UDataAsset
 {
 	GENERATED_BODY()

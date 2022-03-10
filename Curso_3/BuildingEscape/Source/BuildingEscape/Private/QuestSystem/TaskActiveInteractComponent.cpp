@@ -53,5 +53,5 @@ void UTaskActiveInteractComponent::SettingDataTask(UInteractComponent* InteractC
 	UQuestActorComponentID* QuestActorComponentID = Cast<UQuestActorComponentID>(ActorComponent);
 	SendDataPlayer.LastInteractActorInfo.ID = QuestActorComponentID->ID;
 	
-	SendEventUpdateTask();
+	SendEventUpdateTask(false);
 }

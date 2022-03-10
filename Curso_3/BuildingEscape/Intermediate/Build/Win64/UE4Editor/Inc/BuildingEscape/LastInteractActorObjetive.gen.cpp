@@ -101,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeLastInteractActorObjetive() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ULastInteractActorObjetive, 3220410275);
+	IMPLEMENT_CLASS(ULastInteractActorObjetive, 727404830);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ULastInteractActorObjetive>()
 	{
 		return ULastInteractActorObjetive::StaticClass();

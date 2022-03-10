@@ -140,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskActivateCombinePanel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTaskActivateCombinePanel, 1870979622);
+	IMPLEMENT_CLASS(UTaskActivateCombinePanel, 673710300);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UTaskActivateCombinePanel>()
 	{
 		return UTaskActivateCombinePanel::StaticClass();
