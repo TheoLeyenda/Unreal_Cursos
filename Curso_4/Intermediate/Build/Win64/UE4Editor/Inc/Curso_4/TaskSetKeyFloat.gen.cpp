@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskSetKeyFloat() {}
 // Cross Module References
 	CURSO_4_API UClass* Z_Construct_UClass_UTaskSetKeyFloat_NoRegister();
 	CURSO_4_API UClass* Z_Construct_UClass_UTaskSetKeyFloat();
-	AIMODULE_API UClass* Z_Construct_UClass_UBTTask_BlueprintBase();
+	AIMODULE_API UClass* Z_Construct_UClass_UBTTaskNode();
 	UPackage* Z_Construct_UPackage__Script_Curso_4();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FBlackboardKeySelector();
 // End Cross Module References
@@ -45,7 +45,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskSetKeyFloat() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_UTaskSetKeyFloat_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UBTTask_BlueprintBase,
+		(UObject* (*)())Z_Construct_UClass_UBTTaskNode,
 		(UObject* (*)())Z_Construct_UPackage__Script_Curso_4,
 	};
 #if WITH_METADATA
@@ -100,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskSetKeyFloat() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTaskSetKeyFloat, 3030290957);
+	IMPLEMENT_CLASS(UTaskSetKeyFloat, 1024491388);
 	template<> CURSO_4_API UClass* StaticClass<UTaskSetKeyFloat>()
 	{
 		return UTaskSetKeyFloat::StaticClass();

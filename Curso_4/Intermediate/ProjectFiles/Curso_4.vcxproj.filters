@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Curso_4.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{31ECDE28-517C-447C-ADC2-BD75F7F36248}</UniqueIdentifier>
+      <UniqueIdentifier>{2A70943A-DA68-45E3-845C-E20652D45C17}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Curso_4.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{CD245873-82F7-497F-992A-35CE968BCBD6}</UniqueIdentifier>
+      <UniqueIdentifier>{6216B627-F55B-4263-8B0C-DCCA247F1EE8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Curso_4">
-      <UniqueIdentifier>{3A013BFD-50E2-464E-BDED-C514B4EEE86F}</UniqueIdentifier>
+      <UniqueIdentifier>{6A4E4963-66F0-4458-AD09-3EE7EE09ADAF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Curso_4\Curso_4.Build.cs">
       <Filter>Source\Curso_4</Filter>
@@ -42,10 +42,10 @@
       <Filter>Source\Curso_4</Filter>
     </ClInclude>
     <Filter Include="Source\Curso_4\Private">
-      <UniqueIdentifier>{6BC63526-FB82-4416-93A9-EFC94205A006}</UniqueIdentifier>
+      <UniqueIdentifier>{6DCA0C57-7DFA-402D-92A4-0F65CEBD9EC5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Curso_4\Private\Characters">
-      <UniqueIdentifier>{F1CE15A7-FAD7-4E72-957F-9717BAA98A80}</UniqueIdentifier>
+      <UniqueIdentifier>{9D6A37D9-9351-4A89-AEC9-923493D08E9E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Curso_4\Private\Characters\NPCCharacter.cpp">
       <Filter>Source\Curso_4\Private\Characters</Filter>
@@ -54,25 +54,28 @@
       <Filter>Source\Curso_4\Private\Characters</Filter>
     </ClCompile>
     <Filter Include="Source\Curso_4\Private\Characters\Controllers">
-      <UniqueIdentifier>{1BABB0A3-0161-4ED6-AC05-8FC4D8689AD5}</UniqueIdentifier>
+      <UniqueIdentifier>{D544CCA7-BFB2-4CC5-95CF-1E86AC3E5EE9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Curso_4\Private\Characters\Controllers\NPCController.cpp">
       <Filter>Source\Curso_4\Private\Characters\Controllers</Filter>
     </ClCompile>
     <Filter Include="Source\Curso_4\Private\IA">
-      <UniqueIdentifier>{58170EB1-DDF5-4C2C-9952-39B26D5F1C0A}</UniqueIdentifier>
+      <UniqueIdentifier>{2AD4D868-9A5C-47B5-9B38-B4A1B0C10D4B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Curso_4\Private\IA\Task">
-      <UniqueIdentifier>{52019281-5B10-4A17-BB40-5AF7989514E6}</UniqueIdentifier>
+      <UniqueIdentifier>{B904AE44-2E8A-48D9-9407-273DE0BB76B6}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Curso_4\Private\IA\Task\TaskFindNavogableLocation.cpp">
+      <Filter>Source\Curso_4\Private\IA\Task</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Curso_4\Private\IA\Task\TaskSetKeyFloat.cpp">
       <Filter>Source\Curso_4\Private\IA\Task</Filter>
     </ClCompile>
     <Filter Include="Source\Curso_4\Public">
-      <UniqueIdentifier>{E55C842B-5361-482A-BE64-BC250BD7A156}</UniqueIdentifier>
+      <UniqueIdentifier>{EC3A37FF-2806-4225-954B-77DD318EBB2D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Curso_4\Public\Characters">
-      <UniqueIdentifier>{B7BE18E2-0342-42A8-A043-7EA0F45C44FF}</UniqueIdentifier>
+      <UniqueIdentifier>{DEDE2B31-5BF7-4BEA-A4BE-280B5CEDB05B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Curso_4\Public\Characters\NPCCharacter.h">
       <Filter>Source\Curso_4\Public\Characters</Filter>
@@ -81,17 +84,20 @@
       <Filter>Source\Curso_4\Public\Characters</Filter>
     </ClInclude>
     <Filter Include="Source\Curso_4\Public\Characters\Controllers">
-      <UniqueIdentifier>{50CAF686-3933-4803-AA9F-40A2F8EED644}</UniqueIdentifier>
+      <UniqueIdentifier>{874E4B53-F625-4629-BC36-4F2C66BFBAC4}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Curso_4\Public\Characters\Controllers\NPCController.h">
       <Filter>Source\Curso_4\Public\Characters\Controllers</Filter>
     </ClInclude>
     <Filter Include="Source\Curso_4\Public\IA">
-      <UniqueIdentifier>{4AC6E16D-75F2-439A-B63B-9242423AA4ED}</UniqueIdentifier>
+      <UniqueIdentifier>{DE976F41-A24B-4902-BFA7-4D82A28A135B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Curso_4\Public\IA\Task">
-      <UniqueIdentifier>{89A96B2E-A3F6-4104-8B29-4EA713619355}</UniqueIdentifier>
+      <UniqueIdentifier>{63F02D0D-B2D7-4AC2-A8B5-440F4C204487}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Curso_4\Public\IA\Task\TaskFindNavogableLocation.h">
+      <Filter>Source\Curso_4\Public\IA\Task</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Curso_4\Public\IA\Task\TaskSetKeyFloat.h">
       <Filter>Source\Curso_4\Public\IA\Task</Filter>
     </ClInclude>

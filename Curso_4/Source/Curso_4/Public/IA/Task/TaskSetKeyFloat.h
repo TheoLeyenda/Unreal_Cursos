@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class CURSO_4_API UTaskSetKeyFloat : public UBTTask_BlueprintBase
+class CURSO_4_API UTaskSetKeyFloat : public UBTTaskNode
 {
 	GENERATED_BODY()
 public:

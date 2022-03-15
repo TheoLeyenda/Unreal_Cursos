@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesUTaskSetKeyFloat(); \
 	friend struct Z_Construct_UClass_UTaskSetKeyFloat_Statics; \
 public: \
-	DECLARE_CLASS(UTaskSetKeyFloat, UBTTask_BlueprintBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/Curso_4"), NO_API) \
+	DECLARE_CLASS(UTaskSetKeyFloat, UBTTaskNode, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/Curso_4"), NO_API) \
 	DECLARE_SERIALIZER(UTaskSetKeyFloat)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesUTaskSetKeyFloat(); \
 	friend struct Z_Construct_UClass_UTaskSetKeyFloat_Statics; \
 public: \
-	DECLARE_CLASS(UTaskSetKeyFloat, UBTTask_BlueprintBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/Curso_4"), NO_API) \
+	DECLARE_CLASS(UTaskSetKeyFloat, UBTTaskNode, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/Curso_4"), NO_API) \
 	DECLARE_SERIALIZER(UTaskSetKeyFloat)
 
 

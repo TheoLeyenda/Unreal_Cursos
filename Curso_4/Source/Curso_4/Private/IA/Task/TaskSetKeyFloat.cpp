@@ -8,6 +8,7 @@
 EBTNodeResult::Type UTaskSetKeyFloat::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
 	OwnerComp.GetBlackboardComponent()->SetValueAsFloat(FloatKey.SelectedKeyName, FloatValue);
-	FinishExecute(true);
+	
+	FinishLatentTask(OwnerComp, EBTNodeResult::Type::Succeeded);
 	return Super::ExecuteTask(OwnerComp, NodeMemory);;
 }
