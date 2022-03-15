@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Curso_4.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{3280AD00-D6AC-4CAF-BCB7-BFF0A02C00A5}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Curso_4.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Curso_4Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{1EADE31D-3B39-4D92-BC2C-41A62F168024}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Curso_4">
+      <UniqueIdentifier>{1D9CFFAA-586F-432C-BD87-8F8BF92E4D09}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Curso_4\Curso_4.Build.cs">
+      <Filter>Source\Curso_4</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Curso_4\Curso_4.cpp">
+      <Filter>Source\Curso_4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Curso_4\Curso_4.h">
+      <Filter>Source\Curso_4</Filter>
+    </ClInclude>
+    <Filter Include="Source\Curso_4\Private">
+      <UniqueIdentifier>{852C4E75-521C-4AE3-A64A-7EF183B768C9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Curso_4\Private\Characters">
+      <UniqueIdentifier>{1BCEBF0A-E1DB-49DB-934B-4B4B2797C7CC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Curso_4\Private\Characters\PlayerCharacter.cpp">
+      <Filter>Source\Curso_4\Private\Characters</Filter>
+    </ClCompile>
+    <Filter Include="Source\Curso_4\Public">
+      <UniqueIdentifier>{4D0FA01F-F93F-417B-A199-D7406C86DB2F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Curso_4\Public\Characters">
+      <UniqueIdentifier>{366FF359-AA1B-438A-941A-ED1F9284AD39}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Curso_4\Public\Characters\PlayerCharacter.h">
+      <Filter>Source\Curso_4\Public\Characters</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
