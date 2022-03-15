@@ -14,12 +14,9 @@ class CURSO_4_API APlayerCharacter : public ACharacter
 {
 	GENERATED_BODY()
 public:
-	// Sets default values for this character's properties
 	APlayerCharacter();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Component")
 	UAIPerceptionStimuliSourceComponent* AIPerceptionStimuliSource;
