@@ -68,3 +68,8 @@ void APlayerCharacter::OnInputAxisMoveRight(float AxisValue)
 	AddMovementInput(Direction, AxisValue);
 }
 
+void APlayerCharacter::DeathPlayerCharacter()
+{
+	
+}
+

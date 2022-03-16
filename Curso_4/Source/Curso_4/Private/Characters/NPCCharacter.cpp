@@ -28,12 +28,6 @@ void ANPCCharacter::BeginPlay()
 	AIPerception->OnTargetPerceptionUpdated.AddDynamic(this, &ANPCCharacter::OnTargetPerceptionUpdated);
 }
 
-void ANPCCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-}
-
 void ANPCCharacter::OnTargetPerceptionUpdated(AActor* Actor, FAIStimulus Stimulus)
 {
 	if(!NPCController)

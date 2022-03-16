@@ -32,7 +32,7 @@ private: \
 	static void StaticRegisterNativesANPCController(); \
 	friend struct Z_Construct_UClass_ANPCController_Statics; \
 public: \
-	DECLARE_CLASS(ANPCController, AAIController, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Curso_4"), NO_API) \
+	DECLARE_CLASS(ANPCController, AAIControllerBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Curso_4"), NO_API) \
 	DECLARE_SERIALIZER(ANPCController)
 
 
@@ -41,7 +41,7 @@ private: \
 	static void StaticRegisterNativesANPCController(); \
 	friend struct Z_Construct_UClass_ANPCController_Statics; \
 public: \
-	DECLARE_CLASS(ANPCController, AAIController, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Curso_4"), NO_API) \
+	DECLARE_CLASS(ANPCController, AAIControllerBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Curso_4"), NO_API) \
 	DECLARE_SERIALIZER(ANPCController)
 
 

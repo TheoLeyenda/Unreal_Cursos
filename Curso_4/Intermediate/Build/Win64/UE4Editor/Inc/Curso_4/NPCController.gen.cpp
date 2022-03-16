@@ -15,10 +15,9 @@ void EmptyLinkFunctionForGeneratedCodeNPCController() {}
 // Cross Module References
 	CURSO_4_API UClass* Z_Construct_UClass_ANPCController_NoRegister();
 	CURSO_4_API UClass* Z_Construct_UClass_ANPCController();
-	AIMODULE_API UClass* Z_Construct_UClass_AAIController();
+	CURSO_4_API UClass* Z_Construct_UClass_AAIControllerBase();
 	UPackage* Z_Construct_UPackage__Script_Curso_4();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
-	AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTree_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ANPCController::execUpdateHasLineOfSightKey)
 	{
@@ -133,16 +132,12 @@ void EmptyLinkFunctionForGeneratedCodeNPCController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HasLineOfSightName_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FNamePropertyParams NewProp_HasLineOfSightName;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentBehaviorTree_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentBehaviorTree;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_ANPCController_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AAIController,
+		(UObject* (*)())Z_Construct_UClass_AAIControllerBase,
 		(UObject* (*)())Z_Construct_UPackage__Script_Curso_4,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ANPCController_Statics::FuncInfo[] = {
@@ -171,17 +166,9 @@ void EmptyLinkFunctionForGeneratedCodeNPCController() {}
 	};
 #endif
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_ANPCController_Statics::NewProp_HasLineOfSightName = { "HasLineOfSightName", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANPCController, HasLineOfSightName), METADATA_PARAMS(Z_Construct_UClass_ANPCController_Statics::NewProp_HasLineOfSightName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANPCController_Statics::NewProp_HasLineOfSightName_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANPCController_Statics::NewProp_CurrentBehaviorTree_MetaData[] = {
-		{ "Category", "Settings" },
-		{ "ModuleRelativePath", "Public/Characters/Controllers/NPCController.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANPCController_Statics::NewProp_CurrentBehaviorTree = { "CurrentBehaviorTree", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANPCController, CurrentBehaviorTree), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ANPCController_Statics::NewProp_CurrentBehaviorTree_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANPCController_Statics::NewProp_CurrentBehaviorTree_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANPCController_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANPCController_Statics::NewProp_TargetActorName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANPCController_Statics::NewProp_HasLineOfSightName,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANPCController_Statics::NewProp_CurrentBehaviorTree,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ANPCController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ANPCController>::IsAbstract,
@@ -210,7 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeNPCController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANPCController, 1796947535);
+	IMPLEMENT_CLASS(ANPCController, 2409480518);
 	template<> CURSO_4_API UClass* StaticClass<ANPCController>()
 	{
 		return ANPCController::StaticClass();

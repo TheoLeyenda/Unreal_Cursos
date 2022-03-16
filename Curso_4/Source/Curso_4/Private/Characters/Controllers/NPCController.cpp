@@ -3,15 +3,6 @@
 
 #include "Characters/Controllers/NPCController.h"
 
-#include "BehaviorTree/BlackboardComponent.h"
-
-void ANPCController::OnPossess(APawn* InPawn)
-{
-	Super::OnPossess(InPawn);
-
-	RunBehaviorTree(CurrentBehaviorTree);
-}
-
 void ANPCController::UpdateTargetActorKey(AActor* TargetActor)
 {
 	if(Blackboard)

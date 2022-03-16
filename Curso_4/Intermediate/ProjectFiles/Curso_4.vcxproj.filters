@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Curso_4.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2A70943A-DA68-45E3-845C-E20652D45C17}</UniqueIdentifier>
+      <UniqueIdentifier>{8052BA27-F5B1-4F42-8ECD-7F593AB92342}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Curso_4.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{6216B627-F55B-4263-8B0C-DCCA247F1EE8}</UniqueIdentifier>
+      <UniqueIdentifier>{48120DB4-1593-4D5A-A25B-9320F3DC9DB0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Curso_4">
-      <UniqueIdentifier>{6A4E4963-66F0-4458-AD09-3EE7EE09ADAF}</UniqueIdentifier>
+      <UniqueIdentifier>{206036BE-1074-42AA-819E-A3A32DDAC9F1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Curso_4\Curso_4.Build.cs">
       <Filter>Source\Curso_4</Filter>
@@ -42,10 +42,10 @@
       <Filter>Source\Curso_4</Filter>
     </ClInclude>
     <Filter Include="Source\Curso_4\Private">
-      <UniqueIdentifier>{6DCA0C57-7DFA-402D-92A4-0F65CEBD9EC5}</UniqueIdentifier>
+      <UniqueIdentifier>{75D1AE66-D2A8-4FA7-A53A-EC7CF5382D79}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Curso_4\Private\Characters">
-      <UniqueIdentifier>{9D6A37D9-9351-4A89-AEC9-923493D08E9E}</UniqueIdentifier>
+      <UniqueIdentifier>{AF2CB8E9-C80A-4E3E-9662-01756002C2C0}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Curso_4\Private\Characters\NPCCharacter.cpp">
       <Filter>Source\Curso_4\Private\Characters</Filter>
@@ -54,28 +54,43 @@
       <Filter>Source\Curso_4\Private\Characters</Filter>
     </ClCompile>
     <Filter Include="Source\Curso_4\Private\Characters\Controllers">
-      <UniqueIdentifier>{D544CCA7-BFB2-4CC5-95CF-1E86AC3E5EE9}</UniqueIdentifier>
+      <UniqueIdentifier>{E2C623A7-8A67-4FD9-9EF9-3C2DE52EF08D}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Curso_4\Private\Characters\Controllers\AIControllerBase.cpp">
+      <Filter>Source\Curso_4\Private\Characters\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Curso_4\Private\Characters\Controllers\EnemyGuardController.cpp">
+      <Filter>Source\Curso_4\Private\Characters\Controllers</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Curso_4\Private\Characters\Controllers\NPCController.cpp">
       <Filter>Source\Curso_4\Private\Characters\Controllers</Filter>
     </ClCompile>
+    <Filter Include="Source\Curso_4\Private\Characters\Enemys">
+      <UniqueIdentifier>{8DA605A0-24EC-4140-89A0-9CBE16224D6F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Curso_4\Private\Characters\Enemys\EnemyGuardCharacter.cpp">
+      <Filter>Source\Curso_4\Private\Characters\Enemys</Filter>
+    </ClCompile>
     <Filter Include="Source\Curso_4\Private\IA">
-      <UniqueIdentifier>{2AD4D868-9A5C-47B5-9B38-B4A1B0C10D4B}</UniqueIdentifier>
+      <UniqueIdentifier>{07905C70-C168-4C87-BC99-53A81EACFB8E}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Curso_4\Private\IA\Task">
-      <UniqueIdentifier>{B904AE44-2E8A-48D9-9407-273DE0BB76B6}</UniqueIdentifier>
+      <UniqueIdentifier>{37E32F52-0604-4FE3-9CD2-104FDDD3D105}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Curso_4\Private\IA\Task\TaskFindNavogableLocation.cpp">
+      <Filter>Source\Curso_4\Private\IA\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Curso_4\Private\IA\Task\TaskFindNextWaypointLocation.cpp">
       <Filter>Source\Curso_4\Private\IA\Task</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Curso_4\Private\IA\Task\TaskSetKeyFloat.cpp">
       <Filter>Source\Curso_4\Private\IA\Task</Filter>
     </ClCompile>
     <Filter Include="Source\Curso_4\Public">
-      <UniqueIdentifier>{EC3A37FF-2806-4225-954B-77DD318EBB2D}</UniqueIdentifier>
+      <UniqueIdentifier>{347E761C-B5EC-42C7-BA6B-790D6B5FB434}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Curso_4\Public\Characters">
-      <UniqueIdentifier>{DEDE2B31-5BF7-4BEA-A4BE-280B5CEDB05B}</UniqueIdentifier>
+      <UniqueIdentifier>{C0DD2887-6B95-4DC5-A6D8-62106F03F43E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Curso_4\Public\Characters\NPCCharacter.h">
       <Filter>Source\Curso_4\Public\Characters</Filter>
@@ -84,18 +99,33 @@
       <Filter>Source\Curso_4\Public\Characters</Filter>
     </ClInclude>
     <Filter Include="Source\Curso_4\Public\Characters\Controllers">
-      <UniqueIdentifier>{874E4B53-F625-4629-BC36-4F2C66BFBAC4}</UniqueIdentifier>
+      <UniqueIdentifier>{B9F5C4D8-14EA-4D73-98B4-082F2653C4A2}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Curso_4\Public\Characters\Controllers\AIControllerBase.h">
+      <Filter>Source\Curso_4\Public\Characters\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Curso_4\Public\Characters\Controllers\EnemyGuardController.h">
+      <Filter>Source\Curso_4\Public\Characters\Controllers</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Curso_4\Public\Characters\Controllers\NPCController.h">
       <Filter>Source\Curso_4\Public\Characters\Controllers</Filter>
     </ClInclude>
+    <Filter Include="Source\Curso_4\Public\Characters\Enemys">
+      <UniqueIdentifier>{5BDD28F4-F117-44F5-A595-A49896B7FE6F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Curso_4\Public\Characters\Enemys\EnemyGuardCharacter.h">
+      <Filter>Source\Curso_4\Public\Characters\Enemys</Filter>
+    </ClInclude>
     <Filter Include="Source\Curso_4\Public\IA">
-      <UniqueIdentifier>{DE976F41-A24B-4902-BFA7-4D82A28A135B}</UniqueIdentifier>
+      <UniqueIdentifier>{C758B306-86CB-4AA8-814F-5A65B606E1DA}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Curso_4\Public\IA\Task">
-      <UniqueIdentifier>{63F02D0D-B2D7-4AC2-A8B5-440F4C204487}</UniqueIdentifier>
+      <UniqueIdentifier>{A86B06DB-225B-445C-9148-64514E88205A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Curso_4\Public\IA\Task\TaskFindNavogableLocation.h">
+      <Filter>Source\Curso_4\Public\IA\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Curso_4\Public\IA\Task\TaskFindNextWaypointLocation.h">
       <Filter>Source\Curso_4\Public\IA\Task</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Curso_4\Public\IA\Task\TaskSetKeyFloat.h">

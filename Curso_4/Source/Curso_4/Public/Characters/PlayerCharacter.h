@@ -42,5 +42,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void OnInputAxisMoveRight(float AxisValue);
+
+	UFUNCTION(BlueprintCallable)
+	virtual void DeathPlayerCharacter();
 	
 };

@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "AIController.h"
+#include "AIControllerBase.h"
 #include "NPCController.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class CURSO_4_API ANPCController : public AAIController
+class CURSO_4_API ANPCController : public AAIControllerBase
 {
 	GENERATED_BODY()
 protected:
@@ -20,12 +20,8 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Settings")
 	FName HasLineOfSightName = FName("HasLineOfSight");
-	
-	virtual void OnPossess(APawn* InPawn) override;
 
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Settings")
-	UBehaviorTree* CurrentBehaviorTree;
 
 	UFUNCTION(BlueprintCallable)
 	void UpdateTargetActorKey(AActor* TargetActor);
