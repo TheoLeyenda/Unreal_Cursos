@@ -10,6 +10,7 @@
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/CombinePanel.gen.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/CraftingTable.gen.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/DestroyObjectsByTrigger.gen.cpp"
+#include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/DetectDestroyActorComponent.gen.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/Door.gen.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/DoorInteractTrigger.gen.cpp"
 #include "D:/NXA/Proyectos/Unreal_Cursos/Curso_3/BuildingEscape/Intermediate/Build/Win64/UE4Editor/Inc/BuildingEscape/DoorInteractTriggerWithActors.gen.cpp"
