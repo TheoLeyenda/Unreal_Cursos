@@ -113,15 +113,13 @@ void AFPS_MultiplayerTuto1Character::PerformTask(ETaskEnum::Type NewTask)
 {
 	if(GetNetMode() == NM_Client)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("CLIENTE"))
 		ServerPerformTask(NewTask);
 		return;
 	}
-
-	if(Task == ETaskEnum::None)
-	{
-		Task = NewTask;
-		OnRep_Task();
-	}
+	
+	Task = NewTask;
+	OnRep_Task();
 }
 
 void AFPS_MultiplayerTuto1Character::ServerPerformTask_Implementation(ETaskEnum::Type NewTask)
