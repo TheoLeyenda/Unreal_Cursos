@@ -40,10 +40,15 @@ class AFPS_MultiplayerTuto1Character : public ACharacter
 
 	UPROPERTY(ReplicatedUsing= OnRep_Task)
 	TEnumAsByte<ETaskEnum::Type> Task = ETaskEnum::None;
-
+protected:
 	FTimerHandle TimerHandle_Task;
 
+	//Fire Rate del disparo.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Settings")
 	float DelayHandle_Task = 0.1f;
+	
+	UPROPERTY(ReplicatedUsing= OnRep_Health, EditAnywhere, BlueprintReadWrite, Category= "Settings")
+	float Health = 100;
 
 public:
 	AFPS_MultiplayerTuto1Character();
@@ -84,6 +89,11 @@ protected:
 
 	UFUNCTION()
 	void OnRep_Task();
+
+	UFUNCTION()
+	void OnRep_Health();
+
+	float TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 	
 public:
 	/** Returns Mesh1P subobject **/
@@ -92,6 +102,6 @@ public:
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
 	FRotator GetViewRotation() const override;
-
+	
 };
 

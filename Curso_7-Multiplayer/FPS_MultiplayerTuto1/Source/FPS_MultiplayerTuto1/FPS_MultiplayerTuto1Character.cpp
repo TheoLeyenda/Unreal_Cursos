@@ -6,7 +6,7 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/InputSettings.h"
 #include "Net/UnrealNetwork.h"
-
+#include "FPS_MultiplayerPlayerController.h"
 
 AFPS_MultiplayerTuto1Character::AFPS_MultiplayerTuto1Character()
 {
@@ -86,6 +86,30 @@ void AFPS_MultiplayerTuto1Character::OnRep_Task()
 	
 }
 
+void AFPS_MultiplayerTuto1Character::OnRep_Health()
+{
+	FirstPersonCameraComponent->PostProcessSettings.SceneFringeIntensity = 5.0f - Health * 0.05f;
+	
+}
+
+float AFPS_MultiplayerTuto1Character::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent,
+	AController* EventInstigator, AActor* DamageCauser)
+{
+	Health -= DamageAmount;
+	if(Health <= 0)
+	{
+		if(auto* MultiplayerPlayerController = Cast<AFPS_MultiplayerPlayerController>(GetController()))
+		{
+			MultiplayerPlayerController->OnKilled();
+		}
+
+		Destroy();
+	}
+
+	OnRep_Health();
+	return DamageAmount;
+}
+
 FRotator AFPS_MultiplayerTuto1Character::GetViewRotation() const
 {
 	//RECREO LA ROTACION EN MI PERSONAJE PARA LUEGO REPLICARLA.
@@ -113,7 +137,6 @@ void AFPS_MultiplayerTuto1Character::PerformTask(ETaskEnum::Type NewTask)
 {
 	if(GetNetMode() == NM_Client)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("CLIENTE"))
 		ServerPerformTask(NewTask);
 		return;
 	}
