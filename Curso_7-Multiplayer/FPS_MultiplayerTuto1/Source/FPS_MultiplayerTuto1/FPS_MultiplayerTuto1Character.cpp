@@ -73,14 +73,14 @@ void AFPS_MultiplayerTuto1Character::OnRep_Task()
 	switch (Task)
 	{
 	case ETaskEnum::None:
-		UE_LOG(LogTemp, Warning, TEXT("Task: None"))
+		//UE_LOG(LogTemp, Warning, TEXT("Task: None"))
 		break;
 	case ETaskEnum::Fire:
-		UE_LOG(LogTemp, Warning, TEXT("Task: Fire"))
+		//UE_LOG(LogTemp, Warning, TEXT("Task: Fire"))
 		OnFire();
 		break;
 	case ETaskEnum::Reload:
-		UE_LOG(LogTemp, Warning, TEXT("Task: Reload"))
+		//UE_LOG(LogTemp, Warning, TEXT("Task: Reload"))
 		break;
 	}
 	
@@ -123,26 +123,24 @@ FRotator AFPS_MultiplayerTuto1Character::GetViewRotation() const
 
 void AFPS_MultiplayerTuto1Character::StartFiring()
 {
-	UE_LOG(LogTemp, Warning, TEXT("StartFiring"))
+	//UE_LOG(LogTemp, Warning, TEXT("StartFiring"))
 	PerformTask(ETaskEnum::Fire);
 }
 
 void AFPS_MultiplayerTuto1Character::StopFiring()
 {
-	UE_LOG(LogTemp, Warning, TEXT("StopFiring"))
+	//UE_LOG(LogTemp, Warning, TEXT("StopFiring"))
 	PerformTask(ETaskEnum::None);
 }
 
 void AFPS_MultiplayerTuto1Character::PerformTask(ETaskEnum::Type NewTask)
 {
-	if(GetNetMode() == NM_Client)
+	if(HasAuthority())
 	{
-		ServerPerformTask(NewTask);
-		return;
+		UE_LOG(LogTemp, Warning, TEXT("DISPARE"))
+		Task = NewTask;
+		OnRep_Task();
 	}
-	
-	Task = NewTask;
-	OnRep_Task();
 }
 
 void AFPS_MultiplayerTuto1Character::ServerPerformTask_Implementation(ETaskEnum::Type NewTask)
@@ -160,7 +158,7 @@ void AFPS_MultiplayerTuto1Character::OnFire()
 	if(Task != ETaskEnum::Fire) return;
 	
 	OnUseItem.Broadcast();
-
+	
 	GetWorldTimerManager().SetTimer(TimerHandle_Task, this, &AFPS_MultiplayerTuto1Character::OnFire, DelayHandle_Task, false);
 }
 
