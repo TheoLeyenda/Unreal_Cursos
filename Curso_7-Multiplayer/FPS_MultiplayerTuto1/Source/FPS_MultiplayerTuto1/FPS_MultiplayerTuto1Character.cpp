@@ -7,6 +7,7 @@
 #include "GameFramework/InputSettings.h"
 #include "Net/UnrealNetwork.h"
 #include "FPS_MultiplayerPlayerController.h"
+#include "Kismet/GameplayStatics.h"
 
 AFPS_MultiplayerTuto1Character::AFPS_MultiplayerTuto1Character()
 {
@@ -33,8 +34,8 @@ void AFPS_MultiplayerTuto1Character::SetupPlayerInputComponent(class UInputCompo
 {
 	check(PlayerInputComponent);
 	
-	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &AFPS_MultiplayerTuto1Character::StartFiring);
-	PlayerInputComponent->BindAction("PrimaryAction", IE_Released, this, &AFPS_MultiplayerTuto1Character::StopFiring);
+	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &AFPS_MultiplayerTuto1Character::OnPrimaryAction);
+	
 	
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
@@ -62,34 +63,15 @@ void AFPS_MultiplayerTuto1Character::Tick(float DeltaSeconds)
 //Esta funcion no nesecita Header, es para replicar propiedades en la clase AFPS_MultiplayerTuto1Character.
 void AFPS_MultiplayerTuto1Character::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
-	//REPLICO LA Task
+	//REPLICO LA Health
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
-	DOREPLIFETIME(AFPS_MultiplayerTuto1Character, Task);
-}
-
-void AFPS_MultiplayerTuto1Character::OnRep_Task()
-{
-	switch (Task)
-	{
-	case ETaskEnum::None:
-		//UE_LOG(LogTemp, Warning, TEXT("Task: None"))
-		break;
-	case ETaskEnum::Fire:
-		//UE_LOG(LogTemp, Warning, TEXT("Task: Fire"))
-		OnFire();
-		break;
-	case ETaskEnum::Reload:
-		//UE_LOG(LogTemp, Warning, TEXT("Task: Reload"))
-		break;
-	}
-	
+	DOREPLIFETIME(AFPS_MultiplayerTuto1Character, Health);
 }
 
 void AFPS_MultiplayerTuto1Character::OnRep_Health()
 {
 	FirstPersonCameraComponent->PostProcessSettings.SceneFringeIntensity = 5.0f - Health * 0.05f;
-	
 }
 
 float AFPS_MultiplayerTuto1Character::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent,
@@ -121,45 +103,69 @@ FRotator AFPS_MultiplayerTuto1Character::GetViewRotation() const
 	return FRotator(RemoteViewPitch / 255.0f * 360.0f, GetActorRotation().Yaw, 0.0f);
 }
 
-void AFPS_MultiplayerTuto1Character::StartFiring()
+void AFPS_MultiplayerTuto1Character::OnPrimaryAction()
 {
-	//UE_LOG(LogTemp, Warning, TEXT("StartFiring"))
-	PerformTask(ETaskEnum::Fire);
+	ServerAttack();
 }
 
-void AFPS_MultiplayerTuto1Character::StopFiring()
-{
-	//UE_LOG(LogTemp, Warning, TEXT("StopFiring"))
-	PerformTask(ETaskEnum::None);
-}
-
-void AFPS_MultiplayerTuto1Character::PerformTask(ETaskEnum::Type NewTask)
+void AFPS_MultiplayerTuto1Character::ServerAttack_Implementation()
 {
 	if(HasAuthority())
 	{
-		UE_LOG(LogTemp, Warning, TEXT("DISPARE"))
-		Task = NewTask;
-		OnRep_Task();
+		OnUseItem.Broadcast();
+		ServerPlayAttackAnimation();
+		ServerPlayAttackSound();
+		ClientPlayCameraShake();
 	}
 }
 
-void AFPS_MultiplayerTuto1Character::ServerPerformTask_Implementation(ETaskEnum::Type NewTask)
-{
-	PerformTask(NewTask);
-}
-
-bool AFPS_MultiplayerTuto1Character::ServerPerformTask_Validate(ETaskEnum::Type NewTask)
+bool AFPS_MultiplayerTuto1Character::ServerAttack_Validate()
 {
 	return true;
 }
 
-void AFPS_MultiplayerTuto1Character::OnFire()
+void AFPS_MultiplayerTuto1Character::ServerPlayAttackSound_Implementation()
 {
-	if(Task != ETaskEnum::Fire) return;
-	
-	OnUseItem.Broadcast();
-	
-	GetWorldTimerManager().SetTimer(TimerHandle_Task, this, &AFPS_MultiplayerTuto1Character::OnFire, DelayHandle_Task, false);
+	if(HasAuthority())
+	{
+		ClientPlayAttackSound();
+	}
+}
+
+void AFPS_MultiplayerTuto1Character::ServerPlayAttackAnimation_Implementation()
+{
+	if(HasAuthority())
+	{
+		ClientPlayAttackAnimation();
+	}
+}
+
+void AFPS_MultiplayerTuto1Character::ClientPlayAttackSound_Implementation()
+{
+	if(AttackSound)
+	{
+		UGameplayStatics::PlaySoundAtLocation(this, AttackSound, GetActorLocation());
+	}
+}
+
+void AFPS_MultiplayerTuto1Character::ClientPlayAttackAnimation_Implementation()
+{
+	if (AttackMontage != nullptr)
+	{
+		UAnimInstance* AnimInstance = GetMesh1P()->GetAnimInstance();
+		if (AnimInstance != nullptr)
+		{
+			AnimInstance->Montage_Play(AttackMontage, 1.f);
+		}
+	}
+}
+
+void AFPS_MultiplayerTuto1Character::ClientPlayCameraShake_Implementation()
+{
+	if(AttackShake)
+	{
+		UGameplayStatics::PlayWorldCameraShake(GetWorld(), AttackShake, GetActorLocation(), 0,100);
+	}
 }
 
 void AFPS_MultiplayerTuto1Character::MoveForward(float Value)

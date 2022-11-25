@@ -13,16 +13,6 @@ class UCameraComponent;
 class UAnimMontage;
 class USoundBase;
 
-UENUM()
-namespace ETaskEnum
-{
-	enum Type
-	{
-		None,
-		Fire,
-		Reload,
-	};
-}
 
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnUseItem);
@@ -37,16 +27,8 @@ class AFPS_MultiplayerTuto1Character : public ACharacter
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FirstPersonCameraComponent;
-
-	UPROPERTY(ReplicatedUsing= OnRep_Task)
-	TEnumAsByte<ETaskEnum::Type> Task = ETaskEnum::None;
-protected:
-	FTimerHandle TimerHandle_Task;
-
-	//Fire Rate del disparo.
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Settings")
-	float DelayHandle_Task = 0.1f;
 	
+protected:
 	UPROPERTY(ReplicatedUsing= OnRep_Health, EditAnywhere, BlueprintReadWrite, Category= "Settings")
 	float Health = 100;
 
@@ -58,20 +40,37 @@ public:
 
 	UPROPERTY(BlueprintAssignable, Category = "Interaction")
 	FOnUseItem OnUseItem;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	UAnimMontage* AttackMontage;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	USoundBase* AttackSound;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	TSubclassOf<UCameraShakeBase> AttackShake;
 protected:
+	void OnPrimaryAction();
 
-	void PerformTask(ETaskEnum::Type NewTask);
+	//-------------NEW ATTACK--------------------//
+	UFUNCTION(Server, Unreliable, WithValidation)
+	void ServerAttack();
 
-	UFUNCTION(Server, Reliable, WithValidation)
-	void ServerPerformTask(ETaskEnum::Type NewTask);
+	UFUNCTION(Server, Unreliable)
+	void ServerPlayAttackSound();
+
+	UFUNCTION(Server, Unreliable)
+	void ServerPlayAttackAnimation();
+
+	UFUNCTION(NetMulticast, Unreliable)
+	void ClientPlayAttackSound();
+
+	UFUNCTION(NetMulticast, Unreliable)
+	void ClientPlayAttackAnimation();
+
+	UFUNCTION(Client, Unreliable)
+	void ClientPlayCameraShake();
 	
-	void StartFiring();
-
-	void StopFiring();
-	
-	/** Fires a projectile. */
-	void OnFire();
-
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
 
@@ -86,9 +85,6 @@ protected:
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
 	virtual void Tick(float DeltaSeconds) override;
-
-	UFUNCTION()
-	void OnRep_Task();
 
 	UFUNCTION()
 	void OnRep_Health();
