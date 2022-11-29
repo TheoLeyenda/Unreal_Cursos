@@ -33,9 +33,9 @@ public:
 	/** Sets default values for this component's properties */
 	UTP_WeaponComponent();
 
-	/** Attaches the actor to a FirstPersonCharacter */
+	//HAGO EL ARMA UN INTERACTUABLE Y LO ATACHEO AL INTERACTUAR.
 	UFUNCTION(BlueprintCallable, Category="Weapon")
-	void AttachWeapon(AFPS_MultiplayerTuto1Character* TargetCharacter);
+	void AttachItem(AFPS_MultiplayerTuto1Character* TargetCharacter);
 
 	/** Make the weapon Fire a Projectile */
 	UFUNCTION(BlueprintCallable, Category="Weapon")

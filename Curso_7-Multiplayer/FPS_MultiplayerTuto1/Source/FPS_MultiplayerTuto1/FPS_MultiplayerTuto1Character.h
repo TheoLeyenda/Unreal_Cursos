@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "BaseWeapon.h"
 #include "GameFramework/Character.h"
 #include "FPS_MultiplayerTuto1Character.generated.h"
 
@@ -32,6 +33,9 @@ protected:
 	UPROPERTY(ReplicatedUsing= OnRep_Health, EditAnywhere, BlueprintReadWrite, Category= "Settings")
 	float Health = 100;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category= "Weapon")
+	ABaseWeapon* CurrentWeapon = nullptr;
+	
 public:
 	AFPS_MultiplayerTuto1Character();
 	

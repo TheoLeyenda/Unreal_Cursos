@@ -72,7 +72,7 @@ void UTP_WeaponComponent::EndPlay(const EEndPlayReason::Type EndPlayReason)
 	}
 }
 
-void UTP_WeaponComponent::AttachWeapon(AFPS_MultiplayerTuto1Character* TargetCharacter)
+void UTP_WeaponComponent::AttachItem(AFPS_MultiplayerTuto1Character* TargetCharacter)
 {
 	Character = TargetCharacter;
 	if(Character != nullptr)
