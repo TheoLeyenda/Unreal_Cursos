@@ -12,5 +12,4 @@ UCLASS()
 class LOADDATAASYNCPROJECT_API UAL_SkeletalMeshComp : public USkeletalMeshComponent
 {
 	GENERATED_BODY()
-	
 };

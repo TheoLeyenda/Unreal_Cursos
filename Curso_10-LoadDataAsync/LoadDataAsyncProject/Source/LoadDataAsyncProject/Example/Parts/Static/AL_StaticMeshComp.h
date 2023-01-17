@@ -9,5 +9,4 @@ UCLASS()
 class LOADDATAASYNCPROJECT_API UAL_StaticMeshComp : public UStaticMeshComponent
 {
 	GENERATED_BODY()
-	
 };
