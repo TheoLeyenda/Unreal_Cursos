@@ -37,10 +37,12 @@ void ADroneProjectProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherA
 	// Only add impulse and destroy projectile if we hit a physics
 	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr) && OtherComp->IsSimulatingPhysics())
 	{
-		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
-
-		//llamar al TakeDamage del OtherActor
-		
-		Destroy();
+		OtherComp->AddImpulseAtLocation(GetVelocity() * ImpactImpulse, GetActorLocation());
 	}
+
+	if(OtherActor)
+	{
+		OtherActor->OnTakeAnyDamage.Broadcast(OtherActor, Damage, DamageType.GetDefaultObject(), nullptr, this);
+	}
+	Destroy();
 }
