@@ -39,7 +39,7 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Camera")
 	TSubclassOf<UCameraShakeBase> JumpCameraShake;
-
+	
 public:
 	AFPSCharacter();
 
@@ -58,6 +58,9 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Movement")
 	UParticleSystem* MuzzleFlash;
 
+	UPROPERTY(BlueprintReadWrite, Category= "Gameplay")
+	bool bIsCarryingObjetive;
+	
 	virtual void Landed(const FHitResult& Hit) override;
 
 	virtual void OnJumped_Implementation() override;
