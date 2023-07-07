@@ -2,8 +2,11 @@
 
 
 #include "FPSExtractionZone.h"
+#include "FPSCharacter.h"
+#include "FPSGameMode.h"
 #include "Components/BoxComponent.h"
 #include "Components/DecalComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 AFPSExtractionZone::AFPSExtractionZone()
 {
@@ -15,8 +18,6 @@ AFPSExtractionZone::AFPSExtractionZone()
 	OverlapComp->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	OverlapComp->SetBoxExtent(FVector(200.0f));
 	RootComponent = OverlapComp;
-
-	OverlapComp->SetHiddenInGame(false);
 	
 	OverlapComp->OnComponentBeginOverlap.AddDynamic(this, &ThisClass::HandleOverlap);
 
@@ -28,5 +29,21 @@ AFPSExtractionZone::AFPSExtractionZone()
 void AFPSExtractionZone::HandleOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
 	bool bFromSweep, const FHitResult& SweepResult)
 {
-	UE_LOG(LogTemp, Log, TEXT("Overlapped with extraction zone!"))
+	if(auto* FPSCharacter = Cast<AFPSCharacter>(OtherActor))
+	{
+		if(FPSCharacter->bIsCarryingObjetive)
+		{
+			if(auto* GameMode = Cast<AFPSGameMode>(GetWorld()->GetAuthGameMode()))
+			{
+				GameMode->CompleteMission(FPSCharacter);
+			}
+		}
+		else
+		{
+			if(ObjectiveMissingSound)
+			{
+				UGameplayStatics::PlaySound2D(this, ObjectiveMissingSound);
+			}
+		}
+	}
 }

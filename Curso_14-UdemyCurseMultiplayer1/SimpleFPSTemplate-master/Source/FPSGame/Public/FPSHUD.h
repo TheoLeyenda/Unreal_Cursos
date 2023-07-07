@@ -17,7 +17,7 @@ protected:
 
 	/** Crosshair asset pointer */
 	UTexture2D* CrosshairTex;
-
+	
 public:
 
 	AFPSHUD();
