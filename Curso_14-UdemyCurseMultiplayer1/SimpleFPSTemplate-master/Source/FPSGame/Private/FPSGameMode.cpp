@@ -28,6 +28,10 @@ void AFPSGameMode::CompleteMission(APawn* InstigatorPawn)
 			if(auto* PlayerController = Cast<APlayerController>(InstigatorPawn->GetController()))
 			{
 				PlayerController->SetViewTargetWithBlend(NewViewTarget, 1.0f, EViewTargetBlendFunction::VTBlend_Cubic);
+				if(auto* FPSHUD = Cast<AFPSHUD>(PlayerController->GetHUD()))
+				{
+					FPSHUD->bDrawHUD = false;
+				}
 			}
 		}
 		else

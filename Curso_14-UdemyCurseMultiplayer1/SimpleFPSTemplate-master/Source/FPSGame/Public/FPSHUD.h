@@ -17,13 +17,15 @@ protected:
 
 	/** Crosshair asset pointer */
 	UTexture2D* CrosshairTex;
-	
+
 public:
 
 	AFPSHUD();
 
+	UPROPERTY(BlueprintReadWrite)
+	bool bDrawHUD = true;
+	
 	/** Primary draw call for the HUD */
 	virtual void DrawHUD() override;
-
 };
 
