@@ -23,6 +23,9 @@ protected:
 
 	UFUNCTION()
 	void OnPawnSeen(APawn* SeenPawn);
+
+	UFUNCTION()
+	void OnNoiseHeard(APawn* NoiseInstigator, const FVector& Location, float Volume);
 	
 public:	
 	virtual void Tick(float DeltaTime) override;
