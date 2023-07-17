@@ -53,6 +53,9 @@ void AFPSProjectile::Explode()
 void AFPSProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
 	// Only add impulse and destroy projectile if we hit a physics object
+
+	MakeNoise(1.0f, GetInstigator(), Hit.ImpactPoint + (FVector::UpVector* 2));
+	
 	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr) && OtherComp->IsSimulatingPhysics())
 	{
 		float RandomIntensity = FMath::RandRange(200.0f, 500.0f);
