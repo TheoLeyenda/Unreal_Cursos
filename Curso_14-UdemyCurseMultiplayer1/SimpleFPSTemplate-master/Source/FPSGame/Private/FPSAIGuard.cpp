@@ -1,5 +1,6 @@
 #include "FPSAIGuard.h"
 #include "DrawDebugHelpers.h"
+#include "FPSGameMode.h"
 
 AFPSAIGuard::AFPSAIGuard()
 {
@@ -24,6 +25,11 @@ void AFPSAIGuard::OnPawnSeen(APawn* SeenPawn)
 		return;
 	
 	DrawDebugSphere(GetWorld(), SeenPawn->GetActorLocation(), 32.0f + 5.0f, 12, FColor::Red, false, 10.0f);
+
+	if(auto* GameMode = Cast<AFPSGameMode>(GetWorld()->GetAuthGameMode()))
+	{
+		GameMode->CompleteMission(SeenPawn, false);
+	}
 }
 
 void AFPSAIGuard::OnNoiseHeard(APawn* NoiseInstigator, const FVector& Location, float Volume)
