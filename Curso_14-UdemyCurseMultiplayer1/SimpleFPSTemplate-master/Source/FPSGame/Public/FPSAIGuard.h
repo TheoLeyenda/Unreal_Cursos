@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Engine/TargetPoint.h"
 #include "GameFramework/Character.h"
 #include "Perception/PawnSensingComponent.h"
 #include "FPSAIGuard.generated.h"
@@ -27,6 +28,8 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
+	virtual void Tick(float DeltaSeconds) override;
+	
 	UFUNCTION()
 	void OnPawnSeen(APawn* SeenPawn);
 
@@ -52,7 +55,26 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent)
 	void OnStateChanged(EAIGuardState NewState);
 	
-public:	
-	virtual void Tick(float DeltaTime) override;
+	//PATROL CODE
+	UPROPERTY(EditAnywhere, Category= "Settings")
+	bool bPatrol = true;
 	
+	UPROPERTY(EditAnywhere, Category="Settings", meta = (EditCondition = "bPatrol"))
+	TArray<ATargetPoint*> TargetPoints;
+	
+	UPROPERTY(VisibleAnywhere, Category="Settings")
+	ATargetPoint* CurrentPatrolPoint = nullptr;
+
+	int CurrentIndex = 0;
+	
+	void InitPatrol();
+
+	void UpdatePatrol();
+	
+	void MoveToNextPatrolPoint();
+
+	void StopPatrolMovement();
+
+	void ResumePatrolMovement();
+	//---------------//
 };
