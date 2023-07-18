@@ -7,6 +7,15 @@
 #include "Perception/PawnSensingComponent.h"
 #include "FPSAIGuard.generated.h"
 
+UENUM(BlueprintType)
+enum class EAIGuardState : uint8
+{
+	Initial,
+	Idle,
+	Suspicious,
+	Alerted,
+};
+
 UCLASS()
 class FPSGAME_API AFPSAIGuard : public ACharacter
 {
@@ -34,6 +43,14 @@ protected:
 	FRotator OriginalRotation = FRotator::ZeroRotator;
 	
 	FTimerHandle TimerHandle_ResetOrientation;
+
+	EAIGuardState GuardState = EAIGuardState::Initial;
+
+	UFUNCTION(BlueprintCallable)
+	void SetGuardState(EAIGuardState NewState);
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnStateChanged(EAIGuardState NewState);
 	
 public:	
 	virtual void Tick(float DeltaTime) override;
