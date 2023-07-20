@@ -69,6 +69,8 @@ public:
 	virtual void OnJumped_Implementation() override;
 
 protected:
+
+	virtual void Tick(float DeltaSeconds) override;
 	
 	/** Fires a projectile. */
 	void Fire();
