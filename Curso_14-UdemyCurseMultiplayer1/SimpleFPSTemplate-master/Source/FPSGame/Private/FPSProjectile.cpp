@@ -28,12 +28,15 @@ AFPSProjectile::AFPSProjectile()
 	ProjectileMovement->MaxSpeed = 3000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = true;
+
+	SetReplicates(true);
 }
 
 
 void AFPSProjectile::BeginPlay()
 {
 	Super::BeginPlay();
+	SetReplicateMovement(true);
 
 	FTimerHandle TimerHandle;
 	GetWorldTimerManager().SetTimer(TimerHandle, this, &AFPSProjectile::Explode, 3.0f, false);
@@ -43,10 +46,13 @@ void AFPSProjectile::Explode()
 {
 	UGameplayStatics::SpawnEmitterAtLocation(this, ExplosionFX, GetActorLocation(), FRotator::ZeroRotator, FVector(5.0f));
 
-	// Allow BP to trigger additional logic
-	BlueprintExplode();
+	if(HasAuthority())
+	{
+		// Allow BP to trigger additional logic
+		BlueprintExplode();
 
-	Destroy();
+		Destroy();
+	}
 }
 
 
@@ -81,7 +87,10 @@ void AFPSProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 		}
 	}
 
-	MakeNoise(1.0f, GetInstigator(), Hit.ImpactPoint);
+	if(HasAuthority())
+	{
+		MakeNoise(1.0f, GetInstigator(), Hit.ImpactPoint);
+	}
 	
 	Explode();
 }
