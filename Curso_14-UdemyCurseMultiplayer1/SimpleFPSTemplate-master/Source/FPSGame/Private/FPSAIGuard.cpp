@@ -1,6 +1,7 @@
 #include "FPSAIGuard.h"
 #include "DrawDebugHelpers.h"
 #include "FPSGameMode.h"
+#include "UnrealNetwork.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 
 AFPSAIGuard::AFPSAIGuard()
@@ -18,6 +19,7 @@ void AFPSAIGuard::BeginPlay()
 	Super::BeginPlay();
 
 	OriginalRotation = GetActorRotation();
+	UE_LOG(LogTemp, Warning, TEXT("TestState --- ChangeState Idle"))
 	SetGuardState(EAIGuardState::Idle);
 	InitPatrol();
 }
@@ -41,6 +43,8 @@ void AFPSAIGuard::OnPawnSeen(APawn* SeenPawn)
 		GameMode->CompleteMission(SeenPawn, false);
 	}
 
+	UE_LOG(LogTemp, Warning, TEXT("TestState --- ChangeState Alerted"))
+	
 	SetGuardState(EAIGuardState::Alerted);
 
 	StopPatrolMovement();
@@ -64,10 +68,20 @@ void AFPSAIGuard::OnNoiseHeard(APawn* NoiseInstigator, const FVector& Location, 
 	
 	GetWorldTimerManager().SetTimer(TimerHandle_ResetOrientation, this, &ThisClass::ResetOrientation, 3.0f);
 
+	UE_LOG(LogTemp, Warning, TEXT("TestState --- ChangeState Suspicious"))
+	
 	SetGuardState(EAIGuardState::Suspicious);
 
 	StopPatrolMovement();
 }
+
+void AFPSAIGuard::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ThisClass, GuardState);
+}
+
 
 void AFPSAIGuard::ResetOrientation()
 {
@@ -80,6 +94,10 @@ void AFPSAIGuard::ResetOrientation()
 	ResumePatrolMovement();
 }
 
+void AFPSAIGuard::OnRep_GuardState()
+{
+	OnStateChanged(GuardState);
+}
 
 void AFPSAIGuard::SetGuardState(EAIGuardState NewState)
 {
@@ -87,8 +105,8 @@ void AFPSAIGuard::SetGuardState(EAIGuardState NewState)
 		return;
 
 	GuardState = NewState;
-
-	OnStateChanged(GuardState);
+	
+	OnRep_GuardState();
 }
 
 void AFPSAIGuard::InitPatrol()

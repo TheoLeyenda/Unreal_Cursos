@@ -29,6 +29,8 @@ protected:
 	virtual void BeginPlay() override;
 
 	virtual void Tick(float DeltaSeconds) override;
+
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 	
 	UFUNCTION()
 	void OnPawnSeen(APawn* SeenPawn);
@@ -47,8 +49,12 @@ protected:
 	
 	FTimerHandle TimerHandle_ResetOrientation;
 
+	UPROPERTY(ReplicatedUsing= OnRep_GuardState)
 	EAIGuardState GuardState = EAIGuardState::Initial;
 
+	UFUNCTION()
+	void OnRep_GuardState();
+	
 	UFUNCTION(BlueprintCallable)
 	void SetGuardState(EAIGuardState NewState);
 
