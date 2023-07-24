@@ -3,6 +3,7 @@
 #include "FPSGameMode.h"
 #include "FPSHUD.h"
 #include "FPSCharacter.h"
+#include "FPSGameState.h"
 #include "Kismet/GameplayStatics.h"
 #include "UObject/ConstructorHelpers.h"
 
@@ -14,13 +15,13 @@ AFPSGameMode::AFPSGameMode()
 
 	// use our custom HUD class
 	HUDClass = AFPSHUD::StaticClass();
+	GameStateClass = AFPSGameState::StaticClass();
 }
 
 void AFPSGameMode::CompleteMission(APawn* InstigatorPawn, bool bMisionSuccess)
 {
 	if(InstigatorPawn)
 	{
-		InstigatorPawn->DisableInput(nullptr);
 		if(SpectatingViewpointClass)
 		{
 			NewViewTarget = UGameplayStatics::GetActorOfClass(this, SpectatingViewpointClass);
@@ -38,6 +39,11 @@ void AFPSGameMode::CompleteMission(APawn* InstigatorPawn, bool bMisionSuccess)
 		{
 			UE_LOG(LogTemp, Warning, TEXT("SpectatingViewpointClass is nullptr. Please update GameMode class with valid subclass."))
 		}
+	}
+
+	if(auto* GameState = GetGameState<AFPSGameState>())
+	{
+		GameState->NetMulticastOnMissionComplete(InstigatorPawn, bMisionSuccess);
 	}
 	
 	OnMissionComplete(InstigatorPawn, bMisionSuccess);

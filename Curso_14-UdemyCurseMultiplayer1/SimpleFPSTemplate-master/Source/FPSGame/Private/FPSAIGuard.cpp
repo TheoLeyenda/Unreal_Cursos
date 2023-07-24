@@ -19,7 +19,6 @@ void AFPSAIGuard::BeginPlay()
 	Super::BeginPlay();
 
 	OriginalRotation = GetActorRotation();
-	UE_LOG(LogTemp, Warning, TEXT("TestState --- ChangeState Idle"))
 	SetGuardState(EAIGuardState::Idle);
 	InitPatrol();
 }
@@ -42,8 +41,6 @@ void AFPSAIGuard::OnPawnSeen(APawn* SeenPawn)
 	{
 		GameMode->CompleteMission(SeenPawn, false);
 	}
-
-	UE_LOG(LogTemp, Warning, TEXT("TestState --- ChangeState Alerted"))
 	
 	SetGuardState(EAIGuardState::Alerted);
 
@@ -67,8 +64,6 @@ void AFPSAIGuard::OnNoiseHeard(APawn* NoiseInstigator, const FVector& Location, 
 	SetActorRotation(NewLookAt);
 	
 	GetWorldTimerManager().SetTimer(TimerHandle_ResetOrientation, this, &ThisClass::ResetOrientation, 3.0f);
-
-	UE_LOG(LogTemp, Warning, TEXT("TestState --- ChangeState Suspicious"))
 	
 	SetGuardState(EAIGuardState::Suspicious);
 

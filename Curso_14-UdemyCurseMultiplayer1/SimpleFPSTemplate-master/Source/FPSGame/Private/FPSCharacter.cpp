@@ -2,6 +2,7 @@
 
 #include "FPSCharacter.h"
 #include "FPSProjectile.h"
+#include "UnrealNetwork.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -62,6 +63,13 @@ void AFPSCharacter::Tick(float DeltaSeconds)
 	}
 }
 
+void AFPSCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	
+	DOREPLIFETIME(ThisClass, bIsCarryingObjetive);
+}
+
 void AFPSCharacter::Landed(const FHitResult& Hit)
 {
 	Super::Landed(Hit);
@@ -93,7 +101,6 @@ void AFPSCharacter::OnJumped_Implementation()
 		//UGameplayStatics::PlaySound2D(this, JumpedSound);
 	}
 }
-
 
 void AFPSCharacter::Fire()
 {

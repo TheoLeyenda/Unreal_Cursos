@@ -46,4 +46,6 @@ void AFPSExtractionZone::HandleOverlap(UPrimitiveComponent* OverlappedComponent,
 			}
 		}
 	}
+	
+	UE_LOG(LogTemp, Warning, TEXT("Overlap with extraction zone!"))
 }
