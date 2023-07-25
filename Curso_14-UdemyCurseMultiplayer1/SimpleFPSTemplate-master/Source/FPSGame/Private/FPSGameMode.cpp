@@ -25,13 +25,12 @@ void AFPSGameMode::CompleteMission(APawn* InstigatorPawn, bool bMisionSuccess)
 		if(SpectatingViewpointClass)
 		{
 			NewViewTarget = UGameplayStatics::GetActorOfClass(this, SpectatingViewpointClass);
-		
-			if(auto* PlayerController = Cast<APlayerController>(InstigatorPawn->GetController()))
+			UWorld* World = GetWorld();
+			for(auto It = World->GetPlayerControllerIterator(); It; It++)
 			{
-				PlayerController->SetViewTargetWithBlend(NewViewTarget, 1.0f, EViewTargetBlendFunction::VTBlend_Cubic);
-				if(auto* FPSHUD = Cast<AFPSHUD>(PlayerController->GetHUD()))
+				if(auto* PC = It->Get())
 				{
-					FPSHUD->bDrawHUD = false;
+					PC->SetViewTargetWithBlend(NewViewTarget, 1.0f, EViewTargetBlendFunction::VTBlend_Cubic);
 				}
 			}
 		}
